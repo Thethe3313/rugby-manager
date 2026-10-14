@@ -6,7 +6,11 @@ Jeu de gestion de club de rugby à XV façon Football Manager, créé par Théop
 Feuille de route : voir `PLAN.md`. On avance étape par étape et on met `PLAN.md` à jour à chaque étape terminée.
 
 ## État actuel
-Le projet est versionné avec git (branche `main`). `rugby-manager.html` est la page d'entrée, sans dépendance, qui s'ouvre toujours avec un double-clic. Elle charge des scripts classiques (`<script src>`, pas de modules ES, pour que le double-clic marche) qui partagent les mêmes variables globales, **dans cet ordre** :
+Le projet est versionné avec git (branche `main`). Organisation du dossier (voir aussi `LISEZ-MOI.md`) :
+- `jeu/` : le jeu. `jeu/index.html` est la page d'entrée, sans dépendance, qui s'ouvre avec un double-clic. Le raccourci `Rugby Manager.lnk` à la racine (créé par `outils/creer-raccourci.ps1`, ignoré par git car il contient un chemin absolu) l'ouvre en mode application d'Edge. `jeu/app.js`, `manifest.webmanifest`, `sw.js` et `icones/` rendent le jeu installable quand il est servi en http(s) ; en `file://`, `app.js` ne fait rien.
+- `recherche/` : sources des notes des joueurs (voir plus bas). `tests/` : tests Node. `outils/` : scripts Windows (raccourci, icônes). `archives/` : anciennes copies, ignorées par git.
+
+`jeu/index.html` charge des scripts classiques (`<script src>`, pas de modules ES, pour que le double-clic marche) qui partagent les mêmes variables globales, **dans cet ordre** (chemins relatifs à `jeu/`) :
 1. **`data/`** :
    - `joueurs.js` : `REAL`, effectifs réels 2026-27 par club (30 clubs). Format `[nom, poste, sous-poste, année de naissance, nationalité, sélections, sélectionné récemment 0/1, note /99, tags, justification, points forts, points faibles]`.
    - `espoirs.js` : `REALY`, vrais espoirs. Format `[nom, poste, sous-poste, année, nationalité, international U20 0/1, note, potentiel]` (le potentiel est le centre d'une fourchette, voir `potDraw`).
@@ -23,6 +27,13 @@ Le projet est versionné avec git (branche `main`). `rugby-manager.html` est la 
 - Le résultat garde le format historique (`sh sa th ta pn dr cv yc ev bo winner`) plus `stats` (par équipe), `ps` (joueurs : minutes, note /10, essais, plaquages…) et `motm` (homme du match). `afterMatch(club, r, side)` applique stats de saison, fatigue et blessures.
 - Match en direct : `advance` s'arrête la veille d'un match du joueur (`G.liveWait`) ; le direct se joue dans l'interface, puis son résultat passe par `G.liveRes` à `playFixtures`.
 - Calibrage visé (Top 14) : ~49 pts et ~5,6 essais par match, ~4 pénalités réussies, ~67-70 % de victoires à domicile, favori gagnant ~70 %, ~26 % d'écarts de 20 points ou plus. Vérifier avec `node tests/calib.js` après toute modification du moteur, et `node tests/consignes.js` pour l'équilibre des consignes (chacune doit rester entre ~50 et ~63 % de victoires).
+
+## Base de recherche des notes
+Le dossier `recherche/` contient les données brutes qui ont servi à noter les joueurs :
+- un fichier JSON par club pour les pros (`effectifs/`) et pour les espoirs (`espoirs/`), avec la justification de chaque note et un drapeau `unsure` ;
+- les consignes de recherche utilisées (`consignes/`), c'est-à-dire la méthode et la grille de calibrage.
+
+Lis `recherche/METHODE.md` avant de toucher aux notes. Pour améliorer une note, modifie d'abord le JSON de `recherche/`, puis régénère `REAL` / `REALY` dans `jeu/data/`.
 
 ## Règles et choix importants (à respecter)
 - **Échelles** :
@@ -43,4 +54,5 @@ Pas de framework : des scripts Node dans `tests/` (Node et git sont installés ;
 - `node tests/test.js [--seasons 2] [--club pau,per]` : saisons complètes pilotées par les actions `ACT` (un match sur trois en direct, avec pause, vitesses, consignes et remplacement), rendu de chaque écran et vérification de l'absence de `undefined`, `NaN` et `[object Object]`. **À lancer après chaque modification.**
 - `node tests/calib.js` : statistiques moyennes du moteur de match. `node tests/consignes.js` : effet de chaque consigne.
 - `node tests/compare.js ancien.html nouveau.html` : vérifie que deux versions donnent exactement les mêmes écrans (pour les réorganisations qui ne doivent rien changer).
-- `node tests/serve.js` : mini-serveur local (http://localhost:8080) pour tester dans le panneau navigateur.
+- `node tests/serve.js` : mini-serveur local (http://localhost:8080, sert `jeu/`) pour tester dans le panneau navigateur.
+- Pour vérifier la page ouverte en `file://` comme par le raccourci : Edge sans fenêtre, `msedge --headless=new --user-data-dir=<dossier temporaire> --screenshot=<fichier.png> <url file:///…/jeu/index.html>`.

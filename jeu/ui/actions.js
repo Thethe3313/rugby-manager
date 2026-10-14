@@ -3,6 +3,8 @@ const ACT={
   start(d){newGame(d.id);save();render()},
   continue(){if(load())render()},
   menu(){G=null;UI.live=null;render()},
+  exportSave(){exportSave()},
+  importSave(d,el){importSave(el.files&&el.files[0]);el.value=''},
   save(){const ok=save();addNews(ok?'Partie sauvegardée.':'Sauvegarde impossible dans ce navigateur.');render()},
   tab(d){G.tab=d.t;render()},
   lgsel(d){UI.lg=d.lg;render()},
@@ -85,6 +87,7 @@ const ACT={
   setPot(d){G.settings=G.settings||{};G.settings.pot=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   nextSeason(){nextSeason();save();G.tab='home';render()}
 };
-document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b||b.tagName==='SELECT')return;const f=ACT[b.dataset.a];if(f)f(b.dataset,b)});
-document.addEventListener('change',e=>{const b=e.target;if(b.tagName==='SELECT'&&b.dataset.a){const f=ACT[b.dataset.a];if(f)f(b.dataset,b)}});
+// clics sur les boutons ; les listes déroulantes et les choix de fichier réagissent au changement de valeur
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b||b.tagName==='SELECT'||b.type==='file')return;const f=ACT[b.dataset.a];if(f)f(b.dataset,b)});
+document.addEventListener('change',e=>{const b=e.target;if((b.tagName==='SELECT'||b.type==='file')&&b.dataset.a){const f=ACT[b.dataset.a];if(f)f(b.dataset,b)}});
 render();

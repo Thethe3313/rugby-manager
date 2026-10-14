@@ -4,7 +4,7 @@
 const path=require('path');
 const {load}=require('./harness');
 const args=process.argv.slice(2);
-const html=args.find(a=>a.endsWith('.html'))||path.join(__dirname,'..','rugby-manager.html');
+const html=args.find(a=>a.endsWith('.html'))||path.join(__dirname,'..','jeu','index.html');
 const ni=args.indexOf('--n'),N=ni>=0?+args[ni+1]:600;
 const g=load(html,{seed:11});
 g.run(`newGame('pau')`);

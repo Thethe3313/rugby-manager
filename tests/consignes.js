@@ -5,7 +5,7 @@ const path=require('path');
 const {load}=require('./harness');
 const args=process.argv.slice(2),opt=k=>{const i=args.indexOf('--'+k);return i>=0?args[i+1]:null};
 const N=+(opt('n')||400),club=opt('club')||'pau';
-const g=load(path.join(__dirname,'..','rugby-manager.html'),{seed:21});
+const g=load(path.join(__dirname,'..','jeu','index.html'),{seed:21});
 g.run(`newGame(${JSON.stringify(club)})`);
 const tests=[['style','equilibre'],['style','conquete'],['style','mouvement'],['style','pied'],['kick','main'],['kick','pied'],['pen','points'],['pen','touche'],['pen','melee'],['pen','vite'],['int','basse'],['int','haute']];
 console.log(g.run(`(()=>{

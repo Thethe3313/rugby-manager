@@ -30,7 +30,7 @@ function load(htmlPath,opt={}){
   const localStorage={getItem:k=>k in store?store[k]:null,setItem:(k,v)=>{store[k]=String(v)},removeItem:k=>{delete store[k]}};
   // les minuteries ne se déclenchent pas toutes seules : le test appelle lui-même liveTick()
   let nt=0;const timers=[];
-  const ctx={document,localStorage,console,confirm:()=>true,alert:()=>{},
+  const ctx={document,localStorage,console,location:{protocol:'file:'},confirm:()=>true,alert:()=>{},
     setTimeout:()=>++nt,clearTimeout(){},setInterval:()=>++nt,clearInterval(){},
     requestAnimationFrame:()=>++nt,cancelAnimationFrame(){}};
   ctx.window=ctx;

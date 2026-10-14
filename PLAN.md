@@ -4,7 +4,7 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 ## ✅ Déjà fait
 
-- **Base du jeu** : jeu web sans installation (`rugby-manager.html` s'ouvre d'un double-clic), sauvegarde dans le navigateur.
+- **Base du jeu** : jeu web sans installation, sauvegarde dans le navigateur.
 - **Passage à Claude Code (14 octobre 2026)** :
   - Projet versionné avec git.
   - Code découpé en dossiers `data/` (données), `engine/` (moteur) et `ui/` (interface), sans rien changer au jeu (vérifié écran par écran).
@@ -26,6 +26,11 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - Centre de formation noté sur 20.
   - Nouvelle génération chaque 15 mars, avec de futurs cracks (💎).
 
+- **Appli et dossier réorganisé (14 octobre 2026)** :
+  - Raccourci « Rugby Manager » avec icône : le jeu s'ouvre dans sa propre fenêtre (mode application d'Edge).
+  - Dossier rangé : `jeu/` (le jeu), `recherche/` (sources des notes), `tests/`, `outils/`, `archives/`.
+  - Export et import de la sauvegarde dans un fichier (Réglages et écran d'accueil).
+  - Déjà prêt pour l'installation en ligne (manifeste, icônes, service worker) : il suffira d'héberger le dossier `jeu/`.
 - **Étape A — Match en direct façon FM + potentiel en fourchette (14 octobre 2026)** :
   - **Moteur de match phase par phase** : coup d'envoi, temps de jeu (porteur, plaquage, ruck), jeu au pied, touche, mêlée, ballon porté, pénalités, cartons jaunes. Calibré sur le Top 14 (≈ 49 points et 5,6 essais par match, ≈ 68 % de victoires à domicile). Il sert aussi pour tous les matchs simulés.
   - **Match en direct** : la veille du match, on choisit entre le direct et le résultat immédiat. Terrain 2D vu de dessus (joueurs numérotés, ballon animé), 4 vitesses (dont « temps forts »), pause, pause automatique à la mi-temps, bandeau sur les temps forts.

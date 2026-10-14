@@ -3,7 +3,7 @@ function viewStart(){
   const has=!!localStorage.getItem(SAVE_KEY);
   const card=(c,lg)=>{const ref=lg==='t14'?62:56;return `<div class="c" data-a="start" data-id="${c[0]}"><b>${c[1]}</b><div class="mut">Niveau ${'★'.repeat(clamp(Math.round((c[3]-ref)/4)+1,1,5))}</div></div>`};
   return `<div class="center"><h1>🏉 Rugby Manager</h1><p class="mut">Prends en main un club de Top 14 ou de Pro D2 : compose ton XV, choisis ta tactique, gère ton effectif, ton budget et le plafond salarial. Effectifs réels de la saison 2026-27 (notes estimées).</p>
-  ${has?`<p><button class="btn" data-a="continue">▶ Continuer la partie sauvegardée</button></p>`:''}
+  <p class="row">${has?`<button class="btn" data-a="continue">▶ Continuer la partie sauvegardée</button>`:''}<label class="btn sec">⬆ Importer une partie (fichier)<input type="file" accept=".json,application/json" data-a="importSave" hidden></label></p>
   <h2>Nouvelle partie : choisis ton club</h2>
   <h3>Top 14</h3><div class="clubs">${CLUBS0.map(c=>card(c,'t14')).join('')}</div>
   <h3 style="margin-top:16px">Pro D2</h3><div class="clubs">${PD2CLUBS.map(c=>card(c,'pd2')).join('')}</div>

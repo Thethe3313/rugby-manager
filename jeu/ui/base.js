@@ -6,6 +6,21 @@ const oc=v=>v>=78?'o1':v>=68?'o2':v>=58?'o3':'o4';
 const rd=Math.round;
 function save(){try{localStorage.setItem(SAVE_KEY,JSON.stringify(G));return true}catch(e){return false}}
 function load(){try{const s=localStorage.getItem(SAVE_KEY);if(!s)return false;G=JSON.parse(s);return true}catch(e){return false}}
+// Export / import de la sauvegarde dans un fichier (pour la changer de navigateur, d'ordinateur, ou la mettre à l'abri)
+function exportSave(){
+  const blob=new Blob([JSON.stringify(G)],{type:'application/json'}),a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);a.download=`rugby-manager-${ME().short.replace(/\W+/g,'-')}-${G.date}.json`;
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+function importSave(file){
+  if(!file)return;
+  const rd_=new FileReader();
+  rd_.onload=()=>{
+    try{const g=JSON.parse(rd_.result);if(!g||!Array.isArray(g.clubs)||!g.meId)throw 0;G=g;UI.modal=null;UI.live=null;save();render()}
+    catch(err){alert('Ce fichier n\'est pas une sauvegarde de Rugby Manager.')}
+  };
+  rd_.readAsText(file);
+}
 const $app=document.getElementById('app');
 
 function posL(p){return p.g==='PIL'?(p.sub==='TH'?'Pilier droit':'Pilier gauche'):p.g==='3L'?(p.sub==='N8'?'Numéro 8':p.sub==='FL'?'Flanker':GROUPS[p.g]):GROUPS[p.g]}
