@@ -1,0 +1,1018 @@
+[
+ {
+  "n": "Sione Ahio",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2003,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "power",
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Upaleto Feao",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end",
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Nathan Fraissenon",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Alexandre Kaddouri",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "tags": [
+   "scrum",
+   "workrate"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Aleksandre Kuntelia",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2002,
+  "nat": "Georgia",
+  "caps": 10,
+  "recent": true,
+  "rt": 70,
+  "ev": "23-24 LR 10 apps; 24-25 21 apps/9 st; 25-26 25 apps (bench), GEO 4 caps",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Louis Penverne",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Karl Sorin",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Pierre Bourgarit",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1997,
+  "nat": "France",
+  "caps": 16,
+  "recent": true,
+  "rt": 79,
+  "ev": "23-24 FRA 7 caps; 24-25 LR 13 apps, FRA 3 caps; 25-26 injury-hit, 9 apps",
+  "tags": [
+   "handler",
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "eng",
+   "mai",
+   "rck"
+  ],
+  "weak": [
+   "tou"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Gabin Garault",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Tolu Latu",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1993,
+  "nat": "Australia",
+  "caps": 19,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 MHR/LR 25 apps; 24-25 LR 17 apps/9 st; 25-26 18 apps/8 st; ex-Wallaby",
+  "tags": [
+   "power",
+   "finisher"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "sfr",
+   "tou"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Quentin Lespiaucq-Brettes",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1995,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "rck"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Nikolozi Sutidze",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2004,
+  "nat": "Georgia",
+  "caps": 8,
+  "recent": true,
+  "rt": 70,
+  "ev": "24-25 LR 16 apps/6 st; 25-26 LR 13 apps/4 st, GEO 8 caps; mostly bench",
+  "tags": [
+   "workrate",
+   "lineout"
+  ],
+  "str": [
+   "eng",
+   "end"
+  ],
+  "weak": [
+   "sfr"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Thomas Adelaide",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Thomas Lavault",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1999,
+  "nat": "France",
+  "caps": 3,
+  "recent": false,
+  "rt": 74,
+  "ev": "FRA 3 caps (2022-23); 23-24 LR 25 apps/20 st; 24-25 29 apps/24 st; 25-26 20 apps/10 st",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "end"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Salmaan Moerat",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1998,
+  "nat": "South Africa",
+  "caps": 11,
+  "recent": true,
+  "rt": 79,
+  "ev": "23-24 RSA 7 caps (capt v WAL); 24-25 Stormers 14 st, RSA 1 cap; 25-26 10 apps; neck inj Jun 26",
+  "tags": [
+   "lineout",
+   "defender",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "lea",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Will Skelton",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1992,
+  "nat": "Australia",
+  "caps": 35,
+  "recent": true,
+  "rt": 80,
+  "ev": "23-24 LR 15 st, RWC; 24-25 LR 14 st, AUS 7 tests (6 st); 25-26 6 apps, Achilles Mar 26",
+  "tags": [
+   "power",
+   "handler",
+   "lineout"
+  ],
+  "str": [
+   "pui",
+   "mai",
+   "tou",
+   "rck"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Watisoni Waqanisaravi",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1996,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Gregory Alldritt",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1997,
+  "nat": "France",
+  "caps": 60,
+  "recent": true,
+  "rt": 88,
+  "ev": "23-24 FRA 6N, LR capt; 24-25 6N 2025 champion, 5 tests; 25-26 27 apps, FRA capt Nov 25, out of 6N 26",
+  "tags": [
+   "power",
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "pui",
+   "rck",
+   "eng",
+   "lea"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Levani Botia",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1989,
+  "nat": "Fiji",
+  "caps": 31,
+  "recent": true,
+  "rt": 75,
+  "ev": "23-24 LR 18 st, FIJ 4 caps; 24-25 18 apps/9 st; 25-26 26 apps/16 st, FIJ 1 cap; age 37",
+  "tags": [
+   "defender",
+   "power"
+  ],
+  "str": [
+   "rck",
+   "tac",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Paul Boudehent",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1999,
+  "nat": "France",
+  "caps": 21,
+  "recent": true,
+  "rt": 83,
+  "ev": "23-24 LR+FRA 27 apps; 24-25 27 apps, 10 tries; 25-26 18 apps/15 st; missed 6N 26 + summer tour",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "rck"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Kirill Fraindt",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2000,
+  "nat": "Russia",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Matthias Haddad",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Oscar Jegou",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 13,
+  "recent": true,
+  "rt": 84,
+  "ev": "23-24 FRA 6N debut; 24-25 LR 12 apps; 25-26 LR 16 st, FRA 7 caps (5 st), 6N 26; 26-27 starter",
+  "tags": [
+   "workrate",
+   "lineout"
+  ],
+  "str": [
+   "eng",
+   "tou",
+   "vit",
+   "tac"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Theo McFarland",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1995,
+  "nat": "Samoa",
+  "caps": 22,
+  "recent": true,
+  "rt": 78,
+  "ev": "23-24 SAR 11 st, SAM 10 st RWC; 24-25 SAR 14 st; 25-26 SAR 12 st, SAM 2 caps; 2L/3L",
+  "tags": [
+   "power",
+   "workrate",
+   "lineout"
+  ],
+  "str": [
+   "pui",
+   "tou",
+   "eng"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Andy Timo",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Sam Tuifua",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2002,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "sfr"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Thomas Berjon",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "tags": [
+   "handler",
+   "workrate"
+  ],
+  "str": [
+   "pas",
+   "vit"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Nolhann Couillaud",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "sfr"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Nolann Le Garrec",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2002,
+  "nat": "France",
+  "caps": 15,
+  "recent": true,
+  "rt": 82,
+  "ev": "23-24 R92 20 st, FRA 5 caps; 24-25 R92 19 st, FRA 7 caps; 25-26 LR 16 st, 7 tries, FRA 2 caps",
+  "tags": [
+   "playmaker",
+   "pace",
+   "kicker"
+  ],
+  "str": [
+   "pas",
+   "evi",
+   "vit",
+   "dec"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Antoine Hastoy",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1997,
+  "nat": "France",
+  "caps": 12,
+  "recent": true,
+  "rt": 77,
+  "ev": "23-24 LR 20 st, FRA 4 caps; 24-25 LR 18 st, 145 pts; 25-26 LR 19 st, FRA 1 cap",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas"
+  ],
+  "weak": [
+   "vit",
+   "tac"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ben Healy",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1999,
+  "nat": "Scotland",
+  "caps": 10,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 EDI 19 st, SCO 8 caps; 24-25 EDI 4 st (bench); 25-26 EDI/NEW loan 8 apps",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Sacha Elissalde",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "pie"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Jonathan Danty",
+  "pos": "CEN",
+  "sub": "C12",
+  "by": 1992,
+  "nat": "France",
+  "caps": 30,
+  "recent": false,
+  "rt": 80,
+  "ev": "23-24 FRA 8 caps, LR 12 apps; 24-25 15 apps/10 st; 25-26 1 app (long injury); age 34",
+  "tags": [
+   "power",
+   "defender"
+  ],
+  "str": [
+   "pui",
+   "tac",
+   "rck"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Simeli Daunivucu",
+  "pos": "CEN",
+  "sub": "C13",
+  "by": 2003,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "tags": [
+   "power",
+   "pace"
+  ],
+  "str": [
+   "pui",
+   "vit"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jules Favre",
+  "pos": "CEN",
+  "sub": "C12",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 72,
+  "ev": "23-24 LR 19 st; 24-25 LR 19 st; 25-26 LR 21 st, 7 tries; reliable starter",
+  "tags": [
+   "defender",
+   "workrate"
+  ],
+  "str": [
+   "tac",
+   "pla",
+   "eng"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "David Kriel",
+  "pos": "CEN",
+  "sub": "C13",
+  "by": 1999,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 76,
+  "ev": "23-24 Bulls 24 st, 14 tries; 24-25 Bulls 23 st, 11 tries; 25-26 Bulls 16 st; uncapped",
+  "tags": [
+   "pace",
+   "finisher",
+   "handler"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "mai"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Semi Lagivala",
+  "pos": "CEN",
+  "sub": "C13",
+  "by": 2005,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "tags": [
+   "pace",
+   "power"
+  ],
+  "str": [
+   "pui",
+   "vit"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "George Moala",
+  "pos": "CEN",
+  "sub": "C13",
+  "by": 1990,
+  "nat": "Tonga",
+  "caps": 7,
+  "recent": false,
+  "rt": 72,
+  "ev": "23-24 CLE 19 st, TGA RWC; 24-25 CLE 12 st, 6 tries; 25-26 CLE 5 apps (injury); age 36",
+  "tags": [
+   "power",
+   "finisher"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ulupano Seuteni",
+  "pos": "CEN",
+  "sub": "C12",
+  "by": 1993,
+  "nat": "Samoa",
+  "caps": 13,
+  "recent": false,
+  "rt": 76,
+  "ev": "23-24 LR 18 st, SAM 2 caps; 24-25 LR 18 st; 25-26 LR 15 st",
+  "tags": [
+   "playmaker",
+   "defender"
+  ],
+  "str": [
+   "pas",
+   "dec",
+   "pla"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hoani Bosmorin",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Dillyn Leyds",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1992,
+  "nat": "South Africa",
+  "caps": 10,
+  "recent": false,
+  "rt": 77,
+  "ev": "23-24 LR 26 apps, 8 tries; 24-25 LR ~20 st, 10 tries; 25-26 LR 27 apps, 7 tries",
+  "tags": [
+   "pace",
+   "handler",
+   "finisher"
+  ],
+  "str": [
+   "evi",
+   "mai",
+   "pie"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Davit Niniashvili",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2002,
+  "nat": "Georgia",
+  "caps": 52,
+  "recent": true,
+  "rt": 84,
+  "ev": "23-24 LOU 13 st, GEO 7 st; 24-25 LOU 17 st, GEO 7 st; 25-26 LR 18 st, GEO capt 8 st",
+  "tags": [
+   "pace",
+   "handler",
+   "finisher"
+  ],
+  "str": [
+   "evi",
+   "vit",
+   "sfr"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jack Nowell",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1993,
+  "nat": "England",
+  "caps": 46,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 LR 18 st; 24-25 LR 18 st; 25-26 LR 15 st, 5 tries; no Tests since 2023",
+  "tags": [
+   "workrate",
+   "defender",
+   "finisher"
+  ],
+  "str": [
+   "eng",
+   "tac",
+   "rck"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ugo Pacome",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "tags": [
+   "pace",
+   "handler"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Christophe Loustalot",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1992,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ }
+]

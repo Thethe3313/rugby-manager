@@ -1,0 +1,222 @@
+[
+ {
+  "n": "Niccolò Beni",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2006,
+  "nat": "Italy",
+  "u20": true,
+  "rt": 56,
+  "pot": 71,
+  "unsure": false
+ },
+ {
+  "n": "Andria Bilanishvili",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2007,
+  "nat": "Georgia",
+  "u20": true,
+  "rt": 53,
+  "pot": 71,
+  "unsure": false
+ },
+ {
+  "n": "JP Lombaard",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2006,
+  "nat": "South Africa",
+  "u20": false,
+  "rt": 54,
+  "pot": 68,
+  "unsure": false
+ },
+ {
+  "n": "Zephaniah Lewis",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2007,
+  "nat": "New Zealand",
+  "u20": false,
+  "rt": 52,
+  "pot": 68,
+  "unsure": true
+ },
+ {
+  "n": "Tomás Marques",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2006,
+  "nat": "Portugal",
+  "u20": false,
+  "rt": 52,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Killian Bondi",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 67,
+  "unsure": false
+ },
+ {
+  "n": "Quentin Rucci",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 54,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Kepa Ebode-Nkoa",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 53,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Raymond Navunikaba",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2006,
+  "nat": "Fiji",
+  "u20": false,
+  "rt": 52,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Hugo Mazas",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 65,
+  "unsure": false
+ },
+ {
+  "n": "Raphaël Dubois",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 51,
+  "pot": 65,
+  "unsure": false
+ },
+ {
+  "n": "Téo Hirschler",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 51,
+  "pot": 65,
+  "unsure": false
+ },
+ {
+  "n": "Unax Goikoetxea",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2007,
+  "nat": "Spain",
+  "u20": false,
+  "rt": 50,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Anas Barara",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": false
+ },
+ {
+  "n": "Timothé Pelloux",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Jules Soubira",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": false
+ },
+ {
+  "n": "Arthur Calvet",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Milo Lainé",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 66,
+  "unsure": false
+ },
+ {
+  "n": "Marius Larribaud",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": false
+ },
+ {
+  "n": "Charlie Lafon",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": false
+ }
+]

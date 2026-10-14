@@ -1,0 +1,886 @@
+[
+ {
+  "n": "Irakli Mtchedlidze",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2001,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "24-25 AUR 23 apps; 25-26 23 apps 1190 min 3 tries; 26-27 6 apps, starting LH",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "vit",
+   "pas"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Robert Rodgers",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "Ex-Montpellier espoir; 24-25 AUR 23 apps; 25-26 12 apps; 26-27 5 apps, 3 starts",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Mirian Burduli",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1991,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Ex-Carcassonne/Montauban, 35; 24-25 AUR 11 apps; 25-26 18 apps (654 min); 26-27 1 app",
+  "tags": [],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Gymaël Jean-Jacques",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "ev": "Bench prop: 24-25 12 apps (333 min); 25-26 14 apps (416 min); 26-27 1 app",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Lasha Tabidze",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "Ex-UBB (2015-22), Biarritz 22-24; 24-26 Chambery (Nationale); 26-27 AUR 5 apps, starting TH",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Giorgi Kartvelishvili",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1992,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "24-25 AUR 25 apps; 25-26 19 apps (960 min); 26-27 all 6 rounds; 34",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jean-Baptiste de Clercq",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1994,
+  "nat": "Belgium",
+  "caps": 10,
+  "recent": true,
+  "rt": 61,
+  "ev": "Ex-Stade Francais/Bayonne; BEL 25 RWCQ 3 apps, 26 REC 4 apps; 26-27 AUR 1 bench app",
+  "tags": [],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Ronan Loughnane",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2001,
+  "nat": "Ireland",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "24-25 AUR 22 apps 5 tries; 25-26 20 apps (835 min); 26-27 4 apps, 3 starts",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Luka Nioradze",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1999,
+  "nat": "Georgia",
+  "caps": 12,
+  "recent": true,
+  "rt": 68,
+  "ev": "GEO RWC23, REC26; 23-24 AUR 18 apps; 24-25 23 apps 6 tries; 25-26 21 apps 4 tries",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "rck"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Basa Khonelidze",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2003,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "GEO U20 2023 (5 tries); 24-25 AUR 16 apps 3 tries; 25-26 20 apps (663 min); 26-27 2 apps",
+  "tags": [],
+  "str": [
+   "eng",
+   "pui"
+  ],
+  "weak": [
+   "tou"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Martial Rolland",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "Ex-LOU academy; 24-25 AUR 19 apps; 25-26 26 apps 1564 min (ever-present); 26-27 5 starts",
+  "tags": [
+   "workrate",
+   "lineout"
+  ],
+  "str": [
+   "end",
+   "tou",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Skip Jongejan",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2003,
+  "nat": "Netherlands",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "2.01m; 24-25 AUR 3 apps; 25-26 17 apps (693 min); 26-27 5 apps, 4 starts",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "pui",
+   "sfr"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Stephan Le Roux",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2000,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "2.00m lock, 2026 arrival; 26-27 3-4 bench apps; earlier record not verified",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "tou",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Guram Ghaniashvili",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2003,
+  "nat": "Georgia",
+  "caps": 2,
+  "recent": true,
+  "rt": 62,
+  "ev": "GEO U20 23; Black Lion (Challenge Cup 24-26); GEO 2025 REC 2 apps; 26-27 AUR 3 apps",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "sfr"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Mehdi Slamani",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "24-25 AUR 22 apps 3 tries; 25-26 9 apps; 26-27 2 bench apps",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ben Houston",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1999,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "Randwick Shute Shield-winning capt; MLR 2025 13 apps 6 tries, 2026 7 apps 5 tries; 26-27 AUR 4 starts at 8",
+  "tags": [
+   "power",
+   "handler"
+  ],
+  "str": [
+   "pui",
+   "mai",
+   "lea"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Tim de Jong",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2002,
+  "nat": "Netherlands",
+  "caps": 12,
+  "recent": true,
+  "rt": 67,
+  "ev": "NED REC 24/25/26; 24-25 AUR 10 apps; 25-26 17 apps 14 st 3 tries; 26-27 4 starts 2 tries",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "rck"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Eoghan Masterson",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1993,
+  "nat": "Ireland",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "120 Connacht apps; 24-25 AUR 19 apps 4 tries; 25-26 only 5 apps; 26-27 2 starts; 33",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "pla",
+   "lea"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Matteo Coustalat",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "Ex-Biarritz; light flanker (82kg); 26-27 AUR 4 apps (1 start)",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Hugo Huurman",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "Netherlands",
+  "caps": 3,
+  "recent": true,
+  "rt": 63,
+  "ev": "NED REC 2025-26; 24-25 AUR 14 apps; 25-26 17 apps (765 min); 26-27 2 starts",
+  "tags": [],
+  "str": [
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Paulo Tauiliili-Pelesasa",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2005,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Pau academy: 23-26 3 Top14 + 3 Euro apps; 26-27 AUR 2 starts 1 try",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pla",
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Aleksandre Burduli",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2002,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "24-25 AUR 12 apps; 25-26 10 apps (381 min, 2 YC); 26-27 3 apps",
+  "tags": [],
+  "str": [
+   "evi",
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Théo Cambon",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "24-25 AUR 15 apps; 25-26 15 apps 648 min, 27 lineout takes; 26-27 2 apps",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lucas Delort",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 54,
+  "ev": "24-25 1 app; 25-26 4 apps (166 min); 26-27 1 app",
+  "tags": [],
+  "str": [],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Didier Tison",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1994,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "Ex-Lyon/Carcassonne/Oyonnax; 24-25 AUR 23 apps 1386 min; 25-26 25 apps 3 tries; unused 26-27",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "tac",
+   "end"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Kléo Labarbe",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "FRA U20 2024; Racing 24-25 4 T14+2 Euro; 25-26 6 T14+4 Challenge; 26-27 AUR loan, starts",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "pas"
+  ],
+  "weak": [
+   "pie",
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Boris Hadinegoro",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2003,
+  "nat": "Netherlands",
+  "caps": 6,
+  "recent": true,
+  "rt": 64,
+  "ev": "NED REC 25 (3 tries), 26; 24-25 AUR 14 apps; 25-26 19 apps 5 tries; 26-27 4 apps 2 tries",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ruben Courties",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 54,
+  "ev": "Fringe scrum-half; 1 bench app 26-27; no prior pro stats found",
+  "tags": [],
+  "str": [],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Benjamin Ruddick",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2006,
+  "nat": "Belgium",
+  "caps": 1,
+  "recent": true,
+  "rt": 52,
+  "ev": "BEL REC 2026 v NED (40 min); 26-27 AUR 1 bench app",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Tedo Abzhandadze",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1999,
+  "nat": "Georgia",
+  "caps": 67,
+  "recent": true,
+  "rt": 75,
+  "ev": "23-24 MTB 9 apps, GEO RWC; 24-25 AUR 12 apps 116 pts; 25-26 21 apps 17 st 138 pts, GEO 6 st",
+  "tags": [
+   "playmaker",
+   "kicker"
+  ],
+  "str": [
+   "pie",
+   "but",
+   "pas",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jake Strachan",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1996,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "Ex-Force/Rebels (36 SR apps), Southland NPC 24; 25-26 AUR 21 apps (1524 min), 10/15; 26-27 4 starts",
+  "tags": [
+   "playmaker",
+   "kicker"
+  ],
+  "str": [
+   "pie",
+   "pas",
+   "dec"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Noé Brune",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "ev": "Ex-Perpignan espoir; 25-26 AUR 4 apps 161 min; 26-27 3 apps 10 pts",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Nathan Azais",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Ex-Toulon espoir, no prior pro apps found; 26-27 AUR 4 apps 3 starts",
+  "tags": [],
+  "str": [],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "François Vergnaud",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "Ex-Biarritz; 24-25 AUR 15 apps; 25-26 9 apps (585 min); 26-27 2 starts",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hugo Bastard",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "24-25 AUR 24 apps 31 pts; 25-26 21 apps 1454 min 4 tries; 26-27 5 apps",
+  "tags": [],
+  "str": [
+   "tac",
+   "pla"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ofa Manuofetoa",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1999,
+  "nat": "Tonga",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "Ex-Manly; 23-24 AUR 10 st; 24-25 12 st; 25-26 8 apps 2 tries; 26-27 1 start",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "vit",
+   "pie"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Karsen Talalua",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Ex-Toulon academy; 24-25 AUR 12 apps; 25-26 13 apps (715 min); 26-27 3 bench apps",
+  "tags": [],
+  "str": [],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Ben O'Donnell",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1995,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "AUS 7s 2017-20; Brumbies 23-25, Hawke's Bay 24; 25-26 AUR 17 apps 1271 min; 26-27 4 starts",
+  "tags": [
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Thomas Carol",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 Pau 8 T14+5 Challenge; 24-25 none found; 25-26 Pau 2 apps; 26-27 AUR 4 starts",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Angus Staniforth",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2004,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "AUS U20 2024; 24-25 AUR 4 apps; 25-26 2 apps; 26-27 5 apps 1 try; 1.71m/70kg",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pui",
+   "tac"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ronald Pieters",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "2024 6 apps; 2025 9 apps 4 tries; 2026 13 apps 2 tries (AUR)",
+  "tags": [],
+  "str": [],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Simeli Yabaki",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1998,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "24-25 AUR 16 apps 1179 min 4 tries; 25-26 15 apps 3 tries; 26-27 3 apps",
+  "tags": [
+   "finisher",
+   "power"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": false
+ }
+]

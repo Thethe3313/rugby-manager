@@ -1,0 +1,978 @@
+[
+ {
+  "n": "Daniel Bibi Biziwu",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "power",
+   "scrum"
+  ],
+  "str": [
+   "pui",
+   "mel"
+  ],
+  "weak": [
+   "end",
+   "pas"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Lekso Kaulashvili",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1992,
+  "nat": "Georgia",
+  "caps": 3,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 UBB 5 st; 24-25 Pau 4 st; 25-26 Pau 9 st, usual no.1; 26-27 3 st; GEO 3 caps (2020)",
+  "tags": [
+   "scrum",
+   "workrate"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "vit",
+   "pas"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Thomas Laclayat",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "France",
+  "caps": 3,
+  "recent": true,
+  "rt": 77,
+  "ev": "23-24 Racing 10 st, FRA cap; 24-25 Racing 11 st; 25-26 Pau 22 apps/17 st, FRA 2 caps Nov 2025",
+  "tags": [
+   "scrum",
+   "workrate"
+  ],
+  "str": [
+   "mel",
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Guram Papidze",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "Georgia",
+  "caps": 12,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 Pau 8 st + GEO 5 caps (RWC); 24-25 Pau 19 apps/8 st; 25-26 Pau 12 apps/7 st",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "end",
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hugo Parrou",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Rémi Sénéca",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Siate Tokolahi",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1992,
+  "nat": "Tonga",
+  "caps": 5,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "power",
+   "scrum"
+  ],
+  "str": [
+   "pui",
+   "mel"
+  ],
+  "weak": [
+   "end",
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Jon Zabala-Arrieta",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1996,
+  "nat": "Spain",
+  "caps": 29,
+  "recent": true,
+  "rt": 67,
+  "ev": "23-24 Béziers ProD2 21 st; 24-25 Pau 10 st; 25-26 Pau 4 st (Top 14 only 1), ESP 6 caps",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Youri Delhommel",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 Pau 9 st; 24-25 Pau 23 apps/16 st; 25-26 Pau 17 apps/7 st, 5 tries; 26-27 2 tries off bench",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Julián Montoya",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1993,
+  "nat": "Argentina",
+  "caps": 117,
+  "recent": true,
+  "rt": 84,
+  "ev": "ARG captain; 23-24 RWC + Leics 11 st; 24-25 ARG 11 caps; 25-26 ARG 6 st, Pau 9 st 4 tries",
+  "tags": [
+   "lineout",
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "lea",
+   "tou",
+   "rck",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lucas Rey",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Pau 13 st; 24-25 Pau 4 st; 25-26 Pau 16 apps/11 st, 4 tries; 26-27 2 st",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Hugo Auradou",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2003,
+  "nat": "France",
+  "caps": 13,
+  "recent": true,
+  "rt": 81,
+  "ev": "23-24 Pau 9 st, FRA debut; 24-25 Pau 14 st, FRA 5 caps (6N bench); 25-26 Pau 12 st, FRA 7 caps",
+  "tags": [
+   "power",
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "pui",
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "pas"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Mickaël Capelli",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 Pau 13 st; 24-25 Pau 12 st; 25-26 Pau 17 apps/12 st; 26-27 rotation",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Thomas Jolmès",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1998,
+  "nat": "France",
+  "caps": 2,
+  "recent": false,
+  "rt": 72,
+  "ev": "FRA 2 caps (2022); 23-24 UBB 4 st; 24-25 Pau 8 st; 25-26 Pau 15 st incl. 3 Champions Cup",
+  "tags": [
+   "lineout",
+   "power"
+  ],
+  "str": [
+   "tou",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jimi Maximin",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1999,
+  "nat": "France",
+  "caps": 1,
+  "recent": true,
+  "rt": 73,
+  "ev": "23-24 Rouen ProD2 6 st; 24-25 Pau 10 st; 25-26 Pau 12 st, FRA debut v Fiji Nov 2025",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "end"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Baptiste Pesenti",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2000,
+  "nat": "France",
+  "caps": 2,
+  "recent": false,
+  "rt": 72,
+  "ev": "FRA 2 caps (Jul 2024 ARG); 23-24 SF 15 st; 24-25 SF 11 st; 25-26 SF 25 apps/20 st; joins Pau",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "tac"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Rémi Picquette",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 La Rochelle 11 st; 24-25 Pau 15 st; 25-26 Pau 5 st, 14 apps; 26-27 1 st",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Rémi Couty",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2007,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 55,
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Loïc Crédoz",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 Oyonnax 15 st; 24-25 Pau 23 apps/17 st; 25-26 Pau 25 apps/17 st; 26-27 3 st",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "end"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Beka Gorgadze",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1996,
+  "nat": "Georgia",
+  "caps": 50,
+  "recent": true,
+  "rt": 79,
+  "ev": "23-24 Pau 13 st + GEO 7 caps (RWC); 24-25 Pau 10 st, GEO 3; 25-26 Pau 14 st 4 tries, GEO 2",
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "rck",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Santiago Grondona",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1999,
+  "nat": "Argentina",
+  "caps": 25,
+  "recent": true,
+  "rt": 80,
+  "ev": "23-24 ARG 3 caps; 24-25 Bristol 12 st, ARG 5; 25-26 Bristol 13 st, ARG 5 st; 26-27 Pau 2 st",
+  "tags": [
+   "workrate",
+   "defender",
+   "power"
+  ],
+  "str": [
+   "tac",
+   "rck",
+   "eng"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Reece Hewat",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1996,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 Pau 16 st; 24-25 Pau 5 st (injury-hit); 25-26 Pau 10 st incl. 2 Champions Cup, 3 tries",
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Xander Iosefo",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1999,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "tags": [
+   "workrate",
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Facundo Isa",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1993,
+  "nat": "Argentina",
+  "caps": 50,
+  "recent": false,
+  "rt": 80,
+  "ev": "23-24 Toulon 9 st + RWC 4 st; 24-25 Toulon 23 st, 9 tries, ARG 2; 25-26 Pau 24 apps/14 st",
+  "tags": [
+   "power",
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "pui",
+   "rck",
+   "mai",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Bastien Vergnes-Taillefer",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1997,
+  "nat": "France",
+  "caps": 1,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 UBB 20 st; 24-25 UBB 14 st (CC winners), FRA cap; 25-26 UBB 30 apps/16 st",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "rck"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Sacha Zegueur",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 Pau 13 st; 24-25 Pau 12 st; 25-26 Pau 18 apps/12 st; 26-27 bench",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Thibault Daubagna",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1994,
+  "nat": "France",
+  "caps": 2,
+  "recent": false,
+  "rt": 77,
+  "ev": "23-24 Pau 17 st; 24-25 Pau 15 st, FRA cap; 25-26 Pau 22 apps/15 st; 26-27 3 st",
+  "tags": [
+   "pace",
+   "playmaker",
+   "handler"
+  ],
+  "str": [
+   "pas",
+   "vit",
+   "lea"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Gonzalo García",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1999,
+  "nat": "Argentina",
+  "caps": 17,
+  "recent": true,
+  "rt": 79,
+  "ev": "23-24 Zebre 13 st, ARG 5; 24-25 ARG 8 caps (RC starter); 25-26 disrupted 6 st, ARG 2 st",
+  "tags": [
+   "playmaker",
+   "handler",
+   "pace"
+  ],
+  "str": [
+   "pas",
+   "dec",
+   "vit"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Thomas Souverbie",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "tags": [
+   "handler",
+   "workrate"
+  ],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Axel Desperes",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 Pau 6 st; 24-25 Pau 11 st, 85 pts; 25-26 Pau 24 apps/17 st, 162 pts; 26-27 23 pts",
+  "tags": [
+   "playmaker",
+   "kicker"
+  ],
+  "str": [
+   "but",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Clément Mondinat",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "playmaker"
+  ],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Joe Simmonds",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1996,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 77,
+  "ev": "23-24 Pau 18 st, 181 pts; 24-25 Pau 18 st, 178 pts; 25-26 10 st, 126 pts (5-wk injury); 26-27 44 pts",
+  "tags": [
+   "kicker",
+   "playmaker",
+   "handler"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "dec",
+   "lea"
+  ],
+  "weak": [
+   "pui",
+   "tac"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Fabien Brau-Boirie",
+  "pos": "CEN",
+  "sub": "C12",
+  "by": 2005,
+  "nat": "France",
+  "caps": 5,
+  "recent": true,
+  "rt": 81,
+  "ev": "23-24 FRA U20; 24-25 Pau 9 st; 25-26 Pau 18 st, FRA 5 starts (6N + Nations Ch.); 26-27 4 st",
+  "tags": [
+   "defender",
+   "workrate",
+   "power"
+  ],
+  "str": [
+   "tac",
+   "pui",
+   "eng"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Nathan Decron",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 Pau 13 st; 24-25 Pau 12 st; 25-26 Pau 14 st (incl. 2 Champions Cup), 3 tries",
+  "tags": [
+   "pace",
+   "handler"
+  ],
+  "str": [
+   "mai",
+   "vit"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Émilien Gailleton",
+  "pos": "CEN",
+  "sub": "C13",
+  "by": 2003,
+  "nat": "France",
+  "caps": 12,
+  "recent": true,
+  "rt": 83,
+  "ev": "23-24 Pau 20 st, FRA 2 caps; 24-25 Pau 12 st, FRA 7 caps; 25-26 Pau 12 st, 6N 2 st 2 tries",
+  "tags": [
+   "pace",
+   "finisher",
+   "power"
+  ],
+  "str": [
+   "evi",
+   "vit",
+   "pui"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Tumua Manu",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1993,
+  "nat": "Samoa",
+  "caps": 12,
+  "recent": true,
+  "rt": 68,
+  "ev": "23-24 Pau 6 st + SAM 6 caps; 24-25 Pau 10 st; 25-26 injury-hit 3 st, SAM cap; 26-27 3 st 2 tries",
+  "tags": [
+   "power",
+   "defender"
+  ],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Grégoire Arfeuil",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 U20; 24-25 Pau 4 Challenge Cup st; 25-26 Pau 18 st, club top try scorer, France A",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "mai"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Clément Laporte",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "mai"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Jack Maddocks",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1997,
+  "nat": "Australia",
+  "caps": 7,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Pau 16 st, 9 tries; 24-25 Pau regular, 5 tries; 25-26 Pau 29 apps/12 st, 5 tries",
+  "tags": [
+   "pace",
+   "finisher",
+   "handler"
+  ],
+  "str": [
+   "vit",
+   "mai",
+   "pla"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Théo Attissogbé",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 15,
+  "recent": true,
+  "rt": 86,
+  "ev": "23-24 Pau 21 st, FRA 2; 24-25 Pau 18 st, FRA 6; 25-26 FRA 7 st, 5 tries (6N 4 st); 26-27 2 tries",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Aaron Grandidier-Nkanang",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2000,
+  "nat": "France",
+  "caps": 1,
+  "recent": true,
+  "rt": 78,
+  "ev": "24 Olympic 7s gold; 24-25 Pau 15s debut; 25-26 Pau 19 st, France A; Jul 26 FRA debut 2 tries v AUS",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "mai"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Rodrigo Marta",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1999,
+  "nat": "Portugal",
+  "caps": 29,
+  "recent": true,
+  "rt": 74,
+  "ev": "23-24 Colomiers 15 st + RWC; 24-25 Colomiers 13 st; 25-26 Colomiers 15 st, POR 8 caps 7 tries",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "mai"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Joachim Senga Kouo",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2008,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [],
+  "unsure": true
+ }
+]

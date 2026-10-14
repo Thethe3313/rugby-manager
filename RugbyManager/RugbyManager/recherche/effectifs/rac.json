@@ -1,0 +1,862 @@
+[
+ {
+  "n": "Demba Bamba",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1998,
+  "nat": "France",
+  "caps": 33,
+  "recent": true,
+  "rt": 81,
+  "ev": "23-24 LOU 16 Top14, FRA 3 caps; 24-25 Racing 6 Top14 (injury), FRA 1; 25-26 22 Top14, FRA 4 caps (6N)",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Guram Gogichashvili",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1998,
+  "nat": "Georgia",
+  "caps": 40,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Racing 14 Top14, GEO RWC; 24-25 Racing ~30 Top14 13 st; 25-26 25 Top14 13 st; no GEO caps since 2024",
+  "tags": [
+   "scrum",
+   "workrate"
+  ],
+  "str": [
+   "mel",
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Gia Kharaishvili",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1999,
+  "nat": "Georgia",
+  "caps": 5,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Racing 6 Top14 bench; 24-25 14 Top14 6 st; 25-26 16 Top14 11 st; GEO caps 2021-22 only",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "pas"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hassane Kolingar",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1998,
+  "nat": "France",
+  "caps": 3,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 Racing 21 Top14 15 st+4 CC; 24-25 14 Top14 6 st; 25-26 18 Top14 9 st; FRA 3 caps (2020-21)",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "mai"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Taniela Tupou",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1996,
+  "nat": "Australia",
+  "caps": 70,
+  "recent": true,
+  "rt": 83,
+  "ev": "23-24 Rebels, AUS 8 caps incl RWC; 24-25 Waratahs, AUS 8 caps; 25-26 AUS 9 caps, Racing 11 Top14 (bench)",
+  "tags": [
+   "power",
+   "scrum",
+   "handler"
+  ],
+  "str": [
+   "mel",
+   "pui",
+   "mai"
+  ],
+  "weak": [
+   "end",
+   "tac"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Benjamin Boudou",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [],
+  "unsure": true,
+  "ev": "23-24 to 25-26 Brive ProD2 rotation (13/19/23 apps, 7-9 st); 26-27 Racing 2 Top14"
+ },
+ {
+  "n": "Diego Escobar",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2000,
+  "nat": "Chile",
+  "caps": 20,
+  "recent": true,
+  "rt": 71,
+  "ev": "23-24 CHI RWC; 24-25 Racing 9 Top14 4 st, CHI 6 caps; 25-26 13 Top14 8 st, CHI Nations Cup",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "rck"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Janick Tarrit",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 Racing 17 Top14 6 st; 24-25 12 Top14 8 st; 25-26 21 Top14 15 st 3 tries",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jonny Hill",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "England",
+  "caps": 23,
+  "recent": false,
+  "rt": 76,
+  "ev": "23-24 Sale 13 Prem+CC, ENG 2 (SNS); 24-25 Sale 11 Prem st; 25-26 Racing 26 Top14 23 st",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Nathan Hughes",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1991,
+  "nat": "England",
+  "caps": 22,
+  "recent": false,
+  "rt": 73,
+  "ev": "23-24 BlackRams JP 16 apps 6 tries; 24-25 Urayasu 5 apps; 25-26 Racing 24 Top14 14 st 4 tries; age 35",
+  "tags": [
+   "power",
+   "handler"
+  ],
+  "str": [
+   "pui",
+   "mai",
+   "evi"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Thomas Lainault",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "ev": "24-25 Grenoble ProD2; 25-26 Racing 21 Top14 1129 min; 26-27 4 Top14 so far",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Romain Taofifenua",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1990,
+  "nat": "France",
+  "caps": 59,
+  "recent": true,
+  "rt": 78,
+  "ev": "23-24 LOU, FRA 9 caps (RWC, 6N); 24-25 Racing 19 Top14, FRA 5; 25-26 20 Top14 15 st, FRA 3 (Nov 2025); age 36",
+  "tags": [
+   "power",
+   "scrum"
+  ],
+  "str": [
+   "pui",
+   "mel",
+   "sfr"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Seru Uru",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "Australia",
+  "caps": 2,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Reds 11 st, AUS 1 cap; 24-25 Reds 9 st, AUS 1 cap; 25-26 Reds 13 apps 11 st; joined Racing 2026",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "tac"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Lekima Tagitagivalu",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1995,
+  "nat": "Fiji",
+  "caps": 10,
+  "recent": true,
+  "rt": 73,
+  "ev": "23-24 Pau 12 Top14, FIJ RWC 4; 24-25 Pau 13 apps, FIJ 2; 25-26 Racing 17 Top14 10 st, FIJ 2 (lock/FL)",
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "mai",
+   "tac"
+  ],
+  "weak": [
+   "tou"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Maxime Baudonne",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 Racing 23 Top14 13 st; 24-25 21 Top14 12 st 5 tries+7 cup; 25-26 25 Top14 19 st 4 tries",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "rck"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Soumaila Camara",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "24-25 Racing 1 Top14; 25-26 8 Top14 5 st; 26-27 1 start",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "pui"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Ibrahim Diallo",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 2,
+  "recent": false,
+  "rt": 73,
+  "ev": "23-24 Racing 20 apps, FRA 1 cap (ARG); 24-25 19 Top14 15 st; 25-26 only 7 Top14 (lost season)",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "rck"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jordan Joseph",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2000,
+  "nat": "France",
+  "caps": 2,
+  "recent": false,
+  "rt": 76,
+  "ev": "23-24 Racing 20 Top14 17 st 5 tries, FRA 2 caps (ARG tour); 24-25 26 apps; 25-26 12 Top14 5 st (injuries)",
+  "tags": [
+   "power",
+   "handler"
+  ],
+  "str": [
+   "pui",
+   "vit",
+   "mai"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Shingi Manyarara",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2004,
+  "nat": "Zimbabwe",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "sfr"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Nicolas Martins",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1999,
+  "nat": "Portugal",
+  "caps": 36,
+  "recent": true,
+  "rt": 71,
+  "ev": "23-24 Angouleme ProD2, POR 10 caps RWC; 24-25 MHR 5 apps, POR 7; 25-26 Colomiers 11 ProD2, POR 8",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "tac"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Fabien Sanconnie",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1995,
+  "nat": "France",
+  "caps": 5,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Racing 12 Top14 9 st; 24-25 9 Top14 4 st; 25-26 9 Top14+2 CC (injuries)",
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Leo Carbonneau",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 Brive ProD2 27 apps 8 tries, FRA U20; 24-25 Brive 17 ProD2; 25-26 Racing 26 Top14 24 st 7 tries",
+  "tags": [
+   "pace",
+   "handler"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "pas"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Maxime Machenaud",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1988,
+  "nat": "France",
+  "caps": 38,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Bayonne 20 Top14 13 st; 24-25 17 Top14 10 st; 25-26 only 6 Top14; 26-27 Racing 4 apps; age 38",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "dec"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Antoine Gibert",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 Racing 16 Top14 13 st+4 CC; 24-25 18 Top14 6 st; 25-26 18 Top14 10 st 82 pts",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Geronimo Prisciantelli",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1999,
+  "nat": "Argentina",
+  "caps": 5,
+  "recent": true,
+  "rt": 73,
+  "ev": "23-24 Zebre 15 URC st; 24-25 Zebre 10 st, ARG 2 caps; 25-26 Racing 12 apps 9 st, ARG 3 caps (FH/FB)",
+  "tags": [
+   "playmaker",
+   "kicker"
+  ],
+  "str": [
+   "pas",
+   "pie",
+   "dec"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ugo Seunes",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": true,
+  "rt": 76,
+  "ev": "23-24 Blagnac Nationale; 24-25 Aurillac ProD2 ~182 pts; 25-26 Racing starter ~165 Top14 pts, FRA squad Nov 2025",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "dec"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Vladi Ashvetia",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2004,
+  "nat": "Georgia",
+  "caps": 2,
+  "recent": false,
+  "rt": 61,
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pas"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Paul Costes",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 73,
+  "ev": "23-24 Toulouse 19 apps 10 st; 24-25 Toulouse 15 Top14 11 st; 25-26 Toulouse 15 apps 10 st; 26-27 Racing",
+  "tags": [
+   "defender",
+   "handler"
+  ],
+  "str": [
+   "tac",
+   "pla",
+   "mai"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Sam James",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1994,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 73,
+  "ev": "23-24 Sale 26 apps 16 st; 24-25 Racing 15 Top14 14 st; 25-26 13 Top14 13 st+3 cup; age 32",
+  "tags": [
+   "defender",
+   "power"
+  ],
+  "str": [
+   "tac",
+   "pui",
+   "pla"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Joseph Manu",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1996,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 77,
+  "ev": "23-24 NRL Roosters/NZ league star; 24-25 Toyota Verblitz 14 apps 6 tries; 25-26 Racing 18 apps 11 st",
+  "tags": [
+   "handler",
+   "finisher",
+   "power"
+  ],
+  "str": [
+   "evi",
+   "mai",
+   "pui"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Josua Tuisova",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1994,
+  "nat": "Fiji",
+  "caps": 35,
+  "recent": true,
+  "rt": 79,
+  "ev": "23-24 FIJ RWC 5 caps; 24-25 Racing 27 apps 25 st, FIJ 4; 25-26 24 Top14 15 st, FIJ 5 caps; age 32",
+  "tags": [
+   "power",
+   "finisher"
+  ],
+  "str": [
+   "pui",
+   "evi",
+   "tac"
+  ],
+  "weak": [
+   "pie",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Vinaya Habosi",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2000,
+  "nat": "Fiji",
+  "caps": 13,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Racing 12 apps, FIJ RWC; 24-25 25 apps 22 st 6 tries; 25-26 23 Top14 17 st 3 tries; no FIJ since 2023",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Wilfried Hulleu",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Grenoble ProD2 16 st; 24-25 Grenoble 21 ProD2 13 tries; 25-26 Racing 15 Top14 12 st 7 tries",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Wame Naituvi",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1996,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 Racing 14 Top14 st 5 tries; 24-25 9 apps (injury); 25-26 9 Top14 7 st 5 tries",
+  "tags": [
+   "power",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "pie",
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Josaia Ralulu",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2005,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 55,
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Selestino Ravutaumada",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1999,
+  "nat": "Fiji",
+  "caps": 14,
+  "recent": true,
+  "rt": 77,
+  "ev": "23-24 Drua 12 st, FIJ RWC 5 caps; 24-25 Drua 8 apps; 25-26 Racing 12 apps 4 tries, FIJ 4 caps 3 tries",
+  "tags": [
+   "pace",
+   "finisher",
+   "power"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "pui"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Max Spring",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2001,
+  "nat": "France",
+  "caps": 1,
+  "recent": false,
+  "rt": 77,
+  "ev": "23-24 Racing 21 apps 18 st; 24-25 23 apps 20 st 3 tries; 25-26 18 Top14 16 st 5 tries; FRA 1 cap 2022",
+  "tags": [
+   "pace",
+   "finisher",
+   "handler"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "mai"
+  ],
+  "weak": [
+   "but"
+  ],
+  "unsure": false
+ }
+]

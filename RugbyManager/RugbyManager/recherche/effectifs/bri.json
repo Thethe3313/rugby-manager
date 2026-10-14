@@ -1,0 +1,918 @@
+[
+{
+"n": "Vakhtang Abdaladze",
+"pos": "PIL",
+"sub": "LH",
+"by": 1996,
+"nat": "Georgia",
+"caps": 3,
+"recent": false,
+"rt": 66,
+"ev": "23-24 BRI 12 apps/7 st; 24-25 11/5; 25-26 11/8; 3 GEO caps 22-23; 2 tries in 3 games 26-27",
+"tags": [
+"scrum"
+],
+"str": [
+"mel",
+"pui"
+],
+"weak": [
+"vit",
+"end"
+]
+},
+{
+"n": "Simon-Pierre Chauvac",
+"pos": "PIL",
+"sub": "LH",
+"by": 2001,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 68,
+"ev": "23-24 Pau T14 8 apps/6 st; 24-25 BRI 20/15; 25-26 BRI 17/13; 26-27 5/3",
+"tags": [
+"scrum"
+],
+"str": [
+"mel",
+"eng"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Louis Mary",
+"pos": "PIL",
+"sub": "LH",
+"by": 2003,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 63,
+"tags": [
+"scrum"
+],
+"str": [
+"mel"
+],
+"weak": [
+"pas"
+]
+},
+{
+"n": "Hugo Reilhes",
+"pos": "PIL",
+"sub": "LH",
+"by": 2005,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 61,
+"tags": [],
+"str": [
+"mel"
+],
+"weak": [
+"sfr"
+]
+},
+{
+"n": "Simoté Moala",
+"pos": "PIL",
+"sub": "LH",
+"by": 2004,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 57,
+"tags": [],
+"str": [
+"pui"
+],
+"weak": [
+"end"
+],
+"unsure": true
+},
+{
+"n": "Francisco Coria Marchetti",
+"pos": "PIL",
+"sub": "TH",
+"by": 2000,
+"nat": "Argentina",
+"caps": 10,
+"recent": true,
+"rt": 74,
+"ev": "ARG debut 7/24; 24-25 6 caps (4 RC, 2 st); 25-26 2 caps; BRI impact sub 21/2, 16/3, 12/1; 26-27 3 st",
+"tags": [
+"scrum",
+"power"
+],
+"str": [
+"mel",
+"pui",
+"eng"
+],
+"weak": [
+"end"
+]
+},
+{
+"n": "Marcel van der Merwe",
+"pos": "PIL",
+"sub": "TH",
+"by": 1990,
+"nat": "South Africa",
+"caps": 3,
+"recent": false,
+"rt": 69,
+"ev": "23-24 BRI 26 apps/23 st; 24-25 25/21, 6 tries; 25-26 9 st; ex-Bok, ex-Toulon/LR; age 36",
+"tags": [
+"scrum"
+],
+"str": [
+"mel",
+"pui",
+"sfr"
+],
+"weak": [
+"vit",
+"end"
+]
+},
+{
+"n": "Christian Judge",
+"pos": "PIL",
+"sub": "TH",
+"by": 1997,
+"nat": "England",
+"caps": 0,
+"recent": false,
+"rt": 70,
+"ev": "23-24 Saracens 8 Prem st + 4 CC st; 24-25 Béziers 20/15; 25-26 Béziers 24/17; 26-27 BRI 4/1",
+"tags": [
+"scrum"
+],
+"str": [
+"mel",
+"pui"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "John-Henry Fincham",
+"pos": "PIL",
+"sub": "TH",
+"by": 2000,
+"nat": "South Africa",
+"caps": 0,
+"recent": false,
+"rt": 59,
+"tags": [],
+"str": [
+"mel"
+],
+"weak": [
+"end"
+],
+"unsure": true
+},
+{
+"n": "Zaccharie Affane",
+"pos": "PIL",
+"sub": "TH",
+"by": 2004,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 62,
+"tags": [
+"scrum"
+],
+"str": [
+"mel",
+"pui"
+],
+"weak": [
+"sfr"
+]
+},
+{
+"n": "Yanis Charcosset",
+"pos": "TAL",
+"sub": "TAL",
+"by": 2004,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 67,
+"tags": [
+"finisher"
+],
+"str": [
+"evi",
+"mai"
+],
+"weak": [
+"tou"
+]
+},
+{
+"n": "Lucas Da Silva",
+"pos": "TAL",
+"sub": "TAL",
+"by": 1999,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 67,
+"tags": [
+"finisher"
+],
+"str": [
+"eng",
+"pui"
+],
+"weak": [
+"tou"
+]
+},
+{
+"n": "Quentin Algay",
+"pos": "TAL",
+"sub": "TAL",
+"by": 2004,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 54,
+"tags": [],
+"str": [
+"eng"
+],
+"weak": [
+"tou",
+"sfr"
+],
+"unsure": true
+},
+{
+"n": "Irné Herbst",
+"pos": "2L",
+"sub": "2L",
+"by": 1995,
+"nat": "South Africa",
+"caps": 0,
+"recent": false,
+"rt": 71,
+"ev": "23-24 Quins 19 apps/10 st (CC); 24-25 Quins 18/9; 25-26 BRI 8/6; starting lock 26-27",
+"tags": [
+"lineout",
+"workrate"
+],
+"str": [
+"tou",
+"eng",
+"tac"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Konstantine Mikautadze",
+"pos": "2L",
+"sub": "2L",
+"by": 1991,
+"nat": "Georgia",
+"caps": 77,
+"recent": true,
+"rt": 72,
+"ev": "23-24 Bayonne 10 apps + GEO RWC 4 st; 24-25 BRI 26/10; 25-26 BRI 21/12 + 2 GEO caps; age 35",
+"tags": [
+"power",
+"lineout"
+],
+"str": [
+"pui",
+"tou",
+"lea"
+],
+"weak": [
+"vit",
+"end"
+]
+},
+{
+"n": "Alexandre Ricard",
+"pos": "2L",
+"sub": "2L",
+"by": 1999,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 67,
+"tags": [
+"lineout"
+],
+"str": [
+"tou",
+"eng"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Teun Karst",
+"pos": "2L",
+"sub": "2L",
+"by": 2005,
+"nat": "Netherlands",
+"caps": 0,
+"recent": false,
+"rt": 58,
+"tags": [],
+"str": [
+"tou"
+],
+"weak": [
+"pui"
+],
+"unsure": true
+},
+{
+"n": "Régis Omby",
+"pos": "2L",
+"sub": "2L",
+"by": 2005,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 53,
+"tags": [],
+"str": [
+"pui"
+],
+"weak": [
+"tou",
+"dec"
+],
+"unsure": true
+},
+{
+"n": "Henco Venter",
+"pos": "3L",
+"sub": "N8",
+"by": 1992,
+"nat": "South Africa",
+"caps": 2,
+"recent": false,
+"rt": 73,
+"ev": "23-24 Glasgow 21 apps/13 st (URC champs); 24-25 Glasgow 13/8, 4 tries; 25-26 BRI 7 st (injury); 26-27 starter",
+"tags": [
+"power",
+"defender"
+],
+"str": [
+"tac",
+"rck",
+"pui"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Yann Peysson",
+"pos": "3L",
+"sub": "N8",
+"by": 2002,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 67,
+"tags": [
+"workrate"
+],
+"str": [
+"eng",
+"pui"
+],
+"weak": [
+"pie"
+]
+},
+{
+"n": "Taniela Sadrugu",
+"pos": "3L",
+"sub": "N8",
+"by": 1998,
+"nat": "Fiji",
+"caps": 0,
+"recent": false,
+"rt": 64,
+"tags": [
+"power"
+],
+"str": [
+"pui",
+"evi"
+],
+"weak": [
+"pla"
+]
+},
+{
+"n": "Retief Marais",
+"pos": "3L",
+"sub": "FL",
+"by": 1996,
+"nat": "South Africa",
+"caps": 0,
+"recent": false,
+"rt": 68,
+"tags": [
+"workrate"
+],
+"str": [
+"eng",
+"tac",
+"rck"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Anthony Coletta",
+"pos": "3L",
+"sub": "FL",
+"by": 1992,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 66,
+"tags": [
+"defender"
+],
+"str": [
+"tac",
+"tou"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Sasha Gué",
+"pos": "3L",
+"sub": "FL",
+"by": 2002,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 65,
+"tags": [
+"workrate"
+],
+"str": [
+"eng"
+],
+"weak": []
+},
+{
+"n": "Lucas Oudard",
+"pos": "3L",
+"sub": "FL",
+"by": 2003,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 67,
+"tags": [
+"workrate"
+],
+"str": [
+"eng",
+"rck"
+],
+"weak": []
+},
+{
+"n": "Samuel Maximin",
+"pos": "3L",
+"sub": "FL",
+"by": 2003,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 62,
+"tags": [],
+"str": [
+"eng"
+],
+"weak": []
+},
+{
+"n": "Geoffrey Malaterre",
+"pos": "3L",
+"sub": "FL",
+"by": 2004,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 60,
+"tags": [],
+"str": [
+"eng"
+],
+"weak": [
+"sfr"
+]
+},
+{
+"n": "David Geneste",
+"pos": "3L",
+"sub": "FL",
+"by": 2005,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 54,
+"tags": [],
+"str": [
+"eng"
+],
+"weak": [
+"pui"
+],
+"unsure": true
+},
+{
+"n": "John Cooney",
+"pos": "DM",
+"sub": "DM",
+"by": 1990,
+"nat": "Ireland",
+"caps": 12,
+"recent": false,
+"rt": 77,
+"ev": "23-24 Ulster 20 apps/16 st; 24-25 Ulster 10/4; 25-26 BRI 16/14, 58 pts; starts all 26-27; age 36",
+"tags": [
+"playmaker",
+"kicker"
+],
+"str": [
+"pas",
+"pie",
+"but",
+"dec"
+],
+"weak": [
+"vit",
+"tac"
+]
+},
+{
+"n": "Maxime Sidobre",
+"pos": "DM",
+"sub": "DM",
+"by": 2003,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 62,
+"tags": [
+"pace"
+],
+"str": [
+"vit",
+"pas"
+],
+"weak": [
+"pie"
+]
+},
+{
+"n": "Mathis Galthié",
+"pos": "DM",
+"sub": "DM",
+"by": 2003,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 61,
+"tags": [],
+"str": [
+"pas"
+],
+"weak": [
+"pie"
+]
+},
+{
+"n": "Mathéo Guyon",
+"pos": "DM",
+"sub": "DM",
+"by": 2006,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 50,
+"tags": [],
+"str": [
+"pas"
+],
+"weak": [
+"pui"
+],
+"unsure": true
+},
+{
+"n": "Jamie Shillcock",
+"pos": "OUV",
+"sub": "OUV",
+"by": 1999,
+"nat": "England",
+"caps": 0,
+"recent": false,
+"rt": 74,
+"ev": "23-24 Leicester 25 apps/12 st; 24-25 Leicester 21/8 + England A; 25-26 BRI 22/21, 187 pts",
+"tags": [
+"kicker",
+"playmaker"
+],
+"str": [
+"but",
+"pie",
+"pas",
+"dec"
+],
+"weak": [
+"tac",
+"pui"
+]
+},
+{
+"n": "Leny Broncan",
+"pos": "OUV",
+"sub": "OUV",
+"by": 2006,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 57,
+"tags": [],
+"str": [
+"pas"
+],
+"weak": [
+"tac"
+],
+"unsure": true
+},
+{
+"n": "Stuart Olding",
+"pos": "CEN",
+"sub": "CEN",
+"by": 1993,
+"nat": "Ireland",
+"caps": 2,
+"recent": false,
+"rt": 70,
+"ev": "23-24 BRI 20 apps/19 st, 69 pts; 24-25 16/13; 25-26 13/12; 2 IRL caps (2014-15); age 33",
+"tags": [
+"handler",
+"playmaker"
+],
+"str": [
+"pas",
+"mai",
+"dec"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Nic Krone",
+"pos": "CEN",
+"sub": "CEN",
+"by": 2004,
+"nat": "South Africa",
+"caps": 0,
+"recent": false,
+"rt": 66,
+"tags": [
+"defender"
+],
+"str": [
+"tac"
+],
+"weak": []
+},
+{
+"n": "Gatien Massé",
+"pos": "CEN",
+"sub": "CEN",
+"by": 2005,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 69,
+"ev": "Ex-France U20; Mont-de-Marsan 23/15, 24/18 (6 tries), 20/18; 26-27 BRI 5 st, 3 tries",
+"tags": [
+"finisher"
+],
+"str": [
+"evi",
+"vit"
+],
+"weak": [
+"pie"
+]
+},
+{
+"n": "Etonia Bainivalu",
+"pos": "CEN",
+"sub": "CEN",
+"by": 2001,
+"nat": "Fiji",
+"caps": 0,
+"recent": false,
+"rt": 66,
+"tags": [
+"power"
+],
+"str": [
+"pui",
+"evi"
+],
+"weak": [
+"pie"
+]
+},
+{
+"n": "Georges Shvelidze",
+"pos": "CEN",
+"sub": "CEN",
+"by": 2007,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 57,
+"tags": [],
+"str": [
+"pui"
+],
+"weak": [
+"dec"
+],
+"unsure": true
+},
+{
+"n": "Victor Rayeur",
+"pos": "CEN",
+"sub": "CEN",
+"by": 2005,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 54,
+"tags": [],
+"str": [
+"tac"
+],
+"weak": [
+"dec"
+],
+"unsure": true
+},
+{
+"n": "Geoffrey Cros",
+"pos": "AIL",
+"sub": "AIL",
+"by": 2000,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 68,
+"tags": [
+"finisher",
+"pace"
+],
+"str": [
+"vit",
+"evi"
+],
+"weak": [
+"tac"
+]
+},
+{
+"n": "Julien Tisseron",
+"pos": "AIL",
+"sub": "AIL",
+"by": 1999,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 70,
+"ev": "23-24 MHR T14 18 apps/15 st; 24-25 MHR 7/5; 25-26 BRI 15/14",
+"tags": [
+"pace",
+"handler"
+],
+"str": [
+"vit",
+"mai",
+"pla"
+],
+"weak": []
+},
+{
+"n": "Asaeli Tuivuaka",
+"pos": "AIL",
+"sub": "AIL",
+"by": 2000,
+"nat": "Fiji",
+"caps": 0,
+"recent": false,
+"rt": 67,
+"tags": [
+"pace",
+"power"
+],
+"str": [
+"pui",
+"evi",
+"vit"
+],
+"weak": [
+"pla"
+]
+},
+{
+"n": "Benjamin Lefranc",
+"pos": "AIL",
+"sub": "AIL",
+"by": 2005,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 64,
+"tags": [
+"finisher"
+],
+"str": [
+"vit"
+],
+"weak": []
+},
+{
+"n": "Lewis Noon",
+"pos": "AIL",
+"sub": "AIL",
+"by": 2005,
+"nat": "England",
+"caps": 0,
+"recent": false,
+"rt": 54,
+"tags": [],
+"str": [
+"vit"
+],
+"weak": [
+"pui"
+],
+"unsure": true
+},
+{
+"n": "Aymeric Luc",
+"pos": "ARR",
+"sub": "ARR",
+"by": 1998,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 74,
+"ev": "23-24 Toulon T14 7 st; 24-25 Pau T14 13 st, 3 tries; 25-26 Pau 8 st (incl CC); BRI starter 26-27, 2 tries",
+"tags": [
+"handler",
+"pace"
+],
+"str": [
+"evi",
+"vit",
+"pla"
+],
+"weak": [
+"pie"
+]
+}
+]

@@ -1,0 +1,991 @@
+[
+ {
+  "n": "Zack Gauthier",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 FCG 13 apps/9 st + access match; 24-25 24/12 st; 25-26 19/12; 26-27 4/2",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Sascha Mistrulli",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2005,
+  "nat": "Italy",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "ev": "FRA U20 23-24 then ITA U20 24-25; 25-26 FCG 14 apps/6 st, 2 tries; 26-27 4/1",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Éli Églaine",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "FRA U20 2019; 23-24 FCG 21/11 st; 24-25 12/4; 25-26 5/3; 26-27 1 app",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Théo Lavoine",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 55,
+  "ev": "24-25 FCG 4 apps off bench; 25-26 7/1 st; 26-27 1 app",
+  "tags": [],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Giorgi Pertaia",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "Georgia",
+  "caps": 1,
+  "recent": true,
+  "rt": 64,
+  "ev": "23-24 Chambéry Nat 22/19 st; 24-25 FCG 14/4; 25-26 16/9 + GEO 1 cap (Nations Cup); 26-27 4/3",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Johannes Jonker",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1994,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 Bath Prem 5/2 + Prem Cup; 24-25 FCG 15/11 st + access match; 25-26 15/6; 26-27 1 app",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Cody Thomas",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1996,
+  "nat": "Portugal",
+  "caps": 16,
+  "recent": true,
+  "rt": 64,
+  "ev": "23-24 Rouen 27/18 st + POR 1 cap; 24-25 FCG 25/8; 25-26 22/6 + POR 11 caps; ~16 POR caps",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "end"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Tommy Raynaud",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1994,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "Loosehead. 23-24 Oyonnax T14 21/19 st; 24-25 FCG 20/13 st; 25-26 no apps recorded (absent); 26-27 not yet",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Bastien Soury",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1995,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 Biarritz 11/3 st; 24-25 FCG 16/8; 25-26 20/11, 5 tries; 26-27 6/4; extended to 2028",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lilian Rossi",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 FCG 10/3 st; 24-25 15/8; 25-26 17/11; 26-27 3/1, 2 tries",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "tou"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Romain Ruffenach",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1994,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "23-24 Pau T14 11/3 + 4 CC st; 24-25 Pau T14 19/7, 3 tries; 25-26 FCG 13/4; age 32",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jérémy Toevalu",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "ev": "25-26 Toulon T14 3 + CC 2 apps off bench, FCG 2; 26-27 FCG 3 apps off bench",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Manuel Leindekar",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "Uruguay",
+  "caps": 31,
+  "recent": true,
+  "rt": 71,
+  "ev": "23-24 Bayonne T14 7/2 + CC 3 + URU RWC; 24-25 Oyo PD2 19/12 + URU 8 caps; 25-26 Oyo 14/6 + URU 2; ~31 caps",
+  "tags": [
+   "lineout",
+   "defender"
+  ],
+  "str": [
+   "tou",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "James Fender",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2001,
+  "nat": "Wales",
+  "caps": 0,
+  "recent": true,
+  "rt": 68,
+  "ev": "23-24 Ospreys URC 8/5; 24-25 URC 7/6 + Chall 4/3; 25-26 URC 8/4 + Chall 4/3, Wales squad Nov 25 (no cap)",
+  "tags": [
+   "lineout",
+   "power"
+  ],
+  "str": [
+   "tou",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Fergus Lee-Warner",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Waratahs SR 12/8 + Bath Prem 6/4; 24-25 Waratahs 3/3; 25-26 Newcastle Prem 6/5; 26-27 FCG 4/4",
+  "tags": [
+   "workrate",
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Cameron Holt",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "24-25 FCG 3/1; 25-26 FCG 19/14 st; 26-27 3/2",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Brandon Nansen",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "Samoa",
+  "caps": 2,
+  "recent": false,
+  "rt": 62,
+  "ev": "23-24 FCG 12/7 st; 24-25 9/4 + access match st; 25-26 18/7; Samoa 2 caps (2017)",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Tristan Labouteley",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1995,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 USAP T14 8/5 + Chall 3; 24-25 USAP T14 10/9; 25-26 FCG 10/8; 26-27 2 apps",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Josh Thompson",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2004,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "24-25 W. Force SR 2 apps; 25-26 FCG 11/8 st (lock/blindside); 26-27 3/3",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Antonin Berruyer",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 FCG 19/13 st; 24-25 18/15 + access match; 25-26 19/16 st; 26-27 6/5; mostly blindside",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "end"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Baptiste Abescat",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 Narbonne Nat 19/14; 24-25 Béziers 20/8; 25-26 Béziers 23/13; 26-27 FCG 4/2",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "rck"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Steven David",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1995,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 Nevers 12/9 st; 24-25 13/8; 25-26 16/12; 26-27 FCG 3/2; mostly openside",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "rck",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Otunuku Pauta",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1999,
+  "nat": "Tonga",
+  "caps": 1,
+  "recent": true,
+  "rt": 68,
+  "ev": "23-24 Béziers 19/13; 24-25 15/11, 6 tries; 25-26 20/18 + TGA 1 cap; 26-27 FCG 6/3, 3 tries",
+  "tags": [
+   "power",
+   "handler"
+  ],
+  "str": [
+   "pui",
+   "mai",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Mathis Baret",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "FRA U20 2025; 24-25 FCG 5/2; 25-26 23 apps/15 st (mostly N8); 26-27 1 st, 1 try",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Victor Guillaumond",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "23-24 FCG 6/2; 24-25 17/11 st + access match; 25-26 8/7; mostly openside",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "rck"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Barnabé Couilloud",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 FCG 29/13 st + access match; 24-25 21/12, 5 tries; 25-26 23/16, 4 tries; 26-27 6/4",
+  "tags": [
+   "pace",
+   "playmaker"
+  ],
+  "str": [
+   "pas",
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Max Clément",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "Fly-half. 23-24 FCG 19/5; 24-25 14/4, 24 pts; 25-26 18/8, 21 pts; 26-27 3/2, 1 try",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "pie",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Eric Escande",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1992,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 FCG 20/15 st; 24-25 20/12; 25-26 20/10, 3 tries; long-serving FCG 9",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "pas",
+   "pie"
+  ],
+  "weak": [
+   "vit",
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lucas Berti",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2004,
+  "nat": "Chile",
+  "caps": 9,
+  "recent": true,
+  "rt": 59,
+  "ev": "Montpellier espoir; 25-26 Selknam (SRA); Chile 9 caps (5 in 24-25, 3 in 25-26); new at FCG",
+  "tags": [],
+  "str": [
+   "pas",
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Sam Davies",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1993,
+  "nat": "Wales",
+  "caps": 8,
+  "recent": false,
+  "rt": 72,
+  "ev": "23-24 FCG 20/19 st, 175 pts; 24-25 16/14, 153 pts + access; 25-26 1 app (illness); 26-27 15 pts; Wales 8",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas",
+   "dec"
+  ],
+  "weak": [
+   "vit",
+   "tac"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Marc Palmier",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 Aurillac 23/21 st; 24-25 FCG 20/10, 66 pts; 25-26 15/11, 44 pts; 26-27 3/2, 23 pts",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "but",
+   "pie"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Maël Navizet",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2007,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "ev": "25-26 FCG 7 apps/5 st at 18; 26-27 1 st",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Julien Hériteau",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1994,
+  "nat": "France",
+  "caps": 1,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Clermont T14 14/9 + Chall 4/3; 24-25 FCG 18/11, 3 tries; 25-26 15/9; FRA 1 cap (2021)",
+  "tags": [
+   "defender",
+   "power"
+  ],
+  "str": [
+   "tac",
+   "pui",
+   "pla"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lalomilo Lalomilo",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2000,
+  "nat": "Samoa",
+  "caps": 6,
+  "recent": true,
+  "rt": 69,
+  "ev": "23-24 SAM 4 caps (PNC); 24-25 Moana Pasifika SR 11/10 + BoP NPC; 25-26 Moana 6/4 + SAM 2; 26-27 FCG 3 st",
+  "tags": [
+   "power",
+   "handler"
+  ],
+  "str": [
+   "pui",
+   "evi",
+   "mai"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Eddie Sawailau",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1996,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 USAP T14 3 st + Chall 3; 24-25 Oyo PD2 15/6; 25-26 Oyo 19/13, 6 tries; 26-27 FCG 6/3",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Romain Fusier",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 FCG 21/14 st; 24-25 21/18, 4 tries + access; 25-26 15/9; 26-27 5/5; ex-FRA U20",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pla"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Gerswin Mouton",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2001,
+  "nat": "Namibia",
+  "caps": 5,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 NAM RWC 3 st, 2 tries; 24-25 FCG 19/16 st, 7 tries (mostly wing); 25-26 2 apps (absent); 26-27 none",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Corentin Peccaud",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 53,
+  "ev": "26-27 FCG 1 app off bench; espoir",
+  "tags": [],
+  "str": [
+   "tac"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Raffaele Costa Storti",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2001,
+  "nat": "Portugal",
+  "caps": 33,
+  "recent": true,
+  "rt": 74,
+  "ev": "23-24 Béziers 19 st, 15 tries + POR RWC; 24-25 Stade Fr 2 apps + POR 4; 25-26 FCG 16/14, 8 tries + POR 6",
+  "tags": [
+   "finisher",
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie",
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lucas Tauzin",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 Toulouse T14 14/11, 4 tries; 24-25 Clermont T14 12/11 + CC 3/2; 25-26 Clermont 6/5 (injured); 26-27 FCG",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Nadir Megdoud",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 Bayonne T14 4/3 + CC 2; 24-25 Bayonne 4/4 + Chall 3; 25-26 FCG 6/5 + Bayonne 1; 26-27 2 st",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Aurélien Callandret",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 Bayonne T14 13/8, 4 tries + CC 2; 24-25 Bayonne 5/5; 25-26 FCG 8/5; 26-27 2 st",
+  "tags": [
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Nathan Coutin",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2007,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "ev": "26-27 FCG 3 starts on left wing at 19; espoir",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Thomas Alary",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Toulouse espoir: 24-25 T14 2/1, 25-26 1 st; 26-27 FCG 3/2 at fullback",
+  "tags": [],
+  "str": [
+   "vit",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Hugo Trouilloud",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "FRA U20 2023; 23-24 FCG 9/5; 24-25 14/12 + access match; 25-26 23/20, 4 tries; 26-27 2 st",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "pla",
+   "pie"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ }
+]

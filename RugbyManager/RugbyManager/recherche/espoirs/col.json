@@ -1,0 +1,200 @@
+[
+ {
+  "n": "Farell Delourmel",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2004,
+  "nat": "France",
+  "u20": false,
+  "rt": 59,
+  "pot": 68,
+  "unsure": false
+ },
+ {
+  "n": "Guillaume Laffont",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 54,
+  "pot": 70,
+  "unsure": false
+ },
+ {
+  "n": "Natan Culinat",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 54,
+  "pot": 67,
+  "unsure": false
+ },
+ {
+  "n": "Mathis Grangier",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 54,
+  "pot": 66,
+  "unsure": false
+ },
+ {
+  "n": "Gabin Galy",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 53,
+  "pot": 67,
+  "unsure": false
+ },
+ {
+  "n": "Clovis Chizat",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 66,
+  "unsure": false
+ },
+ {
+  "n": "Arthur Cros",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 64,
+  "unsure": false
+ },
+ {
+  "n": "Baptiste Zueras",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 53,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Eliott Duthil",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Valentin Barret",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 64,
+  "unsure": true
+ },
+ {
+  "n": "Valentin Templin",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 51,
+  "pot": 64,
+  "unsure": true
+ },
+ {
+  "n": "Maxime Dunac",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 65,
+  "unsure": false
+ },
+ {
+  "n": "Antoine Worczynski",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 50,
+  "pot": 66,
+  "unsure": false
+ },
+ {
+  "n": "Alizio Iglesias",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 50,
+  "pot": 65,
+  "unsure": false
+ },
+ {
+  "n": "Romain Perrier",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": false
+ },
+ {
+  "n": "Samuel Le Saux",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 64,
+  "unsure": true
+ },
+ {
+  "n": "Fernando Larios",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2008,
+  "nat": "Spain",
+  "u20": false,
+  "rt": 46,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Damien Lam",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2008,
+  "nat": "France",
+  "u20": false,
+  "rt": 46,
+  "pot": 64,
+  "unsure": true
+ }
+]

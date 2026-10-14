@@ -1,0 +1,167 @@
+[
+ {
+  "n": "Maxence Biasotto",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2004,
+  "nat": "France",
+  "u20": true,
+  "rt": 60,
+  "pot": 71,
+  "unsure": false
+ },
+ {
+  "n": "Anri Shvelidze",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2006,
+  "nat": "Georgia",
+  "u20": false,
+  "rt": 54,
+  "pot": 70,
+  "unsure": false
+ },
+ {
+  "n": "Guerlain Villuendas",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 53,
+  "pot": 68,
+  "unsure": true
+ },
+ {
+  "n": "Baptiste Peyramard",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 53,
+  "pot": 67,
+  "unsure": false
+ },
+ {
+  "n": "Abdou-Aziz Diouf",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 51,
+  "pot": 68,
+  "unsure": true
+ },
+ {
+  "n": "Issa Mendy",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 51,
+  "pot": 68,
+  "unsure": true
+ },
+ {
+  "n": "Luke Griffiths",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2006,
+  "nat": "England",
+  "u20": false,
+  "rt": 52,
+  "pot": 67,
+  "unsure": false
+ },
+ {
+  "n": "Nathan Claassen",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2006,
+  "nat": "South Africa",
+  "u20": false,
+  "rt": 52,
+  "pot": 66,
+  "unsure": false
+ },
+ {
+  "n": "Noah Brown",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2007,
+  "nat": "England",
+  "u20": false,
+  "rt": 50,
+  "pot": 67,
+  "unsure": false
+ },
+ {
+  "n": "Bastien Massé",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 66,
+  "unsure": false
+ },
+ {
+  "n": "Antonin Claux",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2008,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 70,
+  "unsure": false
+ },
+ {
+  "n": "Mattin Laurent",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2008,
+  "nat": "France",
+  "u20": false,
+  "rt": 48,
+  "pot": 68,
+  "unsure": false
+ },
+ {
+  "n": "Youssef El Bouhali",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2008,
+  "nat": "Morocco",
+  "u20": false,
+  "rt": 47,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Noa Sage-Aymard",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2008,
+  "nat": "France",
+  "u20": false,
+  "rt": 47,
+  "pot": 66,
+  "unsure": false
+ },
+ {
+  "n": "Ollie Hull",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2007,
+  "nat": "England",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": false
+ }
+]

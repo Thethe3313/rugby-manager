@@ -1,0 +1,211 @@
+[
+ {
+  "n": "Juan Martín Montilla",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2007,
+  "nat": "Argentina",
+  "u20": true,
+  "rt": 56,
+  "pot": 79,
+  "unsure": true
+ },
+ {
+  "n": "Nohem Ez Zahouani",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 55,
+  "pot": 73,
+  "unsure": false
+ },
+ {
+  "n": "Louis Vermeulen",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 53,
+  "pot": 72,
+  "unsure": false
+ },
+ {
+  "n": "Antoine Chalus-Cercy",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2005,
+  "nat": "France",
+  "u20": true,
+  "rt": 56,
+  "pot": 70,
+  "unsure": true
+ },
+ {
+  "n": "Raphaël Payrastre",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Dimitri Emery",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Cédric Atlan",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Tristan Olivier",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Hendro Hattingh",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2008,
+  "nat": "England",
+  "u20": false,
+  "rt": 47,
+  "pot": 68,
+  "unsure": true
+ },
+ {
+  "n": "Nico Jones",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2008,
+  "nat": "England",
+  "u20": false,
+  "rt": 47,
+  "pot": 68,
+  "unsure": true
+ },
+ {
+  "n": "Andrea Foiama-Crespo",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2009,
+  "nat": "France",
+  "u20": false,
+  "rt": 45,
+  "pot": 69,
+  "unsure": true
+ },
+ {
+  "n": "Noann Lavail",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2009,
+  "nat": "France",
+  "u20": false,
+  "rt": 45,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Enzo Voisset",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2008,
+  "nat": "France",
+  "u20": false,
+  "rt": 47,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Scott Barre",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2008,
+  "nat": "France",
+  "u20": false,
+  "rt": 47,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Ilan Cusin",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2009,
+  "nat": "France",
+  "u20": false,
+  "rt": 45,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Sione Lamelangi",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2009,
+  "nat": "France",
+  "u20": false,
+  "rt": 45,
+  "pot": 68,
+  "unsure": true
+ },
+ {
+  "n": "Émilien Verdier",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Mathis Rougerie",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Ethan François",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2009,
+  "nat": "France",
+  "u20": false,
+  "rt": 45,
+  "pot": 67,
+  "unsure": true
+ }
+]

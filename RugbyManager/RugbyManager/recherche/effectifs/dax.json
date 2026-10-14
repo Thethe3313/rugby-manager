@@ -1,0 +1,866 @@
+[
+ {
+  "n": "Raphaël Laboille",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "24-25 Dax 8 apps; 25-26 24 apps/2 tries; 26-27 starting LH 5 apps; extended to 2030",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Thibaud Dréan",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1992,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "ex-Carcassonne; 24-25 Dax 8 apps; 25-26 22 apps (824 min); 26-27 5 apps, 1 try",
+  "tags": [],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Nephi Leatigaga",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1994,
+  "nat": "Samoa",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "24-25 Dax 18 apps; 25-26 25 apps/3 tries; 26-27 starting TH; 193cm/149kg",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Diogo Hasse Ferreira",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1998,
+  "nat": "Portugal",
+  "caps": 32,
+  "recent": true,
+  "rt": 67,
+  "ev": "23-24 Dax 18 apps/9 st + RWC23 4 games; 24-25 21/15 st, POR 8 tests; 25-26 14 apps/2 st, REC 5",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "David Lolohea",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1992,
+  "nat": "Tonga",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "24-25 Dax 27 apps/5 tries; 25-26 24 apps/5 tries; 26-27 6 apps; contract extended",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "mel"
+  ],
+  "weak": [
+   "end",
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Louis Barrère",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "24-25 Dax 24 apps; 25-26 23 apps; 26-27 5 apps, starting hooker",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ian Boubila",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "23-24 Top 14 11 apps; 24-25 Pro D2 7 apps; 25-26 Dax 10 apps/3 tries; 26-27 started R6",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "tou"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Paul Laperne",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "Dax academy; 24-25 4 apps; 25-26 13 apps (440 min); 26-27 5 apps, 2 tries",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Maxime Casenave",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 52,
+  "ev": "26-27 Pro D2 debut, 1 app (21 min)",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "tou",
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Charlie Matthews",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1991,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "ex-Quins/Wasps, England Saxons; 23-24 Biarritz 21/18 st; 24-25 10/7 st; 25-26 Dax 18/16 st; age 35",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "lea",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ratu Nacika",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "24-25 Dax 13 apps; 25-26 14 apps/3 tries; 26-27 5 apps/3 tries, starter; extended to 2030",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Brice Ferrer",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "Spain",
+  "caps": 8,
+  "recent": true,
+  "rt": 66,
+  "ev": "Spain caps (REC 2024 x3, REC 2025); 24-25 Dax 23 apps; 25-26 21 apps; 26-27 4 apps",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jean-Baptiste Singer",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1995,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "24-25 Dax 25 apps/7 tries (1779 min); 25-26 10 apps; 26-27 2 apps; 199cm/132kg",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "tou"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Etienne Loiret",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "24-25 Dax 23 apps; 25-26 15 apps (538 min); 26-27 4 apps off bench",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Alexandre Manukula",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "ex-Toulouse/Bayonne/Montauban; 24-25 Dax 10 apps; 25-26 7 apps; 26-27 2 apps",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Théo Mercadier",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "ev": "Toulouse-trained; 25-26 Albi (Nationale); arrived Dax 2026; 2.00m/110kg",
+  "tags": [],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Jean-Baptiste Barrère",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1990,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "ex-Béziers; 24-25 Dax 20 apps/2 tries; 25-26 21 apps/3 tries (1539 min); 26-27 starter; age 36",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "eng",
+   "tac",
+   "lea"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Arnaud Aletti",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "24-25 Dax 22 apps; 25-26 26 apps (1554 min); 26-27 starting openside; extended to 2030",
+  "tags": [
+   "defender",
+   "workrate"
+  ],
+  "str": [
+   "tac",
+   "rck",
+   "end"
+  ],
+  "weak": [
+   "evi"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Paul Ausset",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "24-25 Dax 21 apps/3 tries (1487 min); 25-26 21 apps/5 tries (1559 min); 26-27 2 tries",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Mateo Lacroix",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "ev": "25-26 Dax 7 apps (304 min); 26-27 3 apps, started R6",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Sam Wasley",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1995,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "ex-Manawatu; 24-25 Dax 9 apps; 25-26 15 apps/2 tries; 26-27 4 apps/1 try; 126kg",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Malo Hannoyer",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "ev": "24-25 Dax 2 apps; 25-26 5 apps/2 tries; 26-27 3 apps (170 min)",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Julien Laveran",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 53,
+  "ev": "Academy; Pro D2 debut Oct 2025; trains with pros 2026-27",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pui",
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Ben Sa'u",
+  "pos": "3L",
+  "sub": "FL",
+  "by": null,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "New arrival 2026-27; no Pro D2 stats yet; 190cm/125kg",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Sylvère Réteau",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Dax 19/15 st; 24-25 20/15 st; 25-26 25/17 st; 26-27 starting 9; extended to 2027",
+  "tags": [],
+  "str": [
+   "pas",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Paul Ravier",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "24-25 Dax 28 apps (1114 min); 25-26 29 apps (1100 min); impact 9 off bench",
+  "tags": [],
+  "str": [
+   "pas",
+   "vit"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Xan Mariluz",
+  "pos": "DM",
+  "sub": "DM",
+  "by": null,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 54,
+  "ev": "26-27 first Pro D2 apps: 2 (76 min), 1 try assist",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Romuald Séguy",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Dax 29 apps/136 pts; 24-25 27 apps/196 pts; 25-26 22 apps/120 pts; 26-27 63 pts in 5",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hugo Cerisier",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "24-25 Dax 24 apps/99 pts; 25-26 30 apps/122 pts; 26-27 3 apps; utility 10/15",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "but",
+   "pie"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Mathys Pardies",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 53,
+  "ev": "Academy fly-half; debut Oct 2025; trains with pros 2026-27",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pui",
+   "sfr"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Jope Naseara",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2003,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "ex-Fiji U20; 24-25 Dax 8 apps; 25-26 22 apps/9 tries; 26-27 3 tries, starting 12",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "evi",
+   "vit",
+   "pui"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Bastien Daguerre",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "24-25 Dax 19 apps/2 tries; 25-26 22 apps/2 tries; 26-27 5 apps/2 tries, starter",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pla"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Benjamin Puntous",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "24-25 Dax 21 apps (1073 min); 25-26 16 apps/3 tries (934 min); 26-27 5 apps",
+  "tags": [],
+  "str": [
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hugo Fourquet",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "ex-Bayonne; 24-25 Dax 15 apps/3 tries; 25-26 10 apps; 185cm/96kg",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Jekope Savou",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": null,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "ev": "25-26 Dax 3 apps; 26-27 2 apps/1 try; 110kg centre",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Maxime Oltmann",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1996,
+  "nat": "Germany",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 Dax 19/14 st; 24-25 20/18 st; 25-26 16-20 apps/15 st, 8 tries; 26-27 3 st",
+  "tags": [],
+  "str": [
+   "vit",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Théo Gatelier",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "24-25 Dax 21 apps/6 tries (1550 min); 25-26 16 apps/5 tries (1269 min); 26-27 2 apps",
+  "tags": [],
+  "str": [
+   "vit",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Louis Couget",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "25-26 Dax 16 apps/2 tries (978 min); 26-27 5 apps/3 tries, starter",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Naïm Ben Alla",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "ex-Toulouse academy; 25-26 Dax 17 apps/3 tries (1238 min); 26-27 2 apps/1 try",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Théo Duprat",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "24-25 Dax 22 apps (1358 min); 25-26 14 apps (962 min); 26-27 5 apps/1 try, starter",
+  "tags": [],
+  "str": [
+   "pla",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Mathys Vigeon",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 54,
+  "ev": "25-26 1 app; 26-27 3 apps (130 min)",
+  "tags": [],
+  "str": [
+   "tac"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ }
+]

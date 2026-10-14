@@ -1,0 +1,984 @@
+[
+ {
+  "n": "Étienne Falgoux",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1993,
+  "nat": "France",
+  "caps": 2,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 T14 17 apps; 24-25 T14 15 + ECC 4; 25-26 T14 11 + ECC 1; 26-27 Nice 4 apps/2 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hayden Thompson-Stringer",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1995,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 SR 9 + T14 4; 24-25 Provence PD2 12 apps; 25-26 Nice Nationale; 26-27 5 apps/3 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jules Martinez",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "ev": "24-25 PD2 8 apps, 1 tr; 26-27 Nice 2 apps/1 st",
+  "tags": [],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Fabio Gonzalez",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 55,
+  "ev": "24-25 Nice PD2 bench; 26-27 1 bench app",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "mel"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Nicolás Ciancio",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2001,
+  "nat": "Argentina",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "24-25 Nice PD2 13 apps; 25-26 Nationale; 26-27 5 apps/4 st at 3",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Farai Mudariki",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1995,
+  "nat": "Zimbabwe",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "Ex-Worcester/Nevers; 24-25 PD2 9 apps; 25-26 Nice Nationale, barrage; 26-27 3 apps/2 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Vazha Kapanadze",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1996,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "Signed 2025 from Bourg-en-Bresse; 25-26 Nice Nationale; no 26-27 matchday apps R1-R6",
+  "tags": [],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Luvuyo Pupuma",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1995,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "ev": "Not in any 26-27 matchday 23 (R1-R6); unverified",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Beau Farrance",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1999,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "ev": "Not in any 26-27 matchday 23 (R1-R6); unverified",
+  "tags": [],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Zinedine Aouad",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "ev": "FRA U20 2024 (6N+WC); UBB 1 T14 app 24-25; 26-27 Nice 4 bench apps",
+  "tags": [],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Clément Martinez",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "24-25 PD2 15 apps, 3 tr; 25-26 PD2 24 apps, 16 tr; 26-27 Nice 5 apps/2 st, 4 tr",
+  "tags": [
+   "finisher"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "tou"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Léo Chauvin",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "Ex-UBB academy, FRA U20 2024; 26-27 Nice first-choice 5 apps/4 st",
+  "tags": [],
+  "str": [
+   "eng",
+   "tou"
+  ],
+  "weak": [
+   "sfr"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Pat Leafa",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1989,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Ex-Rebels; 24-25 Vannes T14 7 + Chal 3; 25-26 Nice Nationale; 26-27 2 bench apps; age 37",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "mel"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Pierre Strippoli",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "ev": "24-25 Nice PD2 starter at 2; not in 26-27 matchday 23s",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "tou"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Baptiste Moreno",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "ev": "Not in any 26-27 matchday 23 (R1-R6); unverified",
+  "tags": [],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Joel Kpoku",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1999,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Lyon T14 20 apps + ECC 3; 24-25 T14 12 + Chal 3; 25-26 T14 3 + ECC 2; 26-27 Nice 4/1",
+  "tags": [
+   "power",
+   "lineout"
+  ],
+  "str": [
+   "pui",
+   "tou"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Adrian Motoc",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1996,
+  "nat": "Romania",
+  "caps": 15,
+  "recent": true,
+  "rt": 67,
+  "ev": "RWC 2023 4 apps; 24-25 Biarritz PD2 13 + ROU REC 3; 25-26 Nice + REC; 26-27 5 st, 2 tr",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Evan Olmstead",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1991,
+  "nat": "Canada",
+  "caps": 25,
+  "recent": true,
+  "rt": 66,
+  "ev": "24-25 PD2 22 apps; 25-26 PD2 24 apps + CAN PNC/Nations Cup; 26-27 Nice 3/1; age 35",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "lea",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Christiaan van der Merwe",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1996,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "24-25 Vannes T14 8 + Chal 2; 25-26 Nice Nationale; 26-27 Nice 5 st",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Iakopo Petelo-Mapu",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1998,
+  "nat": "Samoa",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "25-26 Nice Nationale; 26-27 4 apps/1 st (at 8)",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Thibaud Rey",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "ev": "24-25 Nice PD2 bench lock; no 26-27 apps",
+  "tags": [],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Bastien Berenguel",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1994,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "24-25 Nice PD2 23 apps, 8 tr; 25-26 Nationale; 26-27 5 apps/2 st",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "rck"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lucas Bachelier",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1995,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 T14 9 + Chal 3; 24-25 T14 11 + Chal 2; 25-26 Narbonne Nationale; 26-27 Nice 3 st",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "rck"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hanru Sirgel",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1998,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 URC 14 + Chal 5; 24-25 Currie Cup 7 + Nice PD2 11; 25-26 PD2 12; 26-27 2/1",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Masivesi Dakuwaqa",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1994,
+  "nat": "Fiji",
+  "caps": 2,
+  "recent": false,
+  "rt": 65,
+  "ev": "7s Olympic champ; 23-24 MHR T14 11 + Chal 5; 24-25 Biarritz PD2 10; 25-26 Nice Nat; 26-27 no apps",
+  "tags": [
+   "power",
+   "pace"
+  ],
+  "str": [
+   "pui",
+   "evi",
+   "vit"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Enzo Labadie",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Signed 2025 from Anglet (Nat 2); 25-26 Nice Nationale; 26-27 4 st, 2 tr",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hugo Sarrasin",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "24-25 Nice PD2 14 apps; 25-26 Nationale; 26-27 3 st, 1 tr",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Arthur Vignolles",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "24-25 Nice PD2 12 apps; 25-26 Nationale; 26-27 6 apps/4 st at 8",
+  "tags": [],
+  "str": [
+   "eng",
+   "mai"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Guillaume Rouet",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1988,
+  "nat": "Spain",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 Bayonne T14 16 apps; 24-25 T14 20, 5 tr; 25-26 Nice Nationale; 26-27 2 st; age 38",
+  "tags": [
+   "playmaker"
+  ],
+  "str": [
+   "pas",
+   "pie",
+   "dec"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Théo Idjellidaine",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "24-25 PD2 15 apps; 25-26 PD2 17 apps, 3 tr; 26-27 Nice 6 apps/4 st",
+  "tags": [],
+  "str": [
+   "pas",
+   "vit"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jules Gimbert",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "23-24 T14 9 + ECC 4; 24-25 T14 5 + PD2 11, 3 tr; 26-27 Nice 4 bench apps",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Owen Williams",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1992,
+  "nat": "Wales",
+  "caps": 3,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Ospreys URC 12 + Chal 4; 24-25 URC 10 + Chal 5; 25-26 Nice Nat, barrage; 26-27 no apps",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas"
+  ],
+  "weak": [
+   "vit",
+   "tac"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Flavio Asquini",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "24-25 Nice PD2 8 apps, 46 pts; 25-26 Nationale; 26-27 6 apps/3 st, 22 pts",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "but",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Massimo Ortolan",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 55,
+  "ev": "Signed 2025 from SAXV; 26-27 1 bench app",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Francis Saili",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1991,
+  "nat": "New Zealand",
+  "caps": 2,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 T14 16 + ECC 3; 24-25 Vannes T14 17, 4 tr; 25-26 Vannes PD2 11; 26-27 Nice 3 st; age 35",
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "mai",
+   "pas",
+   "dec"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jean-Pascal Barraque",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1991,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 Perpignan T14 5 + Chal 4; 24-25 T14 3; 25-26 Nice Nat (barrage kicker); 26-27 5/3 at 10, 18 pts",
+  "tags": [
+   "kicker",
+   "handler"
+  ],
+  "str": [
+   "pas",
+   "but",
+   "dec"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Tyler Morgan",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1995,
+  "nat": "Wales",
+  "caps": 10,
+  "recent": false,
+  "rt": 65,
+  "ev": "24-25 Biarritz PD2 15 apps; 25-26 PD2 9 + Nice barrage try; 26-27 4 st at 13, 2 tr",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pla"
+  ],
+  "weak": [
+   "evi"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Bautista Ezcurra",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1995,
+  "nat": "Argentina",
+  "caps": 5,
+  "recent": false,
+  "rt": 66,
+  "ev": "5 ARG caps (2018); 24-25 PD2 6; 25-26 Mont-de-Marsan PD2 26 apps, 4 tr; 26-27 Nice 4/3",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Atila Septar",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1996,
+  "nat": "Romania",
+  "caps": 10,
+  "recent": true,
+  "rt": 62,
+  "ev": "24-25 Nice PD2 12 apps; 25-26 Nationale + ROU test; 26-27 2 apps/1 st",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Baptiste Lafond",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "24-25 Nice PD2 9 apps, 2 tr; 26-27 1 st, 1 tr",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Samuel Bielle-Biarrey",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 52,
+  "ev": "Signed 2026 (younger brother of Louis); no 26-27 matchday apps",
+  "tags": [],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui",
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Vincent Rattez",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1992,
+  "nat": "France",
+  "caps": 9,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 MHR (no data); 24-25 Lyon T14 13, 4 tr + Chal 8, 3 tr; 25-26 T14 3; 26-27 Nice 3/2",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "pla"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Inoke Nalaga",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1998,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "Ex-Agen PD2; 25-26 Nice Nationale; 26-27 2 st",
+  "tags": [
+   "power",
+   "finisher"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Clément Egiziano",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "Utility back from Carcassonne (2025); 25-26 Nice Nat; 26-27 5 st at 14, 3 tr",
+  "tags": [
+   "finisher"
+  ],
+  "str": [
+   "eng",
+   "vit"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Boris Goutard",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "23-24 T14 2 + Chal 3 (as 9); 25-26 Narbonne Nat; 26-27 Nice 3 st at 11/15, 1 tr",
+  "tags": [],
+  "str": [
+   "vit",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Julien Farnoux",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1993,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "24-25 Grenoble PD2 23 apps, 4 tr; 25-26 PD2 18 apps; 26-27 Nice 5 st, 3 tr",
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "pla",
+   "pie",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ }
+]

@@ -1,0 +1,896 @@
+[
+ {
+  "n": "Giorgi Beria",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1999,
+  "nat": "France",
+  "caps": 1,
+  "recent": true,
+  "rt": 74,
+  "ev": "23-24 ASM 10 st T14; 24-25 USAP 16 st, FRA cap v NZ; 25-26 USAP 7 st T14",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Ugo Boniface",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Wayan De Benedittis",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end"
+  ]
+ },
+ {
+  "n": "Hugo Djehi",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Sione Mafileo",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1996,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Santiago Medrano",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1995,
+  "nat": "Argentina",
+  "caps": 30,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Force 10 st; 24-25 Vannes T14 17 st; 25-26 Pro D2 16 st, 3 tries",
+  "tags": [
+   "scrum",
+   "workrate"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Nick Schonert",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1991,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "end",
+   "vit"
+  ]
+ },
+ {
+  "n": "Théo Béziat",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Dave Cherry",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1991,
+  "nat": "Scotland",
+  "caps": 18,
+  "recent": true,
+  "rt": 75,
+  "ev": "23-24 EDI 9 st, RWC; 24-25 SCO 6N 4 apps/3 st; 25-26 Vannes 11 st + SCO 2 caps",
+  "tags": [
+   "lineout",
+   "workrate",
+   "handler"
+  ],
+  "str": [
+   "tou",
+   "mai",
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Hayam El-Bibouji",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Mills Sanerivi",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2002,
+  "nat": "Samoa",
+  "caps": 2,
+  "recent": true,
+  "rt": 69,
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "tou"
+  ]
+ },
+ {
+  "n": "Matias Alemanno",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1992,
+  "nat": "Argentina",
+  "caps": 100,
+  "recent": true,
+  "rt": 81,
+  "ev": "23-24 ARG RWC 7 apps; 24-25 GLO 4 st (injury-hit); 25-26 GLO 19 st incl CC, ARG 4 caps",
+  "tags": [
+   "lineout",
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "pui",
+   "lea"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Thomas Geffré",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Edoardo Iachizzi",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1999,
+  "nat": "Italy",
+  "caps": 3,
+  "recent": false,
+  "rt": 66,
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Eric Marks",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "Germany",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Timothé Mézou",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Thomas Ployet",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "dec"
+  ]
+ },
+ {
+  "n": "Simon Augry",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "tac"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Steeve Blanc-Mappaz",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Léon Boulier",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Rudi Brown",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2002,
+  "nat": "Scotland",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Joe Edwards",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1996,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "tags": [
+   "workrate",
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Francisco Gorrissen",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1994,
+  "nat": "Argentina",
+  "caps": 2,
+  "recent": false,
+  "rt": 73,
+  "ev": "Capt; 23-24 Pro D2 23 st; 24-25 T14 16 st; 25-26 Pro D2 9 st; 26-27 4 st T14",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "lea",
+   "tac",
+   "eng",
+   "rck"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Ioane Iashagashvili",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2002,
+  "nat": "Georgia",
+  "caps": 5,
+  "recent": true,
+  "rt": 70,
+  "ev": "23-24 VRDR 22 st Pro D2; 24-25 SM 16 st; 25-26 SM 17 st 5 tries + GEO 4 caps",
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Sione Kalamafoni",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1988,
+  "nat": "Tonga",
+  "caps": 37,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "rck"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Juan Bautista Pedemonte",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2000,
+  "nat": "Argentina",
+  "caps": 2,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Mikheil Alania",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1996,
+  "nat": "Georgia",
+  "caps": 5,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "pas"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Simi Kuruvoli",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1999,
+  "nat": "Fiji",
+  "caps": 22,
+  "recent": true,
+  "rt": 74,
+  "ev": "23-24 FIJ RWC 4 apps; 24-25 Drua 8 st + FIJ 8 caps; 25-26 Drua bench, FIJ 3 st",
+  "tags": [
+   "pace",
+   "handler",
+   "playmaker"
+  ],
+  "str": [
+   "pas",
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Clovis Le Bail",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "pas"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Michael Ruru",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1996,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Pro D2 17 st; 24-25 T14 16 st 6 tries; 25-26 Pro D2 19 st 5 tries; 26-27 T14 4 st",
+  "tags": [
+   "handler",
+   "pace"
+  ],
+  "str": [
+   "pas",
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Jean Cotarmanac'h",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2001,
+  "nat": "Uruguay",
+  "caps": 3,
+  "recent": true,
+  "rt": 62,
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Maxime Lafage",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Pro D2 20 st 149 pts; 24-25 T14 19 st 159 pts; 25-26 Pro D2 16 st 119 pts",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas"
+  ],
+  "weak": [
+   "tac"
+  ]
+ },
+ {
+  "n": "Pierre Popelin",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 73,
+  "ev": "23-24 CO 18 st 134 pts; 24-25 injury-hit, 5 st; 25-26 CO 10 st T14 + 3 st Champions Cup",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie"
+  ],
+  "weak": [
+   "tac"
+  ]
+ },
+ {
+  "n": "Pierre Boudehent",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Marin Boulier",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Ray Nu'u",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1997,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 73,
+  "ev": "Colomiers Pro D2 since 2022; 25-26 20 apps 5 tries, revelation of season, 300k transfer",
+  "tags": [
+   "power",
+   "defender"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Inia Tabuavou",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2002,
+  "nat": "Fiji",
+  "caps": 10,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 R92 4 st + FIJ 5 st; 24-25 Drua 8 st, FIJ 3 st; 25-26 Drua 4 apps (bench)",
+  "tags": [
+   "power",
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "pui",
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Enzo Benmegal",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Nathanaël Hulleu",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 72,
+  "ev": "23-24 CO 18 st T14 5 tries; 24-25 7 st; 25-26 CO 6 st (injury-hit); 26-27 2 tries",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Ben Stevenson",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1999,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Murray Taulagi",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1999,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "NRL Cowboys strike wing (72 tries), code switch, no union record yet",
+  "tags": [
+   "power",
+   "finisher"
+  ],
+  "str": [
+   "pui",
+   "evi",
+   "vit"
+  ],
+  "weak": [
+   "pie",
+   "rck"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Anthony Bouthier",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1992,
+  "nat": "France",
+  "caps": 2,
+  "recent": false,
+  "rt": 72,
+  "ev": "23-24 MHR 14 st; 24-25 MHR 10 st; 25-26 Vannes 15 st 55 pts; 26-27 5 st T14",
+  "tags": [
+   "kicker",
+   "handler"
+  ],
+  "str": [
+   "pie",
+   "mai",
+   "pla"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Joe Jonas",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1999,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "tags": [
+   "handler",
+   "pace"
+  ],
+  "str": [
+   "mai",
+   "vit"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Paul Surano",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 Pro D2 12 st; 24-25 T14 16 st 3 tries; 25-26 Pro D2 17 st 7 tries",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": []
+ }
+]

@@ -1,0 +1,145 @@
+[
+ {
+  "n": "Bobby Bissu",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2007,
+  "nat": "France",
+  "u20": true,
+  "rt": 61,
+  "pot": 81,
+  "unsure": false
+ },
+ {
+  "n": "Unax Carballo",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2007,
+  "nat": "Spain",
+  "u20": true,
+  "rt": 54,
+  "pot": 70,
+  "unsure": true
+ },
+ {
+  "n": "Valentin Ibanez",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 54,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Noam Pion",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 54,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Mattéo Fourcade",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Cyprien Kileztky",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 51,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Joris Cavaglieri",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 50,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Enzo Delfosse",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 50,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Sjoerd Bakker",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2007,
+  "nat": "Australia",
+  "u20": false,
+  "rt": 49,
+  "pot": 68,
+  "unsure": true
+ },
+ {
+  "n": "Aubin Geffray",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2008,
+  "nat": "France",
+  "u20": false,
+  "rt": 47,
+  "pot": 68,
+  "unsure": true
+ },
+ {
+  "n": "Virgile Gallego Da Silva",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2009,
+  "nat": "France",
+  "u20": false,
+  "rt": 44,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Kélian Aissiou",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2009,
+  "nat": "France",
+  "u20": false,
+  "rt": 43,
+  "pot": 64,
+  "unsure": true
+ },
+ {
+  "n": "Mathéo Allier",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2009,
+  "nat": "France",
+  "u20": false,
+  "rt": 43,
+  "pot": 64,
+  "unsure": true
+ }
+]

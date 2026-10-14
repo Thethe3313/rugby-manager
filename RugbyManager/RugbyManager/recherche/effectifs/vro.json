@@ -1,0 +1,825 @@
+[
+ {
+  "n": "Anthony Aléo",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1992,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 VRDR 20 apps/11 st; 24-25 16/7; 25-26 19/9; 26-27 3/2, starting LH",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Esteban Chouteau",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "24-25 VRDR 8/4; 25-26 9/2; 26-27 2/1",
+  "tags": [],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end"
+  ]
+ },
+ {
+  "n": "Marco Trauth",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 Béziers 7/2 + Toulouse 2 T14; 24-25 Béz 14/8; 25-26 Béz 15/9; 26-27 VRDR 3/1",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Giga Tutisani",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2004,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 52,
+  "ev": "25-26 Clermont 3 cameos (1 T14, 2 ECC); 26-27 VRDR 1 app",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "end",
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Vincent Vial",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1994,
+  "nat": "Switzerland",
+  "caps": 4,
+  "recent": true,
+  "rt": 67,
+  "ev": "24-25 VRDR 20/10 + SUI 2 REC; 25-26 23/14 + SUI 2 REC st; 26-27 5/3; ex-Grenoble bench",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Gareth Milasinovich",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1992,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "Ex-Worcester/Ulster; 23-24 VRDR 23/15; 24-25 22/15; 25-26 22/9; 26-27 1 app",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ]
+ },
+ {
+  "n": "Tom Ross",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1998,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "23-24 Waratahs 8/4 SR; 24-25 Nice 18/8; 25-26 VRDR 1 app; 26-27 1 app",
+  "tags": [],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Dorian Marco-Pena",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 VRDR 23/15, 4 tr; 24-25 23/13; 25-26 22/13, 8 tr; 26-27 starter, try-scoring start",
+  "tags": [
+   "finisher",
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Sacha Idoumi",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 La Rochelle 8 apps (T14/ECC) + MdM 3; 24-25 Nice 16/8; 25-26 VRDR 24/11; 26-27 4 apps 2 tr",
+  "tags": [
+   "finisher"
+  ],
+  "str": [
+   "eng",
+   "pui"
+  ],
+  "weak": [
+   "tou"
+  ]
+ },
+ {
+  "n": "Issam Hamel",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "23-24 Brive 16/11, 3 tr; 24-25 Brive 14/6; 25-26 VRDR 2 apps; 26-27 1 st",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "tou"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Ryan McCauley",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "Ex-Force/Waratahs; 23-24 VRDR 22/19; 24-25 21/19; 25-26 28/21, 3 tr; 26-27 3/2",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "end"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Hugo Fabrègue",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1992,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Oyonnax T14 18/14; 24-25 Oyo Pro D2 15/13; 25-26 VRDR 25/19; 26-27 4 st",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Florian Goumat",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1990,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "23-24 VRDR 16/8; 24-25 20/15; 25-26 14/7; 26-27 no apps; age 36",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "lea"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ]
+ },
+ {
+  "n": "Hugo Descube",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "Toulouse academy, FRA U20 2024; 26-27 VRDR 3/1",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Marco Tauleigne",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1993,
+  "nat": "France",
+  "caps": 5,
+  "recent": false,
+  "rt": 70,
+  "ev": "5 FRA caps 2018; 23-24 MHR 16/11; 24-25 MHR 13/5; 25-26 MHR 16/6 (T14+Challenge); 26-27 VRDR 4/3",
+  "tags": [
+   "handler",
+   "power"
+  ],
+  "str": [
+   "mai",
+   "pui",
+   "rck"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Louis Suaud",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Nice Nationale 12/11; 24-25 Nice Pro D2 25/15; 25-26 VRDR 26/22; 26-27 4/2, 1 tr",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "end"
+  ],
+  "weak": [
+   "evi"
+  ]
+ },
+ {
+  "n": "Adrien Roux",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 VRDR 8/4; 24-25 17/13, 2 tr; 25-26 17/7; 26-27 2/1",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "dec"
+  ]
+ },
+ {
+  "n": "Ilia Spanderashvili",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1997,
+  "nat": "Georgia",
+  "caps": 21,
+  "recent": true,
+  "rt": 71,
+  "ev": "23-24 Black Lion + GEO REC 4 st; 24-25 VRDR 12/9 + GEO 7; 25-26 VRDR 23/17 + GEO 7 (REC, WNC)",
+  "tags": [
+   "defender",
+   "workrate"
+  ],
+  "str": [
+   "tac",
+   "rck",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Izaiha Moore-Aiono",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2000,
+  "nat": "Samoa",
+  "caps": 4,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 Ampthill 17/9 + SAM 4 caps (PNC 2024); 24-25 Sarries/Castres 4 apps; 25-26 VRDR 5/3",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "dec"
+  ]
+ },
+ {
+  "n": "Matthieu Vachon",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1991,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 VRDR 7/6 + Blagnac; 24-25 VRDR 16/14; 25-26 16/11; 26-27 3/2, 1 tr; age 35",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "lea",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Axel Bruchet",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 VRDR 25/19; 24-25 23/15; 25-26 8/4 (disrupted); 26-27 3 st",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Loan Réal",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "23-24 VRDR 9/5; 24-25 10/8; 25-26 16/8, 1 tr; 26-27 2 apps off bench",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ]
+ },
+ {
+  "n": "Thembelani Bholi",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1990,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Ex-Bulls/Kings SR; 23-24 VRDR 20/13; 24-25 18/8; 25-26 22/9; age 36",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "rck"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ]
+ },
+ {
+  "n": "Mattéo Rodor",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Perpignan T14 10 apps off bench; 24-25 VRDR 24/14, 4 tr; 25-26 23/20; 26-27 5 st",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "pas",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Thomas Lhuséro",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 VRDR 22/11; 24-25 18/9; 25-26 25/11, 2 tr; 26-27 3 apps off bench",
+  "tags": [],
+  "str": [
+   "pas",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Paul Dumas",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 55,
+  "ev": "23-24 Lyon 1 T14 cameo; 24-25 VRDR 1 app; 25-26 10/1; 26-27 1 app",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pla",
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Lucas Méret",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1995,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 VRDR 24/23, 157 pts; 24-25 20/18, 187 pts; 25-26 24/24, 271 pts; 26-27 5 st, 47 pts",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas",
+   "dec"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Adrien Martin",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "25-26 VRDR 7/6 (incl 15), 18 pts; 26-27 1 st",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "sfr",
+   "pla"
+  ]
+ },
+ {
+  "n": "Mathieu Guillomot",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1994,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 VRDR 17/16; 24-25 17/13; 25-26 18/17; 26-27 4/3, 1 tr",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pla",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Joris Dupont",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 Castres 2 apps; 24-25 Castres 4 (2 ECC); 25-26 MdM 18/11; 26-27 VRDR 5/4",
+  "tags": [],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Louis Marrou",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1993,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 Aix 16/12; 24-25 VRDR 22/19, 6 tr; 25-26 22/20, 4 tr; 26-27 4/2",
+  "tags": [
+   "finisher"
+  ],
+  "str": [
+   "pla",
+   "mai",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Dylan Idrissi",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "Ex-Toulouse/Racing academy; 24-25 Racing 1 ECC; 25-26 VRDR 17/8, 4 tr; 26-27 2/1",
+  "tags": [],
+  "str": [
+   "evi",
+   "vit"
+  ],
+  "weak": [
+   "pla"
+  ]
+ },
+ {
+  "n": "Anatole Pauvert",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "23-24 VRDR 20/10; 24-25 19/15, 4 tr; 25-26 no apps (likely injured); 26-27 no apps yet",
+  "tags": [],
+  "str": [
+   "tac",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Osea Waqaninavatu",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2000,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 Castres 1 ECC; 24-25 Tarbes Nationale 9/7; 25-26 VRDR 5/3; 26-27 2 st",
+  "tags": [
+   "pace",
+   "power"
+  ],
+  "str": [
+   "vit",
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "pla",
+   "pie"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Thomas Zénon",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 Nevers 14/9; 24-25 Brive 11/10; 25-26 Brive 7/7, 2 tr; 26-27 VRDR 4/2; wing/FB",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "pla"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Calum Randle",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2000,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "Ex-Eastern Suburbs; 25-26 VRDR 6/4; 26-27 3 st",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Paul Marsan",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "25-26 Niort Nationale 12 st + VRDR 7/6, 2 tr; 26-27 3 st",
+  "tags": [],
+  "str": [
+   "vit",
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ]
+ },
+ {
+  "n": "Thomas Rozière",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Clermont T14 9/7 + 2 Challenge; 24-25 VRDR 16/14; 25-26 25/24, 3 tr; 26-27 5 st, 1 tr",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "mai",
+   "pla"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Joris Moura",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2000,
+  "nat": "Portugal",
+  "caps": 5,
+  "recent": true,
+  "rt": 64,
+  "ev": "23-24 VRDR 13/7 + POR RWC 2023; 24-25 VRDR 20/18 + POR 2 REC st; 25-26 11/9; 26-27 3/1; FB/10",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "pie",
+   "pas",
+   "dec"
+  ],
+  "weak": [
+   "pui"
+  ]
+ }
+]

@@ -1,0 +1,156 @@
+[
+ {
+  "n": "Fin Ronnie",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2007,
+  "nat": "Scotland",
+  "u20": true,
+  "rt": 55,
+  "pot": 75,
+  "unsure": true
+ },
+ {
+  "n": "Gabriel Razmadze",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2007,
+  "nat": "Georgia",
+  "u20": true,
+  "rt": 53,
+  "pot": 72,
+  "unsure": true
+ },
+ {
+  "n": "Nikoloz Balanchivadze",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2007,
+  "nat": "Georgia",
+  "u20": true,
+  "rt": 53,
+  "pot": 71,
+  "unsure": true
+ },
+ {
+  "n": "Nikoloz Kumaritovi",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2006,
+  "nat": "Georgia",
+  "u20": false,
+  "rt": 51,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Paul Dauguet",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2004,
+  "nat": "France",
+  "u20": false,
+  "rt": 55,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Rémi Montboisse",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 51,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Martin Skop",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2006,
+  "nat": "Czechia",
+  "u20": false,
+  "rt": 49,
+  "pot": 64,
+  "unsure": true
+ },
+ {
+  "n": "Mathieu Bourgeois",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 50,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Ybann Padonou",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 50,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Somto Monye",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2007,
+  "nat": "England",
+  "u20": false,
+  "rt": 48,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Enzo Auriac",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 48,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Antonin Bikai-Combe",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 48,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Allan Malama-Talataina",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2005,
+  "nat": "New Zealand",
+  "u20": false,
+  "rt": 54,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Joris Condamine",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2005,
+  "nat": "France",
+  "u20": false,
+  "rt": 54,
+  "pot": 66,
+  "unsure": true
+ }
+]

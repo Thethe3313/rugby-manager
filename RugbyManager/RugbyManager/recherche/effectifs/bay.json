@@ -1,0 +1,977 @@
+[
+ {
+  "n": "Mateo Carreras",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1999,
+  "nat": "Argentina",
+  "caps": 35,
+  "recent": true,
+  "rt": 83,
+  "ev": "23-24 Newcastle; 24-25 Bay 17 apps, ARG RC 6 tests 3 tr; 25-26 12 T14 apps 4 tr, RC 2025; Nat Champ 2026",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Arnaud Erbinartegaray",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "Bay 23-24 16 m/13 st; 24-25 21 m/14 st; 25-26 14 m/11 st, 3 tr; wing/centre utility",
+  "tags": [
+   "workrate",
+   "handler"
+  ],
+  "str": [
+   "tac",
+   "pla"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Gabriel Lapègue",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "tac"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Tom Lévêque",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pla",
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Yohan Orabé",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "Mostly FB; 24-25 6 T14 m; 25-26 20 m/15 st incl 2 ECC; 26-27 2 st",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Tom Spring",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 76,
+  "ev": "24-25 Bay 20 T14 m, 4 tr; 25-26 23 T14 m 13 tr + 4 ECC 2 tr; 26-27 4 m 2 tr",
+  "tags": [
+   "finisher",
+   "handler"
+  ],
+  "str": [
+   "evi",
+   "vit",
+   "mai"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Madosh Tambwe",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1997,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 71,
+  "ev": "Ex-Lions/Bulls; UBB 22-24 (35 apps); Montpellier 24-26 rotation; joins Bay 26-27",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "tac",
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Cheikh Tiberghien",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": true,
+  "rt": 75,
+  "ev": "Bay 23-24 20 m/18 st; 24-25 22 m/17 st; 25-26 23 m/19 st; FRA squad Nov 2025 (uncapped)",
+  "tags": [
+   "handler",
+   "defender"
+  ],
+  "str": [
+   "pla",
+   "mai",
+   "pie"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Viliame Tutuvuli",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1999,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "pui"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Sireli Maqala",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2000,
+  "nat": "Fiji",
+  "caps": 14,
+  "recent": true,
+  "rt": 74,
+  "ev": "Bay 23-24 4 m; 24-25 13 m 6 tr; 25-26 18 m/15 st 5 tr; FIJ 11 tests 23-26 incl 3 in 25-26",
+  "tags": [
+   "power",
+   "finisher"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "pie",
+   "dec"
+  ]
+ },
+ {
+  "n": "Guillaume Martocq",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Federico Mori",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2000,
+  "nat": "Italy",
+  "caps": 22,
+  "recent": true,
+  "rt": 77,
+  "ev": "23-24 Bay + ITA 6N 2024 4 tests; 24-25 10 m; 25-26 16 m 3 tr; ITA tour 2025; not in 6N 2026",
+  "tags": [
+   "power",
+   "defender"
+  ],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Bastien Rasal",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "tags": [],
+  "str": [],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Manu Tuilagi",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1991,
+  "nat": "England",
+  "caps": 60,
+  "recent": false,
+  "rt": 78,
+  "ev": "23-24 Sale + ENG RWC 2023 starter; 24-25 Bay 21 m; 25-26 20 m; age 35, ret. intl",
+  "tags": [
+   "power",
+   "defender"
+  ],
+  "str": [
+   "pui",
+   "tac",
+   "evi"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ]
+ },
+ {
+  "n": "Rob Du Preez",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1993,
+  "nat": "South Africa",
+  "caps": 1,
+  "recent": false,
+  "rt": 75,
+  "ev": "Sale 2018-26, 163 apps, starter at 10/12 in Prem/ECC 23-26; RSA 1 cap 2018; Bay main 10 26-27",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "pas",
+   "pie",
+   "dec"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Joris Segonds",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 77,
+  "ev": "Bay 23-24 starter; 24-25 31 m 204 pts; 25-26 25 m 230 pts (T14+ECC); 26-27 2 m 25 pts",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas"
+  ],
+  "weak": [
+   "tac"
+  ]
+ },
+ {
+  "n": "Léo Coly",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "MHR 23-24 22 m/12 st; 24-25 18 m/11 st 70 pts; 25-26 15 m/7 st; Bay 26-27 3 st",
+  "tags": [
+   "handler",
+   "kicker"
+  ],
+  "str": [
+   "pas",
+   "but"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Herschel Jantjies",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1996,
+  "nat": "South Africa",
+  "caps": 26,
+  "recent": true,
+  "rt": 80,
+  "ev": "23-24 Stormers 17 m/11 st; 24-25 11 m; 25-26 Bay 19 m/10 st (thumb inj); RSA recall 2026, try v Wales",
+  "tags": [
+   "pace",
+   "playmaker"
+  ],
+  "str": [
+   "vit",
+   "pas",
+   "evi"
+  ],
+  "weak": [
+   "pie",
+   "pui"
+  ]
+ },
+ {
+  "n": "Baptiste Tilloles",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Rodrigo Bruni",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1993,
+  "nat": "Argentina",
+  "caps": 21,
+  "recent": false,
+  "rt": 76,
+  "ev": "23-24 ARG RWC 2023 + Bay 12 m; 24-25 16 m/16 st 5 tr; 25-26 13 m/12 st; 26-27 2 m",
+  "tags": [
+   "workrate",
+   "power"
+  ],
+  "str": [
+   "eng",
+   "rck",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Esteban Capilla",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": true,
+  "rt": 76,
+  "ev": "24-25 Bay 15 m/12 st; 25-26 17 T14 m 10 tr, FRA squad Nov 2025 + Jun 2026 (uncapped); 26-27 5 m 2 tr",
+  "tags": [
+   "workrate",
+   "lineout",
+   "finisher"
+  ],
+  "str": [
+   "tou",
+   "mai",
+   "vit",
+   "eng"
+  ],
+  "weak": [
+   "sfr"
+  ]
+ },
+ {
+  "n": "Raphaël Darquier",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Alexandre Fischer",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": true,
+  "rt": 76,
+  "ev": "Clermont 23-25 (90 apps total); Bay 25-26 21 m 3 tr; FRA 6N 2026 42-man squad; 26-27 5 m",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "rck",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Giovanni Habel-Küffner",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1998,
+  "nat": "Samoa",
+  "caps": 5,
+  "recent": false,
+  "rt": 70,
+  "ev": "Bay back row rotation 23-26; limited data found",
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Baptiste Héguy",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Rob Leota",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1996,
+  "nat": "Australia",
+  "caps": 18,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Rebels 9 m + AUS RWC 2023; 24-25 Waratahs 9 st 2 tr; 25-26 Bay 10 m/7 st",
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "tac",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Noa Traversier",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Brian Alainu'uese",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "Samoa",
+  "caps": 8,
+  "recent": false,
+  "rt": 75,
+  "ev": "Toulon: 23-24 + RWC 2023 SAM; 24-25 27 m 4 tr; 25-26 26 m 7 tr (T14+ECC); Bay 26-27",
+  "tags": [
+   "lineout",
+   "power"
+  ],
+  "str": [
+   "tou",
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Killian Géraci",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1999,
+  "nat": "France",
+  "caps": 4,
+  "recent": false,
+  "rt": 70,
+  "ev": "FRA 4 caps 2020-21; Lyon 23-24 11 m; 24-25 21 m/11 st; 25-26 12 m/7 st; Bay 26-27",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Arthur Iturria",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "France",
+  "caps": 15,
+  "recent": false,
+  "rt": 74,
+  "ev": "Bay 23-24 21 m; 24-25 20 m; 25-26 22 m (T14+ECC), club captain; ext. to 2029",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "lea",
+   "end"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Ewan Johnson",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "Scotland",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Lucas Paulos",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1998,
+  "nat": "Argentina",
+  "caps": 12,
+  "recent": true,
+  "rt": 74,
+  "ev": "23-24 Brive; 24-25 Bay 23 m; 25-26 22 m 4 tr (T14+ECC), ARG RC 2025; 26-27 4 m",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Matthieu Uhila",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Facundo Bosch",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1991,
+  "nat": "Argentina",
+  "caps": 12,
+  "recent": false,
+  "rt": 70,
+  "ev": "ARG 12 caps; Bay since 2022, extended Oct 2025 (5th season); 34-35 yo, sharing with Martin",
+  "tags": [
+   "lineout",
+   "handler"
+  ],
+  "str": [
+   "tou",
+   "mai"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Guillaume Cramont",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": true,
+  "rt": 66,
+  "ev": "Toulouse hooker (rotation), FRA squad Nov 2025 uncapped; loan to Bay 26-27",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "rck"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Lucas Martin",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": true,
+  "rt": 73,
+  "ev": "23-24 Aix ProD2 22 m 6 tr; 24-25 Bay 24 m/12 st 6 tr; 25-26 23 m/12 st 7 tr; FRA list Jun 2026",
+  "tags": [
+   "lineout",
+   "finisher"
+  ],
+  "str": [
+   "tou",
+   "evi",
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Andy Bordelai",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 Vannes ProD2 23 m/20 st; 24-25 Bay 15 m/5 st; 25-26 17 m/14 st; 26-27 4 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Ignacio Calles",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1996,
+  "nat": "Argentina",
+  "caps": 7,
+  "recent": false,
+  "rt": 67,
+  "ev": "Pau fringe 23-25 (8 m); ARG 5 tests 23-25 off bench; Bay 25-26 13 m/8 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Pierre Castillon",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Swan Cormenier",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Lasha Macharashvili",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1999,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Emerick Setiano",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1996,
+  "nat": "France",
+  "caps": 6,
+  "recent": true,
+  "rt": 75,
+  "ev": "Toulon 23-24 14 m; 24-25 21 m; 25-26 Bay 16 m/10 st; FRA squad Nov 2025 + Jun 2026 list",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Luke Tagi",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "Fiji",
+  "caps": 12,
+  "recent": false,
+  "rt": 70,
+  "ev": "Bay 23-24 14 m + FIJ RWC 2023; 24-25 18 m/10 st + FIJ Nov 2024; 25-26 10 m (ankle)",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Tevita Tatafu",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2002,
+  "nat": "France",
+  "caps": 3,
+  "recent": true,
+  "rt": 81,
+  "ev": "23-24 Bay 22 m/15 st; 24-25 12 m, FRA starts v JPN+NZ; 25-26 ankle, 5 m; FRA v AUS Jul 2026",
+  "tags": [
+   "power",
+   "scrum"
+  ],
+  "str": [
+   "pui",
+   "mel",
+   "evi"
+  ],
+  "weak": [
+   "end"
+  ]
+ },
+ {
+  "n": "Emosi Tumania",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2000,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ }
+]

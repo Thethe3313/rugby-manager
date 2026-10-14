@@ -1,0 +1,19 @@
+TASK: build the real 2026-27 squad of a PRO D2 club (French second division) for a rugby management game, with evidence-based ratings.
+
+SQUAD: find the 2026-27 first-team squad (aim 32-42 players) via WebSearch/WebFetch: rugbypass.com (it has club-by-club 2026-27 Pro D2 guides and squad lists, e.g. search "rugbypass <club> Pro D2 2026-2027 effectif"), prod2.lnr.fr club pages (effectif), the club's official site, Wikipedia, itsrugby.fr, rugbyrama, lerugbynistere, midi olympique, local press. Include summer 2026 arrivals, exclude departures. Never invent players. If you can only find part of the squad, deliver what you found (minimum ~25) and say so.
+
+EVIDENCE per player (do the well-known ones first, don't spend long on unknowns): international caps and recent selections; previous Top 14 career; 2025-26 Pro D2 appearances/starts, tries, points; awards (Pro D2 team of the season, Oscars); age; role in the team.
+
+OUTPUT FIELDS per player (JSON object):
+"n" full name (correct accents); "pos" in PIL,TAL,2L,3L,DM,OUV,CEN,AIL,ARR; "sub": for props EXACTLY "LH" (loosehead, pilier gauche) or "TH" (tighthead, pilier droit); back row "FL" or "N8"; others same as pos; "by" birth year; "nat" nation he represents (short English name; "France" if French/unknown); "caps" senior international caps (0 if none); "recent" true if in a senior national squad since Jan 2025; "rt" integer 45-90 rating at his position on the GLOBAL scale below; "ev" evidence string max 110 chars (required when rt>=70); "tags" 0-3 from kicker,pace,power,playmaker,workrate,lineout,scrum,finisher,defender,handler ("kicker" only for the main goal-kicker); "unsure": true if rt rests on little evidence.
+
+GLOBAL CALIBRATION (same scale as the Top 14 in the game: Dupont 95; Top 14 international starters 84-89; good Top 14 starters 72-77; Top 14 rotation 66-71):
+- 78-84: exceptional for Pro D2: current/recent tier-1 or strong tier-2 internationals, ex-Top 14 stars still at their level.
+- 72-77: best players of the division, Pro D2 team-of-the-season level, regular tier-2 internationals.
+- 66-71: solid Pro D2 starter.
+- 60-65: Pro D2 rotation player / bench.
+- 52-59: young espoir, fringe.
+- 45-51: barely used academy player.
+A typical Pro D2 squad of ~38: 0-2 players at 76+, 6-10 at 69-75, most at 60-68, a few young ones in the 50s. Favourites/big budgets (Provence, Brive, Colomiers, Oyonnax, Biarritz) are a bit stronger; promoted Narbonne and Nice are weaker.
+
+WRITE a single valid JSON array (Write tool; no comments, no trailing commas) to /tmp/claude-0/-home-claude/d7e6ff53-6ab7-51c6-894b-80bd9ceb1d9c/scratchpad/prod2/<ID>.json. Final message (max 5 lines): player count, unsure count, top 3 with rt, main sources. Do not paste the JSON.

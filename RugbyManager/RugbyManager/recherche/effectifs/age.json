@@ -1,0 +1,907 @@
+[
+ {
+  "n": "Hans Lombard-Buret",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 Agen 26 apps/18 st; 24-25 14 st; 25-26 lost to Achilles rupture (Aug 25); 26-27 back in squad",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Julien Koteureu",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "ev": "25-26 Agen 1 app; 26-27 4 apps/2 st",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Adam Bouaré",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 53,
+  "ev": "",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Alexandre Everaert",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 50,
+  "ev": "",
+  "tags": [],
+  "str": [],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Enrique Pieretto Heiland",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1994,
+  "nat": "Argentina",
+  "caps": 30,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Glasgow 2 + Tahs 1; 24-25 Provence joker 13/3 st; 25-26 Zebre 6 URC st; 26-27 Agen 3 st; 30 ARG caps",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Akato Fakatika",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "23-24 USAP 6 apps/2 st; 24-25 8/1; 25-26 4/1 (T14+Challenge); 26-27 Agen 4 apps off bench",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Florent Guion",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1993,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "Loosehead. 23-24 Agen 23/11 st; 24-25 19/11; 25-26 24/19 st; extended to 2027",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Gael Galván",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2005,
+  "nat": "Argentina",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "ev": "ARG U20 2024 & 2025 (14 games); 25-26 La Rochelle 1 T14 start; 26-27 Agen loan 3 apps",
+  "tags": [],
+  "str": [
+   "pui",
+   "mel"
+  ],
+  "weak": [
+   "end",
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Santiago Socino",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1992,
+  "nat": "Argentina",
+  "caps": 9,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Gloucester 15 apps/8 st; 24-25 Agen 20/13; 25-26 22/14, 7 tries; 26-27 5/3; ex-Puma",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Cyril Deligny",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1992,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 VRDR 23/14 st; 24-25 VRDR 26/14, 8 tries; 25-26 Agen 12/6, 4 tries; age 34",
+  "tags": [
+   "finisher"
+  ],
+  "str": [
+   "eng",
+   "tou"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Nail Audoire",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "Tighthead. 23-24 Chambéry Nat 11/1; 24-25 Suresnes Nat 15/3; 25-26 Suresnes 23/19; 26-27 Agen 2/1",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Pierre Jouvin",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "ev": "FRA U20 2023 world champion; 23-24 Agen 19/6 st; 24-25 23/10; 25-26 ~20/7 st",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "tou"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Javier Eissmann",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "Chile",
+  "caps": 29,
+  "recent": true,
+  "rt": 67,
+  "ev": "23-24 CHI 11 caps incl RWC; 24-25 Agen 10/5 + CHI 5; 25-26 Agen 9/4 + CHI 4 (Nations Cup)",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "John Madigan",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "Ireland",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Béziers 28/26 st; 24-25 Agen 15/13, 4 tries; 25-26 Agen 21/19 st",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Denis Marchois",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1994,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 Bayonne 11 T14/7 st + 4 CC st; 24-25 Bayonne 9/6; 25-26 Agen 10/4",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "William Demotte",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1991,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 Agen 20/14 st; 24-25 22/12; 25-26 20/10; age 35",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "tou"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Damien Bozic",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "23-24 Suresnes Nat 22/9; 24-25 15/12; 25-26 17/15; 26-27 Agen 1 st",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Tomasi Fineanganofo",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2003,
+  "nat": "Tonga",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 Agen 3 apps; 24-25 ~18/13 st, 3 tries; 25-26 ~20/12 st, 5 tries; Top 14 interest",
+  "tags": [
+   "power",
+   "handler"
+  ],
+  "str": [
+   "pui",
+   "evi",
+   "mai"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Taniela Matakaiongo",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1996,
+  "nat": "Tonga",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 Chambéry Nat 19/17, 6 tries; 24-25 Chambéry 23/23, 9 tries; 25-26 Agen 15/12",
+  "tags": [
+   "workrate",
+   "power"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Matthieu Bonnet",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 Agen 14/8 st; 24-25 14/9; 25-26 2 apps (absent); 26-27 3/2",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "tac"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Enzo Sérieyssol",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "25-26 Agen 20 apps/13 st (mostly openside); 26-27 3/2",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "rck"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Julien Lebian",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "Blindside. 23-24 Agen 19/16 st; 24-25 23/21, 4 tries; 25-26 27/23 st",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "end"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Valentin Gayraud",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 Agen 19/12 st; 24-25 27/22, 7 tries; 25-26 17/14, 4 tries; mainly N8",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Sialevailea Tolofua",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 59,
+  "ev": "FRA U20 2024-25 (11 games); 24-25 Toulouse 1 T14 app; 26-27 Agen 5 apps/4 st",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Romain Delemarle",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "ev": "25-26 Narbonne Nat 18/13 st; 26-27 Agen 2 st; ex-Montpellier espoir",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Hugo Bouyssou",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Nevers 22/19 st; 24-25 Nevers 25/16; 25-26 Nevers 18/16; 26-27 Agen 4/2, 1 try",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "pas",
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Dorian Bellot",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 Agen 16/7 st; 24-25 14/7; 25-26 16/9, 2 tries; 26-27 6/4, 2 tries",
+  "tags": [],
+  "str": [
+   "pas",
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Valentino Reggiardo",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2006,
+  "nat": "Argentina",
+  "caps": 0,
+  "recent": false,
+  "rt": 53,
+  "ev": "ARG U20 2025 & 2026 (7 games, 2 st); 26-27 Agen 1 start",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Craig Willis",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1995,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 Ealing Champ ~15 st, 148 pts; 24-25 Ealing 15/10, 138 pts; 25-26 Agen 30/17, 208 pts",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas"
+  ],
+  "weak": [
+   "vit",
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jules Soulan",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1994,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 Oyonnax T14 6/5 st, 50 pts; 24-25 Provence 17/15; 25-26 Provence 11/6; 26-27 Agen 3/2",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lucien Richardis",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2005,
+  "nat": "Spain",
+  "caps": 7,
+  "recent": true,
+  "rt": 63,
+  "ev": "Spain U20 23-25; Spain 7 caps (REC 25 & 26); Toulouse T14 1 st 24-25, 3 apps 25-26; 26-27 Agen",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "but",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Sio Tomkinson",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1996,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Dragons URC 9/6 st; 24-25 W. Force SR 11/10 st; 25-26 Agen 12/7, 3 tries",
+  "tags": [
+   "handler",
+   "defender"
+  ],
+  "str": [
+   "mai",
+   "tac",
+   "pla"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Kolinio Ramoka",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1994,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 Agen 9/8 st; 24-25 22/19 st, 7 tries; 25-26 22/19, 6 tries",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Peyo Muscarditz",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 Bayonne T14 5 st + 1 CC + Agen 5; 24-25 Agen 22/20 st; 25-26 14/13; 26-27 2 st, 1 try",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pla"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Clément Garrigues",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "Inside centre. 23-24 Agen 22/21 st, 5 tries; 24-25 22/17; 25-26 21/14",
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "mai",
+   "pas"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ollie Cummins",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2004,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Ex-W. Force academy; 25-26 Agen 7/3 st; 26-27 1 st, 1 try",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Lucas Martins",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2003,
+  "nat": "Portugal",
+  "caps": 5,
+  "recent": false,
+  "rt": 73,
+  "ev": "23-24 Blagnac Nat + POR 4 caps; 24-25 Agen 22/16, 4-5 tries; 25-26 Pro D2 top try scorer (17); extended",
+  "tags": [
+   "finisher",
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Iban Etcheverry",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Agen 11/11 st; 24-25 21/20 st, 8 tries; 25-26 18/16, 4 tries; 26-27 3 st",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Charles Laloi",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Stade Français 5 T14 st + CC; 24-25 SF 12 st incl 3 CC; 25-26 SF 9 st, 3 tries; 26-27 Agen 5 st",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Dylan Cazemajou",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "ev": "FRA U20 2026 (6 games, 3 tries); 24-25 Agen 2 apps; 25-26 Agen 11/9 st",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui",
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Louis Dupichot",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1995,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 USAP T14 10/9 st + 2 CC st; 24-25 USAP 10/7 + 1 CC; 25-26 Agen 17/12; 26-27 2 st",
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "pla",
+   "mai",
+   "pie"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Mathias Jean",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "25-26 Agen 19/15 st, 4 tries (fullback); 26-27 2 st, 1 try; extended to 2028",
+  "tags": [],
+  "str": [
+   "vit",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ }
+]

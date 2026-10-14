@@ -1,0 +1,820 @@
+[
+ {
+  "n": "Giorgi Akhaladze",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2001,
+  "nat": "Georgia",
+  "caps": 25,
+  "recent": true,
+  "rt": 75,
+  "ev": "23-24 Béziers PD2 6 st, GEO 6; 24-25 ASM 9 st, GEO 7; 25-26 ASM 13 st T14 3 tries, GEO 8 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Giorgi Dzmanashvili",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2002,
+  "nat": "Georgia",
+  "caps": 1,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end",
+   "pla"
+  ]
+ },
+ {
+  "n": "Mathéo Frisach",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "end"
+  ]
+ },
+ {
+  "n": "Sacha Lotrian",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Régis Montagne",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1998,
+  "nat": "France",
+  "caps": 9,
+  "recent": true,
+  "rt": 81,
+  "ev": "23-24 Grenoble PD2 14 st; 24-25 ASM 10 st, FRA debut; 25-26 FRA 9 caps incl 3 Nov starts, 6N; ASM 11 st",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Cristian Ojovan",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "Moldova",
+  "caps": 4,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 ASM 8 st; 24-25 ASM 29 apps 17 st; 25-26 ASM 24 apps 14 st incl 3 ECC",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "end"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Etienne Fourcade",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Barnabé Massa",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 1,
+  "recent": true,
+  "rt": 74,
+  "ev": "23-24 Grenoble PD2 16 st, U20 champ; 24-25 ASM 22 apps 9 st 5 tries; 25-26 ASM 13 st 5 tries, FRA cap Jul 26",
+  "tags": [
+   "workrate",
+   "finisher"
+  ],
+  "str": [
+   "eng",
+   "rck",
+   "tou"
+  ],
+  "weak": [
+   "sfr"
+  ]
+ },
+ {
+  "n": "Peniami Narisia",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1998,
+  "nat": "Fiji",
+  "caps": 1,
+  "recent": false,
+  "rt": 66,
+  "tags": [
+   "power",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng"
+  ],
+  "weak": [
+   "tou"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Thomas Ceyte",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 Bayonne 17 st T14; 24-25 ASM 36 apps 16 st; 25-26 ASM 17 st",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "end"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Thibaud Lanen",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 ASM 17 st; 24-25 ASM 21 apps 12 st; 25-26 ASM 11 st; 26-27 4 st",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Léo Michaux",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "tags": [],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Tevita Ratuva",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "Fiji",
+  "caps": 11,
+  "recent": true,
+  "rt": 71,
+  "ev": "23-24 Brive PD2 13 st; 24-25 Brive PD2 12 st; 25-26 ASM 8 st T14, FIJ Jul 26",
+  "tags": [
+   "power",
+   "lineout"
+  ],
+  "str": [
+   "pui",
+   "tou"
+  ],
+  "weak": [
+   "pla"
+  ]
+ },
+ {
+  "n": "Darcy Swain",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1997,
+  "nat": "Australia",
+  "caps": 17,
+  "recent": true,
+  "rt": 76,
+  "ev": "23-24 Brumbies 9 st; 24-25 Force 11 st; 25-26 Force 11 st, AUS squad Oct 25/Jan 26; ASM 4 st 26-27",
+  "tags": [
+   "lineout",
+   "power"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "pui"
+  ],
+  "weak": [
+   "sfr"
+  ]
+ },
+ {
+  "n": "Anthime Hemery",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Marcos Kremer",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1997,
+  "nat": "Argentina",
+  "caps": 80,
+  "recent": true,
+  "rt": 85,
+  "ev": "23-24 ARG RWC 4 st, ASM 13 st; 24-25 ARG 5 RC, ASM 13 st; 25-26 thumb op, ASM 7 st, ARG 3 st",
+  "tags": [
+   "defender",
+   "workrate",
+   "power"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "pui",
+   "tou"
+  ],
+  "weak": [
+   "evi"
+  ]
+ },
+ {
+  "n": "Pio Muarua",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1997,
+  "nat": "Fiji",
+  "caps": 3,
+  "recent": false,
+  "rt": 64,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Kévin Noah",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Pita-Gus Sowakula",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1994,
+  "nat": "Fiji",
+  "caps": 5,
+  "recent": true,
+  "rt": 80,
+  "ev": "23-24 ASM 12 st, AB XV; 24-25 ASM 12 st; 25-26 ASM 13 st, FIJ 5 caps (Nov 25, Jul 26)",
+  "tags": [
+   "power",
+   "handler"
+  ],
+  "str": [
+   "pui",
+   "evi",
+   "mai"
+  ],
+  "weak": [
+   "tou"
+  ]
+ },
+ {
+  "n": "Killian Tixeront",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 6,
+  "recent": true,
+  "rt": 77,
+  "ev": "23-24 ASM 13 st, FRA debut; 24-25 ASM 18 st, FRA 2; 25-26 ASM 17 st, FRA 3 caps Jul 26",
+  "tags": [
+   "workrate",
+   "lineout",
+   "defender"
+  ],
+  "str": [
+   "eng",
+   "tou",
+   "tac"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Selevasio Tolofua",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1997,
+  "nat": "France",
+  "caps": 2,
+  "recent": false,
+  "rt": 73,
+  "ev": "23-24 Toulon 10 st; 24-25 Toulon 7 st; 25-26 ASM 12 st 2 tries",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "mai"
+  ],
+  "weak": [
+   "end"
+  ]
+ },
+ {
+  "n": "Baptiste Veschambre",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Baptiste Jauneau",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2003,
+  "nat": "France",
+  "caps": 4,
+  "recent": true,
+  "rt": 80,
+  "ev": "23-24 ASM 16 st, FRA cap; 24-25 ASM 20 st, FRA cap; 25-26 ASM 21 st 8 tries, FRA 2 ANS caps",
+  "tags": [
+   "pace",
+   "handler"
+  ],
+  "str": [
+   "vit",
+   "pas",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Baptiste Germain",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 Toulouse 8 st; 24-25 Bayonne 9 st; 25-26 Bayonne 13 st T14",
+  "tags": [
+   "kicker",
+   "handler"
+  ],
+  "str": [
+   "but",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Lucas Zamora",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "tags": [
+   "handler"
+  ],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Harry Plummer",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1998,
+  "nat": "New Zealand",
+  "caps": 1,
+  "recent": false,
+  "rt": 79,
+  "ev": "23-24 Blues 12 st, NZ 1 cap; 24-25 Blues 5 st (champions); 25-26 ASM 23 st 203 pts; 26-27 4 st",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas",
+   "dec"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Justin Bouraux",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "but",
+   "pie"
+  ],
+  "weak": [
+   "tac"
+  ]
+ },
+ {
+  "n": "Mathys Belaubre",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "tags": [],
+  "str": [
+   "tac"
+  ],
+  "weak": [
+   "dec"
+  ]
+ },
+ {
+  "n": "Léon Darricarrère",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 72,
+  "ev": "23-24 ASM 12 st 6 tries; 24-25 ASM 11 st; 25-26 ASM 15 st 4 tries; 26-27 3 st",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pla"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Timéo Frier",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 54,
+  "tags": [],
+  "str": [],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Alivereti Loaloa",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2001,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 72,
+  "ev": "23-24 Nevers PD2 19 st; 24-25 Nevers 5 st; 25-26 ASM 17 st T14+ECC; 26-27 6 st",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Bautista Delguy",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1998,
+  "nat": "Argentina",
+  "caps": 40,
+  "recent": true,
+  "rt": 80,
+  "ev": "23-24 ASM 16 st 9 tries, ARG 3; 24-25 ARG 6 st, ASM 15 st; 25-26 ARG 4 st, ASM 15 st 4 tries",
+  "tags": [
+   "finisher",
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Yerim Fall",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Axel Guillaud",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pla"
+  ]
+ },
+ {
+  "n": "Joris Jurand",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "tags": [
+   "finisher"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "AJ Lam",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2000,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 Blues 12 st, AB XV; 24-25 Blues 16 st 3 tries; 25-26 Blues 15 apps 8 tries",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Alivereti Raka",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1994,
+  "nat": "France",
+  "caps": 4,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 ASM 16 st 5 tries; 24-25 ASM 18 st 7 tries; 25-26 ASM 10 st 3 tries (injury-hit)",
+  "tags": [
+   "finisher",
+   "power"
+  ],
+  "str": [
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Etene Nanaï-Seturo",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2000,
+  "nat": "New Zealand",
+  "caps": 0,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 Chiefs 16 st 6 tries, AB XV; 24-25 Chiefs 2 st, NPC 10 st; 25-26 Chiefs 5 st, AB XV 2",
+  "tags": [
+   "pace",
+   "handler"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "mai"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Kylan Hamdaoui",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1994,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 69,
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "pla",
+   "pie"
+  ],
+  "weak": [
+   "vit"
+  ]
+ }
+]

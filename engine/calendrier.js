@@ -1,0 +1,41 @@
+'use strict';
+// ==== CALENDRIER (jour par jour) ====
+const DAY=86400000;
+const dAdd=(iso,n)=>new Date(Date.parse(iso+'T12:00:00Z')+n*DAY).toISOString().slice(0,10);
+const dDow=iso=>new Date(iso+'T12:00:00Z').getUTCDay();
+const dDiff=(a,b)=>Math.round((Date.parse(b+'T12:00:00Z')-Date.parse(a+'T12:00:00Z'))/DAY);
+const MOIS=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'],JOURS=['dim.','lun.','mar.','mer.','jeu.','ven.','sam.'];
+function fmtD(iso,year){const d=new Date(iso+'T12:00:00Z');return JOURS[d.getUTCDay()]+' '+d.getUTCDate()+' '+MOIS[d.getUTCMonth()]+(year?' '+d.getUTCFullYear():'')}
+function firstDow(iso,dow){let d=iso;while(dDow(d)!==dow)d=dAdd(d,1);return d}
+const seasonYear=()=>2025+G.season;
+// Week-ends sans match : semaines de coupes d'Europe, trêves (mois -> rang du week-end dans le mois)
+const OFF={t14:{10:[3],11:[2],12:[2,3],1:[2,3],4:[1,2,3],5:[1]},pd2:{11:[2],12:[4],1:[1],2:[3],3:[2],4:[2]}};
+function buildSchedule(lg){
+  const y=seasonYear(),out=[];
+  let d=lg==='t14'?firstDow(`${y}-09-01`,6):firstDow(`${y}-08-21`,5);
+  while(out.length<LEAGUES[lg].rounds){
+    const dt=new Date(d+'T12:00:00Z'),mo=dt.getUTCMonth()+1,wk=Math.ceil(dt.getUTCDate()/7);
+    if(!((OFF[lg][mo]||[]).includes(wk)))out.push(d);
+    d=dAdd(d,7);
+  }
+  const last=out[out.length-1];
+  const po=lg==='t14'?[dAdd(last,7),dAdd(last,14),dAdd(last,28)]:[dAdd(last,7),dAdd(last,14),dAdd(last,21)];
+  return{dates:out,poDates:po};
+}
+function myNextMatch(){
+  const m=ME();
+  if(G.phase==='access'){const f=(G.access||[]).find(f=>involves(f,m.id));return f?{f,d:G.accessDate}:null}
+  if(G.phase!=='season')return null;
+  const L=G.L[m.lg];
+  if(L.phase==='regular'){for(let w=L.week;w<L.fixtures.length;w++){const x=L.fixtures[w].find(x=>x[0]===m.id||x[1]===m.id);if(x)return{f:{h:x[0],a:x[1]},d:L.dates[w],w}}}
+  if(L.phase==='playoffs'){const f=L.po.next.find(f=>involves(f,m.id));if(f)return{f,d:L.poDates[L.po.stage]}}
+  return null;
+}
+function windowOpen(){
+  if(G.phase==='offseason')return 'été';
+  if(G.phase!=='season'||!G.date)return null;
+  const y=seasonYear();
+  if(G.date<=`${y}-09-15`)return 'été';
+  if(G.date>=`${y}-12-15`&&G.date<=`${y+1}-01-31`)return 'hiver';
+  return null;
+}

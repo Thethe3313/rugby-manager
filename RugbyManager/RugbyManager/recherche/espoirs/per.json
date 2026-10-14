@@ -1,0 +1,200 @@
+[
+ {
+  "n": "Diego Mascarenc",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2007,
+  "nat": "France",
+  "u20": true,
+  "rt": 58,
+  "pot": 79,
+  "unsure": false
+ },
+ {
+  "n": "Simon Taty",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 57,
+  "pot": 75,
+  "unsure": true
+ },
+ {
+  "n": "Maxim Granell",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2005,
+  "nat": "France",
+  "u20": true,
+  "rt": 58,
+  "pot": 72,
+  "unsure": false
+ },
+ {
+  "n": "Davit Lagvilava",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2005,
+  "nat": "Georgia",
+  "u20": true,
+  "rt": 58,
+  "pot": 70,
+  "unsure": true
+ },
+ {
+  "n": "Andro Dvali",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2005,
+  "nat": "Georgia",
+  "u20": true,
+  "rt": 56,
+  "pot": 70,
+  "unsure": true
+ },
+ {
+  "n": "Giorgi Meskhidze",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2006,
+  "nat": "Georgia",
+  "u20": true,
+  "rt": 54,
+  "pot": 71,
+  "unsure": true
+ },
+ {
+  "n": "Simon Sol",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 71,
+  "unsure": false
+ },
+ {
+  "n": "Thomas Serezat",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 50,
+  "pot": 71,
+  "unsure": true
+ },
+ {
+  "n": "Mathys Pillac",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 52,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Melvyn Zafra",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2007,
+  "nat": "France",
+  "u20": false,
+  "rt": 50,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Alexandru Ion",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2008,
+  "nat": "France",
+  "u20": false,
+  "rt": 46,
+  "pot": 67,
+  "unsure": true
+ },
+ {
+  "n": "Anthony Mattew Guirado",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 50,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Setareki Toganiyadrava",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2004,
+  "nat": "Fiji",
+  "u20": false,
+  "rt": 55,
+  "pot": 66,
+  "unsure": true
+ },
+ {
+  "n": "Giani Callegari",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Hugo Baron",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Aymane El Fahhal",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 49,
+  "pot": 65,
+  "unsure": true
+ },
+ {
+  "n": "Simon Bertrand",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 48,
+  "pot": 64,
+  "unsure": true
+ },
+ {
+  "n": "Joan Barcenilla D'Onghia",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2006,
+  "nat": "France",
+  "u20": false,
+  "rt": 48,
+  "pot": 64,
+  "unsure": true
+ }
+]

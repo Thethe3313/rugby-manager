@@ -1,0 +1,984 @@
+[
+ {
+  "n": "Zaccharie Affane",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 58,
+  "ev": "23-24 UBB 2 apps; 24-25 1 app; 25-26 loan Brive ProD2 14 apps 6 st; FRA U20",
+  "tags": [],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "dec"
+  ]
+ },
+ {
+  "n": "Sipili Falatea",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "France",
+  "caps": 15,
+  "recent": true,
+  "rt": 76,
+  "ev": "23-24 FRA RWC squad, injured; 24-25 UBB 22 apps 9 st; 25-26 13 apps, FRA 1 cap Jul 26",
+  "tags": [
+   "scrum",
+   "power",
+   "handler"
+  ],
+  "str": [
+   "mel",
+   "pui",
+   "mai"
+  ],
+  "weak": [
+   "end"
+  ]
+ },
+ {
+  "n": "Matis Perchaud",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 70,
+  "ev": "23-24 Bayonne 17 apps 13 st; 24-25 UBB 13 apps 5 st; 25-26 UBB 21 apps 9 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Lasha Pkhakadze",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2003,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Jefferson Poirot",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1992,
+  "nat": "France",
+  "caps": 36,
+  "recent": true,
+  "rt": 80,
+  "ev": "23-24 UBB 23 apps 15 st; 24-25 22 st, CC winner; 25-26 21 st, CC winner; FRA recall Jul 26 (3)",
+  "tags": [
+   "scrum",
+   "workrate"
+  ],
+  "str": [
+   "mel",
+   "lea",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Carlü Sadie",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1997,
+  "nat": "South Africa",
+  "caps": 2,
+  "recent": true,
+  "rt": 79,
+  "ev": "23-24 UBB 11 st; 24-25 13 st; 25-26 30 apps 24 st, CC winner; RSA 2 caps 2026",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Ben Tameifuna",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1991,
+  "nat": "Tonga",
+  "caps": 30,
+  "recent": true,
+  "rt": 75,
+  "ev": "23-24 UBB 15 st, TON RWC; 24-25 14 st, CC winner; 25-26 21 apps 5 st (bench), TON Nov 25",
+  "tags": [
+   "scrum",
+   "power",
+   "handler"
+  ],
+  "str": [
+   "mel",
+   "pui",
+   "mai"
+  ],
+  "weak": [
+   "end",
+   "vit"
+  ]
+ },
+ {
+  "n": "Tom Taufa",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1995,
+  "nat": "Tonga",
+  "caps": 1,
+  "recent": false,
+  "rt": 66,
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Gaëtan Barlot",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1997,
+  "nat": "France",
+  "caps": 12,
+  "recent": true,
+  "rt": 78,
+  "ev": "23-24 Castres 15 st, FRA 2; 24-25 Castres 17 st, FRA 3 caps; 25-26 UBB 21 apps 10 st",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "rck",
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Christian Everitt",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2007,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 50,
+  "tags": [
+   "lineout"
+  ],
+  "str": [],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Maxime Lamothe",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 4,
+  "recent": true,
+  "rt": 79,
+  "ev": "23-24 UBB 29 apps 19 st; 24-25 13 st, CC winner; 25-26 15 st, FRA 4 caps incl 6N 2026",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "rck"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Connor Sa",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "24-25 UBB 21 apps 13 st, 3 tries; 25-26 13 apps 7 st; 26-27 bench",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "vit"
+  ],
+  "weak": [
+   "sfr"
+  ]
+ },
+ {
+  "n": "Cyril Cazeaux",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1995,
+  "nat": "France",
+  "caps": 4,
+  "recent": false,
+  "rt": 76,
+  "ev": "23-24 UBB 14 st; 24-25 29 apps 23 st, CC winner; 25-26 19 apps 13 st, left out of CC final",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Adam Coleman",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1991,
+  "nat": "Tonga",
+  "caps": 34,
+  "recent": false,
+  "rt": 78,
+  "ev": "AUS 29 + TON 5 caps; 23-24 UBB 11 st; 24-25 11 st CC winner; 25-26 15 st CC winner, age 35",
+  "tags": [
+   "lineout",
+   "power"
+  ],
+  "str": [
+   "tou",
+   "pui",
+   "lea"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ]
+ },
+ {
+  "n": "Alex Moon",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1996,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Northampton 17 st incl CC; 24-25 Bayonne 18 st; 25-26 Bayonne 11 apps 9 st",
+  "tags": [
+   "lineout",
+   "workrate"
+  ],
+  "str": [
+   "tou",
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Boris Palu",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1996,
+  "nat": "France",
+  "caps": 2,
+  "recent": false,
+  "rt": 80,
+  "ev": "23-24 Racing 8 st; 24-25 Racing 16 st; 25-26 UBB 22 st, AFP Top 14 XV, CC winner, France A",
+  "tags": [
+   "lineout",
+   "workrate",
+   "handler"
+  ],
+  "str": [
+   "mai",
+   "tou",
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Adam Zapedowski",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2006,
+  "nat": "Poland",
+  "caps": 0,
+  "recent": false,
+  "rt": 55,
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Pierre Bochaton",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1997,
+  "nat": "France",
+  "caps": 2,
+  "recent": true,
+  "rt": 76,
+  "ev": "23-24 UBB 10 st; 24-25 11 st, FRA cap v NZ; 25-26 13 st, FRA cap Jul 26 v NZ",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "eng",
+   "rck"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Jean-Luc Du Preez",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1995,
+  "nat": "South Africa",
+  "caps": 16,
+  "recent": true,
+  "rt": 76,
+  "ev": "23-24 Sale 11 st, RSA 1; 24-25 Sale 21 st; 25-26 RSA RC, 3 UBB apps then concussions, out since Jan 26",
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "tac",
+   "eng"
+  ],
+  "weak": [
+   "sfr"
+  ]
+ },
+ {
+  "n": "Romain Gardrat",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 54,
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Marko Gazzotti",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 4,
+  "recent": true,
+  "rt": 79,
+  "ev": "23-24 UBB 9 st; 24-25 17 st, FRA debut; 25-26 14 st 6 tries, FRA 3 starts Jul 26",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "rck",
+   "eng"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Tiaan Jacobs",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2004,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Biarritz ProD2 + RSA U20; 24-25 UBB 3 apps; 25-26 UBB 21 apps 9 st",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "mai"
+  ],
+  "weak": [
+   "dec"
+  ]
+ },
+ {
+  "n": "Temo Matiu",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 1,
+  "recent": true,
+  "rt": 77,
+  "ev": "23-24 Biarritz ProD2 16 st; 24-25 UBB 12 st, CC winner; 25-26 19 st, FRA cap 6N 2026",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "eng",
+   "tac",
+   "rck"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Tom Willis",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1999,
+  "nat": "England",
+  "caps": 8,
+  "recent": true,
+  "rt": 83,
+  "ev": "23-24 Saracens 11 st; 24-25 17 st, ENG 7 caps; 25-26 Sarries 20 st, Prem Player of Season",
+  "tags": [
+   "power",
+   "workrate",
+   "handler"
+  ],
+  "str": [
+   "pui",
+   "mai",
+   "evi"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Cameron Woki",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 32,
+  "recent": true,
+  "rt": 85,
+  "ev": "23-24 Racing, FRA 11 caps RWC; 24-25 Racing 19 st; 25-26 UBB 26 st 12 tries, CC winner; injured 6N 26",
+  "tags": [
+   "lineout",
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "tou",
+   "tac",
+   "vit"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Elyjah Ibsaiene",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 56,
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Valentin Hutteau",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "tags": [],
+  "str": [
+   "pas",
+   "vit"
+  ],
+  "weak": [
+   "sfr"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Maxime Lucu",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1993,
+  "nat": "France",
+  "caps": 33,
+  "recent": true,
+  "rt": 84,
+  "ev": "23-24 FRA 9 caps; 24-25 UBB 24 st, CC winner; 25-26 knee, 14 st, FRA captain Jul 26 (6 caps)",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "pie",
+   "but",
+   "pas",
+   "lea"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Martin Page-Relo",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1999,
+  "nat": "Italy",
+  "caps": 21,
+  "recent": true,
+  "rt": 78,
+  "ev": "23-24 Lyon, ITA 11 caps; 24-25 ITA 6 starts; 25-26 UBB 15 apps 10 st, ITA bench Nov 25",
+  "tags": [
+   "kicker",
+   "pace"
+  ],
+  "str": [
+   "pie",
+   "pas",
+   "vit"
+  ],
+  "weak": [
+   "tac"
+  ]
+ },
+ {
+  "n": "Matthieu Jalibert",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1998,
+  "nat": "France",
+  "caps": 38,
+  "recent": true,
+  "rt": 87,
+  "ev": "23-24 injuries, FRA 6; 24-25 UBB 172 pts, CC winner; 25-26 AFP Top 14 XV, FRA 5 caps",
+  "tags": [
+   "playmaker",
+   "kicker"
+  ],
+  "str": [
+   "pas",
+   "evi",
+   "dec",
+   "pie"
+  ],
+  "weak": [
+   "tac"
+  ]
+ },
+ {
+  "n": "Hugo Reus",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 La Rochelle 9 st 103 pts; 24-25 LR/MHR 4 st; 25-26 MHR/USAP/UBB 8 st",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "but",
+   "pie"
+  ],
+  "weak": [
+   "tac",
+   "pui"
+  ]
+ },
+ {
+  "n": "Gabriel Bohn",
+  "pos": "CEN",
+  "sub": "C13",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 52,
+  "tags": [],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Nicolas Depoortère",
+  "pos": "CEN",
+  "sub": "C13",
+  "by": 2003,
+  "nat": "France",
+  "caps": 8,
+  "recent": true,
+  "rt": 83,
+  "ev": "23-24 UBB 21 st, FRA debut; 24-25 14 st, FRA 2; 25-26 FRA 5 caps, shoulder surg; 26-27 back, 2 tries",
+  "tags": [
+   "defender",
+   "finisher",
+   "pace"
+  ],
+  "str": [
+   "tac",
+   "vit",
+   "evi"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Adrien Drault",
+  "pos": "CEN",
+  "sub": "C12",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Dan Du Plessis",
+  "pos": "CEN",
+  "sub": "C12",
+  "by": 1995,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 75,
+  "ev": "23-24 Stormers 13 st incl CC; 24-25 URC 15 st; 25-26 11 st, Barbarians; joined UBB 2026",
+  "tags": [
+   "power",
+   "defender"
+  ],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Rohan Janse van Rensburg",
+  "pos": "CEN",
+  "sub": "C12",
+  "by": 1994,
+  "nat": "South Africa",
+  "caps": 1,
+  "recent": false,
+  "rt": 72,
+  "ev": "23-24 Sharks/Canon; 24-25 UBB 15 st, CC winner; 25-26 10 st, Achilles rupture Apr 26",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ]
+ },
+ {
+  "n": "Yoram Moefana",
+  "pos": "CEN",
+  "sub": "C12",
+  "by": 2000,
+  "nat": "France",
+  "caps": 42,
+  "recent": true,
+  "rt": 86,
+  "ev": "23-24 FRA 12 caps; 24-25 FRA 8 starts, 6N winner, CC winner; 25-26 FRA 6 starts, UBB 17 st",
+  "tags": [
+   "power",
+   "defender"
+  ],
+  "str": [
+   "pui",
+   "tac",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Pablo Uberti",
+  "pos": "CEN",
+  "sub": "C13",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 76,
+  "ev": "23-24 UBB 17 st; 24-25 16 st, CC winner; 25-26 17 st, CC winner",
+  "tags": [
+   "handler",
+   "defender"
+  ],
+  "str": [
+   "mai",
+   "pla",
+   "tac"
+  ],
+  "weak": []
+ },
+ {
+  "n": "Hugo Avogadro",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 62,
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Louis Bielle-Biarrey",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 25,
+  "recent": true,
+  "rt": 91,
+  "ev": "23-24 FRA RWC 10 caps; 24-25 6N POT 5 tries, CC winner; 25-26 34 tries in 31 games, AFP XV",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "pla",
+   "mai"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Thomas Delpeuch",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Xan Mousquès",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Damian Penaud",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1996,
+  "nat": "France",
+  "caps": 56,
+  "recent": true,
+  "rt": 86,
+  "ev": "23-24 FRA RWC 9 caps 8 tries; 24-25 19 tries, CC winner; 25-26 21 st, out of 6N 26, NC recall",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "pla"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Salesi Rayasi",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1996,
+  "nat": "Fiji",
+  "caps": 7,
+  "recent": true,
+  "rt": 78,
+  "ev": "23-24 Hurricanes 4 st; 24-25 Vannes 17 st, FIJ 2; 25-26 UBB 31 apps 11 tries, FIJ 5 caps",
+  "tags": [
+   "pace",
+   "power"
+  ],
+  "str": [
+   "vit",
+   "pui",
+   "evi"
+  ],
+  "weak": [
+   "pie"
+  ]
+ },
+ {
+  "n": "Arthur Retière",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1997,
+  "nat": "France",
+  "caps": 1,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 Toulouse 9 st; 24-25 UBB 11 st; 25-26 UBB 18 apps 5 st; 26-27 3 st",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pui"
+  ]
+ },
+ {
+  "n": "Romain Buros",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1997,
+  "nat": "France",
+  "caps": 1,
+  "recent": true,
+  "rt": 80,
+  "ev": "23-24 UBB 23 st; 24-25 15 st, FRA cap Nov 24, CC winner; 25-26 14 st 7 tries; 6N 26 squad",
+  "tags": [
+   "kicker",
+   "handler"
+  ],
+  "str": [
+   "pie",
+   "pla",
+   "mai"
+  ],
+  "weak": []
+ }
+]

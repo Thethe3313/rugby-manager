@@ -1,0 +1,797 @@
+[
+{
+"n": "Luka Goginava",
+"pos": "PIL",
+"sub": "LH",
+"by": 1996,
+"nat": "Georgia",
+"caps": 8,
+"recent": true,
+"rt": 68,
+"ev": "23-24 Grenoble 25 ProD2 (14 st); 24-25 MdM 15 st; 25-26 MdM 21 st+GEO REC 4; 26-27 starting LH",
+"tags": [
+"scrum"
+],
+"str": [
+"mel",
+"pui"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Yahnis El Maslouhi",
+"pos": "PIL",
+"sub": "LH",
+"by": 2002,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 63,
+"ev": "23-24 UBB 2 T14; 24-25 18 ProD2 (4 st); 25-26 23 apps 12 st; 26-27 rotating at 1",
+"tags": [
+"scrum"
+],
+"str": [
+"mel",
+"end"
+],
+"weak": [
+"pas"
+]
+},
+{
+"n": "Killian Taofifenua",
+"pos": "PIL",
+"sub": "LH",
+"by": 2000,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 61,
+"ev": "23-24 BO 12 ProD2; 24-25 BO 8 (4 st); 25-26 Carcassonne 14 apps 10 st; 26-27 1 app",
+"tags": [
+"scrum"
+],
+"str": [
+"pui"
+],
+"weak": [],
+"unsure": true
+},
+{
+"n": "Luka Azariashvili",
+"pos": "PIL",
+"sub": "TH",
+"by": 2000,
+"nat": "Georgia",
+"caps": 0,
+"recent": false,
+"rt": 62,
+"ev": "23-24 Rouen 10 ProD2; 24-25 Montauban 12 (5 st); 25-26 Montauban 2 T14 bench",
+"tags": [
+"scrum"
+],
+"str": [
+"mel"
+],
+"weak": [
+"end"
+],
+"unsure": true
+},
+{
+"n": "Julien Rasamoelina",
+"pos": "PIL",
+"sub": "TH",
+"by": 2002,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 60,
+"ev": "Home-grown; 23-25 3 apps; 25-26 11 apps (bench); 26-27 started vs Narbonne",
+"tags": [
+"scrum"
+],
+"str": [
+"mel"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Maka Mafileo",
+"pos": "PIL",
+"sub": "TH",
+"by": 1999,
+"nat": "New Zealand",
+"caps": 0,
+"recent": false,
+"rt": 61,
+"ev": "Summer 2026 arrival, prior record unclear; 26-27 started at 3 vs Valence, bench vs Narbonne",
+"tags": [
+"scrum"
+],
+"str": [
+"pui"
+],
+"weak": [],
+"unsure": true
+},
+{
+"n": "Nikoloz Sutidze",
+"pos": "TAL",
+"sub": "TAL",
+"by": 2003,
+"nat": "Georgia",
+"caps": 8,
+"recent": true,
+"rt": 67,
+"ev": "Loan from La Rochelle: 24-25 9 T14+2 CC; 25-26 12 T14+3 cups; GEO 8 caps 2025-26; 26-27 starter",
+"tags": [
+"lineout",
+"workrate"
+],
+"str": [
+"tou",
+"rck",
+"eng"
+],
+"weak": [
+"sfr"
+]
+},
+{
+"n": "Yvann Lalevée",
+"pos": "TAL",
+"sub": "TAL",
+"by": 1999,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 64,
+"ev": "23-24 14 ProD2 (8 st, 3 tries); 24-25 17 (5 st); 25-26 12 (7 st); 26-27 5 st",
+"tags": [
+"lineout"
+],
+"str": [
+"tou",
+"eng"
+],
+"weak": []
+},
+{
+"n": "Jonathan Maïau",
+"pos": "TAL",
+"sub": "TAL",
+"by": 2002,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 59,
+"ev": "23-24 Nevers 23 ProD2 (8 st); 24-25 Nevers 7 st; 25-26 BEZ 6 apps; 26-27 not yet used",
+"tags": [],
+"str": [
+"pui"
+],
+"weak": [],
+"unsure": true
+},
+{
+"n": "Yanis Lockwood",
+"pos": "TAL",
+"sub": "TAL",
+"by": 2005,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 54,
+"ev": "Academy; 25-26 5 ProD2 apps (1 st); 26-27 bench hooker, 4 apps",
+"tags": [],
+"str": [],
+"weak": []
+},
+{
+"n": "Cam Dodson",
+"pos": "2L",
+"sub": "2L",
+"by": 1996,
+"nat": "England",
+"caps": 0,
+"recent": false,
+"rt": 67,
+"ev": "Ex-Wasps; 23-24 Aurillac 14 st; 24-25 BEZ 19 apps 14 st; 25-26 20 apps 16 st; 26-27 starter",
+"tags": [
+"lineout",
+"workrate"
+],
+"str": [
+"tou",
+"eng",
+"tac"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Jérôme Dufour",
+"pos": "2L",
+"sub": "2L",
+"by": 1992,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 64,
+"ev": "23-24 Provence 11 st; 24-25 Provence 6 st; 25-26 BEZ 12 apps 10 st; 26-27 starter, 34yo",
+"tags": [
+"lineout"
+],
+"str": [
+"tou",
+"pla"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Shahn Eru",
+"pos": "2L",
+"sub": "2L",
+"by": 1989,
+"nat": "Cook Islands",
+"caps": 2,
+"recent": false,
+"rt": 62,
+"ev": "23-24 USAP 7 T14+3 CC; 24-25 BEZ 21 ProD2; 25-26 22 apps; 26-27 6 apps; 37yo",
+"tags": [
+"power"
+],
+"str": [
+"pui",
+"mel"
+],
+"weak": [
+"vit",
+"end"
+]
+},
+{
+"n": "Ian Kitwanga",
+"pos": "2L",
+"sub": "2L",
+"by": 1999,
+"nat": "DR Congo",
+"caps": 0,
+"recent": false,
+"rt": 58,
+"ev": "Soyaux-Ang.: 23-24 12 ProD2 (6 st); 24-25 8 (4 st); 25-26 3 apps; 26-27 BEZ bench",
+"tags": [],
+"str": [
+"pui"
+],
+"weak": [],
+"unsure": true
+},
+{
+"n": "Gillian Benoy",
+"pos": "3L",
+"sub": "FL",
+"by": 1995,
+"nat": "Belgium",
+"caps": 14,
+"recent": true,
+"rt": 66,
+"ev": "23-24 14 ProD2 (6 st)+BEL 2; 24-25 19 (13 st)+REC 3; 25-26 14 (10 st); 26-27 starting 7, lock cover",
+"tags": [
+"workrate",
+"lineout"
+],
+"str": [
+"eng",
+"tou",
+"tac"
+],
+"weak": []
+},
+{
+"n": "William Van Bost",
+"pos": "3L",
+"sub": "FL",
+"by": 1998,
+"nat": "Belgium",
+"caps": 15,
+"recent": true,
+"rt": 67,
+"ev": "23-24 27 ProD2 (22 st); 24-25 21 (10 st)+BEL 4; 25-26 13 (8 st)+BEL 5; 26-27 starting 6",
+"tags": [
+"defender",
+"workrate"
+],
+"str": [
+"tac",
+"eng",
+"rck"
+],
+"weak": []
+},
+{
+"n": "Clément Ancely",
+"pos": "3L",
+"sub": "FL",
+"by": 1993,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 66,
+"ev": "23-24 27 ProD2 (23 st); 24-25 14 (11 st); 25-26 23 apps 18 st; 26-27 2 apps; 33yo",
+"tags": [
+"workrate",
+"defender"
+],
+"str": [
+"rck",
+"tac",
+"eng"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Apisalome Kuruisaqila",
+"pos": "3L",
+"sub": "FL",
+"by": 2002,
+"nat": "Fiji",
+"caps": 0,
+"recent": false,
+"rt": 58,
+"ev": "25-26 7 ProD2 apps (2 st); 26-27 bench vs Valence",
+"tags": [
+"power"
+],
+"str": [
+"pui"
+],
+"weak": [],
+"unsure": true
+},
+{
+"n": "Thomas Canaleta",
+"pos": "3L",
+"sub": "FL",
+"by": 2004,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 56,
+"ev": "Academy; 24-25 3 ProD2 apps; 25-26 5 (3 st, 1 try); 26-27 3 apps bench",
+"tags": [],
+"str": [
+"eng"
+],
+"weak": []
+},
+{
+"n": "Tanguy Jaillon",
+"pos": "3L",
+"sub": "FL",
+"by": 2006,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 54,
+"ev": "Academy; 24-25 1 ProD2 start; 25-26 4 apps; 26-27 2 starts",
+"tags": [],
+"str": [
+"eng"
+],
+"weak": []
+},
+{
+"n": "Sias Koen",
+"pos": "3L",
+"sub": "N8",
+"by": 1994,
+"nat": "South Africa",
+"caps": 0,
+"recent": false,
+"rt": 68,
+"ev": "23-24 22 ProD2 (15 st); 24-25 17 (8 st); 25-26 15 (12 st); 26-27 starting 8",
+"tags": [
+"power",
+"handler"
+],
+"str": [
+"pui",
+"mai",
+"tou"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Mackenzie Martin",
+"pos": "3L",
+"sub": "N8",
+"by": 2004,
+"nat": "Wales",
+"caps": 5,
+"recent": false,
+"rt": 67,
+"ev": "23-24 Cardiff 9 apps+WAL 5 caps (6N); 24-25 Cardiff 5 apps; 25-26 Dragons 4; 26-27 3 apps",
+"tags": [
+"power",
+"workrate"
+],
+"str": [
+"pui",
+"eng"
+],
+"weak": [
+"dec"
+]
+},
+{
+"n": "Adrien Bau",
+"pos": "DM",
+"sub": "DM",
+"by": 1994,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 65,
+"ev": "Soyaux-Ang.: 23-24 21 ProD2 (12 st); 24-25 21 (9 st); 25-26 12 (8 st); 26-27 BEZ first-choice 9",
+"tags": [
+"pace"
+],
+"str": [
+"vit",
+"pas"
+],
+"weak": []
+},
+{
+"n": "David Delarue",
+"pos": "DM",
+"sub": "DM",
+"by": 1997,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 64,
+"ev": "Aurillac: 23-24 19 ProD2 (12 st); 24-25 11 (6 st); 25-26 18 (15 st); 26-27 not yet used",
+"tags": [],
+"str": [
+"pas",
+"pie"
+],
+"weak": [],
+"unsure": true
+},
+{
+"n": "Damien Añon",
+"pos": "DM",
+"sub": "DM",
+"by": 1995,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 63,
+"ev": "23-24 Carcassonne Nat 8 st; 24-25 BEZ 24 apps 12 st; 25-26 25 apps 12 st; 26-27 bench, 2 tries",
+"tags": [],
+"str": [
+"pas",
+"eng"
+],
+"weak": []
+},
+{
+"n": "Martin Verdu",
+"pos": "DM",
+"sub": "DM",
+"by": 2004,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 52,
+"ev": "Ex-Castres academy; 26-27 1 ProD2 app off bench",
+"tags": [],
+"str": [],
+"weak": [],
+"unsure": true
+},
+{
+"n": "Charly Malié",
+"pos": "OUV",
+"sub": "OUV",
+"by": 1992,
+"nat": "Spain",
+"caps": 10,
+"recent": false,
+"rt": 66,
+"ev": "Ex-Pau; 23-24 25 ProD2 (24 st); 24-25 15 st; 25-26 8 apps (out to Jan); 26-27 starting 10; ESP 10 caps",
+"tags": [
+"playmaker"
+],
+"str": [
+"pie",
+"dec",
+"sfr"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Gabin Kretchmann",
+"pos": "OUV",
+"sub": "OUV",
+"by": 2006,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 58,
+"ev": "USAP: 24-25 2 apps; 25-26 4 T14+2 CC, FRA U20 6N 5 apps; 26-27 BEZ 3 apps",
+"tags": [
+"kicker"
+],
+"str": [
+"pie",
+"but"
+],
+"weak": []
+},
+{
+"n": "Malakai Fekitoa",
+"pos": "CEN",
+"sub": "CEN",
+"by": 1992,
+"nat": "Tonga",
+"caps": 35,
+"recent": false,
+"rt": 73,
+"ev": "23-24 Benetton 10 apps+TGA RWC 3; 24-25 13 URC/CC; 25-26 11 apps; 26-27 BEZ 12; ex-AB 24 caps",
+"tags": [
+"power",
+"defender"
+],
+"str": [
+"tac",
+"pui",
+"evi"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Job Poulet",
+"pos": "CEN",
+"sub": "CEN",
+"by": 2003,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 63,
+"ev": "USAP: 23-24 3 apps; 24-25 4 apps; 25-26 10 T14 (3 st)+3 CC; 26-27 BEZ starter",
+"tags": [
+"defender"
+],
+"str": [
+"tac"
+],
+"weak": []
+},
+{
+"n": "Paul Recor",
+"pos": "CEN",
+"sub": "CEN",
+"by": 2000,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 64,
+"ev": "23-24 22 ProD2 (14 st); 24-25 15 (13 st); 25-26 13 (11 st); 26-27 rotating 12/13",
+"tags": [
+"defender"
+],
+"str": [
+"tac",
+"pla"
+],
+"weak": []
+},
+{
+"n": "Guillaume Galletier",
+"pos": "CEN",
+"sub": "CEN",
+"by": 1997,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 59,
+"ev": "23-24 Brive 12 ProD2 (9 st); 24-25 Brive 4; 25-26 Provence 5 (1 st); 26-27 BEZ 1 st",
+"tags": [],
+"str": [
+"pas"
+],
+"weak": [],
+"unsure": true
+},
+{
+"n": "Pierre Courtaud",
+"pos": "AIL",
+"sub": "AIL",
+"by": 1999,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 66,
+"ev": "23-24 7 ProD2 (6 st); 24-25 22 apps 21 st, 9 tries; 25-26 17 (14 st); 26-27 starter",
+"tags": [
+"finisher",
+"pace"
+],
+"str": [
+"vit",
+"pla"
+],
+"weak": []
+},
+{
+"n": "Paul Gadea",
+"pos": "AIL",
+"sub": "AIL",
+"by": 2002,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 62,
+"ev": "23-24 Hyères Nat 14 st; 24-25 Carcassonne Nat 12 st; 25-26 Carcassonne ProD2 15 st; 26-27 starter",
+"tags": [
+"pace"
+],
+"str": [
+"vit"
+],
+"weak": []
+},
+{
+"n": "Paul Reau",
+"pos": "AIL",
+"sub": "AIL",
+"by": 2001,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 62,
+"ev": "23-24 8 ProD2 (7 st); 24-25 8 (5 st); 25-26 15 apps 13 st, 3 tries; 26-27 1 st",
+"tags": [
+"pace"
+],
+"str": [
+"vit"
+],
+"weak": []
+},
+{
+"n": "Nicolas Plazy",
+"pos": "AIL",
+"sub": "AIL",
+"by": 1994,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 62,
+"ev": "23-24 12 ProD2 st, 4 tries; 24-25 7 st; 25-26 21 apps 15 st; 26-27 1 st",
+"tags": [
+"finisher"
+],
+"str": [
+"pla"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Barnabé Mechentel",
+"pos": "AIL",
+"sub": "AIL",
+"by": 2005,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 59,
+"ev": "Ex-Toulon academy, 25-26 2 T14 apps; 26-27 BEZ starting wing (4 apps 1 try); also 15",
+"tags": [
+"pace"
+],
+"str": [
+"vit"
+],
+"weak": []
+},
+{
+"n": "Jordon Janse van Rensburg",
+"pos": "AIL",
+"sub": "AIL",
+"by": 2000,
+"nat": "South Africa",
+"caps": 0,
+"recent": false,
+"rt": 57,
+"ev": "Aurillac: 23-24 4 st; 24-25 2 st; 25-26 7 apps (5 st); 26-27 BEZ bench",
+"tags": [],
+"str": [],
+"weak": [],
+"unsure": true
+},
+{
+"n": "Joseph Laharrague",
+"pos": "ARR",
+"sub": "ARR",
+"by": 2006,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 66,
+"ev": "Loan from UBB (10/15): 25-26 11 T14 apps (4 st, 2 tries); 26-27 4 st, 22 pts, goal-kicker",
+"tags": [
+"kicker",
+"playmaker"
+],
+"str": [
+"but",
+"pas",
+"pie"
+],
+"weak": [
+"pui"
+]
+},
+{
+"n": "Victor Dreuille",
+"pos": "ARR",
+"sub": "ARR",
+"by": 1998,
+"nat": "France",
+"caps": 0,
+"recent": false,
+"rt": 61,
+"ev": "10/15: 23-24 18 ProD2 (9 st, 48 pts); 24-25 12 (3 st); 25-26 10 (7 st); 26-27 started at 15",
+"tags": [
+"kicker"
+],
+"str": [
+"pie",
+"but"
+],
+"weak": [
+"vit"
+]
+},
+{
+"n": "Duran Koevort",
+"pos": "ARR",
+"sub": "ARR",
+"by": 2002,
+"nat": "South Africa",
+"caps": 0,
+"recent": false,
+"rt": 61,
+"ev": "Ex-UCT, SA U20; 25-26 BEZ 12 ProD2 (11 st); 26-27 not in recent matchday squads",
+"tags": [],
+"str": [
+"mai"
+],
+"weak": [],
+"unsure": true
+}
+]

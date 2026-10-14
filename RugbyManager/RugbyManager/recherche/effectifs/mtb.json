@@ -1,0 +1,1024 @@
+[
+ {
+  "n": "Daniel Brennan",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 1998,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Brive PD2 11/10 st; 24-25 Toulon 19 apps/2 st; 25-26 Toulon 14/5; 26-27 MTB 4 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Léo Aouf",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 63,
+  "ev": "23-24 MTB 4 apps; 24-25 PD2 19/16 st; 25-26 T14+CC 8/3; 26-27 4/1",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Nugzar Somkhishvili",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2003,
+  "nat": "Georgia",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "23-25 Chambéry Nationale 15/11, 23/19; 25-26 MTB 7 apps/2 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lucas Seyrolle",
+  "pos": "PIL",
+  "sub": "LH",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "25-26 MTB T14 17 apps + CC 3, mostly off bench",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [],
+  "unsure": true
+ },
+ {
+  "n": "Lucio Sordoni",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 1998,
+  "nat": "Argentina",
+  "caps": 10,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 Glasgow 17/8 st + ARG 4 Tests; 24-25 Racing 7/5, MTB 5; 25-26 MTB T14 8/6",
+  "tags": [
+   "scrum",
+   "power"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Christopher Vaotoa",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2000,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Oyo T14 18/12 st; 24-25 5 apps; 25-26 Oyo PD2 23/16; 26-27 MTB 3 st",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Sidi-Mohammed Diallo",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "ev": "24-25 Rouen Nationale 14/7; 25-26 16/11; 26-27 MTB 4/1",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Siosifa Amone",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2002,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 61,
+  "ev": "Aus U20; Force 2023 11/1; Waratahs 2025 5/0, 2026 8/1; 26-27 MTB 2/1",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Valentin Simutoga",
+  "pos": "PIL",
+  "sub": "TH",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Ex-FRA U20; 23-24 Lyon 8 apps/0 st; 24-25 3 apps; 25-26 MTB 11/4",
+  "tags": [
+   "scrum"
+  ],
+  "str": [
+   "mel"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Johnny Matthews",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1993,
+  "nat": "Scotland",
+  "caps": 3,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 GLA URC champ 17/9, top try scorer + RWC; 24-25 21/10 + SCO cap; 25-26 8/5; 26-27 2 tries",
+  "tags": [
+   "finisher",
+   "lineout"
+  ],
+  "str": [
+   "mai",
+   "evi",
+   "eng"
+  ],
+  "weak": [
+   "mel"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Ru-Hann Greyling",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2000,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 MTB PD2 16/7; 24-25 9/3; 25-26 T14 11/10 st; 26-27 4/2",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Kévin Firmin",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 MTB PD2 21/13; 24-25 17/9 3 tries; 25-26 T14+CC 14/8; 26-27 1 app",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Maixent Da Costa",
+  "pos": "TAL",
+  "sub": "TAL",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 54,
+  "ev": "25-26 Albi Nationale 5/3 + MTB CC 2/1; 26-27 1 st",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "mel"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Lewis Bean",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1992,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 MTB PD2 22/11; 24-25 14/11; 25-26 T14 12/8; 26-27 1 app; age 34",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Karl Wilkins",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1996,
+  "nat": "England",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 MTB PD2 18/14 (BR); 24-25 14/9; 25-26 T14 17/13 (6/8/4); 26-27 lock 6/5",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "eng",
+   "tac",
+   "rck"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Romain Macurdy",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2002,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "Castres fringe: 1-3 apps/season 23-26; 26-27 MTB 4/2",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Youssouf Soucouna",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "ev": "24-25 MHR CC 3 st; no other pro record; 26-27 MTB 3 bench apps",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Noa Kanika",
+  "pos": "2L",
+  "sub": "2L",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 MTB PD2 12/4; 24-25 21/13; 25-26 T14+CC 20/10; 26-27 5/1",
+  "tags": [
+   "lineout"
+  ],
+  "str": [
+   "tou",
+   "eng"
+  ],
+  "weak": [
+   "dec"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Vaea Fifita",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1992,
+  "nat": "Tonga",
+  "caps": 19,
+  "recent": false,
+  "rt": 73,
+  "ev": "Ex-NZ; 23-24 Scarlets 14 st + TGA RWC; 24-25 19/17; 25-26 MTB T14+CC 23/15; age 34",
+  "tags": [
+   "power",
+   "pace",
+   "lineout"
+  ],
+  "str": [
+   "pui",
+   "vit",
+   "tou"
+  ],
+  "weak": [
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Fred Quercy",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1994,
+  "nat": "Spain",
+  "caps": 8,
+  "recent": false,
+  "rt": 67,
+  "ev": "Captain; 23-24 MTB 8/4; 24-25 PD2 18/12; 25-26 T14+CC 14/13; 26-27 2 st; age 32",
+  "tags": [
+   "workrate",
+   "defender"
+  ],
+  "str": [
+   "lea",
+   "eng",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Lucas Dessaigne",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 CLE T14 18/8; 24-25 no apps; 25-26 CLE 13/5; 26-27 MTB 5/4, 2 tries",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng",
+   "rck",
+   "tac"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Lomig Jouanny",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "FRA U20 22-23; Toulouse 1 T14 st 23-24; 25-26 Agen PD2 10/4; 26-27 1 st",
+  "tags": [
+   "workrate"
+  ],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jules Bousquet",
+  "pos": "3L",
+  "sub": "FL",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 52,
+  "ev": "Espoir, no senior record found",
+  "tags": [],
+  "str": [
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Vaiolini Ekuasi",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2002,
+  "nat": "Tonga",
+  "caps": 0,
+  "recent": false,
+  "rt": 72,
+  "ev": "2024 Rebels SR 12/7; 2025 Force 4/2 (inj); 2026 Force 9/9 st, top-10 tackles/carries; 26-27 MTB 5/4",
+  "tags": [
+   "power",
+   "workrate"
+  ],
+  "str": [
+   "pui",
+   "tac",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Tyrone Viiga",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 1994,
+  "nat": "Cook Islands",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 MTB PD2 16/15; 24-25 12/7; 25-26 T14+CC 13/9; age 32",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "vit",
+   "end"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Nafi Ma'afu",
+  "pos": "3L",
+  "sub": "N8",
+  "by": 2000,
+  "nat": "USA",
+  "caps": 5,
+  "recent": true,
+  "rt": 66,
+  "ev": "23-24 BO PD2 7/2; 24-25 10/5; 25-26 MTB T14+CC 24/14 + USA 5 caps; 26-27 3/1",
+  "tags": [
+   "power"
+  ],
+  "str": [
+   "pui",
+   "eng"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Joe Powell",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1996,
+  "nat": "Australia",
+  "caps": 6,
+  "recent": false,
+  "rt": 69,
+  "ev": "23-24 LEI/Lyon 10/4; 24-25 MTB PD2 22/12 (champ); 25-26 T14+CC 14/10",
+  "tags": [
+   "playmaker"
+  ],
+  "str": [
+   "pas",
+   "vit",
+   "eng"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jack Maunder",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 1997,
+  "nat": "England",
+  "caps": 2,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Rebels 7/1; 24-25 Agen PD2 19/14; 25-26 14/11; 26-27 MTB 4/2",
+  "tags": [
+   "playmaker"
+  ],
+  "str": [
+   "pas",
+   "pie"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Hugo Zabalza",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 Paris 4/1; 24-25 MTB PD2 19/11; 25-26 T14+CC 17/10; 26-27 5/4",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Maël Castel",
+  "pos": "DM",
+  "sub": "DM",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 60,
+  "ev": "24-25 MTB 4/1; 25-26 T14+CC 13/7; 26-27 2 bench apps",
+  "tags": [],
+  "str": [
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Enzo Hervé",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 71,
+  "ev": "23-24 Toulon T14 14/9 60 pts; 24-25 20/10 71 pts; 25-26 Castres 13/7; 26-27 MTB 5 st 42 pts",
+  "tags": [
+   "kicker",
+   "playmaker"
+  ],
+  "str": [
+   "but",
+   "pie",
+   "pas"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jack Walsh",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1998,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 74,
+  "ev": "23-24 Ospreys 22/15 80 pts; 24-25 23/19; 25-26 22/20, URC Playmaker award; 10 or 15",
+  "tags": [
+   "playmaker",
+   "handler"
+  ],
+  "str": [
+   "pas",
+   "dec",
+   "evi",
+   "pie"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Baptiste Mouchous",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 1999,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Rouen PD2 24/19; 24-25 MTB 19/17 (champ); 25-26 T14 17/15; 26-27 2 st; 15/10",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "pie",
+   "pla"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Thomas Fortunel",
+  "pos": "OUV",
+  "sub": "OUV",
+  "by": 1996,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 MTB PD2 15/10 42 pts; 24-25 21/13 68 pts; 25-26 T14+CC 12/9 42 pts",
+  "tags": [
+   "kicker"
+  ],
+  "str": [
+   "but",
+   "pie"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Joey Walton",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2000,
+  "nat": "Australia",
+  "caps": 0,
+  "recent": false,
+  "rt": 73,
+  "ev": "Waratahs 2024 10/8, 2025 12/9, 2026 10/8; Australia A 3 caps (2023-25); 26-27 MTB 5/4",
+  "tags": [
+   "power",
+   "handler"
+  ],
+  "str": [
+   "pui",
+   "mai",
+   "tac"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Maxime Espeut",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2004,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 68,
+  "ev": "23-24 Béziers PD2 16/12; 24-25 MTB 19/13; 25-26 T14 20/17, 3 tries; 26-27 4/2",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pla"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "JT Jackson",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1996,
+  "nat": "South Africa",
+  "caps": 0,
+  "recent": false,
+  "rt": 67,
+  "ev": "23-24 Rouen PD2 27/22; 24-25 MTB 21/19 (champ); 25-26 T14 17/14, 3 tries",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pui"
+  ],
+  "weak": [
+   "vit"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Simon Renda",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 MTB PD2 11/6; 24-25 27/22, 5 tries; 25-26 T14+CC 19/13; 26-27 3/1",
+  "tags": [
+   "defender"
+  ],
+  "str": [
+   "tac",
+   "pla"
+  ],
+  "weak": [],
+  "unsure": false
+ },
+ {
+  "n": "Yvan Reilhac",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 1997,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 64,
+  "ev": "23-24 MTB PD2 25/23; 24-25 18/16, 6 tries; 25-26 T14+CC 8/5; wing/centre",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Asaeli Pacolo",
+  "pos": "CEN",
+  "sub": "CEN",
+  "by": 2005,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 54,
+  "ev": "Espoir, little senior data found",
+  "tags": [],
+  "str": [
+   "pui"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Josua Vici",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 1998,
+  "nat": "Fiji",
+  "caps": 0,
+  "recent": false,
+  "rt": 73,
+  "ev": "23-24 MTB PD2 19 st 4 t; 24-25 18 st 9 t (champ); 25-26 T14 17 st 8 t; 26-27 5 st 3 t",
+  "tags": [
+   "finisher",
+   "power"
+  ],
+  "str": [
+   "pui",
+   "evi",
+   "vit"
+  ],
+  "weak": [
+   "pie"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Stéphane Ahmed",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 66,
+  "ev": "23-24 Paris T14 5 st + MTB 5 st; 24-25 PD2 20 st 6 t; 25-26 7 st; 26-27 3 st",
+  "tags": [
+   "pace",
+   "finisher"
+  ],
+  "str": [
+   "vit",
+   "evi"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Paul Vallée",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2003,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 65,
+  "ev": "23-24 Rouen PD2 19 st 3 t; 24-25 MTB 7/6 3 t; 25-26 T14+CC 17/16 3 t; 26-27 2 st",
+  "tags": [
+   "pace"
+  ],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Romain Fonnicola",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2001,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 57,
+  "ev": "23-24 1 app; 24-25 4/1; 25-26 T14+CC 5/3",
+  "tags": [],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": false
+ },
+ {
+  "n": "Jean Seux",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 52,
+  "ev": "Espoir, no senior record found",
+  "tags": [],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Merlin Leflamand",
+  "pos": "AIL",
+  "sub": "AIL",
+  "by": 2006,
+  "nat": "France",
+  "caps": 0,
+  "recent": false,
+  "rt": 52,
+  "ev": "Espoir, no senior record found",
+  "tags": [],
+  "str": [
+   "vit"
+  ],
+  "weak": [
+   "pla"
+  ],
+  "unsure": true
+ },
+ {
+  "n": "Dachi Papunashvili",
+  "pos": "ARR",
+  "sub": "ARR",
+  "by": 2005,
+  "nat": "Georgia",
+  "caps": 6,
+  "recent": true,
+  "rt": 70,
+  "ev": "23-24 Aurillac 5 st; 24-25 11/10 + GEO 5 REC; 25-26 12/11 88 pts + GEO; 26-27 MTB 2 st",
+  "tags": [
+   "pace",
+   "kicker"
+  ],
+  "str": [
+   "vit",
+   "evi",
+   "but"
+  ],
+  "weak": [
+   "pui"
+  ],
+  "unsure": false
+ }
+]
