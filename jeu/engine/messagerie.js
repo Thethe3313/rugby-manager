@@ -9,12 +9,14 @@ function mail(from,subj,body,opt){
 const unread=()=>(G.mail||[]).filter(x=>!x.read).length;
 // Objectif fixé par le président selon la force de l'effectif dans sa division
 function setObjective(){
-  const m=ME(),lg=m.lg,ids=clubsIn(lg).sort((a,b)=>clubStr(b)-clubStr(a)).map(c=>c.id),r=ids.indexOf(m.id)+1,n=ids.length;
+  const m=ME(),lg=m.lg,ids=clubsIn(lg).filter(c=>lg!=='n2'||c.poule===m.poule).sort((a,b)=>clubStr(b)-clubStr(a)).map(c=>c.id),r=ids.indexOf(m.id)+1,n=ids.length;
   let o;
   if(lg==='t14')o=r<=2?{t:1,l:'jouer le titre'}:r<=6?{t:6,l:'se qualifier pour les phases finales (top 6)'}:r<=10?{t:10,l:'finir dans la première moitié de tableau (top 10)'}:{t:12,l:'assurer le maintien (12e minimum)'};
+  else if(lg==='nat')o=r<=2?{t:2,l:'jouer la montée en Pro D2 (finale)'}:r<=6?{t:6,l:'se qualifier pour les phases finales (top 6)'}:r<=10?{t:10,l:'réaliser une saison solide (top 10)'}:{t:n-2,l:'assurer le maintien'};
+  else if(lg==='n2')o=r<=2?{t:2,l:'jouer la montée en Nationale (finale)'}:r<=6?{t:6,l:'se qualifier pour les phases finales (top 6 de la poule)'}:{t:n-1,l:'assurer le maintien dans la poule'};
   else o=r<=2?{t:2,l:'monter en Top 14'}:r<=6?{t:6,l:'se qualifier pour les phases finales (top 6)'}:r<=12?{t:12,l:'réaliser une saison solide (top 12)'}:{t:14,l:'assurer le maintien (14e minimum)'};
   G.obj={...o,pre:r};
-  mail('Le président',`Objectifs de la saison ${seasonLabel()}`,`Bonjour coach,<br><br>Notre effectif est estimé ${r}e sur ${n} en ${LEAGUES[lg].name}. Pour cette saison, le conseil d'administration te demande de <b>${o.l}</b>.<br><br>Budget annuel : ${fmtK(m.bud)} · masse salariale autorisée : ${fmtK(capOf(m))} · trésorerie disponible : ${fmtK(m.budget)}.<br><br>Bonne saison !`,{act:{tab:'fin'}});
+  mail('Le président',`Objectifs de la saison ${seasonLabel()}`,`Bonjour coach,<br><br>Notre effectif est estimé ${r}e sur ${n} en ${LEAGUES[lg].name}${lg==='n2'?' (poule '+(m.poule+1)+')':''}. Pour cette saison, le conseil d'administration te demande de <b>${o.l}</b>.<br><br>Budget annuel : ${fmtK(m.bud)} · masse salariale autorisée : ${fmtK(capOf(m))} · trésorerie disponible : ${fmtK(m.budget)}.<br><br>Bonne saison !`,{act:{tab:'fin'}});
 }
 function scoutReport(nx){
   const m=ME(),o=C(nx.f.h===m.id?nx.f.a:nx.f.h),home=nx.f.h===m.id;

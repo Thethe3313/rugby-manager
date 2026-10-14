@@ -42,7 +42,7 @@ function realSquad(id,str,lg){
 }
 function genSquad(str,lg){const s=[];for(const g in COMP)for(let i=0;i<COMP[g];i++){const p=genPlayer(g,str-i*3.2+R.n(0,3));p.sal=salaryFor(ovr(p),p.age,lg||'nat');s.push(p)}return s}
 function mkClub(c,lg){
-  const info=CLUBINFO[c[0]]||{bud:lg==='nat'?2500:9000};
+  const info=CLUBINFO[c[0]]||{bud:lg==='nat'?3000:lg==='n2'?1300:9000};
   const cl={id:c[0],name:c[1],short:c[2],str:c[3],lg,bud:info.bud,cap:info.cap,sponsor:0,squad:REAL[c[0]]?realSquad(c[0],c[3],lg):genSquad(c[3],lg),tac:{style:'equilibre',int:'normale'},focus:'equilibre',budget:0,lineup:[],mp:0};
   // ajuste la masse salariale pour qu'elle respecte le plafond (et soit proche du cap en Top 14)
   const cap=capOf(cl),ms=mass(cl);

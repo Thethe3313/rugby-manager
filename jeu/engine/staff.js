@@ -26,7 +26,7 @@ function genStaff(role,q,lg){
 function setRealStaff(s,x){s.name=x[0];s.t=x[1];s.sure=!!x[2];s.age=null;delete s.f}
 // Staff de départ : meilleur dans les clubs riches ; vrais noms quand ils sont connus
 function initStaff(c){
-  const base=c.lg==='t14'?9+(c.bud-23000)/37000*8:c.lg==='pd2'?7+(c.bud-5500)/14500*4:5,rs=(typeof REALSTAFF!=='undefined'&&REALSTAFF[c.id])||{};
+  const base=c.lg==='t14'||c.ext?9+(c.bud-23000)/37000*8:c.lg==='pd2'?7+(c.bud-5500)/14500*4:c.lg==='nat'?6:4.5,rs=(typeof REALSTAFF!=='undefined'&&REALSTAFF[c.id])||{};
   c.staff={};
   for(const r of SROLES){const s=genStaff(r,clamp(base+R.n(0,1.8),3,19),c.lg);if(rs[r])setRealStaff(s,rs[r]);c.staff[r]=s}
   if(rs.man)c.manager=rs.man;

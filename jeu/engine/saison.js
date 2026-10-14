@@ -27,11 +27,13 @@ function migrateSave(){
   else for(const x of EXT0)if(!G.ext.some(c=>c.id===x[0]))G.ext.push(mkExtClub(x)); // nouveaux clubs (Super Rugby, Japon)
   if(G.phase==='season'&&G.cups)startXL(true);
   if(!G.cups&&G.phase==='season')startCups();
+  migrateAmateur();
 }
 
 function newGame(meId){
-  G={nid:1,season:1,meId,phase:'season',tick:0,clubs:[],L:{},access:null,news:[],fa:[],offers:[],pre:[],tlog:[],tab:'home',fin:zeroFin(),hist:[],lastMatch:null,summary:null,moves:null,mail:[],nat:NAT0.map(x=>[...x]),settings:loadSettings()};
-  G.clubs=CLUBS0.map(c=>mkClub(c,'t14')).concat(PD2CLUBS.map(c=>mkClub(c,'pd2')));
+  G={nid:1,season:1,meId,phase:'season',tick:0,clubs:[],L:{},access:null,news:[],fa:[],offers:[],pre:[],tlog:[],tab:'home',fin:zeroFin(),hist:[],lastMatch:null,summary:null,moves:null,mail:[],settings:loadSettings()};
+  G.clubs=CLUBS0.map(c=>mkClub(c,'t14')).concat(PD2CLUBS.map(c=>mkClub(c,'pd2')),NATCLUBS.map(c=>mkClub(c,'nat')),N2CLUBS.map(c=>Object.assign(mkClub(c,'n2'),{poule:c[4]})));
+  initAM();
   G.clubs.forEach(initYouth);
   genFA(40);
   genStaffPool();
@@ -39,16 +41,13 @@ function newGame(meId){
   const m=ME();
   m.budget=Math.round(m.bud*.05);
   startSeason();
-  addNews(`Bienvenue à la tête de ${m.name} ! Objectif : ${m.lg==='t14'?'te qualifier pour les phases finales du Top 14':'jouer la montée en Top 14'}.`);
+  addNews(`Bienvenue à la tête de ${m.name} (${LEAGUES[m.lg].name}) ! Ton président t'a fixé ses objectifs dans la messagerie.`);
 }
 function startSeason(){
   G.phase='season';G.summary=null;G.moves=null;G.access=null;G.offers=[];
   G.L={};
-  for(const lg of LGORDER){
-    const ids=clubsIn(lg).map(c=>c.id),table={};
-    ids.forEach(id=>table[id]={id,j:0,g:0,n:0,p:0,pf:0,pa:0,bo:0,pts:0});
-    G.L[lg]={lg,week:0,phase:'regular',fixtures:mkFixtures(shuffle(ids)),results:[],table,po:null,...buildSchedule(lg)};
-  }
+  for(const lg of LGORDER)G.L[lg]=buildLeague(lg);
+  startAM();
   G.date=`${seasonYear()}-08-01`;G.accessDate=null;
   for(const c of G.clubs){
     if(!c.staff)initStaff(c);
@@ -70,37 +69,40 @@ function finishSeason(){
   const a1=acc[0],a2=acc[1];
   const up=[mv.pd2up],down=[mv.t14down],pd2down=[mv.pd2down],natUp=[mv.natUp];
   if(a1){if(a1.winner===a1.h){up.push(a1.h);down.push(a1.a)}}
-  if(a2){if(a2.winner===a2.h){natUp.push(a2.h);pd2down.push(a2.a)}else{G.nat.push(NAT0.find(x=>x[0]===a2.h)||[a2.h,C(a2.h).name,C(a2.h).short,58])}}
-  G.moves={up,down,pd2down,natUp};
+  if(a2&&a2.winner===a2.a){natUp.push(a2.a);pd2down.push(a2.h)}
+  G.moves={up,down,pd2down,natUp,...amMoves(natUp,pd2down)};
+  const M=G.moves;
   let prize=0;
   if(po.champ===m.id)prize=P.champ;else if(po.fin===m.id)prize=P.fin;else if(po.seeds.includes(m.id))prize=P.qual;
   m.budget+=prize;G.fin.prize+=prize;
-  let fate='maintenu';
-  if(up.includes(m.id))fate='promu';else if(down.includes(m.id))fate='relégué';else if(pd2down.includes(m.id))fate='nationale';
-  G.summary={lg,rank,champ:po.champ,fin:po.fin,prize,qualified:po.seeds.includes(m.id),fate,
+  // destination du club du joueur la saison prochaine
+  const to=up.includes(m.id)?'t14':down.includes(m.id)||natUp.includes(m.id)?'pd2':pd2down.includes(m.id)||M.n2Up.includes(m.id)?'nat':M.natDown.includes(m.id)?'n2':null;
+  let fate=M.n2Down.includes(m.id)?'horsjeu':to?(LEVEL[to]<LEVEL[lg]?'promu':'relégué'):'maintenu';
+  G.summary={lg,to,rank,champ:po.champ,fin:po.fin,prize,qualified:po.seeds.includes(m.id),fate,champNat:G.L.nat&&G.L.nat.po?G.L.nat.po.champ:null,champN2:G.L.n2&&G.L.n2.po?G.L.n2.po.champ:null,
     champT14:G.L.t14.po.champ,champPD2:G.L.pd2.po.champ,acc:accTxt};
   G.lastT14=sortedTable('t14').map(r=>r.id); // qualification européenne de la saison suivante
   G.lastXL={};for(const [lg,L] of Object.entries(G.XL||{}))G.lastXL[lg]=xlSorted(L).map(r=>r.id);
   const xlW=lg=>G.XL&&G.XL[lg]&&G.XL[lg].champ?C(G.XL[lg].champ).short:null;
   const cupW=k=>G.cups&&G.cups[k]&&G.cups[k].champ?C(G.cups[k].champ).short:null;
-  G.hist.push({s:seasonLabel(),lg,champ:C(G.L.t14.po.champ).short,champ2:C(G.L.pd2.po.champ).short,cc:cupW('cc'),ch:cupW('ch'),urc:xlW('urc'),prem:xlW('prem'),srp:xlW('srp'),jpn:xlW('jpn'),rank,fate});
+  G.hist.push({s:seasonLabel(),lg,champ:C(G.L.t14.po.champ).short,champ2:C(G.L.pd2.po.champ).short,nat:G.summary.champNat?C(G.summary.champNat).short:null,n2:G.summary.champN2?C(G.summary.champN2).short:null,cc:cupW('cc'),ch:cupW('ch'),urc:xlW('urc'),prem:xlW('prem'),srp:xlW('srp'),jpn:xlW('jpn'),rank,fate});
   addNews(po.champ===m.id?`🏆 TU ES CHAMPION DE ${LEAGUES[lg].name.toUpperCase()} !`:`Saison terminée : ${rank}e de ${LEAGUES[lg].name}.`);
-  if(fate==='promu')addNews(`⬆ ${m.name} monte en Top 14 !`);
-  if(fate==='relégué')addNews(`⬇ ${m.name} descend en Pro D2.`);
+  if(fate==='promu')addNews(`⬆ ${m.name} monte en ${LEAGUES[to].name} !`);
+  if(fate==='relégué')addNews(`⬇ ${m.name} descend en ${LEAGUES[to].name}.`);
+  if(fate==='horsjeu')addNews(`⬇ ${m.name} descend en Nationale 3.`);
   G.phase='offseason';
-  const tgt=G.obj?G.obj.t:99;mail('Le président',`Bilan de la saison ${seasonLabel()}`,`Nous terminons ${rank}e de ${LEAGUES[lg].name}. ${rank<=tgt?'Objectif atteint, bravo.':'L\'objectif ('+(G.obj?G.obj.l:'')+') n\'est pas atteint.'} ${fate==='promu'?'Et nous montons en Top 14 !':fate==='relégué'?'Nous descendons en Pro D2 : il faudra repartir de l\'avant.':''}`);
+  const tgt=G.obj?G.obj.t:99;mail('Le président',`Bilan de la saison ${seasonLabel()}`,`Nous terminons ${rank}e de ${LEAGUES[lg].name}. ${rank<=tgt?'Objectif atteint, bravo.':'L\'objectif ('+(G.obj?G.obj.l:'')+') n\'est pas atteint.'} ${fate==='promu'?`Et nous montons en ${LEAGUES[to].name} !`:fate==='relégué'?`Nous descendons en ${LEAGUES[to].name} : il faudra repartir de l'avant.`:fate==='horsjeu'?'Nous descendons en Nationale 3.':''}`);
   G.offers=[];genOffers(R.i(1,3));
   addNews('Le mercato d\'été est ouvert : recrute, vends et prolonge avant de lancer la nouvelle saison.');
 }
 function nextSeason(){
   const m=ME(),mv=G.moves;
-  if(G.summary&&G.summary.fate==='nationale'){G.phase='sacked';return}
+  if(G.summary&&G.summary.fate==='horsjeu'){G.phase='sacked';return}
   // montées et descentes (le budget suit la division)
   for(const id of mv.up){const c=C(id);c.lg='t14';c.cap=c.cap||CAP_BASE;c.bud=Math.max(Math.round(c.bud*1.6),22000)}
   for(const id of mv.down){const c=C(id);c.lg='pd2';c.bud=Math.round(c.bud*.65)}
-  for(const id of mv.natUp){const c=C(id);c.lg='pd2';c.bud=Math.max(c.bud,6000);if(!c.youth)initYouth(c)}
-  for(const id of mv.pd2down){const c=C(id);G.nat.push([c.id,c.name,c.short,Math.round(Math.min(c.str,60))]);c.squad.forEach(p=>{if(R.f()<.5){p.ctr=0;p.faT=0;G.fa.push(p)}});G.clubs=G.clubs.filter(x=>x.id!==id)}
-  G.clubs=G.clubs.filter(c=>c.lg!=='nat');
+  for(const id of mv.natUp){const c=C(id);c.lg='pd2';c.bud=Math.max(Math.round(c.bud*1.8),6000);if(!c.youth||!c.youth.length)initYouth(c)}
+  for(const id of mv.pd2down){const c=C(id);c.lg='nat';c.bud=Math.round(c.bud*.5)}
+  applyAmMoves(mv);
   // pré-contrats signés pendant la saison
   for(const pc of G.pre||[]){const f=findPlayer(pc.pid);if(f.p&&f.club&&f.club.id!==m.id){doTransfer(f.p,f.club,m,0,pc.sal,pc.yrs);f.p.fresh=true}}
   G.pre=[];
@@ -139,7 +141,7 @@ function nextSeason(){
   for(const c of G.clubs)if(c.id!==m.id)c.str=clamp(Math.round(clubStr({...c,lineup:autoLineup(c)})),55,88);
   // centre de formation et postes manquants pour le joueur
   // (les jeunes arrivent désormais par le centre de formation : génération annuelle le 15 mars, onglet Espoirs)
-  for(const g in MINCOMP){const n=m.squad.filter(p=>p.g===g).length;for(let i=n;i<MINCOMP[g];i++){const p=genPlayer(g,R.n(m.lg==='t14'?58:55,3),R.i(22,28));p.ctr=1;p.sal=salaryFor(ovr(p),p.age,m.lg);m.squad.push(p);addNews(`Joker recruté au poste de ${GROUPS[g]} : ${p.name}.`)}}
+  for(const g in MINCOMP){const n=m.squad.filter(p=>p.g===g).length;for(let i=n;i<MINCOMP[g];i++){const p=genPlayer(g,R.n({t14:58,pd2:55,nat:50,n2:45}[m.lg]||45,3),R.i(22,28));p.ctr=1;p.sal=salaryFor(ovr(p),p.age,m.lg);m.squad.push(p);addNews(`Joker recruté au poste de ${GROUPS[g]} : ${p.name}.`)}}
   G.season++;
   startSeason();
   if(mass(m)>capOf(m))addNews(`⚠ Ta masse salariale dépasse ton plafond (${fmtK(capOf(m))}) : aucun recrutement possible tant que tu n'es pas repassé dessous.`);

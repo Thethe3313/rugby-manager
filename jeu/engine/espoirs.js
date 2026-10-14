@@ -33,13 +33,14 @@ function realYouth(r){
   return p;
 }
 function initYouth(c){
+  if(c.lg==='n2'){c.youth=[];return} // pas de centre de formation agréé en Nationale 2
   c.youth=(REALY[c.id]||[]).map(realYouth);
   while(c.youth.length<12)c.youth.push(genYouthPlayer(c,R.i(16,19)));
 }
 function youthIntake(){
   const m=ME();
   for(const c of G.clubs){
-    if(c.lg==='nat')continue;
+    if(c.lg==='n2')continue;
     c.youth=c.youth||[];
     const n=R.i(4,7),news=[];
     for(let i=0;i<n;i++){const p=genYouthPlayer(c,R.i(16,17));c.youth.push(p);news.push(p)}
@@ -50,13 +51,13 @@ function youthIntake(){
     }
   }
 }
-function youthDaily(c){
+function youthDaily(c,mult=1){
   const a=acadOf(c),k=.7+a/40;
   for(const p of c.youth||[]){
-    if(p.inj>0){p.inj--;continue}
+    if(p.inj>0){p.inj=Math.max(0,p.inj-mult);continue}
     const o=ovr(p),gap=p.pot-o;if(gap<=0)continue;
     const base=p.age<=17?.007:p.age<=20?.005:.003,pro=.6+(p.pro||10)/20*.8;
-    const da=base*gap*.75*k*pro*(R.f()*.6+.7)/7*19/79;
+    const da=base*gap*.75*k*pro*(R.f()*.6+.7)/7*mult*19/79;
     for(const key in W[p.g])p[key]=Math.min(20,p[key]+da);
   }
 }

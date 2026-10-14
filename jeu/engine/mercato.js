@@ -42,7 +42,7 @@ function genOffers(n){
     if(!cands.length)return;
     const w=cands.map(p=>valueOf(p)*(p.list?3:1));let r=R.f()*w.reduce((a,b)=>a+b,0),p=cands[0];
     for(let j=0;j<cands.length;j++){r-=w[j];if(r<=0){p=cands[j];break}}
-    const buyers=G.clubs.filter(c=>c.id!==m.id&&c.lg!=='nat'&&(ovr(p)<74||c.lg==='t14')&&mass(c)+salaryFor(ovr(p),p.age,c.lg)<=capOf(c));
+    const buyers=G.clubs.filter(c=>c.id!==m.id&&c.lg!=='nat'&&c.lg!=='n2'&&(ovr(p)<74||c.lg==='t14')&&mass(c)+salaryFor(ovr(p),p.age,c.lg)<=capOf(c));
     if(!buyers.length)return;
     const b=R.pick(buyers);
     const fee=Math.round(askFee(p,m)*R.n(p.list?.85:1,.12)/10)*10;

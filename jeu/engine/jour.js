@@ -1,7 +1,9 @@
 'use strict';
 // ==== AVANCER D'UN JOUR ====
+// Forme et blessures : chaque jour. Progression des joueurs : une fois par semaine (le lundi), d'un coup de 7 jours (plus rapide à calculer).
 function dailyUpdate(){
-  for(const c of G.clubs)youthDaily(c);
+  const weekly=dDow(G.date)===1;
+  if(weekly)for(const c of G.clubs)youthDaily(c,7);
   if(G.date&&G.date.endsWith('-03-15'))youthIntake();
   for(const c of G.clubs.concat(G.ext||[])){
     const ks=FOCUSK[c.focus],lgK=c.lg==='t14'||c.ext?1:c.lg==='pd2'?.85:.7;
@@ -11,11 +13,11 @@ function dailyUpdate(){
       if(p.inj>0&&!p.ni){p.inj--;if(p.inj>0&&R.f()<medFast)p.inj--}
       p.ni=false;
       p.forme=clamp(p.forme+(p.inj>0?1:3.2*rec),20,100);
-      if(p.inj>0)continue;
+      if(p.inj>0||!weekly)continue;
       const o=ovr(p),gap=(p.pot||o)-o;if(gap<=0)continue;
       const base=p.age<=20?.010:p.age<=23?.007:p.age<=26?.004:p.age<=29?.002:0;if(!base)continue;
       const play=.35+.9*(c.mp?playShare(p,c):.5),pro=.6+(p.pro||10)/20*.8;
-      const da=base*gap*play*pro*lgK*(R.f()*.6+.7)/7*19/79;
+      const da=base*gap*play*pro*lgK*(R.f()*.6+.7)*19/79;
       // chaque attribut progresse selon l'entraîneur concerné ; le mental aussi selon la détermination
       for(const key in W[p.g])p[key]=Math.min(20,p[key]+da*coachK(c,p,key)*(detK.has(key)?.9+(p.det||10)/100:1));
       if(c.focus!=='equilibre')for(const key of ks)p[key]=Math.min(20,p[key]+da*.3);
@@ -39,13 +41,13 @@ function dayStep(){
       if(!due||due>G.date)continue;
       clubsIn(lg).forEach(setMatchLineup);
       const reg=L.phase==='regular';
-      if(lg===m.lg&&reg){const R_=LEAGUES[m.lg].rounds,inc=Math.round(m.bud*.72/R_),w=Math.round(mass(m)/R_),fx=Math.round(m.fixed/R_),sf=Math.round(staffMass(m)/R_);m.budget+=inc-w-fx-sf;G.fin.sponsor+=inc;G.fin.wages+=w;G.fin.opex+=fx;G.fin.staff=(G.fin.staff||0)+sf}
+      if(lg===m.lg&&reg){const R_=G.L[m.lg].fixtures.length,inc=Math.round(m.bud*.72/R_),w=Math.round(mass(m)/R_),fx=Math.round(m.fixed/R_),sf=Math.round(staffMass(m)/R_);m.budget+=inc-w-fx-sf;G.fin.sponsor+=inc;G.fin.wages+=w;G.fin.opex+=fx;G.fin.staff=(G.fin.staff||0)+sf}
       const r=stepLeague(lg);
       if(r&&lg===m.lg){mine=r;
-        if(r.h===m.id&&!r.ko){const R_=LEAGUES[m.lg].rounds,n=clubsIn(m.lg).length,rk=rankOf(m.id)||n/2,attF=.85+.3*(1-(rk-1)/(n-1));const rev=Math.round(m.bud*.28/(R_/2)*attF);m.budget+=rev;G.fin.ticket+=rev;r.att=Math.round((m.lg==='t14'?14000:5000)*attF*(.9+R.f()*.2))}}
+        if(r.h===m.id&&!r.ko){const R_=G.L[m.lg].fixtures.length,n=clubsIn(m.lg).length,rk=rankOf(m.id)||n/2,attF=.85+.3*(1-(rk-1)/(n-1));const rev=Math.round(m.bud*.28/(R_/2)*attF);m.budget+=rev;G.fin.ticket+=rev;r.att=Math.round(({t14:14000,pd2:5000,nat:2500,n2:900}[m.lg]||900)*attF*(.9+R.f()*.2))}}
     }
     // coupes d'Europe (les samedis sans Top 14)
-    xlDay();
+    xlDay();amDay();
     const cm=cupDay();if(cm)mine=cm;
     if(LGORDER.every(lg=>G.L[lg].phase==='done'))prepareAccess();
   }

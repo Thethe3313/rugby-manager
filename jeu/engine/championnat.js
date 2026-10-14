@@ -6,8 +6,13 @@ function updateTable(lg,r){
   if(r.sh>r.sa){h.g++;a.p++;h.pts+=4}else if(r.sh<r.sa){a.g++;h.p++;a.pts+=4}else{h.n++;a.n++;h.pts+=2;a.pts+=2}
   h.bo+=r.bo[0];a.bo+=r.bo[1];h.pts+=r.bo[0];a.pts+=r.bo[1];
 }
-const sortedTable=lg=>Object.values(G.L[lg||ME().lg].table).sort((x,y)=>y.pts-x.pts||(y.pf-y.pa)-(x.pf-x.pa)||y.pf-x.pf);
-function rankOf(id){const c=C(id);if(!c||!G.L[c.lg])return 0;return sortedTable(c.lg).findIndex(r=>r.id===id)+1}
+// Classement (en Nationale 2 : par poule ; sans poule précisée, celle du club du joueur s'il y joue)
+function sortedTable(lg,poule){
+  lg=lg||ME().lg;const L=G.L[lg];let rows=Object.values(L.table);
+  if(L.poules>1){if(poule==null&&ME().lg===lg)poule=ME().poule;if(poule!=null)rows=rows.filter(r=>C(r.id)&&C(r.id).poule===poule)}
+  return rows.sort((x,y)=>y.pts-x.pts||(y.pf-y.pa)-(x.pf-x.pa)||y.pf-x.pf);
+}
+function rankOf(id){const c=C(id);if(!c||!G.L[c.lg])return 0;return sortedTable(c.lg,c.poule).findIndex(r=>r.id===id)+1}
 const involves=(f,id)=>f.h===id||f.a===id;
 function nextMatchOf(m){
   if(G.phase==='access')return (G.access||[]).find(f=>involves(f,m.id))||null;
@@ -22,15 +27,23 @@ function stageLabel(m){
   if(G.phase==='access')return 'Barrages d\'accession';
   if(G.phase!=='season')return 'Intersaison';
   const L=G.L[m.lg];
-  if(L.phase==='regular')return `Journée ${L.week+1}/${LEAGUES[m.lg].rounds}`;
-  if(L.phase==='playoffs')return PONAME[L.po.stage];
+  if(L.phase==='regular')return `Journée ${L.week+1}/${L.fixtures.length}`;
+  if(L.phase==='playoffs')return poName(m.lg,L.po.stage);
   return 'Saison terminée';
 }
 const slimR=r=>({h:r.h,a:r.a,sh:r.sh,sa:r.sa,th:r.th,ta:r.ta,bo:r.bo,winner:r.winner});
-function playFixtures(fx,ko){
+// light : les matchs qui ne concernent pas le club du joueur sont simulés d'après le niveau des équipes (Nationale 2, pour aller plus vite)
+function playFixtures(fx,ko,light){
   const out=[];
   for(const f of fx){
     const hc=C(f.h),ac=C(f.a);
+    if(light&&f.h!==G.meId&&f.a!==G.meId){
+      const r=amSim({str:clubStr(hc)},{str:clubStr(ac)});r.h=f.h;r.a=f.a;r.ps=[];
+      r.winner=r.sh>r.sa?f.h:r.sa>r.sh?f.a:ko?(R.f()<.5?f.h:f.a):null;
+      // les joueurs de la composition sont crédités du match (temps de jeu, donc progression)
+      for(const c of [hc,ac]){c.mp=(c.mp||0)+1;c.lineup.forEach((id,i)=>{const p=id!=null&&c.squad.find(x=>x.id===id);if(p){p.st.mj++;if(i<15)p.st.tit=(p.st.tit||0)+1}})}
+      out.push(r);continue;
+    }
     // le match du joueur a peut-être déjà été joué en direct : on reprend son résultat
     let r;
     if(G.liveRes&&G.liveRes.h===f.h&&G.liveRes.a===f.a){r=G.liveRes.r;delete G.liveRes}
@@ -47,7 +60,7 @@ function stepLeague(lg){
   if(L.phase==='done')return null;
   const ko=L.phase==='playoffs';
   const fx=ko?L.po.next:L.fixtures[L.week].map(x=>({h:x[0],a:x[1]}));
-  const out=playFixtures(fx,ko);
+  const out=playFixtures(fx,ko,lg==='n2'||lg==='nat');
   if(!ko)out.forEach(r=>updateTable(lg,r));
   const slim=out.map(slimR);
   if(!ko)L.results[L.week]=slim;else L.po.res.push({stage:L.po.stage,m:slim});
@@ -55,7 +68,8 @@ function stepLeague(lg){
   if(mine){mine.others=slim;mine.ko=ko}
   if(!ko){
     L.week++;
-    if(L.week===LEAGUES[lg].rounds){
+    if(L.week===L.fixtures.length&&lg==='n2'){setupN2Po(L);if(lg===m.lg)addNews('Fin de la phase régulière de Nationale 2 : place aux phases finales.')}
+    else if(L.week===L.fixtures.length){
       const seeds=sortedTable(lg).slice(0,6).map(r=>r.id);
       L.po={stage:0,seeds,next:[{h:seeds[2],a:seeds[5]},{h:seeds[3],a:seeds[4]}],res:[],champ:null,fin:null};
       L.phase='playoffs';
@@ -63,7 +77,8 @@ function stepLeague(lg){
     }
   }else{
     const po=L.po,w=out.map(r=>r.winner);
-    if(po.stage===0){po.next=[{h:po.seeds[0],a:w[1]},{h:po.seeds[1],a:w[0]}];po.stage=1}
+    if(lg==='n2')stepN2Po(L,out);
+    else if(po.stage===0){po.next=[{h:po.seeds[0],a:w[1]},{h:po.seeds[1],a:w[0]}];po.stage=1}
     else if(po.stage===1){po.next=[{h:w[0],a:w[1],neutral:true}];po.stage=2}
     else{po.champ=w[0];po.fin=out[0].h===w[0]?out[0].a:out[0].h;L.phase='done';po.next=[];
       addNews(`🏆 ${C(po.champ).name} remporte le ${LEAGUES[lg].name} !`)}
@@ -75,14 +90,11 @@ function stepLeague(lg){
 // 15e de Pro D2 contre le finaliste de Nationale
 function prepareAccess(){
   const t=sortedTable('t14'),p=sortedTable('pd2'),pPo=G.L.pd2.po;
-  const natPick=[...G.nat].sort((a,b)=>b[3]-a[3]+R.n(0,2));
-  const natChamp=natPick[0],natFin=natPick[1];
-  G.nat=G.nat.filter(x=>x!==natChamp&&x!==natFin);
-  const nc=mkClub(natChamp,'nat'),nf=mkClub(natFin,'nat');
-  G.clubs.push(nc,nf);
-  G.moves={t14down:t[13].id,pd2up:pPo.champ,pd2down:p[15].id,natUp:nc.id,acc:[]};
-  G.access=[{h:pPo.fin,a:t[12].id,kind:'t14'},{h:nf.id,a:p[14].id,kind:'pd2'}];
-  addNews(`Barrages d'accession : ${C(pPo.fin).short} - ${C(t[12].id).short} (Top 14/Pro D2) et ${nf.short} - ${C(p[14].id).short} (Pro D2/Nationale).`);
+  // Nationale : le champion monte, le finaliste joue le barrage chez le 15e de Pro D2
+  const nPo=G.L.nat.po,nf=C(nPo.fin);
+  G.moves={t14down:t[13].id,pd2up:pPo.champ,pd2down:p[15].id,natUp:nPo.champ,acc:[]};
+  G.access=[{h:pPo.fin,a:t[12].id,kind:'t14'},{h:p[14].id,a:nf.id,kind:'pd2'}];
+  addNews(`Barrages d'accession : ${C(pPo.fin).short} - ${C(t[12].id).short} (Top 14/Pro D2) et ${C(p[14].id).short} - ${nf.short} (Pro D2/Nationale).`);
   G.phase='access';G.accessDate=dAdd(G.date,7);
   if(G.access.some(f=>involves(f,G.meId)))mail('Le président','Barrage d\'accession',`Nous disputerons un barrage d'accession le ${fmtD(G.accessDate,true)}. Tout se joue sur un match.`);
 }

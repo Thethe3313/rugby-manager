@@ -1,6 +1,6 @@
 # Rugby Manager
 
-Jeu de gestion de club de rugby à XV, façon Football Manager : Top 14 et Pro D2, effectifs réels 2026-27.
+Jeu de gestion de club de rugby à XV, façon Football Manager : Top 14, Pro D2, Nationale et Nationale 2 (effectifs réels 2026-27 en Top 14 et Pro D2), coupes d'Europe et championnats étrangers.
 
 ## Jouer
 - **Double-clic sur « Rugby Manager »** (le raccourci avec le ballon) : le jeu s'ouvre dans sa propre fenêtre, comme une appli.

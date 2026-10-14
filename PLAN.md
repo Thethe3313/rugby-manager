@@ -81,10 +81,18 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - **Mercato mondial** : les clubs IA français recrutent aussi à l'étranger (en libérant un joueur pour rester sous le plafond), les clubs étrangers signent des joueurs libres.
   - Au total : 48 clubs étrangers, 2 017 joueurs, 794 internationaux notés un par un.
 
+- **Étape F1 — Nationale et Nationale 2 (14 octobre 2026)** :
+  - **Nationale** (14 clubs réels 2026-27 : Mont-de-Marsan, Carcassonne, Massy…) et **Nationale 2** (24 clubs réels en 2 poules) : clubs complets (effectifs générés, staff, finances), **jouables** dès l'écran d'accueil.
+  - Vrais formats 2026-27 : phases finales à 6 en Nationale (le champion monte, le finaliste joue le barrage chez le 15e de Pro D2), barrages / quarts / demies / finale en Nationale 2 (les 2 finalistes montent).
+  - **Réforme de la FFR reproduite** : en 2027-28, la Nationale passe à 16 clubs et la Nationale 2 à 48 clubs en 4 poules (26 clubs montent de Fédérale 1) ; les autres clubs de Fédérale 1 forment la Nationale 3.
+  - Fédérale 1 / Nationale 3 (48 vrais clubs) simulées légèrement ; classements dans l'onglet Classement.
+  - Une descente ne coûte plus ta place, sauf une descente en Nationale 3 (hors des divisions gérées).
+  - Simulation accélérée (environ 2 fois plus rapide) : progression hebdomadaire, matchs sans le club du joueur simulés d'après le niveau des équipes en Nationale, Nationale 2 et à l'étranger.
+
 ## ▶️ Prochaine étape
 
-### Étape F — Rugby amateur français
-- Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
+### Étape F2 — Fédérales et Régionales
+- Nationale 3, Fédérale 2, Fédérale 3, Régionales (R1 à R3), d'après FFR Compétition, en simulation légère ; pouvoir commencer une carrière tout en bas (effectif généré pour le club du joueur).
 
 ## 📋 À faire ensuite (dans l'ordre)
 

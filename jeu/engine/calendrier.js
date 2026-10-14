@@ -9,17 +9,20 @@ function fmtD(iso,year){const d=new Date(iso+'T12:00:00Z');return JOURS[d.getUTC
 function firstDow(iso,dow){let d=iso;while(dDow(d)!==dow)d=dAdd(d,1);return d}
 const seasonYear=()=>2025+G.season;
 // Week-ends sans match : semaines de coupes d'Europe, trêves (mois -> rang du week-end dans le mois)
-const OFF={t14:{10:[3],11:[2],12:[2,3],1:[2,3],4:[1,2,3],5:[1]},pd2:{11:[2],12:[4],1:[1],2:[3],3:[2],4:[2]}};
-function buildSchedule(lg){
+const OFF={t14:{10:[3],11:[2],12:[2,3],1:[2,3],4:[1,2,3],5:[1]},pd2:{11:[2],12:[4],1:[1],2:[3],3:[2],4:[2]},
+  nat:{10:[4],11:[2],12:[4],1:[1],2:[3],3:[2]},n2:{10:[4],11:[2],12:[3,4],1:[1],2:[2,3],3:[2]}};
+function buildSchedule(lg,n){
+  n=n||LEAGUES[lg].rounds;
   const y=seasonYear(),out=[];
-  let d=lg==='t14'?firstDow(`${y}-09-01`,6):firstDow(`${y}-08-21`,5);
-  while(out.length<LEAGUES[lg].rounds){
+  // Top 14 le samedi, Pro D2 le vendredi, Nationale et Nationale 2 le dimanche
+  let d=lg==='t14'?firstDow(`${y}-09-01`,6):lg==='pd2'?firstDow(`${y}-08-21`,5):lg==='nat'?firstDow(`${y}-08-21`,0):firstDow(`${y}-09-04`,0);
+  while(out.length<n){
     const dt=new Date(d+'T12:00:00Z'),mo=dt.getUTCMonth()+1,wk=Math.ceil(dt.getUTCDate()/7);
     if(!((OFF[lg][mo]||[]).includes(wk)))out.push(d);
     d=dAdd(d,7);
   }
   const last=out[out.length-1];
-  const po=lg==='t14'?[dAdd(last,7),dAdd(last,14),dAdd(last,28)]:[dAdd(last,7),dAdd(last,14),dAdd(last,21)];
+  const po=lg==='t14'?[dAdd(last,7),dAdd(last,14),dAdd(last,28)]:lg==='n2'?[dAdd(last,14),dAdd(last,21),dAdd(last,28),dAdd(last,42)]:lg==='nat'?[dAdd(last,14),dAdd(last,21),dAdd(last,35)]:[dAdd(last,7),dAdd(last,14),dAdd(last,21)];
   return{dates:out,poDates:po};
 }
 // Prochain match du joueur : {f (h, a, neutral), d (date), w (journée), ko (élimination directe), lab (compétition et tour)}
@@ -30,7 +33,7 @@ function myNextMatch(){
   if(G.phase!=='season')return null;
   const L=G.L[m.lg];let lg=null;
   if(L.phase==='regular'){for(let w=L.week;w<L.fixtures.length;w++){const x=L.fixtures[w].find(x=>x[0]===m.id||x[1]===m.id);if(x){lg={f:{h:x[0],a:x[1]},d:L.dates[w],w,ko:false,lab:`${LEAGUES[m.lg].name} · Journée ${w+1}`};break}}}
-  if(L.phase==='playoffs'){const f=L.po.next.find(f=>involves(f,m.id));if(f)lg={f,d:L.poDates[L.po.stage],ko:true,lab:`${LEAGUES[m.lg].name} · ${PONAME[L.po.stage]}`}}
+  if(L.phase==='playoffs'){const f=L.po.next.find(f=>involves(f,m.id));if(f)lg={f,d:L.poDates[L.po.stage],ko:true,lab:`${LEAGUES[m.lg].name} · ${poName(m.lg,L.po.stage)}`}}
   const cup=myCupMatch();
   return cup&&(!lg||cup.d<lg.d)?cup:lg;
 }

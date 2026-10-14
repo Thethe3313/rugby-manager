@@ -36,7 +36,7 @@ const xlSorted=L=>Object.values(L.table).sort((x,y)=>y.pts-x.pts||(y.pf-y.pa)-(x
 function xlStep(L){
   const reg=L.phase==='regular',fx=reg?L.fixtures[L.week]:L.po.next;
   [...new Set(fx.flatMap(f=>[f.h,f.a]))].forEach(id=>setMatchLineup(C(id)));
-  const out=playFixtures(fx,!reg);
+  const out=playFixtures(fx,!reg,true); // simulés d'après le niveau des équipes (aucun club du joueur)
   if(reg){
     for(const r of out){r.bo=xlBonus(r);cupTable(L,r)}
     L.week++;

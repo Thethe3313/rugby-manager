@@ -87,9 +87,11 @@ const CLUBS0=[
 // cap = plafond salarial (k€) · mean = niveau moyen visé par les clubs IA · sp* = sponsor · att* = affluence · price = prix moyen du billet (€)
 const LEAGUES={
   t14:{name:'Top 14',rounds:26,cap:11000,mean:72,spB:3000,spK:350,spRef:58,attB:7000,attK:140,price:29,opex:1800,prize:{champ:2000,fin:1000,qual:300}},
-  pd2:{name:'Pro D2',rounds:30,cap:5500,mean:64,spB:2600,spK:160,spRef:55,attB:2500,attK:55,price:18,opex:900,prize:{champ:800,fin:400,qual:120}}
+  pd2:{name:'Pro D2',rounds:30,cap:5500,mean:64,spB:2600,spK:160,spRef:55,attB:2500,attK:55,price:18,opex:900,prize:{champ:800,fin:400,qual:120}},
+  nat:{name:'Nationale',rounds:26,prize:{champ:300,fin:150,qual:50}},
+  n2:{name:'Nationale 2',rounds:22,prize:{champ:150,fin:100,qual:30}}
 };
-const LGORDER=['t14','pd2'];
+const LGORDER=['t14','pd2','nat','n2'];
 const PD2CLUBS=[
   ['pro','Provence Rugby','Provence',68],['oyo','Oyonnax Rugby','Oyonnax',68],['bri','CA Brive','Brive',68],
   ['col','US Colomiers','Colomiers',67],['bia','Biarritz Olympique','Biarritz',66],['mtb','US Montauban','Montauban',66],
