@@ -1,0 +1,207 @@
+# Section paloise (rugby à XV)
+=== Encadrement technique ===
+Depuis 2021, [[Sébastien Piqueronies]] occupe le poste de manager de l'équipe<ref>{{Lien web |titre=Staff |url=https://www.section-paloise.com/equipe-pro/staff |site=section-paloise.com |consulté le=2023-08-23}}.</ref>. En 2025, [[Brandon Fajardo]], précédemment manager du parcours Élite jeunes, est promu directeur sportif adjoint pour épauler Piqueronies sur la gestion stratégique du club<ref>{{Lien web |langue=fr-FR |titre=Section Paloise : Brandon Fajardo promu, Julien Sarraute et Carlos Muzzio arrivent, le staff sportif se réorganise |url=https://www.larepubliquedespyrenees.fr/sport/rugby/section-paloise/rugby-top-14-promotion-de-brandon-fajardo-arrivees-de-julien-sarraute-et-carlos-muzzio-le-staff-sportif-de-la-section-paloise-se-reorganise-24820595.php |site=[[La République des Pyrénées]] |date=2025-06-12 |consulté le=2025-06-30}}</ref>.
+Au début de la saison 2026-2027 [[Thomas Domingo]] quitte le club et [[Geoffrey Lanne-Petit]] est affcté à de nouvelles fonctions, et ils sont remplacés respectivement par [[Carlos Muzzio]] et [[Julien Sarraute]]. Tous deux étaient intégrés au club lors de la saison précédente, au sein du [[Centre de formation de la Section paloise|centre de formation]], et sont désormais promus auprès du groupe professionnel.
+
+{| width=100% class="wikitable centre alternance" style="font-size:90%; text-align:center;"
+|-
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15% | Nom
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=70%| Fonction
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15%| Nationalité sportive
+|-
+| [[Sébastien Piqueronies]]
+| Manager
+| {{France rugby}}
+|-
+| [[Brandon Fajardo]]
+| Directeur sportif adjoint
+| {{France rugby}}
+|-
+! colspan="3" style="background-color:#F0FFF0; color:#1A4344;" |Rugby
+|-
+| [[Thomas Choveau]]
+| Entraîneur de la touche, des ballons portés et de la défense après touche
+| {{France rugby}}
+|-
+| [[Antoine Nicoud]]
+| Entraîneur de la défense et des transitions
+| {{France rugby}}
+|-
+| [[Julien Sarraute]]
+| Entraîneur de l'attaque et des transitions
+| {{France rugby}}
+|-
+| [[Geoffrey Lanne-Petit]]
+| Responsable du développement individuel
+| {{France rugby}}
+|-
+| [[Carlos Muzzio]]
+| Entraîneur de la mêlée et des attitudes au contact
+| {{Argentine rugby}}
+|-
+| Briac Pouyé
+| Responsable analyse rugby et développement individuel
+| {{France rugby}}
+|-
+| [[Jérôme Garcès]]
+| Consultant arbitrage
+| {{France rugby}}
+|-
+| Maxime Vogler
+| Analyste rugby
+| {{France rugby}}
+|-
+! colspan="3" style="background-color:#F0FFF0; color:#1A4344;" |Performance
+|-
+| Romain Bourdiol
+| Responsable de la performance
+| {{France rugby}}
+|-
+| Julien Bodeau<br/>Rémi Cervantès<br/>Alexandre Correard<br/>Geoffrey Cottereau
+| Préparateur physique
+| {{France rugby}}
+|-
+| Sarah Bredon
+| Intervenante nutrition
+| {{France rugby}}
+|-
+| [[Martin Puech]]
+| Team manager
+| {{France rugby}}
+|-
+| Mathieu Belmonte
+| Intendant sportif
+| {{France rugby}}
+|-
+| André Artigues
+| Aide logistique
+| {{France rugby}}
+|-
+! colspan="3" style="background-color:#F0FFF0; color:#1A4344;"  | Médical
+|-
+|{{Dr}} Antoine Henri
+|Médecin coordonnateur
+|{{FRA}}
+|-
+|{{Dr}} Philippe Pouget<br />{{Dr}} Ophélie Bello-Junté
+|Médecin
+|{{FRA}}
+|-
+|Mathieu Vinegra
+|Kinésithérapeute-ostéopathe
+|{{FRA}}
+|-
+|Camille Mahieu<br>Adrian Roudiere<br>Geoffrey Dupeyre<br>Etienne Labat<br>Alizée Saint-Martin<br>Antoine Rinaldi
+|Kinésithérapeute
+|{{FRA}}
+|}
+
+==== Staff centre de formation ====
+{| class="wikitable centre alternance" style="font-size:90%; text-align:center; width:100%"
+|-
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15% | Nom
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=70%| Fonction
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15%| Nationalité sportive
+|-
+| Lucas Broto
+| Directeur du centre de formation<br />Manager équipe Espoirs
+| {{FRA}}
+|-
+|[[Carlos Muzzio]]
+|Entraîneur des avants du centre de formation
+|{{ARG}}
+|-
+|Hector Maren
+|Analyste performance centre de formation et Espoirs
+|{{FRA}}
+|-
+|Anthony Numitor
+|Préparateur physique
+|{{FRA}}
+|-
+| Paul Michelin
+|Responsable data
+|{{FRA}}
+|-
+|Alexis Peeters
+|Responsable performance
+|{{FRA}}
+|}
+
+==== Staff médical ====
+{| class="wikitable centre alternance" style="font-size:90%; text-align:center; width:100%"
+|-
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15% | Nom
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=70%| Fonction
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15%| Nationalité sportive
+|-
+| {{Dr}} Antoine Henri
+| Médecin coordonnateur
+| {{FRA}}
+|-
+| {{Dr}} Philippe Pouget<br/>{{Dr}} Ophélie Bello-Junté
+| Médecin
+| {{FRA}}
+|-
+| Mathieu Vinegra
+| Kinésithérapeute-ostéopathe
+| {{FRA}}
+|-
+|Camille Mahieu<br>Adrian Roudiere
+|Kinésithérapeute
+|{{FRA}}
+|}
+==== Staff centre de formation ====
+{| class="wikitable centre alternance" style="font-size:90%; text-align:center; width:100%"
+|-
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15% | Nom
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=70%| Fonction
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15%| Nationalité sportive
+|-
+| Lucas Broto
+| Directeur du centre de formation<br />Manager équipe Espoirs
+| {{FRA}}
+|-
+|[[Carlos Muzzio]]
+|Entraîneur des avants du centre de formation
+|{{ARG}}
+|-
+|Hector Maren
+|Analyste performance centre de formation et Espoirs
+|{{FRA}}
+|-
+|Anthony Numitor
+|Préparateur physique
+|{{FRA}}
+|-
+| Paul Michelin
+|Responsable data
+|{{FRA}}
+|-
+|Alexis Peeters
+|Responsable performance
+|{{FRA}}
+|}
+==== Staff médical ====
+{| class="wikitable centre alternance" style="font-size:90%; text-align:center; width:100%"
+|-
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15% | Nom
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=70%| Fonction
+! scope="col" style="background-color:#1A4344; color:#ffffff;" width=15%| Nationalité sportive
+|-
+| {{Dr}} Antoine Henri
+| Médecin coordonnateur
+| {{FRA}}
+|-
+| {{Dr}} Philippe Pouget<br/>{{Dr}} Ophélie Bello-Junté
+| Médecin
+| {{FRA}}
+|-
+| Mathieu Vinegra
+| Kinésithérapeute-ostéopathe
+| {{FRA}}
+|-
+|Camille Mahieu<br>Adrian Roudiere
+|Kinésithérapeute
+|{{FRA}}
+|}

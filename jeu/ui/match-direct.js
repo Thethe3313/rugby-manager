@@ -27,7 +27,7 @@ function viewPrematch(){
   const lu=m.autoXV!==false?autoLineup(m):m.lineup;
   return `<div class="overlay"><div class="modal"><h2>Jour de match · ${fmtD(nx.d)}</h2>
   <div class="vs"><div>${h.short}<small>${nx.f.neutral?'Terrain neutre':'Domicile'}</small></div><div class="mut">vs</div><div>${a.short}<small>&nbsp;</small></div></div>
-  <p class="mut" style="text-align:center">${LEAGUES[m.lg].name} · ${stageLabel(m)}</p>
+  <p class="mut" style="text-align:center">${LEAGUES[m.lg].name} · ${stageLabel(m)}${(()=>{const o=h.id===m.id?a:h;return o.manager?` · manager adverse : ${o.manager}`:''})()}</p>
   <div class="grid g2"><div><h3>Consignes</h3>
     <p>Style de jeu<br>${tacSel('tac','style',STY,t.style)}</p><p>Intensité<br>${tacSel('tac','int',INTS,t.int)}</p>
     <p>Jeu au pied<br>${tacSel('tac','kick',KICKS,t.kick)}</p><p>Sur pénalité<br>${tacSel('tac','pen',PENS,t.pen)}</p></div>

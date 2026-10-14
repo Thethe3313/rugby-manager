@@ -1,0 +1,159 @@
+# Stade rochelais
+=== Staff sportif ===
+{| class="wikitable sortable centre alternance" style="text-align:center; font-size:90%;"
+|+Historique de l'encadrement professionnel du Stade rochelais
+|- bgcolor="#E8CC06"
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Période
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Directeur sportif
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Manager
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Entraîneur(s)
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Adjoint(s)
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Titre(s)
+|-
+| 1988 - 1993
+| rowspan="11" |
+| rowspan="8" |
+|{{FRA-d}} [[Jean-Pierre Élissalde]]
+| rowspan="2" |
+| rowspan="2" |
+|-
+| {{date|Janvier 1994}} - 1999
+| rowspan="2" |{{FRA-d}} [[Jean-Pierre Élissalde]]
+|-
+| 1999 - {{date|Février 2003}}
+|{{FRA-d}} Frédéric Uthurry (arrières)
+|[[Coupe de la Ligue de rugby à XV|Coupe de la Ligue 2002]]
+|-
+| {{date|Février 2003}} - 2004
+|{{RSA-d}} Ronald White (avants)<br />{{FRA-d}} Frédéric Uthurry (arrières)
+|
+|[[Coupe de la Ligue de rugby à XV|Coupe de la Ligue 2003]]
+|-
+| 2004 - 2007
+| rowspan="2" |{{FRA-d}} [[Serge Milhas]]
+|{{FRA-d}} Frédéric Uthurry (arrières)
+| rowspan="2" |
+|-
+| 2007 - 2011
+|{{FRA-d}} [[David Darricarrère]] (arrières)
+|-
+| 2011 - 2012
+| rowspan="2" |{{FRA-d}} [[Patrice Collazo]] (avants)<br />{{FRA-d}} [[Fabrice Ribeyrolles]] (arrières)
+|
+| rowspan="2" |
+|-
+| 2012 - 2014
+|{{GEO-d}} [[Akvsenti Giorgadze]] (conquête)
+|-
+| 2014 - 09/2014
+| rowspan="2" |{{FRA-d}} [[Patrice Collazo]]
+| rowspan="2" |
+|{{FRA-d}} [[Fabrice Ribeyrolles]] (arrières)<br />{{FRA-d}} [[Xavier Garbajosa]] (skills)<br />{{GEO-d}} [[Akvsenti Giorgadze]] (conquête)
+| rowspan="2" |
+|-
+| 09/2014 - 07/2018
+|{{FRA-d}} [[Xavier Garbajosa]] (arrières)<br />{{GEO-d}} [[Akvsenti Giorgadze]] (conquête)
+|-
+| 07/2018 - 11/2018
+|
+| rowspan="2" |{{FRA-d}} [[Xavier Garbajosa]] (arrières)<br />{{FRA-d}} [[Grégory Patat]] (avants)
+| rowspan="2" |{{GEO-d}} [[Akvsenti Giorgadze]] (conquête)
+|
+|-
+| 11/2018 - 07/2019
+| colspan="2" rowspan="2" |{{NZL-d}} [[Jono Gibbes]]
+| rowspan="3" |
+|-
+| 07/2019 - 07/2020
+| rowspan="2" |{{IRL rugby-d}} [[Ronan O'Gara]] (arrières)
+|{{FRA-d}} [[Grégory Patat]] (avants)<br />{{GEO-d}} [[Akvsenti Giorgadze]] (conquête)
+|-
+|07/2020 - 07/2021
+| colspan="2" |{{NZL-d}} [[Jono Gibbes]] (avants)
+|{{FRA-d}} [[Grégory Patat]] (coordination)<br />{{FRA-d}} [[Sébastien Boboul]] (arrières)<br />{{FRA-d}} [[Romain Carmignani]] (avants)<br />{{GEO-d}} [[Davit Zirakashvili]] (consultant mêlée)
+|-
+|07/2021 - 07/2023
+| rowspan="2" |{{GER-d}} [[Robert Mohr]]
+| rowspan="4" |{{IRL rugby-d}} [[Ronan O'Gara]]
+|{{FRA-d}} [[Sébastien Boboul]] (arrières)<br />{{FRA-d}} [[Romain Carmignani]] (avants)<br />{{IRL rugby-d}} [[Donnacha Ryan]] (avants)
+|{{RSA-d}} [[Gurthrö Steenkamp]] (mêlée)
+| [[Coupe d'Europe de rugby à XV 2021-2022|Coupe d'Europe 2022]]<br/>[[Champions Cup 2022-2023|Champions Cup 2023]]
+|-
+|07/2023 - 07/2025
+|{{FRA-d}} [[Sébastien Boboul]] (attaque)<br />{{FRA-d}} [[Romain Carmignani]] (avants/défense)<br />{{IRL rugby-d}} [[Donnacha Ryan]] (avants)<br />{{RSA-d}} [[Gurthrö Steenkamp]] (mêlée/1<sup>ères</sup> ligne)<br />{{FRA-d}} [[Rémi Talès|Rémi Tales]] (arrières)
+|{{IRL rugby-d}} [[Sean Dougall]] (attitude au contact)<br />{{FRA-d}} [[Kevin Gourdon]] (analyse technique personnalisée)
+|
+|-
+|07/2025 - 10/2026
+| rowspan="2" |
+|{{FRA-d}} [[Sébastien Boboul]] (attaque)<br />{{FRA-d}} [[Romain Carmignani]] (défense)<br />{{IRL rugby-d}} [[Donnacha Ryan]] (avants)<br />{{FRA-d}} [[Rémi Talès|Rémi Tales]] (arrières)
+|{{FRA-d}} [[Uini Atonio]] (mêlée)
+{{IRL rugby-d}} [[Sean Dougall]] (attitude au contact)
+
+{{FRA-d}} [[Romain Sazy]] (préparation stratégique des matches)
+|
+|-
+|À partir de 10/2026
+|{{FRA-d}} [[Sébastien Boboul]] (attaque)<br />{{IRL rugby-d}} [[Donnacha Ryan]] (avants)<br />{{FRA-d}} [[Rémi Talès|Rémi Tales]] (arrières)
+|{{FRA-d}} [[Uini Atonio]] (mêlée)
+{{IRL rugby-d}} [[Sean Dougall]] (attitude au contact)
+
+{{FRA-d}} [[Romain Sazy]] (préparation stratégique des matches)
+|
+|}
+=== Staff sportif ===
+{| class="wikitable sortable centre alternance" style="text-align:center; font-size:90%;"
+|+Historique de l'encadrement des espoirs du Stade rochelais
+|- bgcolor="#E8CC06"
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Période
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Directeur sportif
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Manager
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Entraîneur(s)
+! scope="col" style="text-align:center; background-color:#FFDC00; color:#000000;" |Adjoint
+|-
+| 2012 - 2014
+|
+| rowspan="5" |
+| rowspan="2" |{{FRA-d}} [[Laurent Albinet]]
+| rowspan="3" |{{FRA-d}} [[Sébastien Boboul]] (arrières)
+|-
+| 2014 - 2016
+| rowspan="2" |Poste de manager général occupé par<br />{{FRA-d}} [[Patrice Collazo]]
+|-
+| 2016 - 07/2018
+|{{FRA-d}} [[Grégory Patat]] (avants)
+|-
+| 07/2018 - 11/2018
+|
+| rowspan="2" |{{FRA-d}} [[Sébastien Boboul]] (arrières)
+| rowspan="2" |{{FRA-d}} [[Romain Carmignani]] (avants)
+|-
+| 11/2018 - 07/2021
+|{{NZL-d}} [[Jono Gibbes]]
+|-
+|07/2021 - 07/2023
+| rowspan="3" |{{GER-d}} [[Robert Mohr]]
+| rowspan="2" |{{FRA-d}} [[Sébastien Morel]] (arrières)
+|{{RSA-d}} [[Gurthrö Steenkamp]] (avants)
+|
+|-
+|07/2023 - 07/2024
+|{{FRA-d}} [[Romain Sazy]] (avants)
+|{{RSA-d}} [[Gurthrö Steenkamp]] (1<sup>ères</sup> ligne)
+|-
+|07/2024 - 07/2025
+|
+|{{FRA-d}} [[Baptiste Gatuingt]]
+{{FRA-d}} [[Romain Sazy]]
+|
+|-
+|07/2025 - 07/2026
+|{{GER-d}} [[Robert Mohr]] <small>(manager de la formation et de la planification des effectifs)</small>
+| rowspan="2" |{{FRA-d}} [[Baptiste Gatuingt]] (arrières)
+| rowspan="2" |{{IRL rugby-d}} [[Sean Dougall]] (avants)
+|
+|-
+|À partir de 07/2026
+|
+|
+|}

@@ -17,15 +17,30 @@ const staffMass=c=>SROLES.reduce((t,r)=>t+(c.staff&&c.staff[r]?c.staff[r].sal:0)
 const staffSal=(q,lg)=>Math.max(15,Math.round((20+q*q*.9)*(lg==='t14'?1:lg==='pd2'?.55:.3)/5)*5);
 // Ce qu'un technicien libre demande pour signer dans un club (les meilleurs rechignent à descendre de division)
 const staffDemand=(s,c)=>Math.round(staffSal(s.q,c.lg)*(s.ask||1)*(s.q>=15&&c.lg!=='t14'?1.3:1)/5)*5;
+// Membre du staff fictif (f = nom fictif)
 function genStaff(role,q,lg){
   q=clamp(Math.round(q),1,20);
-  return{id:G.nid++,name:genName(),role,q,age:clamp(Math.round(R.n(28+q*1.3,6)),28,64),sal:Math.round(staffSal(q,lg)*(.9+R.f()*.2)/5)*5,ctr:R.i(1,3)};
+  return{id:G.nid++,name:genName(),role,q,age:clamp(Math.round(R.n(28+q*1.3,6)),28,64),sal:Math.round(staffSal(q,lg)*(.9+R.f()*.2)/5)*5,ctr:R.i(1,3),f:true};
 }
-// Staff de départ : meilleur dans les clubs riches
+// Vrai nom (données REALSTAFF) : t = fonction réelle, sure = fonction confirmée (sinon supposée). Âge inconnu.
+function setRealStaff(s,x){s.name=x[0];s.t=x[1];s.sure=!!x[2];s.age=null;delete s.f}
+// Staff de départ : meilleur dans les clubs riches ; vrais noms quand ils sont connus
 function initStaff(c){
-  const base=c.lg==='t14'?9+(c.bud-23000)/37000*8:c.lg==='pd2'?7+(c.bud-5500)/14500*4:5;
-  c.staff={};for(const r of SROLES)c.staff[r]=genStaff(r,clamp(base+R.n(0,1.8),3,19),c.lg);
+  const base=c.lg==='t14'?9+(c.bud-23000)/37000*8:c.lg==='pd2'?7+(c.bud-5500)/14500*4:5,rs=(typeof REALSTAFF!=='undefined'&&REALSTAFF[c.id])||{};
+  c.staff={};
+  for(const r of SROLES){const s=genStaff(r,clamp(base+R.n(0,1.8),3,19),c.lg);if(rs[r])setRealStaff(s,rs[r]);c.staff[r]=s}
+  if(rs.man)c.manager=rs.man;
   c.staffRef=staffMass(c); // coût « normal » du staff, déjà compris dans les frais de fonctionnement du club
+}
+// Anciennes sauvegardes : on donne les vrais noms au staff existant (qualité, salaire et contrat inchangés),
+// sauf aux membres que le joueur a lui-même recrutés.
+function applyRealStaff(){
+  if(typeof REALSTAFF==='undefined')return;
+  for(const c of G.clubs){
+    const rs=REALSTAFF[c.id];if(!rs||!c.staff)continue;
+    if(rs.man&&!c.manager)c.manager=rs.man;
+    for(const r of SROLES){const s=c.staff[r];if(s&&rs[r]&&!s.hired&&s.name!==rs[r][0])setRealStaff(s,rs[r])}
+  }
 }
 // Techniciens libres (marché du staff), renouvelé chaque été
 function genStaffPool(){
@@ -46,7 +61,7 @@ function hireStaff(m,s,yrs){
   m.budget-=comp;G.fin.transfers-=comp;
   G.staffPool=G.staffPool.filter(x=>x.id!==s.id);
   if(old){old.ctr=0;old.ask=1;G.staffPool.push(old)}
-  s.sal=staffDemand(s,m);s.ctr=yrs;delete s.ask;m.staff[r]=s;
+  s.sal=staffDemand(s,m);s.ctr=yrs;s.hired=true;delete s.ask;m.staff[r]=s;
   addNews(`✍ ${s.name} devient ${STAFF_ROLES[r].n.toLowerCase()} (${s.q}/20, ${fmtK(s.sal)}/an, ${yrs} an${yrs>1?'s':''})${old?` à la place de ${old.name}${comp?` (indemnité ${fmtK(comp)})`:''}`:''}.`);
   return null;
 }
@@ -57,13 +72,14 @@ function staffSeasonEnd(){
     if(!c.staff)initStaff(c);
     for(const r of SROLES){
       const s=c.staff[r];if(!s)continue;
-      s.age++;s.ctr--;
-      if(s.ctr>0&&s.age<67)continue;
+      if(s.age)s.age++;s.ctr--;
+      const old=s.age&&s.age>=67;
+      if(s.ctr>0&&!old)continue;
       if(c===m){
         c.staff[r]=null;
-        mail('Le président',`Départ : ${s.name}`,`${s.name} (${STAFF_ROLES[r].n.toLowerCase()}) ${s.age>=67?'prend sa retraite':'quitte le club en fin de contrat'}. Le poste est vacant : recrute un remplaçant dans l'onglet Staff.`,{act:{tab:'staff'},imp:true});
-        if(s.age<67){s.ctr=0;s.ask=1;G.staffPool.push(s)}
-      }else if(s.age<67&&R.f()<.7){s.ctr=R.i(1,3)}
+        mail('Le président',`Départ : ${s.name}`,`${s.name} (${STAFF_ROLES[r].n.toLowerCase()}) ${old?'prend sa retraite':'quitte le club en fin de contrat'}. Le poste est vacant : recrute un remplaçant dans l'onglet Staff.`,{act:{tab:'staff'},imp:true});
+        if(!old){s.ctr=0;s.ask=1;G.staffPool.push(s)}
+      }else if(!old&&R.f()<(s.f?.7:.85)){s.ctr=R.i(1,3)}
       else c.staff[r]=genStaff(r,clamp(s.q+R.n(0,1.5),3,19),c.lg);
     }
   }

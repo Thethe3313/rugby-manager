@@ -34,6 +34,8 @@ Le dossier `recherche/` contient les données brutes qui ont servi à noter les 
 - un fichier JSON par club pour les pros (`effectifs/`) et pour les espoirs (`espoirs/`), avec la justification de chaque note et un drapeau `unsure` ;
 - les consignes de recherche utilisées (`consignes/`), c'est-à-dire la méthode et la grille de calibrage.
 
+Le staff réel 2026-27 est dans `recherche/staff/staff-2026-27.json` (sources, fonction réelle, drapeau sûr/supposé ; `brut/` = sections Wikipédia). Après modification : `node outils/generer-staff.js` régénère `jeu/data/staff.js` (`REALSTAFF`, chargé après `espoirs.js`). Les postes sans source restent fictifs (`s.f`), affichés comme tels. Ne jamais inventer un nom réel.
+
 Lis `recherche/METHODE.md` avant de toucher aux notes. Pour améliorer une note, modifie d'abord le JSON de `recherche/`, puis régénère `REAL` / `REALY` dans `jeu/data/`.
 
 ## Règles et choix importants (à respecter)

@@ -48,6 +48,7 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - **Staff** (nouvel onglet) : entraîneurs des avants, des trois-quarts et des buteurs, préparateur physique, médecin, recruteur, notés sur 20. Ils agissent sur la progression (jusqu'à ±20 %), la récupération, le déclin, les blessures et leur durée, et la précision du potentiel estimé.
   - **Recrutement du staff** : marché des techniciens libres renouvelé chaque été, salaires selon la qualité et la division, contrats de 1 à 3 ans, indemnité si on remplace quelqu'un, prolongations à l'intersaison, poste vacant si on oublie. Salaires du staff dans les finances.
   - Les anciennes sauvegardes reçoivent automatiquement personnalités et staff.
+  - **Vrais noms du staff** (Top 14 et Pro D2, 2026-27) : 53 membres et 29 managers retrouvés (Wikipédia, guides RugbyPass, presse), avec leur fonction réelle ; les postes sans source (souvent médecin, recruteur) restent fictifs et sont signalés. Le manager remplacé par le joueur est indiqué dans l'onglet Staff, celui de l'adversaire dans l'avant-match.
 
 ## ▶️ Prochaine étape
 

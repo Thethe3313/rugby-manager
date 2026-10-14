@@ -9,6 +9,7 @@ function migrateSave(){
   for(const p of G.fa||[])ensurePers(p);
   if(!G.staffPool)genStaffPool();
   if(G.fin&&G.fin.staff==null)G.fin.staff=0;
+  applyRealStaff();
 }
 
 function newGame(meId){
