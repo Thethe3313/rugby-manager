@@ -89,15 +89,21 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - Une descente ne coûte plus ta place, sauf une descente en Nationale 3 (hors des divisions gérées).
   - Simulation accélérée (environ 2 fois plus rapide) : progression hebdomadaire, matchs sans le club du joueur simulés d'après le niveau des équipes en Nationale, Nationale 2 et à l'étranger.
 
+- **Étape F2 — Fédérales et Régionales (14 octobre 2026)** :
+  - Six niveaux de plus sous la Nationale 2 : **Fédérale 1** (devient la Nationale 3 en 2027-28), **Fédérale 2** (77 vrais clubs), **Fédérale 3** (159 vrais clubs 2026-27), **Régionales 1, 2 et 3** (90 clubs fictifs nommés d'après de vraies communes).
+  - **Carrière tout en bas** : sur l'écran d'accueil, « Commencer plus bas » permet de choisir n'importe quel club de ces divisions. Ta poule est jouée en vrai (effectifs générés, match en direct), les autres poules en simulation légère.
+  - Petits budgets (de 80 k€ en Régionale 3 à 700 k€ en Fédérale 1), joueurs et staff simplement défrayés, pas de centre de formation.
+  - Montées et descentes en cascade jusqu'en Régionale 3 ; tailles visées : 24 clubs en Nationale 3, 80 en Fédérale 2, 160 en Fédérale 3, 30 par Régionale. Une descente ne coûte plus jamais ta place.
+  - Les anciennes parties reçoivent les nouvelles divisions automatiquement.
+
 ## ▶️ Prochaine étape
 
-### Étape F2 — Fédérales et Régionales
-- Nationale 3, Fédérale 2, Fédérale 3, Régionales (R1 à R3), d'après FFR Compétition, en simulation légère ; pouvoir commencer une carrière tout en bas (effectif généré pour le club du joueur).
+### Point sur l'interface
+- La rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
 
 ## 📋 À faire ensuite (dans l'ordre)
 
-1. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
-2. **Application** :
+1. **Application** :
    - Version installable : déjà préparée (manifeste, icônes, service worker), il reste à héberger le dossier `jeu/` en ligne ; puis Android et iOS.
    - Comptes et sauvegardes en ligne (les 4 emplacements existent déjà dans le navigateur).
 

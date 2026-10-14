@@ -36,7 +36,7 @@ function dayStep(){
       finishSeason();
     }
   }else if(G.phase==='season'){
-    for(const lg of LGORDER){
+    for(const lg of lgs()){
       const L=G.L[lg],due=L.phase==='regular'?L.dates[L.week]:L.phase==='playoffs'?L.poDates[L.po.stage]:null;
       if(!due||due>G.date)continue;
       clubsIn(lg).forEach(setMatchLineup);
@@ -44,12 +44,12 @@ function dayStep(){
       if(lg===m.lg&&reg){const R_=G.L[m.lg].fixtures.length,inc=Math.round(m.bud*.72/R_),w=Math.round(mass(m)/R_),fx=Math.round(m.fixed/R_),sf=Math.round(staffMass(m)/R_);m.budget+=inc-w-fx-sf;G.fin.sponsor+=inc;G.fin.wages+=w;G.fin.opex+=fx;G.fin.staff=(G.fin.staff||0)+sf}
       const r=stepLeague(lg);
       if(r&&lg===m.lg){mine=r;
-        if(r.h===m.id&&!r.ko){const R_=G.L[m.lg].fixtures.length,n=clubsIn(m.lg).length,rk=rankOf(m.id)||n/2,attF=.85+.3*(1-(rk-1)/(n-1));const rev=Math.round(m.bud*.28/(R_/2)*attF);m.budget+=rev;G.fin.ticket+=rev;r.att=Math.round(({t14:14000,pd2:5000,nat:2500,n2:900}[m.lg]||900)*attF*(.9+R.f()*.2))}}
+        if(r.h===m.id&&!r.ko){const R_=G.L[m.lg].fixtures.length,n=clubsIn(m.lg).length,rk=rankOf(m.id)||n/2,attF=.85+.3*(1-(rk-1)/(n-1));const rev=Math.round(m.bud*.28/(R_/2)*attF);m.budget+=rev;G.fin.ticket+=rev;r.att=Math.round(({t14:14000,pd2:5000,nat:2500,n2:900,f1:600,f2:400,f3:250,r1:180,r2:130,r3:100}[m.lg]||900)*attF*(.9+R.f()*.2))}}
     }
     // coupes d'Europe (les samedis sans Top 14)
     xlDay();amDay();
     const cm=cupDay();if(cm)mine=cm;
-    if(LGORDER.every(lg=>G.L[lg].phase==='done'))prepareAccess();
+    if(lgs().every(lg=>G.L[lg].phase==='done'))prepareAccess();
   }
   if(mine){
     const home=mine.h===m.id,o=C(home?mine.a:mine.h),my=home?mine.sh:mine.sa,op=home?mine.sa:mine.sh;

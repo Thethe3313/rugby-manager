@@ -15,10 +15,10 @@ function buildSchedule(lg,n){
   n=n||LEAGUES[lg].rounds;
   const y=seasonYear(),out=[];
   // Top 14 le samedi, Pro D2 le vendredi, Nationale et Nationale 2 le dimanche
-  let d=lg==='t14'?firstDow(`${y}-09-01`,6):lg==='pd2'?firstDow(`${y}-08-21`,5):lg==='nat'?firstDow(`${y}-08-21`,0):firstDow(`${y}-09-04`,0);
+  let d=lg==='t14'?firstDow(`${y}-09-01`,6):lg==='pd2'?firstDow(`${y}-08-21`,5):lg==='nat'?firstDow(`${y}-08-21`,0):isAmLg(lg)?firstDow(`${y}-${AMLV[lg].start}`,0):firstDow(`${y}-09-04`,0);
   while(out.length<n){
     const dt=new Date(d+'T12:00:00Z'),mo=dt.getUTCMonth()+1,wk=Math.ceil(dt.getUTCDate()/7);
-    if(!((OFF[lg][mo]||[]).includes(wk)))out.push(d);
+    if(!(OFF[lg]?(OFF[lg][mo]||[]).includes(wk):amOff(d)))out.push(d);
     d=dAdd(d,7);
   }
   const last=out[out.length-1];

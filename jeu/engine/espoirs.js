@@ -33,14 +33,14 @@ function realYouth(r){
   return p;
 }
 function initYouth(c){
-  if(c.lg==='n2'){c.youth=[];return} // pas de centre de formation agréé en Nationale 2
+  if(c.lg==='n2'||isAmLg(c.lg)){c.youth=[];return} // pas de centre de formation agréé en Nationale 2 et plus bas
   c.youth=(REALY[c.id]||[]).map(realYouth);
   while(c.youth.length<12)c.youth.push(genYouthPlayer(c,R.i(16,19)));
 }
 function youthIntake(){
   const m=ME();
   for(const c of G.clubs){
-    if(c.lg==='n2')continue;
+    if(c.lg==='n2'||isAmLg(c.lg))continue;
     c.youth=c.youth||[];
     const n=R.i(4,7),news=[];
     for(let i=0;i<n;i++){const p=genYouthPlayer(c,R.i(16,17));c.youth.push(p);news.push(p)}

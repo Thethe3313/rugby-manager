@@ -8,7 +8,7 @@ const {scenario}=require('./scenario');
 const args=process.argv.slice(2),opt=k=>{const i=args.indexOf('--'+k);return i>=0?args[i+1]:null};
 const html=args.find(a=>a.endsWith('.html'))||path.join(__dirname,'..','jeu','index.html');
 const seasons=+(opt('seasons')||2),seed=opt('seed')!==null?+opt('seed'):undefined;
-const clubs=(opt('club')||'pau,per').split(',');
+const clubs=(opt('club')||'pau,per,r2_3').split(',');
 
 let problems=0,screens=0,lives=0,matches=0;
 const t0=Date.now();

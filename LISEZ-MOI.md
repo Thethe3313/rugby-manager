@@ -1,6 +1,6 @@
 # Rugby Manager
 
-Jeu de gestion de club de rugby à XV, façon Football Manager : Top 14, Pro D2, Nationale et Nationale 2 (effectifs réels 2026-27 en Top 14 et Pro D2), coupes d'Europe et championnats étrangers.
+Jeu de gestion de club de rugby à XV, façon Football Manager : du Top 14 à la Régionale 3 (effectifs réels 2026-27 en Top 14 et Pro D2, vrais clubs jusqu'en Fédérale 3), coupes d'Europe et championnats étrangers.
 
 ## Jouer
 - **Double-clic sur « Rugby Manager »** (le raccourci avec le ballon) : le jeu s'ouvre dans sa propre fenêtre, comme une appli.
@@ -16,7 +16,7 @@ Les parties (4 emplacements) sont enregistrées dans le navigateur, dans sa base
 | `jeu/` | Le jeu : `index.html`, les icônes, et le code (`data/` données, `engine/` moteur, `ui/` interface). |
 | `recherche/` | La recherche qui a servi à noter les joueurs (une fiche par club, la méthode). |
 | `tests/` | Les tests automatiques (`node tests/test.js`). |
-| `outils/` | Scripts pour recréer le raccourci et l'icône. |
+| `outils/` | Scripts pour recréer le raccourci et l'icône, et pour régénérer les données (staff, clubs étrangers, clubs amateurs). |
 | `archives/` | Anciennes copies (non suivies par git, on peut les supprimer). |
 | `PLAN.md` | La feuille de route. |
 | `CLAUDE.md` | Les instructions pour Claude Code. |

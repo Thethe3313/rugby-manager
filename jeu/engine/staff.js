@@ -14,19 +14,19 @@ const SROLES=Object.keys(STAFF_ROLES);
 const staffQ=(c,r)=>!c||!c.staff?10:c.staff[r]?c.staff[r].q:4;
 const staffMass=c=>SROLES.reduce((t,r)=>t+(c.staff&&c.staff[r]?c.staff[r].sal:0),0);
 // Salaire annuel (k€) selon la qualité et la division
-const staffSal=(q,lg)=>Math.max(15,Math.round((20+q*q*.9)*(lg==='t14'?1:lg==='pd2'?.55:.3)/5)*5);
+const staffSal=(q,lg)=>isAmLg(lg)?Math.max(1,Math.round((20+q*q*.9)*.05)):Math.max(15,Math.round((20+q*q*.9)*(lg==='t14'?1:lg==='pd2'?.55:.3)/5)*5); // amateurs : bénévoles défrayés
 // Ce qu'un technicien libre demande pour signer dans un club (les meilleurs rechignent à descendre de division)
-const staffDemand=(s,c)=>Math.round(staffSal(s.q,c.lg)*(s.ask||1)*(s.q>=15&&c.lg!=='t14'?1.3:1)/5)*5;
+const staffDemand=(s,c)=>isAmLg(c.lg)?staffSal(s.q,c.lg):Math.round(staffSal(s.q,c.lg)*(s.ask||1)*(s.q>=15&&c.lg!=='t14'?1.3:1)/5)*5;
 // Membre du staff fictif (f = nom fictif)
 function genStaff(role,q,lg){
   q=clamp(Math.round(q),1,20);
-  return{id:G.nid++,name:genName(),role,q,age:clamp(Math.round(R.n(28+q*1.3,6)),28,64),sal:Math.round(staffSal(q,lg)*(.9+R.f()*.2)/5)*5,ctr:R.i(1,3),f:true};
+  return{id:G.nid++,name:genName(),role,q,age:clamp(Math.round(R.n(28+q*1.3,6)),28,64),sal:isAmLg(lg)?staffSal(q,lg):Math.round(staffSal(q,lg)*(.9+R.f()*.2)/5)*5,ctr:R.i(1,3),f:true};
 }
 // Vrai nom (données REALSTAFF) : t = fonction réelle, sure = fonction confirmée (sinon supposée). Âge inconnu.
 function setRealStaff(s,x){s.name=x[0];s.t=x[1];s.sure=!!x[2];s.age=null;delete s.f}
 // Staff de départ : meilleur dans les clubs riches ; vrais noms quand ils sont connus
 function initStaff(c){
-  const base=c.lg==='t14'||c.ext?9+(c.bud-23000)/37000*8:c.lg==='pd2'?7+(c.bud-5500)/14500*4:c.lg==='nat'?6:4.5,rs=(typeof REALSTAFF!=='undefined'&&REALSTAFF[c.id])||{};
+  const base=c.lg==='t14'||c.ext?9+(c.bud-23000)/37000*8:c.lg==='pd2'?7+(c.bud-5500)/14500*4:c.lg==='nat'?6:c.lg==='n2'?4.5:isAmLg(c.lg)?4.2-(LEVEL[c.lg]-5)*.25:4.5,rs=(typeof REALSTAFF!=='undefined'&&REALSTAFF[c.id])||{};
   c.staff={};
   for(const r of SROLES){const s=genStaff(r,clamp(base+R.n(0,1.8),3,19),c.lg);if(rs[r])setRealStaff(s,rs[r]);c.staff[r]=s}
   if(rs.man)c.manager=rs.man;

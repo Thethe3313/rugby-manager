@@ -11,7 +11,7 @@ function initPot(o,age,h){const g=age<=19?14+h*14:age<=21?8+h*12:age<=23?4+h*9:a
 function genPlayer(g,level,age){
   age=age||clamp(Math.round(R.n(26,4)),19,36);
   const p={id:G.nid++,name:genName(),g,age,forme:90,inj:0,ni:false,ctr:R.i(1,4),st:{mj:0,tit:0,es:0,pts:0},sub:g==='PIL'?R.pick(['LH','TH']):g,pro:R.i(4,18),amb:R.i(3,18),det:R.i(3,18),hist:[]};
-  buildAttrs(p,g,clamp(level,30,95),()=>R.n(0,1.3));
+  buildAttrs(p,g,clamp(level,22,95),()=>R.n(0,1.3));
   const o=ovrAt(p,g);
   p.pot=initPot(o,age,R.f());
   p.sal=salaryFor(o,age,'pd2');
@@ -42,11 +42,11 @@ function realSquad(id,str,lg){
 }
 function genSquad(str,lg){const s=[];for(const g in COMP)for(let i=0;i<COMP[g];i++){const p=genPlayer(g,str-i*3.2+R.n(0,3));p.sal=salaryFor(ovr(p),p.age,lg||'nat');s.push(p)}return s}
 function mkClub(c,lg){
-  const info=CLUBINFO[c[0]]||{bud:lg==='nat'?3000:lg==='n2'?1300:9000};
+  const info=CLUBINFO[c[0]]||{bud:lg==='nat'?3000:lg==='n2'?1300:isAmLg(lg)?Math.round(AMLV[lg].bud*(.8+hashN(c[1]+'b')*.4)):9000};
   const cl={id:c[0],name:c[1],short:c[2],str:c[3],lg,bud:info.bud,cap:info.cap,sponsor:0,squad:REAL[c[0]]?realSquad(c[0],c[3],lg):genSquad(c[3],lg),tac:{style:'equilibre',int:'normale'},focus:'equilibre',budget:0,lineup:[],mp:0};
   // ajuste la masse salariale pour qu'elle respecte le plafond (et soit proche du cap en Top 14)
   const cap=capOf(cl),ms=mass(cl);
-  if(ms>cap*.97||(lg==='t14'&&ms<cap*.85)){const f=(lg==='t14'?.92:.95)*cap/ms;cl.squad.forEach(p=>p.sal=Math.max(8,Math.round(p.sal*f)))}
+  if(ms>cap*.97||(lg==='t14'&&ms<cap*.85)){const f=(lg==='t14'?.92:.95)*cap/ms;cl.squad.forEach(p=>p.sal=Math.max(isAmLg(lg)?1:8,Math.round(p.sal*f)))}
   initStaff(cl);
   cl.lineup=autoLineup(cl);return cl;
 }

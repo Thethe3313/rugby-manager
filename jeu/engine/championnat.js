@@ -60,7 +60,7 @@ function stepLeague(lg){
   if(L.phase==='done')return null;
   const ko=L.phase==='playoffs';
   const fx=ko?L.po.next:L.fixtures[L.week].map(x=>({h:x[0],a:x[1]}));
-  const out=playFixtures(fx,ko,lg==='n2'||lg==='nat');
+  const out=playFixtures(fx,ko,lg!=='t14'&&lg!=='pd2');
   if(!ko)out.forEach(r=>updateTable(lg,r));
   const slim=out.map(slimR);
   if(!ko)L.results[L.week]=slim;else L.po.res.push({stage:L.po.stage,m:slim});
@@ -68,7 +68,10 @@ function stepLeague(lg){
   if(mine){mine.others=slim;mine.ko=ko}
   if(!ko){
     L.week++;
-    if(L.week===L.fixtures.length&&lg==='n2'){setupN2Po(L);if(lg===m.lg)addNews('Fin de la phase régulière de Nationale 2 : place aux phases finales.')}
+    // poule du joueur en Fédérale ou Régionale : pas de phases finales, le 1er de la poule est champion
+    if(L.week===L.fixtures.length&&isAmLg(lg)){const t=sortedTable(lg);L.po={stage:0,seeds:[],next:[],res:[],champ:t[0].id,fin:t[1]?t[1].id:null};L.phase='done';
+      if(lg===m.lg)addNews(`Fin de la saison de ${LEAGUES[lg].name} : ${C(t[0].id).short} termine en tête de la poule.`)}
+    else if(L.week===L.fixtures.length&&lg==='n2'){setupN2Po(L);if(lg===m.lg)addNews('Fin de la phase régulière de Nationale 2 : place aux phases finales.')}
     else if(L.week===L.fixtures.length){
       const seeds=sortedTable(lg).slice(0,6).map(r=>r.id);
       L.po={stage:0,seeds,next:[{h:seeds[2],a:seeds[5]},{h:seeds[3],a:seeds[4]}],res:[],champ:null,fin:null};
