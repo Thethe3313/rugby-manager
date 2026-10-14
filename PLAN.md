@@ -50,20 +50,26 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - Les anciennes sauvegardes reçoivent automatiquement personnalités et staff.
   - **Vrais noms du staff** (Top 14 et Pro D2, 2026-27) : 53 membres et 29 managers retrouvés (Wikipédia, guides RugbyPass, presse), avec leur fonction réelle ; les postes sans source (souvent médecin, recruteur) restent fictifs et sont signalés. Le manager remplacé par le joueur est indiqué dans l'onglet Staff, celui de l'adversaire dans l'avant-match.
 
+- **Étape C — Coupes d'Europe (14 octobre 2026)** :
+  - **Champions Cup** (8 clubs du Top 14, 8 de Premiership, 8 d'URC ; 4 poules de 6) et **Challenge Cup** (6 du Top 14, 8 URC, 2 Premiership, 2 invités ; 3 poules de 6).
+  - Chaque club joue 4 matchs de poule (pas contre son compatriote), puis 8es, quarts, demies (chez le mieux classé) et finale sur terrain neutre ; les 5es de Champions Cup sont reversés en Challenge Cup.
+  - Bonus offensif à 3 essais d'écart, défensif pour une défaite de 7 points ou moins ; prolongation et tirs au but en phase finale.
+  - Qualification : les 8 premiers du Top 14 (phase régulière de la saison passée) en Champions Cup, les autres en Challenge Cup.
+  - Dates : les samedis sans Top 14 (poules en décembre-janvier, phase finale d'avril à début mai).
+  - 28 clubs étrangers réels (Leinster, Bath, Glasgow, Bulls…) avec des effectifs simplifiés (joueurs générés selon le pays).
+  - Onglet Europe (poules, phase finale), matchs européens dans le calendrier, en direct et au palmarès, primes à chaque tour.
+
 ## ▶️ Prochaine étape
 
-### Étape C — Coupes d'Europe
-- Champions Cup (4 poules de 6, bonus offensif à 3 essais d'écart, défensif à 7 points) et Challenge Cup.
-- Qualification depuis le classement du Top 14 (et de la Pro D2 pour la Challenge Cup), clubs étrangers (URC, Premiership) avec des effectifs simplifiés en attendant l'étape suivante.
-- Calendrier : les week-ends de coupe d'Europe déjà réservés dans le calendrier du Top 14.
+### Étape D — Match en direct, suite
+- Discours d'avant-match et de mi-temps, consignes individuelles (ex. : buteur désigné, capitaine), météo (pluie = plus d'en-avant), arbitre plus ou moins sévère.
 
 ## 📋 À faire ensuite (dans l'ordre)
 
-1. **Match en direct, suite (idées)** : discours d'avant-match et de mi-temps, consignes individuelles (ex. : buteur désigné, capitaine), météo (pluie = plus d'en-avant), arbitre plus ou moins sévère.
-2. **Autres championnats** : URC, Premiership, Super Rugby, Japon… pour avoir les meilleurs joueurs du monde et un mercato international.
-3. **Rugby amateur français** : Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
-4. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
-5. **Application** :
+1. **Autres championnats** : URC, Premiership, Super Rugby, Japon… pour avoir les meilleurs joueurs du monde et un mercato international (les vrais effectifs remplaceront les effectifs simplifiés des clubs étrangers des coupes d'Europe).
+2. **Rugby amateur français** : Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
+3. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
+4. **Application** :
    - Version installable : déjà préparée (manifeste, icônes, service worker), il reste à héberger le dossier `jeu/` en ligne ; puis Android et iOS.
    - Comptes, 4 emplacements de sauvegarde en ligne.
    - Vrai stockage : la sauvegarde du navigateur sera bientôt trop petite.

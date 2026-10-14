@@ -22,14 +22,17 @@ function buildSchedule(lg){
   const po=lg==='t14'?[dAdd(last,7),dAdd(last,14),dAdd(last,28)]:[dAdd(last,7),dAdd(last,14),dAdd(last,21)];
   return{dates:out,poDates:po};
 }
+// Prochain match du joueur : {f (h, a, neutral), d (date), w (journée), ko (élimination directe), lab (compétition et tour)}
+// Championnat ou coupe d'Europe : le plus proche des deux.
 function myNextMatch(){
   const m=ME();
-  if(G.phase==='access'){const f=(G.access||[]).find(f=>involves(f,m.id));return f?{f,d:G.accessDate}:null}
+  if(G.phase==='access'){const f=(G.access||[]).find(f=>involves(f,m.id));return f?{f,d:G.accessDate,ko:true,lab:'Barrage d\'accession'}:null}
   if(G.phase!=='season')return null;
-  const L=G.L[m.lg];
-  if(L.phase==='regular'){for(let w=L.week;w<L.fixtures.length;w++){const x=L.fixtures[w].find(x=>x[0]===m.id||x[1]===m.id);if(x)return{f:{h:x[0],a:x[1]},d:L.dates[w],w}}}
-  if(L.phase==='playoffs'){const f=L.po.next.find(f=>involves(f,m.id));if(f)return{f,d:L.poDates[L.po.stage]}}
-  return null;
+  const L=G.L[m.lg];let lg=null;
+  if(L.phase==='regular'){for(let w=L.week;w<L.fixtures.length;w++){const x=L.fixtures[w].find(x=>x[0]===m.id||x[1]===m.id);if(x){lg={f:{h:x[0],a:x[1]},d:L.dates[w],w,ko:false,lab:`${LEAGUES[m.lg].name} · Journée ${w+1}`};break}}}
+  if(L.phase==='playoffs'){const f=L.po.next.find(f=>involves(f,m.id));if(f)lg={f,d:L.poDates[L.po.stage],ko:true,lab:`${LEAGUES[m.lg].name} · ${PONAME[L.po.stage]}`}}
+  const cup=myCupMatch();
+  return cup&&(!lg||cup.d<lg.d)?cup:lg;
 }
 function windowOpen(){
   if(G.phase==='offseason')return 'été';

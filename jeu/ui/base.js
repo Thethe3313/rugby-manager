@@ -31,7 +31,7 @@ function render(){
   if(!G){$app.innerHTML=viewStart();return}
   if(G.phase==='sacked'){$app.innerHTML=viewSacked();return}
   const m=ME();
-  const tabs=[['home','Accueil'],['mail',`Messagerie${unread()?' ('+unread()+')':''}`],['squad','Effectif'],['youth','Espoirs'],['staff','Staff'],['lineup','Composition'],['cal','Calendrier'],['table','Classement'],['market','Mercato'],['fin','Finances'],['settings','Réglages'],['help','Rugby 101']];
+  const tabs=[['home','Accueil'],['mail',`Messagerie${unread()?' ('+unread()+')':''}`],['squad','Effectif'],['youth','Espoirs'],['staff','Staff'],['lineup','Composition'],['cal','Calendrier'],['table','Classement'],['cups','Europe'],['market','Mercato'],['fin','Finances'],['settings','Réglages'],['help','Rugby 101']];
   const ph=stageLabel(m);
   $app.innerHTML=`<div id="top"><span class="logo">🏉 Rugby Manager</span><span class="pill"><b>${m.name}</b></span><span class="pill">📅 <b>${fmtD(G.date,true)}</b></span><span class="pill"><b>${LEAGUES[m.lg].name}</b></span><span class="pill">Saison <b>${seasonLabel()}</b></span><span class="pill"><b>${ph}</b></span><span class="sp"></span>${windowOpen()?'<span class="pill" style="color:var(--acc)"><b>Mercato ouvert</b></span>':''}<span class="pill">Trésorerie <b class="${m.budget<0?'ko':''}">${k(m.budget)}</b></span><span class="pill">Masse salariale <b>${k(mass(m))}</b> / ${k(capOf(m))}</span><button class="btn sec sm" data-a="save">💾 Sauvegarder</button><button class="btn sec sm" data-a="menu">Menu</button></div>
   <div id="wrap"><div id="nav">${tabs.map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}</div><div id="main">${view()}</div></div>${UI.modal?modalView():''}`;
@@ -39,7 +39,7 @@ function render(){
 function view(){
   switch(G.tab){
     case'squad':return viewSquad();case'lineup':return viewLineup();case'cal':return viewCal();
-    case'table':return viewTable();case'market':return viewMarket();case'fin':return viewFin();case'settings':return viewSettings();case'youth':return viewYouth();case'staff':return viewStaff();case'mail':return viewMail();case'help':return viewHelp();
+    case'table':return viewTable();case'market':return viewMarket();case'fin':return viewFin();case'settings':return viewSettings();case'youth':return viewYouth();case'staff':return viewStaff();case'cups':return viewCups();case'mail':return viewMail();case'help':return viewHelp();
     default:return G.phase==='offseason'?viewOffseason():viewHome();
   }
 }

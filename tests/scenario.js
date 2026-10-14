@@ -2,7 +2,7 @@
 // À chaque étape, on rend l'écran et on le passe à `check(nom, html)`.
 // Un match sur trois est suivi en direct (avec pause, vitesses, consignes et un remplacement manuel), les autres en résultat immédiat.
 'use strict';
-const TABS=['home','mail','squad','youth','staff','lineup','cal','table','market','fin','settings','help'];
+const TABS=['home','mail','squad','youth','staff','lineup','cal','table','cups','market','fin','settings','help'];
 
 // Joue un match en direct jusqu'au bout en appelant liveTick() comme le ferait la minuterie du navigateur
 function driveLive(game,label,check){
@@ -44,6 +44,7 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
     run(`ACT.neg({id:${ids[0]},mode:'renew'})`);check(label+':neg-renew',app.innerHTML);
     run('ACT.closeModal()');
     // staff : marché, embauche du meilleur recruteur disponible, prolongations
+    run(`ACT.tab({t:'cups'});ACT.cupsel({k:'ch'})`);check(label+':cups-ch',app.innerHTML);run(`ACT.cupsel({k:'cc'})`);
     run(`G.tab='staff';ACT.staffMarket({r:'rec'})`);check(label+':staff-marche',app.innerHTML);
     run(`(()=>{const s=(G.staffPool||[]).filter(x=>x.role==='rec').sort((a,b)=>b.q-a.q)[0];if(s)ACT.hireStaff({id:s.id})})()`);check(label+':staff-embauche',app.innerHTML);
     run('ACT.closeModal()');

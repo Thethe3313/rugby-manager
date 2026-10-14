@@ -10,6 +10,8 @@ function migrateSave(){
   if(!G.staffPool)genStaffPool();
   if(G.fin&&G.fin.staff==null)G.fin.staff=0;
   applyRealStaff();
+  if(!G.ext)initExt();
+  if(!G.cups&&G.phase==='season')startCups();
 }
 
 function newGame(meId){
@@ -41,6 +43,7 @@ function startSeason(){
   }
   G.fin=zeroFin();
   setObjective();
+  startCups();
   mail('Directeur sportif','Le mercato d\'été est ouvert',`La fenêtre de transferts reste ouverte jusqu'au 15 septembre. Premier match de ${LEAGUES[ME().lg].name} : ${fmtD(G.L[ME().lg].dates[0],true)}.`,{act:{tab:'market'}});
 }
 function finishSeason(){
@@ -59,7 +62,9 @@ function finishSeason(){
   if(up.includes(m.id))fate='promu';else if(down.includes(m.id))fate='relégué';else if(pd2down.includes(m.id))fate='nationale';
   G.summary={lg,rank,champ:po.champ,fin:po.fin,prize,qualified:po.seeds.includes(m.id),fate,
     champT14:G.L.t14.po.champ,champPD2:G.L.pd2.po.champ,acc:accTxt};
-  G.hist.push({s:seasonLabel(),lg,champ:C(G.L.t14.po.champ).short,champ2:C(G.L.pd2.po.champ).short,rank,fate});
+  G.lastT14=sortedTable('t14').map(r=>r.id); // qualification européenne de la saison suivante
+  const cupW=k=>G.cups&&G.cups[k]&&G.cups[k].champ?C(G.cups[k].champ).short:null;
+  G.hist.push({s:seasonLabel(),lg,champ:C(G.L.t14.po.champ).short,champ2:C(G.L.pd2.po.champ).short,cc:cupW('cc'),ch:cupW('ch'),rank,fate});
   addNews(po.champ===m.id?`🏆 TU ES CHAMPION DE ${LEAGUES[lg].name.toUpperCase()} !`:`Saison terminée : ${rank}e de ${LEAGUES[lg].name}.`);
   if(fate==='promu')addNews(`⬆ ${m.name} monte en Top 14 !`);
   if(fate==='relégué')addNews(`⬇ ${m.name} descend en Pro D2.`);
@@ -111,6 +116,7 @@ function nextSeason(){
   G.fa=G.fa.filter(p=>{p.faT=(p.faT||0)+1;if(p.faT>1)p.age++;return p.age<35&&p.faT<=2}).sort((a,b)=>ovr(b)-ovr(a)).slice(0,160);
   genFA(20);
   aiMercato();
+  renewExt();
   for(const c of G.clubs)if(c.id!==m.id)c.str=clamp(Math.round(clubStr({...c,lineup:autoLineup(c)})),55,88);
   // centre de formation et postes manquants pour le joueur
   // (les jeunes arrivent désormais par le centre de formation : génération annuelle le 15 mars, onglet Espoirs)

@@ -14,6 +14,7 @@ const ACT={
   save(){const ok=save();addNews(ok?'Partie sauvegardée.':'Sauvegarde impossible dans ce navigateur.');render()},
   tab(d){G.tab=d.t;render()},
   lgsel(d){UI.lg=d.lg;render()},
+  cupsel(d){UI.cup=d.k;render()},
   play(){ACT.toMatch()},
   cont(){const r=advance('day');save();UI.mtab='resume';if(r)UI.modal={type:'match'};else if(G.liveWait)UI.modal={type:'prematch'};render()},
   toMatch(){const r=advance('match');save();UI.mtab='resume';if(r)UI.modal={type:'match'};else if(G.liveWait)UI.modal={type:'prematch'};else if(G.stop){G.tab='mail';UI.mid=(G.mail[0]||{}).id}render()},

@@ -2,6 +2,7 @@
 // ==== AVANCER D'UN JOUR ====
 function dailyUpdate(){
   for(const c of G.clubs)youthDaily(c);
+  for(const c of G.ext||[])for(const p of c.squad){if(p.inj>0)p.inj--;p.forme=clamp(p.forme+(p.inj>0?1:3.2),20,100)}
   if(G.date&&G.date.endsWith('-03-15'))youthIntake();
   for(const c of G.clubs){
     const ks=FOCUSK[c.focus],lgK=c.lg==='t14'?1:c.lg==='pd2'?.85:.7;
@@ -44,11 +45,13 @@ function dayStep(){
       if(r&&lg===m.lg){mine=r;
         if(r.h===m.id&&!r.ko){const R_=LEAGUES[m.lg].rounds,n=clubsIn(m.lg).length,rk=rankOf(m.id)||n/2,attF=.85+.3*(1-(rk-1)/(n-1));const rev=Math.round(m.bud*.28/(R_/2)*attF);m.budget+=rev;G.fin.ticket+=rev;r.att=Math.round((m.lg==='t14'?14000:5000)*attF*(.9+R.f()*.2))}}
     }
+    // coupes d'Europe (les samedis sans Top 14)
+    const cm=cupDay();if(cm)mine=cm;
     if(LGORDER.every(lg=>G.L[lg].phase==='done'))prepareAccess();
   }
   if(mine){
     const home=mine.h===m.id,o=C(home?mine.a:mine.h),my=home?mine.sh:mine.sa,op=home?mine.sa:mine.sh;
-    addNews(`${mine.winner===m.id?'Victoire':my===op?'Match nul':'Défaite'} ${my}-${op} ${home?'contre':'à'} ${o.short}.`);
+    addNews(`${mine.cup?mine.cup+" : ":""}${mine.winner===m.id?'Victoire':my===op?'Match nul':'Défaite'} ${my}-${op} ${home?'contre':'à'} ${o.short}.`);
     G.lastMatch=mine;
   }
   dailyUpdate();

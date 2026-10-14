@@ -27,7 +27,7 @@ function viewPrematch(){
   const lu=m.autoXV!==false?autoLineup(m):m.lineup;
   return `<div class="overlay"><div class="modal"><h2>Jour de match · ${fmtD(nx.d)}</h2>
   <div class="vs"><div>${h.short}<small>${nx.f.neutral?'Terrain neutre':'Domicile'}</small></div><div class="mut">vs</div><div>${a.short}<small>&nbsp;</small></div></div>
-  <p class="mut" style="text-align:center">${LEAGUES[m.lg].name} · ${stageLabel(m)}${(()=>{const o=h.id===m.id?a:h;return o.manager?` · manager adverse : ${o.manager}`:''})()}</p>
+  <p class="mut" style="text-align:center">${nx.lab||LEAGUES[m.lg].name}${(()=>{const o=h.id===m.id?a:h;return o.manager?` · manager adverse : ${o.manager}`:''})()}</p>
   <div class="grid g2"><div><h3>Consignes</h3>
     <p>Style de jeu<br>${tacSel('tac','style',STY,t.style)}</p><p>Intensité<br>${tacSel('tac','int',INTS,t.int)}</p>
     <p>Jeu au pied<br>${tacSel('tac','kick',KICKS,t.kick)}</p><p>Sur pénalité<br>${tacSel('tac','pen',PENS,t.pen)}</p></div>
@@ -146,7 +146,7 @@ function startLive(){
   const nx=liveDue();if(!nx)return;
   const m=ME(),hc=C(nx.f.h),ac=C(nx.f.a);
   setMatchLineup(hc);setMatchLineup(ac);
-  const ko=G.phase==='access'||G.L[m.lg].phase==='playoffs';
+  const ko=!!nx.ko;
   UI.live={ms:newMatch(hc,ac,{ko,neutral:!!nx.f.neutral}),side:hc.id===m.id?0:1,speed:'normal',paused:false,sel:null,flash:'',flashN:0};
   UI.modal={type:'live'};render();liveSchedule();
 }

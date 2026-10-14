@@ -102,7 +102,7 @@ const NAT0=[['car','US Carcassonne','Carcassonne',59],['mdm','Stade Montois','Mo
 const PONAME=['Barrages','Demi-finales','Finale'];
 
 let G=null;
-const C=id=>G.clubs.find(c=>c.id===id);
+const C=id=>G.clubs.find(c=>c.id===id)||(G.ext||[]).find(c=>c.id===id); // clubs français, puis clubs étrangers (coupes d'Europe)
 const ME=()=>C(G.meId);
 const LS=lg=>G.L[lg];
 
