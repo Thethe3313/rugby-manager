@@ -1,7 +1,7 @@
 'use strict';
 // Moteur : nouvelle partie, début et fin de saison
 const SETTINGS_KEY='rugbyManager_settings';
-function loadSettings(){try{return Object.assign({pot:'exact'},JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}'))}catch(err){return{pot:'exact'}}}
+function loadSettings(){try{return Object.assign({pot:'exact',live:'ask'},JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}'))}catch(err){return{pot:'exact',live:'ask'}}}
 
 function newGame(meId){
   G={nid:1,season:1,meId,phase:'season',tick:0,clubs:[],L:{},access:null,news:[],fa:[],offers:[],pre:[],tlog:[],tab:'home',fin:zeroFin(),hist:[],lastMatch:null,summary:null,moves:null,mail:[],nat:NAT0.map(x=>[...x]),settings:loadSettings()};

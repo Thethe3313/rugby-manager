@@ -6,19 +6,23 @@ Jeu de gestion de club de rugby à XV façon Football Manager, créé par Théop
 Feuille de route : voir `PLAN.md`. On avance étape par étape et on met `PLAN.md` à jour à chaque étape terminée.
 
 ## État actuel
-Tout tient dans `rugby-manager.html`, une page HTML/JS sans dépendance qui s'ouvre avec un double-clic. Elle contient trois blocs `<script>` :
-1. **Données** :
-   - `REAL` : effectifs réels 2026-27 par club (30 clubs). Format `[nom, poste, sous-poste, année de naissance, nationalité, sélections, sélectionné récemment 0/1, note /99, tags, justification, points forts, points faibles]`.
-   - `REALY` : vrais espoirs. Format `[nom, poste, sous-poste, année, nationalité, international U20 0/1, note, potentiel]`.
-2. **Moteur** :
-   - Clubs, joueurs, attributs, simulation de match (`simMatch`).
-   - Championnats (`LEAGUES`, `stepLeague`, phases finales, barrages d'accession, Nationale).
-   - Calendrier jour par jour (`dayStep`, `advance`, `buildSchedule`), messagerie (`mail`).
-   - Économie (`CLUBINFO`, `capOf`, `salaryFor`, `valueOf`), mercato (`askFee`, `wageDemand`, `evalOffer`, `doTransfer`, `aiMercato`, `genOffers`).
-   - Progression et potentiel (`dailyUpdate`), espoirs et regens (`genYouthPlayer`, `youthIntake`, `youthSeasonEnd`).
-3. **Interface** : fonctions `view*` qui renvoient du HTML et l'objet `ACT` des actions (clics délégués via `data-a`). La sauvegarde utilise `localStorage` (clé `SAVE_KEY`).
+Le projet est versionné avec git (branche `main`). `rugby-manager.html` est la page d'entrée, sans dépendance, qui s'ouvre toujours avec un double-clic. Elle charge des scripts classiques (`<script src>`, pas de modules ES, pour que le double-clic marche) qui partagent les mêmes variables globales, **dans cet ordre** :
+1. **`data/`** :
+   - `joueurs.js` : `REAL`, effectifs réels 2026-27 par club (30 clubs). Format `[nom, poste, sous-poste, année de naissance, nationalité, sélections, sélectionné récemment 0/1, note /99, tags, justification, points forts, points faibles]`.
+   - `espoirs.js` : `REALY`, vrais espoirs. Format `[nom, poste, sous-poste, année, nationalité, international U20 0/1, note, potentiel]` (le potentiel est le centre d'une fourchette, voir `potDraw`).
+2. **`engine/`** (moteur, en `'use strict'`) :
+   - `base.js` : hasard `R`, postes `SLOTS`, attributs `ATTRS`/`W`/`PROF`, styles `STY`, clubs, `LEAGUES`, `ovrAt`, `effAt`, compositions, `teamCalc`.
+   - `match.js` : moteur de match phase par phase (voir plus bas).
+   - `championnat.js` (`stepLeague`, `playFixtures`, phases finales, barrages), `economie.js` (`CLUBINFO`, `capOf`, `salaryFor`, `valueOf`, `askFee`, `wageDemand`), `joueurs.js` (`buildAttrs`, `realPlayer`, `afterMatch`), `mercato.js` (`doTransfer`, `evalOffer`, `genOffers`, `aiMercato`), `saison.js` (`newGame`, `startSeason`, `finishSeason`, `nextSeason`), `calendrier.js`, `messagerie.js` (`mail`), `jour.js` (`dailyUpdate`, `dayStep`, `advance`, `liveDue`), `espoirs.js` (`genYouthPlayer`, `realYouth`, `youthIntake`, `youthSeasonEnd`).
+3. **`ui/`** : `style.css` ; `base.js` (`render`, sauvegarde `localStorage` clé `SAVE_KEY`) ; `ecrans.js`, `affichage.js`, `ecrans-gestion.js` (fonctions `view*`) ; `fenetres.js` (fenêtres : fiche joueur, négociation, résumé de match) ; `match-direct.js` (avant-match, direct, terrain 2D) ; `actions.js` (objet `ACT` des actions, clics délégués via `data-a`, et le `render()` de démarrage, toujours en dernier).
 
-Prochaine évolution prévue : découper ce fichier en plusieurs modules (`data/`, `engine/`, `ui/`) quand on construira le match en direct.
+### Moteur de match (`engine/match.js`)
+- `newMatch(h, a, opt)` crée l'état du match, `matchStep(ms)` joue **une action** (coup d'envoi, temps de jeu porteur → plaquage → ruck, jeu au pied, touche, mêlée, ballon porté, pénalité), `matchResult(ms)` donne le résultat, `simMatch` enchaîne tout d'un coup. Le direct et les matchs simulés utilisent exactement le même moteur.
+- Chaque action utilise les attributs des joueurs concernés via `A(ms, d, k)` : poste, forme du jour, énergie (baisse avec les contacts et le temps), intensité, avantage du terrain, score.
+- Consignes du club (`club.tac`) : `style` (`STY`), `int` (`INTS`), `kick` (`KICKS`), `pen` (`PENS`, appliquée dans le camp adverse). Les clubs IA choisissent leur style avec `aiTac`.
+- Le résultat garde le format historique (`sh sa th ta pn dr cv yc ev bo winner`) plus `stats` (par équipe), `ps` (joueurs : minutes, note /10, essais, plaquages…) et `motm` (homme du match). `afterMatch(club, r, side)` applique stats de saison, fatigue et blessures.
+- Match en direct : `advance` s'arrête la veille d'un match du joueur (`G.liveWait`) ; le direct se joue dans l'interface, puis son résultat passe par `G.liveRes` à `playFixtures`.
+- Calibrage visé (Top 14) : ~49 pts et ~5,6 essais par match, ~4 pénalités réussies, ~67-70 % de victoires à domicile, favori gagnant ~70 %, ~26 % d'écarts de 20 points ou plus. Vérifier avec `node tests/calib.js` après toute modification du moteur, et `node tests/consignes.js` pour l'équilibre des consignes (chacune doit rester entre ~50 et ~63 % de victoires).
 
 ## Règles et choix importants (à respecter)
 - **Échelles** :
@@ -31,8 +35,12 @@ Prochaine évolution prévue : découper ce fichier en plusieurs modules (`data/
 - **Piliers** : sous-poste `LH` (gauche, n°1) ou `TH` (droit, n°3). Un joueur hors de son poste perd de sa note (`effAt`).
 - **Règles LNR** : bonus offensif = au moins 3 essais de plus que l'adversaire, bonus défensif = défaite de 5 points ou moins. Les 6 premiers vont en phases finales.
 - **Pas de descente programmée** pour un promu : seule la qualité de la gestion compte.
-- **Potentiel** : note sur 99 (pas d'étoiles), affichage réglable (affiché ou masqué). Le potentiel est exact pour ses propres joueurs et estimé (« ≈ ») pour les autres.
+- **Potentiel** : note sur 99 (pas d'étoiles), affichage réglable (affiché ou masqué). Le potentiel est exact pour ses propres joueurs et estimé (« ≈ ») pour les autres. Celui des vrais joueurs est tiré dans une fourchette à chaque nouvelle partie (`potDraw` pour les espoirs, `initPot(…, R.f())` pour les jeunes pros).
 - Le joueur veut des notes toujours plus justes : corriger dès qu'un joueur est signalé comme mal noté.
 
 ## Tests
-Il n'y a pas de framework de tests pour l'instant. On teste en extrayant les blocs `<script>` et en les exécutant avec Node, avec un faux `document` et un faux `localStorage` : simulation de saisons complètes et rendu de chaque écran, en vérifiant l'absence de `undefined` et `NaN` dans le HTML produit. Garder cette habitude : après chaque modification, simuler au moins une saison et parcourir tous les onglets.
+Pas de framework : des scripts Node dans `tests/` (Node et git sont installés ; dans un terminal ouvert avant leur installation, recharger le PATH). `tests/harness.js` charge les scripts de la page dans l'ordre, avec un faux `document`, un faux `localStorage` et un hasard à graine possible.
+- `node tests/test.js [--seasons 2] [--club pau,per]` : saisons complètes pilotées par les actions `ACT` (un match sur trois en direct, avec pause, vitesses, consignes et remplacement), rendu de chaque écran et vérification de l'absence de `undefined`, `NaN` et `[object Object]`. **À lancer après chaque modification.**
+- `node tests/calib.js` : statistiques moyennes du moteur de match. `node tests/consignes.js` : effet de chaque consigne.
+- `node tests/compare.js ancien.html nouveau.html` : vérifie que deux versions donnent exactement les mêmes écrans (pour les réorganisations qui ne doivent rien changer).
+- `node tests/serve.js` : mini-serveur local (http://localhost:8080) pour tester dans le panneau navigateur.

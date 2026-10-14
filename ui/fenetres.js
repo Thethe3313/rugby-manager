@@ -9,7 +9,7 @@ function playerModal(){
   return `<div class="overlay"><div class="modal"><h2>${p.name}</h2><p>${posL(p)}${p.nat?' · '+p.nat:''}${p.caps?' · '+p.caps+' sélection'+(p.caps>1?'s':''):''} · ${p.age} ans · ${c?c.name:'<span class="ok">sans club</span>'}</p>
   <p>Note <b class="${oc(ovr(p))}">${rd(ovr(p))}</b>${potTxt} · valeur ${k(valueOf(p))} · salaire ${k(p.sal)}/an${c?` · contrat ${p.ctr} an(s)`:''}</p>
   ${attrTable(p)}
-  ${p.ev?`<p class="mut">${p.ev}</p>`:''}<p>Cette saison : ${p.st.mj} match(s) dont ${p.st.tit||0} titularisation(s), ${p.st.es} essai(s), ${p.st.pts} points.</p>
+  ${p.ev?`<p class="mut">${p.ev}</p>`:''}<p>Cette saison : ${p.st.mj} match(s) dont ${p.st.tit||0} titularisation(s), ${p.st.es} essai(s), ${p.st.pts} points${p.st.nn?`, ${p.st.tac||0} plaquages, ${p.st.m||0} mètres gagnés · note moyenne <b class="${rc(p.st.nt/p.st.nn)}">${(p.st.nt/p.st.nn).toFixed(1)}</b>${p.st.motm?` · ${p.st.motm} fois homme du match ⭐`:''}`:''}.</p>
   ${(p.hist||[]).length?`<h3>Carrière</h3><table><tr><th>Saison</th><th>Club</th><th class="n">Note</th><th class="n">Matchs</th><th class="n">Essais</th></tr>${p.hist.map(h=>`<tr><td>${h.s}</td><td>${h.c}</td><td class="n">${h.o}</td><td class="n">${h.mj}</td><td class="n">${h.es}</td></tr>`).join('')}</table>`:''}
   <p>${acts} <button class="btn sec sm" data-a="closeModal">Fermer</button></p></div></div>`;
 }
@@ -38,13 +38,21 @@ function modalView(){
     const r=G.lastMatch;if(!r)return '';
     const h=C(r.h),a=C(r.a);
     const done=r.others||[];
-    return `<div class="overlay"><div class="modal"><div class="vs"><div>${h.short}</div><div class="score">${r.sh} - ${r.sa}</div><div>${a.short}</div></div>
+    const names=[h.short,a.short],mo=r.ps&&r.ps.find(x=>x.id===r.motm);
+    const tab=UI.mtab||'resume',tb=(v,l)=>`<button class="btn sm ${tab===v?'':'sec'}" data-a="mtab" data-v="${v}">${l}</button>`;
+    const body=!r.ps||tab==='resume'?`<div style="max-height:340px;overflow:auto">${r.ev.map(e=>`<div class="ev ${e.k}"><span class="m">${e.m}'</span><span>${e.x}</span></div>`).join('')||'<p class="mut">Match fermé, peu d\'événements.</p>'}</div>`
+      :tab==='stats'?statsHTML(r.stats[0],r.stats[1],r.ph,r.tp,names):ratingsHTML(r,names);
+    return `<div class="overlay"><div class="modal wide"><div class="vs"><div>${h.short}</div><div class="score">${r.sh} - ${r.sa}</div><div>${a.short}</div></div>
     <p class="mut" style="text-align:center">Essais ${r.th}-${r.ta} · Pénalités ${r.pn[0]}-${r.pn[1]} · Drops ${r.dr[0]}-${r.dr[1]} · Possession ${r.ph}%-${100-r.ph}% · Cartons jaunes ${r.yc[0]}-${r.yc[1]}${r.att?` · Affluence ${r.att}`:''}</p>
-    <p class="mut" style="text-align:center">Points de classement : ${!r.ko?`${h.short} ${(r.sh>r.sa?4:r.sh===r.sa?2:0)+r.bo[0]} · ${a.short} ${(r.sa>r.sh?4:r.sh===r.sa?2:0)+r.bo[1]}`:'match à élimination directe'}</p>
-    <div style="max-height:340px;overflow:auto">${r.ev.map(e=>`<div class="ev ${e.k}"><span class="m">${e.m}'</span><span>${e.x}</span></div>`).join('')||'<p class="mut">Match fermé, peu d\'événements.</p>'}</div>
+    <p class="mut" style="text-align:center">Points de classement : ${!r.ko?`${h.short} ${(r.sh>r.sa?4:r.sh===r.sa?2:0)+r.bo[0]} · ${a.short} ${(r.sa>r.sh?4:r.sh===r.sa?2:0)+r.bo[1]}`:'match à élimination directe'}${r.so?' · qualification aux tirs au but':''}</p>
+    ${mo?`<p style="text-align:center">⭐ Homme du match : <b>${mo.n}</b> (${names[mo.s]}) · note <b class="${rc(mo.r)}">${mo.r.toFixed(1)}</b></p>`:''}
+    ${r.ps?`<div class="row" style="justify-content:center;margin-bottom:8px">${tb('resume','Temps forts')}${tb('stats','Statistiques')}${tb('notes','Notes des joueurs')}</div>`:''}
+    ${body}
     <h3 style="margin-top:12px">Autres résultats</h3>${done.filter(x=>!(x.h===r.h&&x.a===r.a)).map(x=>`<div>${C(x.h).short} <b>${x.sh} - ${x.sa}</b> ${C(x.a).short}</div>`).join('')}
     <p><button class="btn" data-a="closeModal">Continuer</button></p></div></div>`;
   }
+  if(m.type==='prematch')return viewPrematch();
+  if(m.type==='live')return viewLive();
   if(m.type==='player')return playerModal();
   if(m.type==='neg')return negModal();
   return '';

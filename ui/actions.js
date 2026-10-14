@@ -2,13 +2,29 @@
 const ACT={
   start(d){newGame(d.id);save();render()},
   continue(){if(load())render()},
-  menu(){G=null;render()},
+  menu(){G=null;UI.live=null;render()},
   save(){const ok=save();addNews(ok?'Partie sauvegardée.':'Sauvegarde impossible dans ce navigateur.');render()},
   tab(d){G.tab=d.t;render()},
   lgsel(d){UI.lg=d.lg;render()},
   play(){ACT.toMatch()},
-  cont(){const r=advance('day');save();if(r)UI.modal={type:'match'};render()},
-  toMatch(){const r=advance('match');save();if(r)UI.modal={type:'match'};else if(G.stop){G.tab='mail';UI.mid=(G.mail[0]||{}).id}render()},
+  cont(){const r=advance('day');save();UI.mtab='resume';if(r)UI.modal={type:'match'};else if(G.liveWait)UI.modal={type:'prematch'};render()},
+  toMatch(){const r=advance('match');save();UI.mtab='resume';if(r)UI.modal={type:'match'};else if(G.liveWait)UI.modal={type:'prematch'};else if(G.stop){G.tab='mail';UI.mid=(G.mail[0]||{}).id}render()},
+  // ---- jour de match et match en direct ----
+  goLive(){startLive()},
+  quickMatch(){UI.modal=null;const r=advance('day',{noLive:true});save();UI.mtab='resume';if(r)UI.modal={type:'match'};render()},
+  preLineup(){UI.modal=null;G.tab='lineup';render()},
+  mtab(d){UI.mtab=d.v;render()},
+  livePause(){const L=UI.live;if(!L)return;L.paused=!L.paused;render();liveSchedule()},
+  liveSpeed(d){const L=UI.live;if(!L)return;L.speed=d.v;render();liveSchedule()},
+  liveSkip(){const L=UI.live;if(!L)return;let g=0;while(!L.ms.done&&g++<4000)matchStep(L.ms);L.paused=true;render()},
+  liveEnd(){endLive()},
+  liveSel(d){const L=UI.live;if(!L)return;const x=L.ms.P[+d.id];L.sel=L.sel===+d.id||!x||x.slot<0||x.sin?null:+d.id;render();liveSchedule()},
+  liveSub(d){const L=UI.live;if(!L)return;const inn=L.ms.P[+d.id],out=L.ms.P[L.sel];
+    if(out&&inn&&!inn.used&&out.slot>=0&&!out.sin)doSub(L.ms,L.ms.T[L.side],out,inn,false);
+    L.sel=null;render();liveSchedule()},
+  liveAuto(){const L=UI.live;if(!L)return;const S=L.ms.T[L.side];S.auto=!S.auto;render();liveSchedule()},
+  liveTac(d,el){const L=UI.live;if(!L)return;L.ms.T[L.side].tac[d.k]=el.value;render();liveSchedule()},
+  setLive(d){G.settings=G.settings||{};G.settings.live=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   openMail(d){UI.mid=+d.id;render()},
   promote(d){const m=ME(),p=(m.youth||[]).find(x=>x.id===+d.id);if(!p)return;if(m.squad.length>=50){addNews('Effectif pro complet (50 joueurs).');return render()}
     const s=Math.max(15,salaryFor(ovr(p),p.age,m.lg));if(mass(m)+s>capOf(m)){addNews('Plafond salarial dépassé : impossible de signer ce contrat pro.');return render()}

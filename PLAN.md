@@ -4,7 +4,11 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 ## ✅ Déjà fait
 
-- **Base du jeu** : jeu web en un seul fichier (`rugby-manager.html`), sauvegarde dans le navigateur.
+- **Base du jeu** : jeu web sans installation (`rugby-manager.html` s'ouvre d'un double-clic), sauvegarde dans le navigateur.
+- **Passage à Claude Code (14 octobre 2026)** :
+  - Projet versionné avec git.
+  - Code découpé en dossiers `data/` (données), `engine/` (moteur) et `ui/` (interface), sans rien changer au jeu (vérifié écran par écran).
+  - Tests automatiques dans `tests/`.
 - **Top 14 et Pro D2 2026-27** : clubs et effectifs réels (~1 300 joueurs), montées et descentes, barrages d'accession, Nationale (clubs fictifs).
 - **Règles LNR** : bonus offensif à 3 essais d'écart, bonus défensif à 5 points ou moins, phases finales à 6.
 - **Notation façon FM** :
@@ -22,24 +26,25 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - Centre de formation noté sur 20.
   - Nouvelle génération chaque 15 mars, avec de futurs cracks (💎).
 
+- **Étape A — Match en direct façon FM + potentiel en fourchette (14 octobre 2026)** :
+  - **Moteur de match phase par phase** : coup d'envoi, temps de jeu (porteur, plaquage, ruck), jeu au pied, touche, mêlée, ballon porté, pénalités, cartons jaunes. Calibré sur le Top 14 (≈ 49 points et 5,6 essais par match, ≈ 68 % de victoires à domicile). Il sert aussi pour tous les matchs simulés.
+  - **Match en direct** : la veille du match, on choisit entre le direct et le résultat immédiat. Terrain 2D vu de dessus (joueurs numérotés, ballon animé), 4 vitesses (dont « temps forts »), pause, pause automatique à la mi-temps, bandeau sur les temps forts.
+  - **Pendant le match** : remplacements (ou par l'adjoint), énergie de chaque joueur visible, blessures, consignes modifiables.
+  - **Consignes** : style de jeu, intensité, jeu au pied ou à la main, choix sur pénalité (l'équipe décide, prendre les points, touche, mêlée, jouer vite). Elles ont un effet réel et mesuré, et aucune ne gagne à tous les coups.
+  - **Après-match** : temps forts, statistiques des deux équipes, notes des joueurs sur 10, homme du match. Note moyenne de la saison dans l'effectif et sur la fiche du joueur.
+  - **Potentiel en fourchette** : celui des vrais jeunes est tiré au hasard à chaque nouvelle partie.
+  - Prolongation puis tirs au but en phases finales.
+
 ## ▶️ Prochaine étape
 
-### Étape A — Match en direct façon FM + potentiel en fourchette
-- **Terrain 2D** : le ballon et les temps forts sont animés ; le match se déroule minute par minute à vitesse réglable, avec pause.
-- **Changements en cours de match** : remplacements, joueurs fatigués visibles, blessures.
-- **Consignes** :
-  - Style de jeu, intensité, jeu au pied ou à la main.
-  - Sur pénalité : l'équipe décide par défaut, ou une consigne imposée (prendre les points, touche, mêlée, jouer vite).
-- **Moteur de match** : il simule de vraies phases (conquête, touche, mêlée, ruck, ballon porté) pour que les consignes aient un effet réel.
-- **Après-match** : notes des joueurs, homme du match, statistiques (plaquages, mètres, pénalités concédées).
-- **Potentiel en fourchette (comme FM)** : chaque nouvelle partie tire le potentiel des vrais jeunes dans une fourchette (par exemple 80 à 90). Chaque sauvegarde est donc différente.
+### Étape B — Staff et personnalité
+- Personnalité visible (professionnalisme, ambition, détermination) qui influence la progression, le comportement et les négociations.
+- Staff : entraîneurs (avants, trois-quarts, buteurs, préparation physique), médecin, recruteurs. Leur qualité influence la progression, la récupération et la précision des estimations de potentiel.
+- Recrutement du staff, avec contrats et salaires.
 
 ## 📋 À faire ensuite (dans l'ordre)
 
-1. **Staff et personnalité** :
-   - Personnalité visible (professionnalisme, ambition, détermination) qui influence la progression, le comportement et les négociations.
-   - Staff : entraîneurs (avants, trois-quarts, buteurs, préparation physique), médecin, recruteurs. Leur qualité influence la progression, la récupération et la précision des estimations de potentiel.
-   - Recrutement du staff, avec contrats et salaires.
+1. **Match en direct, suite (idées)** : discours d'avant-match et de mi-temps, consignes individuelles (ex. : buteur désigné, capitaine), météo (pluie = plus d'en-avant), arbitre plus ou moins sévère.
 2. **Coupes d'Europe** : Champions Cup (4 poules de 6, bonus offensif à 3 essais d'écart, défensif à 7 points) et Challenge Cup. Qualification depuis le classement, clubs étrangers.
 3. **Autres championnats** : URC, Premiership, Super Rugby, Japon… pour avoir les meilleurs joueurs du monde et un mercato international.
 4. **Rugby amateur français** : Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
@@ -56,5 +61,4 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 ## 🧰 Outils
 
-- **Aujourd'hui** : développement dans Claude (fichier unique envoyé à chaque version).
-- **Passage à Claude Code** : recommandé à partir de l'étape A (voir les explications). Le projet devient un dossier de plusieurs fichiers, testé et versionné directement sur l'ordinateur.
+- **Claude Code** depuis le 14 octobre 2026 : le projet est un dossier de plusieurs fichiers, versionné avec git et testé directement sur l'ordinateur (`node tests/test.js`).

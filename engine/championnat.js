@@ -31,8 +31,12 @@ function playFixtures(fx,ko){
   const out=[];
   for(const f of fx){
     const hc=C(f.h),ac=C(f.a);
-    const r=simMatch(hc,ac,{ko,neutral:f.neutral});r.h=f.h;r.a=f.a;
-    afterMatch(hc);afterMatch(ac);
+    // le match du joueur a peut-être déjà été joué en direct : on reprend son résultat
+    let r;
+    if(G.liveRes&&G.liveRes.h===f.h&&G.liveRes.a===f.a){r=G.liveRes.r;delete G.liveRes}
+    else r=simMatch(hc,ac,{ko,neutral:f.neutral});
+    r.h=f.h;r.a=f.a;
+    afterMatch(hc,r,0);afterMatch(ac,r,1);
     out.push(r);
   }
   return out;

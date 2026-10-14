@@ -17,12 +17,16 @@ function genYouthPlayer(c,age){
   p.youth=true;p.ctr=0;p.sal=12;p.nat='France';
   return p;
 }
+// Potentiel en fourchette (comme FM) : la valeur des données est le centre d'une fourchette d'autant plus large que le joueur est jeune
+// (par exemple 85 à 16 ans → entre 77 et 93). Le tirage favorise le centre : les valeurs extrêmes sont rares.
+const potRange=age=>age<=17?8:age<=19?6:4;
+function potDraw(pot,age){const w=potRange(age);return pot+(R.f()+R.f()-1)*w}
 function realYouth(r){
   const [n,g,sub,by,nat,u20,rt,pot]=r,age=2026-by;
   const p={id:G.nid++,name:n,g,age,forme:90,inj:0,ni:false,ctr:0,st:{mj:0,tit:0,es:0,pts:0},real:true,nat,sub,tags:'',caps:0,hist:[],youth:true,sal:12};
   buildAttrs(p,g,clamp(rt,40,75),k=>(hashN(n+k)-.5)*2.6);
   p.pro=clamp(Math.round(6+hashN(n+'pro')*11+(u20?3:0)),1,20);
-  p.pot=Math.round(clamp(pot,Math.round(ovrAt(p,g))+3,97));
+  p.pot=Math.round(clamp(potDraw(pot,age),Math.round(ovrAt(p,g))+3,97));
   if(p.pot>=85)p.gem=true;
   if(u20)p.ev='International jeunes (U20/U18)';
   return p;

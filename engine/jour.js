@@ -25,7 +25,7 @@ function dayStep(){
   G.date=dAdd(G.date,1);
   if(G.phase==='access'){
     if(G.date>=G.accessDate){
-      G.clubs.forEach(c=>{if(c===m&&m.autoXV===false)fixLineup(c);else c.lineup=autoLineup(c)});
+      G.clubs.forEach(setMatchLineup);
       const out=playFixtures(G.access,true);G.access.res=out.map(slimR);
       mine=out.find(r=>involves(r,m.id))||null;if(mine){mine.others=G.access.res;mine.ko=true}
       finishSeason();
@@ -34,7 +34,7 @@ function dayStep(){
     for(const lg of LGORDER){
       const L=G.L[lg],due=L.phase==='regular'?L.dates[L.week]:L.phase==='playoffs'?L.poDates[L.po.stage]:null;
       if(!due||due>G.date)continue;
-      clubsIn(lg).forEach(c=>{if(c===m&&m.autoXV===false)fixLineup(c);else c.lineup=autoLineup(c)});
+      clubsIn(lg).forEach(setMatchLineup);
       const reg=L.phase==='regular';
       if(lg===m.lg&&reg){const R_=LEAGUES[m.lg].rounds,inc=Math.round(m.bud*.72/R_),w=Math.round(mass(m)/R_),fx=Math.round(m.fixed/R_);m.budget+=inc-w-fx;G.fin.sponsor+=inc;G.fin.wages+=w;G.fin.opex+=fx}
       const r=stepLeague(lg);
@@ -63,11 +63,23 @@ function dayStep(){
   }
   return mine;
 }
-// Avancer : 'day' = un jour, 'match' = jusqu'au prochain match (s'arrête sur un événement important)
-function advance(mode){
+// Composition d'avant-match : celle du joueur s'il la gère lui-même, sinon la meilleure possible
+function setMatchLineup(c){if(c.id===G.meId&&c.autoXV===false)fixLineup(c);else c.lineup=autoLineup(c)}
+// Le match du joueur a lieu demain ? (on s'arrête la veille pour proposer le match en direct)
+function liveDue(){
+  if(G.settings&&G.settings.live==='off')return null;
+  const nx=myNextMatch();if(!nx||!nx.d)return null;
+  return dAdd(G.date,1)>=nx.d?nx:null;
+}
+// Avancer : 'day' = un jour, 'match' = jusqu'au prochain match (s'arrête sur un événement important).
+// S'arrête aussi la veille d'un match du joueur (G.liveWait), sauf avec opt.noLive (résultat immédiat ou match déjà joué en direct).
+function advance(mode,opt={}){
   if(G.phase!=='season'&&G.phase!=='access')return null;
-  G.lastMatch=null;G.stop=false;let mine=null,guard=0;
-  do{mine=dayStep()}while(mode==='match'&&!mine&&!G.stop&&(G.phase==='season'||G.phase==='access')&&guard++<400);
+  G.lastMatch=null;G.stop=false;G.liveWait=false;let mine=null,guard=0,first=true;
+  do{
+    if(!(opt.noLive&&first)&&liveDue()){G.liveWait=true;break}
+    first=false;mine=dayStep();
+  }while(mode==='match'&&!mine&&!G.stop&&(G.phase==='season'||G.phase==='access')&&guard++<400);
   return mine;
 }
 function playRound(){return advance('match')}

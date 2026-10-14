@@ -28,7 +28,8 @@ function realPlayer(r,lg){
   buildAttrs(p,g,o,k=>(hashN(n+k)-.5)*2.6,mods);
   const ov=ovrAt(p,g);
   p.pro=clamp(Math.round(5+hashN(n+'pro')*12+(tags.includes('w')?2:0)+(rec?1:0)),1,20);
-  p.pot=initPot(ov,age,hashN(n+'pot'));
+  // potentiel tiré dans sa fourchette à chaque nouvelle partie (initPot(…,0) à initPot(…,1)) : chaque sauvegarde est différente
+  p.pot=initPot(ov,age,R.f());
   p.sal=Math.round(salaryFor(ov,age,lg)*(.88+hashN(n+'sal')*.24));
   return p;
 }
@@ -46,14 +47,18 @@ function mkClub(c,lg){
   if(ms>cap*.97||(lg==='t14'&&ms<cap*.85)){const f=(lg==='t14'?.92:.95)*cap/ms;cl.squad.forEach(p=>p.sal=Math.max(8,Math.round(p.sal*f)))}
   cl.lineup=autoLineup(cl);return cl;
 }
-function afterMatch(club){
-  const cost={basse:14,normale:20,haute:28}[club.tac.int],ik={basse:.7,normale:1,haute:1.5}[club.tac.int];
+// Après un match : statistiques de la saison, fatigue selon le temps de jeu, blessures survenues pendant le match
+function afterMatch(club,r,side){
+  const cost={basse:14,normale:20,haute:28}[club.tac.int]||20;
   club.mp=(club.mp||0)+1;
-  club.lineup.forEach((id,i)=>{
-    const p=club.squad.find(x=>x.id===id);if(!p)return;
-    const st=i<15;p.st.mj++;if(st)p.st.tit=(p.st.tit||0)+1;p.forme=clamp(p.forme-(st?cost:cost*.4),20,100);
-    if(R.f()<.04*(st?1:.4)*ik){const w=R.pick([1,1,2,2,3,4,6,8,12]);p.inj=Math.max(3,w*7+R.i(-2,2));p.ni=true;p.forme=Math.min(p.forme,60);if(club.id===G.meId){const t=R.pick(w<=2?['contracture aux ischio-jambiers','entorse de la cheville','commotion cérébrale (protocole)','béquille à la cuisse']:w<=6?['entorse du genou','déchirure musculaire','lésion à l\'épaule','fracture du nez']:['rupture des ligaments','fracture de la main','luxation de l\'épaule','lésion du tendon d\'Achille']);addNews(`Blessure : ${p.name} (${posL(p)}) est absent ${injDur(p.inj)}.`);mail('Staff médical',`Blessure : ${p.name}`,`${p.name} (${posL(p)}) souffre d'une ${t}. Durée d'indisponibilité estimée : <b>${injDur(p.inj)}</b>.`,{act:{tab:'squad'}})}}
-  });
+  for(const x of r.ps||[]){
+    if(x.s!==side)continue;
+    const p=club.squad.find(y=>y.id===x.id);if(!p)continue;
+    const st=p.st;st.mj++;if(x.st)st.tit=(st.tit||0)+1;
+    st.es+=x.es;st.pts+=x.pts;st.tac=(st.tac||0)+x.tac;st.m=(st.m||0)+x.m;st.nt=(st.nt||0)+x.r;st.nn=(st.nn||0)+1;if(r.motm===x.id)st.motm=(st.motm||0)+1;
+    p.forme=clamp(p.forme-cost*Math.max(.3,x.min/80),20,100);
+    if(x.inj){const w=R.pick([1,1,2,2,3,4,6,8,12]);p.inj=Math.max(3,w*7+R.i(-2,2));p.ni=true;p.forme=Math.min(p.forme,60);if(club.id===G.meId){const t=R.pick(w<=2?['contracture aux ischio-jambiers','entorse de la cheville','commotion cérébrale (protocole)','béquille à la cuisse']:w<=6?['entorse du genou','déchirure musculaire','lésion à l\'épaule','fracture du nez']:['rupture des ligaments','fracture de la main','luxation de l\'épaule','lésion du tendon d\'Achille']);addNews(`Blessure : ${p.name} (${posL(p)}) est absent ${injDur(p.inj)}.`);mail('Staff médical',`Blessure : ${p.name}`,`${p.name} (${posL(p)}) souffre d'une ${t}. Durée d'indisponibilité estimée : <b>${injDur(p.inj)}</b>.`,{act:{tab:'squad'}})}}
+  }
 }
 const playShare=(p,c)=>c&&c.mp?Math.min(1,((p.st.tit||0)+.4*(p.st.mj-(p.st.tit||0)))/c.mp):0;
 // Progression hebdomadaire : âge, écart au potentiel, temps de jeu, professionnalisme, niveau du championnat

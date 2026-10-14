@@ -20,17 +20,19 @@ function scriptsOf(htmlPath){
 
 function load(htmlPath,opt={}){
   const store={},app={innerHTML:''};
-  const elems={};
+  // faux éléments HTML créés à la demande (le match en direct met à jour des éléments par leur id)
+  const elems={},mkEl=id=>({id,innerHTML:'',textContent:'',style:{},value:undefined,setAttribute(){},classList:{add(){},remove(){},toggle(){}}});
   const document={
-    getElementById:id=>id==='app'?app:(elems[id]||null),
+    getElementById:id=>id==='app'?app:(elems[id]||(elems[id]=mkEl(id))),
     addEventListener(){},
     querySelector:()=>null,querySelectorAll:()=>[]
   };
   const localStorage={getItem:k=>k in store?store[k]:null,setItem:(k,v)=>{store[k]=String(v)},removeItem:k=>{delete store[k]}};
-  const timers=[];
+  // les minuteries ne se déclenchent pas toutes seules : le test appelle lui-même liveTick()
+  let nt=0;const timers=[];
   const ctx={document,localStorage,console,confirm:()=>true,alert:()=>{},
-    setTimeout:(f,ms)=>{timers.push(f);return timers.length},clearTimeout(){},setInterval:()=>0,clearInterval(){},
-    requestAnimationFrame:f=>{timers.push(f);return timers.length},cancelAnimationFrame(){}};
+    setTimeout:()=>++nt,clearTimeout(){},setInterval:()=>++nt,clearInterval(){},
+    requestAnimationFrame:()=>++nt,cancelAnimationFrame(){}};
   ctx.window=ctx;
   vm.createContext(ctx);
   if(opt.seed!==undefined)vm.runInContext(`Math.random=(${seeded.toString()})(${opt.seed});`,ctx);
