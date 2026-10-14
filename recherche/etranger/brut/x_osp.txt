@@ -1,0 +1,110 @@
+# Ospreys (rugby union)
+==Current squad==
+{{For|player movements before or during the [[2026-27 United Rugby Championship|2026-27 season]]|List of 2026-27 United Rugby Championship transfers#Ospreys}}
+
+{{Rugby union squad start
+ | title = 2026-27 Ospreys squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|RSA|Tom Botha|res=y}}
+{{RU squad player|WAL|Rhys Henry}}
+{{RU squad player|WAL|Cameron Jones|born=2001}}
+{{RU squad player|WAL|Garyn Phillips}}
+{{RU squad player|WAL|Gareth Thomas|born=1993|cap=y}}
+{{RU squad player|WAL|Steffan Thomas}}
+{{RU squad player|WAL|Ben Warren|cap=y|ru=y}}
+'''Hookers'''
+{{RU squad player|WAL|Efan Daniel}}
+{{RU squad player|WAL|Ethan Lewis}}
+{{RU squad player|WAL|Lewis Lloyd|ru=y}}
+{{RU squad player|WAL|Sam Parry|cap=y|cc=y}}
+'''Locks'''
+{{RU squad player|WAL|Rhys Davies|born=November 1998|cap=y}}
+{{RU squad player|WAL|Lewis Jones|born=2002}}
+{{RU squad player|AUS|Ryan Smith|born=1996}}
+{{RU squad player|WAL|Huw Sutton}}
+||
+'''Back row'''
+{{RU squad player|WAL|Harri Deaves|cap=y}}
+{{RU squad player|WAL|Ross Moriarty|cap=y}}
+{{RU squad player|WAL|Morgan Morris}}
+{{RU squad player|WAL|Morgan Morse|cap=y}}
+{{RU squad player|WAL|James Ratti|cap=y}}
+{{RU squad player|AUS|Liam Wright|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|WAL|Luke Davies|ru=y}}
+{{RU squad player|WAL|Kieran Hardy|cap=y}}
+{{RU squad player|WAL|Reuben Morgan-Williams|cap=y}}
+{{RU squad player|WAL|Harri Williams}}
+'''Fly-halves'''
+{{RU squad player|AUS|Lawson Creighton}}
+{{RU squad player|WAL|Dan Edwards|ru=y|cap=y}}
+{{RU squad player|WAL|Harri Wilde|ex=On loan from Cardiff}}
+||
+'''Centres'''
+{{RU squad player|RSA|Evardi Boshoff}}
+{{RU squad player|AUS|Lalakai Foketi|cap=y}}
+{{RU squad player|WAL|Owen Watkin|cap=y|cc=y}}
+{{RU squad player|WAL|Keiran Williams|cap=y}}
+'''Wings'''
+{{RU squad player|WAL|Keelan Giles|cap=y}}
+{{RU squad player|WAL|Harri Houston}}
+{{RU squad player|AUS|Marika Koroibete|cap=y}}
+{{RU squad player|WAL|Luke Morgan|ru=y|cap=y}}
+'''Fullbacks'''
+{{RU squad player|WAL|Iestyn Hopkins}}
+{{RU squad player|WAL|Dan John}}
+{{RU squad player|WAL|Tom Rogers|cap=y}}
+{{Rugby union squad end
+ | res = Wales
+ | cap = y
+ | cc = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026-27 season as listed on [[List of 2026-27 United Rugby Championship transfers]].
+ | ref = <ref name="Ospreys Squad">{{cite web | url= https://www.ospreysrugby.com/players/24| title=Ospreys Squad | work=Ospreys | access-date=24 July 2023}}</ref>
+}}
+
+===Development Squad===
+
+{{Rugby union squad start
+ | title = 2026-27 Ospreys Development squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|WAL|Kian Hire}}
+{{RU squad player|WAL|Math Iorwerth-Scott}}
+{{RU squad player|WAL|Dylan James|nolink=y}}
+{{RU squad player|WAL|Osian Oliver|nolink=y}}
+{{RU squad player|WAL|Mckenzie Scales|nolink=y}}
+
+'''Locks'''
+{{RU squad player|WAL|Cody-Rae David|nolink=y}}
+{{RU squad player|WAL|Ben Roberts|ru=y}}
+||
+'''Back row'''
+{{RU squad player|WAL|Elis Cox|nolink=y}}
+{{RU squad player|WAL|Gwilym Evans}}
+{{RU squad player|WAL|Zac Evans|nolink=y}}
+{{RU squad player|WAL|Sam Morgan|nolink=y}}
+'''Scrum-halves'''
+{{RU squad player|WAL|Nick Fisk-Jones|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|WAL|Jack Hoskins|nolink=y}}
+{{RU squad player|WAL|Steff Jac Jones|nolink=y}}
+||
+'''Centres'''
+{{RU squad player|WAL|Ethan Bolche|nolink=y}}
+{{RU squad player|ENG|Will Hepher|nolink=y|res=y}}
+{{RU squad player|WAL|Fraser Jones|nolink=y}}
+'''Fullbacks'''
+{{RU squad player|WAL|Lewis Edwards|nolink=y}}
+{{RU squad player|WAL|Ben Evans|nolink=y}}
+{{Rugby union squad end
+ | res = Wales
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026-27 season as listed on [[List of 2026-27 United Rugby Championship transfers]].
+ | ref = <ref>{{cite web|url=https://www.ospreysrugby.com/players/51|work=Ospreys|title=Academy Squad|access-date=9 December 2020}}</ref>
+}}

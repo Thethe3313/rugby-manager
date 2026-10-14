@@ -4,11 +4,13 @@ const UI={modal:null,mf:'ALL',ef:'ALL',pid:null,mt:'search',ml:'ALL',ms:'ALL',mo
 const k=n=>Math.abs(n)>=1000?(n/1000).toFixed(2).replace('.',',')+' M€':Math.round(n)+' k€';
 const oc=v=>v>=78?'o1':v>=68?'o2':v>=58?'o3':'o4';
 const rd=Math.round;
-function save(){try{localStorage.setItem(SAVE_KEY,JSON.stringify(G));return true}catch(e){return false}}
+// Sauvegarde : les nombres à virgule (attributs, énergie…) sont arrondis à 3 décimales pour alléger le fichier
+const saveJSON=()=>JSON.stringify(G,(k,v)=>typeof v==='number'&&!Number.isInteger(v)?Math.round(v*1000)/1000:v);
+function save(){try{localStorage.setItem(SAVE_KEY,saveJSON());return true}catch(e){return false}}
 function load(){try{const s=localStorage.getItem(SAVE_KEY);if(!s)return false;G=JSON.parse(s);migrateSave();return true}catch(e){return false}}
 // Export / import de la sauvegarde dans un fichier (pour la changer de navigateur, d'ordinateur, ou la mettre à l'abri)
 function exportSave(){
-  const blob=new Blob([JSON.stringify(G)],{type:'application/json'}),a=document.createElement('a');
+  const blob=new Blob([saveJSON()],{type:'application/json'}),a=document.createElement('a');
   a.href=URL.createObjectURL(blob);a.download=`rugby-manager-${ME().short.replace(/\W+/g,'-')}-${G.date}.json`;
   document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }

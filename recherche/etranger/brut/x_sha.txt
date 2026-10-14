@@ -1,0 +1,191 @@
+# Sharks (rugby union)
+==Current squad==
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Sharks}}
+
+The Sharks squad for the [[2026–27 United Rugby Championship]] is:{{efn|group="Squad"|name=Giliomee|[[Luan Giliomee]] was named in the original Sharks squad, but joined the {{Rut|Bulls}} in October 2026.<ref>{{cite news|url=https://bullsrugby.co.za/experienced-boks-explosive-recruits-power-vodacom-bulls-squad/|title=Experienced Boks, explosive recruits power Vodacom Blues squad|work=Bulls|date=17 September 2026|access-date=10 October 2026}}</ref><ref>{{cite news|url=https://www.sarugbymag.co.za/ackers-plots-giliomee-introduction/|title=Ackers plots Giliomee introduction|work=SA Rugby Magazine|date=4 October 2026|access-date=10 October 2026}}</ref>}}
+
+{{Rugby union squad start
+ | title = 2026–27 Sharks squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|RSA|Cameron Dawson|ru=y}}
+{{RU squad player|RSA|Thomas du Toit|cap=y}}
+{{RU squad player|RSA|Phatu Ganyane}}
+{{RU squad player|RSA|Dian Heunis}}
+{{RU squad player|RSA|Hanro Jacobs}}
+{{RU squad player|RSA|Vincent Koch|cap=y}}
+{{RU squad player|RSA|Rambo Kubheka}}
+{{RU squad player|RSA|Simphiwe Matanzima}}
+{{RU squad player|RSA|Lee-Marvin Mazibuko}}
+{{RU squad player|RSA|Ox Nché|cap=y}}
+{{RU squad player|RSA|Simphiwe Ngobese}}
+{{RU squad player|RSA|Trevor Nyakane|cap=y}}
+{{RU squad player|RSA|Nemo Roelofse}}
+
+'''Hookers'''
+{{RU squad player|RSA|Ethan Bester}}
+{{RU squad player|RSA|Fez Mbatha}}
+{{RU squad player|RSA|Bongi Mbonambi|cap=y}}
+{{RU squad player|RSA|Esethu Mnebelele}}
+{{RU squad player|RSA|Eduan Swart}}
+{{RU squad player|RSA|Liam van Wyk}}
+
+'''Locks'''
+{{RU squad player|RSA|Eben Etzebeth|cap=y}}
+{{RU squad player|RSA|Jason Jenkins|cap=y}}
+{{RU squad player|ZIM|Darrien Landsberg|res=y}}
+{{RU squad player|RSA|Coetzee le Roux}}
+{{RU squad player|RSA|Stephan Lewies|cap=y}}
+{{RU squad player|RSA|Jannes Potgieter}}
+{{RU squad player|RSA|Corne Rahl}}
+{{RU squad player|RSA|Deon Slabbert}}
+{{RU squad player|RSA|Emile van Heerden}}
+
+||
+
+'''Back row'''
+{{RU squad player|RSA|Phepsi Buthelezi|cap=y}}
+{{RU squad player|RSA|Thomas Dyer|ru=y}}
+{{RU squad player|RSA|Nick Hatton}}
+{{RU squad player|ZIM|Tinotenda Mavesere|cap=y}}
+{{RU squad player|RSA|Johan Momsen}}
+{{RU squad player|RSA|Matt Romao}}
+{{RU squad player|RSA|Hendré Stassen}}
+{{RU squad player|DRC|Manu Tshituka|res=y}}
+{{RU squad player|RSA|Vincent Tshituka|cap=y}}
+
+'''Scrum-halves'''
+{{RU squad player|CAN|Ross Braude|cap=y|res=y}}
+{{RU squad player|RSA|Bradley Davids}}
+{{RU squad player|RSA|Ceano Everson}}
+{{RU squad player|RSA|Jaden Hendrikse|cap=y}}
+{{RU squad player|RSA|Juan Loots}}
+{{RU squad player|RSA|Ivan van Zyl|cap=y}}
+
+'''Fly-halves'''
+{{RU squad player|RSA|Jordan Hendrikse|cap=y}}
+{{RU squad player|RSA|Gianni Lombard}}
+{{RU squad player|RSA|Siya Masuku}}
+{{RU squad player|RSA|Vusi Moyo|cap=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|RSA|Albie Bester}}
+{{RU squad player|RSA|André Esterhuizen|cap=y|captain=y}}
+{{RU squad player|RSA|Matthew Fortuin}}
+{{RU squad player|RSA|Ethan Hooker|cap=y}}
+{{RU squad player|NAM|Jurenzo Julius|res=y}}
+{{RU squad player|RSA|Murray Koster}}
+{{RU squad player|RSA|Lyle Matthews}}
+{{RU squad player|NZL|Ma'a Nonu|cap=y}}
+{{RU squad player|RSA|Janco Purchase}}
+
+'''Wings'''
+{{RU squad player|RSA|Lili Bester}}
+{{RU squad player|RSA|Donavan Don}}
+{{RU squad player|RSA|Suleiman Hartzenberg}}
+{{RU squad player|RSA|Makazole Mapimpi|cap=y}}
+{{RU squad player|RSA|Yaw Penxe}}
+{{RU squad player|RSA|Khuthi Rasivhaga}}
+{{RU squad player|RSA|PK Sobahle}}
+{{RU squad player|RSA|Edwill van der Merwe|cap=y}}
+{{RU squad player|RSA|Jaco Williams|cap=y}}
+
+'''Fullbacks'''
+{{RU squad player|RSA|Zekhethelo Siyaya}}
+{{Rugby union squad end
+ | res = South Africa
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref>{{cite news|url=https://sharksrugby.co.za/blogs/news/hollywoodbets-sharks-vurc-squad-announcement|title=Hollywoodbets Sharks VURC Squad Announcment|work=Sharks|date=16 September 2026|access-date=16 September 2026}}</ref>
+{{notelist|group="Squad"}}
+}}
+
+The following players have been included so far in the Sharks XV squad for the [[2026 Currie Cup Premier Division]]:
+{{Rugby union squad start
+ | title = 2026 Sharks XV Currie Cup squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|RSA|Cameron Dawson|ru=y}}
+{{RU squad player|RSA|Jaco du Toit|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Christoff Etzebeth}}
+{{RU squad player|RSA|Dian Heunis}}
+{{RU squad player|RSA|Rambo Kubheka}}
+{{RU squad player|RSA|Lee-Marvin Mazibuko}}
+{{RU squad player|RSA|Simphiwe Ngobese}}
+
+'''Hookers'''
+{{RU squad player|RSA|Bryce Calvert}}
+{{RU squad player|RSA|Jacques Marais}}
+{{RU squad player|RSA|Kerron van Vuuren}}
+{{RU squad player|RSA|Liam van Wyk|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+
+'''Locks'''
+{{RU squad player|RSA|Meno Barnard}}
+{{RU squad player|RSA|Coetzee le Roux}}
+{{RU squad player|RSA|Sphephelo Mbonambi}}
+{{RU squad player|RSA|Johan Momsen}}
+{{RU squad player|RSA|Kuhle Mthimkhulu}}
+{{RU squad player|RSA|Jannes Potgieter}}
+{{RU squad player|RSA|Deon Slabbert}}
+
+||
+
+'''Back row'''
+{{RU squad player|RSA|Danio Botha|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Thomas Dyer|ru=y|captain=y}}
+{{RU squad player|RSA|Henrico Germishuizen}}
+{{RU squad player|ZIM|Tinotenda Mavesere|cap=y}}
+{{RU squad player|RSA|Sipho Nonyalela}}
+{{RU squad player|RSA|Luann Olivier}}
+{{RU squad player|RSA|Hanu Pieterse}}
+{{RU squad player|RSA|Jean-Henri Smit}}
+{{RU squad player|RSA|Willem van den Hever}}
+{{RU squad player|RSA|Wasi Vyambwera}}
+
+'''Scrum-halves'''
+{{RU squad player|CAN|Ross Braude|cap=y}}
+{{RU squad player|RSA|Ceano Everson}}
+{{RU squad player|RSA|Juan Loots}}
+
+'''Fly-halves'''
+{{RU squad player|RSA|Chris Horak}}
+{{RU squad player|RSA|Siya Masuku}}
+{{RU squad player|RSA|Tim Swiel}}
+
+||
+
+'''Centres'''
+{{RU squad player|USA|Dominic Besag|cap=y}}
+{{RU squad player|RSA|Albie Bester}}
+{{RU squad player|RSA|Matthew Fortuin|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Lyle Matthews}}
+{{RU squad player|RSA|Janco Purchase}}
+{{RU squad player|RSA|William Ridl}}
+
+'''Wings'''
+{{RU squad player|RSA|Christie Grobbelaar}}
+{{RU squad player|RSA|Scott Nel}}
+{{RU squad player|RSA|Marnus Potgieter}}
+{{RU squad player|RSA|Khuthi Rasivhaga}}
+{{RU squad player|RSA|PK Sobahle}}
+{{RU squad player|RSA|Maurice Willemse}}
+
+'''Fullbacks'''
+{{RU squad player|RSA|Luan Giliomee|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Gregan Jansen}}
+{{RU squad player|RSA|Chijindu Okonta}}
+{{Rugby union squad end
+ | res = South Africa
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref>{{cite web|url=https://sharksrugby.co.za/pages/team/currie-cup-squad|title=Currie Cup Squad|work=Sharks|access-date=6 August 2026}}</ref>
+{{notelist|group="Squad"}}
+}}

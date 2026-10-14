@@ -1,0 +1,123 @@
+# Bristol Bears
+==Current squad==
+{{for|player movements before or during the [[2026-27 Premiership Rugby|2026–27 season]]|List of 2026–27 Premiership Rugby transfers#Bristol Bears}}
+
+===Senior squad===
+The Bristol Bears squad for the [[2026–27 Premiership Rugby|2026–27 season]] is:<ref>{{Cite news |url=https://www.bristolbearsrugby.com/match-centre/teams/bristol-bears/ |publisher=Bristol Bears Rugby|title=Bristol Bears|date=30 July 2026|accessdate=30 July 2026}}</ref><ref>{{Cite web |title=Bristol squad for season 2026/2027|url=https://all.rugby/club/bristol/squad |access-date=2026-07-30 |website=all.rugby |language=en}}</ref>
+
+{{Rugby union squad start
+ | title = Bristol Bears 2026–27 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ENG|Lovejoy Chawatama}}
+{{RU squad player|ENG|Ellis Genge|cap=y||ex=[[Ellis Genge]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Max Lahiff}}
+{{RU squad player|ENG|George Kloska|cap=y}}
+{{RU squad player|ENG|Andrew Turner|dab=rugby union, born 2002}}
+{{RU squad player|ENG|Jake Woolmore}}
+'''Hookers'''
+{{RU squad player|WAL|Tomas Gwilliam}}
+{{RU squad player|ENG|Sol Moody}}
+{{RU squad player|ENG|Gabriel Oghre|cap=y}}
+{{RU squad player|ENG|Harry Thacker}}
+'''Locks'''
+{{RU squad player|ENG|Joe Batley}}
+{{RU squad player|ENG|Josh Caulfield}}
+{{RU squad player|ENG|Joe Owen|ru=y}}
+{{RU squad player|ARG|Pedro Rubiolo|cap=y}}
+{{RU squad player|ENG|Harry Wells|dab=rugby union|cap=y}}
+||
+'''Back row'''
+{{RU squad player|ARG|Benjamín Grondona|cap=y}}
+{{RU squad player|ENG|Fitz Harding}}
+{{RU squad player|GEO|Luka Ivanishvili|cap=y}}
+{{RU squad player|ENG|Khalik Kareem}}
+{{RU squad player|SAM|Steven Luatua|cap=y}}
+{{RU squad player|FIJ|Viliame Mata|cap=y}}
+{{RU squad player|ENG|Ethan Staddon}}
+'''Scrum-halves'''
+{{RU squad player|IRE|Kieran Marmion|cap=y}}
+{{RU squad player|ENG|Max Pepper}}
+{{RU squad player|ENG|Harry Randall|ru=y|cap=y}}
+{{RU squad player|WAL|Oscar Lennon}}
+'''Fly-halves'''
+{{RU squad player|SCO|Tom Jordan|ru=y|cap=y}}
+{{RU squad player|USA|AJ MacGinty|cap=y}}
+{{RU squad player|ENG|Louie Sinclair}}
+||
+'''Centres'''
+
+{{RU squad player|ENG|Max Clark|dab=rugby union}}
+{{RU squad player|ENG|Benhard Janse van Rensburg|cap=y}}
+{{RU squad player|ARG|Matías Moroni|cap=y}}
+{{RU squad player|FIJ|Kalaveti Ravouvou|cap=y}}
+{{RU squad player|ENG|James Williams|ru=y}}
+'''Wings'''
+{{RU squad player|ENG|Jack Bates}}
+{{RU squad player|ENG|Gabriel Ibitoye}}
+{{RU squad player|WAL|Louis Rees-Zammit|cap=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|Noah Heward}}
+{{RU squad player|ENG|Tobi Wilson}}
+{{Rugby union squad end
+ | group = upper-alpha
+ | ex = 
+ | ref = <ref name="Squad"/>
+ | cap  = y
+ | captain = y
+ | st  = n
+}}
+
+===Academy squad===
+The Bristol Bears Academy squad is:<ref name="AcademySquad">{{Cite web |title=Senior Academy Squad |url=https://www.bristolbearsrugby.com/teams/senior-academy-squad/ |access-date=2024-11-18 |website=Bristol Bears Rugby |language=en-ZA}}</ref>
+
+{{Rugby union squad start
+ | title = Bristol Bears 2026–27 Senior Academy squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|ENG|Kaiden Corbett|nolink=y}}
+{{RU squad player|ENG|Evan Davies|nolink=y}}
+{{RU squad player|ENG|[[Jimmy Halliwell]]|nolink=y}}
+{{RU squad player|WAL|Sam Scott|dab=rugby union|u=20}}
+{{RU squad player|WAL|Louie Trevett|u=20|nolink=y}}
+{{RU squad player|ENG|Michael Whittaker|nolink=y}}
+'''Hookers'''
+{{RU squad player|ENG|Kieran Hill|nolink=y}}
+{{RU squad player|ENG|Casper Wheeler|nolink=y}}
+'''Locks'''
+{{RU squad player|WAL|Kenzie Jenkins|u=20|nolink=y}}
+{{RU squad player|ENG|Ethan Surrey|nolink=y}}
+{{RU squad player|ENG|George Taylor|nolink=y}}
+{{RU squad player|ENG|Monty Wells|nolink=y}}
+||
+'''Back row'''
+{{RU squad player|ENG|Will Papp|nolink=y}}
+{{RU squad player|ENG|Paddy Pearce|nolink=y}}
+{{RU squad player|ENG|Ben Rogers|nolink=y}}
+{{RU squad player|ENG|Jake Smith|nolink=y}}
+{{RU squad player|WAL|Noah Williams|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|Sam Worsley|u=20}}
+||
+'''Centres'''
+{{RU squad player|ENG|Bruno Lamb|nolink=y}}
+{{RU squad player|ENG|Will Moore|nolink=y}}
+{{RU squad player|ENG|Victor Worsnip|nolink=y}}
+'''Wings'''
+{{RU squad player|WAL|Aidan Boshoff|u=20}}
+{{RU squad player|SCO|Glen Gammell|nolink=y}}
+{{RU squad player|ENG|Olly Harris|nolink=y}}
+{{RU squad player|ENG|Ben Rogers|nolink=y}}
+{{RU squad player|SCO|George Williams|nolink=y}}
+'''Fullbacks'''
+{{RU squad player|WAL|Josh Carrington}}
+{{RU squad player|WAL|Evan Morris|u=20|nolink=y}}
+{{RU squad player|ENG|Caspar Reeves|nolink=y}}
+{{Rugby union squad end
+ | ref = <ref name="AcademySquad"/>
+ | cap = n
+ | u   = 20
+ | st  = n
+}}

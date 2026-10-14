@@ -9,7 +9,7 @@ function viewSquad(){
 }
 function marketPool(){
   const out=[];
-  for(const c of G.clubs){if(c.id===G.meId)continue;for(const p of c.squad)out.push({p,c})}
+  for(const c of G.clubs.concat(G.ext||[])){if(c.id===G.meId)continue;for(const p of c.squad)out.push({p,c})}
   for(const p of G.fa)out.push({p,c:null});
   return out;
 }
@@ -20,12 +20,12 @@ function viewMarket(){
   ${winBanner()}<p class="mut">Trésorerie : <b>${k(m.budget)}</b> · Masse salariale : <b>${k(mass(m))}</b> / ${k(capOf(m))} (marge ${k(Math.max(0,capOf(m)-mass(m)))}) · Effectif : ${m.squad.length}/50</p>`;
   if(sub==='search'){
     const sel=(a,cur,opts)=>`<select data-a="flt" data-k="${a}">${opts.map(o=>`<option value="${o[0]}" ${String(cur)===String(o[0])?'selected':''}>${o[1]}</option>`).join('')}</select>`;
-    h+=`<div class="row">${sel('mf',UI.mf,[['ALL','Tous postes'],...GORDER.map(g=>[g,GROUPS[g]])])}${sel('ml',UI.ml||'ALL',[['ALL','Tous'],['t14','Top 14'],['pd2','Pro D2'],['fa','Joueurs libres']])}${sel('ms',UI.ms||'ALL',[['ALL','Tous contrats'],['exp','Dernière année (pré-contrat)']])}${sel('mo',UI.mo||60,[50,55,60,65,70,75,80,85].map(v=>[v,'Note ≥ '+v]))}${sel('ma',UI.ma||40,[[40,'Tous âges'],[21,'≤ 21 ans'],[23,'≤ 23 ans'],[26,'≤ 26 ans'],[30,'≤ 30 ans']])}</div>`;
-    let pool=marketPool().filter(({p,c})=>(UI.mf==='ALL'||p.g===UI.mf)&&ovr(p)>=(+UI.mo||60)&&p.age<=(+UI.ma||40)&&((UI.ml||'ALL')==='ALL'||(UI.ml==='fa'?!c:c&&c.lg===UI.ml))&&((UI.ms||'ALL')==='ALL'||(c&&p.ctr<=1)));
+    h+=`<div class="row">${sel('mf',UI.mf,[['ALL','Tous postes'],...GORDER.map(g=>[g,GROUPS[g]])])}${sel('ml',UI.ml||'ALL',[['ALL','Tous'],['t14','Top 14'],['pd2','Pro D2'],['etr','Étranger (URC, Premiership)'],['fa','Joueurs libres']])}${sel('ms',UI.ms||'ALL',[['ALL','Tous contrats'],['exp','Dernière année (pré-contrat)']])}${sel('mo',UI.mo||60,[50,55,60,65,70,75,80,85].map(v=>[v,'Note ≥ '+v]))}${sel('ma',UI.ma||40,[[40,'Tous âges'],[21,'≤ 21 ans'],[23,'≤ 23 ans'],[26,'≤ 26 ans'],[30,'≤ 30 ans']])}</div>`;
+    let pool=marketPool().filter(({p,c})=>(UI.mf==='ALL'||p.g===UI.mf)&&ovr(p)>=(+UI.mo||60)&&p.age<=(+UI.ma||40)&&((UI.ml||'ALL')==='ALL'||(UI.ml==='fa'?!c:UI.ml==='etr'?c&&c.ext:c&&c.lg===UI.ml))&&((UI.ms||'ALL')==='ALL'||(c&&p.ctr<=1)));
     pool.sort((a,b)=>ovr(b.p)-ovr(a.p));
     const n=pool.length;pool=pool.slice(0,100);
     h+=`<p class="mut">${n} joueur(s)${n>100?' · 100 premiers affichés':''}</p><table><tr><th>Nom</th><th>Poste</th><th>Âge</th><th class="n">Note</th>${potTh()}${grpTh()}<th>Club</th><th class="n">Ctr</th><th class="n">Salaire</th><th class="n">Valeur</th><th class="n">Indemnité</th><th></th></tr>
-    ${pool.map(({p,c})=>`<tr><td>${plink(p)}</td><td>${posL(p)}</td><td>${p.age}</td><td class="n ${oc(ovr(p))}"><b>${rd(ovr(p))}</b></td>${potTd(p)}${grpTd(p)}<td>${c?c.short+' <span class="mut">'+(c.lg==='t14'?'T14':'PD2')+'</span>':'<span class="ok">Libre</span>'}</td><td class="n">${c?p.ctr:'-'}</td><td class="n">${k(p.sal)}</td><td class="n">${k(valueOf(p))}</td><td class="n">${c?k(askFee(p,c)):'0'}</td><td><button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="${c?'buy':'fa'}">${c?'Offre':'Signer'}</button>${c&&p.ctr<=1&&G.phase==='season'?` <button class="btn sec sm" data-a="neg" data-id="${p.id}" data-mode="pre">Pré-contrat</button>`:''}</td></tr>`).join('')}</table>`;
+    ${pool.map(({p,c})=>`<tr><td>${plink(p)}</td><td>${posL(p)}</td><td>${p.age}</td><td class="n ${oc(ovr(p))}"><b>${rd(ovr(p))}</b></td>${potTd(p)}${grpTd(p)}<td>${c?c.short+' <span class="mut">'+(c.ext?lgName(c):c.lg==='t14'?'T14':'PD2')+'</span>':'<span class="ok">Libre</span>'}</td><td class="n">${c?p.ctr:'-'}</td><td class="n">${k(p.sal)}</td><td class="n">${k(valueOf(p))}</td><td class="n">${c?k(askFee(p,c)):'0'}</td><td><button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="${c?'buy':'fa'}">${c?'Offre':'Signer'}</button>${c&&p.ctr<=1&&G.phase==='season'?` <button class="btn sec sm" data-a="neg" data-id="${p.id}" data-mode="pre">Pré-contrat</button>`:''}</td></tr>`).join('')}</table>`;
   }else if(sub==='offers'){
     const of=G.offers||[];
     h+=of.length?`<table><tr><th>Joueur</th><th>Poste</th><th class="n">Note</th><th>Club acheteur</th><th class="n">Offre</th><th class="n">Valeur</th><th></th></tr>${of.map((o,i)=>{const p=m.squad.find(x=>x.id===o.pid),c=C(o.club);if(!p||!c)return '';return `<tr><td>${plink(p)}</td><td>${posL(p)}</td><td class="n">${rd(ovr(p))}</td><td>${c.short}</td><td class="n"><b>${k(o.fee)}</b></td><td class="n">${k(valueOf(p))}</td><td><button class="btn sm" data-a="acceptOffer" data-i="${i}">Accepter</button> <button class="btn bad sm" data-a="refuseOffer" data-i="${i}">Refuser</button></td></tr>`}).join('')}</table>`:'<p class="mut">Aucune offre pour le moment. Les offres arrivent pendant les fenêtres de transferts ; place un joueur sur la liste des transferts (depuis sa fiche) pour en attirer davantage.</p>';

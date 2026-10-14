@@ -23,7 +23,8 @@ function migrateSave(){
   if(G.fin&&G.fin.staff==null)G.fin.staff=0;
   applyRealStaff();
   applyNoteFixes();
-  if(!G.ext)initExt();
+  if(!G.ext||G.ext.some(c=>!c.real&&typeof REALX!=='undefined'&&REALX[c.id]))initExt();
+  if(!G.XL&&G.phase==='season'&&G.cups)startXL();
   if(!G.cups&&G.phase==='season')startCups();
 }
 
@@ -58,6 +59,7 @@ function startSeason(){
   G.fin=zeroFin();
   setObjective();
   startCups();
+  startXL();
   mail('Directeur sportif','Le mercato d\'été est ouvert',`La fenêtre de transferts reste ouverte jusqu'au 15 septembre. Premier match de ${LEAGUES[ME().lg].name} : ${fmtD(G.L[ME().lg].dates[0],true)}.`,{act:{tab:'market'}});
 }
 function finishSeason(){
@@ -77,8 +79,10 @@ function finishSeason(){
   G.summary={lg,rank,champ:po.champ,fin:po.fin,prize,qualified:po.seeds.includes(m.id),fate,
     champT14:G.L.t14.po.champ,champPD2:G.L.pd2.po.champ,acc:accTxt};
   G.lastT14=sortedTable('t14').map(r=>r.id); // qualification européenne de la saison suivante
+  G.lastXL={};for(const [lg,L] of Object.entries(G.XL||{}))G.lastXL[lg]=xlSorted(L).map(r=>r.id);
+  const xlW=lg=>G.XL&&G.XL[lg]&&G.XL[lg].champ?C(G.XL[lg].champ).short:null;
   const cupW=k=>G.cups&&G.cups[k]&&G.cups[k].champ?C(G.cups[k].champ).short:null;
-  G.hist.push({s:seasonLabel(),lg,champ:C(G.L.t14.po.champ).short,champ2:C(G.L.pd2.po.champ).short,cc:cupW('cc'),ch:cupW('ch'),rank,fate});
+  G.hist.push({s:seasonLabel(),lg,champ:C(G.L.t14.po.champ).short,champ2:C(G.L.pd2.po.champ).short,cc:cupW('cc'),ch:cupW('ch'),urc:xlW('urc'),prem:xlW('prem'),rank,fate});
   addNews(po.champ===m.id?`🏆 TU ES CHAMPION DE ${LEAGUES[lg].name.toUpperCase()} !`:`Saison terminée : ${rank}e de ${LEAGUES[lg].name}.`);
   if(fate==='promu')addNews(`⬆ ${m.name} monte en Top 14 !`);
   if(fate==='relégué')addNews(`⬇ ${m.name} descend en Pro D2.`);
@@ -102,7 +106,7 @@ function nextSeason(){
   for(const c of G.clubs){if(!c.youth)initYouth(c);youthSeasonEnd(c)}
   genStaffPool();staffSeasonEnd();
   // bilan de progression, vieillissement, contrats
-  for(const c of G.clubs){
+  for(const c of G.clubs.concat(G.ext||[])){
     const keep=[];
     for(const p of c.squad){
       const share=playShare(p,c);

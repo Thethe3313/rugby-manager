@@ -1,0 +1,174 @@
+# Lions (United Rugby Championship)
+==Current squad==
+
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Lions}}
+
+The Lions squad for the [[2026–27 United Rugby Championship]] is:
+
+{{Rugby union squad start
+ | title = 2026–27 Lions squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|RSA|Eddie Davids}}
+{{RU squad player|RSA|SJ Kotze}}
+{{RU squad player|RSA|Sebastian Lombard}}
+{{RU squad player|RSA|Morgan Naudé}}
+{{RU squad player|RSA|Cecil Parsons}}
+{{RU squad player|RSA|Juan Schoeman}}
+{{RU squad player|RSA|RF Schoeman}}
+{{RU squad player|RSA|Ruan Swart}}
+{{RU squad player|RSA|Conraad van Vuuren}}
+{{RU squad player|RSA|Boan Venter|cap=y}}
+
+'''Hookers'''
+{{RU squad player|RSA|PJ Botha}}
+{{RU squad player|RSA|Morné Brandon}}
+{{RU squad player|RSA|Marno Grobbelaar}}
+{{RU squad player|RSA|Tiaan Lange}}
+{{RU squad player|RSA|Mahle Sithole}}
+
+'''Locks'''
+{{RU squad player|RSA|Hyron Andrews}}
+{{RU squad player|RSA|Ruan Delport}}
+{{RU squad player|RSA|JP du Preez}}
+{{RU squad player|RSA|Marco Ferreira|ru=y}}
+{{RU squad player|RSA|JD Hattingh}}
+{{RU squad player|RSA|Reinhard Nothnagel}}
+{{RU squad player|RSA|Etienne Oosthuizen|born=1992}}
+{{RU squad player|RSA|James Schnetler}}
+{{RU squad player|RSA|Dylan Sjoblom}}
+
+||
+
+'''Back row'''
+{{RU squad player|RSA|Thando Biyela}}
+{{RU squad player|RSA|Jarod Cairns}}
+{{RU squad player|RSA|Luke Cannon}}
+{{RU squad player|RSA|Renzo du Plessis}}
+{{RU squad player|RSA|Batho Hlekani}}
+{{RU squad player|RSA|Francke Horn|captain=y}}
+{{RU squad player|RSA|Siba Mahashe}}
+{{RU squad player|RSA|Sikhumbuzo Notshe|cap=y}}
+{{RU squad player|RSA|JC Pretorius}}
+{{RU squad player|RSA|Sibabalo Qoma}}
+{{RU squad player|RSA|Morne Venter}}
+{{RU squad player|RSA|Ruan Venter|born=2002|cap=y}}
+
+'''Scrum-halves'''
+{{RU squad player|RSA|Zian Cilliers}}
+{{RU squad player|RSA|Layton Horn}}
+{{RU squad player|RSA|Asad Moos}}
+{{RU squad player|RSA|Nico Steyn}}
+{{RU squad player|RSA|Morné van den Berg|cap=y}}
+
+'''Fly-halves'''
+{{RU squad player|RSA|Boeta Chamberlain}}
+{{RU squad player|RSA|Sam Francis|ru=y}}
+{{RU squad player|RSA|Chris Smith|ru=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|RSA|Ethan Adams}}
+{{RU squad player|RSA|Likhona Finca}}
+{{RU squad player|RSA|Rynhardt Jonker}}
+{{RU squad player|RSA|Richard Kriel}}
+{{RU squad player|RSA|Bronson Mills}}
+{{RU squad player|RSA|Henco van Wyk}}
+
+'''Wings'''
+{{RU squad player|RSA|Erich Cronjé}}
+{{RU squad player|RSA|Angelo Davids}}
+{{RU squad player|RSA|Jason Hugo}}
+{{RU squad player|DRC|Daniel Kasende|res=y}}
+{{RU squad player|RSA|Rabz Maxwane}}
+{{RU squad player|RSA|Kelly Mpeku}}
+{{RU squad player|RSA|Keagan Smith}}
+
+'''Fullbacks'''
+{{RU squad player|RSA|Alzeadon Felix}}
+{{RU squad player|RSA|Quan Horn|cap=y}}
+{{RU squad player|RSA|Gilermo Mentoe}}
+{{Rugby union squad end
+ | res = South Africa
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref>{{cite tweet|number=2102036909685940286|user=LionsRugbyCo|title=Joburg - Our Time is Now.|date=21 September 2026|access-date=21 September 2026}}</ref>
+{{notelist|group="Squad"}}
+}}
+
+The following players have been included so far in the Lions squad for the [[2026 Currie Cup Premier Division]]:
+{{Rugby union squad start
+ | title = 2026 Lions Currie Cup squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|RSA|Siya Dube|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Morgan Naudé}}
+{{RU squad player|RSA|Liyema Ntshanga}}
+{{RU squad player|RSA|Cecil Parsons}}
+{{RU squad player|RSA|Juan Schoeman}}
+{{RU squad player|RSA|Ruan Swart}}
+{{RU squad player|RSA|Conraad van Vuuren}}
+
+'''Hookers'''
+{{RU squad player|RSA|Armand Combrinck}}
+{{RU squad player|RSA|Mahle Sithole}}
+{{RU squad player|RSA|Ruan Welman}}
+
+'''Locks'''
+{{RU squad player|RSA|Ruan Delport|captain=y}}
+{{RU squad player|RSA|Marco Ferreira|ru=y}}
+{{RU squad player|RSA|JD Hattingh}}
+{{RU squad player|RSA|Dylan Sjoblom}}
+{{RU squad player|RSA|Tiaan Wessels}}
+
+||
+
+'''Back row'''
+{{RU squad player|RSA|Thando Biyela}}
+{{RU squad player|RSA|Jarod Cairns}}
+{{RU squad player|RSA|Luke Cannon}}
+{{RU squad player|RSA|Renzo du Plessis}}
+{{RU squad player|RSA|Vuyo Gwiji}}
+{{RU squad player|RSA|Sibabalo Qoma}}
+{{RU squad player|RSA|Morne Venter}}
+
+'''Scrum-halves'''
+{{RU squad player|RSA|Zian Cilliers}}
+{{RU squad player|RSA|Layton Horn}}
+{{RU squad player|RSA|Asad Moos}}
+{{RU squad player|RSA|Haashim Pead}}
+
+'''Fly-halves'''
+{{RU squad player|RSA|Matthew Coetzee}}
+{{RU squad player|RSA|Sam Francis|ru=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|RSA|Ethan Adams}}
+{{RU squad player|RSA|Likhona Finca}}
+{{RU squad player|RSA|Rynhardt Jonker}}
+
+'''Wings'''
+{{RU squad player|RSA|Jason Hugo}}
+{{RU squad player|RSA|Exauce Kevani}}
+{{RU squad player|RSA|Rabz Maxwane}}
+{{RU squad player|RSA|Keagan Smith}}
+
+'''Fullbacks'''
+{{RU squad player|RSA|Gilermo Mentoe}}
+{{RU squad player|RSA|Latica Nela}}
+{{Rugby union squad end
+ | res = South Africa
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref>{{cite tweet | user=LionsRugbyCo | number=2078042073169645591 | title=Here's your matchday 23 for Sunday's catfight in the City of Roses. | date=17 July 2026 | access-date=17 July 2026}}</ref><ref>{{cite tweet | user=LionsRugbyCo | number=2080564380958158860 | title=The team is in. Here's your Fidelity ADT Lions side to face the Airlink Pumas in Round 2 of the Carling Currie Cup. | date=24 July 2026 | access-date=24 July 2026}}</ref><ref>{{cite tweet | user=LionsRugbyCo | number=2083116711901909440 | title=Locked in for the Jukskei Derby. Here's your Fidelity ADT Lions side to face the Vodacom Bulls tomorrow. | date=31 July 2026 | access-date=31 July 2026}}</ref><ref>{{cite tweet | user=LionsRugbyCo | number=2085653825336053986 | title=All set for Kimberley. Here’s your Fidelity ADT Lions side for this Saturday's Carling Currie Cup clash against the Suzuki Griquas. | date=7 August 2026 | access-date=7 August 2026}}</ref><ref>{{cite tweet | user=LionsRugbyCo | number=2087892033947976033 | title=Here’s the Fidelity ADT Lions side ready for tomorrow’s encounter against the Sanlam Boland Kavaliers. | date=13 August 2026 | access-date=13 August 2026}}</ref><ref>{{cite tweet | user=LionsRugbyCo | number=2090444593774952566 | title=READY FOR BATTLE. Here’s your Fidelity ADT Lions lineup. | date=20 August 2026 | access-date=20 August 2026}}</ref><ref>{{cite tweet | user=LionsRugbyCo | number=2096131696143843554 | title=Here’s your Fidelity ADT Lions side to face the Suzuki Griquas in Sunday’s Carling Currie Cup semi-final in Kimberley. | date=5 September 2026 | access-date=5 September 2026}}</ref>
+{{notelist|group="Squad"}}
+}}

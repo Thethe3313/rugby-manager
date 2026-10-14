@@ -1,0 +1,110 @@
+# Northampton Saints
+==Current squad==
+{{for|player movements before or during the [[2026–27 Premiership Rugby|2026–27 season]]|List of 2026–27 Premiership Rugby transfers#Northampton Saints}}
+
+The Northampton Saints squad for the [[2026–27 Premiership Rugby|2026–27 season]] is:<ref name="Squad">{{Cite web |title=First Team {{!}} Northampton Saints |url=https://www.northamptonsaints.co.uk/squad/114 |access-date=2026-08-11 |website=www.northamptonsaints.co.uk}}</ref>
+
+{{Rugby union squad start
+ | title = Northampton Saints 2026–27 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ENG|Trevor Davison|cap=y}}
+{{RU squad player|RSA|Jordan Els|st=y}}
+{{RU squad player|ITA|Danilo Fischetti|cap=y}}
+{{RU squad player|ENG|Luke Green|ru=y}}
+{{RU squad player|ENG|Emmanuel Iyogun|cap=y}}
+{{RU squad player|ZIM|Cleopas Kundiona|cap=y}}
+{{RU squad player|ITA|Ion Neculai|cap=y}}
+{{RU squad player|RSA|Lefty Zigiriadis}}
+'''Hookers'''
+{{RU squad player|ENG|Ben Alexander|ru=y|born=2003}}
+{{RU squad player|ENG|Curtis Langdon|cap=y}}
+{{RU squad player|SCO|Robbie Smith|ru=y|cap=y}}
+{{RU squad player|ENG|Henry Walker|ru=y}}
+{{RU squad player|ENG|Craig Wright|ru=y}}
+'''Locks'''
+{{RU squad player|ENG|James Bennett|ru=y}}
+{{RU squad player|ENG|Alex Coles|ru=y|cap=y|ex=[[Alex Coles (rugby union)|Alex Coles]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref name="England central contracts">{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Tom Lockett}}
+{{RU squad player|ENG|Chunya Munga}}
+{{RU squad player|ENG|Ed Prowse}}
+{{RU squad player|RSA|JJ van der Mescht}}
+||
+'''Back row'''
+{{RU squad player|ENG|Archie Benson}}
+{{RU squad player|ENG|Callum Chick|cap=y}}
+{{RU squad player|AUS|Josh Kemeny|cap=y}}
+{{RU squad player|ENG|Tom Pearson|ru=y|born=1999|cap=y}}
+{{RU squad player|ENG|Henry Pollock|ru=y|cap=y|ex=[[Henry Pollock (rugby union)|Henry Pollock]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref name="England central contracts"/>}}
+{{RU squad player|SCO|Josh Taylor|ru=y}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Archie McParland}}
+{{RU squad player|ENG|Alex Mitchell|ru=y|cap=y|ex=[[Alex Mitchell (rugby union)|Alex Mitchell]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref name="England central contracts"/>}}
+'''Fly-halves'''
+{{RU squad player|FRA|Anthony Belleau|cap=y}}
+{{RU squad player|ENG|Fin Smith|cap=y|ex=[[Fin Smith]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref name="England central contracts"/>}}
+||
+'''Centres'''
+{{RU squad player|ENG|Fraser Dingwall|cap=y|captain=y}}
+{{RU squad player|SCO|Rory Hutchinson|cap=y}}
+{{RU squad player|ENG|Tom Litchfield}}
+{{RU squad player|ENG|Toby Thame}}
+'''Wings'''
+{{RU squad player|SCO|Amena Caqusau}}
+{{RU squad player|ITA|Malik Faissal|cap=y}}
+{{RU squad player|ENG|Tommy Freeman|ru=y|cap=y|ex=[[Tommy Freeman (rugby union)|Tommy Freeman]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref name="England central contracts"/>}}
+{{RU squad player|ENG|James Martin|ru=y}}
+{{RU squad player|ENG|Ollie Sleightholme|cap=y}}
+{{RU squad player|ITA|Edoardo Todaro|cap=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|George Hendy}}
+{{Rugby union squad end
+ | group   = upper-alpha
+ | ex      =
+ | ref = <ref name="Squad"/>
+ | cap  = y
+ | captain = y
+ | st  = y
+}}
+
+===Academy squad===
+The Northampton Saints Senior Academy squad is:<ref name="AcademySquad">{{cite web |url=https://www.northamptonsaints.co.uk/news/saints-announce-senior-academy-intake-202627-season-0 |title=Saints announce Senior Academy intake for 2026/27 season |work=Northampton Saints |access-date=1 June 2026}}</ref>
+
+{{Rugby union squad start
+ | title = Northampton Saints 2026–27 Senior Academy squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|ENG|Noah Buxton|nolink=y}}
+{{RU squad player|ENG|Aiden Reid|nolink=y}}
+{{RU squad player|ENG|Ollie Scola|u=20}}
+{{RU squad player|ENG|Sonny Tonga'uiha|u=20}}
+'''Locks'''
+{{RU squad player|ENG|Alex Mead|nolink=y}}
+{{RU squad player|ENG|George Tonga'uiha|nolink=y}}
+||
+'''Back row'''
+{{RU squad player|ENG|Aiden Ainsworth-Cave|u=20}}
+{{RU squad player|ENG|Jack Lewis|u=20|nolink=y}}
+{{RU squad player|AUS|Charlie Ulcoq|nolink=y}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Sonny Goode|nolink=y}}
+{{RU squad player|ENG|Aidan Pugh|nolink=y}}
+{{RU squad player|ENG|Jonny Weimann|u=20}}
+'''Fly-halves'''
+{{RU squad player|ENG|Hugh Shields|u=20|nolink=y}}
+||
+'''Centres'''
+{{RU squad player|ENG|Henry Lumley|nolink=y}}
+{{RU squad player|ENG|Freddie St.John|nolink=y}}
+'''Wings'''
+{{RU squad player|ENG|Thomas Rowe|nolink=y}}
+{{RU squad player|ENG|Charlie Tamani|nolink=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|James Pater|u=20}}
+{{Rugby union squad end
+ | ref = <ref name="AcademySquad"/>
+ | cap = y
+ | u   = 20
+}}

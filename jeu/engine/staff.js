@@ -68,7 +68,7 @@ function hireStaff(m,s,yrs){
 // Fin de saison : contrats, retraites, renouvellement du staff des clubs IA
 function staffSeasonEnd(){
   const m=ME();
-  for(const c of G.clubs){
+  for(const c of G.clubs.concat(G.ext||[])){
     if(!c.staff)initStaff(c);
     for(const r of SROLES){
       const s=c.staff[r];if(!s)continue;

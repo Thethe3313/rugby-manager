@@ -1,0 +1,255 @@
+# Munster Rugby
+==Current Squads==
+
+===Munster Men Coaches and Management===
+
+{| class="wikitable"
+|-
+! Position
+! Name
+! Nationality 
+|-
+| Head coach
+| [[Clayton McMillan]]
+| {{flagicon|NZL}}[[New Zealand]]
+|-
+| Attack coach
+| [[Jared Payne]]
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Forwards coach
+| [[Jimmy Duffy (rugby union)|Jimmy Duffy]]
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Defence coach
+| [[Denis Leamy]]
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Skills coach
+| [[Mossy Lawler]]
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Performance analyst and technical coach
+| George Murray
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Team Manager
+| [[Martyn Vercoe]]
+| {{flagicon|NZL}}[[New Zealand]]
+|-
+| Head of rugby operations
+| Ian Costello
+|{{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Head of athletic performance
+| Brad Mayo
+| {{flagicon|NZL}}[[New Zealand]]
+|-
+| Strength and conditioning coach
+| Adam Sheehan
+| {{flag|Ireland|rugby union|name=Ireland}}
+|}
+
+===Munster Men Squad===
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Munster}}
+
+{{Rugby union squad start
+ | title = 2026–27 Munster Men squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|SAM|Michael Alaalatoa|cap=y}}
+{{RU squad player|IRE|Jack Aungier|cap=y}}
+{{RU squad player|ENG|Kieran Brookes|cap=y}}*
+{{RU squad player|IRE|Mark Donnelly|ru=y}}
+{{RU squad player|IRE|Ronan Foxe|nolink=y}}
+{{RU squad player|IRE|Jeremy Loughman|cap=y}}
+{{RU squad player|IRE|Michael Milne|cap=y}}
+{{RU squad player|IRE|Kieran Ryan}}
+{{RU squad player|IRE|Josh Wycherley}}
+'''Hookers'''
+{{RU squad player|IRE|Diarmuid Barron}}
+{{RU squad player|IRE|Lee Barron|ru=y}}
+{{RU squad player|IRE|Max Clein|nolink=y}}
+{{RU squad player|RSA|Marnus van der Merwe|cap=y}}
+'''Locks'''
+{{RU squad player|IRE|Thomas Ahern|ru=y|cap=y}}
+{{RU squad player|IRE|Tadhg Beirne|cap=y|captain=y}}
+{{RU squad player|IRE|Edwin Edogbo|cap=y}}
+{{RU squad player|IRE|Evan O'Connell}}
+{{RU squad player|IRE|Conor Ryan|nolink=y}}
+{{RU squad player|IRE|Fineen Wycherley|cap=y}}
+||
+'''Back row'''
+{{RU squad player|IRE|Gavin Coombes|cap=y}}
+{{RU squad player|IRE|Sean Edogbo|nolink=y}}
+{{RU squad player|IRE|Brian Gleeson|ru=y}}
+{{RU squad player|IRE|John Hodnett}}
+{{RU squad player|IRE|Alex Kendellen|cap=y}}
+{{RU squad player|IRE|Jack O'Donoghue|cap=y}}
+{{RU squad player|IRE|Ruadhán Quinn}}
+'''Scrum-halves'''
+{{RU squad player|IRE|Craig Casey|cap=y}}
+{{RU squad player|IRE|Ethan Coughlan}}
+{{RU squad player|NZL|Ben O'Donovan|res=y}}
+'''Fly-halves'''
+{{RU squad player|IRE|Jack Crowley|cap=y}}
+{{RU squad player|IRE|JJ Hanrahan}}
+{{RU squad player|AUS|Will Harrison|ru=y|cap=y}}
+||
+'''Centres'''
+{{RU squad player|IRE|Tom Farrell|ru=y|cap=y}}
+{{RU squad player|IRE|Dan Kelly|ru=y}}
+{{RU squad player|NZL|Alex Nankivell}}
+{{RU squad player|IRE|Seán O'Brien|born=1998}}
+'''Back three'''
+{{RU squad player|IRE|Shane Daly|cap=y}}
+{{RU squad player|IRE|Mike Haley|ru=y|cap=y}}
+{{RU squad player|IRE|Diarmuid Kilgallen}}
+{{RU squad player|IRE|Shay McCarthy}}
+{{RU squad player|IRE|Calvin Nash|cap=y}}
+{{RU squad player|IRE|Ben O'Connor|nolink=y}}
+{{Rugby union squad end
+ | res = Ireland
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026–27 season as listed on [[List of 2026–27 United Rugby Championship transfers]].
+ | ref = <ref name="Munster Rugby|1st Team Squad">{{cite web|url=https://munsterrugby.ie/teams/munster-squad|title=Munster Rugby {{!}} 1st Team Squad|work=Munster Rugby|access-date=15 July 2023}}</ref>
+}}
+
+===Munster Men Academy Coaches and Management===
+
+{| class="wikitable"
+|-
+! Position
+! Name
+! Nationality
+|-
+| Academy and pathway manager
+| Gearóid Prendergast
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Elite player development officer
+| Brendan O'Connor
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Elite player development officer
+| [[Tommy O'Donnell]]
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Pathway development coach
+| Matt Brown
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| National talent coach
+| Mark Butler
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Strength and conditioning coach
+| Danielle Cunningham
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+|}
+
+===Munster Men Academy Squad===
+
+{{Rugby union squad start
+ | title = 2026-27 Munster Men Academy squad (18 Members with Year stages)
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|IRE|Emmett Calvey|nolink=y}} (2)
+{{RU squad player|IRE|Christian Foley|nolink=y}} (1)
+{{RU squad player|IRE|Jamie Conway|nolink=y}} (1)
+'''Hookers'''
+{{RU squad player|IRE|Danny Sheahan}} (3)
+'''Locks'''
+{{RU squad player|IRE|Michael Foy|nolink=y}} (3)
+{{RU squad player|IRE|Conor Kennelly|nolink=y}} (2)
+{{RU squad player|IRE|Joe Finn|nolink=y}} (1)
+||
+'''Back row'''
+{{RU squad player|IRE|Luke Murphy|nolink=y}} (3)
+{{RU squad player|IRE|Oisin Minogue|nolink=y}} (2)
+{{RU squad player|IRE|Alex Lautsou|nolink=y}} (1)
+'''Scrum-halves'''
+{{RU squad player|IRE|Jake O'Riordan}} (3)
+{{RU squad player|IRE|Christopher Barrett|nolink=y}} (1)
+'''Fly-halves'''
+{{RU squad player|IRE|Tom Wood|born=2006}} (2)
+{{RU squad player|IRE|Charlie O'Shea|nolink=y}} (1)
+||
+'''Centres'''
+{{RU squad player|IRE|Gordon Wood|nolink=y}} (3)
+{{RU squad player|IRE|Eoghan Smyth|nolink=y}} (2)
+{{RU squad player|IRE|James O'Leary|nolink=y}} (1)
+{{RU squad player|IRE|Rob Carney|nolink=y}} (1)
+'''Back three'''
+{{Rugby union squad end
+ | res = Ireland
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026-27 season as listed on [[List of 2026-27 United Rugby Championship transfers]].
+ | ref = <ref name="Munster Rugby|Academy Squad">{{cite web|url=https://www.munsterrugby.ie/2024/06/21/munster-rugby-confirm-academy-squad-for-2024-25/|title=Munster Rugby Confirm Academy Squad For 2024/25|work=Munster Rugby|date=21 June 2024|access-date=7 July 2024}}</ref>
+}}
+
+===Munster Women===
+{| class="wikitable" style="text-align:left; font-size:90%; width:70%"
+! colspan="3" |2026/27 Munster Women Squad (23 Players)
+|- valign="top"
+|'''Props'''
+
+* {{flagicon|IRE|rugby union}} Eilís Cahill
+* {{flagicon|IRE|rugby union}} Siobhán McCarthy
+* {{flagicon|IRE|rugby union}} Tuathla Ryan
+
+'''Hookers'''
+
+* {{flagicon|IRE|rugby union}} Beth Buttimer
+* {{flagicon|IRE|rugby union}} Emma Duncan
+
+'''Locks'''
+
+* {{flagicon|IRE|rugby union}} Claire Bennett
+* {{flagicon|IRE|rugby union}} Aoibhe O'Flynn
+* {{flagicon|IRE|rugby union}} Clodagh O'Halloran
+
+|'''Back Row'''
+
+* {{flagicon|IRE|rugby union}} Jane Clohessy
+* {{flagicon|IRE|rugby union}} Annakate Cournane
+* {{flagicon|IRE|rugby union}} Sally Kelly
+* {{flagicon|IRE|rugby union}} Grace Moore
+* {{flagicon|IRE|rugby union}} Maeve Óg O'Leary 
+
+
+'''Scrum-halves'''
+
+* {{flagicon|IRE|rugby union}} Emily Lane
+* {{flagicon|IRE|rugby union}} Abbie Salter-Townshend
+
+'''Fly-halves'''
+
+* {{flagicon|IRE|rugby union}} Enya Breen
+* {{flagicon|IRE|rugby union}} Catriona Finn
+* {{flagicon|IRE|rugby union}} Kate Flannery
+
+|'''Centres'''
+
+* {{flagicon|IRE|rugby union}} Lucia Linn
+* {{flagicon|IRE|rugby union}} Alana McInerney
+
+'''Back Three'''
+
+* {{flagicon|IRE|rugby union}} Ellen Boylan
+* {{flagicon|IRE|rugby union}} Aoife Corey
+* {{flagicon|IRE|rugby union}} Chisom Ugwueru
+
+
+|- valign="top"
+| colspan="3" |Players listed in '''Bold''' have represented their country internationally in Rugby Union or Sevens.
+<nowiki>*</nowiki>Denotes Devolepment Player|}
+
+{{Rugby union squad end}}

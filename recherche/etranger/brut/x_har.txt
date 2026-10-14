@@ -1,0 +1,124 @@
+# Harlequin F.C.
+==Current squad==
+{{For|player movements before or during the [[2026–27 Premiership Rugby|2026–27 season]]|List of 2026–27 Premiership Rugby transfers#Harlequins}}
+
+The Harlequins squad for the [[2026–27 Premiership Rugby|2026–27 season]] is:<ref name="Squad">{{Cite news|url=https://www.quins.co.uk/team/first-team|publisher=Quins|title=First Team|date=7 August 2026|accessdate=7 August 2026}}</ref>
+
+{{Rugby union squad start
+ | title = Harlequins 2026–27 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ENG|Fin Baxter|cap=y|ex=[[Fin Baxter]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Ethan Clarke}}
+{{RU squad player|ARG|Pedro Delgado|cap=y|ru=y}}
+{{RU squad player|ENG|Will Hobson|ru=y}}
+{{RU squad player|AUS|Harry Johnson-Holmes|cap=y}}
+{{RU squad player|SAM|Titi Lamositele|cap=y}}
+{{RU squad player|RSA|Sampie Swiegers}}
+{{RU squad player|ARG|Boris Wenger|cap=y}}
+{{RU squad player|ENG|Harry Williams|ru=y|cap=y}}
+'''Hookers'''
+{{RU squad player|ENG|Jack Musk}}
+{{RU squad player|ENG|Sam Riley|ru=y}}
+{{RU squad player|ENG|Jack Walker|ru=y}}
+'''Locks'''
+{{RU squad player|ENG|Harry Browne|ru=y}}
+{{RU squad player|ENG|James Dun}}
+{{RU squad player|WAL|Jonny Green}}
+{{RU squad player|ARG|Guido Petti|cap=y}}
+{{RU squad player|IRE|Kieran Treadwell|cap=y}}
+||
+'''Back row'''
+{{RU squad player|ENG|Zach Carr}}
+{{RU squad player|ENG|James Chisholm|ru=y}}
+{{RU squad player|ENG|Chandler Cunningham-South|cap=y}}
+{{RU squad player|ENG|Alex Dombrandt|cap=y}}
+{{RU squad player|WAL|Seb Driscoll}}
+{{RU squad player|ENG|Will Evans|ru=y}}
+{{RU squad player|ENG|Jack Kenningham}}
+{{RU squad player|ENG|Lucas Schmid}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Will Porter}}
+{{RU squad player|ENG|Stu Townsend}}
+'''Fly-halves'''
+{{RU squad player|ENG|Josh Bellamy|ru=y}}
+{{RU squad player|ENG|Marcus Smith|ru=y|cap=y|ex=[[Marcus Smith (rugby union)|Marcus Smith]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Connor Slevin}}
+||
+'''Centres'''
+{{RU squad player|ENG|Oscar Beard|cap=y}}
+{{RU squad player|WAL|Bryn Bradley}}
+{{RU squad player|ENG|Sean Kerr}}
+{{RU squad player|SCO|Ludo Kolade}}
+{{RU squad player|ENG|Luke Northmore|cap=y}}
+{{RU squad player|ENG|Ben Waghorn}}
+'''Wings'''
+{{RU squad player|ENG|Cassius Cleaves}}
+{{RU squad player|ENG|Nick David}}
+{{RU squad player|ARG|Rodrigo Isgró|cap=y}}
+{{RU squad player|ENG|Frank McMillan|ru=y}}
+{{RU squad player|ENG|Cadan Murley|cap=y}}
+{{RU squad player|ZIM|Edward Sigauke|cap=y}}
+'''Fullbacks'''
+{{RU squad player|SCO|Cameron Anderson|ru=y}}
+{{RU squad player|ENG|George Furbank|cap=y|ex=[[George Furbank]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|RSA|Tyrone Green}}
+{{Rugby union squad end
+ | group = upper-alpha
+ | ex = 
+ | ref = <ref name="Squad"/>
+ | cap  = y
+ | captain = y
+ | st  = n
+}}
+
+===Academy squad===
+
+The Harlequins academy squad is:<ref name="AcademySquad">{{Cite news|url=https://www.quins.co.uk/team/academy-programme|publisher=Quins|title=Academy Squad|date=7 August 2026|accessdate=7 August 2026}}</ref>
+
+{{Rugby union squad start
+ | title = Harlequins 2026–27 Senior Academy squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|ENG|Josh Andrews|nolink=y}}
+{{RU squad player|ENG|Sam Bland}}
+{{RU squad player|ENG|Jamie Miller|nolink=y}}
+{{RU squad player|ENG|Jago Morgan|nolink=y}}
+{{RU squad player|ENG|Ollie Streeter|u=20}}
+'''Hooker'''
+{{RU squad player|ENG|Jerold Gorleku|u=20|nolink=y}}
+{{RU squad player|ENG|Ashton Graham|nolink=y}}
+{{RU squad player|ENG|Jimmy Staples|u=20|nolink=y}}
+||
+'''Second row'''
+{{RU squad player|ENG|Jack Beswick|nolink=y}}
+{{RU squad player|FIJ|Marley Chandra|u=20|nolink=y}}
+{{RU squad player|ENG|Henry Laidlow|nolink=y}}
+'''Back row'''
+{{RU squad player|ENG|Leo Dickinson|nolink=y}}
+{{RU squad player|ENG|Jack Kemp|nolink=y}}
+{{RU squad player|ENG|Kaiden Watson|nolink=y}}
+{{RU squad player|ENG|[[Elliot Williams (rugby union)|Elliot Williams]]|u=20|nolink=y}}
+{{RU squad player|ENG|Tate Williams|u=20|nolink=y}}
+'''Scrum-halves'''
+{{RU squad player|AUS|Alfie Bowman|nolink=y}}
+{{RU squad player|ENG|Lucas Friday|u=20}}
+{{RU squad player|ENG|Max Rawlinson|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|Sam Marshall|nolink=y}}
+||
+'''Centres'''
+{{RU squad player|ENG|Finlay Cunnison|u=20|nolink=y}}
+{{RU squad player|ENG|Jack Tyler|nolink=y}}
+'''Wings'''
+{{RU squad player|ENG|Theo Povey|nolink=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|Ben Perkins|nolink=y}}
+{{RU squad player|ENG|Sean Sharp|nolink=y}}
+{{Rugby union squad end
+ | ref = <ref name="AcademySquad"/>
+ | cap = n
+ | u   = 20
+}}

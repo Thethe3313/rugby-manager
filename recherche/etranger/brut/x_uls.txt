@@ -1,0 +1,277 @@
+# Ulster Rugby
+==Current squads==
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Ulster}}
+
+===Ulster Men coaches and management===
+
+{| class="wikitable"
+|-
+! Position
+! Name
+! Nationality
+|-
+| Chief executive officer
+| Hugh McCaughey
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| General manager
+| [[Rory Best]]
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Head coach
+| [[Richie Murphy]]
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Forwards coach
+| [[Clarke Dermody]]
+| {{flag|NZL|name=New Zealand}}
+|-
+| Backs coach
+| Mark Sexton
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Defence and contact skills coach
+| [[Willie Faloon]]
+| {{flag|Ireland|rugby union|name=Ireland}}
+|-
+| Development and transition coach
+| [[Dan Soper]]
+| {{flag|NZL|name=New Zealand}}
+|-
+| Coach development advisor
+| [[Joe Schmidt (rugby union)|Joe Schmidt]]
+| {{flag|NZL|name=New Zealand}}
+|-
+| Head of athletic performance
+| Matt Ireton
+| {{flag|ENG|name=England}}
+|-
+| Academy manager
+| Gavin Hogg
+| {{flag|IRE|rugby union|name=Ireland}}
+|-
+| Elite performance development officer
+| [[Niall Annett]]
+| {{flag|IRE|rugby union|name=Ireland}}
+|-
+| Elite performance development officer
+| Jonathon Graham
+| {{flag|IRE|rugby union|name=Ireland}}
+|}
+
+===Ulster Men squad===
+{{Rugby union squad start
+ | title = 2026–27 Ulster squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ARG|Eduardo Bello|cap=y}}
+{{RU squad player|ENG|Sam Crean|res=y}}
+{{RU squad player|RSA|Keynan Knox|res=y}}
+{{RU squad player|IRE|Eric O'Sullivan|cap=y}}
+{{RU squad player|IRE|Tom O'Toole|ru=y|cap=y}}
+{{RU squad player|IRE|Callum Reid|born=1999}}
+{{RU squad player|IRE|Scott Wilson|ru=y}}
+'''Hookers'''
+{{RU squad player|IRE|Rob Herring|ru=y|cap=y}}
+{{RU squad player|IRE|James McCormick|ru=y}}
+{{RU squad player|IRE|Tom Stewart|ru=y|cap=y}}
+{{RU squad player|ENG|Henry Walker|nolink=y|res=y}}
+'''Locks'''
+{{RU squad player|IRE|Iain Henderson|cap=y|captain=y}}
+{{RU squad player|IRE|Joe Hopes}}
+{{RU squad player|IRE|Charlie Irvine}}
+{{RU squad player|IRE|Cormac Izuchukwu|cap=y}}
+{{RU squad player|IRE|Harry Sheridan}}
+{{RU squad player|ZIM|Eli Snyman}}
+||
+'''Back row'''
+{{RU squad player|RSA|Juarno Augustus}}
+{{RU squad player|ENG|Ben Donnell|ru=y|res=y}}
+{{RU squad player|IRE|David McCann|ru=y}}
+{{RU squad player|IRE|James McNabney}}
+{{RU squad player|IRE|Martin Moloney}}
+{{RU squad player|IRE|Nick Timoney|cap=y}}
+{{RU squad player|IRE|Bryn Ward|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|IRE|Matthew Devine}}
+{{RU squad player|IRE|Nathan Doak|cap=y}}
+{{RU squad player|IRE|Conor McKee}}
+'''Fly-halves'''
+{{RU squad player|ENG|Jamie Benson|res=y}}
+{{RU squad player|IRE|Jake Flannery}}
+{{RU squad player|IRE|Jack Murphy|ru=y}}
+||
+'''Centres'''
+{{RU squad player|IRE|Ben Carson|ru=y}}
+{{RU squad player|IRE|Daniel Hawkshaw|nolink=y}}
+{{RU squad player|IRE|James Hume|ru=y|cap=y}}
+{{RU squad player|IRE|Stuart McCloskey|cap=y}}
+{{RU squad player|IRE|Stewart Moore}}
+{{RU squad player|IRE|Jude Postlethwaite}}
+'''Wings'''
+{{RU squad player|IRE|Aitzol Arenzana-King}}
+{{RU squad player|IRE|Robert Baloucoune|cap=y}}
+{{RU squad player|IRE|Chay Mullins}}
+{{RU squad player|IRE|Jacob Stockdale|cap=y}}
+{{RU squad player|IRE|Zac Ward}}
+'''Fullbacks'''
+{{RU squad player|IRE|Michael Lowry|ru=y|cap=y}}
+{{RU squad player|IRE|Ethan McIlroy}}
+{{Rugby union squad end
+ | res = Ireland
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026–27 season as listed on [[List of 2026–27 United Rugby Championship transfers]].
+ 
+}}
+
+===Ulster Men academy squad===
+{{Rugby union squad start
+ | title = 2026–27 Ulster Men Academy squad (19 members with Year stages)
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|IRE|Tyrese Abolarin|nolink=y}} (1)
+{{RU squad player|IRE|Jacob Boyd}} (4)
+{{RU squad player|IRE|Flynn Longstaff|nolink=y}} (2)
+{{RU squad player|IRE|Tom McAllister|ru=y}} (2)
+{{RU squad player|IRE|Blake McLean|nolink=y}} (1)
+'''Hookers'''
+{{RU squad player|IRE|Conor Magee|nolink=y}} (2)
+'''Locks'''
+{{RU squad player|IRE|Mahon Ronan|nolink=y}} (2)
+{{RU squad player|AUS|Paddy Woods|nolink=y|res=y}} (1)
+||
+'''Back row'''
+{{RU squad player|IRE|Tom Brigg}} (4)
+{{RU squad player|IRE|James McKillop|ru=y}} (3)
+'''Scrum-halves'''
+{{RU squad player|IRE|Clark Logan|nolink=y}} (3)
+{{RU squad player|IRE|Connor McVicker|nolink=y}} (1)
+'''Fly-halves'''
+{{RU squad player|IRE|Daniel Green|nolink=y}} (2)
+{{RU squad player|IRE|Charlie O'Connor|nolink=y}} (1)
+||
+'''Centres'''
+{{RU squad player|IRE|Tom Bell|nolink=y}} (1)
+{{RU squad player|RSA|Rynard Gordon|nolink=y|res=y}} (1)
+{{RU squad player|IRE|Jonny Scott}} (3)
+'''Wings'''
+{{RU squad player|ENG|Jed Findlay|nolink=y|res=y}} (1)
+{{RU squad player|IRE|Josh Gibson|nolink=y}} (2)
+{{Rugby union squad end
+ | res = Ireland
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026–27 season as listed on [[List of 2026–27 United Rugby Championship transfers]].
+ 
+}}
+
+===Ulster Women coaches and management===
+
+{| class="wikitable"
+|-
+! Position
+! Name
+! Nationality
+|-
+| Head coach
+| Murray Houston
+| {{flag|Scotland|name=Scotland}}
+|-
+| Lineout coach
+| [[Reuben Crothers]]
+| {{flag|Ireland |rugby union|name=Ireland}}
+|-
+| Scrum and defence coach
+| Griffin Phillipson
+| {{flag|Ireland |rugby union|name=Ireland}}
+|-
+| Backs coach
+| [[Grace Davitt]]
+| {{flag|Ireland |rugby union|name=Ireland}}
+|-
+| Skills coach
+| [[James Hume (rugby union)|James Hume]]
+| {{flag|Ireland |rugby union|name=Ireland}}
+|-
+| Athletic development coach
+| Kevin Gallagher
+| {{flag|Ireland |rugby union|name=Ireland}}
+|-
+| Team manager
+| Marianne Breen
+| {{flag|Ireland |rugby union|name=Ireland}}
+|-
+| Physio
+| Martin Dunlop
+| {{flag|Ireland |rugby union|name=Ireland}}
+|}
+
+===Ulster Women squad===
+{| class="wikitable" style="text-align:left; font-size:90%; width:70%"
+|-
+! colspan="100%" | Ulster Senior Women's Squad<ref name=WomenSquad>[https://ulster.rugby/news/ulster-squad-2026-vodafone-womens-interprovincial-campaign "Ulster Squad for 2026 Vodafone Women’s Interprovincial Campaign"], Ulster Rugby, 28 July 2026</ref> 35 Players
+|- valign="top"
+|
+'''Props'''
+{{RU squad player|IRE|Sophie Barrett|nolink=y}}
+{{RU squad player|IRE|Bronach Cassidy|nolink=y}}
+{{RU squad player|IRE|Ava Fannin|nolink=y}}
+{{RU squad player|IRE|Sadhbh McGrath|cap=y}}
+{{RU squad player|IRE|Sarah Roberts|nolink=y}}
+{{RU squad player|IRE|Grace Simati|nolink=y}}
+
+'''Hookers'''
+{{RU squad player|IRE|Maebh Clenaghan|nolink=y}}
+{{RU squad player|IRE|India Daley|nolink=y}} ([[Captain (sports)|c]])
+{{RU squad player|IRE|Emily Whittle|nolink=y}}
+
+'''Locks'''
+{{RU squad player|IRE|Rebecca Beacom|nolink=y}}
+{{RU squad player|IRE|Olivia McKinley|nolink=y}}
+{{RU squad player|IRE|Ellen Patterson|nolink=y}}
+{{RU squad player|IRE|Fiona Tuite|cap=y}}
+
+||
+'''Back row'''
+{{RU squad player|IRE|Claire Boles|cap=y}} ([[Captain (sports)|vc]])
+{{RU squad player|IRE|Jemima Johnson|nolink=y}}
+{{RU squad player|IRE|Katie Hetherington|nolink=y}}
+{{RU squad player|IRE|Christy Hill|nolink=y}}
+{{RU squad player|IRE|Moya Hill|nolink=y}}
+{{RU squad player|IRE|Cara McClean|nolink=y}}
+{{RU squad player|IRE|Stacey Sloan|nolink=y}}
+{{RU squad player|IRE|Ruby Starrett|nolink=y}}
+
+'''Scrum-halves'''
+{{RU squad player|IRE|Georgia Boyce|nolink=y}}
+{{RU squad player|IRE|Amy McConkey|nolink=y}}
+{{RU squad player|IRE|Rachael McIlroy|nolink=y}}
+{{RU squad player|IRE|Sophie Meeke|nolink=y}}
+
+'''Out-halves'''
+{{RU squad player|IRE|Ella Durkan|nolink=y}}
+{{RU squad player|IRE|Abby Moyles|nolink=y}} ([[Captain (sports)|vc]])
+
+||
+'''Centres'''
+{{RU squad player|IRE|Caitlin Crowe|nolink=y}}
+{{RU squad player|IRE|Leah Irwin|nolink=y}}
+{{RU squad player|IRE|Lucy Thompson|nolink=y}}
+
+'''Wings'''
+{{RU squad player|IRE|Ciara Fitzsimons|nolink=y}}
+{{RU squad player|IRE|Katie Gilmour|nolink=y}}
+{{RU squad player|IRE|Rebecca Mann|nolink=y}}
+
+'''Utility backs'''
+{{RU squad player|IRE|Niamh Marley|nolink=y}}
+{{RU squad player|IRE|Siobhan Sheerin|nolink=y}}
+
+|-
+| colspan="100%" style="text-align:center;" | ([[Captain (sports)|c]]) denotes the team captain, ([[Captain (sports)|vc]]) denotes the team vice-captain. '''Bold''' denotes internationally capped players.<br />
+|}

@@ -1,0 +1,191 @@
+# Stormers
+==Current squad==
+[[File:Stormers super 14.jpg|thumb|240px|right|The Stormers playing in 2006]]
+
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Stormers}}
+
+The Stormers squad for the [[2026–27 United Rugby Championship]] is.{{efn|group="Squad"|name=Departures|[[Hencus van Wyk]] was named in the original Stormers squad, but joined the {{Rut|Bulls}} on loan for the [[2026–27 European Rugby Champions Cup]] competition.<ref>{{cite web|url=https://www.epcrugby.com/champions-cup/clubs/vodacom-bulls/squad|title=Squad - Vodacom Bulls|work=European Rugby|access-date=12 October 2026}}</ref>}}
+
+{{Rugby union squad start
+ | title = 2026–27 Stormers squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|RSA|Neethling Fouché|cap=y}}
+{{RU squad player|SCO|Oli Kebble|cap=y}}
+{{RU squad player|RSA|Wilco Louw|cap=y}}
+{{RU squad player|RSA|Herman Lubbe}}
+{{RU squad player|ZIM|Vernon Matongo|res=y}}
+{{RU squad player|RSA|Ntuthuko Mchunu|cap=y}}
+{{RU squad player|RSA|Zachary Porthen|cap=y}}
+{{RU squad player|RSA|Olly Reid}}
+{{RU squad player|RSA|Sazi Sandi}}
+<!--{{RU squad player|RSA|Hencus van Wyk}}-->
+
+'''Hookers'''
+{{RU squad player|RSA|Luca Bakkes}}
+{{RU squad player|RSA|JJ Kotze}}
+{{RU squad player|RSA|Vernon Paulo}}
+{{RU squad player|RSA|Andre-Hugo Venter|cap=y}}
+{{RU squad player|RSA|Lukhanyo Vokozela}}
+
+'''Locks'''
+{{RU squad player|RSA|Connor Evans|ru=y}}
+{{RU squad player|RSA|Albert Liebenberg|ex=Signed on loan from the {{Rut|Griquas}} in October 2026.}}
+{{RU squad player|RSA|Riley Norton}}
+{{RU squad player|ZIM|Gary Porter|ru=y|cap=y}}
+{{RU squad player|RSA|JD Schickerling}}
+{{RU squad player|RSA|Adré Smith}}
+
+||
+
+'''Back row'''
+{{RU squad player|RSA|Ruan Ackermann}}
+{{RU squad player|RSA|Hacjivah Dayimani}}
+{{RU squad player|RSA|Paul de Villiers|cap=y}}
+{{RU squad player|RSA|Ben-Jason Dixon|cap=y}}
+{{RU squad player|RSA|Deon Fourie|cap=y}}
+{{RU squad player|RSA|Divan Fuller}}
+{{RU squad player|RSA|Siya Kolisi|cap=y}}
+{{RU squad player|RSA|Wandile Mlaba}}
+{{RU squad player|RSA|Keke Morabe}}
+{{RU squad player|RSA|Louw Nel}}
+{{RU squad player|RSA|Evan Roos|cap=y}}
+{{RU squad player|RSA|Marcel Theunissen}}
+
+'''Scrum-halves'''
+{{RU squad player|RSA|Jayden Brits}}
+{{RU squad player|RSA|Imad Khan}}
+{{RU squad player|RSA|Ezekiel Ngobeni}}
+{{RU squad player|RSA|Haashim Pead|ex=Signed from {{Rut|Lions}} in September 2026.}}
+{{RU squad player|RSA|Cobus Reinach|cap=y}}
+{{RU squad player|RSA|Stefan Ungerer}}
+{{RU squad player|RSA|André Warner|ex=Signed on loan from {{Rut|Seattle Seawolves}} in September 2026.}}
+
+'''Fly-halves'''
+{{RU squad player|RSA|Yaqeen Ahmed}}
+{{RU squad player|RSA|Jean-Luc du Plessis}}
+{{RU squad player|RSA|Sacha Feinberg-Mngomezulu|cap=y}}
+{{RU squad player|RSA|Jurie Matthee}}
+{{RU squad player|RSA|Kyle Smith|ru=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|RSA|Josh Boulle}}
+{{RU squad player|RSA|Markus Muller|ru=y}}
+{{RU squad player|RSA|Ruhan Nel|captain=y}}
+{{RU squad player|RSA|Jonathan Roche}}
+{{RU squad player|RSA|Wandisile Simelane}}
+
+'''Wings'''
+{{RU squad player|RSA|Gino Cupido}}
+{{RU squad player|RSA|Lleyton Davids|ex=Signed in October 2026.}}
+{{RU squad player|RSA|Cheslin Kolbe|cap=y}}
+{{RU squad player|RSA|Joel Leotlela}}
+{{RU squad player|RSA|JC Mars}}
+{{RU squad player|RSA|Mfundo Ndhlovu}}
+{{RU squad player|RSA|Seabelo Senatla}}
+{{RU squad player|RSA|Leolin Zas}}
+
+'''Fullbacks'''
+{{RU squad player|RSA|Warrick Gelant|cap=y}}
+{{RU squad player|RSA|Damian Willemse|cap=y}}
+{{Rugby union squad end
+ | res = South Africa
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref>{{cite news|url=https://stormers.co.za/dhl-stormers-squad-locked-and-loaded-for-26-27-season/|title=DHL Stormers squad locked and loaded for 26/27 season|work=Stormers|date=17 September 2026|access-date=17 September 2026}}</ref><ref>{{cite news|url=https://lionsrugby.co.za/news/lions-rugby-company-confirms-pead-exit|title=Lions Rugby Company confirms Pead exit|work=Lions|date=21 September 2026|access-date=21 September 2026}}</ref><ref>{{cite news|url=https://stormers.co.za/warner-joins-dhl-stormers-on-loan-from-seawolves/|title=Warner joins DHL Stormers on loan from Seawolves|work=Stormers|date=22 September 2026|access-date=22 September 2026}}</ref><ref>{{cite news|url=https://stormers.co.za/robertson-express-signs-with-dhl-stormers/|title=‘Robertson Express’ signs with DHL Stormers|work=Stormers|date=1 October 2026|access-date=1 October 2026}}</ref><ref>{{cite instagram|post-id=DeKO3G6jP5p|user=griquas_rugby|title=Albert Liebenberg is heading to Cape Town, joining the DHL Stormers on loan.|date=6 October 2026|access-date=6 October 2026}}</ref>
+{{notelist|group="Squad"}}
+}}
+
+The following players have been included so far in the Stormers XXIII squad for the [[2026 Currie Cup Premier Division]]:
+
+{{Rugby union squad start
+ | title = 2026 Stormers XXIII Currie Cup squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|SCO|Oli Kebble|cap=y}}
+{{RU squad player|RSA|Mhleli Khuzwayo}}
+{{RU squad player|RSA|Danie Kruger}}
+{{RU squad player|RSA|Herman Lubbe}}
+{{RU squad player|RSA|Olly Reid}}
+{{RU squad player|RSA|Hencus van Wyk}}
+
+'''Hookers'''
+{{RU squad player|RSA|Luca Bakkes}}
+{{RU squad player|RSA|Scarra Ntubeni|cap=y}}
+{{RU squad player|RSA|Vernon Paulo}}
+{{RU squad player|RSA|Altus Rabe|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Lukhanyo Vokozela}}
+
+'''Locks'''
+{{RU squad player|RSA|Thomas Barnard|ru=y}}
+{{RU squad player|RSA|Dylan de Leeuw|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Gerbrandt Grobler|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Enos Ndiao|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Riley Norton}}
+{{RU squad player|ZIM|Gary Porter|ru=y|cap=y}}
+
+||
+
+'''Back row'''
+{{RU squad player|RSA|Ruan Ackermann}}
+{{RU squad player|RSA|Eric Basson|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Luan Botha|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Aden da Costa}}
+{{RU squad player|RSA|Divan Fuller}}
+{{RU squad player|RSA|Gert Kemp|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Reuben Kruger}}
+{{RU squad player|RSA|Wandile Mlaba}}
+{{RU squad player|RSA|Keke Morabe}}
+{{RU squad player|RSA|Louw Nel}}
+{{RU squad player|RSA|Xola Nyali}}
+{{RU squad player|RSA|Alutha Wesi}}
+
+'''Scrum-halves'''
+{{RU squad player|RSA|Jayden Brits}}
+{{RU squad player|RSA|Tiaan Fourie|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Ezekiel Ngobeni}}
+{{RU squad player|RSA|Stefan Ungerer}}
+
+'''Fly-halves'''
+{{RU squad player|RSA|Yaqeen Ahmed}}
+{{RU squad player|RSA|Kian Davis|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Jean-Luc du Plessis|captain=y}}
+{{RU squad player|RSA|Kyle Smith|ru=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|RSA|Samuel Badenhorst}}
+{{RU squad player|RSA|Josh Boulle}}
+{{RU squad player|RSA|Gino Cupido}}
+{{RU squad player|RSA|Dominic Malgas}}
+{{RU squad player|RSA|Markus Muller|ru=y}}
+{{RU squad player|RSA|Bruce Sherwood}}
+{{RU squad player|RSA|Cornel Smit|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+
+'''Wings'''
+{{RU squad player|RSA|Jack Benade}}
+{{RU squad player|RSA|Jameel de Jongh}}
+{{RU squad player|RSA|Suleiman Hartzenberg}}
+{{RU squad player|RSA|Joel Leotlela}}
+{{RU squad player|RSA|JC Mars}}
+{{RU squad player|RSA|Mfundo Ndhlovu}}
+
+'''Fullbacks'''
+{{RU squad player|RSA|Luke Burger}}
+{{RU squad player|RSA|Dylan Miller}}
+{{Rugby union squad end
+ | res = South Africa
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref>{{cite web | url=https://stormers.co.za/team/?team=stormers-xxiii | title=The Team - DHL Stormers XXIII | work=Stormers | access-date=14 July 2026}}</ref>
+{{notelist-ua|group="Squad"}}
+}}

@@ -1,0 +1,107 @@
+# Sale Sharks
+==Current squad==
+{{For|player movements before or during the [[2026–27 Premiership Rugby|2026–27 season]]|List of 2026–27 Premiership Rugby transfers#Sale Sharks}}
+
+The Sale Sharks squad for the [[2026–27 Premiership Rugby|2026–27 season]] is:<ref name="Squad">{{Cite news|url=https://www.salesharks.com/squads/mens/|publisher=Sale Sharks|title=Mens Squad|date=24 November 2024|access-date=24 November 2024}}</ref><ref>{{Cite news |url=https://all.rugby/club/sale/squad |publisher=All Rugby |title=Sale squad for season 2024/2025|date=24 November 2024|access-date=24 November 2024}}</ref>
+
+{{Rugby union squad start
+ | title = Sale Sharks 2026–27 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|IRE|Patreece Bell}}
+{{RU squad player|RSA|Cebo Dlamini}}
+{{RU squad player|WAL|Tomas Francis|cap=y}}
+{{RU squad player|ENG|Simon McIntyre}}
+{{RU squad player|ENG|Asher Opoku-Fordjour|cap=y|ex=[[Asher Opoku-Fordjour]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Bevan Rodd|cap=y}}
+{{RU squad player|WAL|Nicky Smith|ru=y|cap=y}}
+'''Hookers'''
+{{RU squad player|ENG|Ethan Caine}}
+{{RU squad player|ENG|Luke Cowan-Dickie|cap=y|ex=[[Luke Cowan-Dickie]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Nathan Jibulu}}
+'''Locks'''
+{{RU squad player|ENG|Ben Bamber}}
+{{RU squad player|RSA|Ernst van Rhyn}}
+{{RU squad player|RSA|JJ Scheepers}}
+{{RU squad player|WAL|Christ Tshiunza|cap=y}}
+||
+'''Back row'''
+{{RU squad player|FIJ|Elia Canakaivata|cap=y}}
+{{RU squad player|ENG|Ben Curry|cap=y}}
+{{RU squad player|ENG|Tom Curry|ru=y|cap=y|ex=[[Tom Curry (rugby union)|Tom Curry]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Sam Dugdale}}
+{{RU squad player|ENG|Courtney Lawes|cap=y}}
+{{RU squad player|RSA|Jacques Vermeulen}}
+{{RU squad player|ENG|Tristan Woodman}}
+'''Scrum-halves'''
+{{RU squad player|NZL|Xavier Roe}}
+{{RU squad player|SCO|Gus Warr|cap=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|George Ford|ru=y|cap=y|ex=[[George Ford (rugby union)|George Ford]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+||
+'''Centres'''
+{{RU squad player|RSA|Marius Louw|captain=y}}
+{{RU squad player|ENG|Alex Lozowski|cap=y}}
+{{RU squad player|ENG|Rekeiti Ma'asi-White}}
+{{RU squad player|ENG|Joe Marchant|ru=y|cap=y}}
+'''Wings'''
+{{RU squad player|FIJ|Ponepati Loganimasi|cap=y}}
+{{RU squad player|ENG|Tom O'Flaherty|ru=y}}
+{{RU squad player|ENG|David Opoku-Fordjour}}
+{{RU squad player|ENG|Tom Roebuck|cap=y}}
+{{RU squad player|ENG|Alex Wills}}
+'''Fullbacks'''
+{{RU squad player|ENG|Joe Carpenter|ru=y}}
+{{RU squad player|ENG|Luke James|ru=y}}
+{{RU squad player|SCO|Arron Reed|cap=y}}
+{{Rugby union squad end
+ | group = upper-alpha
+ | ex =
+ | ref = <ref name="Squad"/>
+ | cap  = y
+ | captain = y
+ | st  = n
+}}
+
+===Academy squad===
+{{Rugby union squad start
+ | title = Sale Sharks 2026–27 Senior Academy squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|ENG|Ralph McEachran|u=20}}
+{{RU squad player|ENG|Lawrence Ogbonnaya|nolink=y}}
+{{RU squad player|ENG|Oliver Spencer|u=20|nolink=y}}
+{{RU squad player|ENG|Tye Raymont|u=20}}
+'''Hookers'''
+{{RU squad player|ENG|Alfie Longstaff|u=20|nolink=y}}
+'''Locks'''
+{{RU squad player|ENG|Tom Burrow|u=20}}
+{{RU squad player|ENG|Dylan Hodkinson|nolink=y}}
+{{RU squad player|ENG|Patrick Hogg|u=20|nolink=y}}
+||
+'''Back row'''
+{{RU squad player|ENG|Charlie Bray|nolink=y}}
+{{RU squad player|ENG|Jos Gilmore|nolink=y}}
+{{RU squad player|ENG|Jordan Ikeh|nolink=y}}
+{{RU squad player|ENG|Seb Kelly|u=20|nolink=y}}
+{{RU squad player|SCO|Reuben Logan|u=20}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Will Bayston|nolink=y}}
+{{RU squad player|ENG|Dom Hanson|u=20|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|Ollie Davies|u=20|nolink=y}}
+||
+'''Centres'''
+{{RU squad player|WAL|Osian Roberts|u=20|nolink=y}}
+{{RU squad player|ENG|Toby Wilson|nolink=y}}
+'''Wingers'''
+{{RU squad player|ENG|Sebi Krippner|nolink=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|Austin Keogh|nolink=y}}
+{{Rugby union squad end
+ | ref = 
+ | cap = y
+ | u   = 20
+}}

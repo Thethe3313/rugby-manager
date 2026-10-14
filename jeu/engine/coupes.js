@@ -34,16 +34,32 @@ const NAMES={
 };
 const nameLang=c=>c==='RSA'?'za':c==='ITA'?'it':c==='GEO'?'ge':'en';
 const extName=cty=>{const L=NAMES[nameLang(cty)];return R.pick(L[0])+' '+R.pick(L[1])};
+// Joueur généré pour un club étranger (nom et nationalité du pays)
+function extPlayer(c,g,level,age){const p=genPlayer(g,level,age);p.name=extName(c.cty);p.nat=CTY[c.cty];p.sal=salaryFor(ovr(p),p.age,c.lg);return p}
+// Club étranger : vrais effectifs 2026-27 (REALX, URC et Premiership), sinon effectif généré (clubs invités)
 function mkExtClub(x){
-  const [id,name,short,str,lg,cty]=x;
-  const c={id,name,short,str,lg,cty,ext:true,bud:30000,sponsor:0,squad:genSquad(str+3,'t14'),tac:{style:'equilibre',int:'normale'},focus:'equilibre',budget:0,lineup:[],mp:0};
-  for(const p of c.squad){p.name=extName(cty);p.nat=CTY[cty]}
+  const [id,name,short,str,lg,cty]=x,rows=typeof REALX!=='undefined'&&REALX[id];
+  const c={id,name,short,str,lg,cty,ext:true,bud:30000,sponsor:0,squad:[],tac:{style:'equilibre',int:'normale'},focus:'equilibre',budget:0,lineup:[],mp:0,real:!!rows};
+  if(rows){
+    c.squad=rows.map(r=>{const p=realPlayer(r,lg);p.ctr=R.i(1,4);return p});
+    const cap=rows.find(r=>r[13]);if(cap)c.captain=c.squad[rows.indexOf(cap)].id;
+    fillExt(c);
+  }else{c.squad=genSquad(str+3,'t14');for(const p of c.squad){p.name=extName(cty);p.nat=CTY[cty]}}
   initStaff(c);c.lineup=autoLineup(c);
   return c;
 }
+// Complète un effectif étranger (retraites, départs) avec des jeunes du pays
+function fillExt(c){
+  for(const g in COMP){let n=c.squad.filter(p=>p.g===g).length;while(n<COMP[g]){const p=extPlayer(c,g,c.str-13+R.n(0,3),R.i(19,22));p.pot=clamp(Math.round(ovr(p)+R.i(6,20)),55,90);p.ctr=3;c.squad.push(p);n++}}
+}
 function initExt(){G.ext=EXT0.map(mkExtClub)}
-// Nouvelle saison : les effectifs simplifiés sont renouvelés
-function renewExt(){for(const c of G.ext||[]){const n=mkExtClub([c.id,c.name,c.short,c.str,c.lg,c.cty]);c.squad=n.squad;c.lineup=n.lineup;c.mp=0}}
+// Nouvelle saison : les vrais effectifs vieillissent et se complètent ; les clubs invités sont régénérés
+function renewExt(){
+  for(const c of G.ext||[]){
+    if(c.real){fillExt(c);c.lineup=autoLineup(c);continue}
+    const n=mkExtClub([c.id,c.name,c.short,c.str,c.lg,c.cty]);c.squad=n.squad;c.lineup=n.lineup;c.mp=0;
+  }
+}
 const lgName=c=>LEAGUES[c.lg]?LEAGUES[c.lg].name:EXTLG[c.lg]||'Nationale';
 
 // ---- Calendrier : les samedis libres du Top 14 ----
@@ -74,7 +90,7 @@ function mkPools(groups){return groups.map(t=>{const table={};t.forEach(id=>tabl
 function drawCups(fr8,fr6){
   const byStr=ids=>[...ids].sort((a,b)=>C(b).str-C(a).str);
   const tiers=(ids,n)=>{const s=byStr(ids),h=s.length/2;const top=shuffle(s.slice(0,h)),bot=shuffle(s.slice(h));return Array.from({length:n},(_,i)=>[top[i],bot[i]])};
-  const ext=lg=>byStr((G.ext||[]).filter(c=>c.lg===lg).map(c=>c.id));
+  const ext=lg=>{const ids=(G.ext||[]).filter(c=>c.lg===lg).map(c=>c.id),last=(G.lastXL||{})[lg];return last?[...ids].sort((a,b)=>(last.indexOf(a)+99)%99-(last.indexOf(b)+99)%99):byStr(ids)};
   const urc=ext('urc'),prem=ext('prem'),inv=ext('inv');
   const F=tiers(fr8,4),E=tiers(prem.slice(0,8),4),U=tiers(urc.slice(0,8),4);
   const cc=F.map((f,i)=>[...f,...E[i],...U[i]]);

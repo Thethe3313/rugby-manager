@@ -1,0 +1,117 @@
+# Gloucester Rugby
+==Current squad==
+{{for|player movements before or during the [[2026–27 Premiership Rugby|2026–27 season]]|List of 2026–27 Premiership Rugby transfers#Gloucester}}
+
+The Gloucester Rugby squad for the upcoming [[2026–27 Premiership Rugby|2026–27 season]] is:<ref name="Gloucester Squad">{{Cite news |url=https://www.gloucesterrugby.co.uk/teams/mensquad-list/|publisher=Gloucester Rugby|title=Mens Squad List |date=4 August 2026|access-date=4 August 2026}}</ref>
+
+{{Rugby union squad start
+ | title = Gloucester Rugby 2026–27 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|RSA|Dian Bleuler}}
+{{RU squad player|ENG|Afolabi Fasogbon}}
+{{RU squad player|SAM|Marco Fepulea'i|cap=y}}
+{{RU squad player|ENG|Jamal Ford-Robinson}}
+{{RU squad player|ENG|Ciaran Knight}}
+{{RU squad player|GEO|Val Rapava-Ruskin}}
+{{RU squad player|ENG|Eliot Salt|ru=y}}
+'''Hookers'''
+{{RU squad player|ENG|Seb Blake}}
+{{RU squad player|ENG|Jack Innard}}
+{{RU squad player|WAL|Dewi Lake|cap=y|captain=y}}
+'''Locks'''
+{{RU squad player|ENG|Arthur Clark|ru=y|cap=y}}
+{{RU squad player|ENG|Danny Eite}}
+{{RU squad player|IRE|Joe Joyce|ru=y}}
+{{RU squad player|RSA|Jean Kleyn|cap=y}}
+{{RU squad player|WAL|Freddie Thomas|ru=y|cap=y}}
+||
+'''Back row'''
+{{RU squad player|ENG|Jack Clement|ru=y}}
+{{RU squad player|ENG|Lewis Ludlow|cap=y}}
+{{RU squad player|SCO|Jack Mann|ru=y}}
+{{RU squad player|WAL|Jac Morgan|cap=y|vc=y}}
+{{RU squad player|ENG|Harry Taylor|ru=y}}
+{{RU squad player|ENG|Will Trenholm}}
+{{RU squad player|RSA|James Venter}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Mike Austin|ru=y}}
+{{RU squad player|ENG|Caolan Englefield}}
+{{RU squad player|ENG|Dan Robson|cap=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|Charlie Atkinson|ru=y|cap=y}}
+{{RU squad player|IRE|Ross Byrne|cap=y}}
+||
+'''Centres'''
+{{RU squad player|ENG|Seb Atkinson|cap=y|vc=y|ex=Seb Atkinson is jointly contracted with the RFU, with an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{cite web |last1=Jones |first1=Chris |title=England hand first central contracts to five players as Steve Borthwick shakes up squad |url=https://www.bbc.co.uk/sport/rugby-union/articles/cwy427n1dnvo |website=BBC Sport |access-date=12 August 2026 |date=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Phil Cokanasiga}}
+{{RU squad player|ENG|Will Joseph|cap=y|born=2002}}
+{{RU squad player|WAL|Max Llewellyn|ru=y|cap=y}}
+'''Wings'''
+{{RU squad player|ENG|Josiah Edwards-Giraud}}
+{{RU squad player|WAL|Josh Hathaway|cap=y}}
+{{RU squad player|ENG|Ben Loader}}
+{{RU squad player|ENG|Ollie Thorley|cap=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|George Barton|born=2000}}
+{{RU squad player|ENG|Ben Redshaw}}
+{{Rugby union squad end
+ | ref = <ref name="Gloucester Squad"/>
+ | st  = y
+ | cap = y
+ | captain = y
+ | vc = y
+ | group   = upper-alpha
+ | ex      = Notes
+ | res = England
+}}
+
+===Academy squad===
+{{Rugby union squad start
+ | title = Gloucester Rugby 2026-27 academy squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|ENG|George Alexander|nolink=y}}
+{{RU squad player|ENG|Harrison Bellamy|nolink=y}}
+'''Hookers'''
+{{RU squad player|ENG|Keelan Freeman-Price|nolink=y}}
+{{RU squad player|ENG|George Knowles|nolink=y}}
+{{RU squad player|ENG|Teddy Smith-Milne|nolink=y}}
+'''Locks'''
+{{RU squad player|ENG|Freddie Ogden-Metherell|nolink=y}}
+{{RU squad player|WAL|Oscar Rees|nolink=y}}
+'''Back row'''
+{{RU squad player|ENG|Olly Allport|nolink=y}}
+{{RU squad player|ENG|Jonno Balding|nolink=y}}
+{{RU squad player|ENG|Oscar Churchouse|nolink=y}}
+{{RU squad player|WAL|Jack Gilbert|nolink=y}}
+{{RU squad player|WAL|Deian Gwynne|u=20}}
+{{RU squad player|ENG|Henry Horsfall|nolink=y}}
+{{RU squad player|WAL|Caio James|u=20}}
+{{RU squad player|ENG|Jayden Wrottesley|nolink=y}}
+||
+'''Scrum-halves'''
+{{RU squad player|NZL|Halen King|st=y|nolink=y|ex=Short-term deal until the end of November 2026, option to make permanent<ref name="McCabe & King"/>}}
+{{RU squad player|WAL|Lucas Woodyatt|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|Oli Hewitt|nolink=y}}
+{{RU squad player|ENG|Zac Jones|nolink=y}}
+{{RU squad player|NZL|Callum McCabe|st=y|nolink=y|ex=Short-term deal until the end of November 2026, option to make permanent<ref name="McCabe & King">{{cite web |last1=Clark |first1=Daniel |title=Gloucester Rugby confirm signings of young New Zealand duo |url=https://www.gloucestershirelive.co.uk/sport/rugby/rugby-news/gloucester-rugby-confirm-signings-young-11103459 |website=Gloucestershire Live |access-date=12 August 2026 |date=11 August 2026}}</ref>}}
+'''Centres'''
+{{RU squad player|ENG|Max Knight|ry=y}}
+{{RU squad player|ENG|Will Knight|ru=y|u=20}}
+'''Wings'''
+{{RU squad player|ENG|Ewan Caven|nolink=y}}
+{{RU squad player|ENG|Jack Cotgreave|nolink=y}}
+{{RU squad player|ENG|Junior Denny|nolink=y}}
+{{RU squad player|ENG|Kai Wilkinson|nolink=y}}
+{{RU squad player|ENG|Krystoff Wood|nolink=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|Tomoas Evans|nolink=y}}
+{{RU squad player|ENG|Will Hodgson|nolink=y}}
+{{Rugby union squad end
+ | ref = <ref name="Academy Squad List">{{cite web |title=Academy Squad List |url=https://www.gloucesterrugby.co.uk/teams/academy/squad-list |website=Gloucester Rugby |access-date=4 August 2026}}</ref>
+ | u   = 20
+}}

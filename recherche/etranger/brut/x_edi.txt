@@ -1,0 +1,123 @@
+# Edinburgh Rugby
+==Current squad==
+{{For|player movements before or during the [[2026-27 United Rugby Championship|2026-27 season]]|List of 2026–27 United Rugby Championship transfers#Edinburgh}}
+
+{{Rugby union squad start
+ | title = 2026-27 Edinburgh squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|SCO|Ollie Blyth-Lafferty}}
+{{RU squad player|SCO|Alec Hepburn|cap=y}}
+{{RU squad player|ENG|Paul Hill|ru=y|cap=y}}
+{{RU squad player|ENG|Rhys Litterick|res=y}}
+{{RU squad player|SCO|D'Arcy Rae|cap=y}}
+{{RU squad player|SCO|Pierre Schoeman|cap=y}}
+{{RU squad player|ENG|James Whitcombe|res=y}}
+'''Hookers'''
+{{RU squad player|SCO|Ewan Ashman|cap=y}}
+{{RU squad player|SCO|Jerry Blyth-Lafferty}}
+{{RU squad player|SCO|Patrick Harrison|cap=y}}
+{{RU squad player|SCO|Harri Morris|cap=y}}
+{{RU squad player|SCO|Dylan Richardson|cap=y}}
+'''Locks'''
+{{RU squad player|SCO|Rob Carmichael}}
+{{RU squad player|SCO|Grant Gilchrist|cap=y}}
+{{RU squad player|SCO|Callum Hunter-Hill}}
+{{RU squad player|SCO|Euan McVie}}
+{{RU squad player|SCO|Marshall Sykes|cap=y}}
+{{RU squad player|SCO|Glen Young|ru=y|cap=y}}
+||
+'''Back row'''
+{{RU squad player|SCO|Magnus Bradbury|cap=y|captain=y}}
+{{RU squad player|SCO|Connor Boyle}}
+{{RU squad player|SCO|Luke Crosbie|cap=y}}
+{{RU squad player|SCO|Tom Currie|ru=y}}
+{{RU squad player|SCO|Tom Dodd|ru=y}}
+{{RU squad player|SCO|Freddy Douglas|cap=y}}
+{{RU squad player|SCO|Ollie Duncan}}
+{{RU squad player|SCO|Liam McConnell|cap=y}}
+{{RU squad player|SCO|Ben Muncaster|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|NZL|Louie Chapman|res=y}}
+{{RU squad player|SCO|Conor McAlpine}}
+{{RU squad player|SCO|Hector Patterson}}
+{{RU squad player|SCO|Ben Vellacott|cap=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|James Grayson|ru=y}}
+{{RU squad player|SCO|Cammy Scott|ru=y}}
+{{RU squad player|SCO|Ross Thompson|born=1999|cap=y}}
+||
+'''Centres'''
+{{RU squad player|SCO|Matt Currie|cap=y}}
+{{RU squad player|SCO|Geordie Gwynn}}
+{{RU squad player|NZL|Kienan Higgins|res=y}}
+{{RU squad player|NZL|Riley Higgins|res=y}}
+{{RU squad player|ENG|Charlie McCaig|res=y}}
+{{RU squad player|ENG|Piers O'Conor}}
+{{RU squad player|SCO|Mosese Tuipulotu}}
+
+'''Wings'''
+{{RU squad player|NZL|Wes Goosen}}
+{{RU squad player|SCO|Darcy Graham|cap=y}}
+{{RU squad player|SCO|Malelili Satala}}
+{{RU squad player|SCO|Duhan van der Merwe|cap=y}}
+'''Fullbacks'''
+{{RU squad player|SCO|Jack Brown|ru=y}}
+{{RU squad player|SCO|Harry Paterson|cap=y}}
+{{Rugby union squad end
+ | res = Scotland
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026-27 season as listed on [[List of 2026-27 United Rugby Championship transfers]].
+ | ref = <ref name="Edinburgh Rugby: Team">{{cite web | url=http://www.edinburghrugby.org/edinburgh-rugby-team | title=Edinburgh Rugby: Team | work=Edinburgh Rugby | access-date=11 July 2018 | archive-date=17 September 2015 | archive-url=https://web.archive.org/web/20150917065501/http://www.edinburghrugby.org/edinburgh-rugby-team | url-status=dead }}</ref>
+}}
+
+===Academy players===
+
+{{Rugby union squad start
+ | title = 2026-27 Edinburgh academy squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|SCO|Oliver Anderson|nolink=y}}
+{{RU squad player|SCO|Jamie Stewart|nolink=y}}
+{{RU squad player|SCO|Ben White|nolink=y}}
+'''Hookers'''
+{{RU squad player|SCO|Jack Utterson|nolink=y}}
+'''Locks'''
+{{RU squad player|SCO|Sam Byrd|nolink=y}}
+{{RU squad player|SCO|Christian Lindsay|nolink=y}}
+{{RU squad player|SCO|Toby Overson|nolink=y}}
+||
+'''Back row'''
+{{RU squad player|SCO|Archie Appleby|nolink=y}}
+{{RU squad player|SCO|Harry Jackaman|nolink=y}}
+'''Scrum-halves'''
+{{RU squad player|SCO|Matthew Fick|nolink=y}}
+{{RU squad player|SCO|Hamish MacArthur|nolink=y}}
+{{RU squad player|SCO|Adam Mckenzie|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|SCO|Henry Widdowson|nolink=y}}
+{{RU squad player|SCO|Ross Wolfenden|nolink=y}}
+||
+'''Centres'''
+{{RU squad player|SCO|Henry Kesterton|nolink=y}}
+{{RU squad player|SCO|Ben McDonald|nolink=y}}
+{{RU squad player|SCO|Harry Soboil|nolink=y}}
+{{RU squad player|SCO|Findlay Thomson}}
+'''Wings'''
+{{RU squad player|SCO|Finlay Doyle|nolink=y}}
+{{RU squad player|SCO|Dan Kelly|nolink=y}}
+{{RU squad player|SCO|Rory McHaffie|nolink=y}}
+{{RU squad player|SCO|Nairn Moncrieff|nolink=y}}
+'''Fullbacks'''
+{{Rugby union squad end
+ | res = Scotland
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026-27 season as listed on [[List of 2026-27 United Rugby Championship transfers]].
+ | ref = <ref>{{cite web|url=http://www.scottishrugby.org/get-involved/develop/academies|title=BT Sport Scottish Rugby Academies|publisher=Scotland Rugby|access-date=26 May 2019|archive-date=8 July 2016|archive-url=https://web.archive.org/web/20160708074739/http://www.scottishrugby.org/get-involved/develop/academies|url-status=dead}}</ref><ref>{{cite news|url=https://edinburghrugby.org/news-and-features/2023-24-pro-academy-intake-confirmed/|title=2023/24 Pro-Academy intake confirmed|work=Edinburgh Rugby|date=27 June 2023|access-date=15 August 2023}}</ref>
+}}

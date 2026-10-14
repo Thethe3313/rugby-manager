@@ -1,0 +1,73 @@
+# Bath Rugby
+=== Senior squad ===
+{{Rugby union squad start
+ | title = Bath Rugby 2026–27 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|SCO|Jamie Bhatti|cap=y}}
+{{RU squad player|WAL|Ioan Emanuel}}
+{{RU squad player|WAL|Archie Griffin|ru=y|cap=y}}
+{{RU squad player|ENG|Scott Kirk}}
+{{RU squad player|ENG|Beno Obano|cap=y}}
+{{RU squad player|ENG|Billy Sela}}
+{{RU squad player|ENG|Will Stuart|cap=y|ex=[[Will Stuart]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Kieran Verden}}
+'''Hookers'''
+{{RU squad player|ENG|Tom Dunn|ru=y|cap=y}}
+{{RU squad player|ENG|Dan Frost|ru=y}}
+{{RU squad player|ENG|Max Pearce}}
+{{RU squad player|ENG|Jasper Spandler}}
+{{RU squad player|ENG|Kepu Tuipulotu}}
+'''Locks'''
+{{RU squad player|ENG|Jack Bennett}}
+{{RU squad player|ENG|Charlie Ewels|cap=y}}
+{{RU squad player|IRE|Ross Molony}}
+{{RU squad player|ITA|Enoch Opoku-Gyamfi|cap=y}}
+{{RU squad player|ENG|Ewan Richards}}
+{{RU squad player|IRE|Quinn Roux|cap=y}}
+||
+'''Back row'''
+{{RU squad player|SCO|Josh Bayliss|cap=y}}
+{{RU squad player|RSA|Jaco Coetzee|ru=y|born=1996}}
+{{RU squad player|WAL|Thompson Cowan}}
+{{RU squad player|RSA|Dan du Preez|cap=y}}
+{{RU squad player|ENG|Arthur Green|ru=y}}
+{{RU squad player|ENG|Ted Hill|ru=y|cap=y}}
+{{RU squad player|ENG|Guy Pepper|cap=y|ex=[[Guy Pepper]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Miles Reid|ru=y}}
+{{RU squad player|ENG|George Timmins|ru=y}} 
+{{RU squad player|ENG|Sam Underhill|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Tom Carr-Smith}}
+{{RU squad player|WAL|Ieuan Davies}}
+{{RU squad player|RSA|Bernard van der Linde}}
+{{RU squad player|ENG|Ben Spencer|ru=y|cap=y|captain=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|Ciaran Donoghue}}
+{{RU squad player|ENG|Will Roue}}
+{{RU squad player|SCO|Finn Russell|cap=y}}
+||
+'''Centres'''
+{{RU squad player|WAL|Louie Hennessey|cap=y}}
+{{RU squad player|ENG|Ollie Lawrence|cap=y}}
+{{RU squad player|ENG|Max Ojomoh|cap=y}}
+{{RU squad player|SCO|Cameron Redpath|cap=y}}
+'''Wings'''
+{{RU squad player|ENG|Henry Arundell|cap=y}}
+{{RU squad player|ENG|Joe Cokanasiga|cap=y}}
+{{RU squad player|ENG|Charlie Griffin|ru=y}}
+{{RU squad player|ENG|Will Muir|cap=y}}
+{{RU squad player|ENG|Tyler Offiah}}
+'''Fullbacks'''
+{{RU squad player|ARG|Santiago Carreras|cap=y}}
+{{RU squad player|ENG|Austin Emens}}
+{{RU squad player|ENG|Tom de Glanville}}
+{{RU squad player|WAL|Jack Woods|ru=y}}
+{{Rugby union squad end
+ | ref = <ref name="Bath Rugby Squad"/>
+ | cap  = y
+ | captain = y
+ | group   = upper-alpha
+ | ex      = Notes:
+}}

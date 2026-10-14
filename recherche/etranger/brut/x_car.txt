@@ -1,0 +1,117 @@
+# Cardiff Rugby
+==Current squad==
+{{For|player movements before or during the [[2026-27 United Rugby Championship|2026-27 season]]|List of 2025–26 United Rugby Championship transfers#Cardiff}}
+
+{{Rugby union squad start
+ | title = 2026-27 Cardiff squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|WAL|Keiron Assiratti|cap=y}}
+{{RU squad player|WAL|Rhys Barratt}}
+{{RU squad player|WAL|Joe Cowell}}
+{{RU squad player|SCO|Javan Sebastian|cap=y}}
+{{RU squad player|SAM|Scott Sio|cap=y}}
+{{RU squad player|WAL|Danny Southworth|cap=y}}
+{{RU squad player|WAL|Sam Wainwright|cap=y}}
+'''Hookers'''
+{{RU squad player|WAL|Liam Belcher|cap=y|captain=y}}
+{{RU squad player|WAL|Dafydd Hughes}}
+{{RU squad player|WAL|Evan Lloyd|born=2001|cap=y}}
+'''Locks'''
+{{RU squad player|ENG|Josh McNally|cap=y}}
+{{RU squad player|WAL|George Nott}}
+{{RU squad player|WAL|Rory Thornton|cap=y}}
+{{RU squad player|WAL|Teddy Williams|ru=y|cap=y}}
+||
+'''Back row'''
+{{RU squad player|WAL|Taine Basham|cap=y}}
+{{RU squad player|WAL|James Botham|cap=y}}
+{{RU squad player|WAL|Lucas de la Rua}}
+{{RU squad player|WAL|Taulupe Faletau|cap=y}}
+{{RU squad player|WAL|Alun Lawrence}}
+{{RU squad player|WAL|Alex Mann|ru=y|cap=y}}
+{{RU squad player|TGA|Semisi Paea|cap=y}}
+{{RU squad player|WAL|Dan Thomas|ru=y}}
+'''Scrum-halves'''
+{{RU squad player|WAL|Ellis Bevan|cap=y}}
+{{RU squad player|WAL|Aled Davies|ru=y|cap=y}}
+{{RU squad player|RSA|Johan Mulder}}
+'''Fly-halves'''
+{{RU squad player|WAL|Ioan Lloyd|cap=y}}
+{{RU squad player|WAL|Callum Sheedy|cap=y}}{{RU squad player|WAL|Jarrod Evans|cap=y}}
+{{RU squad player|WAL|Harri Wilde}}
+||
+'''Centres'''
+{{RU squad player|WAL|Steffan Emanuel}}
+{{RU squad player|WAL|Mason Grady|cap=y}}
+{{RU squad player|NAM|Le Roux Malan|cap=y}}
+{{RU squad player|WAL|Ben Thomas|ru=y|cap=y}}
+'''Wings'''
+{{RU squad player|WAL|Josh Adams|ru=y|cap=y}}
+{{RU squad player|WAL|Theo Cabango}}
+{{RU squad player|WAL|Harri Millard}}
+{{RU squad player|ENG|Iwan Stephens|res=y}}
+'''Fullbacks'''
+{{RU squad player|WAL|Jacob Beetham|cap=y}}
+{{RU squad player|WAL|Tom Bowen|born=2006}}
+{{RU squad player|WAL|Cameron Winnett|cap=y}}
+{{Rugby union squad end
+ | res = Wales
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026-27 season as listed on [[List of 2026-27 United Rugby Championship transfers]].
+ | ref = <ref name="Senior Squad">{{cite web | url=https://cardiffrugby.wales/senior-squad | title=Senior Squad | work=Cardiff Rugby | access-date=28 July 2023}}</ref>
+}}
+
+===Senior Academy squad===
+
+{{Rugby union squad start
+ | title = 2026–27 Cardiff Academy squad<ref>{{Cite web | title=Senior academy confirmed with 24 agreements - Cardiff Rugby | url=https://www.cardiffrugby.wales/news/senior-academy-confirmed-with-24-agreements/ | archive-url=https://web.archive.org/web/20260510044033/https://www.cardiffrugby.wales/news/senior-academy-confirmed-with-24-agreements/ | access-date=2026-08-04 | archive-date=2026-05-10}}</ref>
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|WAL|Brayan Kamanga|nolink=y}}
+{{RU squad player|WAL|Cameron Tyler-Grocott|nolink=y}}
+{{RU squad player|WAL|Vinnay Cleak|nolink=y}}
+{{RU squad player|WAL|Isaac Jones|nolink=y}}
+'''Hookers'''
+{{RU squad player|WAL|Tom Howe|nolink=y}}
+'''Second row'''
+{{RU squad player|WAL|Harri Lewis|nolink=y}}
+{{RU squad player|WAL|Tom Cottle|nolink=y}}
+{{RU squad player|WAL|Gabe Williams|nolink=y}}
+{{RU squad player|WAL|Sonny Mccabe|nolink=y}}
+
+||
+'''Back row'''
+{{RU squad player|WAL|Evan Rees|ru=y}}
+{{RU squad player|WAL|Liam Williams|nolink=y}}
+{{RU squad player|WAL|Alfie Prygodzicz|nolink=y}}
+'''Scrum-halves'''
+{{RU squad player|WAL|Sion Davies|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|WAL|Harri Wilde|nolink=y}}
+{{RU squad player|WAL|Lloyd Lucas|nolink=y}}
+{{RU squad player|WAL|Ben Coomer|nolink=y}}
+||
+'''Centres'''
+{{RU squad player|WAL|Osian Darwin-Lewis}}
+{{RU squad player|WAL|Elijah Evans}}
+{{RU squad player|WAL|Ioan Leyshon|nolink=y}}
+'''Wings'''
+{{RU squad player|WAL|Devon Morris|nolink=y}}
+{{RU squad player|WAL|Calen Edwards|nolink=y}}
+{{RU squad player|WAL|Harry Turner|nolink=y}}
+'''Full Backs'''
+{{RU squad player|WAL|Matty Young|nolink=y}}
+{{RU squad player|WAL|Rhys Cummings|nolink=y}}
+{{Rugby union squad end
+ | res = Wales
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026-27 season as listed on [[List of 2026-27 United Rugby Championship transfers]].
+ | ref = <ref>{{cite web|url=https://www.cardiffrugby.wales/transition-squad|title=Academy Squad|date=24 September 2021}}</ref>
+}}

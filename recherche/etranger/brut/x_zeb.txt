@@ -1,0 +1,108 @@
+# Zebre Parma
+==Current squad==
+
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Zebre Parma}}
+
+{{Rugby union squad start
+ | title = 2026–27 Zebre Parma squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ITA|Paolo Buonfiglio|cap=y}}
+{{RU squad player|ITA|Luca Franceschetto}}
+{{RU squad player|ITA|Muhamed Hasa|cap=y}}
+{{RU squad player|ITA|Sergio Pelliccioli}}
+{{RU squad player|ARG|Juan Pitinari|res=y}}
+{{RU squad player|ITA|Luca Rizzoli|cap=y}}
+'''Hookers'''
+{{RU squad player|ITA|Tommaso Di Bartolomeo|cap=y}}
+{{RU squad player|ARG|Francisco Minervino|res=y}}
+{{RU squad player|ITA|Giovanni Quattrini}}
+{{RU squad player|ITA|Giampietro Ribaldi}}
+'''Locks'''
+{{RU squad player|ITA|Matteo Canali|cap=y}}
+{{RU squad player|ARG|Franco Carrera|ru=y}}
+{{RU squad player|ITA|Leonard Krumov}}
+{{RU squad player|ITA|Alex Mattioli}}
+{{RU squad player|ITA|Francesco Ruffolo}}
+{{RU squad player|ITA|Pietro Turrisi}}
+||
+'''Back row'''
+{{RU squad player|ITA|Jacopo Botturi}}
+{{RU squad player|ITA|Giacomo Ferrari|ru=y}}
+{{RU squad player|ITA|Giovanni Licata|cap=y|captain=y}}
+{{RU squad player|ITA|Samuele Locatelli}}
+{{RU squad player|ITA|David Odiase|cap=y}}
+{{RU squad player|ITA|Alessandro Ortombina|cap=y}}
+{{RU squad player|ITA|Davide Ruggeri}}
+{{RU squad player|ARG|Bautista Stavile|res=y}}
+'''Scrum-halves'''
+{{RU squad player|ARG|Patricio Baronio|res=y}}
+{{RU squad player|ITA|Lorenzo Citton}}
+{{RU squad player|ARG|Thomas Dominguez|res=y}}
+{{RU squad player|ITA|Alessandro Fusco|cap=y}}
+'''Fly-halves'''
+{{RU squad player|ITA|Giacomo Da Re|cap=y}}
+{{RU squad player|ITA|Giovanni Montemauri}}
+||
+'''Centres'''
+{{RU squad player|ITA|Giulio Bertaccini|cap=y}}
+{{RU squad player|RSA|Zane Bester}}
+{{RU squad player|ITA|Damiano Mazza|ru=y}}
+{{RU squad player|ITA|Marco Zanon|cap=y}}
+'''Wings'''
+{{RU squad player|ITA|Mirko Belloni|cap=y}}
+{{RU squad player|ITA|Simone Gesi|cap=y}}
+{{RU squad player|ITA|Leonardo Sodo Migliori}}
+{{RU squad player|ITA|Jacopo Trulla|cap=y}}
+'''Fullbacks'''
+{{RU squad player|ITA|Tommaso Allan|cap=y}}
+{{RU squad player|ITA|Lorenzo Pani|cap=y}}
+{{RU squad player|ARG|Tobías Wade}}
+
+{{Rugby union squad end
+ | res = Italy
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026–27 season as listed on [[List of 2025–26 United Rugby Championship transfers]].
+ | ref = <ref name="Giocatori">{{cite web | url=https://www.zebreparma.it/it-it/giocatori.aspx/ | title=Giocatori | work=Zebre Parma | access-date=10 August 2022}}</ref>
+}}
+
+===Additional players===
+
+{{Rugby union squad start
+ | title = 2026–27 Zebre Parma additional players
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|ITA|Filippo Alongi|ex=Additional player from [[Valorugby Emilia]]|cap=y}}
+{{RU squad player|ARG|Octavio Barbatti|ex=Additional player from [[Petrarca Padova]]}}*
+{{RU squad player|ARG|Juan Barbotti|ex=Additional player from [[Rugby Calvisano]]}}*
+{{RU squad player|ARG|Juan Ignacio Castellano|ex=Additional player from Rugby Parabiago}}*
+{{RU squad player|ITA|Federico Pisani|ru=y|ex=Additional player from [[Petrarca Padova]]}}
+'''Locks'''
+{{RU squad player|ITA|Simone Invernizzi|ex=Additional player from FIR Academy}}
+||
+'''Back row'''
+{{RU squad player|ITA|Matteo Sebastiani|ex=Additional player from FIR Academy}}
+'''Scrum halves'''
+{{RU squad player|RSA|Migael Prinsloo|ex=Additional player from [[Valorugby Emilia]]}}*
+'''Fly-halves'''
+{{RU squad player|ITA|Francesco Alderighi|ex=Additional player from FIR Academy}}
+||
+'''Centres'''
+{{RU squad player|ITA|Riccardo Casarin|ex=Additional player from [[Valorugby Emilia]]}}
+{{RU squad player|ITA|Massimo Molina|ex=Additional player from FIR Academy}}
+{{RU squad player|ITA|Dewi Passarella|ex=Additional player from [[Petrarca Padova]]}}
+'''Wings'''
+{{RU squad player|ITA|Manuel Scappini|ex=Additional player from FIR Academy}}
+
+{{Rugby union squad end
+ | res = Italy
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2025–26 season as listed on [[List of 2026–27 United Rugby Championship transfers]].
+ | ref = <ref>{{cite web | url=https://www.onrugby.it/2026/08/10/zebre-parma-la-rosa-completa-per-la-stagione-2026-2027/ | title=Zebre Parma: la rosa completa per la stagione 2026-2027 | work=OnRugby.it | date=10 Aug 2026| access-date=10 Aug 2026 | language=it}}</ref><ref>{{cite web | url=https://www.zebreparma.it/it-it/novita-in-casa-zebre-arrivano-i-piloni-castellano-barbotti-e-alongi.aspx | title=Rinforzi in prima linea dai club Parabiago, Calvisano e Valorugby| work=Zebre Parma | date=21 Sep 2026| access-date=21 Sep 2026 | language=it}}</ref>
+}}

@@ -1,0 +1,115 @@
+# Newcastle Red Bulls
+==Current squad==
+{{for|player movements before or during the [[2026–27 Premiership Rugby|2026–27 season]]|List of 2026–27 Premiership Rugby transfers#Newcastle Red Bulls}}
+
+The Newcastle Red Bulls squad ahead of the [[2026–27 Premiership Rugby|2026–27 season]] is:<ref>{{Cite news|url=https://www.newcastleredbulls.com/en/team |publisher=Newcastle Red Bulls|title=Squad|date=7 August 2026|accessdate=7 August 2026}}</ref> 
+{{Rugby union squad start
+ | title = Newcastle Red Bulls 2025–26 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ENG|Adam Brocklebank}}
+{{RU squad player|ENG|James Harper|ru=y}}
+{{RU squad player|SCO|Murray McCallum|cap=y}}
+{{RU squad player|SCO|Elliot Millar Mills|cap=y}}
+{{RU squad player|RSA|Richard Palframan}}
+{{RU squad player|NZL|Pouri Rakete-Stones}}
+{{RU squad player|ARG|Francisco Moreno|ru=y|cap=y}}
+{{RU squad player|ENG|Tom West|ru=y}}
+'''Hookers'''
+{{RU squad player|ENG|Samson Adejimi}}
+{{RU squad player|ENG|Ollie Fletcher|ru=y}}
+{{RU squad player|ENG|George McGuigan|captain=y}}
+{{RU squad player|FIJ|Zuriel Togiatama|cap=y}}
+{{RU squad player|SCO|George Turner|ru=y|cap=y}}
+'''Locks'''
+{{RU squad player|ENG|Cameron Jordan|ru=y}}
+{{RU squad player|ARG|Franco Molina|cap=y}}
+{{RU squad player|SCO|Adam Scott|ru=y}}
+{{RU squad player|ENG|Rus Tuima}}
+||
+'''Back row'''
+{{RU squad player|NZL|Tom Christie|ru=y}}
+{{RU squad player|SCO|Allan Ferrie}}
+{{RU squad player|ENG|Sam Graham|ru=y}}
+{{RU squad player|NZL|Max Hicks|ru=y}}
+{{RU squad player|ENG|Ollie Leatherbarrow}}
+{{RU squad player|NZL|Hoskins Sotutu|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|ARG|Simón Benítez Cruz|cap=y}}
+{{RU squad player|ENG|James Elliott|ru=y}}
+{{RU squad player|ENG|Raffi Quirke|cap=y}}
+'''Fly-halves'''
+{{RU squad player|IRE|Brett Connon}}
+{{RU squad player|ENG|Zack Henry}}
+||
+'''Centres'''
+{{RU squad player|IRE|Sammy Arnold|cap=y}}
+{{RU squad player|ENG|Ethan Grayson}}
+{{RU squad player|SCO|Chris Harris|ru=y|cap=y}}
+{{RU squad player|SCO|Cammy Hutchison}}
+{{RU squad player|ENG|Will Rigg}}
+{{RU squad player|ENG|Oli Spencer}}
+'''Wings'''
+{{RU squad player|ENG|Obi Ene}}
+{{RU squad player|ENG|Alex Hearle}}
+{{RU squad player|ENG|Brandon Jackson|ru=y}}
+{{RU squad player|RSA|Werner Kok}}
+{{RU squad player|ENG|Christian Wade|cap=y}}
+'''Fullbacks'''
+{{RU squad player|ARG|Benjamín Elizalde|cap=y}}
+{{RU squad player|ENG|Josh Hodge}}
+{{RU squad player|ENG|Harrison Obatoyinbo}}
+{{Rugby union squad end
+ | ref = <ref name="Squad">{{Cite web |title=Red Bull |url=https://www.newcastleredbulls.com/en/team |access-date=2026-01-15 |website=Red Bull |language=en}}</ref>
+ | cap  = y
+ | captain = y
+ | st  = y
+ | group   = upper-alpha
+ | ex      =
+}}
+
+===Academy squad===
+
+The Newcastle Red Bulls academy squad is:<ref>{{Cite news |url=https://www.newcastleredbulls.com/en/misc/senior-academy|publisher=Newcastle Red Bulls|title=Academy Squad|date=7 August 2026|accessdate=7 August 2026}}</ref>
+
+{{Rugby union squad start
+ | title = Newcastle Red Bulls 2026–27 Senior Academy squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ENG|Elvis Kitenge-Fuki|nolink=y}}
+{{RU squad player|ENG|Micky Rewcastle|nolink=y}}
+{{RU squad player|ENG|Nathan Rickerby|nolink=y}}
+'''Hookers'''
+{{RU squad player|ENG|Will Graham|nolink=y}}
+{{RU squad player|SCO|Jack Nesbitt|nolink=y}}
+{{RU squad player|ENG|Charlie Turner|nolink=y}}
+'''Locks'''
+{{RU squad player|ENG|Finn Baker|nolink=y}}
+{{RU squad player|ENG|Oscar Usher|nolink=y}}
+||
+'''Back row'''
+{{RU squad player|ENG|George Bolam|nolink=y}}
+{{RU squad player|ENG|Euan Oakes|nolink=y}}
+{{RU squad player|ENG|Reuben Parsons|nolink=y}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Joe Davis|u=20|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|SCO|Jake Dalziel|u=20|nolink=y}}
+||
+'''Centres'''
+{{RU squad player|ENG|Oliver Ashton|nolink=y}}
+{{RU squad player|ENG|Rhys Beeckmans|nolink=y}}
+'''Wings'''
+{{RU squad player|ENG|Nathan Greenwood|nolink=y}}
+{{RU squad player|ENG|Harry Hawkins|nolink=y}}
+{{RU squad player|ENG|Alfie Warwick|nolink=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|Charlie Dineen|nolink=y}}
+{{RU squad player|ENG|Sam Waugh|nolink=y}}
+{{Rugby union squad end
+ | ref = <ref name="AcademySquad">{{Cite news|url=https://www.newcastlefalcons.co.uk/senior-academy/ |publisher=Newcastle Falcons|title=Senior Academy|date=23 November 2024|access-date=23 November 2024}}</ref>
+ | cap = n
+ | u   = 20
+}}

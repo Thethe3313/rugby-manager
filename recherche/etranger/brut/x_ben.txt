@@ -1,0 +1,113 @@
+# Benetton Rugby
+==Current squad==
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Benetton}}
+
+{{Rugby union squad start
+ | title = 2026–27 Benetton squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ITA|Destiny Aminu}}
+{{RU squad player|ITA|Simone Ferrari|ru=y|cap=y}}
+{{RU squad player|ITA|Marcos Gallorini}}
+{{RU squad player|ARG|Gonzalo Hughes}}
+{{RU squad player|ARG|Matias Medrano}}
+{{RU squad player|ITA|Ivan Nemer|cap=y}}
+{{RU squad player|ITA|Tiziano Pasquali|cap=y}}
+{{RU squad player|ITA|Mirco Spagnolo|cap=y}}
+{{RU squad player|ITA|Giosuè Zilocchi|cap=y}}
+'''Hookers'''
+{{RU squad player|ARG|Bautista Bernasconi|cap=y}}
+{{RU squad player|ITA|Nicholas Gasperini}}
+{{RU squad player|TGA|Siua Maile|cap=y}}
+'''Locks'''
+{{RU squad player|ITA|Niccolò Cannone|cap=y}}
+{{RU squad player|ITA|Riccardo Favretto|cap=y}}
+{{RU squad player|ITA|Federico Ruzza|cap=y}}
+{{RU squad player|NZL|Isaia Walker-Leawere}}
+||
+'''Back row'''
+{{RU squad player|ITA|Lorenzo Cannone|cap=y}}
+{{RU squad player|SAM|So'otala Fa'aso'o|cap=y}}
+{{RU squad player|ITA|Alessandro Izekor|cap=y}}
+{{RU squad player|NZL|Jadin Kingi|res=y}}
+{{RU squad player|ITA|Michele Lamaro|cap=y|cc=y}}
+{{RU squad player|ITA|Giulio Marini|cap=y}}
+{{RU squad player|ITA|Sebastian Negri|cap=y|cc=y}}
+{{RU squad player|ITA|Manuel Zuliani|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|ITA|Alessandro Garbisi|cap=y}}
+{{RU squad player|ENG|Andy Uren}}
+{{RU squad player|AUS|Louis Werchon}}
+'''Fly-halves'''
+{{RU squad player|RSA|Jean Smith|ru=y}}*
+{{RU squad player|SAM|Jacob Umaga|cap=y}}
+||
+'''Centres'''
+{{RU squad player|AUS|Josh Flook|cap=y}}
+{{RU squad player|ITA|Leonardo Marin|cap=y}}
+{{RU squad player|ARG|Tomás Medina|ru=y}}
+{{RU squad player|ITA|François Carlo Mey}}
+{{RU squad player|ITA|Federico Zanandrea}}
+'''Wings'''
+{{RU squad player|ITA|Louis Lynagh|cap=y}}
+{{RU squad player|ITA|Paolo Odogwu|cap=y}}
+{{RU squad player|ARG|Ignacio Mendy|cap=y}}
+{{RU squad player|FJI|Onisi Ratave}}
+'''Fullbacks'''
+{{RU squad player|ITA|Matt Gallagher|ru=y|cap=y}}
+{{RU squad player|RSA|Rhyno Smith}}
+{{Rugby union squad end
+ | res = Italy
+ | cap = y
+ | cc = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026–27 season as listed on [[List of 2026–27 United Rugby Championship transfers]].
+ | ref = <ref name="Giocatori">{{cite web | url=https://benettonrugby.it/team/| title=Team | work=Benetton Rugby | access-date=29 July 2020 | language=it}}</ref>
+}}
+
+===Additional players===
+
+{{Rugby union squad start
+ | title = 2026–27 Benetton additional players
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|ITA|Dario Argenton|ex=Additional player from CUS Padova.}}
+'''Hookers'''
+{{RU squad player|ITA|Cristian D’Apollonia|ex=Additional player from [[Rugby Calvisano|Calvisano]].}}
+{{RU squad player|ITA|Valerio Pelli|ex=Additional player from [[Mogliano Rugby|Mogliano]].}}
+'''Locks'''
+{{RU squad player|ITA|Simone Fardin|ex=Additional player from Rugby Casale.}}
+{{RU squad player|ITA|Mattia Midena|ex=Additional player from [[Mogliano Rugby|Mogliano]].}}
+||
+'''Back row'''
+{{RU squad player|ITA|Nelson Casartelli|ex=Additional player from [[Mogliano Rugby|Mogliano]].}}
+{{RU squad player|ITA|Piero Gritti|res=y|ex=Additional player from [[Rangers Vicenza Rugby|Rangers Vicenza]]}}
+{{RU squad player|ITA|Antony Miranda|ex=Additional player from [[Mogliano Rugby|Mogliano]].}}
+{{RU squad player|RSA|Gershom Pieters|res=y|ex=Additional player from Benetton academy.}}
+'''Scrum-halves'''
+{{RU squad player|ITA|Mattia Andretti|ex=Additional player from [[Mogliano Rugby|Mogliano]]}}
+{{RU squad player|AUS|Cristiano Tizzano|res=y|ex=Additional player from [[Mogliano Rugby|Mogliano]].}}
+'''Fly-halves'''
+{{RU squad player|ITA|Francesco Braga|ex=Additional player from Rugby Valpolicella.}}
+{{RU squad player|ITA|Marco Bragagnolo|ex=Additional player from Benetton academy}}
+{{RU squad player|ITA|Federico Forti|ex=Additional player from Valsugana Rugby}}
+{{RU squad player|RSA|Stehan Heymans|res=y|ex=Additional player from [[Rangers Vicenza Rugby|Rangers Vicenza]]}}
+||
+'''Centres'''
+{{RU squad player|ITA|Filippo Drago|ru=y|ex=Additional player from [[Mogliano Rugby|Mogliano]].}}
+{{RU squad player|ITA|Giacomo Falchetto|ex=Additional player from Benetton academy.}}
+'''Wings'''
+{{RU squad player|ITA|Giovanni Marzotto|ex=Additional player from Benetton academy.}}
+'''Fullbacks'''
+{{RU squad player|ITA|Alessandro Drago|ex=Additional player from [[Mogliano Rugby|Mogliano]].}}
+{{RU squad player|ITA|David Luisato|ru=y|ex=Additional player from [[Mogliano Rugby|Mogliano]].}}
+{{Rugby union squad end
+ | res = Italy
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2025–26 season as listed on [[List of 2025–26 United Rugby Championship transfers]].
+ | ref = <ref>{{cite web | url=https://benettonrugby.it/comincia-la-stagione-2026-27-primo-giorno-di-raduno-e-lista-convocati/| title=Comincia la stagione 2026/27: primo giorno di raduno e lista convocati | work=Benetton Rugby | date=13 July 2026| access-date=13 July 2026 | language=it}}</ref>
+}}

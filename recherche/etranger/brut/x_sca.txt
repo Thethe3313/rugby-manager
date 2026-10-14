@@ -1,0 +1,115 @@
+# Scarlets
+==Current squad==
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Scarlets}}
+{{Rugby union squad start|title=2026–27 Scarlets squad|width=70%}}
+'''Props'''
+{{RU squad player|WAL|Corey Domachowski|cap=y}}
+{{RU squad player|ENG|Gabe Hawley|res=y}}
+{{RU squad player|AUS|Archer Holz}}
+{{RU squad player|WAL|Kemsley Mathias|cap=y}}
+{{RU squad player|WAL|Josh Morse}}
+{{RU squad player|WAL|Harri O'Connor|cap=y}}
+{{RU squad player|WAL|Sam O'Connor|ru=y}}
+{{RU squad player|WAL|Henry Thomas|ru=y|cap=y}}
+'''Hookers'''
+{{RU squad player|WAL|Ryan Elias|cap=y}}
+{{RU squad player|IRE|John McKee|ru=y|born=2000}}
+{{RU squad player|WAL|George Roberts|ru=y|born=1997}}
+{{RU squad player|WAL|Isaac Young|ru=y}}
+'''Locks'''
+{{RU squad player|NZL|Tom Allen|disam=rugby union}}
+{{RU squad player|ENG|Harvey Cuckson|res=y}}
+{{RU squad player|WAL|Will Evans|ru=y|born=2006}}
+{{RU squad player|RSA|Alex Groves|ru=y}}
+{{RU squad player|TON|Sam Lousi|cap=y}}
+{{RU squad player|WAL|Jac Price}}
+||
+'''Back row'''
+{{RU squad player|NZL|Fletcher Anderson}}
+{{RU squad player|WAL|Tristan Davies|ru=y}}
+{{RU squad player|WAL|Dan Davis|ru=y}}
+{{RU squad player|NZL|Cullen Grace|cap=y}}
+{{RU squad player|WAL|Josh Macleod|captain=y|cap=y}}
+{{RU squad player|WAL|Taine Plumtree|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|WAL|Dane Blacker}}
+{{RU squad player|WAL|Gareth Davies|ru=y|born=1990|cap=y}}
+{{RU squad player|WAL|Archie Hughes|ru=y}}
+'''Fly-halves'''
+{{RU squad player|WAL|Gareth Anscombe|cap=y}}
+{{RU squad player|WAL|Sam Costelow|cap=y}}
+{{RU squad player|WAL|Carwyn Leggatt-Jones}}
+||
+'''Centres'''
+{{RU squad player|WAL|Joe Hawkins|cap=y}}
+{{RU squad player|WAL|Eddie James|ru=y|cap=y}}
+{{RU squad player|WAL|Macs Page}}
+{{RU squad player|WAL|Joe Roberts|disam=rugby union|cap=y}}
+{{RU squad player|WAL|Johnny Williams|ru=y|born=1996|cap=y}}
+'''Wings'''
+{{RU squad player|WAL|Tomi Lewis}}
+{{RU squad player|WAL|Ellis Mee|cap=y}}
+'''Fullbacks'''
+{{RU squad player|WAL|Jac Davies}}
+{{RU squad player|ENG|Ioan Jones|res=y}}
+{{RU squad player|WAL|Blair Murray|cap=y}}
+{{RU squad player|NZL|Isaac Murray-MacGregor|res=y}}
+{{RU squad player|WAL|Ioan Nicholas}}
+{{Rugby union squad end
+ | group = upper-alpha
+ | ex = 
+ | ref = <ref name="Squad">{{cite web |url=https://www.scarlets.wales/rugby-squad/ |title=Squad |work=Scarlets Rugby |access-date=24 July 2022}}</ref>
+ | st  = y
+ | res = Wales
+ | cap = y
+ | captain = y
+}}
+
+===Senior Academy squad===
+
+{{Rugby union squad start
+ | title = 2026–27 Scarlets Academy squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|WAL|Yestyn Cook|nolink=y}}
+{{RU squad player|WAL|Hudson Nevin|nolink=y}}
+{{RU squad player|WAL|Jac Pritchard|nolink=y}}
+'''Hookers'''
+{{RU squad player|WAL|Harry Thomas|ru=y}}
+'''Locks'''
+{{RU squad player|WAL|Dylan Alford|nolink=y}}
+{{RU squad player|KEN|Gabe Cahsay|nolink=y}}
+{{RU squad player|WAL|Kai Jones|nolink=y}}
+{{RU squad player|WAL|Sam Williams|nolink=y}}
+||
+'''Back row'''
+{{RU squad player|WAL|Joe Denman|nolink=y}}
+{{RU squad player|WAL|Keanu Evans|nolink=y}}
+{{RU squad player|WAL|Dom Kossuth|nolink=y}}
+{{RU squad player|WAL|Tiaan Sparrow|nolink=y}}
+{{RU squad player|WAL|Osian Williams|ru=y|born=2006}}
+'''Scrum-halves'''
+{{RU squad player|WAL|Alfie Luger|nolink=y}}
+{{RU squad player|WAL|George MacDonald|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|WAL|Elis Price}}
+||
+'''Centres'''
+{{RU squad player|SAM|Jayden Brown|nolink=y}}
+{{RU squad player|WAL|Gabe McDonald}}
+{{RU squad player|WAL|Gryff Watkins|nolink=y}}
+'''Wings'''
+{{RU squad player|WAL|Thomas Williams|nolink=y}}
+{{RU squad player|WAL|Callum Woolley}}
+'''Fullbacks'''
+{{RU squad player|WAL|Iori Badham}}
+{{RU squad player|WAL|Sion Jones|nolink=y}}
+{{Rugby union squad end
+ | res = Wales
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026-27 season as listed on [[List of 2026-27 United Rugby Championship transfers]].
+ | ref = <ref>{{cite web|url=https://www.scarlets.wales/rugby-academy/|title=Academy|work=Scarlets|access-date=23 April 2021}}</ref>
+}}

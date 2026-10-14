@@ -1,0 +1,111 @@
+# Leicester Tigers
+==Current squad==
+===Senior squad===
+{{For|player movements during the [[2026–27 Premiership Rugby|2026–27 season]]|List of 2026–27 Premiership Rugby transfers#Leicester Tigers}}
+
+The Leicester Tigers senior squad for the [[2026–27 Premiership Rugby|2026–27 season]] is:<ref name="Squad">{{Cite news|url=https://www.leicestertigers.com/team/senior |publisher=Leicester Tigers |title=Senior |date=19 July 2026|access-date=19 July 2026}}</ref>
+ 
+{{Rugby union squad start
+ | title = Leicester Tigers 2026–27 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ENG|Archie van der Flier}}
+{{RU squad player|ENG|Tarek Haffar}}
+{{RU squad player|ENG|Joe Heyes|cap=y|ex=[[Joe Heyes]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|SCO|Will Hurd|ru=y|cap=y}}
+{{RU squad player|SWE|Ale Loman|cap=y}}
+{{RU squad player|ARG|Joel Sclavi|cap=y}}
+{{RU squad player|ENG|Mako Vunipola|cap=y}}
+'''Hookers'''
+{{RU squad player|SAM|Richie Asiata|cap=y}}
+{{RU squad player|ENG|Jamie Blamire|cap=y}}
+{{RU squad player|ENG|Charlie Clare}}
+{{RU squad player|ENG|Jack Doorey-Palmer}}
+{{RU squad player|TON|Sam Moli|cap=y}}
+'''Locks'''
+{{RU squad player|ENG|Lewis Chessum}}
+{{RU squad player|ENG|Ollie Chessum|cap=y|captain=y|ex=[[Ollie Chessum]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|SCO|Cameron Henderson|cap=y}}
+{{RU squad player|ENG|Tom Manz}}
+{{RU squad player|ENG|Elliott Stooke}}
+{{RU squad player|NZL|James Thompson|ru=y}}
+||
+'''Back row'''
+{{RU squad player|ENG|Finn Carnduff}}
+{{RU squad player|WAL|Olly Cracknell|cap=y}}
+{{RU squad player|ENG|Emeka Ilione}}
+{{RU squad player|ENG|Joshua Manz}}
+{{RU squad player|ARG|Joaquín Moro|cap=y}}
+{{RU squad player|WAL|Tommy Reffell|cap=y}}
+{{RU squad player|WAL|Aaron Wainwright|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Ollie Allan}}
+{{RU squad player|ENG|Jack van Poortvliet|cap=y|ex=[[Jack van Poortvliet]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Tom Whiteley}}
+'''Fly-halves'''
+<!--{{RU squad player|AUS|Jack Bowen|ru=y}}-->
+{{RU squad player|ENG|Billy Searle}}
+{{RU squad player|ENG|Charlie Titcombe}}
+||
+'''Centres'''
+{{RU squad player|ENG|Orlando Bailey}}
+{{RU squad player|ENG|Joe Jenkins|ru=y}}
+{{RU squad player|TON|Solomone Kata|cap=y}}
+{{RU squad player|ENG|Will Wand}}
+{{RU squad player|ENG|Joseph Woodward|ru=y}}
+'''Wings'''
+{{RU squad player|WAL|Ryan Crowley|ru=y}}
+{{RU squad player|WAL|Gabriel Hamer-Webb|cap=y}}
+{{RU squad player|ENG|Ollie Hassell-Collins|cap=y}}
+{{RU squad player|ENG|Adam Radwan|cap=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|Freddie Steward|cap=y}}
+
+{{Rugby union squad end
+ | ref = <ref name="Squad"/>
+ | cap  = y
+ | captain = y
+ | group   = upper-alpha
+ | ex      =
+}}
+
+===Senior Academy squad===
+
+Leicester Tigers' Academy squad is:<ref name="Academy">{{Cite news|url=https://www.leicestertigers.com/team/senior-academy-squad |publisher=Leicester Tigers |title=Senior Academy Squad |date=17 September 2025|access-date=17 September 2025}}</ref>
+
+{{Rugby union squad start
+ | title = Leicester Tigers 2025–26 Senior Academy squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|ENG|Bronson Mellowes|nolink=y}}
+{{RU squad player|ENG|Diamond Ayiehfor|nolink=y}}
+'''Locks'''
+{{RU squad player|ENG|Kwame Bekoe|nolink=y}}
+{{RU squad player|ENG|Fin Charles|nolink=y}}
+{{RU squad player|ENG|Harry Palmer|ru=y}}
+'''Back row'''
+{{RU squad player|ENG|Henry Johnson|nolink=y}}
+{{RU squad player|ENG|George Marsh|u=20|nolink=y}}
+{{RU squad player|ENG|Samuel Williams|u=20|nolink=y}}
+||
+'''Scrum-halves'''
+{{RU squad player|ENG|Charlie Bemand|nolink=y}}
+{{RU squad player|ENG|James Townsend|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|Oscar Talbot|nolink=y}}
+'''Centres'''
+{{RU squad player|ENG|Wilf McCarthy|nolink=y}}
+{{RU squad player|ENG|Charlie Myall|nolink=y}}
+{{RU squad player|ENG|Ollie Myall|nolink=y}}
+'''Wings'''
+{{RU squad player|ENG|Kesena Izu|nolink=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|George Pearson|ru=y|born=2006|u=20}}
+{{Rugby union squad end
+ | ref = <ref name="Academy"/>
+ | cap  = n
+ | captain = n
+ | u   = 20
+}}

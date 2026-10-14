@@ -1,0 +1,238 @@
+# Leinster Rugby
+==Current squads==
+===Leinster Men Management and Coaches===
+
+{| class="wikitable"
+|-
+! Position
+! Name
+! Nationality
+|-
+| Head coach
+| [[Leo Cullen (rugby union)|Leo Cullen]]
+|{{flagu|Ireland|rugby union|name=Ireland}}
+|-
+| Senior Coach
+| [[Jacques Nienaber]]
+|{{flagu|RSA|name=South Africa}}
+|-
+| Assistant coach 
+| [[Robin McBryde]]
+|{{flagu|WAL|name=Wales}}
+|-
+| Backs Coach
+| [[Tyler Bleyendaal]]
+|{{flagu|NZL|name=New Zealand}}
+|-
+| Contact Skills Coach
+| [[Seán O'Brien (rugby union, born 1987)|Sean O'Brien]]
+| {{flagu|Ireland|rugby union|name=Ireland}}
+|-
+| Kicking Coach & Head Analyst
+| Emmet Farrell
+| {{flagu|Ireland|rugby union|name=Ireland}}
+|-
+|}
+
+===Leinster Men Squad===
+{{For |men player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Leinster}}
+
+{{Rugby union squad start
+ | title = 2026–27 Leinster Men squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|IRE|Jack Boyle|ru=y|cap=y}}
+{{RU squad player|IRE|Tom Clarkson|ru=y|cap=y}}
+{{RU squad player|IRE|Peter Dooley}}
+{{RU squad player|IRE|Tadhg Furlong|cap=y}}
+{{RU squad player|IRE|Paddy McCarthy|ru=y|cap=y}}
+{{RU squad player|IRE|Andrew Porter|ru=y|cap=y}}
+{{RU squad player|IRE|Niall Smyth}}
+{{RU squad player|IRE|Alex Usanov}}
+'''Hookers'''
+{{RU squad player|IRE|Rónan Kelleher|cap=y}}
+{{RU squad player|IRE|Gus McCarthy|cap=y}}
+{{RU squad player|IRE|Dan Sheehan|ru=y|cap=y}}
+{{RU squad player|IRE|Stephen Smyth|ru=y}}
+'''Locks'''
+{{RU squad player|IRE|Ryan Baird|cap=y}}
+{{RU squad player|IRE|Brian Deeny}}
+{{RU squad player|IRE|Joe McCarthy|ru=y|cap=y}}
+{{RU squad player|IRE|Conor O'Tighearnaigh|nolink=y}}
+{{RU squad player|IRE|James Ryan|born=1996|cap=y}}
+{{RU squad player|RSA|RG Snyman|cap=y}}
+||
+'''Back row'''
+{{RU squad player|IRE|Jack Conan|cap=y}}
+{{RU squad player|IRE|James Culhane|ru=y}}
+{{RU squad player|IRE|Max Deegan|cap=y}}
+{{RU squad player|IRE|Caelan Doris|cap=y|captain=y}}
+{{RU squad player|IRE|Diarmuid Mangan}}
+{{RU squad player|IRE|Scott Penny}}
+{{RU squad player|IRE|Alex Soroka}}
+{{RU squad player|IRE|Josh van der Flier|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|IRE|Cormac Foley}}
+{{RU squad player|IRE|Jamison Gibson-Park|cap=y}}
+{{RU squad player|IRE|Fintan Gunne}}
+'''Fly-halves'''
+{{RU squad player|IRE|Harry Byrne|cap=y}}
+{{RU squad player|IRE|Joey Carbery|cap=y}}
+{{RU squad player|IRE|Sam Prendergast|cap=y}}
+||
+'''Centres'''
+{{RU squad player|IRE|Hugh Cooney}}
+{{RU squad player|IRE|Robbie Henshaw|cap=y}}
+{{RU squad player|IRE|Jamie Osborne|ru=y|cap=y}}
+{{RU squad player|IRE|Garry Ringrose|cap=y}}
+{{RU squad player|IRE|Charlie Tector}}
+'''Wings'''
+{{RU squad player|IRE|Joshua Kenny|ru=y}}
+{{RU squad player|IRE|Jordan Larmour|cap=y}}
+{{RU squad player|IRE|Tommy O'Brien|ru=y|cap=y}}
+{{RU squad player|IRE|Andrew Osborne|born=2003}}
+'''Fullbacks'''
+{{RU squad player|IRE|Hugo Keenan|cap=y}}
+{{RU squad player|IRE|Jimmy O'Brien|ru=y|cap=y}}
+{{Rugby union squad end
+ | res = Ireland
+ | cap = y
+ | captain = y
+ | st = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026–27 season as listed on [[List of 2026–27 United Rugby Championship transfers]].
+}}
+
+===Leinster Men Academy Squad===
+
+{{Rugby union squad start
+ | title = 2026–27 Leinster Men academy squad (22 members with Year stages)
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|IRE|Sam Bishti|nolink=y}} (1)
+{{RU squad player|IRE|Max Doyle|nolink=y}} (1)
+{{RU squad player|IRE|Harry Goslin|nolink=y}} (1)
+{{RU squad player|IRE|Alex Mullan|nolink=y}} (2)
+{{RU squad player|IRE|Andrew Sparrow|nolink=y}}(3)
+'''Hookers'''
+{{RU squad player|IRE|Lee Fitzpatrick|nolink=y}} (2)
+'''Locks'''
+{{RU squad player|IRE|Dylan McNeice|nolink=y}} (1)
+{{RU squad player|IRE|Artur Smykovskiy|nolink=y}} (1)
+{{RU squad player|IRE|Alan Spicer|nolink=y}} (3)
+||
+'''Back row'''
+{{RU squad player|IRE|Ben Blaney|nolink=y}} (1)
+{{RU squad player|IRE|Josh Ericson|nolink=y}} (2)
+{{RU squad player|RSA|Josh Neill|nolink=y|res=y}} (2)
+'''Scrum-halves'''
+{{RU squad player|IRE|Tadhg Brophy|nolink=y}} (2)
+{{RU squad player|IRE|Oliver Coffey|nolink=y}} (3)
+'''Fly-halves'''
+{{RU squad player|AUT|Caspar Gabriel}} (3)
+||
+'''Centres'''
+{{RU squad player|IRE|Jack Deegan|nolink=y}} (2)
+{{RU squad player|IRE|Connor Fahy|nolink=y}} (2)
+{{RU squad player|IRE|Ciarán Mangan|nolink=y}} (2)
+'''Wings'''
+{{RU squad player|IRE|Todd Lawlor|nolink=y}} (2)
+{{RU squad player|IRE|Ruben Moloney|nolink=y}} (3)
+{{RU squad player|IRE|Charlie Molony|nolink=y}} (1)
+'''Fullbacks'''
+{{RU squad player|IRE|Hugo McLaughlin}} (3)
+{{Rugby union squad end}}
+
+=== Leinster Women ===
+
+{| class="wikitable" style="text-align:left; font-size:90%; width:70%"
+! colspan="3" |2026/27 Leinster Women Squad
+|- valign="top"
+|'''Props'''
+
+* {{flagicon|IRE|rugby union}} '''Linda Djougang'''
+* {{flagicon|IRE|rugby union}} Clodagh Dunne
+* {{flagicon|IRE|rugby union}} Katie Layde
+* {{flagicon|IRE|rugby union}} Caoimhe Molloy
+* {{flagicon|IRE|rugby union}} '''Aoife Moore'''
+* {{flagicon|IRE|rugby union}} Hannah Wilson
+* {{flagicon|IRE|rugby union}} Hope Lowney
+
+'''Hookers'''
+
+* {{flagicon|IRE|rugby union}} Kelly Burke
+* {{flagicon|IRE|rugby union}} Lisa Callan
+* {{flagicon|IRE|rugby union}} Sara Delaney
+* {{flagicon|IRE|rugby union}} Meabh Keegan
+* {{flagicon|IRE|rugby union}} Kara Mulcahy
+* {{flagicon|IRE|rugby union}} Emma Jane Wilson
+
+'''Locks'''
+
+* {{flagicon|IRE|rugby union}} Alma Atagamen
+* {{flagicon|IRE|rugby union}} Ruth Campbell
+* {{flagicon|IRE|rugby union}} '''Kate Jordan'''
+* {{flagicon|IRE|rugby union}} Roisin Kinch
+* {{flagicon|IRE|rugby union}} Anna Mai O'Brien
+* {{flagicon|IRE|rugby union}} Jane Neill
+* {{flagicon|IRE|rugby union}} Cliodhna Ní Chonchobhair
+
+|'''Back Row'''
+
+* {{flagicon|IRE|rugby union}} Kathy Baker
+* {{flagicon|IRE|rugby union}} Molly Byrne
+* {{flagicon|IRE|rugby union}} Regan Casey
+* {{flagicon|IRE|rugby union}} Aoife Corcoran
+* {{flagicon|IRE|rugby union}} Katelynn Doran
+* {{flagicon|IRE|rugby union}} Emma Kelly
+* {{flagicon|IRE|rugby union}} '''Erin King'''
+* {{flagicon|IRE|rugby union}} Rosie Searle
+* {{flagicon|IRE|rugby union}} Ciara Short
+* {{flagicon|IRE|rugby union}} Naoise Smyth
+
+
+'''Scrum-halves'''
+
+* {{flagicon|IRE|rugby union}} Emma Brogan
+* {{flagicon|IRE|rugby union}} Jade Gaffney
+* {{flagicon|IRE|rugby union}} Nikki Gibson
+* {{flagicon|IRE|rugby union}} Aoibhe Kelly
+* {{flagicon|IRE|rugby union}} Erin McConnell
+* {{flagicon|IRE|rugby union}} '''Katie Whelan'''
+
+
+'''Fly-halves'''
+
+* {{flagicon|IRE|rugby union}} Nikki Caughey
+* {{flagicon|IRE|rugby union}} Alex Connor
+* {{flagicon|IRE|rugby union}} '''Dannah O'Brien'''
+* {{flagicon|IRE|rugby union}} Ellie O'Sullivan-Sexton
+* {{flagicon|IRE|rugby union}} Hannah Scanlan
+
+|'''Centres'''
+
+* {{flagicon|IRE|rugby union}} Kathy Baker
+* {{flagicon|IRE|rugby union}} Ella Durkan
+* {{flagicon|IRE|rugby union}} '''Vicky Elmes Kinlan'''
+* {{flagicon|IRE|rugby union}} Heidi Lyons
+* {{flagicon|IRE|rugby union}} Cara Martin
+* {{flagicon|IRE|rugby union}} '''Aoife Dalton'''
+* {{flagicon|IRE|rugby union}} '''Eve Higgins'''
+
+'''Back Three'''
+
+* {{flagicon|IRE|rugby union}} Maggie Boylan
+* {{flagicon|IRE|rugby union}} Katie Corrigan
+* {{flagicon|IRE|rugby union}} Ciara Dunne
+* {{flagicon|IRE|rugby union}} '''Stacey Flood'''
+* {{flagicon|IRE|rugby union}} Caoimhe McCormack
+* {{flagicon|IRE|rugby union}} Andrea Murphy
+* {{flagicon|IRE|rugby union}} '''Robyn O'Connor'''
+* {{flagicon|IRE|rugby union}} Emma Tilly
+|- valign="top"
+| colspan="3" |Players listed in '''Bold''' have represented their country internationally in Rugby Union or Sevens.
+<nowiki>*</nowiki>Denotes Devolepment Player|}
+
+{{Rugby union squad end}}

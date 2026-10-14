@@ -1,0 +1,122 @@
+# Saracens F.C.
+== Current squad ==
+{{For|player movements before or during the [[2026–27 Premiership Rugby|2026–27 season]]|List of 2026–27 Premiership Rugby transfers#Saracens}}
+
+=== Senior squad ===
+The Saracens senior squad for the [[2026–27 Premiership Rugby|2026–27 season]] is:<ref name="Saracens squads">{{cite web | url=https://www.saracens.com/squads/ | title=Squads {{!}} Saracens | website=www.saracens.com | publisher=Saracens | access-date=26 September 2025 | language=en-UK}}</ref><ref>{{cite news | url=https://www.premiershiprugby.com/clubs/saracens/squad | title=Saracens {{!}} Squad | website=www.premiershiprugby.com | publisher=[[Premiership Rugby]] | access-date=26 September 2025 | language=en-UK}}</ref>
+
+{{Rugby union squad start
+ | title = Saracens 2026–27 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ENG|Harvey Beaton}}
+{{RU squad player|ENG|Phil Brantingham}}
+{{RU squad player|WAL|Rhys Carré|cap=y}}
+{{RU squad player|ENG|Alec Clarey}}
+{{RU squad player|FIJ|Eroni Mawi|cap=y}}
+{{RU squad player|FIJ|Vilikesa Nairau|cap=y}}
+{{RU squad player|ENG|Marcus Street}}
+{{RU squad player|SAM|Tietie Tuimauga|cap=y}}
+{{RU squad player|RSA|Corné Weilbach}}
+'''Hookers'''
+{{RU squad player|IRE|Eoghan Clarke}}
+{{RU squad player|ENG|Theo Dan|cap=y}}
+{{RU squad player|ENG|Jamie George|cap=y|ex=[[Jamie George]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|James Hadfield|ru=y}}
+'''Locks'''
+{{RU squad player|ENG|Nick Isiekwe|cap=y}}
+{{RU squad player|ENG|Maro Itoje|cap=y|captain=y|ex=[[Maro Itoje]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|George Martin|ru=y|cap=y|ex=[[George Martin (rugby union)|George Martin]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Olamide Sodeke}}
+{{RU squad player|ENG|Kennedy Sylvester}}
+{{RU squad player|ENG|Hugh Tizard}}
+||
+'''Back row'''
+{{RU squad player|ENG|Alfie Barbeary}}
+{{RU squad player|ENG|Ben Earl|cap=y|ex=[[Ben Earl]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Max Eke|ru=y}}
+{{RU squad player|ARG|Juan Martín González|cap=y}}
+{{RU squad player|ENG|Toby Knight|ru=y}}
+{{RU squad player|ENG|Nathan Michelow}}
+{{RU squad player|SCO|Andy Onyeama-Christie|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Charlie Bracken}}
+{{RU squad player|ENG|Tom James|ru=y|born=1993}}
+{{RU squad player|WAL|Tomos Williams|cap=y}}
+'''Fly-halves'''
+{{RU squad player|SCO|Fergus Burke|cap=y}}
+{{RU squad player|ENG|Owen Farrell|cap=y}}
+||
+'''Centres'''
+{{RU squad player|ARG|Lucio Cinti|cap=y}}
+{{RU squad player|ENG|Olly Hartley}}
+{{RU squad player|ENG|Angus Hall}}
+{{RU squad player|WAL|Nick Tompkins|cap=y}}
+{{RU squad player|TON|Sione Va'enuku}}
+'''Wings'''
+{{RU squad player|ENG|Jack Bracken|ru=y}}
+{{RU squad player|ENG|Noah Caluori|cap=y}}
+{{RU squad player|ENG|Tobias Elliott}}
+{{RU squad player|ENG|Rotimi Segun}}
+'''Fullbacks'''
+{{RU squad player|ENG|Elliot Daly|cap=y}}
+{{RU squad player|ENG|Max Malins|cap=y}}
+{{Rugby union squad end
+ | group   = upper-alpha
+ | ex      =
+ | ref     = <ref name="Saracens squads"/>
+ | cap     = y
+ | captain = y
+ | st      = n
+}}
+
+=== Academy squad ===
+The Saracens [[Youth system#Youth academies|academy squad]] for the [[2026–27 Premiership Rugby|2026–27 season]] is:<ref name="Saracens squads" /><ref>{{cite news | url=https://saracens.com/get-to-know-the-new-senior-academy-intake/ | title=Get to know the new Senior Academy Intake | website=www.saracens.com | publisher=Saracens | date=12 May 2025 | access-date=12 May 2025 | language=en-UK}}</ref>
+
+{{Rugby union squad start
+ | title = Saracens 2026–27 Senior Academy squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|ENG|Tom Dargan|nolink=y}}
+{{RU squad player|ENG|Alan Poku|u=20|nolink=y}}
+{{RU squad player|ENG|Gabriel Registe|nolink=y}}
+{{RU squad player|SCO|Alex O'Driscoll|u=20|nolink=y}}
+'''Hookers'''
+{{RU squad player|ENG|Tiane Elone|nolink=y}}
+{{RU squad player|ENG|James Isaacs|u=20|nolink=y}}
+'''Locks'''
+{{RU squad player|ENG|Tayo Adegbemile|nolink=y}}
+{{RU squad player|ENG|Mathis Dehauteur|nolink=y}}
+{{RU squad player|ENG|Freddie Jones|nolink=y}}
+{{RU squad player|ENG|Jack Murphy|nolink=y}}
+||
+'''Back row'''
+{{RU squad player|ENG|Reggie Hammick|u=20|nolink=y}}
+{{RU squad player|ENG|Ediz Karsak|nolink=y}}
+{{RU squad player|ENG|Patrick Ludlow|nolink=y}}
+{{RU squad player|SCO|Jack Marshall|nolink=y|u=20}}
+{{RU squad player|ENG|Charlie West|nolink=y}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Henry Hodgson|nolink=y}}
+{{RU squad player|SCO|Asa Stewart-Harris|u=20|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|Luke Davidson|u=20}}
+{{RU squad player|ENG|Patrick Keaveney|nolink=y}}
+||
+'''Centres'''
+{{RU squad player|ENG|Alex Mason|nolink=y}}
+{{RU squad player|ENG|Fraser Rawlins|nolink=y}}
+{{RU squad player|ENG|Oscar Wilson|nolink=y}}
+'''Wings'''
+{{RU squad player|ENG|Zac Finch|u=20|nolink=y}}
+{{RU squad player|ENG|Seva Kava|nolink=y}}
+'''Fullbacks'''
+{{RU squad player|ENG|Finn Keylock|u=20|nolink=y}}
+{{RU squad player|ENG|Ben Morrow|nolink=y}}
+{{Rugby union squad end
+ | ref = <ref name="Saracens squads"/>
+ | cap = n
+ | u   = 20
+}}

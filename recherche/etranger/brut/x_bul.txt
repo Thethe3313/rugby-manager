@@ -1,0 +1,196 @@
+# Bulls (rugby union)
+== Current squad ==
+
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Bulls}}
+
+The Bulls squad for the [[2026–27 United Rugby Championship]] is:
+
+{{Rugby union squad start
+ | title = 2026–27 Bulls squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|RSA|Jean Erasmus|ru=y}}
+{{RU squad player|RSA|Francois Klopper}}
+{{RU squad player|RSA|Khutha Mchunu}}
+{{RU squad player|RSA|Mawande Mdanda}}
+{{RU squad player|RSA|Mornay Smith}}
+{{RU squad player|RSA|Gerhard Steenekamp|cap=y}}
+{{RU squad player|RSA|Sti Sithole}}
+{{RU squad player|RSA|Dylan Smith|ru=y}}
+{{RU squad player|RSA|Alulutho Tshakweni}}
+{{RU squad player|RSA|Hencus van Wyk|ex=Named in [[2026–27 European Rugby Champions Cup|Champions Cup]] squad, having signed from {{Rut|Stormers}} in loan, in October 2026.}}
+{{RU squad player|RSA|Jan-Hendrik Wessels|cap=y}}
+
+'''Hookers'''
+{{RU squad player|RSA|Juann Else}}
+{{RU squad player|RSA|Johan Grobbelaar|cap=y}}
+{{RU squad player|RSA|Jon Hobson|ex=Named in touring squad in September 2026.}}
+{{RU squad player|RSA|Janco Uys}}
+{{RU squad player|RSA|Akker van der Merwe|cap=y}}
+
+'''Locks'''
+{{RU squad player|RSA|Jaco Grobbelaar}}
+{{RU squad player|RSA|Nico Janse van Rensburg|cap=y}}
+{{RU squad player|RSA|Reinhardt Ludwig}}
+{{RU squad player|RSA|Heinrich Theron}}
+{{RU squad player|RSA|JF van Heerden}}
+{{RU squad player|RSA|Ruan Vermaak}}
+{{RU squad player|RSA|Cobus Wiese|cap=y}}
+
+||
+
+'''Back row'''
+{{RU squad player|RSA|Nizaam Carr|cap=y}}
+{{RU squad player|RSA|Marcell Coetzee|cap=y|captain=y}}
+{{RU squad player|RSA|Mpilo Gumede}}
+{{RU squad player|RSA|Cameron Hanekom|cap=y}}
+{{RU squad player|RSA|Hanro Liebenberg}}
+{{RU squad player|RSA|Elrigh Louw|cap=y}}
+{{RU squad player|RSA|Jeandré Rudolph}}
+{{RU squad player|RSA|JJ Theron}}
+{{RU squad player|RSA|Marco van Staden|cap=y}}
+{{RU squad player|RSA|Nama Xaba}}
+
+'''Scrum-halves'''
+{{RU squad player|RSA|Zak Burger}}
+{{RU squad player|RSA|Paul de Wet}}
+{{RU squad player|RSA|Keagan Johannes}}
+{{RU squad player|RSA|Neil le Roux}}
+{{RU squad player|RSA|Embrose Papier|cap=y}}
+
+'''Fly-halves'''
+{{RU squad player|RSA|Curwin Bosch|cap=y}}
+{{RU squad player|RSA|Luan Giliomee}}
+{{RU squad player|RSA|Viaan Mentoor|ex=Named in touring squad in September 2026.}}
+{{RU squad player|RSA|Handré Pollard|cap=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|RSA|Demitre Erasmus}}
+{{RU squad player|RSA|Stedman Gans}}
+{{RU squad player|RSA|Katlego Letebele}}
+{{RU squad player|RSA|Pieter van der Merwe|ru=y|ex=Named in [[2026–27 European Rugby Champions Cup|Champions Cup]] squad in October 2026.}}
+{{RU squad player|RSA|Harold Vorster}}
+{{RU squad player|RSA|Sango Xamlashe}}
+{{RU squad player|RSA|Mnombo Zwelendaba|ex=Signed on loan from the {{Rut|Griquas}} in October 2026.}}
+
+'''Wings'''
+{{RU squad player|RSA|Thaakir Abrahams}}
+{{RU squad player|RSA|Riyaad Bam}}
+{{RU squad player|RSA|Sebastian de Klerk}}
+{{RU squad player|RSA|Stravino Jacobs}}
+{{RU squad player|RSA|Cheswill Jooste}}
+{{RU squad player|RSA|Dylan Maart}}
+{{RU squad player|RSA|Canan Moodie|cap=y}}
+{{RU squad player|RSA|Sergeal Petersen}}
+
+'''Fullbacks'''
+{{RU squad player|RSA|Hakeem Kunene}}
+{{RU squad player|RSA|Willie le Roux|cap=y}}
+{{RU squad player|RSA|Devon Williams|ru=y}}
+{{Rugby union squad end
+ | res = South Africa
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref>{{cite news|url=https://bullsrugby.co.za/experienced-boks-explosive-recruits-power-vodacom-bulls-squad/|title=Experienced Boks, explosive recruits power Vodacom Blues squad|work=Bulls|date=17 September 2026|access-date=17 September 2026}}</ref><ref>{{cite news|url=https://bullsrugby.co.za/ackermann-looking-for-early-season-momentum-from-vodacom-bulls/|title=Ackermann looking for early season momentum from Vodacom Bulls|work=Bulls|date=22 September 2026|access-date=22 September 2026}}</ref><ref>{{cite instagram|post-id=DeGwGeGljbT|user=griquas_rugby|title=@zweli_m23 is heading to Pretoria, joining the Vodacom Bulls on loan for the URC campaign.|date=5 October 2026|access-date=6 October 2026}}</ref><ref>{{cite web|url=https://www.epcrugby.com/champions-cup/clubs/vodacom-bulls/squad|title=Squad - Vodacom Bulls|work=European Rugby|access-date=12 October 2026}}</ref>
+{{notelist|group="Squad"}}
+}}
+
+The following players have been included so far in the Bulls XV squad for the [[2026 Currie Cup Premier Division]]:
+
+{{Rugby union squad start
+ | title = 2026 Bulls XV Currie Cup squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|RSA|Damian Baker}}
+{{RU squad player|RSA|Dian Coetzee}}
+{{RU squad player|RSA|Jean Erasmus|ru=y}}
+{{RU squad player|RSA|Ranon Fouché}}
+{{RU squad player|RSA|Arno Gustafson}}
+{{RU squad player|RSA|Mawande Mdanda}}
+{{RU squad player|RSA|Sandisiwe Msengana}}
+{{RU squad player|RSA|Duwan Potgieter|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Dylan Smith|ru=y}}
+
+'''Hookers'''
+{{RU squad player|RSA|Jon Hobson}}
+{{RU squad player|RSA|Esethu Mnebelele}}
+{{RU squad player|RSA|Juandre Schoeman}}
+{{RU squad player|RSA|Shaun Schurmann}}
+
+'''Locks'''
+{{RU squad player|RSA|Jonathan Eloff}}
+{{RU squad player|RSA|Nico Janse van Rensburg|cap=y}}
+{{RU squad player|RSA|Sintu Manjezi}}
+{{RU squad player|RSA|Jacques Swarts|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Heinrich Theron}}
+{{RU squad player|RSA|Migael Turner}}
+{{RU squad player|RSA|Abri van der Westhuizen}}
+{{RU squad player|RSA|Ulrich van der Westhuizen}}
+
+||
+
+'''Back row'''
+{{RU squad player|RSA|Chinedu Amadi}}
+{{RU squad player|RSA|Thomas Beling}}
+{{RU squad player|RSA|Nizaam Carr|cap=y|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|Oelof de Meyer}}
+{{RU squad player|RSA|Mpilo Gumede|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+{{RU squad player|RSA|KB Maake}}
+{{RU squad player|RSA|Abongile Nonkontwana}}
+{{RU squad player|RSA|Junior Pokomela}}
+{{RU squad player|RSA|Dieter Schubert|ru=y}}
+{{RU squad player|RSA|JJ Theron}}
+{{RU squad player|RSA|Cephas van Biljon}}
+{{RU squad player|RSA|Nama Xaba|captain=y}}
+
+'''Scrum-halves'''
+{{RU squad player|RSA|Neil le Roux}}
+{{RU squad player|RSA|Brooklyn Newman}}
+{{RU squad player|RSA|Hendré Schoeman}}
+{{RU squad player|RSA|Melt Viljoen}}
+
+'''Fly-halves'''
+{{RU squad player|RSA|Ruben Groenewald}}
+{{RU squad player|RSA|Keagan Johannes}}
+{{RU squad player|RSA|Viaan Mentoor}}
+{{RU squad player|RSA|Unathi Mlotshwa}}
+{{RU squad player|RSA|Ian van der Merwe|ru=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|RSA|Demitre Erasmus}}
+{{RU squad player|RSA|Marnus Rademeyer}}
+{{RU squad player|RSA|Riwan van Aswegen}}
+{{RU squad player|RSA|Daniel van der Merwe}}
+{{RU squad player|RSA|Pieter van der Merwe|ru=y}}
+{{RU squad player|RSA|PA van Niekerk}}
+{{RU squad player|RSA|Christiaan Vlok}}
+{{RU squad player|RSA|Christian Vorster}}
+
+'''Wings'''
+{{RU squad player|RSA|Riyaad Bam}}
+{{RU squad player|RSA|Ruan Enslin}}
+{{RU squad player|RSA|Lindsey Jansen}}
+{{RU squad player|RSA|JJ Motlhodi}}
+{{RU squad player|RSA|Lavela Pongolo|ex=Addition for [[2026 Currie Cup Premier Division|2026 Currie Cup]]}}
+
+'''Fullbacks'''
+{{RU squad player|RSA|Aka Boqwana}}
+{{RU squad player|RSA|Hakeem Kunene}}
+{{RU squad player|RSA|Devon Williams|ru=y}}
+{{Rugby union squad end
+ | res = South Africa
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref>{{cite news|url=https://bullsrugby.co.za/one-coach-plenty-of-chaos-nomlomo-embraces-the-unknown/|title=One coach, plenty of chaos: Nomlomo embraces the unknown|work=Bulls|date=7 July 2026|access-date=8 July 2026}}</ref>
+{{notelist-ua|group="Squad"}}
+}}

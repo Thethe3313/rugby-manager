@@ -1,0 +1,135 @@
+# Dragons RFC
+==Current squad==
+{{For|player movements before or during the [[2026-27 United Rugby Championship|2026-27 season]]|List of 2026-27 United Rugby Championship transfers#Dragons}}
+
+{{Rugby union squad start
+ | title = 2026-27 Dragons squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|WAL|Christian Coleman|ru=y|cap=y}}
+{{RU squad player|RSA|Robert Hunt|born=1996}}
+{{RU squad player|WAL|Rhodri Jones|cap=y}}
+{{RU squad player|WAL|Wyn Jones|ru=y|cap=y}}
+{{RU squad player|WAL|Dylan Kelleher-Griffiths}}
+{{RU squad player|WAL|Dillon Lewis|cap=y}}
+{{RU squad player|ARG|Rodrigo Martínez|ru=y|cap=y}}
+'''Hookers'''
+{{RU squad player|WAL|Oli Burrows}}
+{{RU squad player|WAL|Brodie Coghlan|cap=y}}
+{{RU squad player|WAL|Elliot Dee|cap=y}}
+{{RU squad player|WAL|Sam Scarfe}}
+'''Locks'''
+{{RU squad player|WAL|Ben Carter|ru=y|cap=y|captain=y}}
+{{RU squad player|WAL|Seb Davies|cap=y}}
+{{RU squad player|ENG|Levi Douglas|res=y}}
+{{RU squad player|WAL|Barny Langton-Cryer}}
+{{RU squad player|WAL|Matthew Screech|cap=y}}
+||
+'''Back row'''
+{{RU squad player|WAL|Harrison Keddie}}
+{{RU squad player|WAL|Shane Lewis-Hughes|cap=y}}
+{{RU squad player|NZL|Terrell Peita}}
+{{RU squad player|WAL|Ryan Woodman}}
+{{RU squad player|WAL|Thomas Young|dab=rugby union|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|SAM|Ere Enari|cap=y}}
+{{RU squad player|WAL|Che Hope}}
+{{RU squad player|WAL|Morgan Lloyd|ru=y}}
+{{RU squad player|WAL|Rhodri Williams|ru=y|cap=y}}
+'''Fly-halves'''
+{{RU squad player|RSA|Tinus de Beer}}
+{{RU squad player|WAL|Jac Lloyd}}
+||
+'''Centres'''
+{{RU squad player|WAL|Harri Ackerman}}
+{{RU squad player|TGA|Fine Inisi|cap=y}}
+{{RU squad player|WAL|Aneurin Owen|ru=y}}
+{{RU squad player|TGA|Fetuli Paea|cap=y}}
+{{RU squad player|WAL|Joe Westwood}}
+'''Wings'''
+{{RU squad player|WAL|Rio Dyer|cap=y}}
+{{RU squad player|WAL|Harry Rees-Weldon}}
+{{RU squad player|WAL|David Richards|born=1999}}
+{{RU squad player|WAL|Jared Rosser}}
+{{RU squad player|TON|Anzelo Tuitavuki|cap=y}}
+'''Fullbacks'''
+{{RU squad player|WAL|Huw Anderson}}
+{{RU squad player|WAL|Cai Evans|cap=y}}
+{{RU squad player|WAL|Angus O'Brien}}
+{{Rugby union squad end
+ | res = Wales
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2025–26 season as listed on [[List of 2025–26 United Rugby Championship transfers]].
+ | ref = <ref name="Dragons Squad">{{cite web | url=https://www.dragonsrugby.wales/Teams/Squad/Dragons | title=Dragons Squad | work=Dragons Rugby | access-date=25 August 2017}}</ref>
+}}
+
+===Academy Squad===
+
+{{Rugby union squad start
+ | title = 2026-27 Dragons Academy squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|WAL|Owain James|ru=y}}
+{{RU squad player|WAL|Jordan Morris|ru=y}}
+'''Locks'''
+{{RU squad player|WAL|Nick Thomas|ru=y}}
+||
+'''Back row'''
+{{RU squad player|WAL|Harry Beddall}}
+{{RU squad player|WAL|Owen Conquer|nolink=y}}
+{{RU squad player|WAL|Evan Minto}}
+'''Scrum-halves'''
+{{RU squad player|WAL|Logan Franklin|nolink=y}}
+'''Fly-halves'''
+{{RU squad player|WAL|Harri Ford}}
+||
+'''Wings'''
+{{RU squad player|WAL|Caio Parry}}
+'''Fullbacks'''
+{{RU squad player|WAL|Oli Woodman|nolink=y}}
+{{Rugby union squad end
+ | res = Wales
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026-27 season as listed on [[List of 2026-27 United Rugby Championship transfers]].
+ | ref = <ref name="Senior Academy">{{cite web | url=https://www.dragonsrugby.wales/teams/squad/academy.html | title=Senior Academy | work=Dragons Rugby | access-date=24 July 2022}}</ref>
+}}
+
+===Notable players===
+{{see also|Category:Dragons RFC players}}
+
+Michael Owen captained [[Wales national rugby union team|Wales]] in 2005–06 and he led Wales to their first [[Grand Slam (Rugby Union)|Grand Slam]] for 27-years in the [[2005 Six Nations Championship]].
+
+[[Lewis Evans (rugby union)|Lewis Evans]] has made over 200 appearances for the Dragons. Prop [[Adam Black (rugby union)|Adam Black]] became the first centurion in Dragons colours during the 2006–07 season. The following players have also made over one hundred Dragons appearances: [[Jamie Ringer]], [[Peter Sidoli]], [[Gareth Wyatt]], [[Steve Jones (rugby union, born 1977)|Steve Jones]], [[Luke Charteris]], [[Wayne Evans (rugby union)|Wayne Evans]], [[Aled Brew]], [[Ashley Smith (rugby union)|Ashley Smith]], [[Adam Jones (rugby union, born 1980)|Adam Jones]], [[Hugh Gustafson]], [[Jason Tovey]], [[Robert Sidoli]], [[Phil Price (rugby union)|Phil Price]], [[Adam Hughes (rugby union, born 1990)|Adam Hughes]], [[Nic Cudd]], [[Ligtoring Landman|Rynard Landman]], [[Matthew Screech]], [[Brok Harris]], [[Lloyd Fairbrother]], [[Jack Dixon]], [[Elliot Dee]], [[Ashton Hewitt]], [[Joe Davies (rugby player)|Joe Davies]], [[Harrison Keddie]], [[Rhodri Williams (rugby player)|Rhodri Williams]], [[Ollie Griffiths]], [[Aaron Wainwright]].
+
+Many former players were capped by the [[Wales national rugby union team]] while with the region; props [[Chris Anthony (rugby union)|Chris Anthony]], [[Rhys M. Thomas]] and [[Bradley Roberts (rugby union)|Bradley Roberts]], hookers [[Steve Jones (rugby union, born 1977)|Steve Jones]], [[Lloyd Burns]] and [[Leon Brown (rugby union)|Leon Brown]], second rows [[Ian Gough]], [[Luke Charteris]], [[Andrew Coombs]], [[Cory Hill]] and [[Will Rowlands]], flankers [[Jason Forster]], [[Richard Parks]], [[Jamie Ringer]], [[Gavin Thomas]] and [[Ross Moriarty]], number eight [[Michael Owen (rugby union)|Michael Owen]], [[Rhys Oakley]], [[Taulupe Faletau]], [[Dan Lydiate]], [[Ollie Griffiths]] and [[Taine Basham]], scrum halves [[Gareth Cooper]] and [[Andy Williams (rugby union)|Andy Williams]], outside half [[Ceri Sweeney]], centres [[Andy Marinos]], [[Tyler Morgan]] and [[Nick Tompkins]], wingers [[Gareth Wyatt]], [[Haldane Luscombe|Hal Luscombe]], [[Aled Brew]], [[Will Harries]], [[Tom Prydie]], [[Hallam Amos]], [[Jonah Holmes]] and fullback [[Kevin Morgan (rugby union)|Kevin Morgan]]. [[Percy Montgomery]], [[Sione Tuʻipulotu]], [[Rod Snow]], [[Mike Hercus]], [[Mike Petri]], [[James Arlidge]], [[Will Kelly (rugby union)|Will Kelly]], [[Mesake Doge]], [[Gonzalo Bertranou]] and [[Aki Seiuli]] played internationally for their respective countries whilst with the region.
+
+Of the current players [[Elliot Dee]], [[Aaron Wainwright]], [[Ben Carter (rugby union)|Ben Carter]], [[Rio Dyer]], [[Matthew Screech]], [[Cai Evans]], [[Rhodri Williams (rugby union)|Rhodri Williams]], [[Christian Coleman]] and [[Brodie Coghlan]] have featured in Wales test matches whilst with the region. [[Rhodri Jones]], [[Shane Lewis-Hughes]], [[Seb Davies]], [[Dillon Lewis]], [[Wyn Jones (rugby union)|Wyn Jones]] and [[Thomas Young (rugby union)|Thomas Young]] achieved Wales international caps before joining the Dragons.
+
+===British & Irish Lions===
+The following players have been selected to play for the [[British & Irish Lions]] touring squads while playing for the Dragons.
+
+{| class="wikitable sortable" style="font-size:100%;border:0px;text-align:left;line-height:150%;"
+|'''Player'''
+|'''Tours'''
+|-
+|{{flagicon|WAL}} [[Michael Owen (rugby union)|Michael Owen]]
+|[[2005 British & Irish Lions tour to New Zealand|2005 New Zealand]]
+|-
+|{{flagicon|WAL}} [[Gareth Cooper]]
+|[[2005 British & Irish Lions tour to New Zealand|2005 New Zealand]]
+|-
+|{{flagicon|WAL}} [[Dan Lydiate]]
+|[[2013 British & Irish Lions tour to Australia|2013 Australia]]
+|-
+|{{flagicon|WAL}} [[Taulupe Faletau]]
+|[[2013 British & Irish Lions tour to Australia|2013 Australia]]
+|-
+|{{flagicon|WAL}} [[Cory Hill]]
+|[[2017 British & Irish Lions tour to New Zealand|2017 New Zealand]]
+|}

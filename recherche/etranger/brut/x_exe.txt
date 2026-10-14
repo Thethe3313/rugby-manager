@@ -1,0 +1,107 @@
+# Exeter Chiefs
+==Current squad==
+{{For|player movements before or during the [[2026–27 Premiership Rugby|2026–27 season]]|List of 2026–27 Premiership Rugby transfers#Exeter Chiefs}}
+
+The Exeter Chiefs squad for the [[2026–27 Premiership Rugby|2026–27 season]] is:<ref name="Squad">{{Cite news|url=https://www.exeterchiefs.co.uk/teams/mens |publisher=Exeter Chiefs |title=Men's team |date=3 August 2026|accessdate=3 August 2026}}</ref><ref>{{Cite news|url=https://all.rugby/club/exeter/squad |title=Exeter squad for season 2026/2027|date=3 August 2026|accessdate=3 August 2026|publisher=All Rugby}}</ref>
+
+{{Rugby union squad start
+ | title = Exeter Chiefs 2026–27 Premiership Rugby squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|GEO|Nika Abuladze|cap=y}}
+{{RU squad player|RSA|Ethan Burger}}
+{{RU squad player|ENG|Will Goodrick-Clarke}}
+{{RU squad player|ENG|Josh Iosefa-Scott}}
+{{RU squad player|ENG|Archie McArthur}}
+{{RU squad player|ENG|Ehren Painter}}
+{{RU squad player|NZL|Jimmy Roots}}
+{{RU squad player|GEO|Bachuki Tchumbadze|cap=y}}
+'''Hookers'''
+{{RU squad player|RSA|Joseph Dweba|cap=y}}
+{{RU squad player|AUS|Julian Heaven}}
+{{RU squad player|ENG|Max Norey}}
+{{RU squad player|ENG|Jack Yeandle}}
+'''Locks'''
+{{RU squad player|WAL|Dafydd Jenkins|ru=y|cap=y|captain=y}}
+{{RU squad player|ENG|Obinna Nkwocha}}
+{{RU squad player|ENG|Lewis Pearson}}
+{{RU squad player|ENG|Harry Wilson|ru=y|born=1997}}
+{{RU squad player|ITA|Andrea Zambonin|cap=y}}
+||
+'''Back row'''
+{{RU squad player|ENG|Richard Capstick}}
+{{RU squad player|ENG|Greg Fisilau}}
+{{RU squad player|AUS|Tom Hooper|ru=y|cap=y}}
+{{RU squad player|WAL|Kane James|cap=y}}
+{{RU squad player|ENG|Ethan Roots|cap=y}}
+{{RU squad player|WAL|Carwyn Tuipulotu}}
+{{RU squad player|ITA|Ross Vintcent|cap=y}}
+'''Scrum-halves'''
+{{RU squad player|ENG|Tom Cairns}}
+{{RU squad player|ENG|Jake Murray}}
+{{RU squad player|ITA|Stephen Varney|cap=y}}
+{{RU squad player|ENG|Sam Wolstenholme|ru=y}}
+'''Fly-halves'''
+{{RU squad player|ENG|Will Haydon-Wood}}
+{{RU squad player|ENG|Harvey Skinner}}
+||
+'''Centres'''
+{{RU squad player|ENG|Will Butt}}
+{{RU squad player|NZL|Dallas McLeod|cap=y}}
+{{RU squad player|ENG|Henry Slade|ru=y|cap=y|ex=[[Henry Slade (rugby union)|Henry Slade]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Zack Wimbush}}
+'''Wings'''
+{{RU squad player|ENG|Paul Brown-Bampoe}}
+{{RU squad player|ENG|Immanuel Feyi-Waboso|cap=y|ex=[[Immanuel Feyi-Waboso]] is jointly contracted with the [[Rugby Football Union|RFU]], via an enhanced [[England national rugby union team|England]] Elite Player Squad (EPS) contract.<ref>{{Cite news|url=https://www.englandrugby.com/follow/news-and-media/borthwick-names-25-players-receive-enhanced-contracts-2026-27 |publisher=England Rugby|title=Borthwick names 25 players to receive enhanced contracts for 2026/27 |date=12 August 2026|accessdate=12 August 2026}}</ref>}}
+{{RU squad player|ENG|Ben Hammersley|ru=y}}
+{{RU squad player|ENG|Campbell Ridl}}
+'''Fullbacks'''
+{{RU squad player|ENG|Sam Harris|ru=y|born=2003}}
+{{RU squad player|ENG|Olly Woodburn}}
+{{RU squad player|ENG|Tom Wyatt|ru=y}}
+{{Rugby union squad end
+ | group = upper-alpha
+ | ex =
+ | ref = <ref name="Squad"/>
+ | cap  = y
+ | captain = y
+ | st  = n
+}}
+
+===Academy squad===
+The Exeter Chiefs Academy squad is:
+
+{{Rugby union squad start
+ | title = Exeter Chiefs 2026–27 Senior Academy squad
+ | width = 60%
+}}
+'''Props'''
+{{RU squad player|ENG|Josh Mann}}
+'''Hookers'''
+{{RU squad player|ENG|Louie Gulley|u=20}}
+'''Locks'''
+{{RU squad player|ENG|Joe Bailey|ru=y|u=20}}
+{{RU squad player|ENG|Oscar Beckerleg|u=20}}
+{{RU squad player|ENG|Luke Evans|ru=y|born=2003}}
+||
+'''Back row'''
+{{RU squad player|ENG|Finn Worley-Brady}}
+'''Scrum-halves'''
+{{RU squad player|ENG|George Newman}}
+'''Fly-halves'''
+{{RU squad player|ENG|Ben Coen|u=20}}
+||
+'''Centres'''
+{{RU squad player|ENG|Nic Allison|u=20}}
+{{RU squad player|ENG|Ollie Batson}}
+{{RU squad player|ENG|Nick Lilley|u=20}}
+'''Wingers'''
+{{RU squad player|ENG|Noah Fenton}}
+'''Fullbacks'''
+
+{{Rugby union squad end
+ | ref = <ref name="Squad"/>
+ | cap = n
+ | u   = 20
+}}

@@ -90,14 +90,24 @@ function viewCal(){
   if(done)h+=`<div class="card"><h3>Tous les résultats de la journée ${done.i+1}</h3>${done.r.map(x=>`<p>${C(x.h).short} <b>${x.sh} - ${x.sa}</b> ${C(x.a).short}</p>`).join('')}</div>`;
   return h;
 }
+const lgBtns=cur=>LGORDER.map(l=>`<button class="btn ${l===cur?'':'sec'} sm" data-a="lgsel" data-lg="${l}">${LEAGUES[l].name}</button>`).join('')+Object.keys(G.XL||{}).map(l=>`<button class="btn ${l===cur?'':'sec'} sm" data-a="lgsel" data-lg="${l}">${G.XL[l].name}</button>`).join('');
+// Classement d'un championnat étranger (URC, Premiership)
+function viewXLTable(lg){
+  const L=G.XL[lg],tb=xlSorted(L),n=XLEAGUES[lg].po,P=XLPO[n];
+  return `<div class="card"><div class="row"><h2 style="margin:0">Classement</h2>${lgBtns(lg)}</div>
+  <p class="mut">${L.name} ${seasonLabel()} : ${L.phase==='regular'?`journée ${L.week+1}/${L.fixtures.length}`:L.phase==='playoffs'?P[L.po.stage]:'terminé'}. Victoire 4 pts · nul 2 · bonus offensif (4 essais ou plus) +1 · bonus défensif (défaite de 7 pts ou moins) +1. Les ${n} premiers vont en phases finales ; les 8 premiers jouent la Champions Cup la saison suivante.</p>
+  <table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">G</th><th class="n">N</th><th class="n">P</th><th class="n">Diff</th><th class="n">Bonus</th><th class="n">Pts</th></tr>${tb.map((r,i)=>`<tr class="${i<n?'q':''}"><td>${i+1}</td><td>${C(r.id).name}</td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.n}</td><td class="n">${r.p}</td><td class="n">${r.pf-r.pa}</td><td class="n">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
+  ${L.po&&L.po.res.length?`<div class="card"><h2>Phases finales</h2>${L.po.res.map(r=>`<h3>${P[r.stage]}</h3>`+r.m.map(x=>`<p>${C(x.h).short} <b>${x.sh} - ${x.sa}</b> ${C(x.a).short}</p>`).join('')).join('')}${L.champ?`<p>🏆 <b>${C(L.champ).name}</b></p>`:''}</div>`:''}`;
+}
 function viewTable(){
+  if(UI.lg&&G.XL&&G.XL[UI.lg])return viewXLTable(UI.lg);
   const m=ME(),lg=UI.lg&&G.L[UI.lg]?UI.lg:m.lg,tb=sortedTable(lg),n=tb.length;
   const rule=lg==='t14'?"Les 6 premiers sont qualifiés pour les phases finales. Le 13e joue un barrage d'accession, le 14e descend en Pro D2.":"Les 6 premiers sont qualifiés pour les phases finales (le champion monte en Top 14). Le 15e joue un barrage, le 16e descend en Nationale.";
-  return `<div class="card"><div class="row"><h2 style="margin:0">Classement</h2>${LGORDER.map(l=>`<button class="btn ${l===lg?'':'sec'} sm" data-a="lgsel" data-lg="${l}">${LEAGUES[l].name}</button>`).join('')}</div>
+  return `<div class="card"><div class="row"><h2 style="margin:0">Classement</h2>${lgBtns(lg)}</div>
   <p class="mut">Victoire 4 pts · nul 2 · bonus offensif (3 essais de plus que l'adversaire) +1 · bonus défensif (défaite de 5 pts ou moins) +1. ${rule}</p>
   <table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">G</th><th class="n">N</th><th class="n">P</th><th class="n">PP</th><th class="n">PC</th><th class="n">Diff</th><th class="n">Bonus</th><th class="n">Pts</th></tr>
   ${tb.map((r,i)=>`<tr class="${r.id===m.id?'me':''} ${i<6?'q':''}"><td>${i+1}${i>=n-2?(i===n-1?' ⬇':' ⚠'):''}</td><td>${C(r.id).name}</td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.n}</td><td class="n">${r.p}</td><td class="n">${r.pf}</td><td class="n">${r.pa}</td><td class="n">${r.pf-r.pa}</td><td class="n">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
-  ${G.hist.length?`<div class="card"><h3>Palmarès</h3>${G.hist.map(h=>`<p>${h.s} : Top 14 ${h.champ} · Pro D2 ${h.champ2}${h.cc?' · Champions Cup '+h.cc:''}${h.ch?' · Challenge Cup '+h.ch:''} · toi : ${h.rank}e de ${LEAGUES[h.lg].name}${h.fate!=='maintenu'?' ('+h.fate+')':''}</p>`).join('')}</div>`:''}`;
+  ${G.hist.length?`<div class="card"><h3>Palmarès</h3>${G.hist.map(h=>`<p>${h.s} : Top 14 ${h.champ} · Pro D2 ${h.champ2}${h.cc?' · Champions Cup '+h.cc:''}${h.ch?' · Challenge Cup '+h.ch:''}${h.urc?' · URC '+h.urc:''}${h.prem?' · Premiership '+h.prem:''} · toi : ${h.rank}e de ${LEAGUES[h.lg].name}${h.fate!=='maintenu'?' ('+h.fate+')':''}</p>`).join('')}</div>`:''}`;
 }
 function viewHelp(){
   return `<div class="card help"><h2>Rugby 101 : comprendre le jeu</h2>

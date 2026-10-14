@@ -18,7 +18,7 @@ function genPlayer(g,level,age){
   return p;
 }
 function realPlayer(r,lg){
-  const [n,g,sub,by,nat,caps,rec,rt,tags,ev,str,weak]=r,age=2026-by;
+  const [n,g,sub,by,nat,caps,rec,rt,tags,ev,str,weak,intl]=r,age=2026-by;
   const o=clamp(rt,45,97);
   const p={id:G.nid++,name:n,g,age,forme:90,inj:0,ni:false,ctr:R.i(1,4),st:{mj:0,tit:0,es:0,pts:0},real:true,nat,sub,tags,caps,ev,hist:[]};
   const mods={};
@@ -29,6 +29,7 @@ function realPlayer(r,lg){
   const ov=ovrAt(p,g);
   p.pro=clamp(Math.round(5+hashN(n+'pro')*12+(tags.includes('w')?2:0)+(rec?1:0)),1,20);
   realPers(p,n,caps,rec,tags,rt);
+  if(intl)p.intl=true;
   // potentiel tiré dans sa fourchette à chaque nouvelle partie (initPot(…,0) à initPot(…,1)) : chaque sauvegarde est différente
   p.pot=initPot(ov,age,R.f());
   p.sal=Math.round(salaryFor(ov,age,lg)*(.88+hashN(n+'sal')*.24));

@@ -1,0 +1,236 @@
+# Connacht Rugby
+==Current squads==
+===Connacht Men Coaches and management===
+<small>Note: Flags indicate national union as has been defined under [[World Rugby|WR]] eligibility rules. Individuals may hold more than one non-WR nationality.</small>
+{| class="wikitable sortable"
+|-
+! Role
+! Name
+! Union
+|-
+| Chief Executive
+| [[Willie Ruane]]<ref>{{cite web|url=http://www.independent.ie/sport/rugby/connacht-appoint-willie-ruane-as-new-ceo-30256914.html | work=[[Irish Independent]] | title=Connacht appoint Willie Ruane as new CEO | access-date=23 May 2014 | date=8 May 2014}}</ref>
+| {{flagu|Ireland|rugby union|name=Ireland}}
+|-
+| Head of Rugby Operations
+| Tim Allnutt<ref>{{cite web|url=http://www.independent.ie/sport/rugby/connacht-rugby/i-just-came-over-here-to-visit-my-brother-and-i-never-left-30910953.html | work=[[Irish Independent]] | title=I just came over here to visit my brother and I never left | date=16 January 2015 | access-date=1 October 2016}}</ref>
+| {{flagu|New Zealand|name=New Zealand}}
+|-
+| Head coach
+| [[Stuart Lancaster (rugby union)|Stuart Lancaster]]
+| {{flagu|England|name=England}}
+|-
+| Lineout & Maul Coach
+| [[John Muldoon (rugby union, born 1982)|John Muldoon]]
+| {{flagu|Ireland|rugby union|name=Ireland}}
+|-
+| Scrum Coach
+| [[Trevor Woodman]]
+| {{flagu|England|name=England}}
+|-
+| Backs Coach
+| Gerard Mullen
+| {{flagu|Ireland|rugby union|name=Ireland}}
+|-
+| Senior Performance Analyst
+| Simon Kavanagh<ref name="Bell replaced by McPhillips and Elwood">{{cite web|url=http://www.irishtimes.com/sport/rugby/pro12/conor-mcphilips-to-replace-andre-bell-as-connacht-backs-coach-1.2677068 | work=[[Irish Times]] | title=Conor McPhilips to replace Andre Bell as Connacht backs' coach | date=8 June 2016 | access-date=1 October 2016}}</ref>
+| {{flagu|Ireland|rugby union|name=Ireland}}
+|-
+| Head of Athletic Performance
+| Allan Temple Jones
+| {{flagu|South Africa|name=South Africa}}
+|-
+| Head of Physiotherapy
+| Dave Hanly
+| {{flagu|Ireland|rugby union|name=Ireland}}
+|-
+| Academy Manager
+| [[Eric Elwood]]<ref>{{cite web|url=http://www.the42.ie/eric-elwood-connacht-academy-carolan-3364327-Apr2017/ |work=[[TheJournal.ie|The42]] |title=Connacht legend Eric Elwood succeeds Carolan as academy manager |date=28 April 2017 |access-date=21 May 2017}}</ref>
+| {{flagu|Ireland|rugby union|name=Ireland}}
+|-
+|}
+
+===Connacht Men Squad===
+{{For|player movements before or during the [[2026–27 United Rugby Championship|2026–27 season]]|List of 2026–27 United Rugby Championship transfers#Connacht}}
+
+{{Rugby union squad start
+ | title = 2026–27 Connacht Men Squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|IRE|Fiachna Barrett}}
+{{RU squad player|IRE|Finlay Bealham|cap=y}}
+{{RU squad player|IRE|Billy Bohan|cap=y}}
+{{RU squad player|IRE|Jerry Cahir}}
+{{RU squad player|IRE|Thomas Connolly}}
+{{RU squad player|IRE|Jordan Duggan}}
+{{RU squad player|IRE|Sam Illo|cap=y}}
+* {{flagicon|RSA}} [[Francois van Wyk]]
+'''Hookers'''
+{{RU squad player|IRE|Eoin de Buitléar}}
+{{RU squad player|IRE|Dave Heffernan|cap=y}}
+{{RU squad player|IRE|Dylan Tierney-Martin}}
+{{RU squad player|IRE|Matthew Victory}}
+'''Locks'''
+{{RU squad player|IRE|Josh Murphy|ru=y}}
+{{RU squad player|IRE|Darragh Murray|cap=y}}
+{{RU squad player|IRE|Niall Murray}}
+{{RU squad player|IRE|David O'Connor|ru=y}}
+||
+'''Back row'''
+{{RU squad player|IRE|Paul Boyle|ru=y|cap=y}}
+{{RU squad player|IRE|Will Connors|cap=y}}
+{{RU squad player|NZL|Shamus Hurley-Langton}}
+{{RU squad player|IRE|Sean Jansen|cap=y}}
+{{RU squad player|IRE|Seán O'Brien|born=2000}}
+{{RU squad player|IRE|Cian Prendergast|cap=y|captain=y}}
+'''Scrum-halves'''
+{{RU squad player|IRE|Caolin Blade|cap=y}}
+{{RU squad player|IRE|Ben Murphy|born=2001|cap=y}}
+{{RU squad player|IRE|Colm Reilly}}
+'''Fly-halves'''
+{{RU squad player|IRE|Ciarán Frawley|cap=y}}
+{{RU squad player|NZL|Josh Ioane|cap=y}}
+{{RU squad player|IRE|Seán Naughton}}
+||
+'''Centres'''
+{{RU squad player|IRE|Bundee Aki|cap=y}}
+{{RU squad player|IRE|John Devine|ru=y}}
+{{RU squad player|IRE|Cathal Forde}}
+{{RU squad player|IRE|Hugh Gavin|ru=y|cap=y}}
+'''Back Three'''
+{{RU squad player|IRE|Shayne Bolton|cap=y}}
+{{RU squad player|NZL|Sam Gilbert|ru=y}}
+{{RU squad player|IRE|Mack Hansen|cap=y}}
+{{RU squad player|IRE|Shane Jennings|born=2001}}
+{{RU squad player|AUS|Byron Ralston|res=y}}
+{{RU squad player|IRE|Finn Treacy}}
+{{RU squad player|IRE|Harry West|ru=y}}
+{{Rugby union squad end
+ | res = Ireland
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026–27 season as listed on [[List of 2026–27 United Rugby Championship transfers]].
+ | ref = <ref name="Connacht Rugby {{pipe}} Senior Squad">{{cite web|url=http://www.connachtrugby.ie/teams|title=Connacht Rugby {{pipe}} Senior Squad|work=Connacht Rugby|access-date=6 July 2018}}</ref>
+}}
+
+===Connacht Men Academy Squad===
+
+{{Rugby union squad start
+ | title = 2026–27 Connacht Men Academy squad (18 members with Year stages)
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|IRE|Adam Cooper|ru=y}} (1)
+{{RU squad player|IRE|Rory Lyons|ru=y}} (1)
+{{RU squad player|IRE|Luke Murtagh|ru=y}} (1)
+'''Hookers'''
+{{RU squad player|IRE|Duinn Maguire|ru=y}} (1)
+{{RU squad player|IRE|Mikey Yarr|nolink=y}} (2)
+'''Locks'''
+{{RU squad player|IRE|David Walsh|nolink=y}} (2)
+{{RU squad player|IRE|Liam McNamee|ru=y}} (1)
+||
+'''Back row'''
+{{RU squad player|IRE|Max Flynn|nolink=y}} (3)
+{{RU squad player|IRE|Aaron O'Brien|nolink=y}} (2)
+{{RU squad player|IRE|Diarmaid O'Connell|nolink=y}} (2)
+{{RU squad player|IRE|Bobby Power|nolink=y}} (2)
+{{RU squad player|IRE|Charlie Keane|ru=y}} (1)
+'''Scrum-halves'''
+
+{{RU squad player|GER|Albert Lindner}} (2)
+'''Fly-halves'''
+
+(None)
+
+||
+'''Centres'''
+{{RU squad player|IRE|Seán Walsh|ru=y}} (2)
+{{RU squad player|IRE|Rourke O'Sullivan|ru=y}} (1)
+
+'''Back three'''
+{{RU squad player|IRE|Cian Brady|ru=y}} (1)
+{{RU squad player|IRE|Daniel Ryan|ru=y}} (2)
+{{RU squad player|IRE|James Nicholson|nolink=y}} (3)
+{{Rugby union squad end
+ | res = Ireland
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex = Taking into account signings and departures ahead of 2026–27 season as listed on [[List of 2026–27 United Rugby Championship transfers]].
+ | ref = <ref name="Connacht Rugby: Academy Squad">{{cite web|url=https://www.connachtrugby.ie/teams/academy-team/ |title=Academy Squad |work=Connacht Rugby |access-date=24 June 2026}}</ref>
+}}
+
+===Connacht Women===
+
+{| class="wikitable" style="text-align:left; font-size:90%; width:70%"
+! colspan="3" |Connacht Women Squad 2026/27
+|- valign="top"
+|'''Props'''
+
+* {{flagicon|IRE|rugby union}} Ella Burns
+* {{flagicon|IRE|rugby union}} Evie Kennedy*
+* {{flagicon|IRE|rugby union}} Hannah Rapley
+* {{flagicon|IRE|rugby union}} Laura Scuffil
+
+'''Hookers'''
+
+* {{flagicon|IRE|rugby union}} Uillin Eilian
+* {{flagicon|IRE|rugby union}} Stacy Hanley
+* {{flagicon|IRE|rugby union}} Anna McDermott*
+* {{flagicon|IRE|rugby union}} Amanda McQuade
+* {{flagicon|IRE|rugby union}} [[Cliodhna Moloney|'''Cliodhna Moloney-MacDonald''']]
+
+'''Locks'''
+
+* {{flagicon|IRE|rugby union}} Jemima Adams Verlings
+* {{flagicon|IRE|rugby union}} Katie Griffin*
+* {{flagicon|IRE|rugby union}} Olivia Tallon Daly
+|'''Back Row'''
+
+* {{flagicon|IRE|rugby union}} Hannah Coen
+
+* {{flagicon|IRE|rugby union}} Emma Fabby
+* {{flagicon|IRE|rugby union}} Catherine Fleming*
+* {{flagicon|IRE|rugby union}} Poppy Garvey
+* {{flagicon|IRE|rugby union}} Hannah Johnston
+* {{flagicon|IRE|rugby union}} Merisa Kiripati
+* {{flagicon|IRE|rugby union}} '''[[Edel McMahon]]'''
+* {{flagicon|IRE|rugby union}} '''Faith Oviawe'''
+* {{flagicon|IRE|rugby union}} '''Ailish Quinn'''
+
+'''Scrum-halves'''
+
+* {{flagicon|IRE|rugby union}} Amy McGuire
+* {{flagicon|IRE|rugby union}} Grainne Moran
+* {{flagicon|IRE|rugby union}} '''[[Aoibheann Reilly]]'''
+
+'''Fly-halves'''
+
+* {{flagicon|IRE|rugby union}} Siofra Hession
+|'''Centres'''
+
+* {{flagicon|IRE|rugby union}} Emma Kelly
+* {{flagicon|IRE|rugby union}} Lyndsey Clarke
+* {{flagicon|IRE|rugby union}} Sarah Purcell
+
+'''Back Three'''
+
+* {{flagicon|IRE|rugby union}} Clara Barrett
+* {{flagicon|IRE|rugby union}} '''Kyah Coady'''*
+* {{flagicon|IRE|rugby union}} Sophie Cullen
+* {{flagicon|IRE|rugby union}} [[Méabh Deely|'''Meabh Deely''']]
+* {{flagicon|IRE|rugby union}} '''[[Alanna Fitzpatrick]]'''
+* {{flagicon|IRE|rugby union}} Emily Foley
+* {{flagicon|IRE|rugby union}} '''Clare Gorman'''
+* {{flagicon|IRE|rugby union}} Aoife Heaney
+* {{flagicon|IRE|rugby union}} '''[[Anna McGann]]'''
+* {{flagicon|IRE|rugby union}} Roisin O'Sullivan
+* {{flagicon|IRE|rugby union}} '''[[Béibhinn Parsons]]'''
+* {{flagicon|IRE|rugby union}} Ava Ryder
+|- valign="top"
+| colspan="3" |Players listed in '''Bold''' have represented their country internationally in Rugby Union or Sevens.
+<nowiki>*</nowiki>Denotes Devolepment Player
+|}

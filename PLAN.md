@@ -66,10 +66,18 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - **Discours** d'avant-match et de mi-temps (en direct), avec la réaction des joueurs : l'effet dépend du score, du rapport de force et de la détermination de l'effectif.
 - **Corrections de notes** : Marius Domon revu (71 → 75) ; les corrections s'appliquent aussi aux parties en cours.
 
+- **Étape E1 — URC et Premiership (14 octobre 2026)** :
+  - **Vrais effectifs 2026-27** des 26 clubs (1 092 joueurs, Wikipédia + Wikidata pour les âges) : les 484 internationaux notés un par un, les autres estimés selon le niveau du club et l'âge (voir `recherche/etranger/METHODE.md`).
+  - **Championnats simulés** chaque week-end : URC (16 clubs, 18 journées, quarts, demies, finale) et Premiership (10 clubs, 18 journées, demies, finale), avec pauses pendant les tests de novembre et le Tournoi ; classements dans l'onglet Classement, champions au palmarès.
+  - Les clubs étrangers vivent d'une saison à l'autre (progression, vieillissement, contrats, retraites, jeunes qui arrivent) et leurs classements qualifient pour les coupes d'Europe.
+  - **Mercato international** : les joueurs d'URC et de Premiership sont recrutables (filtre « Étranger » du mercato).
+  - Sauvegarde allégée (nombres arrondis) : 1,6 Mo au lieu de 2,2 Mo.
+
 ## ▶️ Prochaine étape
 
-### Étape E — Autres championnats
-- URC, Premiership, Super Rugby, Japon… pour avoir les meilleurs joueurs du monde et un mercato international (les vrais effectifs remplaceront les effectifs simplifiés des clubs étrangers des coupes d'Europe).
+### Étape E2 — Super Rugby et Japon
+- Super Rugby Pacific (Nouvelle-Zélande, Australie, Fidji, Samoa…) et Japan Rugby League One : vrais effectifs, championnats simulés (calendrier de l'hémisphère sud : février à juin), mercato international élargi (les meilleurs joueurs du monde).
+- Les clubs IA français et étrangers recrutent aussi à l'étranger.
 
 ## 📋 À faire ensuite (dans l'ordre)
 
