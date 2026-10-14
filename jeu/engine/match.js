@@ -60,8 +60,8 @@ function newMatch(hc,ac,opt={}){
   ms.T=[mkSide(ms,hc,0),mkSide(ms,ac,1)];
   const date=opt.date||G.date;ms.wx=opt.wx||weatherFor(date,hc);ms.ref=opt.ref||refFor(date,hc);
   for(const S of ms.T){S.capMain=S.club.captain&&S.on.some(d=>d&&d.p.id===S.club.captain)?S.club.captain:null;updateCaptain(ms,S)}
-  // discours d'avant-match : celui du joueur (G.talk), une petite motivation moyenne pour les clubs IA
-  for(const S of ms.T){if(S.club.id===G.meId){applyTalk(ms,S.i,G.talk||'motive',true);delete G.talk}else if(S.club.id!==G.meId)S.mor=clamp(1+R.n(.008,.008),.98,1.03)}
+  // discours d'avant-match : celui du joueur (G.talk, motivant par défaut) ; les clubs IA motivent leurs joueurs aussi bien en moyenne
+  for(const S of ms.T){if(S.club.id===G.meId){applyTalk(ms,S.i,G.talk||'motive',true);delete G.talk}else if(S.club.id!==G.meId)S.mor=clamp(1+R.n(.018,.008),.99,1.04)}
   evt(ms,-1,'info',`Coup d'envoi : ${hc.short} - ${ac.short}.`,1);
   return ms;
 }
