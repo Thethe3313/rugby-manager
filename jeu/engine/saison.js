@@ -31,7 +31,7 @@ function migrateSave(){
 }
 
 function newGame(meId){
-  G={nid:1,season:1,meId,phase:'season',tick:0,clubs:[],L:{},access:null,news:[],fa:[],offers:[],pre:[],tlog:[],tab:'home',fin:zeroFin(),hist:[],lastMatch:null,summary:null,moves:null,mail:[],settings:loadSettings()};
+  G={nid:1,season:1,meId,phase:'season',tuto:0,tick:0,clubs:[],L:{},access:null,news:[],fa:[],offers:[],pre:[],tlog:[],tab:'home',fin:zeroFin(),hist:[],lastMatch:null,summary:null,moves:null,mail:[],settings:loadSettings()};
   G.clubs=CLUBS0.map(c=>mkClub(c,'t14')).concat(PD2CLUBS.map(c=>mkClub(c,'pd2')),NATCLUBS.map(c=>mkClub(c,'nat')),N2CLUBS.map(c=>Object.assign(mkClub(c,'n2'),{poule:c[4]})));
   initAMD();
   // carrière plus bas (Fédérale, Régionale) : le club choisi reçoit un effectif complet

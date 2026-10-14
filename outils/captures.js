@@ -13,7 +13,7 @@ const EDGE=['C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','C:/P
 if(!EDGE)throw new Error('Edge introuvable');
 // écran -> code exécuté une fois la partie de démonstration prête (G.tab, fenêtre…)
 const SCREENS={
-  accueil:"G=null;UI.amLv=null",
+  accueil:"G=null;UI.amLv=null",accueilbas:"G=null;UI.startLg='am';UI.amLv='r1'",tuto:"G.tuto=1;G.tab='lineup'",plus:"G.tab='squad';UI.more=true",
   home:"G.tab='home'",mail:"G.tab='mail'",squad:"G.tab='squad'",youth:"G.tab='youth'",staff:"G.tab='staff'",
   lineup:"G.tab='lineup'",cal:"G.tab='cal'",table:"G.tab='table'",cups:"G.tab='cups'",market:"G.tab='market'",
   fin:"G.tab='fin'",settings:"G.tab='settings'",help:"G.tab='help'",
@@ -31,7 +31,7 @@ const base='file:///'+JEU.replace(/\\/g,'/')+'/';
 const prof=fs.mkdtempSync(path.join(os.tmpdir(),'edge-captures-'));
 for(const sc of list){
   // partie de démonstration : 10 jours après le début de saison, puis l'écran demandé
-  const setup=`setTimeout(()=>{try{save=cb=>{cb&&cb()};newGame('${CLUB}');G.slot=9;G.settings.live='off';for(let i=0;i<40;i++)advance('day',{noLive:true});${SCREENS[sc]};render();window.scrollTo(0,0)}catch(e){document.body.innerHTML='<pre style="color:red">'+e.stack+'</pre>'}},400);`;
+  const setup=`setTimeout(()=>{try{save=cb=>{cb&&cb()};newGame('${CLUB}');G.tuto=-1;G.slot=9;G.settings.live='off';for(let i=0;i<40;i++)advance('day',{noLive:true});${SCREENS[sc]};render();window.scrollTo(0,0)}catch(e){document.body.innerHTML='<pre style="color:red">'+e.stack+'</pre>'}},400);`;
   const html=html0.replace('<head>','<head><base href="'+base+'"><script>'+seeded+'</script>').replace('</body>','<script>'+setup+'</script></body>');
   const f=path.join(OUT,'_'+sc+'.html');fs.writeFileSync(f,html);
   for(const [sz,[w,h]] of Object.entries(SIZES)){

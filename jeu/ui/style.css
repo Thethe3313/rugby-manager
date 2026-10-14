@@ -79,3 +79,35 @@ p{margin:6px 0}
 #lv-team{overflow-x:auto}
 @media(max-width:900px){.lv-grid{grid-template-columns:minmax(0,1fr)}.lv-tac select{min-width:0;width:100%}}
 @media(max-width:700px){#wrap{flex-direction:column}#nav{width:auto;display:flex;overflow-x:auto;border-right:0}#nav a{white-space:nowrap}}
+/* bandeau compact (tient sur une ligne sur ordinateur) */
+#top{gap:8px;padding:8px 14px}
+#top .pill{padding:2px 10px;font-size:13px}
+#top .lm,#top .tgl,#bbar{display:none}
+/* tutoriel */
+#tuto{position:fixed;right:18px;bottom:18px;z-index:9;max-width:360px;background:var(--panel);border:2px solid var(--acc2);border-radius:12px;padding:12px 14px;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+/* ===== téléphone ===== */
+@media(max-width:700px){
+  #nav{display:none}
+  #top{gap:6px;padding:8px 10px}
+  #top .lt,#top .lb,#top .hmo{display:none}
+  #top .lm,#top .tgl{display:inline}
+  #top:not(.open) .x{display:none}
+  .hm{display:none}
+  #main{padding:10px 10px 140px}
+  #bbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--panel);border-top:1px solid var(--line)}
+  #bcont{display:flex;gap:8px;padding:8px 10px 2px}
+  #bcont .btn{flex:1;padding:9px 6px}
+  #bnav{display:flex}
+  #bnav a{flex:1;text-align:center;padding:6px 0 8px;color:var(--mut);font-size:20px;cursor:pointer;line-height:1.1}
+  #bnav a small{display:block;font-size:11px;margin-top:2px}
+  #bnav a.on{color:var(--acc)}
+  #bmore{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:10px;border-bottom:1px solid var(--line)}
+  #bmore a{padding:10px;background:var(--panel2);border-radius:8px;text-align:center;cursor:pointer;color:var(--txt)}
+  #bmore a.on{outline:2px solid var(--acc)}
+  #tuto{left:10px;right:10px;bottom:120px;max-width:none}
+}
+.sm-only{display:none}
+@media(max-width:700px){
+  .sm-only{display:inline}.lg-only{display:none}
+  #main table th,#main table td{padding:5px 5px}
+}

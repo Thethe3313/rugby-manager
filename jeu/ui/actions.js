@@ -13,7 +13,12 @@ const ACT={
   renewStaff(d){const s=ME().staff[d.r];if(!s)return;s.ctr+=2;s.sal=Math.round(s.sal*1.05/5)*5;addNews(`✍ ${s.name} prolonge de 2 ans (${fmtK(s.sal)}/an).`);save();render()},
   importSave(d,el){importSave(el.files&&el.files[0]);el.value=''},
   save(){save(ok=>{addNews(ok?`Partie sauvegardée (emplacement ${G.slot}).`:'Sauvegarde impossible dans ce navigateur.');render()})},
-  tab(d){G.tab=d.t;render()},
+  tab(d){G.tab=d.t;UI.more=false;render()},
+  more(){UI.more=!UI.more;render()},
+  topTgl(){UI.topOpen=!UI.topOpen;render()},
+  tutoNext(){G.tuto++;if(G.tuto>=TUTO.length)G.tuto=-1;else G.tab=TUTO[G.tuto][0];UI.more=false;render()},
+  tutoSkip(){G.tuto=-1;render()},
+  tutoReset(){G.tuto=0;G.tab=TUTO[0][0];render()},
   lgsel(d){UI.lg=d.lg;render()},
   cupsel(d){UI.cup=d.k;render()},
   play(){ACT.toMatch()},
@@ -94,6 +99,7 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  startLg(d){UI.startLg=d.v;render()},
   flt(d,el){UI[d.k]=el.value;render()},
   setPot(d){G.settings=G.settings||{};G.settings.pot=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   nextSeason(){nextSeason();save();G.tab='home';render()}

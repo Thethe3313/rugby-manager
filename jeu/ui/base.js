@@ -27,6 +27,10 @@ function importSave(file){
 const $app=document.getElementById('app');
 
 function posL(p){return p.g==='PIL'?(p.sub==='TH'?'Pilier droit':'Pilier gauche'):p.g==='3L'?(p.sub==='N8'?'Numéro 8':p.sub==='FL'?'Flanker':GROUPS[p.g]):GROUPS[p.g]}
+// Poste : nom complet sur ordinateur, abrégé sur téléphone
+const POSS={PIL:'Pilier',TAL:'Talon.',DM:'Mêlée',OUV:'Ouvreur',CEN:'Centre',AIL:'Ailier',ARR:'Arrière'};
+function posS(p){return p.g==='PIL'?(p.sub==='TH'?'Pil. D':'Pil. G'):p.g==='3L'?(p.sub==='N8'?'N° 8':p.sub==='FL'?'Flanker':'3e l.'):p.g==='2L'?'2e l.':POSS[p.g]||posL(p)}
+const posLS=p=>`<span class="lg-only">${posL(p)}</span><span class="sm-only">${posS(p)}</span>`;
 function injTxt(p){return p.inj>0?`<span class="ko">🚑 ${injDur(p.inj)}</span>`:'<span class="ok">Apte</span>'}
 function formeBar(f){return `<div class="bar" title="${rd(f)}%"><i style="width:${f}%;background:${f>75?'var(--acc)':f>50?'var(--acc2)':'var(--bad)'}"></i></div>`}
 
@@ -36,8 +40,29 @@ function render(){
   const m=ME();
   const tabs=[['home','Accueil'],['mail',`Messagerie${unread()?' ('+unread()+')':''}`],['squad','Effectif'],['youth','Espoirs'],['staff','Staff'],['lineup','Composition'],['cal','Calendrier'],['table','Classement'],['cups','Europe'],['market','Mercato'],['fin','Finances'],['settings','Réglages'],['help','Rugby 101']];
   const ph=stageLabel(m);
-  $app.innerHTML=`<div id="top"><span class="logo">🏉 Rugby Manager</span><span class="pill"><b>${m.name}</b></span><span class="pill">📅 <b>${fmtD(G.date,true)}</b></span><span class="pill"><b>${LEAGUES[m.lg].name}</b></span><span class="pill">Saison <b>${seasonLabel()}</b></span><span class="pill"><b>${ph}</b></span><span class="sp"></span>${windowOpen()?'<span class="pill" style="color:var(--acc)"><b>Mercato ouvert</b></span>':''}<span class="pill">Trésorerie <b class="${m.budget<0?'ko':''}">${k(m.budget)}</b></span><span class="pill">Masse salariale <b>${k(mass(m))}</b> / ${k(capOf(m))}</span><button class="btn sec sm" data-a="save">💾 Sauvegarder</button><button class="btn sec sm" data-a="menu">Menu</button></div>
-  <div id="wrap"><div id="nav">${tabs.map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}</div><div id="main">${view()}</div></div>${UI.modal?modalView():''}`;
+  // Bandeau : sur téléphone, seules les pastilles sans classe « x » restent visibles (le bouton ⋯ affiche les autres)
+  $app.innerHTML=`<div id="top" class="${UI.topOpen?'open':''}"><span class="logo">🏉<span class="lt"> Rugby Manager</span></span><span class="pill"><b>${m.name}</b></span><span class="pill">📅 <b>${fmtD(G.date)}<span class="lt"> ${G.date.slice(0,4)}</span></b></span><span class="pill x"><b>${LEAGUES[m.lg].name}</b> · ${seasonLabel()} · <b>${ph}</b></span><span class="sp"></span>${windowOpen()?'<span class="pill x" style="color:var(--acc)"><b>Mercato ouvert</b></span>':''}<span class="pill"><span class="lb">Trésorerie </span><span class="lm">💰 </span><b class="${m.budget<0?'ko':''}">${k(m.budget)}</b></span><span class="pill x" title="Masse salariale / plafond">Masse <b>${k(mass(m))}</b> / ${k(capOf(m))}</span><button class="btn sec sm tgl" data-a="topTgl" title="Plus d'informations">${UI.topOpen?'▲':'⋯'}</button><button class="btn sec sm" data-a="save" title="Sauvegarder">💾<span class="lt"> Sauvegarder</span></button><button class="btn sec sm hmo" data-a="menu">Menu</button></div>
+  <div id="wrap"><div id="nav">${tabs.map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}</div><div id="main">${view()}</div></div>${phoneBar(tabs)}${tutoHTML()}${UI.modal?modalView():''}`;
+}
+// Téléphone : barre du bas (onglets principaux + « Plus ») et bouton Continuer toujours accessible (masqués sur ordinateur)
+function phoneBar(tabs){
+  const main=[['home','🏠','Accueil'],['squad','👥','Effectif'],['lineup','📋','Compo'],['market','💱','Mercato']],u=unread();
+  const go=G.phase==='season'||G.phase==='access';
+  return `<div id="bbar">${UI.more?`<div id="bmore">${tabs.filter(t=>!main.some(x=>x[0]===t[0])).map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}<a data-a="menu">Menu (mes parties)</a></div>`:''}
+  ${go?'<div id="bcont"><button class="btn" data-a="cont">Continuer ▶</button><button class="btn sec" data-a="toMatch">⏩ Prochain match</button></div>':''}
+  <nav id="bnav">${main.map(t=>`<a class="${G.tab===t[0]&&!UI.more?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}<small>${t[2]}</small></a>`).join('')}<a class="${UI.more?'on':''}" data-a="more">☰<small>Plus${u?' ('+u+')':''}</small></a></nav></div>`;
+}
+// Tutoriel de la première partie (G.tuto = étape en cours ; absent ou -1 : terminé). Chaque étape ouvre l'onglet concerné.
+const TUTO=[
+  ['home','Bienvenue, coach !','Voici l’<b>Accueil</b> : ton prochain match (avec la force des deux équipes), les nouvelles du club et le classement. Ton président t’a fixé un objectif dans la <b>Messagerie</b>.'],
+  ['lineup','Ta composition','Ici tu choisis ton <b>XV</b>, tes remplaçants et ta <b>tactique</b> (style de jeu, jeu au pied…). Au début, ton adjoint compose l’équipe tout seul : tu peux lui laisser la main.'],
+  ['squad','Ton effectif','Tous tes joueurs, avec leur <b>note sur 99</b>, leur forme et leurs blessures. Touche un nom pour ouvrir la fiche du joueur (attributs, contrat, personnalité).'],
+  ['market','Le mercato','Pour <b>recruter</b> et vendre pendant les fenêtres de transferts. Attention au budget et à la masse salariale autorisée.'],
+  ['home','Faire avancer le temps','<b>Continuer ▶</b> avance d’un jour, <b>Prochain match</b> va jusqu’au match. Avant chaque match, tu peux le suivre en direct. Pour les règles du rugby : onglet <b>Rugby 101</b>. Bon match !']];
+function tutoHTML(){
+  if(G.tuto==null||G.tuto<0||G.tuto>=TUTO.length||G.phase!=='season'||UI.modal)return '';
+  const[,t,x]=TUTO[G.tuto];
+  return `<div id="tuto"><div class="row" style="justify-content:space-between"><b>${t}</b><span class="mut">${G.tuto+1}/${TUTO.length}</span></div><p>${x}</p><div class="row"><button class="btn sm" data-a="tutoNext">${G.tuto<TUTO.length-1?'Suivant':'C’est parti !'}</button><button class="btn sec sm" data-a="tutoSkip">Passer le tutoriel</button></div></div>`;
 }
 function view(){
   switch(G.tab){

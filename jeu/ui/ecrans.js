@@ -1,18 +1,18 @@
 // Interface : écrans principaux (accueil, composition, calendrier, classement, aide)
+// Écran de départ : une division à la fois (onglets)
+const STARTLG=[['t14','Top 14','professionnel'],['pd2','Pro D2','professionnel'],['nat','Nationale','semi-professionnel'],['n2','Nationale 2','amateur, 2 poules'],['am','Plus bas','Fédérales, Régionales']];
 function viewStart(){
+  const lv=UI.startLg||'t14';
   const slots=Array.from({length:NSLOTS},(_,i)=>i+1),free=Store.firstFree(),target=+UI.newSlot||free||1;
   const sLab=m=>`<b>${m.club}</b> <span class="mut">· ${LEAGUES[m.lg]?(m.lg==='f1'&&(m.season||1)>1?'Nationale 3':LEAGUES[m.lg].name):''} · saison ${2025+(m.season||1)}-${2026+(m.season||1)} · ${fmtD(m.date,true)} · enregistrée le ${m.saved}</span>`;
   const card=(c,lg)=>{const ref={t14:62,pd2:56,nat:50,n2:45}[lg];return `<div class="c" data-a="start" data-id="${c[0]}"><b>${c[1]}</b><div class="mut">Niveau ${'★'.repeat(clamp(Math.round((c[3]-ref)/4)+1,1,5))}</div></div>`};
-  return `<div class="center"><h1>🏉 Rugby Manager</h1><p class="mut">Prends en main un club de Top 14 ou de Pro D2 : compose ton XV, choisis ta tactique, gère ton effectif, ton budget et le plafond salarial. Effectifs réels de la saison 2026-27 (notes estimées).</p>
+  return `<div class="center"><h1>🏉 Rugby Manager</h1><p class="mut">Prends en main un club, du Top 14 à la Régionale 3 : compose ton XV, choisis ta tactique, gère ton effectif, ton budget et le plafond salarial. Effectifs réels de la saison 2026-27 (notes estimées).</p>
   <div class="card"><h2>Mes parties</h2>${slots.map(s=>{const m=Store.meta[s];return `<div class="row" style="padding:6px 0;border-bottom:1px solid var(--line)"><b>Emplacement ${s}</b> ${m?`${sLab(m)} <span class="sp" style="flex:1"></span><button class="btn sm" data-a="continue" data-slot="${s}">▶ Continuer</button><button class="btn bad sm" data-a="delSlot" data-slot="${s}">Supprimer</button>`:'<span class="mut">Libre</span>'}</div>`}).join('')}
   <p class="mut">Les parties sont enregistrées dans ce navigateur (base IndexedDB : pas de limite de taille gênante). Pour les transférer ailleurs, utilise l'export dans les Réglages.</p></div>
   <p class="row">Nouvelle partie dans l'emplacement <select data-a="flt" data-k="newSlot">${slots.map(s=>`<option value="${s}" ${s===target?'selected':''}>${s}${Store.meta[s]?' (occupé : '+Store.meta[s].club+')':' (libre)'}</option>`).join('')}</select><label class="btn sec">⬆ Importer une partie (fichier)<input type="file" accept=".json,application/json" data-a="importSave" hidden></label></p>
-  <h2>Nouvelle partie : choisis ton club</h2>
-  <h3>Top 14</h3><div class="clubs">${CLUBS0.map(c=>card(c,'t14')).join('')}</div>
-  <h3 style="margin-top:16px">Pro D2</h3><div class="clubs">${PD2CLUBS.map(c=>card(c,'pd2')).join('')}</div>
-  <h3 style="margin-top:16px">Nationale <span class="mut" style="font-weight:400">(semi-professionnel)</span></h3><div class="clubs">${NATCLUBS.map(c=>card(c,'nat')).join('')}</div>
-  <h3 style="margin-top:16px">Nationale 2 <span class="mut" style="font-weight:400">(amateur, 2 poules)</span></h3><div class="clubs">${N2CLUBS.map(c=>card(c,'n2')).join('')}</div>
-  ${amStartHTML()}
+  <h2>Nouvelle partie : choisis ta division, puis ton club</h2>
+  <div class="row" style="margin-bottom:12px">${STARTLG.map(([l,n,d])=>`<button class="btn ${l===lv?'':'sec'}" data-a="startLg" data-v="${l}">${n}<span style="font-weight:400;font-size:12px;display:block;opacity:.75">${d}</span></button>`).join('')}</div>
+  ${lv==='am'?amStartHTML():`<div class="clubs">${({t14:CLUBS0,pd2:PD2CLUBS,nat:NATCLUBS,n2:N2CLUBS}[lv]).map(c=>card(c,lv)).join('')}</div>`}
   <p class="mut">Conseil si tu débutes : en Top 14, prends un club du milieu de tableau (Pau, Bayonne, Lyon). En Pro D2, l'objectif est de monter en Top 14. Lis l'onglet « Rugby 101 » une fois en jeu.</p></div>`;
 }
 // Commencer plus bas : Fédérale 1, 2, 3 ou Régionales (clubs choisis dans une liste, poule par poule)
@@ -20,7 +20,7 @@ function amStartHTML(){
   const k=UI.amLv&&AMLV[UI.amLv]?UI.amLv:'f1',src={f1:[F1POULES,'f'],f2:[F2POULES,'g'],f3:[F3POULES,'h']}[k];
   const P=src?src[0].map((pl,pi)=>pl.map((n,i)=>[src[1]+pi+'_'+i,n])):REGPOULES[k].map(([reg,pl],pi)=>pl.map((n,i)=>[k+'_'+pi+'_'+i,n]));
   const pLab=pi=>src?`Poule ${pi+1}`:`${REGNAME[REGPOULES[k][pi][0]]} · poule ${pi+1}`;
-  return `<h3 style="margin-top:16px">Commencer plus bas <span class="mut" style="font-weight:400">(amateur : partir de tout en bas et grimper jusqu'au Top 14)</span></h3>
+  return `<p class="mut">Partir de tout en bas et grimper jusqu'au Top 14.</p>
   <p class="row">Division <select data-a="flt" data-k="amLv">${AMORDER.map(x=>`<option value="${x}" ${x===k?'selected':''}>${AMLV[x].name}${AMLV[x].name==='Fédérale 1'?' (Nationale 3 dès 2027-28)':''}</option>`).join('')}</select>
   <span class="mut">${src?'Vrais clubs de la saison 2026-27 ; effectifs générés.':'Vrais clubs 2026-27 des ligues de Nouvelle-Aquitaine et de Provence-Alpes-Côte d’Azur (les autres régions ne sont pas encore dans le jeu) ; effectifs générés.'} Pas de centre de formation, budget de quelques centaines de milliers d'euros au plus, joueurs simplement défrayés.</span></p>
   ${P.map((pl,pi)=>`<p class="mut" style="margin:8px 0 4px">${pLab(pi)}</p><div class="row" style="flex-wrap:wrap;gap:6px">${pl.map(([id,n])=>`<button class="btn sec sm" data-a="start" data-id="${id}">${n}</button>`).join('')}</div>`).join('')}`;
