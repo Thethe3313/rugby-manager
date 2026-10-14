@@ -75,17 +75,21 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 - **Vrai stockage (14 octobre 2026)** : parties enregistrées dans IndexedDB (des centaines de Mo au lieu de ~5 Mo), **4 emplacements de sauvegarde** sur l'écran d'accueil (continuer, supprimer, choisir l'emplacement d'une nouvelle partie) ; l'ancienne sauvegarde est reprise automatiquement.
 
+- **Étape E2 — Super Rugby et Japon (14 octobre 2026)** :
+  - **Super Rugby Pacific** (10 clubs : Moana Pasifika a été dissous en juin 2026) et **Japan Rugby League One** (12 clubs de 1re division) : vrais effectifs, 925 joueurs de plus (Will Jordan, Cam Roigard, Wallace Sititi, Fraser McReight…, et les stars parties au Japon : Pieter-Steph du Toit, Malcolm Marx, Jesse Kriel…).
+  - Championnats simulés avec leur vrai calendrier (Super Rugby de février à juin, League One de décembre à avril), classements et palmarès.
+  - **Mercato mondial** : les clubs IA français recrutent aussi à l'étranger (en libérant un joueur pour rester sous le plafond), les clubs étrangers signent des joueurs libres.
+  - Au total : 48 clubs étrangers, 2 017 joueurs, 794 internationaux notés un par un.
+
 ## ▶️ Prochaine étape
 
-### Étape E2 — Super Rugby et Japon
-- Super Rugby Pacific (Nouvelle-Zélande, Australie, Fidji, Samoa…) et Japan Rugby League One : vrais effectifs, championnats simulés (calendrier de l'hémisphère sud : février à juin), mercato international élargi (les meilleurs joueurs du monde).
-- Les clubs IA français et étrangers recrutent aussi à l'étranger.
+### Étape F — Rugby amateur français
+- Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
 
 ## 📋 À faire ensuite (dans l'ordre)
 
-1. **Rugby amateur français** : Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
-2. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
-3. **Application** :
+1. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
+2. **Application** :
    - Version installable : déjà préparée (manifeste, icônes, service worker), il reste à héberger le dossier `jeu/` en ligne ; puis Android et iOS.
    - Comptes et sauvegardes en ligne (les 4 emplacements existent déjà dans le navigateur).
 

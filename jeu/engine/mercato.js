@@ -59,10 +59,16 @@ function aiMercato(){
     const g=R.pick(GORDER);
     const mine=c.squad.filter(x=>x.g===g).sort((a,b)=>ovr(b)-ovr(a));
     const ref=mine[Math.min(STARTERS[g],mine.length)-1];const refO=ref?ovr(ref):60;
-    const targets=G.clubs.filter(x=>x!==c&&x.id!==m.id&&clubStr(x)<clubStr(c)).flatMap(x=>x.squad.filter(p=>p.g===g&&ovr(p)>refO+2&&p.age<=30).map(p=>({p,x})));
+    // cibles : clubs plus faibles, en France comme à l'étranger (URC, Premiership, Super Rugby, Japon)
+    const targets=G.clubs.concat(G.ext||[]).filter(x=>x!==c&&x.id!==m.id&&clubStr(x)<clubStr(c)).flatMap(x=>x.squad.filter(p=>p.g===g&&ovr(p)>refO+2&&p.age<=30).map(p=>({p,x})));
     if(!targets.length)continue;
     const t=R.pick(targets),sal=salaryFor(ovr(t.p),t.p.age,c.lg);
-    if(mass(c)+sal>capOf(c))continue;
+    // plafond salarial : le club laisse partir son joueur le plus faible à ce poste pour faire de la place
+    if(mass(c)+sal>capOf(c)){
+      const out=mine.filter(x=>x!==t.p).slice(-1)[0];
+      if(!out||mass(c)-out.sal+sal>capOf(c))continue;
+      removeFromClub(out,c);out.ctr=0;out.faT=0;out.list=false;G.fa.push(out);tlog(`${out.name} (${posL(out)}, ${Math.round(ovr(out))}) quitte ${c.short} pour faire de la place.`);
+    }
     doTransfer(t.p,t.x,c,askFee(t.p,t.x),sal,R.i(2,4));
   }
   // 2) les meilleurs joueurs libres signent d'abord dans les clubs qui peuvent les payer (Top 14 en priorité)

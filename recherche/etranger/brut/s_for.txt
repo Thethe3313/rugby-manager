@@ -1,0 +1,153 @@
+# Western Force
+==Current squad==
+
+{{For|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Force}}
+
+The squad for the [[2026 Super Rugby Pacific season]] is:{{efn-ua|group="Squad"|name=Tauakipulu|[[Tiaan Tauakipulu]] was originally named in the Force squad, but announced his retirement in December 2025.<ref name="Force farewells Tauakipulu after decision to step away from game">{{cite press release | url=https://westernforce.rugby/news/force-farewells-outgoing-frontrower-tauakipulu-service-20251216 | title=Force farewells Tauakipulu after decision to step away from game | work=Western Force | date=16 December 2025 | access-date=17 December 2025}}</ref>}}
+
+{{Rugby union squad start
+ | title = 2026 Western Force squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|TGA|Misinale Epenisa|ex=Signed in February 2026.<ref name="Daly, Epenisa & Palmer earn Force deals after impressing in pre-season">{{cite press release | url=https://westernforce.rugby/news/daly-epenisa-palmer-force-deals-impressing-preseason-202625 | title=Daly, Epenisa & Palmer earn Force deals after impressing in pre-season | work=Western Force | date=6 February 2026 | access-date=6 February 2026}}</ref>}}
+{{RU squad player|AUS|Sef Fa'agase}}
+{{RU squad player|TGA|Feao Fotuaika|cap=y}}
+{{RU squad player|AUS|Harry Johnson-Holmes|cap=y}}
+{{RU squad player|AUS|Marley Pearce}}
+{{RU squad player|AUS|Tom Robertson|ru=y|cap=y}}
+{{RU squad player|NZL|Joshua Smith|ru=y}}
+
+'''Hookers'''
+{{RU squad player|AUS|Albert Alcock}}
+{{RU squad player|ENG|Nic Dolly|cap=y}}
+{{RU squad player|ARG|Leonel Oviedo|cap=y|ex=Signed in January 2026.<ref name="Force add more Argentine flavour with addition of hooker Oviedo">{{cite press release | url=https://westernforce.rugby/news/force-add-argentine-flavour-addition-hooker-oviedo-2026120 | title=Force add more Argentine flavour with addition of hooker Oviedo | work=Western Force | date=20 January 2026 | access-date=22 January 2026}}</ref>}}
+{{RU squad player|AUS|Brandon Paenga-Amosa|cap=y}}
+
+'''Locks'''
+{{RU squad player|AUS|Lopeti Faifua}}
+{{RU squad player|ARG|Franco Molina|cap=y}}
+{{RU squad player|AUS|Darcy Swain|cap=y}}
+{{RU squad player|AUS|Jeremy Williams|ru=y|cap=y|captain=y}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|AUS|Nick Champion de Crespigny|cap=y}}
+{{RU squad player|IRE|Jack Daly|ru=y|ex=Signed in February 2026.<ref name="Daly, Epenisa & Palmer earn Force deals after impressing in pre-season"/>}}
+{{RU squad player|NZL|Vaiolini Ekuasi}}
+{{RU squad player|AUS|Will Harris|ru=y}}
+{{RU squad player|AUS|Kane Koteka}}
+{{RU squad player|AUS|Titi Nofoagatotoa}}
+{{RU squad player|AUS|Carlo Tizzano|cap=y}}
+
+'''Scrum-halves'''
+{{RU squad player|NZL|Nathan Hastie|res=y}}
+{{RU squad player|ARG|Agustín Moyano|cap=y}}
+{{RU squad player|AUS|Doug Philipson}}
+{{RU squad player|AUS|Henry Robertson|ru=y|inj=y|ex=Ruled out for the season through injury in May 2026.<ref name="Milestones among Force team for zero2hero Charity Game vs Reds">{{cite press release | url=https://westernforce.rugby/news/milestones-force-team-zero2hero-charity-game-vs-reds-2026513 | title=Milestones among Force team for zero2hero Charity Game vs Reds | work=Western Force | date=13 May 2026 | access-date=13 May 2026}}</ref>}}
+
+'''Fly-halves'''
+{{RU squad player|AUS|Max Burey}}
+{{RU squad player|AUS|Ben Donaldson|ru=y|cap=y}}
+{{RU squad player|NZL|Alex Harford|res=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|AUS|Boston Fakafanua}}
+{{RU squad player|AUS|Bayley Kuenzle}}
+{{RU squad player|NZL|Divad Palu|res=y}}
+{{RU squad player|AUS|Hamish Stewart|cap=y}}
+{{RU squad player|AUS|Taj Annan|st=y|ex=Called into the squad ahead of Round 5.<ref name="Force make changes for Hurricanes with Club debutant added">{{cite press release | url=https://westernforce.rugby/news/force-changes-hurricanes-potential-debutant-added-2026311 | title=Force make changes for Hurricanes with Club debutant added | work=Western Force | date=11 March 2026 | access-date=11 March 2026}}</ref>}}
+
+'''Outside backs'''
+{{RU squad player|AUS|Kurtley Beale|cap=y}}
+{{RU squad player|NZL|George Bridge|cap=y}}
+{{RU squad player|AUS|Mac Grealy}}
+{{RU squad player|AUS|Darby Lancaster|cap=y|inj=y|ex=Ruled out for the season through injury in April 2026.<ref name="Force announce settled side for Friday night in Sydney">{{cite press release | url=https://westernforce.rugby/news/force-announce-settled-side-friday-night-sydney-2026429 | title=Force announce settled side for Friday night in Sydney | work=Western Force | date=29 April 2026 | access-date=29 April 2026}}</ref>}}
+{{RU squad player|AUS|Ronan Leahy}}
+{{RU squad player|AUS|Henry Palmer|ru=y|ex=Signed in February 2026.<ref name="Daly, Epenisa & Palmer earn Force deals after impressing in pre-season"/>}}
+{{RU squad player|AUS|Dylan Pietsch|cap=y}}
+{{RU squad player|AUS|Zac Lomax|st=y|ex=Signed in March 2026.<ref name="Zac Lomax signs with Force and RA on two-year deal">{{cite press release | url=https://westernforce.rugby/news/zac-lomax-signs-force-ra-twoyear-deal-202639 | title=Zac Lomax signs with Force and RA on two-year deal | work=Western Force | date=9 March 2026 | access-date=9 March 2026}}</ref>}}
+{{Rugby union squad end
+ | res = Australia
+ | cap = y
+ | captain = y
+ | st = y
+ | inj = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref name="Continuity the key as driven Force squad revealed for 2026 Super Rugby season">{{cite press release | url=https://westernforce.rugby/news/continuity-driven-force-squad-revealed-2026-super-rugby-season-2025116 | title=Continuity the key as driven Force squad revealed for 2026 Super Rugby season | work=Western Force | date=6 November 2025 | access-date=6 November 2025}}</ref>
+}}
+
+===Super Rugby AUS===
+The squad for the [[2026 Super Rugby AUS]] competition is:
+
+{{Rugby union squad start
+ | title = 2026 Western Force Super Rugby AUS squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|AUS|Jasper Asi|nolink=y}}
+{{RU squad player|TGA|Misinale Epenisa}}
+{{RU squad player|AUS|Bradley Kuhn|nolink=y}}
+{{RU squad player|AUS|Anthony Passi|nolink=y}}
+{{RU squad player|AUS|Regin Pratt|nolink=y}}
+{{RU squad player|AUS|Tom Robertson|ru=y|cap=y}}
+{{RU squad player|AUS|Max Sawers|nolink=y}}
+
+'''Hookers'''
+{{RU squad player|AUS|Albert Alcock}}
+{{RU squad player|ENG|Nic Dolly|cap=y|captain=y}}
+{{RU squad player|ASM|Sam Faoagali|nolink=y}}
+
+'''Locks'''
+{{RU squad player|AUS|Nate Gallagher|nolink=y}}
+{{RU squad player|AUS|Zak Healey|nolink=y|ex=Healey wasn't named in the original Super Rugby AUS squad, but was announced in the side for Round 1.<ref name="Force team revealed for Super Rugby AUS opener">{{cite press release | url=https://westernforce.rugby/news/force-team-revealed-super-rugby-aus-opener-202698 | title=Force team revealed for Super Rugby AUS opener | work=Western Force | date=9 September 2026 | access-date=9 September 2026}}</ref>}}
+{{RU squad player|AUS|Trevor Hosea}}
+{{RU squad player|AUS|Wil Taylor|nolink=y|ex=Taylor wasn't named in the original Super Rugby AUS squad, but was announced in the side for Round 1.<ref name="Force team revealed for Super Rugby AUS opener"/>}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|NZL|Seta Baker|ex=Baker wasn't named in the original Super Rugby AUS squad, but was announced in the side for Round 1.<ref name="Force team revealed for Super Rugby AUS opener"/>}}
+{{RU squad player|AUS|Nick Champion de Crespigny|cap=y}}
+{{RU squad player|IRE|Jack Daly|ru=y}}
+{{RU squad player|AUS|Aden Ekanayake|ex=Ekanayake wasn't named in the original Super Rugby AUS squad, but was announced in the side for Round 3.<ref name="Pietsch returns to bolster Force for Waratahs trip">{{cite press release | url=https://westernforce.rugby/news/pietsch-returns-bolster-force-waratahs-trip-2026923 | title=Pietsch returns to bolster Force for Waratahs trip | work=Western Force | date=23 September 2026 | access-date=23 September 2026}}</ref>}}
+{{RU squad player|AUS|Will Harris|ru=y}}
+{{RU squad player|AUS|Jackson Iose|nolink=y}}
+{{RU squad player|AUS|Kane Koteka}}
+{{RU squad player|NZL|Tim Sail}}
+
+'''Scrum-halves'''
+{{RU squad player|AUS|Luke Aiken|nolink=y}}
+{{RU squad player|NZL|Nathan Hastie|res=y}}
+{{RU squad player|AUS|Tamarangi Tunui|nolink=y}}
+
+'''Fly-halves'''
+{{RU squad player|AUS|Harry McLaughlin-Phillips}}
+{{RU squad player|AUS|James O'Connor|ru=y|cap=y|ex=O'Connor wasn't named in the original Super Rugby AUS squad, but was announced in the side for Round 2.<ref name="JOC, Crep & Robertson among Force additions for Brumbies clash">{{cite press release | url=https://westernforce.rugby/news/joc-crep-robertson-force-additions-brumbies-clash-2026916 | title=JOC, Crep & Robertson among Force additions for Brumbies clash | work=Western Force | date=16 September 2026 | access-date=16 September 2026}}</ref>}}
+
+||
+
+'''Centres'''
+{{RU squad player|AUS|Kurtley Beale|cap=y}}
+{{RU squad player|AUS|Boston Fakafanua}}
+{{RU squad player|AUS|Evan Hooper|nolink=y|ex=Hooper wasn't named in the original Super Rugby AUS squad, but was announced in the side for Round 3.<ref name="Pietsch returns to bolster Force for Waratahs trip"/>}}
+
+'''Outside backs'''
+{{RU squad player|NZL|Tama Anderson|ex=Anderson wasn't named in the original Super Rugby AUS squad, but was announced in the side for Round 1.<ref name="Force team revealed for Super Rugby AUS opener"/>}}
+{{RU squad player|AUS|Wallace Charlie}}
+{{RU squad player|AUS|Mac Grealy}}
+{{RU squad player|AUS|Ronan Leahy}}
+{{RU squad player|AUS|Zac Lomax}}
+{{RU squad player|AUS|Dylan Pietsch|cap=y|ex=Pietsch wasn't named in the original Super Rugby AUS squad, but was announced in the side for Round 3.<ref name="Pietsch returns to bolster Force for Waratahs trip"/>}}
+{{Rugby union squad end
+ | res = Australia
+ | cap = y
+ | captain = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref name="New signings, Wallabies & WA talent among Force squad for Super Rugby AUS">{{cite press release | url=https://westernforce.rugby/news/force-confirm-28player-squad-super-rugby-aus-2026829 | title=New signings, Wallabies & WA talent among Force squad for Super Rugby AUS | work=Western Force | date=31 August 2026 | access-date=31 August 2026}}</ref>
+}}

@@ -1,0 +1,98 @@
+# Fijian Drua
+==Current squad==
+{{for|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Drua}}
+
+The squad for the [[2026 Super Rugby Pacific season]] is:
+{{Rugby union squad start
+ | title = 2026 Fijian Drua squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|FJI|Mesake Doge|cap=y}}
+{{RU squad player|FJI|Haereiti Hetet|cap=y}}
+{{RU squad player|FJI|Peni Ravai|cap=y}}
+{{RU squad player|FJI|Samu Tawake|cap=y}}
+{{RU squad player|FJI|Meli Tuni|cap=y}}
+{{RU squad player|FJI|Emosi Tuqiri}}
+
+'''Hookers'''
+{{RU squad player|FJI|Mesu Dolokoto|cap=y}}
+{{RU squad player|FJI|Kavaia Tagivetaua|cap=y}}
+{{RU squad player|FJI|Zuriel Togiatama|cap=y}}
+{{RU squad player|FJI|Sairusi Ravudi|dev=y|ex=Promoted from development squad ahead of Round 5.<ref name="Powerful squad for historic Ba clash">{{cite press release | url=https://drua.rugby/content/powerful-squad-for-historic-ba-clash | title=Powerful squad for historic Ba clash | work=Fijian Drua | date=11 March 2026 | access-date=11 March 2026}}</ref>}}
+{{RU squad player|FJI|Penaia Cakobau|cap=y|st=y|ex=Called into the squad ahead of Round 1.<ref name="Drua unveil first lineup of 2026">{{cite press release | url=https://drua.rugby/content/rugby-stars-to-make-first-home-appearance-as-drua-unveil-first-lineup-of-2026 | title=Drua unveil first lineup of 2026 | work=Fijian Drua | date=11 February 2026 | access-date=11 February 2026}}</ref>}}
+
+'''Locks'''
+{{RU squad player|FJI|Temo Mayanavanua|cap=y|cc=y}}
+{{RU squad player|FJI|Vilive Miramira|cap=y}}
+{{RU squad player|FJI|Isoa Nasilasila|cap=y}}
+{{RU squad player|FJI|Angelo Smith}}
+{{RU squad player|FJI|Mesake Vocevoce|cap=y}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|FJI|Elia Canakaivata|cap=y}}
+{{RU squad player|FJI|Motikai Murray|cap=y}}
+{{RU squad player|FJI|Kitione Salawa|born=2001|cap=y}}
+{{RU squad player|FJI|Joseva Tamani|cap=y}}
+{{RU squad player|FJI|Isoa Tuwai|cap=y}}
+{{RU squad player|FJI|Etonia Waqa|cap=y}}
+
+'''Scrum-halves'''
+{{RU squad player|FJI|Philip Baselala|cap=y}}
+{{RU squad player|AUS|Issak Fines-Leleiwasa|cap=y}}
+{{RU squad player|FJI|Simione Kuruvoli|ru=y|cap=y}}
+{{RU squad player|FJI|Frank Lomani|cap=y|cc=y}}
+
+'''Fly-halves'''
+{{RU squad player|FJI|Isaiah Armstrong-Ravula|cap=y}}
+{{RU squad player|FJI|Isikeli Rabitu|cap=y}}
+{{RU squad player|FJI|Kemu Valetini|cap=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|FJI|Iosefo Namoce}}
+{{RU squad player|FJI|Joji Nasova|cap=y}}
+{{RU squad player|FJI|Tuidraki Samusamuvodre|cap=y}}
+{{RU squad player|FJI|Inia Tabuavou|cap=y}}
+{{RU squad player|FJI|Maika Tuitubou}}
+{{RU squad player|FJI|Virimi Vakatawa|cap=y|ex=Signed in January 2026.<ref name="Welcome aboard, Virimi Vakatawa">{{cite press release | url=https://drua.rugby/content/welcome-aboard-virimi-vakatawa | title=Welcome aboard, Virimi Vakatawa | publisher=Fijian Drua | date=29 January 2026 | access-date=30 January 2026}}</ref>}}
+
+'''Outside backs'''
+{{RU squad player|FJI|Isikeli Basiyalo}}
+{{RU squad player|FJI|Ilaisa Droasese|cap=y}}
+{{RU squad player|FJI|Ponepati Loganimasi|cap=y}}
+{{RU squad player|FJI|Manasa Mataele|cap=y}}
+{{RU squad player|FJI|Epeli Momo|cap=y}}
+{{RU squad player|FJI|Aisea Nawai}}
+{{RU squad player|FJI|Taniela Rakuro|cap=y}}
+{{Rugby union squad end
+ | res = Fiji
+ | cap = y
+ | cc = y
+ | st = y
+ | dev = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref name="Fijian Drua unveil 2026 squad">{{cite press release | url=https://drua.rugby/content/fijian-drua-unveil-2026-squad | title=Fijian Drua unveil 2026 squad | publisher=Fijian Drua | date=6 November 2025 | access-date=6 November 2025}}</ref>
+}}
+
+===Development squad===
+The following players were named in the Drua development squad for the [[2026 Super Rugby Pacific season]]:<ref name="Fijian Drua unveil 12 development players for 2026">{{cite press release | url=https://drua.rugby/content/fijian-drua-unveil-12-development-players-for-2026 | title=Fijian Drua unveil 12 development players for 2026 | work=Fijian Drua | date=5 January 2026 | access-date=6 January 2026}}</ref>
+
+{{div col|colwidth=40em}}
+* {{Flagicon|Fiji}} Breyton Legge (Prop)
+* {{Flagicon|Fiji}} [[Harold Rounds]] (Prop)
+* {{Flagicon|Fiji}} JD Sivivatu Kanth (Prop)
+* {{Flagicon|Fiji}} Moses Armstrong-Ravula (Hooker)
+* {{Flagicon|Fiji}} [[Sairusi Ravudi]] (Hooker)
+* {{Flagicon|Fiji}} Joshua Uluibau (Hooker)
+* {{Flagicon|Fiji}} Kalioni Ratunabuabua (Lock)
+* {{Flagicon|Fiji}} [[Janeiro Wakeham]] (Lock)
+* {{Flagicon|Fiji}} Bogi Kikau (Fly-half)
+* {{Flagicon|Fiji}} [[Pita Manamanaivalu]] (Centre/Outside back)
+* {{Flagicon|Fiji}} Maleli Nauvasi (Centre)
+* {{Flagicon|Fiji}} Joweli Walevu (Outside back)
+{{div col end}}

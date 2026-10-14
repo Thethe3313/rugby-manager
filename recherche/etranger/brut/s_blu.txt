@@ -1,0 +1,102 @@
+# Blues (Super Rugby)
+==Current squad==
+
+{{for|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Blues}}
+
+The squad for the [[2026 Super Rugby Pacific season]] is:{{efn|group="Squad"|name=Suafoa|[[Cameron Suafoa]] was announced as a non-playing member in the original Blues squad, but announced his retirement in April 2026.<ref name="Cam Suafoa retires from rugby">{{cite press release | url=https://www.blues.rugby/blues-rugby-news/cam-suafoa-retires-from-rugby | title=Cam Suafoa retires from rugby | work=Blues | date=2 April 2026 | access-date=2 April 2026}}</ref>}}
+
+{{Rugby union squad start
+ | title = 2026 Blues squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|NZL|Ben Ake}}
+{{RU squad player|NZL|Josh Fusitu'a}}
+{{RU squad player|SAM|Jordan Lay|cap=y}}
+{{RU squad player|NZL|Marcel Renata}}
+{{RU squad player|NZL|Ofa Tuʻungafasi|cap=y}}
+{{RU squad player|NZL|Flyn Yates}}
+{{RU squad player|NZL|Sam Matenga|wtg=y|ex=Promoted from wider training group ahead of Round 3.<ref name="Blues set for test against Brumbies">{{cite press release | url=https://www.blues.rugby/blues-rugby-news/blues-go-against-red-hot-brumbies | title=Blues set for test against Brumbies | work=Blues | date=25 February 2026 | access-date=25 February 2026}}</ref>}}
+{{RU squad player|NZL|Mason Tupaea|wtg=y|ex=Promoted from wider training group ahead of Round 1.<ref name="Blues named for season opener against Chiefs">{{cite press release | url=https://www.blues.rugby/blues-rugby-news/blues-named-2026-season-opener | title=Blues named for season opener against Chiefs | work=Blues | date=11 February 2026 | access-date=11 February 2026}}</ref>}}
+
+'''Hookers'''
+{{RU squad player|NZL|Kurt Eklund}}
+{{RU squad player|NZL|James Mullan}}
+{{RU squad player|NZL|Bradley Slater}}
+{{RU squad player|NZL|Eli Oudenryn|wtg=y|ex=Promoted from wider training group ahead of Round 16.<ref name="Blues ready for key match-up with Chiefs">{{cite press release | url=https://www.blues.rugby/blues-rugby-news/blues-ready-key-round16-matchup-chiefs | title=Blues ready for key match-up with Chiefs | work=Blues | date=27 May 2026 | access-date=27 May 2026}}</ref>}}
+
+'''Locks'''
+{{RU squad player|NZL|Josh Beehre}}
+{{RU squad player|NZL|Tristyn Cook}}
+{{RU squad player|NZL|Sam Darry|cap=y}}
+{{RU squad player|NZL|Laghlan McWhannell}}
+{{RU squad player|NZL|Patrick Tuipulotu|cap=y|captain=y}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|NZL|Cam Christie|ru=y|inj=y|ex=Ruled out for the season through injury in February 2026.<ref name="Blues named for season opener against Chiefs"/>}}
+{{RU squad player|NZL|Che Clark}}
+{{RU squad player|NZL|Dalton Papali'i|cap=y}}
+{{RU squad player|NZL|Terrell Peita}}
+{{RU squad player|NZL|Anton Segner|cap=y}}
+{{RU squad player|NZL|Hoskins Sotutu|cap=y}}
+{{RU squad player|NZL|Malachi Wrampling}}
+{{RU squad player|NZL|Torian Barnes|wtg=y|ex=Promoted from wider training group ahead of Round 1.<ref name="Blues named for season opener against Chiefs"/>}}
+{{RU squad player|NZL|Jed Melvin|wtg=y|ex=Promoted from wider training group ahead of Round 7.<ref name="Blues back at home for round 7 Drua clash">{{cite press release | url=https://www.blues.rugby/blues-rugby-news/blues-back-home-drua-round7 | title=Blues back at home for round 7 Drua clash | work=Blues | date=25 March 2026 | access-date=25 March 2026}}</ref>}}
+
+'''Halfbacks (scrum-halves)'''
+{{RU squad player|NZL|Finlay Christie|cap=y}}
+{{RU squad player|NZL|Taufa Funaki}}
+{{RU squad player|NZL|Sam Nock}}
+
+'''First five-eighths (fly-halves)'''
+{{RU squad player|NZL|Beauden Barrett|cap=y}}
+{{RU squad player|NZL|Stephen Perofeta|cap=y}}
+{{RU squad player|NZL|Rico Simpson}}
+
+||
+
+'''Midfielders (centres)'''
+{{RU squad player|TGA|Pita Ahki|cap=y}}
+{{RU squad player|NZL|James Cameron|ru=y|inj=y|ex=Ruled out for the season through injury in May 2026.<ref name="Blues ready for key match-up with Chiefs"/>}}
+{{RU squad player|NZL|Corey Evans}}
+{{RU squad player|NZL|AJ Lam}}
+{{RU squad player|NZL|Xavi Taele}}
+
+'''Outside backs'''
+{{RU squad player|NZL|Kade Banks}}
+{{RU squad player|NZL|Caleb Clarke|ru=y|cap=y}}
+{{RU squad player|NZL|Cole Forbes}}
+{{RU squad player|NZL|Payton Spencer}}
+{{RU squad player|NZL|Zarn Sullivan}}
+{{RU squad player|NZL|Cody Vai}}
+{{Rugby union squad end
+ | res = New Zealand
+ | cap = y
+ | captain = y
+ | wtg = y
+ | inj = y
+ | group   = upper-alpha
+ | ex      =
+ | ref = <ref name="2026 Blues squad announced">{{cite press release | url=https://www.blues.rugby/blues-rugby-news/2026-blues-squad-announced | title=2026 Blues squad announced | work=Blues | date=6 November 2026 | access-date=6 November 2025}}</ref>
+}}
+
+===Wider training group===
+The following players were named in the Blues wider training group for the [[2026 Super Rugby Pacific season]]:<ref name="Blues confirm 2026 wider training group">{{cite press release | url=https://www.blues.rugby/blues-rugby-news/2026-blues-wider-training-group | title=Blues confirm 2026 wider training group | work=Blues | date=7 November 2025 | access-date=7 November 2025}}</ref>{{efn-ua|group="Squad"|name=Cunningham|Cunningham was named in the Blues wider training group, but was ruled out for the season through injury in May 2026.<ref name="Blues ready for key match-up with Chiefs"/>}}
+
+{{div col|colwidth=40em}}
+* {{Flagicon|New Zealand}} [[Esile Fono]] (Prop)
+* {{Flagicon|New Zealand}} [[Sam Matenga]] (Prop)
+* {{Flagicon|New Zealand}} [[Mason Tupaea]] (Prop)
+* {{Flagicon|New Zealand}} [[Eli Oudenryn]] (Hooker)
+* {{Flagicon|New Zealand}} [[Hemopo Cunningham]] (Lock/Loose forward) [[File:Injury icon 2.svg|12px]] {{efn-ua|group="Squad"|name=Cunningham}}
+* {{Flagicon|New Zealand}} [[Jack Lee (rugby union)|Jack Lee]] (Lock)
+* {{Flagicon|New Zealand}} [[Torian Barnes]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Jed Melvin]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Josh Renton]] (Halfback)
+* {{Flagicon|New Zealand}} [[Leo Gordon (rugby union)|Leo Gordon]] (Midfielder)
+* {{Flagicon|Tonga}} '''[[Tima Faingaʻanuku]]''' (Outside back)
+* {{Flagicon|New Zealand}} [[Harlyn Saunoa]] (Outside back)
+{{div col end}}
+{{notelist-ua|group="Squad"}}

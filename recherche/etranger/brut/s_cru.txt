@@ -1,0 +1,107 @@
+# Crusaders (rugby union)
+==Current squad==
+
+{{for|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Crusaders}}
+
+The squad for the [[2026 Super Rugby Pacific season]] is:
+
+{{Rugby union squad start
+ | title = 2026 Crusaders squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|NZL|George Bower|ru=y|cap=y}}
+{{RU squad player|NZL|Finlay Brewis}}
+{{RU squad player|NZL|Seb Calder}}
+{{RU squad player|NZL|Fletcher Newell|cap=y}}
+{{RU squad player|NZL|Kershawl Sykes-Martin}}
+{{RU squad player|NZL|Tamaiti Williams|cap=y|inj=y|ex=Ruled out for the season through injury in March 2026.<ref name="Tamaiti Williams ruled out for remainder of 2026 season with serious infection">{{cite press release | url=https://crusaders.co.nz/latest/news/tamaiti-williams-ruled-out-for-remainder-of-2026-season-with-serious-infection/ | title=Tamaiti Williams ruled out for remainder of 2026 season with serious infection | work=Crusaders | date=30 March 2026 | access-date=31 March 2026}}</ref>}}
+{{RU squad player|NZL|Gus Brown|ru=y|wtg=y|ex=Promoted from wider training group ahead of Qualifying-final.<ref name="QUALIFYING FINAL TEAM NAMING: Sold-out stage set for finals showdown vs Blues">{{cite press release | url=https://crusaders.co.nz/latest/news/qualifying-final-team-naming-sold-out-stage-set-for-finals-showdown-vs-blues/ | title=QUALIFYING FINAL TEAM NAMING: Sold-out stage set for finals showdown vs Blues | work=Crusaders | date=3 June 2026 | access-date=3 June 2026}}</ref>}}
+{{RU squad player|NZL|Jack Sexton|ru=y|wtg=y|ex=Promoted from wider training group ahead of Round 8.<ref name="Fijian Drua team naming: One final farewell at Apollo Projects Stadium and three major milestones">{{cite press release | url=https://crusaders.co.nz/latest/news/fijian-drua-team-naming-one-final-farewell-at-apollo-projects-stadium-and-three-major-milestones/ | title=Fijian Drua team naming: One final farewell at Apollo Projects Stadium and three major milestones | work=Crusaders | date=1 April 2026 | access-date=1 April 2026}}</ref>}}
+
+'''Hookers'''
+{{RU squad player|NZL|George Bell|ru=y|cap=y}}
+{{RU squad player|NZL|Manumaua Letiu}}
+{{RU squad player|NZL|Codie Taylor|cap=y}}
+
+'''Locks'''
+{{RU squad player|NZL|Scott Barrett|ru=y|cap=y|inj=y|ex=Ruled out for the season through injury in May 2026.<ref name="ROUND 16 TEAM NAMING: Sevu Reece set for century under the roof in last regular season match of 2026"/>}}
+{{RU squad player|NZL|Tahlor Cahill}}
+{{RU squad player|NZL|Jamie Hannah|cap=y}}
+{{RU squad player|NZL|Liam Jack}}
+{{RU squad player|NZL|Antonio Shalfoon}}
+{{RU squad player|NZL|Will Tucker|st=y|inj=y|ex=Ruled out for the season through injury in May 2026.<ref name="ROUND 16 TEAM NAMING: Sevu Reece set for century under the roof in last regular season match of 2026"/>}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|NZL|Ethan Blackadder|cap=y}}
+{{RU squad player|NZL|Dominic Gardiner}}
+{{RU squad player|NZL|Cullen Grace|cap=y}}
+{{RU squad player|NZL|Corey Kellow}}
+{{RU squad player|NZL|Christian Lio-Willie|cap=y}}
+{{RU squad player|NZL|Xavier Saifoloi|inj=y|ex=Ruled out for the season through injury in June 2026.<ref name="QUALIFYING FINAL TEAM NAMING: Sold-out stage set for finals showdown vs Blues"/>}}
+{{RU squad player|NZL|Johnny Lee|ru=y|wtg=y|ex=Promoted from wider training group ahead of Round 5.<ref name="Highlanders team naming: Johnny Lee to debut and 50 Crusader Caps for Chay Fihaki">{{cite press release | url=https://crusaders.co.nz/latest/news/highlanders-team-naming-johnny-lee-to-debut-and-50-crusader-caps-for-chay-fihaki/ | title=Highlanders team naming: Johnny Lee to debut and 50 Crusader Caps for Chay Fihaki | work=Crusaders | date=11 March 2026 | access-date=11 March 2026}}</ref>}}
+{{RU squad player|NZL|Oli Mathis|wtg=y|ex=Promoted from wider training group as late inclusion for Round 10.<ref name="Match Centre - Super Rugby - Force vs. Crusaders">{{cite web | url=https://super.rugby/superrugby/match-centre/?competition=205&season=2026&match=949255 | title=Match Centre - Super Rugby - Force vs. Crusaders | work=SANZAAR | access-date=18 April 2026}}</ref>}}
+
+'''Halfbacks (scrum-halves)'''
+{{RU squad player|NZL|Louie Chapman}}
+{{RU squad player|NZL|Noah Hotham|cap=y}}
+{{RU squad player|NZL|Kyle Preston|cap=y}}
+{{RU squad player|NZL|Mitchell Drummond|cap=y|wtg=y|inj=y|ex=Promoted from wider training group as late inclusion for Round 8,<ref name="Match Centre - Super Rugby - Crusaders vs. Drua">{{cite web | url=https://super.rugby/superrugby/match-centre/?competition=205&season=2026&match=949243 | title=Match Centre - Super Rugby - Crusaders vs. Drua | work=SANZAAR | access-date=3 April 2026}}</ref> subsequently ruled out for the season through injury in May 2026.<ref name="ROUND 15 TEAM NAMING: Will Jordan returns for sold out grand final rematch against the Chiefs">{{cite press release | url=https://crusaders.co.nz/latest/news/round-15-team-naming-will-jordan-returns-for-sold-out-grand-final-rematch-against-the-chiefs/ | title=ROUND 15 TEAM NAMING: Will Jordan returns for sold out grand final rematch against the Chiefs | work=Crusaders | date=20 May 2026 | access-date=20 May 2026}}</ref>}}
+
+'''First five-eighths (fly-halves)'''
+{{RU squad player|NZL|Taha Kemara}}
+{{RU squad player|NZL|Rivez Reihana}}
+{{RU squad player|NZL|James White|ru=y|inj=y|ex=Ruled out for the season through injury in March 2026.<ref name="Highlanders team naming: Johnny Lee to debut and 50 Crusader Caps for Chay Fihaki"/>}}
+{{RU squad player|NZL|Cooper Grant|wtg=y|ex=Promoted from wider training group ahead of Round 6.<ref name="Moana Pasifika team naming: Cooper Grant to debut and 50 Crusader games for Fletcher Newell">{{cite press release | url=https://crusaders.co.nz/latest/news/moana-pasifika-team-naming-cooper-grant-to-debut-and-50-crusader-games-for-fletcher-newell/ | title=Moana Pasifika team naming: Cooper Grant to debut and 50 Crusader games for Fletcher Newell | work=Crusaders | date=18 March 2026 | access-date=19 March 2026}}</ref>}}
+
+||
+
+'''Midfielders (centres)'''
+{{RU squad player|NZL|Toby Bell|inj=y|ex=Ruled out for the season through injury in May 2026.<ref name="ROUND 15 TEAM NAMING: Will Jordan returns for sold out grand final rematch against the Chiefs"/>}}
+{{RU squad player|NZL|Leicester Faingaʻanuku|cap=y}}
+{{RU squad player|NZL|Braydon Ennor|cap=y}}
+{{RU squad player|NZL|David Havili|cap=y|captain=y}}
+{{RU squad player|NZL|Dallas McLeod|cap=y}}
+{{RU squad player|NZL|Cooper Roberts|wtg=y|ex=Promoted from wider training group ahead of Round 16.<ref name="ROUND 16 TEAM NAMING: Sevu Reece set for century under the roof in last regular season match of 2026">{{cite press release | url=https://crusaders.co.nz/latest/news/round-16-team-naming-sevu-reece-set-for-century-under-the-roof-in-last-regular-season-match-of-2026/ | title=ROUND 16 TEAM NAMING: Sevu Reece set for century under the roof in last regular season match of 2026 | work=Crusaders | date=27 May 2026 | access-date=27 May 2026}}</ref>}}
+
+'''Outside backs'''
+{{RU squad player|NZL|Chay Fihaki}}
+{{RU squad player|NZL|Will Jordan|ru=y|cap=y|inj=y|ex=Ruled out for the season through injury in May 2026.<ref name="ROUND 16 TEAM NAMING: Sevu Reece set for century under the roof in last regular season match of 2026"/>}}
+{{RU squad player|NZL|Maloni Kunawave}}
+{{RU squad player|WAL|Johnny McNicholl|cap=y}}
+{{RU squad player|NZL|Sevu Reece|cap=y}}
+{{RU squad player|NZL|Macca Springer}}
+{{RU squad player|NZL|Aki Tuivailala}}
+{{RU squad player|NZL|Kurtis MacDonald|wtg=y|ex=Promoted from wider training group ahead of Round 6.<ref name="Moana Pasifika team naming: Cooper Grant to debut and 50 Crusader games for Fletcher Newell" />}}
+{{Rugby union squad end
+ | res = New Zealand
+ | cap = y
+ | captain = y
+ | st = y
+ | inj = y
+ | wtg = y
+ | group   = upper-alpha
+ | ex      =
+ | ref = <ref name="2026 Crusaders squad announced">{{cite press release | url=https://crusaders.co.nz/latest/news/2026-crusaders-squad-announced/ | title=2026 Crusaders squad announced | work=Crusaders | date=6 November 2025 | access-date=6 November 2025}}</ref>
+}}
+
+===Wider training group===
+The following players were named in the Crusaders wider training group for the [[2026 Super Rugby Pacific season]]:<ref name="2026 Crusaders Wider Training Group Announced">{{cite press release | url=https://crusaders.co.nz/latest/news/2026-crusaders-wider-training-group-announced/ | title=2026 Crusaders Wider Training Group Announced | work=Crusaders | date=7 November 2025 | access-date=7 November 2025}}</ref>{{efn-ua|group="Squad"|name=Drummond|Drummond was named in the Crusaders wider training group, but was ruled out for the season through injury in May 2026.<ref name="ROUND 15 TEAM NAMING: Will Jordan returns for sold out grand final rematch against the Chiefs"/>}}
+
+{{div col|colwidth=40em}}
+* {{Flagicon|New Zealand}} [[Gus Brown (rugby union)|Gus Brown]] (Prop)
+* {{Flagicon|New Zealand}} [[Jack Sexton (rugby union)|Jack Sexton]] (Prop)
+* {{Flagicon|Australia}} [[Tomasi Maka]] (Hooker)
+* {{Flagicon|New Zealand}} [[Xavier Treacy]] (Lock/Loose forward)
+* {{Flagicon|New Zealand}} [[Sam Hainsworth-Fa'aofo]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Johnny Lee (rugby union)|Johnny Lee]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Oli Mathis]] (Loose forward/Outside back)
+* {{Flagicon|New Zealand}} '''[[Mitchell Drummond]]''' (Halfback) [[File:Injury icon 2.svg|12px]] {{efn-ua|group="Squad"|name=Drummond}}
+* {{Flagicon|New Zealand}} [[Cooper Grant]] (First five-eighth)
+* {{Flagicon|New Zealand}} [[Cooper Roberts]] (Midfielder)
+* {{Flagicon|New Zealand}} [[Jae Broomfield]] (Outside back)
+* {{Flagicon|New Zealand}} [[Kurtis MacDonald]] (Outside back)
+{{div col end}}
+{{notelist-ua|group="Squad"}}

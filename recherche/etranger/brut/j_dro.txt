@@ -1,0 +1,101 @@
+# Urayasu D-Rocks
+==Current squad==
+The Urayasu D-Rocks is for the 2026-27 season:<ref name="Members">{{cite web | url=http://www.ntt.com/rugby/members/index.html | title=Members | work=NTT Shining Arcs | access-date=8 October 2019}}</ref>
+
+{| class="wikitable" style="text-align:left; font-size:90%; width:70%"
+|-
+! colspan="100%" | Urayasu D-Rocks squad
+|- valign="top"
+|
+'''Props'''
+* {{Flagicon|Japan}} [[Gakuto Ishida]]
+* {{Flagicon|Japan}} [[Hidetomo Nabeshima]]
+* {{Flagicon|Japan}} [[Kaisei Umeda]]
+* {{Flagicon|Japan}} [[Taiga Yamaguchi]]
+* {{Flagicon|Japan}} '''[[Genki Sudo (rugby union)|Genki Sudo]]'''
+* {{Flagicon|Japan}} [[Jinichiro Tamanaga]]
+* {{Flagicon|South Korea}} [[Kim Ryo-m]]*
+* {{Flagicon|Japan}} [[Masahide Yanagawa|Yang Jung-soo]]
+* {{Flagicon|New Zealand}} [[Sekonaia Pole]]*
+
+'''Hookers'''
+* {{Flagicon|Japan}} [[Ryuji Fujimura]] ([[Captain (sports)|c]])
+* {{Flagicon|Japan}} [[Junichiro Matsushita]]
+* {{Flagicon|Japan}} [[Takashi Ōmoto]]
+* {{Flagicon|New Zealand}} [[Soane Vikena]]
+
+'''Locks'''
+* {{Flagicon|New Zealand}} [[Manaaki Selby-Rickit]]
+* {{Flagicon|Japan}} [[Daiki Sato (rugby union)|Daiki Sato]]
+* {{Flagicon|Japan}} [[Yūta Kojima]]
+* {{Flagicon|New Zealand}} [[Quinten Strange]]
+* {{Flagicon|Japan}} '''[[Esei Ha'angana]]'''*
+* {{Flagicon|Japan}} [[Shin Takeuchi]]
+* {{Flagicon|Japan}} [[Yuzuki Sasaki]]
+* {{Flagicon|Australia}} [[Zephaniah Tuinona]]*
+
+||
+
+'''Flankers'''
+* {{Flagicon|Japan}} [[Daishi Kojima]]
+* {{Flagicon|Japan}} [[Miu Austin Moriyama]]
+* {{Flagicon|Samoa}} [[Larry Tipoai-Luteru]]*
+* {{Flagicon|New Zealand}} [[Devan Flanders]]
+* {{Flagicon|Japan}} [[Yūsei Tanaka]]
+
+'''No8s'''
+* {{Flagicon|Fiji}} [[Rusiate Finau]]*
+* {{Flagicon|South Africa}} '''[[Jasper Wiese]]'''
+* {{Flagicon|Australia}} [[Brody Macaskill]]*
+* {{Flagicon|Australia}} [[Tamati Ioane]]
+
+'''Scrum-halves'''
+* {{Flagicon|Japan}} [[Ren Iinuma]]
+* {{Flagicon|Japan}} [[Taisei Konishi]]
+* {{Flagicon|Japan}} [[Takuya Shirae]]
+
+'''Fly-halves'''
+* {{Flagicon|Japan}} [[Hikaru Tamura]]
+* {{Flagicon|Japan}} [[Shunta Mori]]
+* {{Flagicon|South Korea}} [[Kim Yu-o]]*
+* {{Flagicon|Australia}} [[Finn Prass]]
+* {{Flagicon|New Zealand}} [[Otere Black]]*
+
+||
+
+'''Centres'''
+* {{Flagicon|Japan}} '''[[Shane Gates]]'''*
+* {{Flagicon|Japan}} '''[[Samisoni Tua]]'''*
+* {{Flagicon|Australia}} '''[[Samu Kerevi]]'''
+* {{Flagicon|Australia}} [[Marcus D'Acre]]
+* {{Flagicon|New Zealand}} [[Vince Aso]]*
+* {{Flagicon|Japan}} [[Kentaro Nanimatsu]]
+* {{Flagicon|Japan}} [[Soma Matsumoto]]
+* {{Flagicon|Japan}} [[Taiga Ishida]]
+
+'''Wingers'''
+* {{Flagicon|New Zealand}} [[Tana Tuhakaraina]]
+* {{Flagicon|South Korea}} [[Kim Su-Ryung]]*
+* {{Flagicon|Japan}} [[Junya Matsumoto]]
+* {{Flagicon|Japan}} [[Kai Ishii]]
+* {{Flagicon|New Zealand}} [[Caleb Cavubati]]*
+* {{Flagicon|Japan}} [[Ryota Ōhata]]
+
+'''Fullbacks'''
+* {{Flagicon|Japan}} '''[[Ryohei Yamanaka]]'''
+* {{Flagicon|Australia}} '''[[Jordan Petaia]]'''
+* {{Flagicon|Japan}} '''[[Takuhei Yasuda]]'''
+
+'''Utility Backs'''
+* {{Flagicon|Japan}} [[Fumiya Dobashi]]
+* {{Flagicon|New Zealand}} [[Luteru Laulala]]*
+
+|-
+| colspan="100%" style="height: 10px;" | 
+|-
+| colspan="100%" style="text-align:center;" | <small> ([[Captain (sports)|c]]) Denotes team captain, '''Bold''' denotes player is internationally capped</small>
+
+{{notelist}}
+|}
+
+* * denotes players qualified to play for [[Japan national rugby union team|Japan]] on dual nationality or residency grounds.

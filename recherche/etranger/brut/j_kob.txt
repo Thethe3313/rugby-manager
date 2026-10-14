@@ -1,0 +1,90 @@
+# Kobelco Kobe Steelers
+==Current squad==
+The Kobelco Kobe Steelers squad for the 2026-27 season is:<ref name="Kobe Steelers: Players">{{cite web | url=https://www.kobesteelers.com/member/ | title=Kobe Steelers: Players | publisher=Kobelco Kobe Steelers | year=2024 | access-date=12 December 2023 | language=ja}}</ref>
+
+{| class="wikitable" style="text-align:left; font-size:90%; width:70%"
+|-
+! colspan="100%" | Kobelco Kobe Steelers squad
+|- valign="top"
+|
+'''Props'''
+* {{Flagicon|Japan}} [[Shigure Takao]]
+* {{Flagicon|Japan}} [[Hikaru Moriwaki]]
+* {{Flagicon|Japan}} '''[[Koo Ji-won]]'''
+* {{Flagicon|Japan}} [[Sho Maeda]]
+* {{Flagicon|New Zealand}} [[Kauvaka Kaivelata]]
+* {{Flagicon|Japan}} '''[[Hiroshi Yamashita]]'''
+* {{Flagicon|Japan}} '''[[Takayuki Watanabe]]'''
+* {{Flagicon|Japan}} [[Takashi Ōshita]]
+* {{Flagicon|Japan}} [[Riku Tomita]]
+
+'''Hookers'''
+* {{Flagicon|Japan}} [[Keita Miyauchi]]
+* {{Flagicon|Japan}} '''[[Takuya Kitade]]'''
+* {{Flagicon|Japan}} '''[[Kenta Matsuoka]]'''
+* {{Flagicon|Tonga}} [[Sione Sime Mau]]*
+
+'''Locks'''
+* {{Flagicon|New Zealand}} '''[[Brodie Retallick]]''' ([[Captain (sports)|cc]])
+* {{Flagicon|New Zealand}} [[Gerard Cowley-Tuioti]]*
+* {{Flagicon|South Africa}} [[Neil Hansen (rugby union)|Neil Hansen]]
+* {{Flagicon|Japan}} [[Takuma Motohashi]]
+* {{Flagicon|Ireland|rugby union}} [[Matthew Dalton]]
+
+||
+
+'''Flankers'''
+* {{Flagicon|Japan}} [[Hayato Fukunishi]]
+* {{Flagicon|Japan}} [[Takara Imamura]]
+* {{Flagicon|Tonga}} [[Solomone Funaki (rugby union born 2002)|Solomone Funaki]]*
+* {{Flagicon|Japan}} [[Hikaru Hashimoto]]
+* {{Flagicon|South Africa}} [[Nico Henrico]]*
+
+'''No8s'''
+* {{Flagicon|Tonga}} [[Sione Polutele]]*
+* {{Flagicon|South Africa}} [[Willie Potgieter]]
+* {{Flagicon|Japan}} '''[[Tiennan Costley]]'''*
+
+'''Scrum-halves'''
+* {{Flagicon|Japan}} '''[[Atsushi Hiwasa]]'''
+* {{Flagicon|Japan}} '''[[Daiki Nakajima]]'''
+* {{Flagicon|Japan}} '''[[Itsuki Kamimura]]'''
+* {{Flagicon|South Africa}} '''[[Grant Williams (rugby union)|Grant Williams]]'''
+* {{Flagicon|Japan}} [[Kenta Tokuda]]
+
+'''Fly-halves'''
+* {{Flagicon|New Zealand}} [[Bryn Gatland]]
+
+||
+
+'''Centres'''
+* {{Flagicon|Japan}} '''[[Timothy Lafaele]]'''
+* {{Flagicon|Japan}} [[Yoshiki Ōmachi]]
+* {{Flagicon|New Zealand}} [[Michael Little]]*
+* {{Flagicon|New Zealand}} [[Mac Harris]]**
+* {{Flagicon|New Zealand}} [[Tali Ioasa]]
+* {{Flagicon|Tonga}} [[Talilotu Fakatulolo]]*
+* {{Flagicon|New Zealand}} '''[[George Bridge]]'''
+
+'''Wingers'''
+* {{Flagicon|Japan}} '''[[Ataata Moeakiola]]'''*
+* {{Flagicon|Japan}} '''[[Kazuma Ueda]]'''
+* {{Flagicon|Japan}} '''[[Inoke Burua]]'''*
+* {{Flagicon|Japan}} [[Ryota Funabiki]]
+
+'''Fullbacks'''
+* {{Flagicon|Japan}} [[Shinsuke Iseki]]
+* {{Flagicon|Japan}} [[Kanta Matsunaga]]
+
+'''Utility Backs'''
+* {{Flagicon|Japan}} '''[[Lee Seung-sin]]'''* ([[Captain (sports)|cc]])
+* {{Flagicon|Japan}} '''[[Shunsuke Uenobo]]'''
+* {{Flagicon|Japan}} [[Daisuke Ito (rugby union)|Daisuke Ito]]
+* {{Flagicon|Japan}} [[Hayata Tsujino]]
+
+|-
+| colspan="100%" style="text-align:center;" | {{smalldiv|
+* ([[Captain (sports)|cc]]) denotes team co-captains.
+* '''Bold''' denotes internationally capped.}}
+{{notelist|group="Squad"}}
+|}

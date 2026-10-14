@@ -1,0 +1,102 @@
+# Hurricanes (rugby union)
+==Current squad==
+
+{{for|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Hurricanes}}
+
+The squad for the [[2026 Super Rugby Pacific season]] is:
+
+{{Rugby union squad start
+ | title = 2026 Hurricanes squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|NZL|Siale Lauaki}}
+{{RU squad player|NZL|Tyrel Lomax|cap=y}}
+{{RU squad player|NZL|Tevita Mafileo}}
+{{RU squad player|NZL|Xavier Numia|cap=y}}
+{{RU squad player|NZL|Pouri Rakete-Stones}}
+{{RU squad player|NZL|Pasilio Tosi|cap=y}}
+
+'''Hookers'''
+{{RU squad player|NZL|Asafo Aumua|cap=y}}
+{{RU squad player|NZL|Vernon Bason}}
+{{RU squad player|NZL|Jacob Devery}}
+{{RU squad player|NZL|Raymond Tuputupu}}
+
+'''Locks'''
+{{RU squad player|NZL|Tom Allen|ru=y}}
+{{RU squad player|JPN|Warner Dearns|cap=y}}
+{{RU squad player|NZL|Caleb Delany}}
+{{RU squad player|NZL|Hugo Plummer}}
+{{RU squad player|NZL|Isaia Walker-Leawere}}
+{{RU squad player|NZL|Matolu Petaia|wtg=y|ex=Promoted from wider training group ahead of Round 2.<ref name="Hurricanes name team for season-opener against Moana Pasifika">{{cite press release | url=https://www.hurricanes.co.nz/news/article/hurricanes-name-team-for-season-opener-against-moana-pasifika | title=Hurricanes name team for season-opener against Moana Pasifika | work=Hurricanes | date=18 February 2026 | access-date=18 February 2026}}</ref>}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|NZL|Devan Flanders}}
+{{RU squad player|NZL|Brayden Iose}}
+{{RU squad player|NZL|Du'Plessis Kirifi|cap=y|cc=y}}
+{{RU squad player|NZL|Peter Lakai|cap=y}}
+{{RU squad player|AUS|Arese Poliko}}
+{{RU squad player|ENG|Brad Shields|cap=y}}
+{{RU squad player|NZL|Cooper Flanders|wtg=y|ex=Promoted from wider training group ahead of Round 16.<ref name="Hurricanes name side to face Crusaders in final regular season match">{{cite press release | url=https://www.hurricanes.co.nz/news/article/hurricanes-name-side-to-face-crusaders-in-final-regular-season-match | title=Hurricanes name side to face Crusaders in final regular season match | work=Hurricanes | date=27 May 2026 | access-date=27 May 2026}}</ref>}}
+
+'''Halfbacks (scrum-halves)'''
+{{RU squad player|SAM|Ere Enari|cap=y}}
+{{RU squad player|NZL|Cam Roigard|cap=y}}
+{{RU squad player|NZL|Jordi Viljoen}}
+
+'''First five-eighths (fly-halves)'''
+{{RU squad player|NZL|Brett Cameron|cap=y|inj=y|ex=Ruled out for the season through injury in March 2026.<ref name="Hurricanes name team to face Waratahs in Sydney">{{cite press release | url=https://www.hurricanes.co.nz/news/article/hurricanes-name-team-to-face-waratahs-in-sydney | title=Hurricanes name team to face Waratahs in Sydney | work=Hurricanes | date=4 March 2026 | access-date=4 March 2026}}</ref>}}
+{{RU squad player|NZL|Lucas Cashmore}}
+{{RU squad player|NZL|Harry Godfrey|inj=y|ex=Ruled out for the season through injury ahead of the season.}}
+{{RU squad player|NZL|Callum Harkin}}
+
+||
+
+'''Midfielders (centres)'''
+{{RU squad player|NZL|Jordie Barrett|cap=y|cc=y}}
+{{RU squad player|NZL|Riley Higgins|inj=y|ex=Ruled out for the season through injury in May 2026.<ref name="Hurricanes name side to face Crusaders in final regular season match"/>}}
+{{RU squad player|NZL|Billy Proctor|cap=y}}
+{{RU squad player|NZL|Jone Rova}}
+{{RU squad player|NZL|Bailyn Sullivan}}
+{{RU squad player|NZL|Josh Timu}}
+
+'''Outside backs'''
+{{RU squad player|NZL|Fehi Fineanganofo|cap=y}}
+{{RU squad player|NZL|Ruben Love|cap=y}}
+{{RU squad player|NZL|Josh Moorby|cap=y}}
+{{RU squad player|NZL|Kini Naholo}}
+{{RU squad player|NZL|Ngane Punivai}}
+{{RU squad player|TGA|Taniela Filimone|cap=y|wtg=y|ex=Promoted from wider training group ahead of Round 16.<ref name="Hurricanes name side to face Crusaders in final regular season match"/>}}
+{{RU squad player|NZL|Josh Gray|born=1999|wtg=y|ex=Promoted from wider training group ahead of Round 11.<ref name="Hurricanes name team for Super Round clash against Brumbies">{{cite press release | url=https://www.hurricanes.co.nz/news/article/hurricanes-name-team-for-super-round-clash-against-brumbies | title=Hurricanes name team for Super Round clash against Brumbies | work=Hurricanes | date=22 April 2026 | access-date=22 April 2026}}</ref>}}
+{{Rugby union squad end
+ | res = New Zealand
+ | cap = y
+ | cc = y
+ | wtg = y
+ | inj = y
+ | group   = upper-alpha
+ | ex      =
+ | ref = <ref name="Hurricanes announce 2026 Super Rugby Pacific squad">{{cite press release | url=https://www.hurricanes.co.nz/news/article/hurricanes-announce-2026-super-rugby-pacific-squad | title=Hurricanes announce 2026 Super Rugby Pacific squad | work=Hurricanes | date=6 November 2025 | access-date=6 November 2025}}</ref>
+}}
+
+===Wider training group===
+The following players were named in the Hurricanes wider training group for the [[2026 Super Rugby Pacific season]]:<ref name="Hurricanes unveil 12-man wider training group for 2026">{{cite press release | url=https://www.hurricanes.co.nz/news/article/hurricanes-unveil-12-man-wider-training-group-for-2026 | title=Hurricanes unveil 12-man wider training group for 2026 | work=Hurricanes | date=7 November 2025 | access-date=7 November 2025}}</ref>{{efn-ua|group="Squad"|name=Tamati|Tamati was named in the Hurricanes wider training group, but was ruled out for the season through injury in June 2026.<ref name="Hurricanes name team to face Blues in home semi final">{{cite press release | url=https://www.hurricanes.co.nz/news/article/hurricanes-name-team-to-face-blues-in-home-semi-final | title=Hurricanes name team to face Blues in home semi final | work=Hurricanes | date=10 June 2026 | access-date=11 June 2026}}</ref>}}
+
+{{div col|colwidth=40em}}
+* {{Flagicon|New Zealand}} [[Tony Tafa]] (Prop)
+* {{Flagicon|New Zealand}} [[Logan Wallace]] (Prop)
+* {{Flagicon|New Zealand}} [[Matolu Petaia]] (Lock/Loose forward)
+* {{Flagicon|Australia}} [[Taine Roiri]] (Lock)
+* {{Flagicon|New Zealand}} [[Mosese Bason]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Cooper Flanders]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Jai Tamati]] (Halfback) [[File:Injury icon 2.svg|12px]] {{efn-ua|group="Squad"|name=Tamati}}
+* {{Flagicon|New Zealand}} Will Cole (First five-eighth)
+* {{Flagicon|New Zealand}} [[Anaru Paenga-Morgan]] (Midfielder)
+* {{Flagicon|Tonga}} '''[[Taniela Filimone]]''' (Outside back)
+* {{Flagicon|New Zealand}} [[Josh Gray (rugby union, born 1999)|Josh Gray]] (Outside back)
+* {{Flagicon|New Zealand}} [[Drew Wild]] (Outside back)
+{{div col end}}
+{{notelist-ua|group="Squad"}}

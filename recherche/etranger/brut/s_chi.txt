@@ -1,0 +1,100 @@
+# Chiefs (Super Rugby)
+==Current squad==
+
+{{for|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Chiefs}}
+
+The squad for the [[2026 Super Rugby Pacific season]] is:
+
+{{Rugby union squad start
+ | title = 2026 Chiefs squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|NZL|Sione Ahio}}
+{{RU squad player|NZL|George Dyer|ru=y}}
+{{RU squad player|NZL|Benet Kumeroa}}
+{{RU squad player|NZL|Ollie Norris|cap=y}}
+{{RU squad player|NZL|Reuben O'Neill}}
+{{RU squad player|NZL|Jared Proffit}}
+{{RU squad player|NZL|Keran van Staden|wtg=y|ex=Promoted from wider training group ahead of Round 16.<ref name="Wallace Sititi to captain Gallagher Chiefs for the first time.">{{cite press release | url=https://chiefs.co.nz/news-item/wallace-sititi-to-captain-gallagher-chiefs-for-the-first-time/ | title=Wallace Sititi to captain Gallagher Chiefs for the first time. | work=Chiefs | date=27 May 2026 | access-date=27 May 2026}}</ref>}}
+
+'''Hookers'''
+{{RU squad player|NZL|Taine Kolose}}
+{{RU squad player|NZL|Brodie McAlister|cap=y}}
+{{RU squad player|NZL|Samisoni Taukei'aho|cap=y}}
+{{RU squad player|NZL|Tyrone Thompson|dab=rugby}}
+
+'''Locks'''
+{{RU squad player|NZL|Naitoa Ah Kuoi}}
+{{RU squad player|NZL|Josh Lord|ru=y|cap=y}}
+{{RU squad player|NZL|Fiti Sa}}
+{{RU squad player|NZL|Jayden Sa|inj=y|ex=Ruled out for the season through injury in April 2026.<ref name="Reuben O'Neill set to play 50th Super Rugby game for Gallagher Chiefs.">{{cite press release | url=https://chiefs.co.nz/news-item/reuben-oneill-set-to-play-50th-super-rugby-game-for-gallagher-chiefs/ | title=Reuben O'Neill set to play 50th Super Rugby game for Gallagher Chiefs. | work=Chiefs | date=1 April 2026 | access-date=1 April 2026}}</ref>}}
+{{RU squad player|NZL|Tupou Vaa'i|cap=y}}
+{{RU squad player|NZL|Aisake Vakasiuola}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|NZL|Kaylum Boshier}}
+{{RU squad player|NZL|Jahrome Brown}}
+{{RU squad player|NZL|Samipeni Finau|cap=y}}
+{{RU squad player|NZL|Luke Jacobson|cap=y|captain=y}}
+{{RU squad player|NZL|Simon Parker|cap=y}}
+{{RU squad player|NZL|Wallace Sititi|cap=y}}
+{{RU squad player|NZL|Michael Loft|wtg=y|ex=Promoted from wider training group ahead of Round 11.<ref name="Wallace Sititi to start at No8 against Drua in Christchurch">{{cite press release | url=https://chiefs.co.nz/news-item/wallace-sititi-to-start-at-no8-against-drua-in-christchurch/ | title=Wallace Sititi to start at No8 against Drua in Christchurch | work=Chiefs | date=22 April 2026 | access-date=22 April 2026}}</ref>}}
+
+'''Halfbacks (scrum-halves)'''
+{{RU squad player|NZL|Cortez Ratima|cap=y}}
+{{RU squad player|NZL|Xavier Roe}}
+{{RU squad player|NZL|Te Toiroa Tahuriorangi|cap=y}}
+
+'''First five-eighths (fly-halves)'''
+{{RU squad player|NZL|Tepaea Cook-Savage}}
+{{RU squad player|NZL|Josh Jacomb}}
+{{RU squad player|NZL|Damian McKenzie|cap=y}}
+
+||
+
+'''Midfielders (centres)'''
+{{RU squad player|NZL|Kyle Brown|born=2002}}
+{{RU squad player|AUS|Lalakai Foketi|cap=y}}
+{{RU squad player|NZL|Daniel Rona}}
+{{RU squad player|NZL|Quinn Tupaea|cap=y}}
+{{RU squad player|NZL|Reon Paul|wtg=y|ex=Promoted from wider training group ahead of Round 9.<ref name="Gallagher Chiefs name strong side for Rotorua return">{{cite press release | url=https://chiefs.co.nz/news-item/gallagher-chiefs-name-strong-side-for-rotorua-return/ | title=Gallagher Chiefs name strong side for Rotorua return | work=Chiefs | date=8 April 2026 | access-date=8 April 2026}}</ref>}}
+
+'''Outside backs'''
+{{RU squad player|NZL|Leroy Carter|ru=y|cap=y}}
+{{RU squad player|NZL|Liam Coombes-Fabling}}
+{{RU squad player|NZL|Isaac Hutchinson|ru=y}}
+{{RU squad player|NZL|Etene Nanai-Seturo|inj=y|ex=Ruled out for the season through injury in June 2026.<ref name="All Blacks back for Gallagher Chiefs playoff against Reds">{{cite press release | url=https://chiefs.co.nz/news-item/all-blacks-back-for-gallagher-chiefs-playoff-against-reds/ | title=All Blacks back for Gallagher Chiefs playoff against Reds | work=Chiefs | date=3 June 2026 | access-date=3 June 2026}}</ref>}}
+{{RU squad player|NZL|Emoni Narawa|cap=y|inj=y|ex=Ruled out for the season through injury in June 2026.<ref name="All Blacks back for Gallagher Chiefs playoff against Reds"/>}}
+{{RU squad player|TGA|Kyren Taumoefolau|cap=y}}
+{{RU squad player|NZL|Daniel Sinkinson|wtg=y|ex=Promoted from wider training group ahead of Round 8.<ref name="Reuben O'Neill set to play 50th Super Rugby game for Gallagher Chiefs."/>}}
+{{Rugby union squad end
+ | res = New Zealand
+ | cap = y
+ | captain = y
+ | wtg = y
+ | inj = y
+ | group   = upper-alpha
+ | ex      =
+ | ref = <ref name="Experience, depth and fresh talent as Gallagher Chiefs name 2026 squad">{{cite press release | url=https://chiefs.co.nz/news-item/experience-depth-and-fresh-talent-as-gallagher-chiefs-name-2026-squad/ | title=Experience, depth and fresh talent as Gallagher Chiefs name 2026 squad | publisher=Chiefs | date=6 November 2025 | access-date=6 November 2025}}</ref>
+}}
+
+===Wider training group===
+The following players were named in the Chiefs wider training group for the [[2026 Super Rugby Pacific season]]:<ref name="Gallagher Chiefs 2026 wider training group">{{cite press release | url=https://chiefs.co.nz/news-item/gallagher-chiefs-2026-wider-training-group/ | title=Gallagher Chiefs 2026 wider training group | work=Chiefs | date=7 November 2025 | access-date=7 November 2025}}</ref>
+
+{{div col|colwidth=40em}}
+* {{Flagicon|New Zealand}} [[Will Martin (rugby union)|Will Martin]] (Prop)
+* {{Flagicon|New Zealand}} [[Keran van Staden]] (Prop)
+* {{Flagicon|New Zealand}} [[JJ Pokai]] (Hooker)
+* {{Flagicon|New Zealand}} [[Dylan Eti]] (Lock)
+* {{Flagicon|New Zealand}} [[Jai Knight]] (Lock)
+* {{Flagicon|New Zealand}} [[Cam Church]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Michael Loft]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Cohen Brady-Leathem]] (Halfback)
+* {{Flagicon|Samoa}} '''[[AJ Alatimu]]''' (First five-eighth)
+* {{Flagicon|New Zealand}} [[Tamiro Armstrong]] (Midfielder/Outside back)
+* {{Flagicon|New Zealand}} [[Reon Paul]] (Midfielder/Outside back)
+* {{Flagicon|New Zealand}} [[Daniel Sinkinson]] (Outside back)
+{{div col end}}

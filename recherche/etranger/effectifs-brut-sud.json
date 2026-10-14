@@ -1,0 +1,10886 @@
+{
+ "j_blr": [
+  {
+   "n": "Kazuma Nishi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuma Nishi"
+  },
+  {
+   "n": "Yuichiro Taniguchi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Yuichiro Taniguchi"
+  },
+  {
+   "n": "Kosei Nakamura",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kosei Nakamura (rugby union)"
+  },
+  {
+   "n": "Taishi Tsumura",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taishi Tsumura"
+  },
+  {
+   "n": "Paddy Ryan",
+   "pos": "PIL",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1988,
+   "title": "Paddy Ryan (rugby union, born 1988)"
+  },
+  {
+   "n": "Taichi Chiba",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taichi Chiba"
+  },
+  {
+   "n": "Kota Mitake",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kota Mitake"
+  },
+  {
+   "n": "Daigo Sasagawa",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Daigo Sasagawa"
+  },
+  {
+   "n": "Yūi Matsubara",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūi Matsubara"
+  },
+  {
+   "n": "Masashi Ōnishi",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Masashi Ōnishi"
+  },
+  {
+   "n": "Shin Ōuchi",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shin Ōuchi"
+  },
+  {
+   "n": "Hinata Takei",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hinata Takei"
+  },
+  {
+   "n": "Ko Sato",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ko Sato"
+  },
+  {
+   "n": "Lee Soon-hong",
+   "pos": "TAL",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Lee Soon-hong"
+  },
+  {
+   "n": "Tomoya Adachi",
+   "pos": "TAL",
+   "cty": "Wales",
+   "nat": "Pays de Galles",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tomoya Nieuwendijk-Adachi"
+  },
+  {
+   "n": "Reijiro Yamamoto",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Reijiro Yamamoto"
+  },
+  {
+   "n": "Yūsuke Kishi",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūsuke Kishi (rugby union)"
+  },
+  {
+   "n": "Michael Allardice",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1991,
+   "title": "Michael Allardice"
+  },
+  {
+   "n": "Josh Goodhue",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Josh Goodhue"
+  },
+  {
+   "n": "Harrison Fox",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Harrison Fox"
+  },
+  {
+   "n": "Shū Yamamoto",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shū Yamamoto"
+  },
+  {
+   "n": "Talau Samurai Fakatava",
+   "pos": "3L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Talau Fakatava"
+  },
+  {
+   "n": "Felix Kalapu",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Felix Kalapu"
+  },
+  {
+   "n": "Jeandre Labuschagne",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Jeandre Labuschagne"
+  },
+  {
+   "n": "Liam Gill",
+   "pos": "3L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Liam Gill (rugby union)"
+  },
+  {
+   "n": "Samuel Waqabaca",
+   "pos": "3L",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Samuel Waqabaca"
+  },
+  {
+   "n": "Amato Fakatava",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Amato Fakatava"
+  },
+  {
+   "n": "Shūhei Matsuhashi",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Shuhei Matsuhashi"
+  },
+  {
+   "n": "Brodi McCurran",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Brodi McCurran"
+  },
+  {
+   "n": "Otoya Kihara",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Otoya Kihara"
+  },
+  {
+   "n": "Shogo Yamamura",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shogo Yamamura"
+  },
+  {
+   "n": "Toshiya Takahashi",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Toshiya Takahashi"
+  },
+  {
+   "n": "Seima Inaba",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Seima Inaba"
+  },
+  {
+   "n": "TJ Perenara",
+   "pos": "DM",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": true,
+   "by": 1992,
+   "title": "TJ Perenara"
+  },
+  {
+   "n": "Takanobu Minami",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takanobu Minami"
+  },
+  {
+   "n": "Ichigo Nakakusu",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Ichigo Nakakusu"
+  },
+  {
+   "n": "Kohei Horigome",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kohei Horigome"
+  },
+  {
+   "n": "Kotaro Ito",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kotaro Ito"
+  },
+  {
+   "n": "Isaac Lucas",
+   "pos": "OUV",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Isaac Lucas (rugby union)"
+  },
+  {
+   "n": "Yūta Kurihara",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūta Kurihara"
+  },
+  {
+   "n": "Rameka Poihipi",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Rameka Poihipi"
+  },
+  {
+   "n": "Tamati Tua",
+   "pos": "CEN",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Tamati Tua"
+  },
+  {
+   "n": "Yūki Ikeda",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Yuki Ikeda (rugby union)"
+  },
+  {
+   "n": "Takumi Aoki",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takumi Aoki"
+  },
+  {
+   "n": "Penieli Jr Latu",
+   "pos": "CEN",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Penieli Jr Latu"
+  },
+  {
+   "n": "Larzlow Sword",
+   "pos": "CEN",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Larzlow Sword"
+  },
+  {
+   "n": "Taichi Kugino",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taichi Kugino"
+  },
+  {
+   "n": "Daisuke Nishikawa",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Daisuke Nishikawa (rugby union)"
+  },
+  {
+   "n": "Yūta Akihama",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūta Akihama"
+  },
+  {
+   "n": "Yoshiyuki Koga",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Yoshiyuki Koga"
+  },
+  {
+   "n": "Tomu Takamoto",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tomu Takamoto"
+  },
+  {
+   "n": "Tomoya Yamamura",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tomoya Yamamura"
+  },
+  {
+   "n": "Taira Main",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Taira Main"
+  },
+  {
+   "n": "Brendan Owen",
+   "pos": "ARR",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Brendan Owen"
+  }
+ ],
+ "j_brv": [
+  {
+   "n": "Kazuhiro Kawata",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuhiro Kawata (rugby union)"
+  },
+  {
+   "n": "Kenta Yamashita",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kenta Yamashita (rugby union)"
+  },
+  {
+   "n": "Gun Tajima",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Gun Tajima"
+  },
+  {
+   "n": "Ritsuki Nakayama",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ritsuki Nakayama"
+  },
+  {
+   "n": "Eiji Tsuchiya",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Eiji Tsuchiya"
+  },
+  {
+   "n": "Takayoshi Mohara",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Takayoshi Mohara"
+  },
+  {
+   "n": "Takumi Inaba",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Takumi Inaba"
+  },
+  {
+   "n": "Keitatsu Motoyama",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Keitatsu Motoyama"
+  },
+  {
+   "n": "Sean Vete",
+   "pos": "PIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Sean Vete"
+  },
+  {
+   "n": "Heiichiro Ito",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Heiichiro Ito"
+  },
+  {
+   "n": "Siale Mahina",
+   "pos": "TAL",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Siale Mahina"
+  },
+  {
+   "n": "Takeshi Hino",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Takeshi Hino"
+  },
+  {
+   "n": "Shunsuke Sakuta",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shunsuke Sakuta"
+  },
+  {
+   "n": "Ryūto Yagisawa",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryūto Yagisawa"
+  },
+  {
+   "n": "Eishin Kuwano",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Eishin Kuwano"
+  },
+  {
+   "n": "Antonio Shalfoon",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Antonio Shalfoon"
+  },
+  {
+   "n": "Ryotaro Nose",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryotaro Nose"
+  },
+  {
+   "n": "Murray Douglas",
+   "pos": "2L",
+   "cty": "Scotland",
+   "nat": "Écosse",
+   "intl": false,
+   "capt": false,
+   "by": 1989,
+   "title": "Murray Douglas"
+  },
+  {
+   "n": "Justin Sangster",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Justin Sangster"
+  },
+  {
+   "n": "Daniel Maiava",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Daniel Maiava"
+  },
+  {
+   "n": "Max Douglas",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Max Douglas (rugby union)"
+  },
+  {
+   "n": "Janco Aucamp",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Janco Aucamp"
+  },
+  {
+   "n": "Lamin Dieng Saito",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Lamin Dieng Saito"
+  },
+  {
+   "n": "Vueti Tupou",
+   "pos": "3L",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Vueti Tupou"
+  },
+  {
+   "n": "Takuma Shoji",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takuma Shoji"
+  },
+  {
+   "n": "Richard Goh Jones",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Richard Goh Jones"
+  },
+  {
+   "n": "Taisei Fukuda",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taisei Fukuda"
+  },
+  {
+   "n": "Riki Sugihara",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Riki Sugihara"
+  },
+  {
+   "n": "Richmond Tongatama",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Richmond Tongatama"
+  },
+  {
+   "n": "Kwagga Smith",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": true,
+   "by": 1993,
+   "title": "Kwagga Smith"
+  },
+  {
+   "n": "Stefarhn Vahafolau",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Stefarhn Vahafolau"
+  },
+  {
+   "n": "Shuntaro Kitamura",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Shuntaro Kitamura"
+  },
+  {
+   "n": "Taiga Kato",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taiga Kato"
+  },
+  {
+   "n": "Sena Hosoya",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Sena Hosoya"
+  },
+  {
+   "n": "Kodai Okazaki",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kodai Okazaki"
+  },
+  {
+   "n": "Makoto Tsutsuguchi",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Makoto Tsutsuguchi"
+  },
+  {
+   "n": "Kenta Iemura",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kenta Iemura"
+  },
+  {
+   "n": "Shunsuke Ito",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shunsuke Ito (rugby union)"
+  },
+  {
+   "n": "Takato Nasu",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takato Nasu"
+  },
+  {
+   "n": "Hunter Paisami",
+   "pos": "CEN",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Hunter Paisami"
+  },
+  {
+   "n": "Soma Okazaki",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Soma Okazaki"
+  },
+  {
+   "n": "Gen Goto",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Gen Goto"
+  },
+  {
+   "n": "Semi Radradra",
+   "pos": "CEN",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Semi Radradra"
+  },
+  {
+   "n": "Sylvian Mahuza",
+   "pos": "CEN",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Sylvian Mahuza"
+  },
+  {
+   "n": "Aki Tuivailala",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Aki Tuivailala"
+  },
+  {
+   "n": "Heinrich Flooks",
+   "pos": "AIL",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Heinrich Flooks"
+  },
+  {
+   "n": "Valynce Te Whare",
+   "pos": "AIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Valynce Te Whare"
+  },
+  {
+   "n": "Jack Timu",
+   "pos": "AIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jack Timu"
+  },
+  {
+   "n": "Hironori Yatomi",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hironori Yatomi"
+  },
+  {
+   "n": "Eito Maki",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Eito Maki"
+  },
+  {
+   "n": "Malo Tuitama",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Malo Tuitama"
+  },
+  {
+   "n": "Kaito Sugimoto",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kaito Sugimoto (rugby union)"
+  },
+  {
+   "n": "Renji Oike",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Renji Oike"
+  },
+  {
+   "n": "Kakeru Okumura",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Kakeru Okumura"
+  },
+  {
+   "n": "Fūto Yamaguchi",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Fūto Yamaguchi"
+  },
+  {
+   "n": "Kento Sato",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kento Sato"
+  }
+ ],
+ "j_dro": [
+  {
+   "n": "Gakuto Ishida",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Gakuto Ishida"
+  },
+  {
+   "n": "Hidetomo Nabeshima",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hidetomo Nabeshima"
+  },
+  {
+   "n": "Kaisei Umeda",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kaisei Umeda"
+  },
+  {
+   "n": "Taiga Yamaguchi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taiga Yamaguchi"
+  },
+  {
+   "n": "Genki Sudo",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Genki Sudo (rugby union)"
+  },
+  {
+   "n": "Jinichiro Tamanaga",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jinichiro Tamanaga"
+  },
+  {
+   "n": "Kim Ryo-m",
+   "pos": "PIL",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kim Ryo-m"
+  },
+  {
+   "n": "Yang Jung-soo",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Masahide Yanagawa"
+  },
+  {
+   "n": "Sekonaia Pole",
+   "pos": "PIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Sekonaia Pole"
+  },
+  {
+   "n": "Ryuji Fujimura",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": true,
+   "by": null,
+   "title": "Ryuji Fujimura"
+  },
+  {
+   "n": "Junichiro Matsushita",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Junichiro Matsushita"
+  },
+  {
+   "n": "Takashi Ōmoto",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takashi Ōmoto"
+  },
+  {
+   "n": "Soane Vikena",
+   "pos": "TAL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Soane Vikena"
+  },
+  {
+   "n": "Manaaki Selby-Rickit",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Manaaki Selby-Rickit"
+  },
+  {
+   "n": "Daiki Sato",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Daiki Sato (rugby union)"
+  },
+  {
+   "n": "Yūta Kojima",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūta Kojima"
+  },
+  {
+   "n": "Quinten Strange",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Quinten Strange"
+  },
+  {
+   "n": "Esei Ha'angana",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Esei Ha'angana"
+  },
+  {
+   "n": "Shin Takeuchi",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shin Takeuchi"
+  },
+  {
+   "n": "Yuzuki Sasaki",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yuzuki Sasaki"
+  },
+  {
+   "n": "Zephaniah Tuinona",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Zephaniah Tuinona"
+  },
+  {
+   "n": "Daishi Kojima",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Daishi Kojima"
+  },
+  {
+   "n": "Miu Austin Moriyama",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Miu Austin Moriyama"
+  },
+  {
+   "n": "Larry Tipoai-Luteru",
+   "pos": "3L",
+   "cty": "Samoa",
+   "nat": "Samoa",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Larry Tipoai-Luteru"
+  },
+  {
+   "n": "Devan Flanders",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Devan Flanders"
+  },
+  {
+   "n": "Yūsei Tanaka",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūsei Tanaka"
+  },
+  {
+   "n": "Rusiate Finau",
+   "pos": "3L",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Rusiate Finau"
+  },
+  {
+   "n": "Jasper Wiese",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Jasper Wiese"
+  },
+  {
+   "n": "Brody Macaskill",
+   "pos": "3L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Brody Macaskill"
+  },
+  {
+   "n": "Tamati Ioane",
+   "pos": "3L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Tamati Ioane"
+  },
+  {
+   "n": "Ren Iinuma",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ren Iinuma"
+  },
+  {
+   "n": "Taisei Konishi",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taisei Konishi"
+  },
+  {
+   "n": "Takuya Shirae",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takuya Shirae"
+  },
+  {
+   "n": "Hikaru Tamura",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Hikaru Tamura"
+  },
+  {
+   "n": "Shunta Mori",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shunta Mori"
+  },
+  {
+   "n": "Kim Yu-o",
+   "pos": "OUV",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kim Yu-o"
+  },
+  {
+   "n": "Finn Prass",
+   "pos": "OUV",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Finn Prass"
+  },
+  {
+   "n": "Otere Black",
+   "pos": "OUV",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Otere Black"
+  },
+  {
+   "n": "Shane Gates",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Shane Gates"
+  },
+  {
+   "n": "Samisoni Tua",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Samisoni Tua"
+  },
+  {
+   "n": "Samu Kerevi",
+   "pos": "CEN",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Samu Kerevi"
+  },
+  {
+   "n": "Marcus D'Acre",
+   "pos": "CEN",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Marcus D'Acre"
+  },
+  {
+   "n": "Vince Aso",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Vince Aso"
+  },
+  {
+   "n": "Kentaro Nanimatsu",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kentaro Nanimatsu"
+  },
+  {
+   "n": "Soma Matsumoto",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Soma Matsumoto"
+  },
+  {
+   "n": "Taiga Ishida",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Taiga Ishida"
+  },
+  {
+   "n": "Tana Tuhakaraina",
+   "pos": "AIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tana Tuhakaraina"
+  },
+  {
+   "n": "Kim Su-Ryung",
+   "pos": "AIL",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kim Su-Ryung"
+  },
+  {
+   "n": "Junya Matsumoto",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Junya Matsumoto"
+  },
+  {
+   "n": "Kai Ishii",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Kai Ishii"
+  },
+  {
+   "n": "Caleb Cavubati",
+   "pos": "AIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Caleb Cavubati"
+  },
+  {
+   "n": "Ryota Ōhata",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryota Ōhata"
+  },
+  {
+   "n": "Ryohei Yamanaka",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1988,
+   "title": "Ryohei Yamanaka"
+  },
+  {
+   "n": "Jordan Petaia",
+   "pos": "ARR",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Jordan Petaia"
+  },
+  {
+   "n": "Takuhei Yasuda",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Takuhei Yasuda"
+  },
+  {
+   "n": "Fumiya Dobashi",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Fumiya Dobashi"
+  },
+  {
+   "n": "Luteru Laulala",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Luteru Laulala"
+  }
+ ],
+ "j_dyn": [
+  {
+   "n": "Mototsugu Hachiya",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Mototsugu Hachiya"
+  },
+  {
+   "n": "Ahn Chang-ho",
+   "pos": "PIL",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Chang Ho Ahn"
+  },
+  {
+   "n": "Chae Yū-ji",
+   "pos": "PIL",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Chae Yū-ji"
+  },
+  {
+   "n": "Shunsuke Asaoka",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Shunsuke Asaoka"
+  },
+  {
+   "n": "Keita Ando",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Keita Ando"
+  },
+  {
+   "n": "Jun Morimoto",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jun Morimoto"
+  },
+  {
+   "n": "Tomoaki Ishii",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tomoaki Ishii"
+  },
+  {
+   "n": "Kanzo Schinckel",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Kanzo Schinckel"
+  },
+  {
+   "n": "Pieter Scholtz",
+   "pos": "PIL",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Pieter Scholtz"
+  },
+  {
+   "n": "Lee Seung-hyuk",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Lee Seung-hyuk"
+  },
+  {
+   "n": "Yūki Miyazato",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūki Miyazato"
+  },
+  {
+   "n": "Shoma Sagawa",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shoma Sagawa"
+  },
+  {
+   "n": "Naoki Kotera",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Naoki Kotera"
+  },
+  {
+   "n": "Naoto Yasutsune",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Naoto Yasutsune"
+  },
+  {
+   "n": "Daiki Yamagiwa",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Daiki Yamagiwa"
+  },
+  {
+   "n": "Luke Porter",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Luke Porter"
+  },
+  {
+   "n": "Walt Steenkamp",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Walt Steenkamp"
+  },
+  {
+   "n": "Tim Cardall",
+   "pos": "2L",
+   "cty": "England",
+   "nat": "Angleterre",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Tim Cardall"
+  },
+  {
+   "n": "Epineri Uluiviti",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Epineri Uluiviti"
+  },
+  {
+   "n": "Shoichi Takagi",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shoichi Takagi"
+  },
+  {
+   "n": "Koki Matsumoto",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Koki Matsumoto"
+  },
+  {
+   "n": "Kyo Yoshida",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": true,
+   "by": 1995,
+   "title": "Kyo Yoshida"
+  },
+  {
+   "n": "Friedle Olivier",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1992,
+   "title": "Friedle Olivier"
+  },
+  {
+   "n": "Bunsuke Kurita",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Bunsuke Kurita"
+  },
+  {
+   "n": "Masataka Tsuruya",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Masataka Tsuruya"
+  },
+  {
+   "n": "Cho Song-yu",
+   "pos": "3L",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Cho Song-yu"
+  },
+  {
+   "n": "Koki Sato",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Koki Sato (rugby union)"
+  },
+  {
+   "n": "Yusuke Sakamoto",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yusuke Sakamoto (rugby union)"
+  },
+  {
+   "n": "Koki Hattori",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Koki Hattori"
+  },
+  {
+   "n": "Jose Seru",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1991,
+   "title": "Jose Seru"
+  },
+  {
+   "n": "Marino Mikaele-Tu'u",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Marino Mikaele-Tu'u"
+  },
+  {
+   "n": "Brad Weber",
+   "pos": "DM",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Brad Weber"
+  },
+  {
+   "n": "Kota Iwamura",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kota Iwamura"
+  },
+  {
+   "n": "Yoshiki Yoshioka",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yoshiki Yoshioka"
+  },
+  {
+   "n": "Dai Kawahara",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Dai Kawahara"
+  },
+  {
+   "n": "Jack Stratton",
+   "pos": "DM",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Jack Stratton (rugby union)"
+  },
+  {
+   "n": "Jack Bowen",
+   "pos": "OUV",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Jack Bowen (rugby union)"
+  },
+  {
+   "n": "Shun Miyake",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Shun Miyake"
+  },
+  {
+   "n": "Shinnosuke Yamashita",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shinnosuke Yamashita"
+  },
+  {
+   "n": "Charlie Lawrence",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Charlie Lawrence (rugby union)"
+  },
+  {
+   "n": "Shota Taira",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shota Taira"
+  },
+  {
+   "n": "Lukhanyo Am",
+   "pos": "CEN",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Lukhanyo Am"
+  },
+  {
+   "n": "Riku Mishima",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Riku Mishima"
+  },
+  {
+   "n": "Joape Naco",
+   "pos": "CEN",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Joape Naco"
+  },
+  {
+   "n": "Haniteli Vailea",
+   "pos": "CEN",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Haniteli Vailea"
+  },
+  {
+   "n": "Matt Vaega",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Matt Vaega"
+  },
+  {
+   "n": "Junta Hamano",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Junta Hamano"
+  },
+  {
+   "n": "DJ Kashima",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "DJ Kashima"
+  },
+  {
+   "n": "Too Jr Vaega",
+   "pos": "AIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Too Jr Vaega"
+  },
+  {
+   "n": "Kurt-Lee Arendse",
+   "pos": "AIL",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Kurt-Lee Arendse"
+  },
+  {
+   "n": "Semisi Masirewa",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Semisi Masirewa"
+  },
+  {
+   "n": "Satoshi Koizumi",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Satoshi Koizumi (rugby union)"
+  },
+  {
+   "n": "Shoki Yoshimoto",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shoki Yoshimoto"
+  }
+ ],
+ "j_eag": [
+  {
+   "n": "Takato Okabe",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Takato Okabe"
+  },
+  {
+   "n": "Keito Tawara",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Keito Tawara"
+  },
+  {
+   "n": "Kazuki Kurizaki",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuki Kurizaki"
+  },
+  {
+   "n": "Kan Nakano",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kan Nakano"
+  },
+  {
+   "n": "Tatsuro Sugimoto",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tatsuro Sugimoto"
+  },
+  {
+   "n": "Shota Matsuoka",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shota Matsuoka (rugby union)"
+  },
+  {
+   "n": "Tomoki Minami",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tomoki Minami"
+  },
+  {
+   "n": "Yūsaku Miyoshi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūsaku Miyoshi"
+  },
+  {
+   "n": "Sione Lavemai",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Sione Lavemai"
+  },
+  {
+   "n": "Sioeli Vakalahi",
+   "pos": "PIL",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Sioeli Vakalahi"
+  },
+  {
+   "n": "Yūsuke Niwai",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Yusuke Niwai"
+  },
+  {
+   "n": "Shunta Nakamura",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Shunta Nakamura (rugby union)"
+  },
+  {
+   "n": "Kaito Doichi",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kaito Doichi"
+  },
+  {
+   "n": "Hayate Hiraishi",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hayate Hiraishi"
+  },
+  {
+   "n": "Pari Pari Parkinson",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Pari Pari Parkinson"
+  },
+  {
+   "n": "Laghlan McWhannell",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Laghlan McWhannell"
+  },
+  {
+   "n": "Katsuto Kubo",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Katsuto Kubo"
+  },
+  {
+   "n": "Liaki Moli",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1990,
+   "title": "Liaki Moli"
+  },
+  {
+   "n": "Daichi Akiyama",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Daichi Akiyama (rugby union)"
+  },
+  {
+   "n": "Gerrit Ockerse",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Gerrit Ockerse"
+  },
+  {
+   "n": "Amanaki Saumaki",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Amanaki Saumaki"
+  },
+  {
+   "n": "Samipeni Finau",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Samipeni Finau"
+  },
+  {
+   "n": "Shinichi Tanaka",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shinichi Tanaka (rugby union)"
+  },
+  {
+   "n": "Lekima Nasamila",
+   "pos": "3L",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Lekima Nasamila"
+  },
+  {
+   "n": "Randall Baker",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Randall Baker (rugby union)"
+  },
+  {
+   "n": "Gage Jackson",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Gage Jackson"
+  },
+  {
+   "n": "Masato Furukawa",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Masato Furukawa (rugby union)"
+  },
+  {
+   "n": "Billy Harmon",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Billy Harmon"
+  },
+  {
+   "n": "Sione Halasili",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Sione Halasili"
+  },
+  {
+   "n": "Toshiki Amano",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Toshiki Amano"
+  },
+  {
+   "n": "Koki Arai",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Kouki Arai"
+  },
+  {
+   "n": "Kazufumi Yamasuga",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazufumi Yamasuga"
+  },
+  {
+   "n": "Asahi Doei",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Asahi Doei"
+  },
+  {
+   "n": "Yū Tamura",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1989,
+   "title": "Yu Tamura"
+  },
+  {
+   "n": "Stephen Perofeta",
+   "pos": "OUV",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Stephen Perofeta"
+  },
+  {
+   "n": "Yuragi Muto",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yuragi Muto"
+  },
+  {
+   "n": "Yusuke Kajimura",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Yusuke Kajimura"
+  },
+  {
+   "n": "Ryo Tabata",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryo Tabata"
+  },
+  {
+   "n": "Ryo Eto",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryo Eto"
+  },
+  {
+   "n": "Viliame Takayawa",
+   "pos": "CEN",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Viliame Takayawa (rugby union)"
+  },
+  {
+   "n": "Levi Aumua",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Levi Aumua"
+  },
+  {
+   "n": "Jesse Kriel",
+   "pos": "CEN",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": true,
+   "by": 1994,
+   "title": "Jesse Kriel"
+  },
+  {
+   "n": "Kippei Ishida",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Kippei Ishida"
+  },
+  {
+   "n": "Genki Ikuta",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Genki Ikuta"
+  },
+  {
+   "n": "Chihito Matsui",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Chihito Matsui"
+  },
+  {
+   "n": "Yū Saruta",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yū Saruta"
+  },
+  {
+   "n": "Ryū Fukuhara",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryū Fukuhara"
+  },
+  {
+   "n": "Kosho Muto",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kosho Muto"
+  },
+  {
+   "n": "Yūto Mori",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yuto Mori (rugby union)"
+  },
+  {
+   "n": "Tiaan Falcon",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Tiaan Falcon"
+  }
+ ],
+ "j_hon": [
+  {
+   "n": "Takumi Fujī",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takumi Fujī"
+  },
+  {
+   "n": "Tatsuhiko Tsurukawa",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tatsuhiko Tsurukawa"
+  },
+  {
+   "n": "Ryosuke Iwaihara",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Ryosuke Iwaihara"
+  },
+  {
+   "n": "Matthys Basson",
+   "pos": "PIL",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Matthys Basson"
+  },
+  {
+   "n": "Katsuyuki Hoshino",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Katsuyuki Hoshino"
+  },
+  {
+   "n": "Taiki Yoshioka",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taiki Yoshioka"
+  },
+  {
+   "n": "Kanato Hirano",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Kanato Hirano"
+  },
+  {
+   "n": "Kazuki Ban",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuki Ban"
+  },
+  {
+   "n": "Feinga Fakai",
+   "pos": "PIL",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Feinga Fakai"
+  },
+  {
+   "n": "Tevita Ikanivere",
+   "pos": "TAL",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Tevita Ikanivere"
+  },
+  {
+   "n": "Hiroaki Shirahama",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hiroaki Shirahama"
+  },
+  {
+   "n": "Koki Hida",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Koki Hida"
+  },
+  {
+   "n": "Ren Toma",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ren Toma"
+  },
+  {
+   "n": "Ikuma Yamada",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ikuma Yamada"
+  },
+  {
+   "n": "Naohiro Kotaki",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Naohiro Kotaki"
+  },
+  {
+   "n": "Ryoma Nishimura",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryoma Nishimura (rugby union)"
+  },
+  {
+   "n": "Franco Mostert",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Franco Mostert"
+  },
+  {
+   "n": "Mark Abbott",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1991,
+   "title": "Mark Abbott (rugby union)"
+  },
+  {
+   "n": "Janko Swanepoel",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Janko Swanepoel"
+  },
+  {
+   "n": "Waisake Raratubua",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Waisake Raratubua"
+  },
+  {
+   "n": "Ryūtaro Nakayama",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryūtaro Nakayama"
+  },
+  {
+   "n": "Waimana Kapa",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": true,
+   "by": 1998,
+   "title": "Waimana Riedlinger-Kapa"
+  },
+  {
+   "n": "Ryoi Kamei",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryoi Kamei"
+  },
+  {
+   "n": "Aseri Masivou",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Aseri Masivou"
+  },
+  {
+   "n": "Ryo Furuta",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryo Furuta"
+  },
+  {
+   "n": "Yūta Shirasaka",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūta Shirasaka"
+  },
+  {
+   "n": "Tomoki Kusuda",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tomoki Kusuda"
+  },
+  {
+   "n": "Koki Miyashita",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Koki Miyashita"
+  },
+  {
+   "n": "Kei Toma",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kei Toma"
+  },
+  {
+   "n": "Pablo Matera",
+   "pos": "3L",
+   "cty": "Argentina",
+   "nat": "Argentine",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Pablo Matera"
+  },
+  {
+   "n": "Kenta Fukuda",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Kenta Fukuda"
+  },
+  {
+   "n": "Shogo Nezuka",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shogo Nezuka"
+  },
+  {
+   "n": "Takuro Hojo",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takuro Hojo"
+  },
+  {
+   "n": "Koki Miyasaka",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Koki Miyasaka"
+  },
+  {
+   "n": "Taichi Takenaka",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taichi Takenaka"
+  },
+  {
+   "n": "Riku Kitahara",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Riku Kitahara"
+  },
+  {
+   "n": "Jumpei Ogura",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Jumpei Ogura"
+  },
+  {
+   "n": "Rintaro Maruyama",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Rintaro Maruyama"
+  },
+  {
+   "n": "Oh Gwang-tee",
+   "pos": "OUV",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Oh Gwang-tee"
+  },
+  {
+   "n": "Dawid Kellerman",
+   "pos": "CEN",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Dawid Kellerman"
+  },
+  {
+   "n": "Kyogo Okano",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kyogo Okano"
+  },
+  {
+   "n": "Fraser Quirk",
+   "pos": "CEN",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Fraser Quirk"
+  },
+  {
+   "n": "Soki Watanabe",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Soki Watanabe"
+  },
+  {
+   "n": "Tevita Li",
+   "pos": "AIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Tevita Li"
+  },
+  {
+   "n": "Tanielu Tele'a",
+   "pos": "AIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Tanielu Tele'a"
+  },
+  {
+   "n": "Rakuhei Yamashita",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Rakuhei Yamashita"
+  },
+  {
+   "n": "Kazuya Yamamura",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuya Yamamura (rugby union)"
+  },
+  {
+   "n": "Shunichiro Naka",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shunichiro Naka"
+  },
+  {
+   "n": "Kengo Gunji",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kengo Gunji"
+  },
+  {
+   "n": "FC Du plessis",
+   "pos": "ARR",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "FC Du plessis"
+  },
+  {
+   "n": "Tavake Oto",
+   "pos": "ARR",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tavake Oto"
+  },
+  {
+   "n": "Haruhiko Uemura",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Haruhiko Uemura"
+  },
+  {
+   "n": "Lomano Lava Lemeki",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1989,
+   "title": "Lomano Lemeki"
+  },
+  {
+   "n": "Yū Kawai",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yū Kawai"
+  }
+ ],
+ "j_kob": [
+  {
+   "n": "Shigure Takao",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shigure Takao"
+  },
+  {
+   "n": "Hikaru Moriwaki",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hikaru Moriwaki"
+  },
+  {
+   "n": "Koo Ji-won",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Koo Ji-won"
+  },
+  {
+   "n": "Sho Maeda",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Sho Maeda"
+  },
+  {
+   "n": "Kauvaka Kaivelata",
+   "pos": "PIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Kauvaka Kaivelata"
+  },
+  {
+   "n": "Hiroshi Yamashita",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1986,
+   "title": "Hiroshi Yamashita"
+  },
+  {
+   "n": "Takayuki Watanabe",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Takayuki Watanabe"
+  },
+  {
+   "n": "Takashi Ōshita",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takashi Ōshita"
+  },
+  {
+   "n": "Riku Tomita",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Riku Tomita"
+  },
+  {
+   "n": "Keita Miyauchi",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Keita Miyauchi"
+  },
+  {
+   "n": "Takuya Kitade",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Takuya Kitade"
+  },
+  {
+   "n": "Kenta Matsuoka",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Kenta Matsuoka"
+  },
+  {
+   "n": "Sione Sime Mau",
+   "pos": "TAL",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Sione Sime Mau"
+  },
+  {
+   "n": "Brodie Retallick",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": true,
+   "by": 1991,
+   "title": "Brodie Retallick"
+  },
+  {
+   "n": "Gerard Cowley-Tuioti",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1992,
+   "title": "Gerard Cowley-Tuioti"
+  },
+  {
+   "n": "Neil Hansen",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Neil Hansen (rugby union)"
+  },
+  {
+   "n": "Takuma Motohashi",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takuma Motohashi"
+  },
+  {
+   "n": "Matthew Dalton",
+   "pos": "2L",
+   "cty": "Ireland",
+   "nat": "Irlande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Matthew Dalton"
+  },
+  {
+   "n": "Hayato Fukunishi",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hayato Fukunishi"
+  },
+  {
+   "n": "Takara Imamura",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takara Imamura"
+  },
+  {
+   "n": "Solomone Funaki",
+   "pos": "3L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Solomone Funaki (rugby union born 2002)"
+  },
+  {
+   "n": "Hikaru Hashimoto",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hikaru Hashimoto"
+  },
+  {
+   "n": "Nico Henrico",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Nico Henrico"
+  },
+  {
+   "n": "Sione Polutele",
+   "pos": "3L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Sione Polutele"
+  },
+  {
+   "n": "Willie Potgieter",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Willie Potgieter"
+  },
+  {
+   "n": "Tiennan Costley",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Tiennan Costley"
+  },
+  {
+   "n": "Atsushi Hiwasa",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1987,
+   "title": "Atsushi Hiwasa"
+  },
+  {
+   "n": "Daiki Nakajima",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Daiki Nakajima"
+  },
+  {
+   "n": "Itsuki Kamimura",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Itsuki Kamimura"
+  },
+  {
+   "n": "Grant Williams",
+   "pos": "DM",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Grant Williams (rugby union)"
+  },
+  {
+   "n": "Kenta Tokuda",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kenta Tokuda"
+  },
+  {
+   "n": "Bryn Gatland",
+   "pos": "OUV",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Bryn Gatland"
+  },
+  {
+   "n": "Timothy Lafaele",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Timothy Lafaele"
+  },
+  {
+   "n": "Yoshiki Ōmachi",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yoshiki Ōmachi"
+  },
+  {
+   "n": "Michael Little",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Michael Little"
+  },
+  {
+   "n": "Mac Harris",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Mac Harris"
+  },
+  {
+   "n": "Tali Ioasa",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tali Ioasa"
+  },
+  {
+   "n": "Talilotu Fakatulolo",
+   "pos": "CEN",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Talilotu Fakatulolo"
+  },
+  {
+   "n": "George Bridge",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "George Bridge"
+  },
+  {
+   "n": "Ataata Moeakiola",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Ataata Moeakiola"
+  },
+  {
+   "n": "Kazuma Ueda",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Kazuma Ueda"
+  },
+  {
+   "n": "Inoke Burua",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Inoke Burua"
+  },
+  {
+   "n": "Ryota Funabiki",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryota Funabiki"
+  },
+  {
+   "n": "Shinsuke Iseki",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shinsuke Iseki"
+  },
+  {
+   "n": "Kanta Matsunaga",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kanta Matsunaga"
+  },
+  {
+   "n": "Lee Seung-sin",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": true,
+   "by": 2001,
+   "title": "Lee Seung-sin"
+  },
+  {
+   "n": "Shunsuke Uenobo",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Shunsuke Uenobo"
+  },
+  {
+   "n": "Daisuke Ito",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Daisuke Ito (rugby union)"
+  },
+  {
+   "n": "Hayata Tsujino",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hayata Tsujino"
+  }
+ ],
+ "j_kub": [
+  {
+   "n": "Yota Kamimori",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Yota Kamimori"
+  },
+  {
+   "n": "Kota Kaishi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Kota Kaishi"
+  },
+  {
+   "n": "Kengo Kitagawa",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Kengo Kitagawa"
+  },
+  {
+   "n": "Kenshi Yamamoto",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kenshi Yamamoto"
+  },
+  {
+   "n": "Toi Kai",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Toi Kai"
+  },
+  {
+   "n": "Keijiro Tamefusa",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Keijiro Tamefusa"
+  },
+  {
+   "n": "Izi Sword",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Izi Sword"
+  },
+  {
+   "n": "Satoshi Saita",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Satoshi Saita"
+  },
+  {
+   "n": "Keran van Staden",
+   "pos": "PIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Keran van Staden"
+  },
+  {
+   "n": "Kazuki Kato",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuki Kato (rugby union)"
+  },
+  {
+   "n": "Hayate Era",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Hayate Era"
+  },
+  {
+   "n": "Yoshimitsu Yasue",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Yoshimitsu Yasue"
+  },
+  {
+   "n": "Malcolm Marx",
+   "pos": "TAL",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Malcolm Marx"
+  },
+  {
+   "n": "Katsuya Ōkuma",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Katsuya Ōkuma"
+  },
+  {
+   "n": "Masaki Shima",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Masaki Shima"
+  },
+  {
+   "n": "Rikuto Fukuda",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Rikuto Fukuda"
+  },
+  {
+   "n": "Naoaki Horibe",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Naoaki Horibe"
+  },
+  {
+   "n": "Yūki Asai",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūki Asai"
+  },
+  {
+   "n": "Ruan Botha",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1992,
+   "title": "Ruan Botha"
+  },
+  {
+   "n": "David Van Zeeland",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "David Van Zeeland"
+  },
+  {
+   "n": "Bailey Trew",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Bailey Trew"
+  },
+  {
+   "n": "Ruan Nortjé",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Ruan Nortjé"
+  },
+  {
+   "n": "Yūki Aoki",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūki Aoki"
+  },
+  {
+   "n": "Daichi Kurihara",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Daichi Kurihara"
+  },
+  {
+   "n": "Akira Ieremia",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Akira Ieremia"
+  },
+  {
+   "n": "Masaya Tamaki",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Masaya Tamaki"
+  },
+  {
+   "n": "Kenkichi Yanagawa",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kenkichi Yanagawa"
+  },
+  {
+   "n": "Harry Willard",
+   "pos": "3L",
+   "cty": "England",
+   "nat": "Angleterre",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Harry Willard"
+  },
+  {
+   "n": "Merwe Olivier",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Merwe Olivier"
+  },
+  {
+   "n": "Ollie Stonham",
+   "pos": "3L",
+   "cty": "England",
+   "nat": "Angleterre",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Ollie Stonham"
+  },
+  {
+   "n": "Toki Toshikawa",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Toki Toshikawa"
+  },
+  {
+   "n": "Takeo Suenaga",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takeo Suenaga"
+  },
+  {
+   "n": "Ogi Yanamoto",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ogi Yanamoto"
+  },
+  {
+   "n": "Yuma Uenobo",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yuma Uenobo"
+  },
+  {
+   "n": "Finau Tupa",
+   "pos": "3L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Finau Tupa"
+  },
+  {
+   "n": "Tyler Paul",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Tyler Paul"
+  },
+  {
+   "n": "Asipeli Moala",
+   "pos": "3L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Asipeli Moala"
+  },
+  {
+   "n": "Faulua Makisi",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": true,
+   "by": 1997,
+   "title": "Faulua Makisi"
+  },
+  {
+   "n": "Tisileli Loketi",
+   "pos": "3L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tisileli Loketi"
+  },
+  {
+   "n": "Shinobu Fujiwara",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Shinobu Fujiwara"
+  },
+  {
+   "n": "Kazuhiro Taniguchi",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuhiro Taniguchi"
+  },
+  {
+   "n": "Shunta Koga",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shunta Koga"
+  },
+  {
+   "n": "Genki Mizobuchi",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Genki Mizobuchi"
+  },
+  {
+   "n": "Ippei Okada",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ippei Okada"
+  },
+  {
+   "n": "Ryūsei Shibata",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryūsei Shibata"
+  },
+  {
+   "n": "Tomoki Kishioka",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tomoki Kishioka"
+  },
+  {
+   "n": "Atsushi Oshikawa",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Atsushi Oshikawa"
+  },
+  {
+   "n": "Harumichi Tatekawa",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1989,
+   "title": "Harumichi Tatekawa"
+  },
+  {
+   "n": "Yūya Hirose",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Yuya Hirose (rugby union)"
+  },
+  {
+   "n": "Sione Teaupa",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Sione Teaupa"
+  },
+  {
+   "n": "Towa Kondo",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Towa Kondo"
+  },
+  {
+   "n": "Rikus Pretorius",
+   "pos": "CEN",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Rikus Pretorius"
+  },
+  {
+   "n": "Bailyn Sullivan",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Bailyn Sullivan"
+  },
+  {
+   "n": "Halatoa Vailea",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Halatoa Vailea"
+  },
+  {
+   "n": "Kanji Futamura",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kanji Futamura"
+  },
+  {
+   "n": "Koga Nezuka",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Koga Nezuka"
+  },
+  {
+   "n": "Haruto Kida",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Haruto Kida"
+  },
+  {
+   "n": "Hiroyuki Yamasaki",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hiroyuki Yamasaki"
+  },
+  {
+   "n": "Tsuyoshi Jennings",
+   "pos": "AIL",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tsuyoshi Jennings"
+  },
+  {
+   "n": "Reo Matsushita",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Reo Matsushita"
+  },
+  {
+   "n": "Shaun Stevenson",
+   "pos": "ARR",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Shaun Stevenson"
+  },
+  {
+   "n": "Yūhei Shimada",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūhei Shimada"
+  },
+  {
+   "n": "Hibiki Yamada",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hibiki Yamada"
+  }
+ ],
+ "j_sun": [
+  {
+   "n": "Kenta Kobayashi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Kenta Kobayashi (rugby union)"
+  },
+  {
+   "n": "Kanta Ogawa",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kanta Ogawa"
+  },
+  {
+   "n": "Atsuki Yamamoto",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Atsuki Yamamoto"
+  },
+  {
+   "n": "Sanshiro Kihara",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Sanshiro Kihara"
+  },
+  {
+   "n": "Shohei Oyama",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Shohei Oyama"
+  },
+  {
+   "n": "Kosuke Sugiura",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kosuke Sugiura"
+  },
+  {
+   "n": "Yukio Morikawa",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Yukio Morikawa"
+  },
+  {
+   "n": "Shuhei Takeuchi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Shuhei Takeuchi"
+  },
+  {
+   "n": "Kosuke Horikoshi",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Kosuke Horikoshi"
+  },
+  {
+   "n": "Shodai Hirao",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Shodai Hirao"
+  },
+  {
+   "n": "Kienori Go",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kienori Go"
+  },
+  {
+   "n": "Tatsuya Miyazaki",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tatsuya Miyazaki"
+  },
+  {
+   "n": "Harry Hockings",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Harry Hockings"
+  },
+  {
+   "n": "Yasuaki Katakura",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yasuaki Katakura"
+  },
+  {
+   "n": "Sam Jeffries",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1992,
+   "title": "Sam Jeffries (rugby union, born 1992)"
+  },
+  {
+   "n": "George Hammond",
+   "pos": "2L",
+   "cty": "England",
+   "nat": "Angleterre",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "George Hammond (rugby union)"
+  },
+  {
+   "n": "Ed Kasprowicz",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ed Kasprowicz"
+  },
+  {
+   "n": "Sam Jeffries",
+   "pos": "2L",
+   "cty": "England",
+   "nat": "Angleterre",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Sam Jeffries (rugby union, born 1993)"
+  },
+  {
+   "n": "Kanji Shimokawa",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Kanji Shimokawa"
+  },
+  {
+   "n": "Koji Īno",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Koji Īno"
+  },
+  {
+   "n": "Ryūga Hashimoto",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Ryuga Hashimoto"
+  },
+  {
+   "n": "Kai Yamamoto",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Kai Yamamoto"
+  },
+  {
+   "n": "Sam Cane",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Sam Cane"
+  },
+  {
+   "n": "Masahiko Sagara",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Masahiko Sagara"
+  },
+  {
+   "n": "Pierich Siebert",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Pierich Siebert"
+  },
+  {
+   "n": "Tevita Tatafu",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Tevita Tatafu (rugby union, born 1996)"
+  },
+  {
+   "n": "Sean McMahon",
+   "pos": "3L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Sean McMahon"
+  },
+  {
+   "n": "Patrick Vakata",
+   "pos": "3L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Patrick Vakata"
+  },
+  {
+   "n": "Tenta Kobayashi",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tenta Kobayashi"
+  },
+  {
+   "n": "Naoto Saito",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": true,
+   "by": 1997,
+   "title": "Naoto Saito"
+  },
+  {
+   "n": "Genki Ōkoshi",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Genki Ōkoshi"
+  },
+  {
+   "n": "Masanori Miyao",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Masanori Miyao"
+  },
+  {
+   "n": "Max Hughes",
+   "pos": "DM",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Max Hughes"
+  },
+  {
+   "n": "Mikiya Takamoto",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Mikiya Takamoto"
+  },
+  {
+   "n": "Kaleb Trask",
+   "pos": "OUV",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Kaleb Trask"
+  },
+  {
+   "n": "Kazuki Ishida",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuki Ishida"
+  },
+  {
+   "n": "Kengo Nonaka",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kengo Nonaka"
+  },
+  {
+   "n": "Quinton Mahina",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Quinton Mahina"
+  },
+  {
+   "n": "Shūho Fukushima",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shūho Fukushima"
+  },
+  {
+   "n": "Gideon Wrampling",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Gideon Wrampling"
+  },
+  {
+   "n": "Shogo Nakano",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Shōgo Nakano"
+  },
+  {
+   "n": "Isaiah Punivai",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Isaiah Punivai"
+  },
+  {
+   "n": "Taiga Ozaki",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taiga Ozaki"
+  },
+  {
+   "n": "Shota Emi",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1991,
+   "title": "Shota Emi"
+  },
+  {
+   "n": "Kohei Yasuda",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kohei Yasuda"
+  },
+  {
+   "n": "Seiya Ozaki",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Seiya Ozaki"
+  },
+  {
+   "n": "James Lowe",
+   "pos": "AIL",
+   "cty": "Ireland",
+   "nat": "Irlande",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "James Lowe (rugby union)"
+  },
+  {
+   "n": "Hideto Niguma",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hideto Niguma"
+  },
+  {
+   "n": "Ryosuke Kawase",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryosuke Kawase"
+  },
+  {
+   "n": "Kotaro Matsushima",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Kotaro Matsushima"
+  }
+ ],
+ "j_tos": [
+  {
+   "n": "Masataka Mikami",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1988,
+   "title": "Masataka Mikami"
+  },
+  {
+   "n": "Sena Kimura",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Sena Kimura"
+  },
+  {
+   "n": "Shūto Harabuchi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shūto Harabuchi"
+  },
+  {
+   "n": "Joseph Gavigan",
+   "pos": "PIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Joseph Gavigan"
+  },
+  {
+   "n": "Atu Moli",
+   "pos": "PIL",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Atu Moli"
+  },
+  {
+   "n": "Teruo Makabe",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Teruo Makabe"
+  },
+  {
+   "n": "Yūta Kokaji",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūta Kokaji"
+  },
+  {
+   "n": "Yohei Kobayashi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yohei Kobayashi"
+  },
+  {
+   "n": "Ryūsei Koyanagi",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryūsei Koyanagi"
+  },
+  {
+   "n": "Daigo Hashimoto",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Daigo Hashimoto"
+  },
+  {
+   "n": "Mamoru Harada",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Mamoru Harada"
+  },
+  {
+   "n": "Rinpei Sakaki",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Rinpei Sakaki"
+  },
+  {
+   "n": "Andrew Makalio",
+   "pos": "TAL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1992,
+   "title": "Andrew Makalio"
+  },
+  {
+   "n": "Ken Hiyoshi",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ken Hiyoshi"
+  },
+  {
+   "n": "Asaeli Lausii",
+   "pos": "2L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Asaeli Lausii"
+  },
+  {
+   "n": "Senfu Kamei",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Senfu Kamei"
+  },
+  {
+   "n": "Michael Stolberg",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Michael Stolberg"
+  },
+  {
+   "n": "Callum Macdonald",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Callum Macdonald (rugby union)"
+  },
+  {
+   "n": "Jacob Pierce",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Jacob Pierce"
+  },
+  {
+   "n": "Shohei Ito",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shohei Ito"
+  },
+  {
+   "n": "Warner Dearns",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Warner Dearns"
+  },
+  {
+   "n": "Yoon Rye-on",
+   "pos": "3L",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yoon Rye-on"
+  },
+  {
+   "n": "Takeshi Sasaki",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takeshi Sasaki (rugby union)"
+  },
+  {
+   "n": "Hiroki Yamamoto",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Hiroki Yamamoto (rugby union)"
+  },
+  {
+   "n": "Jack Dempsey",
+   "pos": "3L",
+   "cty": "Scotland",
+   "nat": "Écosse",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Jack Dempsey　(rugby union)"
+  },
+  {
+   "n": "Taishiro Kido",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taishiro Kido"
+  },
+  {
+   "n": "Afu Ofeina",
+   "pos": "3L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Afu Ofeina"
+  },
+  {
+   "n": "Michael Leitch",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": true,
+   "by": 1988,
+   "title": "Michael Leitch"
+  },
+  {
+   "n": "Yoshitaka Tokunaga",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Yoshitaka Tokunaga"
+  },
+  {
+   "n": "Takahiro Ogawa",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Takahiro Ogawa"
+  },
+  {
+   "n": "Yūhei Sugiyama",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūhei Sugiyama"
+  },
+  {
+   "n": "Kohei Takahashi",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kohei Takahashi (rugby union)"
+  },
+  {
+   "n": "Yūtaro Takahashi",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yutaro Takahashi (rugby union)"
+  },
+  {
+   "n": "Shotaro Ikedo",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shotaro Ikedo"
+  },
+  {
+   "n": "Hayata Nakao",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Hayata Nakao"
+  },
+  {
+   "n": "Riley Hohepa",
+   "pos": "OUV",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Riley Hohepa"
+  },
+  {
+   "n": "Takuro Matsunaga",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Takuro Matsunaga"
+  },
+  {
+   "n": "Gentaro Ikenaga",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Gentaro Ikenaga"
+  },
+  {
+   "n": "Taichi Mano",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taichi Mano"
+  },
+  {
+   "n": "Riku Tokito",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Riku Tokito"
+  },
+  {
+   "n": "Adam Tamati",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Adam Tamati"
+  },
+  {
+   "n": "Rob Thompson",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1991,
+   "title": "Rob Thompson (rugby union)"
+  },
+  {
+   "n": "Jonah Lowe",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Jonah Lowe"
+  },
+  {
+   "n": "David Havili",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "David Havili"
+  },
+  {
+   "n": "Jone Naikabula",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Jone Naikabula"
+  },
+  {
+   "n": "Masaki Hamada",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Masaki Hamada"
+  },
+  {
+   "n": "Atsuki Kuwayama",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Atsuki Kuwayama"
+  },
+  {
+   "n": "Rei Ishioka",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Rei Ishioka"
+  },
+  {
+   "n": "Yūta Okamura",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yūta Okamura"
+  },
+  {
+   "n": "Tjay Clarke",
+   "pos": "AIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Tjay Clarke"
+  },
+  {
+   "n": "Kazuki Ito",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuki Ito"
+  },
+  {
+   "n": "Toshiki Kuwayama",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Toshiki Kuwayama"
+  },
+  {
+   "n": "Aphelele Fassi",
+   "pos": "ARR",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Aphelele Fassi"
+  },
+  {
+   "n": "Michael Collins",
+   "pos": "ARR",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Michael Collins (rugby union, born 1993)"
+  }
+ ],
+ "j_ver": [
+  {
+   "n": "Shogo Miura",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Shogo Miura"
+  },
+  {
+   "n": "Gaku Shimizu",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Gaku Shimizu"
+  },
+  {
+   "n": "Ryūnosuke Momoji",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryūnosuke Momoji"
+  },
+  {
+   "n": "Samuelu Mataafa",
+   "pos": "PIL",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Samuelu Mataafa"
+  },
+  {
+   "n": "Yūsuke Kizu",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Yusuke Kizu"
+  },
+  {
+   "n": "Kotaro Hosoki",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kotaro Hosoki"
+  },
+  {
+   "n": "Taufa Latu",
+   "pos": "PIL",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taufa Latu"
+  },
+  {
+   "n": "Hamdahn Tuipulotu",
+   "pos": "PIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Hamdahn Tuipulotu"
+  },
+  {
+   "n": "Taiga Kawasaki",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taiga Kawasaki"
+  },
+  {
+   "n": "Hanjiro Hirai",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hanjiro Hirai"
+  },
+  {
+   "n": "Yoshikatsu Hikosaka",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": true,
+   "by": 1991,
+   "title": "Yoshikatsu Hikosaka"
+  },
+  {
+   "n": "Shintaro Fukuzawa",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shintaro Fukuzawa"
+  },
+  {
+   "n": "Hanpei Nishino",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hanpei Nishino"
+  },
+  {
+   "n": "Dowling Jonas Tanaka",
+   "pos": "TAL",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Dowling Jonas Tanaka"
+  },
+  {
+   "n": "Schalk Erasmus",
+   "pos": "TAL",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Schalk Erasmus"
+  },
+  {
+   "n": "Ryūsei Kato",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryūsei Kato"
+  },
+  {
+   "n": "Jone Kerevi",
+   "pos": "TAL",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jone Kerevi"
+  },
+  {
+   "n": "Lourens Erasmus",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Lourens Erasmus"
+  },
+  {
+   "n": "Harrison Goggin",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Harrison Goggin"
+  },
+  {
+   "n": "Harry Bortolussi",
+   "pos": "2L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Harry Bortolussi"
+  },
+  {
+   "n": "Zach Gallagher",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Zach Gallagher"
+  },
+  {
+   "n": "Hingano Lolohea",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hingano Lolohea"
+  },
+  {
+   "n": "Kazuki Himeno",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Kazuki Himeno"
+  },
+  {
+   "n": "Pieter-Steph du Toit",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Pieter-Steph du Toit"
+  },
+  {
+   "n": "Ryūsei Koike",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryūsei Koike"
+  },
+  {
+   "n": "Issa Yamakawa",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Issa Yamakawa"
+  },
+  {
+   "n": "Jingo Murata",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jingo Murata"
+  },
+  {
+   "n": "Keito Aoki",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Keito Aoki"
+  },
+  {
+   "n": "Isaiah Mapusua",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Isaiah Mapusua"
+  },
+  {
+   "n": "Kosei Miki",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kosei Miki"
+  },
+  {
+   "n": "Akito Okui",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Akito Okui"
+  },
+  {
+   "n": "Blair Ryall",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Blair Ryall"
+  },
+  {
+   "n": "Will Tupou",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Will Tupou"
+  },
+  {
+   "n": "Kaito Shigeno",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Kaito Shigeno"
+  },
+  {
+   "n": "Aaron Smith",
+   "pos": "DM",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1988,
+   "title": "Aaron Smith (rugby union)"
+  },
+  {
+   "n": "Azuma Doei",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Azuma Doei"
+  },
+  {
+   "n": "Kaisei Tamura",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kaisei Tamura"
+  },
+  {
+   "n": "Ryang Jong-chu",
+   "pos": "DM",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryang Jong-chu"
+  },
+  {
+   "n": "Kippei Taninaka",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kippei Taninaka"
+  },
+  {
+   "n": "Masahiro Kitamura",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Masahiro Kitamura"
+  },
+  {
+   "n": "Rikiya Matsuda",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Rikiya Matsuda"
+  },
+  {
+   "n": "Aidan Morgan",
+   "pos": "OUV",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Aidan Morgan"
+  },
+  {
+   "n": "Shinya Komura",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Shinya Komura"
+  },
+  {
+   "n": "Nicholas McCurran",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Nicholas McCurran"
+  },
+  {
+   "n": "Tui Palesoo",
+   "pos": "CEN",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tui Palesoo"
+  },
+  {
+   "n": "Siosaia Fifita",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Siosaia Fifita"
+  },
+  {
+   "n": "Yūki Okada",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yuki Okada (rugby union)"
+  },
+  {
+   "n": "Shūhei Yamaguchi",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shūhei Yamaguchi"
+  },
+  {
+   "n": "Semisi Tupou",
+   "pos": "CEN",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Semisi Tupou"
+  },
+  {
+   "n": "Keisuke Moriya",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Keisuke Moriya"
+  },
+  {
+   "n": "Mark Tele'a",
+   "pos": "AIL",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": true,
+   "by": 1996,
+   "title": "Mark Tele'a"
+  },
+  {
+   "n": "Taiyo Higuma",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taiyo Higuma"
+  },
+  {
+   "n": "Viliame Tuidraki",
+   "pos": "AIL",
+   "cty": "Fiji",
+   "nat": "Fidji",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Viliame Tuidraki"
+  },
+  {
+   "n": "Caston Michaels",
+   "pos": "AIL",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Caston Michaels"
+  },
+  {
+   "n": "Yuichiro Wada",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yuichiro Wada"
+  },
+  {
+   "n": "Taichi Takahashi",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Taichi Takahashi"
+  },
+  {
+   "n": "Matt McGahan",
+   "pos": "ARR",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Matt McGahan"
+  },
+  {
+   "n": "Ryuji Noguchi",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Ryuji Noguchi"
+  },
+  {
+   "n": "Takemichi Nakano",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takemichi Nakano"
+  },
+  {
+   "n": "Kota Ōyabu",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kota Ōyabu"
+  }
+ ],
+ "j_wkn": [
+  {
+   "n": "Keita Inagaki",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Keita Inagaki"
+  },
+  {
+   "n": "Craig Millar",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Craig Millar (rugby union)"
+  },
+  {
+   "n": "Yusaku Kihara",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yusaku Kihara"
+  },
+  {
+   "n": "Daniel Perez",
+   "pos": "PIL",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Daniel Perez (rugby union)"
+  },
+  {
+   "n": "Sho Furuhata",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Sho Furuhata"
+  },
+  {
+   "n": "Taiki Fujii",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taiki Fujii"
+  },
+  {
+   "n": "Makito Ishikawa",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Makito Ishikawa"
+  },
+  {
+   "n": "Kaito Takata",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kaito Takata"
+  },
+  {
+   "n": "Asaeli Ai Valu",
+   "pos": "PIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1989,
+   "title": "Asaeli Ai Valu"
+  },
+  {
+   "n": "Taniela Vea",
+   "pos": "PIL",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Taniela Vea"
+  },
+  {
+   "n": "Lisala Finau",
+   "pos": "PIL",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Lisala Finau"
+  },
+  {
+   "n": "Kazuma Shimane",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kazuma Shimane"
+  },
+  {
+   "n": "Atsushi Sakate",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": true,
+   "by": 1993,
+   "title": "Atsushi Sakate"
+  },
+  {
+   "n": "Kenji Sato",
+   "pos": "TAL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Kenji Sato (rugby union)"
+  },
+  {
+   "n": "Lood de Jager",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Lood de Jager"
+  },
+  {
+   "n": "Kantaro Tajima",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kantaro Tajima"
+  },
+  {
+   "n": "Juan Oosthuyzen",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Juan Oosthuyzen"
+  },
+  {
+   "n": "Ockie Barnard",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ockie Barnard"
+  },
+  {
+   "n": "Jayden Joubert",
+   "pos": "2L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jayden Joubert"
+  },
+  {
+   "n": "Tomohito Miyakawa",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tomohito Miyakawa"
+  },
+  {
+   "n": "Liam Mitchell",
+   "pos": "2L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Liam Mitchell (rugby union)"
+  },
+  {
+   "n": "Jack Cornelsen",
+   "pos": "2L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Jack Cornelsen"
+  },
+  {
+   "n": "Ryoku Masuo",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ryoku Masuo"
+  },
+  {
+   "n": "Ryota Hasegawa",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Ryota Hasegawa"
+  },
+  {
+   "n": "Orion Schmok",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Orion Schmok"
+  },
+  {
+   "n": "Xavier Stowers",
+   "pos": "3L",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Xavier Stowers"
+  },
+  {
+   "n": "Lachlan Boshier",
+   "pos": "3L",
+   "cty": "New Zealand",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Lachlan Boshier"
+  },
+  {
+   "n": "Ben Gunter",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Ben Gunter"
+  },
+  {
+   "n": "Itsuki Ōnishi",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Itsuki Ōnishi"
+  },
+  {
+   "n": "Juan Wilson",
+   "pos": "3L",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Juan Wilson"
+  },
+  {
+   "n": "Shota Fukui",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Shota Fukui"
+  },
+  {
+   "n": "Shūto Nobuhara",
+   "pos": "3L",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shūto Nobuhara"
+  },
+  {
+   "n": "Viliami Afu Kaipouli",
+   "pos": "3L",
+   "cty": "Tonga",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Viliami Kaipouli"
+  },
+  {
+   "n": "Taiki Koyama",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Taiki Koyama"
+  },
+  {
+   "n": "Atora Hondo",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Atora Hondo"
+  },
+  {
+   "n": "Shū Hagihara",
+   "pos": "DM",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Shū Hagihara"
+  },
+  {
+   "n": "Lee Kum-su",
+   "pos": "DM",
+   "cty": "South Korea",
+   "nat": "Corée du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Lee Kum-su"
+  },
+  {
+   "n": "Takuya Yamasawa",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Takuya Yamasawa"
+  },
+  {
+   "n": "Kyohei Yamasawa",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kyohei Yamasawa"
+  },
+  {
+   "n": "Kanjiro Naramoto",
+   "pos": "OUV",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Kanjiro Naramoto"
+  },
+  {
+   "n": "Hayata Taniyama",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hayata Taniyama"
+  },
+  {
+   "n": "Takaya Saito",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Takaya Saito"
+  },
+  {
+   "n": "Damian de Allende",
+   "pos": "CEN",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Damian de Allende"
+  },
+  {
+   "n": "Tristan Joubert",
+   "pos": "CEN",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tristan Joubert"
+  },
+  {
+   "n": "Malakye Enasio",
+   "pos": "CEN",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Malakye Enasio"
+  },
+  {
+   "n": "Dylan Riley",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Dylan Riley (rugby union)"
+  },
+  {
+   "n": "Tomoki Osada",
+   "pos": "CEN",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Tomoki Osada"
+  },
+  {
+   "n": "Koki Takeyama",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Koki Takeyama"
+  },
+  {
+   "n": "Tsubasa Arai",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tsubasa Arai"
+  },
+  {
+   "n": "Maurice Marks",
+   "pos": "AIL",
+   "cty": "South Africa",
+   "nat": "Afrique du Sud",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Maurice Marks"
+  },
+  {
+   "n": "Seijun Kawasaki",
+   "pos": "AIL",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Seijun Kawasaki"
+  },
+  {
+   "n": "Toshi Kurita Butlin",
+   "pos": "AIL",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Toshi Butlin"
+  },
+  {
+   "n": "Mark Nawaqanitawase",
+   "pos": "AIL",
+   "cty": "Australia",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Mark Nawaqanitawase"
+  },
+  {
+   "n": "Tom Parton",
+   "pos": "AIL",
+   "cty": "England",
+   "nat": "Angleterre",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Tom Parton"
+  },
+  {
+   "n": "Yoshiaki Taniguchi",
+   "pos": "ARR",
+   "cty": "Japan",
+   "nat": "Japon",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Yoshiaki Taniguchi"
+  }
+ ],
+ "s_blu": [
+  {
+   "n": "Ben Ake",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ben Ake"
+  },
+  {
+   "n": "Josh Fusitu'a",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Josh Fusitu'a"
+  },
+  {
+   "n": "Jordan Lay",
+   "pos": "PIL",
+   "cty": "SAM",
+   "nat": "Samoa",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Jordan Lay"
+  },
+  {
+   "n": "Marcel Renata",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Marcel Renata"
+  },
+  {
+   "n": "Ofa Tuʻungafasi",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Ofa Tuʻungafasi"
+  },
+  {
+   "n": "Flyn Yates",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Flyn Yates"
+  },
+  {
+   "n": "Sam Matenga",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Sam Matenga"
+  },
+  {
+   "n": "Mason Tupaea",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Mason Tupaea"
+  },
+  {
+   "n": "Kurt Eklund",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1992,
+   "title": "Kurt Eklund"
+  },
+  {
+   "n": "James Mullan",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "James Mullan"
+  },
+  {
+   "n": "Bradley Slater",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Bradley Slater"
+  },
+  {
+   "n": "Eli Oudenryn",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Eli Oudenryn"
+  },
+  {
+   "n": "Josh Beehre",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Josh Beehre"
+  },
+  {
+   "n": "Tristyn Cook",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Tristyn Cook"
+  },
+  {
+   "n": "Sam Darry",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Sam Darry"
+  },
+  {
+   "n": "Laghlan McWhannell",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Laghlan McWhannell"
+  },
+  {
+   "n": "Patrick Tuipulotu",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": true,
+   "by": 1993,
+   "title": "Patrick Tuipulotu"
+  },
+  {
+   "n": "Cam Christie",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Cam Christie (rugby union)"
+  },
+  {
+   "n": "Che Clark",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Che Clark"
+  },
+  {
+   "n": "Dalton Papali'i",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Dalton Papali'i"
+  },
+  {
+   "n": "Terrell Peita",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Terrell Peita"
+  },
+  {
+   "n": "Anton Segner",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2001,
+   "title": "Anton Segner"
+  },
+  {
+   "n": "Hoskins Sotutu",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Hoskins Sotutu"
+  },
+  {
+   "n": "Malachi Wrampling",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Malachi Wrampling"
+  },
+  {
+   "n": "Torian Barnes",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Torian Barnes"
+  },
+  {
+   "n": "Jed Melvin",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jed Melvin"
+  },
+  {
+   "n": "Finlay Christie",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Finlay Christie"
+  },
+  {
+   "n": "Taufa Funaki",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Taufa Funaki"
+  },
+  {
+   "n": "Sam Nock",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Sam Nock"
+  },
+  {
+   "n": "Beauden Barrett",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Beauden Barrett"
+  },
+  {
+   "n": "Stephen Perofeta",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Stephen Perofeta"
+  },
+  {
+   "n": "Rico Simpson",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Rico Simpson"
+  },
+  {
+   "n": "Pita Ahki",
+   "pos": "CEN",
+   "cty": "TGA",
+   "nat": "Tonga",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Pita Ahki"
+  },
+  {
+   "n": "James Cameron",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "James Cameron (rugby union)"
+  },
+  {
+   "n": "Corey Evans",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Corey Evans"
+  },
+  {
+   "n": "AJ Lam",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "AJ Lam"
+  },
+  {
+   "n": "Xavi Taele",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Xavi Taele"
+  },
+  {
+   "n": "Kade Banks",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Kade Banks"
+  },
+  {
+   "n": "Caleb Clarke",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Caleb Clarke (rugby union)"
+  },
+  {
+   "n": "Cole Forbes",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Cole Forbes"
+  },
+  {
+   "n": "Payton Spencer",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Payton Spencer"
+  },
+  {
+   "n": "Zarn Sullivan",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Zarn Sullivan"
+  },
+  {
+   "n": "Cody Vai",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Cody Vai"
+  }
+ ],
+ "s_bru": [
+  {
+   "n": "Allan Alaalatoa",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": true,
+   "by": 1994,
+   "title": "Allan Alaalatoa"
+  },
+  {
+   "n": "Tevita Alatini",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Tevita Alatini"
+  },
+  {
+   "n": "Lington Ieli",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Lington Ieli"
+  },
+  {
+   "n": "Blake Schoupp",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Blake Schoupp"
+  },
+  {
+   "n": "James Slipper",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1989,
+   "title": "James Slipper"
+  },
+  {
+   "n": "Rhys van Nek",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Rhys van Nek"
+  },
+  {
+   "n": "Darcy Breen",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Darcy Breen"
+  },
+  {
+   "n": "Liam Bowron",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Liam Bowron"
+  },
+  {
+   "n": "Lachlan Lonergan",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Lachlan Lonergan"
+  },
+  {
+   "n": "Billy Pollard",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2001,
+   "title": "Billy Pollard"
+  },
+  {
+   "n": "Chris Mickelson",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Chris Mickelson"
+  },
+  {
+   "n": "Harvey Cordukes",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Nick Frost",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Nick Frost (rugby union)"
+  },
+  {
+   "n": "Cadeyrn Neville",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1988,
+   "title": "Cadeyrn Neville"
+  },
+  {
+   "n": "Lachlan Shaw",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Lachlan Shaw (rugby union)"
+  },
+  {
+   "n": "Charlie Cale",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Charlie Cale (rugby union)"
+  },
+  {
+   "n": "Eli Langi",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Toby Macpherson",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Toby Macpherson"
+  },
+  {
+   "n": "Luke Reimer",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Luke Reimer"
+  },
+  {
+   "n": "Rory Scott",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Rory Scott"
+  },
+  {
+   "n": "Tuaina Taii Tualima",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Tuaina Taii Tualima"
+  },
+  {
+   "n": "Rob Valetini",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Rob Valetini"
+  },
+  {
+   "n": "Ryan Lonergan",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Ryan Lonergan"
+  },
+  {
+   "n": "Dan Nelson",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Klayton Thorn",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Klayton Thorn"
+  },
+  {
+   "n": "Tane Edmed",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Tane Edmed"
+  },
+  {
+   "n": "Declan Meredith",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Declan Meredith"
+  },
+  {
+   "n": "Joe Dillon",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Austin Anderson",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Austin Anderson"
+  },
+  {
+   "n": "Hudson Creighton",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hudson Creighton"
+  },
+  {
+   "n": "David Feliuai",
+   "pos": "CEN",
+   "cty": "SAM",
+   "nat": "Samoa",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "David Feliuai"
+  },
+  {
+   "n": "Jarrah McLeod",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Jarrah McLeod"
+  },
+  {
+   "n": "Kadin Pritchard",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Kadin Pritchard"
+  },
+  {
+   "n": "Andy Muirhead",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Andy Muirhead (rugby union)"
+  },
+  {
+   "n": "Kye Oates",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Kye Oates"
+  },
+  {
+   "n": "Ollie Sapsford",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Ollie Sapsford"
+  },
+  {
+   "n": "Corey Toole",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Corey Toole"
+  },
+  {
+   "n": "Tom Wright",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Tom Wright"
+  },
+  {
+   "n": "Shane Wilcox",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  }
+ ],
+ "s_chi": [
+  {
+   "n": "Sione Ahio",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Sione Ahio"
+  },
+  {
+   "n": "George Dyer",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "George Dyer (rugby union)"
+  },
+  {
+   "n": "Benet Kumeroa",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Benet Kumeroa"
+  },
+  {
+   "n": "Ollie Norris",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Ollie Norris"
+  },
+  {
+   "n": "Reuben O'Neill",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Reuben O'Neill"
+  },
+  {
+   "n": "Jared Proffit",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Jared Proffit"
+  },
+  {
+   "n": "Keran van Staden",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Keran van Staden"
+  },
+  {
+   "n": "Taine Kolose",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Taine Kolose"
+  },
+  {
+   "n": "Brodie McAlister",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Brodie McAlister"
+  },
+  {
+   "n": "Samisoni Taukei'aho",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Samisoni Taukei'aho"
+  },
+  {
+   "n": "Tyrone Thompson",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Tyrone Thompson"
+  },
+  {
+   "n": "Naitoa Ah Kuoi",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Naitoa Ah Kuoi"
+  },
+  {
+   "n": "Josh Lord",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Josh Lord (rugby union)"
+  },
+  {
+   "n": "Fiti Sa",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Fiti Sa"
+  },
+  {
+   "n": "Jayden Sa",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jayden Sa"
+  },
+  {
+   "n": "Tupou Vaa'i",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Tupou Vaa'i"
+  },
+  {
+   "n": "Aisake Vakasiuola",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Aisake Vakasiuola"
+  },
+  {
+   "n": "Kaylum Boshier",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Kaylum Boshier"
+  },
+  {
+   "n": "Jahrome Brown",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Jahrome Brown"
+  },
+  {
+   "n": "Samipeni Finau",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Samipeni Finau"
+  },
+  {
+   "n": "Luke Jacobson",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": true,
+   "by": 1997,
+   "title": "Luke Jacobson"
+  },
+  {
+   "n": "Simon Parker",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Simon Parker"
+  },
+  {
+   "n": "Wallace Sititi",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Wallace Sititi"
+  },
+  {
+   "n": "Michael Loft",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Michael Loft"
+  },
+  {
+   "n": "Cortez Ratima",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2001,
+   "title": "Cortez Ratima"
+  },
+  {
+   "n": "Xavier Roe",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Xavier Roe"
+  },
+  {
+   "n": "Te Toiroa Tahuriorangi",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Te Toiroa Tahuriorangi"
+  },
+  {
+   "n": "Tepaea Cook-Savage",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Tepaea Cook-Savage"
+  },
+  {
+   "n": "Josh Jacomb",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Josh Jacomb"
+  },
+  {
+   "n": "Damian McKenzie",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Damian McKenzie"
+  },
+  {
+   "n": "Kyle Brown",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Kyle Brown (rugby union, born 2002)"
+  },
+  {
+   "n": "Lalakai Foketi",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Lalakai Foketi"
+  },
+  {
+   "n": "Daniel Rona",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Daniel Rona"
+  },
+  {
+   "n": "Quinn Tupaea",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Quinn Tupaea"
+  },
+  {
+   "n": "Reon Paul",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Reon Paul"
+  },
+  {
+   "n": "Leroy Carter",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Leroy Carter (rugby union)"
+  },
+  {
+   "n": "Liam Coombes-Fabling",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Liam Coombes-Fabling"
+  },
+  {
+   "n": "Isaac Hutchinson",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Isaac Hutchinson (rugby union)"
+  },
+  {
+   "n": "Etene Nanai-Seturo",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Etene Nanai-Seturo"
+  },
+  {
+   "n": "Emoni Narawa",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Emoni Narawa"
+  },
+  {
+   "n": "Kyren Taumoefolau",
+   "pos": "AIL",
+   "cty": "TGA",
+   "nat": "Tonga",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Kyren Taumoefolau"
+  },
+  {
+   "n": "Daniel Sinkinson",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Daniel Sinkinson"
+  }
+ ],
+ "s_cru": [
+  {
+   "n": "George Bower",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "George Bower (rugby union)"
+  },
+  {
+   "n": "Finlay Brewis",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Finlay Brewis"
+  },
+  {
+   "n": "Seb Calder",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Seb Calder"
+  },
+  {
+   "n": "Fletcher Newell",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Fletcher Newell"
+  },
+  {
+   "n": "Kershawl Sykes-Martin",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Kershawl Sykes-Martin"
+  },
+  {
+   "n": "Tamaiti Williams",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Tamaiti Williams"
+  },
+  {
+   "n": "Gus Brown",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Gus Brown (rugby union)"
+  },
+  {
+   "n": "Jack Sexton",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Jack Sexton (rugby union)"
+  },
+  {
+   "n": "George Bell",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "George Bell (rugby union)"
+  },
+  {
+   "n": "Manumaua Letiu",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Manumaua Letiu"
+  },
+  {
+   "n": "Codie Taylor",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Codie Taylor"
+  },
+  {
+   "n": "Scott Barrett",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Scott Barrett (rugby union)"
+  },
+  {
+   "n": "Tahlor Cahill",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Tahlor Cahill"
+  },
+  {
+   "n": "Jamie Hannah",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Jamie Hannah"
+  },
+  {
+   "n": "Liam Jack",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Liam Jack"
+  },
+  {
+   "n": "Antonio Shalfoon",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Antonio Shalfoon"
+  },
+  {
+   "n": "Will Tucker",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Will Tucker"
+  },
+  {
+   "n": "Ethan Blackadder",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Ethan Blackadder"
+  },
+  {
+   "n": "Dominic Gardiner",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Dominic Gardiner"
+  },
+  {
+   "n": "Cullen Grace",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Cullen Grace"
+  },
+  {
+   "n": "Corey Kellow",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Corey Kellow"
+  },
+  {
+   "n": "Christian Lio-Willie",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Christian Lio-Willie"
+  },
+  {
+   "n": "Xavier Saifoloi",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Xavier Saifoloi"
+  },
+  {
+   "n": "Johnny Lee",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Johnny Lee (rugby union)"
+  },
+  {
+   "n": "Oli Mathis",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Oli Mathis"
+  },
+  {
+   "n": "Louie Chapman",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Louie Chapman"
+  },
+  {
+   "n": "Noah Hotham",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Noah Hotham"
+  },
+  {
+   "n": "Kyle Preston",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Kyle Preston"
+  },
+  {
+   "n": "Mitchell Drummond",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Mitchell Drummond"
+  },
+  {
+   "n": "Taha Kemara",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Taha Kemara"
+  },
+  {
+   "n": "Rivez Reihana",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Rivez Reihana"
+  },
+  {
+   "n": "James White",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "James White (rugby union)"
+  },
+  {
+   "n": "Cooper Grant",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Cooper Grant"
+  },
+  {
+   "n": "Toby Bell",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Toby Bell"
+  },
+  {
+   "n": "Leicester Faingaʻanuku",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Leicester Faingaʻanuku"
+  },
+  {
+   "n": "Braydon Ennor",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Braydon Ennor"
+  },
+  {
+   "n": "David Havili",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": true,
+   "by": 1994,
+   "title": "David Havili"
+  },
+  {
+   "n": "Dallas McLeod",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Dallas McLeod"
+  },
+  {
+   "n": "Cooper Roberts",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Cooper Roberts"
+  },
+  {
+   "n": "Chay Fihaki",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Chay Fihaki"
+  },
+  {
+   "n": "Will Jordan",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Will Jordan (rugby union)"
+  },
+  {
+   "n": "Maloni Kunawave",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Maloni Kunawave"
+  },
+  {
+   "n": "Johnny McNicholl",
+   "pos": "AIL",
+   "cty": "WAL",
+   "nat": "Pays de Galles",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Johnny McNicholl"
+  },
+  {
+   "n": "Sevu Reece",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Sevu Reece"
+  },
+  {
+   "n": "Macca Springer",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Macca Springer"
+  },
+  {
+   "n": "Aki Tuivailala",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Aki Tuivailala"
+  },
+  {
+   "n": "Kurtis MacDonald",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Kurtis MacDonald"
+  }
+ ],
+ "s_dru": [
+  {
+   "n": "Mesake Doge",
+   "pos": "PIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Mesake Doge"
+  },
+  {
+   "n": "Haereiti Hetet",
+   "pos": "PIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Haereiti Hetet"
+  },
+  {
+   "n": "Peni Ravai",
+   "pos": "PIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Peni Ravai"
+  },
+  {
+   "n": "Samu Tawake",
+   "pos": "PIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Samu Tawake"
+  },
+  {
+   "n": "Meli Tuni",
+   "pos": "PIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Meli Tuni"
+  },
+  {
+   "n": "Emosi Tuqiri",
+   "pos": "PIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Emosi Tuqiri"
+  },
+  {
+   "n": "Mesu Dolokoto",
+   "pos": "TAL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Mesu Dolokoto"
+  },
+  {
+   "n": "Kavaia Tagivetaua",
+   "pos": "TAL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Kavaia Tagivetaua"
+  },
+  {
+   "n": "Zuriel Togiatama",
+   "pos": "TAL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Zuriel Togiatama"
+  },
+  {
+   "n": "Sairusi Ravudi",
+   "pos": "TAL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Sairusi Ravudi"
+  },
+  {
+   "n": "Penaia Cakobau",
+   "pos": "TAL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Penaia Cakobau"
+  },
+  {
+   "n": "Temo Mayanavanua",
+   "pos": "2L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Temo Mayanavanua"
+  },
+  {
+   "n": "Vilive Miramira",
+   "pos": "2L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Vilive Miramira"
+  },
+  {
+   "n": "Isoa Nasilasila",
+   "pos": "2L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Isoa Nasilasila"
+  },
+  {
+   "n": "Angelo Smith",
+   "pos": "2L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Angelo Smith"
+  },
+  {
+   "n": "Mesake Vocevoce",
+   "pos": "2L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Mesake Vocevoce"
+  },
+  {
+   "n": "Elia Canakaivata",
+   "pos": "3L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Elia Canakaivata"
+  },
+  {
+   "n": "Motikai Murray",
+   "pos": "3L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Motikai Murray"
+  },
+  {
+   "n": "Kitione Salawa",
+   "pos": "3L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2001,
+   "title": "Kitione Salawa (rugby union, born 2001)"
+  },
+  {
+   "n": "Joseva Tamani",
+   "pos": "3L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Joseva Tamani"
+  },
+  {
+   "n": "Isoa Tuwai",
+   "pos": "3L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Isoa Tuwai"
+  },
+  {
+   "n": "Etonia Waqa",
+   "pos": "3L",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Etonia Waqa"
+  },
+  {
+   "n": "Philip Baselala",
+   "pos": "DM",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2004,
+   "title": "Philip Baselala"
+  },
+  {
+   "n": "Issak Fines-Leleiwasa",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Issak Fines-Leleiwasa"
+  },
+  {
+   "n": "Simione Kuruvoli",
+   "pos": "DM",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Simione Kuruvoli (rugby union)"
+  },
+  {
+   "n": "Frank Lomani",
+   "pos": "DM",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Frank Lomani"
+  },
+  {
+   "n": "Isaiah Armstrong-Ravula",
+   "pos": "OUV",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2004,
+   "title": "Isaiah Armstrong-Ravula"
+  },
+  {
+   "n": "Isikeli Rabitu",
+   "pos": "OUV",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2005,
+   "title": "Isikeli Rabitu"
+  },
+  {
+   "n": "Kemu Valetini",
+   "pos": "OUV",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Kemu Valetini"
+  },
+  {
+   "n": "Iosefo Namoce",
+   "pos": "CEN",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Iosefo Namoce"
+  },
+  {
+   "n": "Joji Nasova",
+   "pos": "CEN",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Joji Nasova"
+  },
+  {
+   "n": "Tuidraki Samusamuvodre",
+   "pos": "CEN",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Tuidraki Samusamuvodre"
+  },
+  {
+   "n": "Inia Tabuavou",
+   "pos": "CEN",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Inia Tabuavou"
+  },
+  {
+   "n": "Maika Tuitubou",
+   "pos": "CEN",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Maika Tuitubou"
+  },
+  {
+   "n": "Virimi Vakatawa",
+   "pos": "CEN",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1992,
+   "title": "Virimi Vakatawa"
+  },
+  {
+   "n": "Isikeli Basiyalo",
+   "pos": "AIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Isikeli Basiyalo"
+  },
+  {
+   "n": "Ilaisa Droasese",
+   "pos": "AIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Ilaisa Droasese"
+  },
+  {
+   "n": "Ponepati Loganimasi",
+   "pos": "AIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Ponepati Loganimasi"
+  },
+  {
+   "n": "Manasa Mataele",
+   "pos": "AIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Manasa Mataele"
+  },
+  {
+   "n": "Epeli Momo",
+   "pos": "AIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Epeli Momo"
+  },
+  {
+   "n": "Aisea Nawai",
+   "pos": "AIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Aisea Nawai"
+  },
+  {
+   "n": "Taniela Rakuro",
+   "pos": "AIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": null,
+   "title": "Taniela Rakuro"
+  }
+ ],
+ "s_for": [
+  {
+   "n": "Misinale Epenisa",
+   "pos": "PIL",
+   "cty": "TGA",
+   "nat": "Tonga",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Misinale Epenisa"
+  },
+  {
+   "n": "Sef Fa'agase",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1991,
+   "title": "Sef Fa'agase"
+  },
+  {
+   "n": "Feao Fotuaika",
+   "pos": "PIL",
+   "cty": "TGA",
+   "nat": "Tonga",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Feao Fotuaika"
+  },
+  {
+   "n": "Harry Johnson-Holmes",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Harry Johnson-Holmes"
+  },
+  {
+   "n": "Marley Pearce",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Marley Pearce"
+  },
+  {
+   "n": "Tom Robertson",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1994,
+   "title": "Tom Robertson (rugby union)"
+  },
+  {
+   "n": "Joshua Smith",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Joshua Smith (rugby union)"
+  },
+  {
+   "n": "Albert Alcock",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Albert Alcock"
+  },
+  {
+   "n": "Nic Dolly",
+   "pos": "TAL",
+   "cty": "ENG",
+   "nat": "Angleterre",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Nic Dolly"
+  },
+  {
+   "n": "Leonel Oviedo",
+   "pos": "TAL",
+   "cty": "ARG",
+   "nat": "Argentine",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Leonel Oviedo"
+  },
+  {
+   "n": "Brandon Paenga-Amosa",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Brandon Paenga-Amosa"
+  },
+  {
+   "n": "Lopeti Faifua",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Lopeti Faifua"
+  },
+  {
+   "n": "Franco Molina",
+   "pos": "2L",
+   "cty": "ARG",
+   "nat": "Argentine",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Franco Molina"
+  },
+  {
+   "n": "Darcy Swain",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Darcy Swain"
+  },
+  {
+   "n": "Jeremy Williams",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": true,
+   "by": 2000,
+   "title": "Jeremy Williams (rugby union)"
+  },
+  {
+   "n": "Nick Champion de Crespigny",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Nick Champion de Crespigny"
+  },
+  {
+   "n": "Jack Daly",
+   "pos": "3L",
+   "cty": "IRE",
+   "nat": "Irlande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Jack Daly (rugby union)"
+  },
+  {
+   "n": "Vaiolini Ekuasi",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Vaiolini Ekuasi"
+  },
+  {
+   "n": "Will Harris",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Will Harris (rugby union)"
+  },
+  {
+   "n": "Kane Koteka",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Kane Koteka"
+  },
+  {
+   "n": "Titi Nofoagatotoa",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Titi Nofoagatotoa"
+  },
+  {
+   "n": "Carlo Tizzano",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Carlo Tizzano"
+  },
+  {
+   "n": "Nathan Hastie",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Nathan Hastie"
+  },
+  {
+   "n": "Agustín Moyano",
+   "pos": "DM",
+   "cty": "ARG",
+   "nat": "Argentine",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Agustín Moyano"
+  },
+  {
+   "n": "Doug Philipson",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Doug Philipson"
+  },
+  {
+   "n": "Henry Robertson",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Henry Robertson (rugby union)"
+  },
+  {
+   "n": "Max Burey",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Max Burey"
+  },
+  {
+   "n": "Ben Donaldson",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Ben Donaldson (rugby union)"
+  },
+  {
+   "n": "Alex Harford",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Alex Harford"
+  },
+  {
+   "n": "Boston Fakafanua",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Boston Fakafanua"
+  },
+  {
+   "n": "Bayley Kuenzle",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Bayley Kuenzle"
+  },
+  {
+   "n": "Divad Palu",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Divad Palu"
+  },
+  {
+   "n": "Hamish Stewart",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Hamish Stewart"
+  },
+  {
+   "n": "Taj Annan",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Taj Annan"
+  },
+  {
+   "n": "Kurtley Beale",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1989,
+   "title": "Kurtley Beale"
+  },
+  {
+   "n": "George Bridge",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "George Bridge"
+  },
+  {
+   "n": "Mac Grealy",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Mac Grealy"
+  },
+  {
+   "n": "Darby Lancaster",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Darby Lancaster"
+  },
+  {
+   "n": "Ronan Leahy",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ronan Leahy"
+  },
+  {
+   "n": "Henry Palmer",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Henry Palmer (rugby union)"
+  },
+  {
+   "n": "Dylan Pietsch",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Dylan Pietsch"
+  },
+  {
+   "n": "Zac Lomax",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Zac Lomax"
+  }
+ ],
+ "s_hig": [
+  {
+   "n": "Josh Bartlett",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Josh Bartlett"
+  },
+  {
+   "n": "Ethan de Groot",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Ethan de Groot"
+  },
+  {
+   "n": "Sefo Kautai",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Sefo Kautai"
+  },
+  {
+   "n": "Daniel Lienert-Brown",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Daniel Lienert-Brown"
+  },
+  {
+   "n": "Saula Ma'u",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Saula Ma'u"
+  },
+  {
+   "n": "Angus Taʻavao",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Angus Taʻavao"
+  },
+  {
+   "n": "Rohan Wingham",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Rohan Wingham"
+  },
+  {
+   "n": "Henry Bell",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Henry Bell (rugby union)"
+  },
+  {
+   "n": "Jack Taylor",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Jack Taylor (rugby union, born 2003)"
+  },
+  {
+   "n": "Soane Vikena",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Soane Vikena"
+  },
+  {
+   "n": "Tai Cribb",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Tai Cribb"
+  },
+  {
+   "n": "Mitchell Dunshea",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Mitchell Dunshea"
+  },
+  {
+   "n": "Fabian Holland",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Fabian Holland (rugby union)"
+  },
+  {
+   "n": "Tomás Lavanini",
+   "pos": "2L",
+   "cty": "ARG",
+   "nat": "Argentine",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Tomás Lavanini"
+  },
+  {
+   "n": "Nikora Broughton",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Nikora Broughton"
+  },
+  {
+   "n": "Oliver Haig",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Oliver Haig"
+  },
+  {
+   "n": "TK Howden",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "TK Howden"
+  },
+  {
+   "n": "Veveni Lasaqa",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Veveni Lasaqa"
+  },
+  {
+   "n": "Hugh Renton",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Hugh Renton"
+  },
+  {
+   "n": "Will Stodart",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Will Stodart"
+  },
+  {
+   "n": "Sean Withy",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Sean Withy"
+  },
+  {
+   "n": "Lucas Casey",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Lucas Casey"
+  },
+  {
+   "n": "Folau Fakatava",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Folau Fakatava"
+  },
+  {
+   "n": "Adam Lennox",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Adam Lennox"
+  },
+  {
+   "n": "Dylan Pledger",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Dylan Pledger"
+  },
+  {
+   "n": "Nic Shearer",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Nic Shearer"
+  },
+  {
+   "n": "Andrew Knewstubb",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1995,
+   "title": "Andrew Knewstubb"
+  },
+  {
+   "n": "Cam Millar",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Cam Millar (rugby union)"
+  },
+  {
+   "n": "Taine Robinson",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Taine Robinson"
+  },
+  {
+   "n": "Reesjan Pasitoa",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Reesjan Pasitoa"
+  },
+  {
+   "n": "Timoci Tavatavanawai",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Timoci Tavatavanawai"
+  },
+  {
+   "n": "Jake Te Hiwi",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jake Te Hiwi"
+  },
+  {
+   "n": "Tanielu Teleʻa",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Tanielu Teleʻa"
+  },
+  {
+   "n": "Josh Whaanga",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Josh Whaanga"
+  },
+  {
+   "n": "Meihana Grindlay",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Meihana Grindlay"
+  },
+  {
+   "n": "Finn Hurley",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Finn Hurley"
+  },
+  {
+   "n": "Jonah Lowe",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Jonah Lowe"
+  },
+  {
+   "n": "Jona Nareki",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Jona Nareki"
+  },
+  {
+   "n": "Jacob Ratumaitavuki-Kneepkens",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Jacob Ratumaitavuki-Kneepkens"
+  },
+  {
+   "n": "Stanley Solomon",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Stanley Solomon"
+  },
+  {
+   "n": "Caleb Tangitau",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Caleb Tangitau"
+  },
+  {
+   "n": "Xavier Tito-Harris",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Xavier Tito-Harris"
+  }
+ ],
+ "s_hur": [
+  {
+   "n": "Siale Lauaki",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Siale Lauaki"
+  },
+  {
+   "n": "Tyrel Lomax",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Tyrel Lomax"
+  },
+  {
+   "n": "Tevita Mafileo",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Tevita Mafileo"
+  },
+  {
+   "n": "Xavier Numia",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Xavier Numia"
+  },
+  {
+   "n": "Pouri Rakete-Stones",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Pouri Rakete-Stones"
+  },
+  {
+   "n": "Pasilio Tosi",
+   "pos": "PIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Pasilio Tosi"
+  },
+  {
+   "n": "Asafo Aumua",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Asafo Aumua"
+  },
+  {
+   "n": "Vernon Bason",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Vernon Bason"
+  },
+  {
+   "n": "Jacob Devery",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Jacob Devery"
+  },
+  {
+   "n": "Raymond Tuputupu",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Raymond Tuputupu"
+  },
+  {
+   "n": "Tom Allen",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Tom Allen (rugby union)"
+  },
+  {
+   "n": "Warner Dearns",
+   "pos": "2L",
+   "cty": "JPN",
+   "nat": "Japon",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Warner Dearns"
+  },
+  {
+   "n": "Caleb Delany",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Caleb Delany"
+  },
+  {
+   "n": "Hugo Plummer",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hugo Plummer"
+  },
+  {
+   "n": "Isaia Walker-Leawere",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Isaia Walker-Leawere"
+  },
+  {
+   "n": "Matolu Petaia",
+   "pos": "2L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Matolu Petaia"
+  },
+  {
+   "n": "Devan Flanders",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Devan Flanders"
+  },
+  {
+   "n": "Brayden Iose",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Brayden Iose"
+  },
+  {
+   "n": "Du'Plessis Kirifi",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Du'Plessis Kirifi"
+  },
+  {
+   "n": "Peter Lakai",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Peter Lakai"
+  },
+  {
+   "n": "Arese Poliko",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Arese Poliko"
+  },
+  {
+   "n": "Brad Shields",
+   "pos": "3L",
+   "cty": "ENG",
+   "nat": "Angleterre",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Brad Shields"
+  },
+  {
+   "n": "Cooper Flanders",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Cooper Flanders"
+  },
+  {
+   "n": "Ere Enari",
+   "pos": "DM",
+   "cty": "SAM",
+   "nat": "Samoa",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Ere Enari"
+  },
+  {
+   "n": "Cam Roigard",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Cam Roigard"
+  },
+  {
+   "n": "Jordi Viljoen",
+   "pos": "DM",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Jordi Viljoen"
+  },
+  {
+   "n": "Brett Cameron",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Brett Cameron"
+  },
+  {
+   "n": "Lucas Cashmore",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Lucas Cashmore"
+  },
+  {
+   "n": "Harry Godfrey",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Harry Godfrey"
+  },
+  {
+   "n": "Callum Harkin",
+   "pos": "OUV",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Callum Harkin"
+  },
+  {
+   "n": "Jordie Barrett",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Jordie Barrett"
+  },
+  {
+   "n": "Riley Higgins",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Riley Higgins"
+  },
+  {
+   "n": "Billy Proctor",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Billy Proctor"
+  },
+  {
+   "n": "Jone Rova",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Jone Rova"
+  },
+  {
+   "n": "Bailyn Sullivan",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Bailyn Sullivan"
+  },
+  {
+   "n": "Josh Timu",
+   "pos": "CEN",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Josh Timu"
+  },
+  {
+   "n": "Fehi Fineanganofo",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Fehi Fineanganofo"
+  },
+  {
+   "n": "Ruben Love",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 2001,
+   "title": "Ruben Love"
+  },
+  {
+   "n": "Josh Moorby",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Josh Moorby"
+  },
+  {
+   "n": "Kini Naholo",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Kini Naholo"
+  },
+  {
+   "n": "Ngane Punivai",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Ngane Punivai"
+  },
+  {
+   "n": "Taniela Filimone",
+   "pos": "AIL",
+   "cty": "TGA",
+   "nat": "Tonga",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Taniela Filimone"
+  },
+  {
+   "n": "Josh Gray",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Josh Gray (rugby union, born 1999)"
+  }
+ ],
+ "s_red": [
+  {
+   "n": "George Blake",
+   "pos": "PIL",
+   "cty": "COK",
+   "nat": "Îles Cook",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "George Blake (rugby union)"
+  },
+  {
+   "n": "Nick Bloomfield",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Nick Bloomfield"
+  },
+  {
+   "n": "Massimo de Lutiis",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Massimo de Lutiis"
+  },
+  {
+   "n": "Trevor King",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Zane Nonggorr",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2001,
+   "title": "Zane Nonggorr"
+  },
+  {
+   "n": "Aidan Ross",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Aidan Ross"
+  },
+  {
+   "n": "Jeffrey Toomaga-Allen",
+   "pos": "PIL",
+   "cty": "SAM",
+   "nat": "Samoa",
+   "intl": true,
+   "capt": false,
+   "by": 1990,
+   "title": "Jeffrey Toomaga-Allen"
+  },
+  {
+   "n": "Harrison Usher",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Kingsley Uys",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Richie Asiata",
+   "pos": "TAL",
+   "cty": "SAM",
+   "nat": "Samoa",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Richie Asiata"
+  },
+  {
+   "n": "Matt Faessler",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Matt Faessler"
+  },
+  {
+   "n": "Josh Nasser",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Josh Nasser"
+  },
+  {
+   "n": "Zach Hough",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Josh Canham",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2001,
+   "title": "Josh Canham"
+  },
+  {
+   "n": "Hamish Muller",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Hamish Muller"
+  },
+  {
+   "n": "Lukhan Salakaia-Loto",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1996,
+   "title": "Lukhan Salakaia-Loto"
+  },
+  {
+   "n": "Seru Uru",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Seru Uru"
+  },
+  {
+   "n": "Charlie Brosnan",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Charlie Brosnan"
+  },
+  {
+   "n": "Will Ross",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Joe Brial",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Joe Brial"
+  },
+  {
+   "n": "John Bryant",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "John Bryant (rugby union)"
+  },
+  {
+   "n": "Fraser McReight",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": true,
+   "by": 1999,
+   "title": "Fraser McReight"
+  },
+  {
+   "n": "Harry Wilson",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Harry Wilson (rugby union, born 1999)"
+  },
+  {
+   "n": "Vaiuta Latu",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Vaiuta Latu"
+  },
+  {
+   "n": "Tom Robinson",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Tate McDermott",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Tate McDermott"
+  },
+  {
+   "n": "Kalani Thomas",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Kalani Thomas"
+  },
+  {
+   "n": "Louis Werchon",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Louis Werchon"
+  },
+  {
+   "n": "James Martens",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "James Martens"
+  },
+  {
+   "n": "Carter Gordon",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2001,
+   "title": "Carter Gordon"
+  },
+  {
+   "n": "Tom Lynagh",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Tom Lynagh"
+  },
+  {
+   "n": "Harry McLaughlin-Phillips",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Harry McLaughlin-Phillips"
+  },
+  {
+   "n": "Ben Volavola",
+   "pos": "OUV",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Ben Volavola"
+  },
+  {
+   "n": "Finn Mackay",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1977,
+   "title": "Finn Mackay"
+  },
+  {
+   "n": "Josh Flook",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2001,
+   "title": "Josh Flook"
+  },
+  {
+   "n": "Frankie Goldsbrough",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2006,
+   "title": "Frankie Goldsbrough"
+  },
+  {
+   "n": "Isaac Henry",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1999,
+   "title": "Isaac Henry (rugby union)"
+  },
+  {
+   "n": "Hunter Paisami",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Hunter Paisami"
+  },
+  {
+   "n": "Dre Pakeho",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Dre Pakeho"
+  },
+  {
+   "n": "Lachie Anderson",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Lachie Anderson"
+  },
+  {
+   "n": "Jock Campbell",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Jock Campbell (rugby union)"
+  },
+  {
+   "n": "Nicholas Conway",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Filipo Daugunu",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Filipo Daugunu"
+  },
+  {
+   "n": "Will McCulloch",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Heremaia Murray",
+   "pos": "AIL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Heremaia Murray"
+  },
+  {
+   "n": "Treyvon Pritchard",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2007,
+   "title": "Treyvon Pritchard"
+  },
+  {
+   "n": "Tim Ryan",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Tim Ryan (rugby union, born 2003)"
+  },
+  {
+   "n": "Xavier Rubens",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2005,
+   "title": "Xavier Rubens"
+  }
+ ],
+ "s_war": [
+  {
+   "n": "Siosifa Amone",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "Siosifa Amone"
+  },
+  {
+   "n": "Jack Barrett",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Jack Barrett (rugby union)"
+  },
+  {
+   "n": "Daniel Botha",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Daniel Botha"
+  },
+  {
+   "n": "Will Goddard",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Isaac Aedo Kailea",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2000,
+   "title": "Isaac Aedo Kailea"
+  },
+  {
+   "n": "Tom Lambert",
+   "pos": "PIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Tom Lambert (rugby union)"
+  },
+  {
+   "n": "Apolosi Ranawai",
+   "pos": "PIL",
+   "cty": "FJI",
+   "nat": "FJI",
+   "intl": false,
+   "capt": false,
+   "by": 1994,
+   "title": "Apolosi Ranawai"
+  },
+  {
+   "n": "Ethan Dobbins",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Ethan Dobbins"
+  },
+  {
+   "n": "Folau Fainga'a",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Folau Fainga'a"
+  },
+  {
+   "n": "Ioane Moananu",
+   "pos": "TAL",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 2001,
+   "title": "Ioane Moananu"
+  },
+  {
+   "n": "Oniti Finau",
+   "pos": "TAL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Oniti Finau"
+  },
+  {
+   "n": "Miles Amatosero",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2002,
+   "title": "Miles Amatosero"
+  },
+  {
+   "n": "Angus Blyth",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1998,
+   "title": "Angus Blyth"
+  },
+  {
+   "n": "Eamon Doyle",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Ben Grant",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Ben Grant (rugby union)"
+  },
+  {
+   "n": "Matt Philip",
+   "pos": "2L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": true,
+   "by": 1994,
+   "title": "Matt Philip"
+  },
+  {
+   "n": "Jamie Adamson",
+   "pos": "3L",
+   "cty": "ENG",
+   "nat": "Angleterre",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Jamie Adamson"
+  },
+  {
+   "n": "Austin Durbridge",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Charlie Gamble",
+   "pos": "3L",
+   "cty": "NZL",
+   "nat": "Nouvelle-Zélande",
+   "intl": false,
+   "capt": false,
+   "by": 1996,
+   "title": "Charlie Gamble"
+  },
+  {
+   "n": "Lachlan Hooper",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Lachlan Hooper"
+  },
+  {
+   "n": "Pete Samu",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1991,
+   "title": "Pete Samu"
+  },
+  {
+   "n": "Angus Scott-Young",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1997,
+   "title": "Angus Scott-Young"
+  },
+  {
+   "n": "Leafi Talataina",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Leafi Talataina"
+  },
+  {
+   "n": "Clem Halaholo",
+   "pos": "3L",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Clem Halaholo"
+  },
+  {
+   "n": "Jake Gordon",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1993,
+   "title": "Jake Gordon"
+  },
+  {
+   "n": "Michael McDonald",
+   "pos": "DM",
+   "cty": "IRE",
+   "nat": "Irlande",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Michael McDonald (rugby union)"
+  },
+  {
+   "n": "Teddy Wilson",
+   "pos": "DM",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Teddy Wilson (rugby union)"
+  },
+  {
+   "n": "Jack Bowen",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2003,
+   "title": "Jack Bowen (rugby union)"
+  },
+  {
+   "n": "Lawson Creighton",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1998,
+   "title": "Lawson Creighton"
+  },
+  {
+   "n": "Jack Debreczeni",
+   "pos": "OUV",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1993,
+   "title": "Jack Debreczeni"
+  },
+  {
+   "n": "George Poolman",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2002,
+   "title": "George Poolman"
+  },
+  {
+   "n": "Joseph-Aukuso Sua'ali'i",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2003,
+   "title": "Joseph-Aukuso Sua'ali'i"
+  },
+  {
+   "n": "Joey Walton",
+   "pos": "CEN",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2000,
+   "title": "Joey Walton"
+  },
+  {
+   "n": "Sid Harvey",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Sid Harvey"
+  },
+  {
+   "n": "Jimmy Hendren",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": "Jimmy Hendren"
+  },
+  {
+   "n": "Leo Jacques",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": null,
+   "title": null
+  },
+  {
+   "n": "Max Jorgensen",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 2004,
+   "title": "Max Jorgensen"
+  },
+  {
+   "n": "Andrew Kellaway",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1995,
+   "title": "Andrew Kellaway (rugby union)"
+  },
+  {
+   "n": "Harry Potter",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": true,
+   "capt": false,
+   "by": 1997,
+   "title": "Harry Potter (rugby union)"
+  },
+  {
+   "n": "Triston Reilly",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 1999,
+   "title": "Triston Reilly"
+  },
+  {
+   "n": "Archie Saunders",
+   "pos": "AIL",
+   "cty": "AUS",
+   "nat": "Australie",
+   "intl": false,
+   "capt": false,
+   "by": 2004,
+   "title": "Archie Saunders"
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+# ACT Brumbies
+==Current squad==
+
+{{for|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Brumbies}}
+
+The squad for the [[2026 Super Rugby Pacific season]] is:
+
+{{Rugby union squad start
+ | title = 2026 ACT Brumbies squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|AUS|Allan Alaalatoa|cap=y|captain=y}}
+{{RU squad player|AUS|Tevita Alatini}}
+{{RU squad player|AUS|Lington Ieli}}
+{{RU squad player|AUS|Blake Schoupp|cap=y}}
+{{RU squad player|AUS|James Slipper|cap=y}}
+{{RU squad player|AUS|Rhys van Nek}}
+{{RU squad player|AUS|Darcy Breen|st=y|ex=Called into the squad ahead of Round 5.<ref name="Valetini set for 100 as Brumbies name side for Fiji showdown">{{cite press release | url=https://brumbies.rugby/news/valetini-set-for-100-as-brumbies-name-side-for-fiji-showdown-2026310 | title=Valetini set for 100 as Brumbies name side for Fiji showdown | work=ACT Brumbies | date=11 March 2026 | access-date=11 March 2026}}</ref>}}
+
+'''Hookers'''
+{{RU squad player|AUS|Liam Bowron}}
+{{RU squad player|AUS|Lachlan Lonergan|cap=y}}
+{{RU squad player|AUS|Billy Pollard|cap=y}}
+{{RU squad player|AUS|Chris Mickelson|dev=y}}
+
+'''Locks'''
+{{RU squad player|AUS|Harvey Cordukes|nolink=y}}
+{{RU squad player|AUS|Nick Frost|ru=y|cap=y}}
+{{RU squad player|AUS|Cadeyrn Neville|cap=y}}
+{{RU squad player|AUS|Lachlan Shaw|ru=y|cap=y}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|AUS|Charlie Cale|ru=y|cap=y}}
+{{RU squad player|AUS|Eli Langi|nolink=y}}
+{{RU squad player|AUS|Toby Macpherson}}
+{{RU squad player|AUS|Luke Reimer|cap=y}}
+{{RU squad player|AUS|Rory Scott}}
+{{RU squad player|AUS|Tuaina Taii Tualima}}
+{{RU squad player|AUS|Rob Valetini|cap=y}}
+
+'''Scrum-halves'''
+{{RU squad player|AUS|Ryan Lonergan|cap=y}}
+{{RU squad player|AUS|Dan Nelson|nolink=y}}
+{{RU squad player|AUS|Klayton Thorn}}
+
+'''Fly-halves'''
+{{RU squad player|AUS|Tane Edmed|cap=y}}
+{{RU squad player|AUS|Declan Meredith|cap=y}}
+{{RU squad player|AUS|Joe Dillon|nolink=y|dev=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|NZL|Austin Anderson}}
+{{RU squad player|AUS|Hudson Creighton}}
+{{RU squad player|SAM|David Feliuai|res=y}}
+{{RU squad player|AUS|Jarrah McLeod}}
+{{RU squad player|AUS|Kadin Pritchard}}
+
+'''Outside backs'''
+{{RU squad player|AUS|Andy Muirhead|ru=y}}
+{{RU squad player|AUS|Kye Oates|inj=y|ex=Ruled out for the season through injury in April 2026.<ref name="Injury Update: Kye Oates injury">{{cite press release | url=https://brumbies.rugby/news/injury-update-kye-oates-injury-202642 | title=Injury Update: Kye Oates injury | work=ACT Brumbies | date=2 April 2026 | access-date=2 April 2026}}</ref>}}
+{{RU squad player|AUS|Ollie Sapsford}}
+{{RU squad player|AUS|Corey Toole|cap=y}}
+{{RU squad player|AUS|Tom Wright|dab=rugby, born 1997|cap=y}}
+{{RU squad player|AUS|Shane Wilcox|nolink=y|dev=y}}
+{{Rugby union squad end
+ | res = Australia
+ | cap = y
+ | captain = y
+ | st = y
+ | inj = y
+ | dev = y
+ | group   = upper-alpha
+ | ex      =
+ | ref = <ref name="ACT Brumbies announce 'exciting' squad for 2026 Swyftx Super Rugby Pacific">{{cite press release | url=https://brumbies.rugby/news/act-brumbies-announce-exciting-squad-for-2026-swyftx-super-rugby-pacific-2025115 | title=ACT Brumbies announce 'exciting' squad for 2026 Swyftx Super Rugby Pacific | publisher=ACT Brumbies | date=6 November 2025 | access-date=6 November 2025}}</ref>
+}}
+
+===Super Rugby AUS===
+The squad for the [[2026 Super Rugby AUS]] competition is:
+
+{{Rugby union squad start
+ | title = 2026 ACT Brumbies Super Rugby AUS squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|AUS|Tevita Alatini}}
+{{RU squad player|AUS|Finn Baxter|nolink=y}}
+{{RU squad player|AUS|Darcy Breen}}
+{{RU squad player|FJI|Lington Ieli}}
+{{RU squad player|AUS|Rhys van Nek}}
+
+'''Hookers'''
+{{RU squad player|AUS|Liam Bowron}}
+{{RU squad player|AUS|Ewald Kruger|nolink=y}}
+{{RU squad player|AUS|Lachlan Lonergan|cap=y|ex=Lonergan wasn't named in the original Super Rugby AUS squad, but was announced in the side for Round 3.<ref name="Alatini & Lonergan Return as Brumbies Reload for Reds">{{cite press release | url=https://brumbies.rugby/news/alatini-lonergan-return-as-brumbies-reload-for-reds-2026923 | title=Alatini & Lonergan Return as Brumbies Reload for Reds | work=ACT Brumbies | date=23 September 2026 | access-date=23 September 2026}}</ref>}}
+
+'''Locks'''
+{{RU squad player|AUS|Nick Frost|ru=y|cap=y}}
+{{RU squad player|AUS|Tavita Loughland|nolink=y}}
+{{RU squad player|AUS|Lachlan Shaw|ru=y|cap=y|ex=Shaw wasn't named in the original Super Rugby AUS squad, but was announced as a late inclusion in the side for Round 1.<ref name="Super Rugby AUS ACT Brumbies vs NSW Waratahs">{{cite web | url=https://www.rugby.com.au/match-centre/103/2027/953119?tab=Player-Lineup | title=Super Rugby AUS ACT Brumbies vs NSW Waratahs | work=Rugby.com.au | access-date=13 September 2026}}</ref>}}
+{{RU squad player|AUS|Josh Townsend|nolink=y}}
+{{RU squad player|NZL|Tu'ukalilkali Vaipulu|nolink=y}}
+{{RU squad player|AUS|Jack Wright|born=1999}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|AUS|Oscar Cleary|nolink=y}}
+{{RU squad player|AUS|Darcy Fogarty|nolink=y}}
+{{RU squad player|AUS|Eli Langi|nolink=y}}
+{{RU squad player|AUS|Toby Macpherson|captain=y}}
+{{RU squad player|FJI|Judah Saumaisue}}
+{{RU squad player|AUS|TJ Talaileva|nolink=y}}
+
+'''Scrum-halves'''
+{{RU squad player|AUS|Dan Nelson|nolink=y}}
+{{RU squad player|AUS|Klayton Thorn}}
+{{RU squad player|FJI|Moses Sorovi|cap=y}}
+
+'''Fly-halves'''
+{{RU squad player|AUS|Tane Edmed|cap=y}}
+{{RU squad player|AUS|Chace Oates|nolink=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|AUS|Dylan Bretton|nolink=y}}
+{{RU squad player|SAM|David Feliuai|res=y}}
+{{RU squad player|AUS|Jarrah McLeod}}
+{{RU squad player|AUS|Kadin Pritchard}}
+
+'''Outside backs'''
+{{RU squad player|AUS|Triston Reilly}}
+{{RU squad player|AUS|Ollie Sapsford}}
+{{RU squad player|AUS|Oscar Shaw|nolink=y}}
+{{RU squad player|AUS|Corey Toole|cap=y}}
+{{RU squad player|AUS|Will Trostel|nolink=y}}
+{{Rugby union squad end
+ | res = Australia
+ | cap = y
+ | captain = y
+ | group   = upper-alpha
+ | ex      =
+ | ref = <ref name="Brumbies Unveil Generation Next for Super Rugby AUS">{{cite press release | url=https://brumbies.rugby/news/brumbies-unveil-generation-next-for-super-rugby-aus-2026831 | title=Brumbies Unveil Generation Next for Super Rugby AUS | publisher=ACT Brumbies | date=31 August 2026 | access-date=31 August 2026}}</ref>
+}}

@@ -4,7 +4,7 @@ function dailyUpdate(){
   for(const c of G.clubs)youthDaily(c);
   if(G.date&&G.date.endsWith('-03-15'))youthIntake();
   for(const c of G.clubs.concat(G.ext||[])){
-    const ks=FOCUSK[c.focus],lgK=c.lg==='t14'||c.lg==='prem'||c.lg==='urc'?1:c.lg==='pd2'?.85:.7;
+    const ks=FOCUSK[c.focus],lgK=c.lg==='t14'||c.ext?1:c.lg==='pd2'?.85:.7;
     // staff : récupération (préparateur physique), retours de blessure plus rapides (médecin au-dessus de 10/20)
     const rec=recoverK(c),medFast=(staffQ(c,'med')-10)/40,detK=new Set(['pla','dec','sfr','lea','eng']);
     for(const p of c.squad){

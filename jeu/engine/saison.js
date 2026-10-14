@@ -24,7 +24,8 @@ function migrateSave(){
   applyRealStaff();
   applyNoteFixes();
   if(!G.ext||G.ext.some(c=>!c.real&&typeof REALX!=='undefined'&&REALX[c.id]))initExt();
-  if(!G.XL&&G.phase==='season'&&G.cups)startXL();
+  else for(const x of EXT0)if(!G.ext.some(c=>c.id===x[0]))G.ext.push(mkExtClub(x)); // nouveaux clubs (Super Rugby, Japon)
+  if(G.phase==='season'&&G.cups)startXL(true);
   if(!G.cups&&G.phase==='season')startCups();
 }
 
@@ -82,7 +83,7 @@ function finishSeason(){
   G.lastXL={};for(const [lg,L] of Object.entries(G.XL||{}))G.lastXL[lg]=xlSorted(L).map(r=>r.id);
   const xlW=lg=>G.XL&&G.XL[lg]&&G.XL[lg].champ?C(G.XL[lg].champ).short:null;
   const cupW=k=>G.cups&&G.cups[k]&&G.cups[k].champ?C(G.cups[k].champ).short:null;
-  G.hist.push({s:seasonLabel(),lg,champ:C(G.L.t14.po.champ).short,champ2:C(G.L.pd2.po.champ).short,cc:cupW('cc'),ch:cupW('ch'),urc:xlW('urc'),prem:xlW('prem'),rank,fate});
+  G.hist.push({s:seasonLabel(),lg,champ:C(G.L.t14.po.champ).short,champ2:C(G.L.pd2.po.champ).short,cc:cupW('cc'),ch:cupW('ch'),urc:xlW('urc'),prem:xlW('prem'),srp:xlW('srp'),jpn:xlW('jpn'),rank,fate});
   addNews(po.champ===m.id?`🏆 TU ES CHAMPION DE ${LEAGUES[lg].name.toUpperCase()} !`:`Saison terminée : ${rank}e de ${LEAGUES[lg].name}.`);
   if(fate==='promu')addNews(`⬆ ${m.name} monte en Top 14 !`);
   if(fate==='relégué')addNews(`⬇ ${m.name} descend en Pro D2.`);

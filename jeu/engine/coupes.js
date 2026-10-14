@@ -17,10 +17,21 @@ const EXT0=[
   ['x_lio','Emirates Lions','Lions',73,'urc','RSA'],['x_con','Connacht Rugby','Connacht',72,'urc','IRL'],['x_car','Cardiff Rugby','Cardiff',71,'urc','WAL'],
   ['x_osp','Ospreys','Ospreys',70,'urc','WAL'],['x_sca','Scarlets','Scarlets',70,'urc','WAL'],['x_dra','Dragons RFC','Dragons',66,'urc','WAL'],
   ['x_zeb','Zebre Parma','Zebre',66,'urc','ITA'],
-  ['x_che','Toyota Cheetahs','Cheetahs',65,'inv','RSA'],['x_bla','Black Lion','Black Lion',66,'inv','GEO']
+  ['x_che','Toyota Cheetahs','Cheetahs',65,'inv','RSA'],['x_bla','Black Lion','Black Lion',66,'inv','GEO'],
+  // Super Rugby Pacific 2027 (10 équipes : Moana Pasifika a été dissous en 2026) et Japan Rugby League One (1re division)
+  ['s_chi','Chiefs','Chiefs',80,'srp','NZL'],['s_cru','Crusaders','Crusaders',79,'srp','NZL'],['s_hur','Hurricanes','Hurricanes',79,'srp','NZL'],
+  ['s_blu','Blues','Blues',78,'srp','NZL'],['s_hig','Highlanders','Highlanders',73,'srp','NZL'],['s_bru','ACT Brumbies','Brumbies',76,'srp','AUS'],
+  ['s_red','Queensland Reds','Reds',75,'srp','AUS'],['s_war','NSW Waratahs','Waratahs',72,'srp','AUS'],['s_for','Western Force','Force',71,'srp','AUS'],
+  ['s_dru','Fijian Drua','Drua',71,'srp','FIJ'],
+  ['j_kub','Kubota Spears Funabashi Tokyo-Bay','Spears',77,'jpn','JPN'],['j_tos','Toshiba Brave Lupus Tokyo','Brave Lupus',77,'jpn','JPN'],
+  ['j_wkn','Saitama Wild Knights','Wild Knights',76,'jpn','JPN'],['j_sun','Tokyo Sungoliath','Sungoliath',75,'jpn','JPN'],
+  ['j_ver','Toyota Verblitz','Verblitz',75,'jpn','JPN'],['j_kob','Kobelco Kobe Steelers','Kobe Steelers',74,'jpn','JPN'],
+  ['j_brv','Shizuoka Blue Revs','Blue Revs',73,'jpn','JPN'],['j_eag','Yokohama Canon Eagles','Eagles',73,'jpn','JPN'],
+  ['j_blr','Black Rams Tokyo','Black Rams',72,'jpn','JPN'],['j_dro','Urayasu D-Rocks','D-Rocks',71,'jpn','JPN'],
+  ['j_hon','Mie Honda Heat','Honda Heat',70,'jpn','JPN'],['j_dyn','Mitsubishi Sagamihara DynaBoars','DynaBoars',70,'jpn','JPN']
 ];
-const EXTLG={urc:'URC',prem:'Premiership',inv:'Invité'};
-const CTY={ENG:'Angleterre',IRL:'Irlande',SCO:'Écosse',WAL:'Pays de Galles',ITA:'Italie',RSA:'Afrique du Sud',GEO:'Géorgie'};
+const EXTLG={urc:'URC',prem:'Premiership',inv:'Invité',srp:'Super Rugby',jpn:'League One'};
+const CTY={ENG:'Angleterre',IRL:'Irlande',SCO:'Écosse',WAL:'Pays de Galles',ITA:'Italie',RSA:'Afrique du Sud',GEO:'Géorgie',NZL:'Nouvelle-Zélande',AUS:'Australie',FIJ:'Fidji',JPN:'Japon'};
 // Noms des joueurs générés selon le pays (noms courants, sans reprendre de vrais joueurs connus)
 const NAMES={
   en:[['Jack','Tom','Harry','Ben','Sam','Joe','Will','Ollie','George','Charlie','Josh','Luke','Alex','Max','Henry','Fraser','Rory','Finn','Ciaran','Conor','Sean','Cian','Jamie','Ross','Gareth','Rhys','Dafydd','Owen','Dan','Ewan','Callum','Niall'],
@@ -32,7 +43,11 @@ const NAMES={
   ge:[['Giorgi','Levan','Lasha','Beka','Vano','Tornike','Luka','Sandro','Nika','Otar','Davit','Mikheil'],
       ['Kapanadze','Beridze','Japaridze','Lomidze','Abuladze','Tsiklauri','Maisuradze','Gelashvili','Chikvaidze','Kvaratskhelia','Mchedlidze','Datunashvili']]
 };
-const nameLang=c=>c==='RSA'?'za':c==='ITA'?'it':c==='GEO'?'ge':'en';
+NAMES.nz=[['Sam','Josh','Ethan','Caleb','Tane','Nikora','Rameka','Liam','Hamish','Ofa','Sione','Lui','Kaleb','Tupou','Fletcher','Cam','Quinn','Leroy','Ruben','Manaia'],['Smith','Wilson','Taylor','Williams','Ngata','Tipene','Tuilagi','Fonua','Moana','Paewai','Harrison','Kereama','Tamihana','Walker','Faleafa','Reihana','Clarke','Hohaia','Te Hira','Matagi']];
+NAMES.au=[['Jack','Lachlan','Tom','Harry','Will','Angus','Nick','Ben','Fraser','Tate','Rory','Hamish','Max','Charlie','Zac','Darcy'],['Smith','Jones','Brown','Wilson','Taylor','Campbell','Stewart','McDonald','Kelly','Ryan','Murphy','Edwards','Ross','Turner','Hunter','Fletcher']];
+NAMES.fj=[['Josua','Semi','Waisea','Mesake','Peni','Tevita','Isoa','Viliame','Kitione','Jone','Simione','Inoke','Epeli','Manasa','Taniela'],['Raqona','Vatubua','Ratuva','Waqanivere','Drauniniu','Rokobaro','Naivalu','Tuilevu','Vosawai','Nasau','Delai','Cakau','Lesuma','Bativakalolo','Qereqeretabua']];
+NAMES.jp=[['Takuya','Kenta','Yuto','Ryo','Shota','Daiki','Kazuki','Haruto','Sora','Riku','Naoki','Takumi','Yusuke','Kaito','Hiroki','Sho'],['Sato','Suzuki','Takahashi','Tanaka','Watanabe','Ito','Yamamoto','Nakamura','Kobayashi','Kato','Yoshida','Yamada','Sasaki','Matsumoto','Inoue','Kimura']];
+const nameLang=c=>c==='RSA'?'za':c==='ITA'?'it':c==='GEO'?'ge':c==='NZL'?'nz':c==='AUS'?'au':c==='FIJ'?'fj':c==='JPN'?'jp':'en';
 const extName=cty=>{const L=NAMES[nameLang(cty)];return R.pick(L[0])+' '+R.pick(L[1])};
 // Joueur généré pour un club étranger (nom et nationalité du pays)
 function extPlayer(c,g,level,age){const p=genPlayer(g,level,age);p.name=extName(c.cty);p.nat=CTY[c.cty];p.sal=salaryFor(ovr(p),p.age,c.lg);return p}
@@ -49,8 +64,11 @@ function mkExtClub(x){
   return c;
 }
 // Complète un effectif étranger (retraites, départs) avec des jeunes du pays
+// (d'abord les meilleurs joueurs libres du marché, puis des jeunes du pays)
 function fillExt(c){
-  for(const g in COMP){let n=c.squad.filter(p=>p.g===g).length;while(n<COMP[g]){const p=extPlayer(c,g,c.str-13+R.n(0,3),R.i(19,22));p.pot=clamp(Math.round(ovr(p)+R.i(6,20)),55,90);p.ctr=3;c.squad.push(p);n++}}
+  for(const g in COMP){let n=c.squad.filter(p=>p.g===g).length;while(n<COMP[g]){
+    const fa=(G.fa||[]).filter(p=>p.g===g&&ovr(p)>=c.str-12).sort((a,b)=>ovr(b)-ovr(a))[0];
+    if(fa&&G.phase==='offseason'&&R.f()<.5){doTransfer(fa,null,c,0,salaryFor(ovr(fa),fa.age,c.lg),R.i(1,3));n++;continue}const p=extPlayer(c,g,c.str-13+R.n(0,3),R.i(19,22));p.pot=clamp(Math.round(ovr(p)+R.i(6,20)),55,90);p.ctr=3;c.squad.push(p);n++}}
 }
 function initExt(){G.ext=EXT0.map(mkExtClub)}
 // Nouvelle saison : les vrais effectifs vieillissent et se complètent ; les clubs invités sont régénérés

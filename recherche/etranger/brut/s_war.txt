@@ -1,0 +1,79 @@
+# New South Wales Waratahs
+===Current squad===
+{{for|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Waratahs}}
+
+The squad for the [[2026 Super Rugby Pacific season]] is:
+
+{{Rugby union squad start
+ | title = 2026 NSW Waratahs squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|AUS|Siosifa Amone}}
+{{RU squad player|AUS|Jack Barrett|ru=y}}
+{{RU squad player|AUS|Daniel Botha}}
+{{RU squad player|AUS|Will Goddard|nolink=y}}
+{{RU squad player|AUS|Isaac Aedo Kailea|cap=y}}
+{{RU squad player|AUS|Tom Lambert|ru=y}}
+{{RU squad player|FJI|Apolosi Ranawai|res=y}}
+
+'''Hookers'''
+{{RU squad player|AUS|Ethan Dobbins}}
+{{RU squad player|AUS|Folau Fainga'a|cap=y}}
+{{RU squad player|NZL|Ioane Moananu}}
+{{RU squad player|AUS|Oniti Finau|st=y|ex=Called into the squad ahead of Round 14.<ref name="Eight Waratahs changes for must-win Fijian Drua clash">{{cite press release | url=https://waratahs.rugby/news/eight-waratahs-changes-for-mustwin-fijian-drua-clash-2026513 | title=Eight Waratahs changes for must-win Fijian Drua clash | work=NSW Waratahs | date=13 May 2026 | access-date=13 May 2026}}</ref>}}
+
+'''Locks'''
+{{RU squad player|AUS|Miles Amatosero|cap=y}}
+{{RU squad player|AUS|Angus Blyth|cap=y}}
+{{RU squad player|AUS|Eamon Doyle|nolink=y}}
+{{RU squad player|AUS|Ben Grant|ru=y}}
+{{RU squad player|AUS|Matt Philip|cap=y|captain=y}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|ENG|Jamie Adamson}}
+{{RU squad player|AUS|Austin Durbridge|nolink=y}}
+{{RU squad player|NZL|Charlie Gamble|res=y}}
+{{RU squad player|AUS|Lachlan Hooper}}
+{{RU squad player|AUS|Pete Samu|cap=y}}
+{{RU squad player|AUS|Angus Scott-Young|ex=Signed in November 2025.<ref name="NSW Waratahs snaps up Scott-Young for Super Rugby return">{{cite press release | url=https://waratahs.rugby/news/nsw-waratahs-snaps-up-scottyoung-for-super-rugby-return-20251116 | title=NSW Waratahs snaps up Scott-Young for Super Rugby return | work=NSW Waratahs | date=17 November 2025 | access-date=17 November 2025}}</ref>}}
+{{RU squad player|AUS|Leafi Talataina}}
+{{RU squad player|AUS|Clem Halaholo|st=y|ex=Called into the squad ahead of Round 1.<ref name="Seven possible debutants named in NSW Waratahs squad for Round 1 clash with Reds">{{cite press release | url=https://waratahs.rugby/news/seven-possible-debutants-named-in-nsw-waratahs-squad-for-round-1-clash-2026211 | title=Seven possible debutants named in NSW Waratahs squad for Round 1 clash with Reds | work=NSW Waratahs | date=11 February 2026 | access-date=11 February 2026}}</ref>}}
+
+'''Scrum-halves'''
+{{RU squad player|AUS|Jake Gordon|cap=y}}
+{{RU squad player|IRE|Michael McDonald|ru=y|res=y}}
+{{RU squad player|AUS|Teddy Wilson|ru=y}}
+
+'''Fly-halves'''
+{{RU squad player|AUS|Jack Bowen|ru=y}}
+{{RU squad player|AUS|Lawson Creighton}}
+{{RU squad player|AUS|Jack Debreczeni}}
+
+||
+
+'''Centres'''
+{{RU squad player|AUS|George Poolman}}
+{{RU squad player|AUS|Joseph-Aukuso Sua'ali'i|cap=y}}
+{{RU squad player|AUS|Joey Walton}}
+
+'''Outside backs'''
+{{RU squad player|AUS|Sid Harvey}}
+{{RU squad player|AUS|Jimmy Hendren}}
+{{RU squad player|AUS|Leo Jacques|nolink=y}}
+{{RU squad player|AUS|Max Jorgensen|cap=y}}
+{{RU squad player|AUS|Andrew Kellaway|ru=y|cap=y}}
+{{RU squad player|AUS|Harry Potter|ru=y|cap=y}}
+{{RU squad player|AUS|Triston Reilly}}
+{{RU squad player|AUS|Archie Saunders}}
+{{Rugby union squad end
+ | res = Australia
+ | cap = y
+ | captain = y
+ | st = y
+ | group = upper-alpha
+ | ex =
+ | ref = <ref name="NSW Waratahs squad confirmed for 2026 Swyftx Super Rugby Pacific season">{{cite press release | url=https://waratahs.rugby/news/nsw-waratahs-squad-confirmed-for-2026-swyftx-super-rugby-pacific-season-2025115 | title=NSW Waratahs squad confirmed for 2026 Swyftx Super Rugby Pacific season | work=NSW Waratahs | date=6 November 2025 | access-date=6 November 2025}}</ref>
+}}

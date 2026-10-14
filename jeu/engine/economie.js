@@ -13,7 +13,7 @@ function capOf(c){if(c.lg==='t14')return c.cap||CAP_BASE;if(c.lg==='pd2')return 
 // Salaire annuel brut (k€) d'un joueur de Top 14 selon sa note (calé sur Midi Olympique : moyenne ~260 k€, stars 480-600 k€+, espoirs < 60 k€)
 const SALTAB=[[40,10],[45,15],[50,25],[55,40],[60,65],[65,110],[70,175],[75,250],[80,340],[85,450],[90,560],[95,720],[99,850]];
 function interp(t,x){if(x<=t[0][0])return t[0][1];for(let i=1;i<t.length;i++)if(x<=t[i][0]){const[a,b]=t[i-1],[c,d]=t[i];return b+(d-b)*(x-a)/(c-a)}return t[t.length-1][1]}
-const LGSAL={t14:1,pd2:.45,nat:.12,prem:.85,urc:.8,inv:.3};
+const LGSAL={t14:1,pd2:.45,nat:.12,prem:.85,urc:.8,inv:.3,srp:.6,jpn:.9};
 function salaryFor(o,age,lg){const ak=age<=20?.4:age<=21?.5:age<=22?.65:age<=23?.82:age>=34?.8:age>=32?.9:1;return Math.max(8,Math.round(interp(SALTAB,o)*(LGSAL[lg]||.3)*ak))}
 // Valeur marchande (k€) : note, âge, marge de progression
 function valueOf(p){

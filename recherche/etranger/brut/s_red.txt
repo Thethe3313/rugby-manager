@@ -1,0 +1,86 @@
+# Queensland Reds
+===Current squad===
+{{for|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Reds}}
+
+The Queensland Reds squad for the [[2026 Super Rugby Pacific season]] is:
+
+{{Rugby union squad start
+ | title = 2026 Queensland Reds squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|COK|George Blake|ru=y|res=y}}
+{{RU squad player|AUS|Nick Bloomfield}}
+{{RU squad player|AUS|Massimo de Lutiis|cap=y}}
+{{RU squad player|AUS|Trevor King|nolink=y}}
+{{RU squad player|AUS|Zane Nonggorr|cap=y}}
+{{RU squad player|AUS|Aidan Ross|cap=y}}
+{{RU squad player|SAM|Jeffrey Toomaga-Allen|cap=y}}
+{{RU squad player|AUS|Harrison Usher|nolink=y|dev=y}}
+{{RU squad player|AUS|Kingsley Uys|nolink=y|dev=y}}
+
+'''Hookers'''
+{{RU squad player|SAM|Richie Asiata|cap=y}}
+{{RU squad player|AUS|Matt Faessler|cap=y}}
+{{RU squad player|AUS|Josh Nasser|cap=y}}
+{{RU squad player|AUS|Zach Hough|nolink=y|dev=y}}
+
+'''Locks'''
+{{RU squad player|AUS|Josh Canham|cap=y}}
+{{RU squad player|AUS|Hamish Muller}}
+{{RU squad player|AUS|Lukhan Salakaia-Loto|cap=y}}
+{{RU squad player|AUS|Seru Uru|cap=y}}
+{{RU squad player|AUS|Charlie Brosnan|dev=y}}
+{{RU squad player|AUS|Will Ross|nolink=y|dev=y}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|AUS|Joe Brial}}
+{{RU squad player|AUS|John Bryant|ru=y}}
+{{RU squad player|AUS|Fraser McReight|cap=y|captain=y}}
+{{RU squad player|AUS|Harry Wilson|born=1999|cap=y}}
+{{RU squad player|AUS|Vaiuta Latu|dev=y}}
+{{RU squad player|AUS|Tom Robinson|nolink=y|dev=y}}
+
+'''Scrum-halves'''
+{{RU squad player|AUS|Tate McDermott|cap=y}}
+{{RU squad player|AUS|Kalani Thomas|cap=y}}
+{{RU squad player|AUS|Louis Werchon}}
+{{RU squad player|AUS|James Martens|dev=y}}
+
+'''Fly-halves'''
+{{RU squad player|AUS|Carter Gordon|cap=y}}
+{{RU squad player|AUS|Tom Lynagh|cap=y}}
+{{RU squad player|AUS|Harry McLaughlin-Phillips}}
+{{RU squad player|FJI|Ben Volavola|cap=y}}
+{{RU squad player|AUS|Finn Mackay|dev=y}}
+
+||
+
+'''Centres'''
+{{RU squad player|AUS|Josh Flook|cap=y}}
+{{RU squad player|AUS|Frankie Goldsbrough}}
+{{RU squad player|AUS|Isaac Henry|ru=y|cap=y}}
+{{RU squad player|AUS|Hunter Paisami|cap=y}}
+{{RU squad player|AUS|Dre Pakeho}}
+
+'''Outside backs'''
+{{RU squad player|AUS|Lachie Anderson}}
+{{RU squad player|AUS|Jock Campbell|ru=y|cap=y}}
+{{RU squad player|AUS|Nicholas Conway|nolink=y}}
+{{RU squad player|AUS|Filipo Daugunu|cap=y}}
+{{RU squad player|AUS|Will McCulloch|nolink=y}}
+{{RU squad player|NZL|Heremaia Murray}}
+{{RU squad player|AUS|Treyvon Pritchard}}
+{{RU squad player|AUS|Tim Ryan|born=2003}}
+{{RU squad player|AUS|Xavier Rubens|dev=y}}
+{{Rugby union squad end
+ | res = Australia
+ | cap = y
+ | captain = y
+ | dev = y
+ | group   = upper-alpha
+ | ex      =
+ | ref = <ref name="Queensland Reds announce squad for 2026 Super Rugby Pacific">{{cite press release | url=https://reds.rugby/news/queensland-reds-announce-squad-for-2026-super-rugby-pacific-2025115 | title=Queensland Reds announce squad for 2026 Super Rugby Pacific | publisher=Queensland Reds | date=6 November 2025 | access-date=6 November 2025}}</ref>
+}}

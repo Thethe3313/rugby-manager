@@ -1,0 +1,98 @@
+# Highlanders (rugby union)
+==Current squad==
+
+{{For|player movements before and during the [[2026 Super Rugby Pacific season|2026 season]]|List of 2025–26 Super Rugby transfers#Highlanders}}
+
+The squad for the [[2026 Super Rugby Pacific season]] is:
+
+{{Rugby union squad start
+ | title = 2026 Highlanders squad
+ | width = 70%
+}}
+'''Props'''
+{{RU squad player|NZL|Josh Bartlett|inj=y|ex=Ruled out for the season through injury in May 2026.<ref name="Highlanders brace for crucial clash with Chiefs in Hamilton">{{cite press release | url=https://thehighlanders.co.nz/news/highlanders-brace-for-crucial-clash-with-chiefs-in-hamilton/ | title=Highlanders brace for crucial clash with Chiefs in Hamilton | work=Highlanders | date=13 May 2026 | access-date=13 May 2026}}</ref>}}
+{{RU squad player|NZL|Ethan de Groot|cap=y}}
+{{RU squad player|NZL|Sefo Kautai}}
+{{RU squad player|NZL|Daniel Lienert-Brown}}
+{{RU squad player|NZL|Saula Ma'u}}
+{{RU squad player|NZL|Angus Taʻavao|cap=y}}
+{{RU squad player|NZL|Rohan Wingham|wtg=y|ex=Promoted from wider training group ahead of Round 1.<ref name="Highlanders unveil squad to play the Crusaders on opening day">{{cite press release | url=https://thehighlanders.co.nz/news/highlanders-unveil-squad-to-play-the-crusaders-on-opening-day/ | title=Highlanders unveil squad to play the Crusaders on opening day | work=Highlanders | date=11 February 2026 | access-date=11 February 2026}}</ref>}}
+
+'''Hookers'''
+{{RU squad player|NZL|Henry Bell|ru=y}}
+{{RU squad player|NZL|Jack Taylor|born=2003}}
+{{RU squad player|NZL|Soane Vikena}}
+
+'''Locks'''
+{{RU squad player|NZL|Tai Cribb}}
+{{RU squad player|NZL|Mitchell Dunshea}}
+{{RU squad player|NZL|Fabian Holland|ru=y|cap=y|inj=y|ex=Ruled out for the season through injury in February 2026.<ref name="Highlanders unveil squad to play the Crusaders on opening day"/>}}
+{{RU squad player|ARG|Tomás Lavanini|cap=y}}
+
+||
+
+'''Loose forwards'''
+{{RU squad player|NZL|Nikora Broughton}}
+{{RU squad player|NZL|Oliver Haig}}
+{{RU squad player|NZL|TK Howden}}
+{{RU squad player|NZL|Veveni Lasaqa}}
+{{RU squad player|NZL|Hugh Renton|cc=y}}
+{{RU squad player|NZL|Will Stodart}}
+{{RU squad player|NZL|Sean Withy}}
+{{RU squad player|NZL|Lucas Casey|wtg=y|ex=Promoted from wider training group ahead of Round 1.<ref name="Highlanders unveil squad to play the Crusaders on opening day"/>}}
+
+'''Halfbacks (scrum-halves)'''
+{{RU squad player|NZL|Folau Fakatava|cap=y}}
+{{RU squad player|NZL|Adam Lennox}}
+{{RU squad player|NZL|Dylan Pledger|inj=y|ex=Ruled out for the season through injury in January 2026.<ref name="Dylan Pledger has sustained an ACL rupture at training and will be out of action for a 12-month period while he rehabilitates the injury following surgery">{{cite tweet | number=2010491596899508440 | user=Highlanders | title=Dylan Pledger has sustained an ACL rupture at training and will be out of action for a 12-month period while he rehabilitates the injury following surgery | date=11 January 2026 | access-date=12 January 2026}}</ref>}}
+{{RU squad player|NZL|Nic Shearer|wtg=y|ex=Promoted from wider training group ahead of Round 7.<ref name="Highlanders name team for round seven clash with Moana Pasifika">{{cite press release | url=https://thehighlanders.co.nz/news/highlanders-name-team-for-round-seven-clash-with-moana-pasifika/ | title=Highlanders name team for round seven clash with Moana Pasifika | work=Highlanders | date=25 March 2026 | access-date=25 March 2026}}</ref>}}
+
+'''First five-eighths (fly-halves)'''
+{{RU squad player|NZL|Andrew Knewstubb}}
+{{RU squad player|NZL|Cam Millar|ru=y}}
+{{RU squad player|NZL|Taine Robinson}}
+
+||
+
+'''Midfielders (centres)'''
+{{RU squad player|AUS|Reesjan Pasitoa|inj=y|ex=Ruled out for the season through injury in April 2026.<ref name="Highlanders name team for Super Round Ōtautahi Christchurch">{{cite press release | url=https://thehighlanders.co.nz/news/highlanders-name-team-for-super-round-otautahi-christchurch/ | title=Highlanders name team for Super Round Ōtautahi Christchurch | work=Highlanders | date=22 April 2026 | access-date=22 April 2026}}</ref>}}
+{{RU squad player|NZL|Timoci Tavatavanawai|cap=y|cc=y}}
+{{RU squad player|NZL|Jake Te Hiwi}}
+{{RU squad player|NZL|Tanielu Teleʻa}}
+{{RU squad player|NZL|Josh Whaanga}}
+{{RU squad player|NZL|Meihana Grindlay|wtg=y|ex=Promoted from wider training group ahead of Round 15.<ref name="Highlanders name team for the clash in th capital">{{cite press release | url=https://thehighlanders.co.nz/news/highlanders-name-team-for-the-clash-in-the-capital/ | title=Highlanders name team for the clash in the capital | work=Highlanders | date=20 May 2026 | access-date=20 May 2026}}</ref>}}
+
+'''Outside backs'''
+{{RU squad player|NZL|Finn Hurley}}
+{{RU squad player|NZL|Jonah Lowe}}
+{{RU squad player|NZL|Jona Nareki}}
+{{RU squad player|NZL|Jacob Ratumaitavuki-Kneepkens}}
+{{RU squad player|NZL|Stanley Solomon}}
+{{RU squad player|NZL|Caleb Tangitau|inj=y|ex=Ruled out for the season through injury in May 2026.<ref name="Highlanders name team for the clash in th capital"/>}}
+{{RU squad player|NZL|Xavier Tito-Harris}}
+{{Rugby union squad end
+ | res = New Zealand
+ | cap = y
+ | cc = y
+ | wtg = y
+ | inj = y
+ | group   = upper-alpha
+ | ex      =
+ | ref = <ref name="Fresh faces and international experience feature in 2026 Highlanders squad">{{cite press release | url=https://thehighlanders.co.nz/news/fresh-faces-and-international-experience-feature-in-2026-highlanders-squad/ | title=Fresh faces and international experience feature in 2026 Highlanders squad | publisher=Highlanders | date=6 November 2025 | access-date=6 November 2025}}</ref>
+}}
+
+===Wider training group===
+The following players were named in the Highlanders wider training group for the [[2026 Super Rugby Pacific season]]:<ref name="Highlanders confirm wider training group for 2026">{{cite press release | url=https://thehighlanders.co.nz/news/highlanders-confirm-wider-training-group-for-2026/ | title=Highlanders confirm wider training group for 2026 | work=Highlanders | date=7 November 2025 | access-date=7 November 2025}}</ref>{{efn-ua|group="Squad"|name=Tengblad|Tengblad was named in the Highlanders wider training group, but was ruled out for the season through injury in March 2026.<ref name="Highlanders name team for round seven clash with Moana Pasifika"/>}}
+
+{{div col|colwidth=40em}}
+* {{Flagicon|New Zealand}} [[Ben Lopas]] (Prop)
+* {{Flagicon|New Zealand}} [[Rohan Wingham]] (Prop)
+* {{Flagicon|New Zealand}} [[A-One Lolofie]] (Hooker)
+* {{Flagicon|New Zealand}} [[Josh Tengblad]] (Lock) [[File:Injury icon 2.svg|12px]] {{efn-ua|group="Squad"|name=Tengblad}}
+* {{Flagicon|New Zealand}} [[Lucas Casey]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Senita Lauaki]] (Loose forward)
+* {{Flagicon|New Zealand}} [[Nic Shearer]] (Halfback)
+* {{Flagicon|New Zealand}} [[Meihana Grindlay]] (Midfielder)
+* {{Flagicon|New Zealand}} [[Tayne Harvey]] (Midfielder/Outside back)
+{{div col end}}
+{{notelist-ua|group="Squad"}}
