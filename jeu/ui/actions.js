@@ -1,7 +1,8 @@
 // Interface : actions des boutons (data-a) et démarrage
 const ACT={
-  start(d){newGame(d.id);save();render()},
-  continue(){if(load())render()},
+  start(d){const s=+UI.newSlot||Store.firstFree()||1;if(Store.meta[s]&&!confirm(`L'emplacement ${s} contient déjà une partie (${Store.meta[s].club}). L'écraser ?`))return;newGame(d.id);G.slot=s;UI.newSlot=null;save();render()},
+  continue(d){load(+(d&&d.slot)||1,ok=>{if(ok)render();else alert('Impossible de charger cette partie.')})},
+  delSlot(d){const s=+d.slot,m=Store.meta[s];if(!m||!confirm(`Supprimer définitivement la partie de l'emplacement ${s} (${m.club}) ?`))return;Store.del(s,()=>render())},
   menu(){G=null;UI.live=null;render()},
   exportSave(){exportSave()},
   // ---- staff ----
@@ -11,7 +12,7 @@ const ACT={
     UI.modal=null;save();render()},
   renewStaff(d){const s=ME().staff[d.r];if(!s)return;s.ctr+=2;s.sal=Math.round(s.sal*1.05/5)*5;addNews(`✍ ${s.name} prolonge de 2 ans (${fmtK(s.sal)}/an).`);save();render()},
   importSave(d,el){importSave(el.files&&el.files[0]);el.value=''},
-  save(){const ok=save();addNews(ok?'Partie sauvegardée.':'Sauvegarde impossible dans ce navigateur.');render()},
+  save(){save(ok=>{addNews(ok?`Partie sauvegardée (emplacement ${G.slot}).`:'Sauvegarde impossible dans ce navigateur.');render()})},
   tab(d){G.tab=d.t;render()},
   lgsel(d){UI.lg=d.lg;render()},
   cupsel(d){UI.cup=d.k;render()},
@@ -100,4 +101,5 @@ const ACT={
 // clics sur les boutons ; les listes déroulantes et les choix de fichier réagissent au changement de valeur
 document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b||b.tagName==='SELECT'||b.type==='file')return;const f=ACT[b.dataset.a];if(f)f(b.dataset,b)});
 document.addEventListener('change',e=>{const b=e.target;if((b.tagName==='SELECT'||b.type==='file')&&b.dataset.a){const f=ACT[b.dataset.a];if(f)f(b.dataset,b)}});
-render();
+// démarrage : ouverture du stockage, puis premier affichage
+Store.init(()=>render());

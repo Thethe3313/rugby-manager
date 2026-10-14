@@ -73,6 +73,8 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - **Mercato international** : les joueurs d'URC et de Premiership sont recrutables (filtre « Étranger » du mercato).
   - Sauvegarde allégée (nombres arrondis) : 1,6 Mo au lieu de 2,2 Mo.
 
+- **Vrai stockage (14 octobre 2026)** : parties enregistrées dans IndexedDB (des centaines de Mo au lieu de ~5 Mo), **4 emplacements de sauvegarde** sur l'écran d'accueil (continuer, supprimer, choisir l'emplacement d'une nouvelle partie) ; l'ancienne sauvegarde est reprise automatiquement.
+
 ## ▶️ Prochaine étape
 
 ### Étape E2 — Super Rugby et Japon
@@ -85,8 +87,7 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 2. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
 3. **Application** :
    - Version installable : déjà préparée (manifeste, icônes, service worker), il reste à héberger le dossier `jeu/` en ligne ; puis Android et iOS.
-   - Comptes, 4 emplacements de sauvegarde en ligne.
-   - Vrai stockage : la sauvegarde du navigateur sera bientôt trop petite.
+   - Comptes et sauvegardes en ligne (les 4 emplacements existent déjà dans le navigateur).
 
 ## 🔁 En continu
 

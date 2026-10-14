@@ -6,8 +6,9 @@ const oc=v=>v>=78?'o1':v>=68?'o2':v>=58?'o3':'o4';
 const rd=Math.round;
 // Sauvegarde : les nombres à virgule (attributs, énergie…) sont arrondis à 3 décimales pour alléger le fichier
 const saveJSON=()=>JSON.stringify(G,(k,v)=>typeof v==='number'&&!Number.isInteger(v)?Math.round(v*1000)/1000:v);
-function save(){try{localStorage.setItem(SAVE_KEY,saveJSON());return true}catch(e){return false}}
-function load(){try{const s=localStorage.getItem(SAVE_KEY);if(!s)return false;G=JSON.parse(s);migrateSave();return true}catch(e){return false}}
+// Sauvegarde dans l'emplacement de la partie (voir ui/stockage.js : IndexedDB, 4 emplacements)
+function save(cb){if(!G)return false;if(!G.slot)G.slot=Store.firstFree()||1;Store.save(G.slot,saveJSON(),slotInfo(G),cb);return !Store.failed}
+function load(slot,cb){Store.adoptOld(()=>Store.load(slot,s=>{if(!s)return cb(false);try{G=JSON.parse(s);G.slot=slot;migrateSave();cb(true)}catch(e){cb(false)}}))}
 // Export / import de la sauvegarde dans un fichier (pour la changer de navigateur, d'ordinateur, ou la mettre à l'abri)
 function exportSave(){
   const blob=new Blob([saveJSON()],{type:'application/json'}),a=document.createElement('a');
@@ -18,7 +19,7 @@ function importSave(file){
   if(!file)return;
   const rd_=new FileReader();
   rd_.onload=()=>{
-    try{const g=JSON.parse(rd_.result);if(!g||!Array.isArray(g.clubs)||!g.meId)throw 0;G=g;migrateSave();UI.modal=null;UI.live=null;save();render()}
+    try{const g=JSON.parse(rd_.result);if(!g||!Array.isArray(g.clubs)||!g.meId)throw 0;const slot=(G&&G.slot)||+UI.newSlot||Store.firstFree()||1;G=g;G.slot=slot;migrateSave();UI.modal=null;UI.live=null;save();render()}
     catch(err){alert('Ce fichier n\'est pas une sauvegarde de Rugby Manager.')}
   };
   rd_.readAsText(file);

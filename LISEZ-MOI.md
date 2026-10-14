@@ -8,7 +8,7 @@ Jeu de gestion de club de rugby à XV, façon Football Manager : Top 14 et Pro D
 - Si le dossier est déplacé, le raccourci ne marche plus : relance `outils\creer-raccourci.ps1` (clic droit → « Exécuter avec PowerShell »).
 - Sans le raccourci, on peut aussi ouvrir `jeu\index.html` avec n'importe quel navigateur.
 
-La partie est enregistrée dans le navigateur. Pour la passer d'un navigateur à un autre (par exemple de Chrome vers l'appli, qui utilise Edge) : **Réglages → Exporter ma partie**, puis **Importer une partie** depuis l'autre.
+Les parties (4 emplacements) sont enregistrées dans le navigateur, dans sa base de données IndexedDB. Pour la passer d'un navigateur à un autre (par exemple de Chrome vers l'appli, qui utilise Edge) : **Réglages → Exporter ma partie**, puis **Importer une partie** depuis l'autre.
 
 ## Le dossier
 | Dossier | Contenu |

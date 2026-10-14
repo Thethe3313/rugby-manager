@@ -1,9 +1,12 @@
 // Interface : écrans principaux (accueil, composition, calendrier, classement, aide)
 function viewStart(){
-  const has=!!localStorage.getItem(SAVE_KEY);
+  const slots=Array.from({length:NSLOTS},(_,i)=>i+1),free=Store.firstFree(),target=+UI.newSlot||free||1;
+  const sLab=m=>`<b>${m.club}</b> <span class="mut">· ${m.lg==='t14'?'Top 14':m.lg==='pd2'?'Pro D2':''} · saison ${2025+(m.season||1)}-${2026+(m.season||1)} · ${fmtD(m.date,true)} · enregistrée le ${m.saved}</span>`;
   const card=(c,lg)=>{const ref=lg==='t14'?62:56;return `<div class="c" data-a="start" data-id="${c[0]}"><b>${c[1]}</b><div class="mut">Niveau ${'★'.repeat(clamp(Math.round((c[3]-ref)/4)+1,1,5))}</div></div>`};
   return `<div class="center"><h1>🏉 Rugby Manager</h1><p class="mut">Prends en main un club de Top 14 ou de Pro D2 : compose ton XV, choisis ta tactique, gère ton effectif, ton budget et le plafond salarial. Effectifs réels de la saison 2026-27 (notes estimées).</p>
-  <p class="row">${has?`<button class="btn" data-a="continue">▶ Continuer la partie sauvegardée</button>`:''}<label class="btn sec">⬆ Importer une partie (fichier)<input type="file" accept=".json,application/json" data-a="importSave" hidden></label></p>
+  <div class="card"><h2>Mes parties</h2>${slots.map(s=>{const m=Store.meta[s];return `<div class="row" style="padding:6px 0;border-bottom:1px solid var(--line)"><b>Emplacement ${s}</b> ${m?`${sLab(m)} <span class="sp" style="flex:1"></span><button class="btn sm" data-a="continue" data-slot="${s}">▶ Continuer</button><button class="btn bad sm" data-a="delSlot" data-slot="${s}">Supprimer</button>`:'<span class="mut">Libre</span>'}</div>`}).join('')}
+  <p class="mut">Les parties sont enregistrées dans ce navigateur (base IndexedDB : pas de limite de taille gênante). Pour les transférer ailleurs, utilise l'export dans les Réglages.</p></div>
+  <p class="row">Nouvelle partie dans l'emplacement <select data-a="flt" data-k="newSlot">${slots.map(s=>`<option value="${s}" ${s===target?'selected':''}>${s}${Store.meta[s]?' (occupé : '+Store.meta[s].club+')':' (libre)'}</option>`).join('')}</select><label class="btn sec">⬆ Importer une partie (fichier)<input type="file" accept=".json,application/json" data-a="importSave" hidden></label></p>
   <h2>Nouvelle partie : choisis ton club</h2>
   <h3>Top 14</h3><div class="clubs">${CLUBS0.map(c=>card(c,'t14')).join('')}</div>
   <h3 style="margin-top:16px">Pro D2</h3><div class="clubs">${PD2CLUBS.map(c=>card(c,'pd2')).join('')}</div>
