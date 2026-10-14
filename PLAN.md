@@ -59,17 +59,23 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - 28 clubs étrangers réels (Leinster, Bath, Glasgow, Bulls…) avec des effectifs simplifiés (joueurs générés selon le pays).
   - Onglet Europe (poules, phase finale), matchs européens dans le calendrier, en direct et au palmarès, primes à chaque tour.
 
+- **Étape D — Match en direct, suite (14 octobre 2026)** :
+  - **Météo** annoncée la veille, selon la saison (pluie, forte pluie, vent, beau temps ; toit fermé à La Défense Arena) : la pluie fait passer de ~50 à ~40 points par match (plus d'en-avant, plus de jeu au pied), le vent gêne les buteurs.
+  - **Arbitre** plus ou moins sévère (noms fictifs) : de ~0,7 à ~1,2 carton jaune par match, plus ou moins de pénalités.
+  - **Capitaine et buteur désignés** (Composition) : le leadership du capitaine joue sur la discipline et l'équipe ; le brassard passe au meilleur leader s'il sort.
+  - **Discours** d'avant-match et de mi-temps (en direct), avec la réaction des joueurs : l'effet dépend du score, du rapport de force et de la détermination de l'effectif.
+- **Corrections de notes** : Marius Domon revu (71 → 75) ; les corrections s'appliquent aussi aux parties en cours.
+
 ## ▶️ Prochaine étape
 
-### Étape D — Match en direct, suite
-- Discours d'avant-match et de mi-temps, consignes individuelles (ex. : buteur désigné, capitaine), météo (pluie = plus d'en-avant), arbitre plus ou moins sévère.
+### Étape E — Autres championnats
+- URC, Premiership, Super Rugby, Japon… pour avoir les meilleurs joueurs du monde et un mercato international (les vrais effectifs remplaceront les effectifs simplifiés des clubs étrangers des coupes d'Europe).
 
 ## 📋 À faire ensuite (dans l'ordre)
 
-1. **Autres championnats** : URC, Premiership, Super Rugby, Japon… pour avoir les meilleurs joueurs du monde et un mercato international (les vrais effectifs remplaceront les effectifs simplifiés des clubs étrangers des coupes d'Europe).
-2. **Rugby amateur français** : Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
-3. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
-4. **Application** :
+1. **Rugby amateur français** : Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
+2. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
+3. **Application** :
    - Version installable : déjà préparée (manifeste, icônes, service worker), il reste à héberger le dossier `jeu/` en ligne ; puis Android et iOS.
    - Comptes, 4 emplacements de sauvegarde en ligne.
    - Vrai stockage : la sauvegarde du navigateur sera bientôt trop petite.

@@ -46,6 +46,7 @@ function modalView(){
     return `<div class="overlay"><div class="modal wide"><div class="vs"><div>${h.short}</div><div class="score">${r.sh} - ${r.sa}</div><div>${a.short}</div></div>
     <p class="mut" style="text-align:center">Essais ${r.th}-${r.ta} · Pénalités ${r.pn[0]}-${r.pn[1]} · Drops ${r.dr[0]}-${r.dr[1]} · Possession ${r.ph}%-${100-r.ph}% · Cartons jaunes ${r.yc[0]}-${r.yc[1]}${r.att?` · Affluence ${r.att}`:''}</p>
     <p class="mut" style="text-align:center">Points de classement : ${!r.ko?`${h.short} ${(r.sh>r.sa?4:r.sh===r.sa?2:0)+r.bo[0]} · ${a.short} ${(r.sa>r.sh?4:r.sh===r.sa?2:0)+r.bo[1]}`:'match à élimination directe'}${r.so?' · qualification aux tirs au but':''}</p>
+    ${r.wx?`<p class="mut" style="text-align:center">${wxTxt(r.wx)}${r.ref?' · Arbitre : '+refTxt(r.ref):''}</p>`:''}
     ${mo?`<p style="text-align:center">⭐ Homme du match : <b>${mo.n}</b> (${names[mo.s]}) · note <b class="${rc(mo.r)}">${mo.r.toFixed(1)}</b></p>`:''}
     ${r.ps?`<div class="row" style="justify-content:center;margin-bottom:8px">${tb('resume','Temps forts')}${tb('stats','Statistiques')}${tb('notes','Notes des joueurs')}</div>`:''}
     ${body}

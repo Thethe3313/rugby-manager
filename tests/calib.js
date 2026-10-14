@@ -16,7 +16,7 @@ const res=g.run(`(()=>{
     for(let i=0;i<${N};i++){
       const h=R.pick(cl);let a=R.pick(cl);while(a===h)a=R.pick(cl);
       h.squad.forEach(p=>p.forme=90);a.squad.forEach(p=>p.forme=90);
-      const r=simMatch(h,a,{});
+      const r=simMatch(h,a,{date:R.pick(G.L.t14.dates)});
       S.n++;S.pts+=r.sh+r.sa;S.tr+=r.th+r.ta;S.pen+=r.pn[0]+r.pn[1];S.drop+=r.dr[0]+r.dr[1];S.yc+=r.yc[0]+r.yc[1];
       if(r.sh>r.sa)S.hw++;if(r.sh===r.sa)S.draw++;S.bo+=r.bo[0]+r.bo[1];
       S.bd+=(r.sh<r.sa&&r.sa-r.sh<=5?1:0)+(r.sa<r.sh&&r.sh-r.sa<=5?1:0);

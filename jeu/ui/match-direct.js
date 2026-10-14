@@ -32,6 +32,9 @@ function viewPrematch(){
     <p>Style de jeu<br>${tacSel('tac','style',STY,t.style)}</p><p>Intensité<br>${tacSel('tac','int',INTS,t.int)}</p>
     <p>Jeu au pied<br>${tacSel('tac','kick',KICKS,t.kick)}</p><p>Sur pénalité<br>${tacSel('tac','pen',PENS,t.pen)}</p></div>
   <div><h3>Ton XV${m.autoXV!==false?' <span class="mut">(choisi par l\'adjoint)</span>':''}</h3>${lu.slice(0,15).map((id,i)=>{const p=m.squad.find(x=>x.id===id);return `<div>${i+1}. ${p?p.name+' <span class="mut">'+rd(effAt(p,SLOTS[i]))+'</span>':'<span class="ko">—</span>'}</div>`}).join('')}</div></div>
+  <div class="card" style="margin:12px 0 0"><p>Météo prévue : <b>${wxTxt(weatherFor(nx.d,h))}</b> · Arbitre : <b>${refTxt(refFor(nx.d,h))}</b></p>
+  <p>Discours d'avant-match<br>${tacSel('talk','pre',TALKS.pre,UI.talk||'motive')}</p>
+  <p class="mut">Pluie : plus d'en-avant et de jeu au pied. Vent : buteurs gênés. Arbitre sévère : plus de pénalités et de cartons (la discipline compte). Un discours exigeant réveille une équipe déterminée, mais peut faire craquer une équipe qui se décourage vite.</p></div>
   <p style="margin-top:12px"><button class="btn" data-a="goLive">▶ Suivre le match en direct</button> <button class="btn sec" data-a="quickMatch">⏩ Résultat immédiat</button> <button class="btn sec" data-a="preLineup">Modifier la composition</button></p>
   <p class="mut">Tu peux choisir dans les Réglages de toujours passer directement au résultat.</p></div></div>`;
 }
@@ -86,7 +89,7 @@ const commHTML=ms=>ms.ev.slice(-14).reverse().map(e=>`<div class="ev ${e.k}"><sp
 const statsLive=ms=>{const p=ms.T[0].st.pos+ms.T[1].st.pos||1,t=ms.terr[0]+ms.terr[1]||1;return statsHTML(ms.T[0].st,ms.T[1].st,rd(ms.T[0].st.pos/p*100),rd(ms.terr[0]/t*100),[ms.clubs[0].short,ms.clubs[1].short])};
 function teamHTML(L){
   const ms=L.ms,S=ms.T[L.side];
-  const row=(d,n,act)=>`<tr data-a="${act}" data-id="${d.p.id}" class="lv-row${L.sel===d.p.id?' sel':''}"><td>${n}</td><td>${d.p.name}${d.sin?' 🟨':''} <span class="mut">${posL(d.p)}</span></td><td>${formeBar(d.en)}</td><td class="n ${rc(rateOf(ms,d))}">${rateOf(ms,d).toFixed(1)}</td></tr>`;
+  const row=(d,n,act)=>`<tr data-a="${act}" data-id="${d.p.id}" class="lv-row${L.sel===d.p.id?' sel':''}"><td>${n}</td><td>${d.p.name}${ms.T[L.side].capId===d.p.id?' <b title="Capitaine">(C)</b>':''}${kickerOf(ms,L.side)===d?' <b title="Buteur">(B)</b>':''}${d.sin?' 🟨':''} <span class="mut">${posL(d.p)}</span></td><td>${formeBar(d.en)}</td><td class="n ${rc(rateOf(ms,d))}">${rateOf(ms,d).toFixed(1)}</td></tr>`;
   const out=Object.values(ms.P).filter(d=>d.side===L.side&&d.slot<0&&(d.start||d.used));
   return `<table><tr><th>N°</th><th>Sur le terrain</th><th>Énergie</th><th class="n">Note</th></tr>${S.on.map((d,j)=>d?row(d,j+1,'liveSel'):`<tr><td>${j+1}</td><td class="ko">— (place vide)</td><td></td><td></td></tr>`).join('')}
   <tr><th colspan="4">Remplaçants</th></tr>${S.bench.filter(b=>!b.used).map(b=>row(b,b.no,'liveSub')).join('')||'<tr><td colspan="4" class="mut">Plus de remplaçant.</td></tr>'}
@@ -98,12 +101,14 @@ function viewLive(){
   const ctrl=ms.done?`<b>Coup de sifflet final !</b> <button class="btn" data-a="liveEnd">Voir le résumé du match ▶</button>`
     :`<button class="btn sm" data-a="livePause">${L.paused?'▶ Reprendre':'⏸ Pause'}</button> ${Object.entries(LSPEED).map(([v,s])=>`<button class="btn sm ${L.speed===v?'':'sec'}" data-a="liveSpeed" data-v="${v}">${s[1]}</button>`).join(' ')} <button class="btn sec sm" data-a="liveSkip">⏭ Aller à la fin</button>`;
   return `<div class="overlay"><div class="modal live">
-  <div class="lv-head"><div class="lv-sb"><b style="color:${COL[0]}">${h.short}</b><span id="lv-score" class="score">${ms.sc[0]} - ${ms.sc[1]}</span><b style="color:${COL[1]}">${a.short}</b><span id="lv-clock" class="pill">${clockTxt(ms)}</span></div><div class="row">${ctrl}</div></div>
+  <div class="lv-head"><div class="lv-sb"><b style="color:${COL[0]}">${h.short}</b><span id="lv-score" class="score">${ms.sc[0]} - ${ms.sc[1]}</span><b style="color:${COL[1]}">${a.short}</b><span id="lv-clock" class="pill">${clockTxt(ms)}</span></div><div class="mut" style="font-size:13px">${wxTxt(ms.wx)} · Arbitre : ${refTxt(ms.ref)}</div><div class="row">${ctrl}</div></div>
   <div id="lv-flash" class="lv-flash">${L.flash?`<div class="flash">${L.flash}</div>`:''}</div>
   <div class="lv-grid"><div>${pitchSVG(L)}<div id="lv-now" class="lv-now">${ms.now}</div><div id="lv-comm" class="lv-comm">${commHTML(ms)}</div></div>
   <div><h3>Consignes</h3><div class="lv-tac">
     <label>Style de jeu ${tacSel('liveTac','style',STY,S.tac.style)}</label><label>Intensité ${tacSel('liveTac','int',INTS,S.tac.int)}</label>
     <label>Jeu au pied ${tacSel('liveTac','kick',KICKS,S.tac.kick)}</label><label>Sur pénalité ${tacSel('liveTac','pen',PENS,S.tac.pen)}</label></div>
+    ${L.htTalk&&L.paused&&!ms.done?`<div class="card" style="margin:10px 0"><h3>Discours de la mi-temps</h3><p class="mut">${ms.clubs[L.side].short} ${ms.sc[L.side]} - ${ms.sc[1-L.side]} ${ms.clubs[1-L.side].short}. Que dis-tu aux joueurs ?</p>${Object.entries(TALKS.half).map(([v,t])=>`<p><button class="btn sm sec" data-a="liveTalk" data-v="${v}">${t}</button></p>`).join('')}</div>`:''}
+    ${L.talkTxt?`<p class="mut">Réaction au discours : ${L.talkTxt}</p>`:''}
     <h3 style="margin-top:12px">${ms.clubs[L.side].short}</h3>
     <label style="cursor:pointer"><input type="checkbox" data-a="liveAuto" ${S.auto?'checked':''}> L'adjoint gère les remplacements</label>
     <p class="mut" style="margin:4px 0">Remplacement : clique sur un joueur sur le terrain, puis sur un remplaçant.</p>
@@ -137,7 +142,7 @@ function liveTick(){
   liveTimer=null;const L=UI.live;
   if(!L||!G||!UI.modal||UI.modal.type!=='live'||L.paused||L.ms.done)return;
   matchStep(L.ms);
-  if(L.ms.pause){L.ms.pause=false;L.paused=true;L.flash=L.ms.now;render();return} // mi-temps : pause pour ajuster la tactique
+  if(L.ms.pause){L.ms.pause=false;L.paused=true;L.flash=L.ms.now;L.htTalk=true;render();return} // mi-temps : pause pour ajuster la tactique
   if(L.ms.done){render();return}
   liveUpdate();
   liveSchedule(L.speed==='forts'&&L.ms.key?1800:LSPEED[L.speed][0]);
@@ -147,7 +152,8 @@ function startLive(){
   const m=ME(),hc=C(nx.f.h),ac=C(nx.f.a);
   setMatchLineup(hc);setMatchLineup(ac);
   const ko=!!nx.ko;
-  UI.live={ms:newMatch(hc,ac,{ko,neutral:!!nx.f.neutral}),side:hc.id===m.id?0:1,speed:'normal',paused:false,sel:null,flash:'',flashN:0};
+  G.talk=UI.talk||'motive';
+  UI.live={ms:newMatch(hc,ac,{ko,neutral:!!nx.f.neutral,date:nx.d}),side:hc.id===m.id?0:1,speed:'normal',paused:false,sel:null,flash:'',flashN:0};
   UI.modal={type:'live'};render();liveSchedule();
 }
 // Fin du direct : le résultat est enregistré, puis la journée est jouée (les autres matchs sont simulés)

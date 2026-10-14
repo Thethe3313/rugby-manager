@@ -47,9 +47,9 @@ function A(ms,d,k){
   const lead=ms.sc[d.side]-ms.sc[1-d.side],dk=.6+(d.p.det||10)/25;
   const rush=lead<0&&lead>=-7&&ms.t>=PEND[ms.half]-720&&ms.half!==1?1+.025*dk:1;
   let sk=scoreK(lead);if(sk>1)sk=1+(sk-1)*dk;
-  return d.p[k]*d.fit*d.fm*(.76+.24*d.en/100)*INTK[S.tac.int].perf*S.day*(d.side===0&&!ms.opt.neutral?1.055:1)*sk*rush;
+  return d.p[k]*d.fit*d.fm*(.76+.24*d.en/100)*INTK[S.tac.int].perf*S.day*S.mor*S.capK*(d.side===0&&!ms.opt.neutral?1.055:1)*sk*rush;
 }
-function kickerOf(ms,i){const a=active(ms.T[i]);return best(a.filter(d=>d.slot===8||d.slot===9||d.slot===14),'but')||best(a,'but')}
+function kickerOf(ms,i){const a=active(ms.T[i]),S=ms.T[i],kd=S.kickId&&a.find(d=>d.p.id===S.kickId);if(kd)return kd;return best(a.filter(d=>d.slot===8||d.slot===9||d.slot===14),'but')||best(a,'but')}
 function coverOf(ms,i){const b=active(ms.T[i]).filter(d=>d.slot>=10);return b.length?Math.max(...b.map(d=>.6*A(ms,d,'vit')+.4*A(ms,d,'pla'))):8}
 
 // ---- Création du match ----
@@ -58,12 +58,16 @@ function newMatch(hc,ac,opt={}){
     next:{k:'kickoff',team:0},dead:false,phase:0,quick:false,counter:false,tap:false,fromSet:false,terr:[0,0],done:false,
     view:{k:'kickoff',a:0},key:false,pause:false,winner:null,so:false};
   ms.T=[mkSide(ms,hc,0),mkSide(ms,ac,1)];
+  const date=opt.date||G.date;ms.wx=opt.wx||weatherFor(date,hc);ms.ref=opt.ref||refFor(date,hc);
+  for(const S of ms.T){S.capMain=S.club.captain&&S.on.some(d=>d&&d.p.id===S.club.captain)?S.club.captain:null;updateCaptain(ms,S)}
+  // discours d'avant-match : celui du joueur (G.talk), une petite motivation moyenne pour les clubs IA
+  for(const S of ms.T){if(S.club.id===G.meId){applyTalk(ms,S.i,G.talk||'motive',true);delete G.talk}else if(S.club.id!==G.meId)S.mor=clamp(1+R.n(.008,.008),.98,1.03)}
   evt(ms,-1,'info',`Coup d'envoi : ${hc.short} - ${ac.short}.`,1);
   return ms;
 }
 function mkSide(ms,club,i){
   // day = forme collective du jour (une équipe peut passer à côté de son match, ou être dans un grand jour)
-  const S={i,club,tac:club.id===G.meId?tacOf(club):aiTac(club),on:Array(15).fill(null),bench:[],auto:true,day:clamp(R.n(1,.02),.95,1.05),
+  const S={i,club,tac:club.id===G.meId?tacOf(club):aiTac(club),on:Array(15).fill(null),bench:[],auto:true,day:clamp(R.n(1,.02),.95,1.05),mor:1,capK:1,capId:null,kickId:club.kicker||null,disc:1,
     st:{pos:0,tac:0,mt:0,car:0,m:0,cle:0,rk:0,to:0,pc:0,mel:0,melW:0,tou:0,touW:0,err:0,kick:0,yc:0,off:0}};
   (club.lineup||[]).forEach((id,k)=>{
     const p=id!=null&&club.squad.find(x=>x.id===id);if(!p||ms.P[p.id])return;
@@ -123,6 +127,7 @@ function periodEnd(ms){
   evt(ms,-1,'half',`Fin du match : ${sc()}`,1);
 }
 function tickPlayers(ms,dt){
+  for(const S of ms.T)updateCaptain(ms,S);
   for(const S of ms.T){
     const tire=INTK[S.tac.int].tire;
     for(const d of S.on){
@@ -201,7 +206,7 @@ function doPhase(ms,a){
   let pd=0;
   if(p>=58&&p<=80&&ms.phase>=2){pd=.01*STY[tac.style].drop;if(ms.t>=end-600&&lead<=0&&lead>=-3)pd*=5;if(over&&lead<=0&&lead>=-3)pd=.5}
   if(R.f()<pd)return doDrop(ms,a);
-  let pk=p<22?.5:p<40?.28:p<55?.14:p<75?.04:.012;
+  let pk=(p<22?.5:p<40?.28:p<55?.14:p<75?.04:.012)*WX[ms.wx].kick;
   pk*=KICKS[tac.kick].k*(tac.style==='pied'?1.35:tac.style==='mouvement'?.8:1);
   if(ms.counter)pk*=1.3;
   if(ms.phase>=8&&p<50)pk*=1.5;
@@ -220,7 +225,7 @@ function doCarry(ms,a){
   ms.view={k:'open',a,c:car.p.id};ms.y=clamp(ms.y+R.n(0,9),4,66);
   car.s.car++;S.st.car++;
   // en-avant
-  if(R.f()<.035*(1+(12-car.p.mai)/30)*(st==='mouvement'?1.2:st==='conquete'?.85:1)){
+  if(R.f()<.035*(1+(12-car.p.mai)/30)*(st==='mouvement'?1.2:st==='conquete'?.85:1)*WX[ms.wx].err){
     car.s.err++;S.st.err++;ms.next={k:'scrum',team:d};
     evt(ms,a,'info',`En-avant de ${car.p.name} (${nm(ms,a)}). Mêlée pour ${nm(ms,d)}.`,0);return 10;
   }
@@ -241,13 +246,13 @@ function doCarry(ms,a){
     const pOff=.06*(car.p.pas+car.p.mai)/24*(st==='mouvement'?1.6:st==='conquete'?.6:1)*(car.slot<5?.4:1);
     if(R.f()<pOff){
       car.s.off++;S.st.off++;
-      if(R.f()<.14){car.s.err++;S.st.err++;setPa(ms,a,p+Math.max(0,gain));ms.next={k:'scrum',team:d};evt(ms,a,'info',`Passe après contact de ${car.p.name} ratée : en-avant, mêlée pour ${nm(ms,d)}.`,0);return 9}
+      if(R.f()<.14*WX[ms.wx].err){car.s.err++;S.st.err++;setPa(ms,a,p+Math.max(0,gain));ms.next={k:'scrum',team:d};evt(ms,a,'info',`Passe après contact de ${car.p.name} ratée : en-avant, mêlée pour ${nm(ms,d)}.`,0);return 9}
       gain+=clamp(R.n(6,4),1,20);ms.quick=true;if(R.f()<.18)brk=true;
     }
   }else{
     missed=true;if(tk){tk.s.mt++;D.st.mt++}
     gain=clamp(R.n(6+A(ms,car,'vit')*.3,4),2,30);
-    brk=R.f()<clamp(.3+(A(ms,car,'vit')*.6+A(ms,car,'evi')*.4-coverOf(ms,d))*.04+short*.06,.1,.7);
+    brk=R.f()<clamp(.3+(A(ms,car,'vit')*.6+A(ms,car,'evi')*.4-coverOf(ms,d))*.04+short*.06,.1,.7)*WX[ms.wx].brk;
   }
   if(brk){
     car.s.cle++;S.st.cle++;
@@ -287,8 +292,8 @@ function doRuck(ms,a,car,tk,dt){
   const short=15-def.length;
   const disc=x=>clamp(1+(11-(x.p.dec+x.p.sfr)/2)/22+(10-(x.p.pro||10))/45,.7,1.45);
   const pTO=j?clamp(.045*Math.exp((rJ-rA)/3.2)-short*.006,.01,.16):0;
-  const pPA=.03*INTK[S.tac.int].pen*disc(car)*(rJ>rA?1+(rJ-rA)*.08:1);
-  const pPD=.036*INTK[D.tac.int].pen*(j?disc(j):1)*(paOf(ms,a)>78?1.3:1)*(rA>rJ?1+(rA-rJ)*.06:1);
+  const pPA=.03*INTK[S.tac.int].pen*disc(car)*refK(ms)*S.disc*capDisc(ms,S)*(rJ>rA?1+(rJ-rA)*.08:1);
+  const pPD=.036*INTK[D.tac.int].pen*(j?disc(j):1)*refK(ms)*D.disc*capDisc(ms,D)*(paOf(ms,a)>78?1.3:1)*(rA>rJ?1+(rA-rJ)*.06:1);
   const u=R.f();
   if(ms.view.k==='open')ms.view.k='ruck';
   if(u<pTO){j.s.to++;D.st.to++;ms.phase=0;ms.next={k:'play',team:d};ms.counter=R.f()<.3;evt(ms,d,'info',`Ballon gratté par ${j.p.name} (${nm(ms,d)}) !`,1);return dt}
@@ -303,7 +308,7 @@ function foul(ms,f,o,why,dt,grave){
   if(o)o.s.pen++;F.st.pc++;
   ms.next={k:'pen',team:b};ms.phase=0;ms.quick=false;
   evt(ms,b,'info',`Pénalité pour ${nm(ms,b)} : ${why}${o?' ('+o.p.name+')':''}.`,1);
-  const pY=grave?.6:.045*(1+Math.max(0,F.st.pc-7)*.12)*(paOf(ms,b)>85?1.8:1)*INTK[F.tac.int].pen;
+  const pY=grave?.6:.045*(.56+ms.ref.sev/25)*(1+Math.max(0,F.st.pc-7)*.12)*(paOf(ms,b)>85?1.8:1)*INTK[F.tac.int].pen;
   if(o&&!o.sin&&o.slot>=0&&R.f()<pY)card(ms,o,grave?why:F.st.pc>=8&&R.f()<.5?'répétition des fautes':'faute grossière');
   return dt;
 }
@@ -341,7 +346,7 @@ function doKick(ms,a){
     const ca=pickW(active(D).filter(x=>x.slot>=10),()=>1);
     const pWin=clamp(.3+((ch?A(ms,ch,'mai'):10)-(ca?A(ms,ca,'mai'):10))*.03,.12,.55);
     if(R.f()<pWin){ms.next={k:'play',team:a};evt(ms,a,'info',`Chandelle de ${k.p.name}, ballon récupéré par ${ch?ch.p.name:nm(ms,a)} !`,1);return 8}
-    if(ca&&R.f()<.07){ca.s.err++;D.st.err++;ms.next={k:'scrum',team:a};evt(ms,d,'info',`${ca.p.name} relâche la chandelle : en-avant, mêlée pour ${nm(ms,a)}.`,0);return 10}
+    if(ca&&R.f()<.07*WX[ms.wx].err){ca.s.err++;D.st.err++;ms.next={k:'scrum',team:a};evt(ms,d,'info',`${ca.p.name} relâche la chandelle : en-avant, mêlée pour ${nm(ms,a)}.`,0);return 10}
     ms.next={k:'play',team:d};ms.counter=true;evt(ms,a,'info',`Chandelle de ${k.p.name}, bien captée par ${ca?ca.p.name:nm(ms,d)}.`,0);return 8;
   }
   // coup de pied long : chercher la touche ou le fond du terrain
@@ -357,7 +362,7 @@ function doKick(ms,a){
 }
 function doDrop(ms,a){
   const att=active(ms.T[a]),k=byNo(att,10)||best(att,'pie'),dist=100-paOf(ms,a);
-  const pS=clamp(.55-(dist-22)*.02+(A(ms,k,'pie')-12)*.03+(A(ms,k,'sfr')-12)*.01,.08,.7);
+  const pS=clamp(.55-(dist-22)*.02+(A(ms,k,'pie')-12)*.03+(A(ms,k,'sfr')-12)*.01+WX[ms.wx].goal*1.5,.05,.7);
   ms.view={k:'goal',a};ms.phase=0;
   if(R.f()<pS){ms.sc[a]+=3;ms.dr[a]++;k.s.pts+=3;ms.dead=true;ms.next={k:'kickoff',team:1-a};evt(ms,a,'drop',`Drop réussi par ${k.p.name} (${nm(ms,a)}) !`,2);return 40}
   setPa(ms,1-a,22);ms.next={k:'play',team:1-a};
@@ -380,7 +385,7 @@ function doPenalty(ms,a){
   }else if(ch==='points'&&dist>range+6)ch='touche';
   if(ch==='points'&&k){
     ms.view={k:'goal',a};
-    const pS=clamp(.96-Math.max(0,dist-20)*.016-(20-A(ms,k,'but'))*.022-(late&&Math.abs(lead)<=7?.04:0),.05,.96);
+    const pS=clamp(.96-Math.max(0,dist-20)*.016-(20-A(ms,k,'but'))*.022-(late&&Math.abs(lead)<=7?.04:0)+WX[ms.wx].goal,.05,.96);
     if(R.f()<pS){ms.sc[a]+=3;ms.pn[a]++;k.s.pts+=3;ms.dead=true;ms.next={k:'kickoff',team:d};evt(ms,a,'pen',`Pénalité réussie par ${k.p.name} (${nm(ms,a)}, ${Math.round(dist)} m).`,2);return 60}
     ms.dead=true;setPa(ms,d,22);ms.next={k:'play',team:d};
     evt(ms,a,'miss',`Pénalité manquée par ${k.p.name} (${nm(ms,a)}, ${Math.round(dist)} m).`,1);return 50;
@@ -405,7 +410,7 @@ function doScrum(ms,a){
   S.st.mel++;
   let dt=50;if(R.f()<.35)dt+=35;
   for(const T of[S,D])for(let k=0;k<8;k++)if(T.on[k]&&!T.on[k].sin)contact(ms,T.on[k],.4);
-  if(R.f()<.24){
+  if(R.f()<.24*Math.sqrt(refK(ms))){
     const w=R.f()<1/(1+Math.exp(-dif*1.1))?a:d,l=1-w;
     if(w===a)S.st.melW++;
     return foul(ms,l,pickW(active(ms.T[l]).filter(x=>x.slot<3),()=>1),'faute en mêlée',dt);
@@ -458,7 +463,7 @@ function scoreTry(ms,a,sc,how,wide){
   evt(ms,a,'try',`ESSAI ${nm(ms,a)} ! ${sc?sc.p.name:'?'} aplatit ${how}.`,2);
   const k=kickerOf(ms,a),lat=wide?R.i(10,33):R.i(0,15);
   ms.y=35+(R.f()<.5?-1:1)*lat;
-  if(R.f()<(k?clamp(.95-lat*.016-(20-A(ms,k,'but'))*.022,.15,.96):.5)){ms.sc[a]+=2;ms.cv[a]++;if(k)k.s.pts+=2;evt(ms,a,'conv',`Transformation réussie par ${k?k.p.name:'?'}.`,1)}
+  if(R.f()<(k?clamp(.95-lat*.016-(20-A(ms,k,'but'))*.022+WX[ms.wx].goal,.1,.96):.5)){ms.sc[a]+=2;ms.cv[a]++;if(k)k.s.pts+=2;evt(ms,a,'conv',`Transformation réussie par ${k?k.p.name:'?'}.`,1)}
   else evt(ms,a,'miss',`Transformation manquée (${k?k.p.name:'?'}).`,1);
   ms.dead=true;ms.next={k:'kickoff',team:d};ms.phase=0;
   return 100;
@@ -489,7 +494,7 @@ function matchResult(ms){
   const motm=ps.reduce((b,x)=>!b||x.r+(x.s===wi?.3:0)>b.r+(b.s===wi?.3:0)?x:b,null);
   const pos=ms.T[0].st.pos+ms.T[1].st.pos||1,ter=ms.terr[0]+ms.terr[1]||1;
   return{sh:ms.sc[0],sa:ms.sc[1],th:ms.tr[0],ta:ms.tr[1],ph:Math.round(ms.T[0].st.pos/pos*100),tp:Math.round(ms.terr[0]/ter*100),
-    pn:ms.pn,dr:ms.dr,cv:ms.cv,yc:[ms.T[0].st.yc,ms.T[1].st.yc],ev:ms.ev,bo:[bh,ba],winner,so:ms.so,
+    pn:ms.pn,dr:ms.dr,cv:ms.cv,wx:ms.wx,ref:ms.ref?{n:ms.ref.n,sev:ms.ref.sev}:null,cap:ms.T.map(S=>S.capId),yc:[ms.T[0].st.yc,ms.T[1].st.yc],ev:ms.ev,bo:[bh,ba],winner,so:ms.so,
     stats:[{...ms.T[0].st,m:Math.round(ms.T[0].st.m)},{...ms.T[1].st,m:Math.round(ms.T[1].st.m)}],ps,motm:motm?motm.id:null};
 }
 // ---- Match simulé d'un coup (clubs IA, ou résultat immédiat) ----

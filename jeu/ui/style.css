@@ -59,7 +59,8 @@ p{margin:6px 0}
 .g2r{grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))}
 /* match en direct */
 .lv-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px}
-.lv-sb{display:flex;align-items:center;gap:14px;font-size:18px}
+.lv-sb{display:flex;align-items:center;gap:10px 14px;font-size:18px;flex-wrap:wrap}
+#lv-clock{white-space:nowrap}
 .lv-sb .score{font-size:30px}
 .lv-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);gap:14px}
 .pitch{width:100%;height:auto;display:block;border-radius:8px;background:#2f7d45}

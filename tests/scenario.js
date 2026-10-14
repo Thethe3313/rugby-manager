@@ -8,10 +8,11 @@ const TABS=['home','mail','squad','youth','staff','lineup','cal','table','cups',
 function driveLive(game,label,check){
   const {run,app,elems}=game;
   const liveEls=()=>Object.values(elems).filter(e=>e.id.startsWith('lv-')).map(e=>e.innerHTML+' '+e.textContent+' '+(e.style.transform||'')+' '+(e.style.opacity??'')).join('\n');
+  run(`ACT.talk({},{value:'exige'});ACT.role({k:'captain'},{value:String(ME().lineup[1])});ACT.role({k:'kicker'},{value:String(ME().lineup[14])})`);
   run('ACT.goLive()');check(label+':live-debut',app.innerHTML);
   let n=0,subDone=false;
   while(!run('UI.live.ms.done')&&n++<3000){
-    if(run('UI.live.paused')){check(label+':live-pause',app.innerHTML);run('ACT.livePause()')}
+    if(run('UI.live.paused')){check(label+':live-pause',app.innerHTML);if(run('UI.live.htTalk'))run(`ACT.liveTalk({v:'exiger'})`);check(label+':live-discours',app.innerHTML);run('ACT.livePause()')}
     run('liveTick()');
     if(n%40===0)check(label+':live-maj',liveEls());
     if(n===20)run(`ACT.liveSpeed({v:'forts'})`);
