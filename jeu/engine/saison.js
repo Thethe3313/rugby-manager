@@ -35,7 +35,7 @@ function newGame(meId){
   G.clubs=CLUBS0.map(c=>mkClub(c,'t14')).concat(PD2CLUBS.map(c=>mkClub(c,'pd2')),NATCLUBS.map(c=>mkClub(c,'nat')),N2CLUBS.map(c=>Object.assign(mkClub(c,'n2'),{poule:c[4]})));
   initAMD();
   // carrière plus bas (Fédérale, Régionale) : le club choisi reçoit un effectif complet
-  if(!C(meId))for(const k of AMORDER){const a=takeLight(k,meId);if(a){const c=mkClub([a.id,a.name,a.short,a.str],k);c.poule=a.poule;if(a.f)c.fict=1;G.clubs.push(c);break}}
+  if(!C(meId))for(const k of AMORDER){const a=takeLight(k,meId);if(a){const c=mkClub([a.id,a.name,a.short,a.str],k);c.poule=a.poule;if(a.f)c.fict=1;if(a.reg)c.reg=a.reg;G.clubs.push(c);break}}
   G.clubs.forEach(initYouth);
   genFA(40);
   genStaffPool();

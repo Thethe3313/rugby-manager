@@ -10,7 +10,11 @@ const f3=B.f3_2026_27.map(p=>p.filter(n=>n!=='Arcachon')); // le RC Bassin d'Arc
 const inF3=new Set(f3.flat());
 // Fédérale 2 2026-27 (pas de page) : les clubs de 2025-26 qui ne sont ni montés en Fédérale 1 ni descendus en Fédérale 3
 const f2=B.f2_2025_26.map(p=>p.map(n=>n.replace(/\s*\(.*\)/,'')).filter(n=>!inF3.has(n)&&!F1.includes(n)));
-// Régionales : clubs fictifs, nommés d'après de vraies communes (une « région type », même nombre de clubs par niveau ; on écarte les communes qui ont déjà un vrai club en Fédérale)
+// Régionales 1 à 3 : vrais clubs de Nouvelle-Aquitaine et de Provence-Alpes-Côte d'Azur (Mon Club House, FFR)
+const RG=JSON.parse(fs.readFileSync(path.join(ROOT,'recherche','amateur','brut','regionales.json'),'utf8'));
+const tidy=n=>n.replace(/s+/g,' ').replace(/^Rubgy /,'Rugby ').replace(/ Rug$/,' Rugby').trim();
+const regp={};for(const k of['r1','r2','r3'])regp[k]=[['na',RG.na[k]],['paca',RG.paca[k]]].flatMap(([reg,ps])=>ps.map(p=>[reg,p.filter(n=>!/^Club Exempt/.test(n)).map(tidy)]));
+// Clubs fictifs de réserve (pour compléter la Régionale 3 si elle manque de clubs) : nommés d'après de vraies communes (une « région type », même nombre de clubs par niveau ; on écarte les communes qui ont déjà un vrai club en Fédérale)
 const COMMUNES=['Saint-Affrique','Millau','Rodez','Villefranche-de-Rouergue','Figeac','Gourdon','Souillac','Moissac','Castelsarrasin','Lectoure','Condom','Eauze','Nogaro','Mirande','Vic-Fezensac','Samatan','Lombez','Muret','Carbonne','Saint-Gaudens',
   'Montréjeau','Revel','Villefranche-de-Lauragais','Caraman','Lavaur','Rabastens','Carmaux','Réalmont','Lacaune','Saint-Juéry','Labruguière','Lautrec','Puylaurens','Castelnaudary','Limoux','Quillan','Lézignan','Sigean','Port-la-Nouvelle','Capendu',
   'Trèbes','Bram','Pamiers','Foix','Lavelanet','Mirepoix','Tarascon-sur-Ariège','Saverdun','Mazères','Varilhes','Lannemezan','Tournay','Rabastens-de-Bigorre','Vic-en-Bigorre','Maubourguet','Argelès-Gazost','Lourdes','Bagnères','Trie-sur-Baïse','Castelnau-Magnoac',
@@ -27,9 +31,11 @@ fs.writeFileSync(path.join(ROOT,'jeu','data','amateur.js'),`'use strict';
 // ==== CLUBS AMATEURS (généré par outils/generer-amateur.js depuis recherche/amateur/brut/) ====
 // F2POULES : Fédérale 2 (clubs 2025-26 sans ceux montés en Fédérale 1 ou descendus en Fédérale 3 ; pas de page 2026-27).
 // F3POULES : Fédérale 3 2026-27 (16 poules). Noms : ville du club, comme sur Wikipédia.
-// REGCLUBS : Régionale 1, 2 et 3, clubs FICTIFS nommés d'après de vraies communes (aucune liste publique exploitable).
+// REGPOULES : Régionales 1, 2 et 3 de Nouvelle-Aquitaine (na) et de Provence-Alpes-Côte d'Azur (paca), vraies poules 2026-27 : [région, [clubs]].
+// REGFICT : clubs FICTIFS (noms de vraies communes) qui servent seulement à compléter la Régionale 3.
 const F2POULES=${JSON.stringify(f2)};
 const F3POULES=${JSON.stringify(f3)};
-const REGCLUBS=${JSON.stringify(reg)};
+const REGPOULES=${JSON.stringify(regp)};
+const REGFICT=${JSON.stringify(reg.flat())};
 `);
-console.log('Fédérale 2 :',f2.flat().length,'clubs ·','Fédérale 3 :',f3.flat().length,'clubs ·','Régionales :',reg.flat().length,'clubs fictifs');
+console.log('Fédérale 2 :',f2.flat().length,'clubs ·','Fédérale 3 :',f3.flat().length,'clubs ·','Régionales :',Object.values(regp).map(l=>l.flatMap(p=>p[1]).length).join(' / '),'vrais clubs ·',reg.flat().length,'clubs fictifs de réserve');

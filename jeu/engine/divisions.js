@@ -89,9 +89,9 @@ const AMLV={
   f1:{name:'Fédérale 1',size:24,ps:12,str:[44,50],bud:700,start:'09-06'},
   f2:{name:'Fédérale 2',size:80,ps:10,str:[40,45],bud:400,start:'09-13'},
   f3:{name:'Fédérale 3',size:160,ps:10,str:[36,41],bud:250,start:'09-13'},
-  r1:{name:'Régionale 1',size:30,ps:10,str:[33,37],bud:150,start:'09-20'},
-  r2:{name:'Régionale 2',size:30,ps:10,str:[30,34],bud:110,start:'09-20'},
-  r3:{name:'Régionale 3',size:30,ps:10,str:[26,30],bud:80,start:'09-20'}};
+  r1:{name:'Régionale 1',size:50,ps:10,str:[33,37],bud:150,start:'09-20'},
+  r2:{name:'Régionale 2',size:70,ps:10,str:[30,34],bud:110,start:'09-20'},
+  r3:{name:'Régionale 3',size:50,ps:10,str:[26,30],bud:80,start:'09-20'}};
 const AMORDER=Object.keys(AMLV);
 const isAmLg=lg=>!!AMLV[lg];
 // la Fédérale 1 devient la Nationale 3 en 2027-28 (réforme de la FFR)
@@ -101,15 +101,18 @@ for(const k of AMORDER)LEAGUES[k]={get name(){return amName(k)},rounds:18,am:tru
 const amUp=k=>k==='f1'?'n2':AMORDER[AMORDER.indexOf(k)-1],amDown=k=>AMORDER[AMORDER.indexOf(k)+1]||null;
 // Championnats joués cette saison avec de vrais matchs : Top 14 à Nationale 2, plus la poule du joueur s'il est plus bas
 const lgs=()=>isAmLg(ME().lg)&&G.L&&G.L[ME().lg]?LGORDER.concat(ME().lg):LGORDER;
-// Club « léger » : f = fictif (Régionales)
-function amRec(id,name,k,poule,fict){const[a,b]=AMLV[k].str,r={id,name,short:amShort(name),str:Math.round(a+hashN(name)*(b-a)),poule};if(fict)r.f=1;return r}
+// Régionales : deux ligues seulement, Nouvelle-Aquitaine (na) et Provence-Alpes-Côte d'Azur (paca) ; un club ne change jamais de ligue
+const REGNAME={na:'Nouvelle-Aquitaine',paca:"Provence-Alpes-Côte d'Azur"};
+const pickReg=()=>R.f()<.8?'na':'paca'; // club venu de Fédérale 3 sans ligue connue (environ 80 % des clubs sont en Nouvelle-Aquitaine)
+// Club « léger » : f = fictif, reg = ligue (Régionales)
+function amRec(id,name,k,poule,fict,reg){const[a,b]=AMLV[k].str,r={id,name,short:amShort(name),str:Math.round(a+hashN(name)*(b-a)),poule};if(fict)r.f=1;if(reg)r.reg=reg;return r}
 function initAMD(){
-  G.AMD={};
+  G.AMD={reg2:1};
   const src={f1:[F1POULES,'f'],f2:[F2POULES,'g'],f3:[F3POULES,'h']};
   for(const k of AMORDER){
     const clubs=[];
     if(src[k])src[k][0].forEach((pl,pi)=>pl.forEach((n,i)=>clubs.push(amRec(src[k][1]+pi+'_'+i,n,k,pi))));
-    else REGCLUBS[AMORDER.indexOf(k)-3].forEach((n,i)=>clubs.push(amRec(k+'_'+i,n,k,Math.floor(i/AMLV[k].ps),true)));
+    else REGPOULES[k].forEach(([reg,pl],pi)=>pl.forEach((n,i)=>clubs.push(amRec(k+'_'+pi+'_'+i,n,k,pi,false,reg))));
     G.AMD[k]={clubs,poules:0,table:{},fixtures:[],dates:[],week:0,phase:'done'};
   }
 }
@@ -118,16 +121,22 @@ function amC(id){const c=C(id);if(c)return c;if(G.AMD)for(const k of AMORDER){co
 const amOff=d=>{const mo=+d.slice(5,7),dd=+d.slice(8,10);return(mo===12&&dd>=20)||(mo===1&&dd<=3)}; // trêve de Noël
 function startAMD(skip){
   if(!G.AMD)initAMD();
+  if(!G.AMD.reg2)realRegionales();
   const m=ME();
   for(const k of AMORDER){
     if(skip&&skip.includes(k))continue;
     const A=G.AMD[k],mine=m.lg===k,all=A.clubs.concat(mine?[m]:[]);
-    const P=Math.max(1,Math.round(all.length/AMLV[k].ps));
+    // Régionales : poules tirées dans chaque ligue (A.preg = ligue de chaque poule)
+    if(k[0]==='r')for(const c of all)if(!c.reg)c.reg=pickReg();
+    const groups=k[0]==='r'?['na','paca'].map(g=>all.filter(c=>c.reg===g)).filter(g=>g.length):[all];
+    const sizes=groups.map(g=>Math.max(1,Math.round(g.length/AMLV[k].ps))),P=sizes.reduce((x,y)=>x+y,0);
     // nouvelles poules chaque saison (la première saison garde les vraies poules)
-    if(G.season>1||all.some(c=>c.poule==null||c.poule>=P))shuffle(all).forEach((c,i)=>c.poule=i%P);
+    A.preg=[];
+    if(G.season>1||all.some(c=>c.poule==null||c.poule>=P)){let o=0;groups.forEach((g,gi)=>{shuffle(g).forEach((c,i)=>c.poule=o+i%sizes[gi]);o+=sizes[gi]})}
+    for(let i=0;i<P;i++){const c=all.find(x=>x.poule===i);A.preg.push(c&&c.reg||null)}
     A.poules=P;
     if(mine){ // la poule du joueur : vrais effectifs, vrai championnat
-      for(const a of A.clubs.filter(c=>c.poule===m.poule)){const c=mkClub([a.id,a.name,a.short,a.str],k);c.poule=a.poule;c.youth=[];c.amStr=a.str;if(a.f)c.fict=1;G.clubs.push(c)}
+      for(const a of A.clubs.filter(c=>c.poule===m.poule)){const c=mkClub([a.id,a.name,a.short,a.str],k);c.poule=a.poule;c.youth=[];c.amStr=a.str;if(a.f)c.fict=1;if(a.reg)c.reg=a.reg;G.clubs.push(c)}
       A.clubs=A.clubs.filter(c=>c.poule!==m.poule);
     }
     const per=[...Array(P)].map((_,i)=>{const ids=A.clubs.filter(c=>c.poule===i).map(c=>c.id);if(ids.length<2)return[];if(ids.length%2)ids.push(null);return mkFixtures(shuffle(ids))});
@@ -215,16 +224,17 @@ const amBud=lg=>AMLV[lg]?AMLV[lg].bud:lg==='n2'?1300:3000;
 function moveFull(c,to){const up=LEVEL[to]<LEVEL[c.lg];c.lg=to;c.bud=up?Math.max(Math.round(c.bud*1.5),amBud(to)):Math.max(Math.round(c.bud*.65),Math.round(amBud(to)*.8));c.youth=c.youth||[]}
 // Un club complet redevient « léger » (fin de saison) : il retrouve son niveau de départ (amStr)
 function toLight(c,k){
-  G.AMD[k].clubs.push({id:c.id,name:c.name,short:c.short,str:c.amStr||Math.min(c.str,50),poule:0,...(c.fict?{f:1}:{})});
+  G.AMD[k].clubs.push({id:c.id,name:c.name,short:c.short,str:c.amStr||Math.min(c.str,50),poule:0,...(c.fict?{f:1}:{}),...(c.reg?{reg:c.reg}:{})});
   G.clubs=G.clubs.filter(x=>x.id!==c.id);
 }
 function takeLight(k,id){const A=G.AMD[k],a=A.clubs.find(x=>x.id===id);if(a)A.clubs=A.clubs.filter(x=>x!==a);return a}
-// Nouveau club fictif en Régionale 3 (« Entente » de deux communes)
+// Nouveau club fictif en Régionale 3 (seulement si elle manque de clubs) : nom de réserve, sinon « Entente » de deux communes
 function newRegClub(){
   const used=new Set(AMORDER.flatMap(k=>G.AMD[k].clubs.map(c=>c.name)).concat(G.clubs.map(c=>c.name)));
-  const towns=REGCLUBS.flat().map(n=>n.replace(/^(US|RC|AS|SC|Stade|Entente|Rugby Club|Avenir|Union|Rugby) /,''));
-  let name;for(let i=0;i<50;i++){name='Entente '+R.pick(towns)+'-'+R.pick(towns);if(!used.has(name))break}
-  return amRec('x'+G.nid++,name,'r3',0,true);
+  const towns=REGFICT.map(n=>n.replace(/^(US|RC|AS|SC|Stade|Entente|Rugby Club|Avenir|Union|Rugby) /,''));
+  let name=REGFICT.find(n=>!used.has(n));
+  for(let i=0;!name&&i<50;i++){const x='Entente '+R.pick(towns)+'-'+R.pick(towns);if(!used.has(x))name=x}
+  return amRec('x'+G.nid++,name||'Entente '+G.nid,'r3',0,true,pickReg());
 }
 function applyAmMoves(mv){
   const m=ME();
@@ -278,6 +288,17 @@ function migrateAmateur(){
       for(const k of AMORDER)if(k!=='f1'||!old){const A=G.AMD[k];while(A.week<A.dates.length&&A.dates[A.week]<=G.date)A.week++;if(A.week>=A.fixtures.length)A.phase='done'}
     }
   }
+  // le joueur entraîne en Régionale : on attend la saison suivante (startAMD) pour ne pas changer sa poule en cours
+  if(!G.AMD.reg2&&!(ME().lg[0]==='r'&&isAmLg(ME().lg))){
+    realRegionales();
+    if(G.phase==='season'){startAMD(['f1','f2','f3']);for(const k of ['r1','r2','r3']){const A=G.AMD[k];while(A.week<A.dates.length&&A.dates[A.week]<=G.date)A.week++;if(A.week>=A.fixtures.length)A.phase='done'}}
+  }
+}
+// Parties créées avec les Régionales fictives (étape F2) : vrais clubs de Nouvelle-Aquitaine et de PACA à la place
+function realRegionales(){
+  const keep=G.AMD;initAMD();const fresh=G.AMD;G.AMD=keep;
+  for(const k of ['r1','r2','r3'])G.AMD[k]=fresh[k];
+  G.AMD.reg2=1;
 }
 // Championnat (structure commune Top 14, Pro D2, Nationale, Nationale 2, et poule du joueur plus bas)
 function buildLeague(lg){
