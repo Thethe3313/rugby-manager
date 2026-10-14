@@ -96,12 +96,9 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - Montées et descentes en cascade jusqu'en Régionale 3 ; tailles visées : 24 clubs en Nationale 3, 80 en Fédérale 2, 160 en Fédérale 3, 50 / 70 / 50 en Régionales 1 / 2 / 3. Une descente ne coûte plus jamais ta place.
   - Les anciennes parties reçoivent les nouvelles divisions automatiquement.
 
+- **Point sur l'interface (14 octobre 2026)** : deux mises en page. Ordinateur presque inchangé (bandeau sur une ligne) ; téléphone refait (bandeau compact, barre du bas avec Continuer toujours visible, tableaux resserrés). Tutoriel de 5 étapes pour les nouvelles parties, écran de départ par onglets de divisions. Méthode : captures avant / après (`outils/captures.js`) validées par le joueur avant intégration.
+
 ## ▶️ Prochaine étape
-
-### Point sur l'interface
-- La rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
-
-## 📋 À faire ensuite (dans l'ordre)
 
 1. **Application** :
    - Version installable : déjà préparée (manifeste, icônes, service worker), il reste à héberger le dossier `jeu/` en ligne ; puis Android et iOS.
