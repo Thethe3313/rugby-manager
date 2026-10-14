@@ -3,6 +3,11 @@
 Jeu de gestion de club de rugby à XV, façon Football Manager : du Top 14 à la Régionale 3 (effectifs réels 2026-27 en Top 14 et Pro D2, vrais clubs jusqu'en Fédérale 3), coupes d'Europe et championnats étrangers.
 
 ## Jouer
+**En ligne (ordinateur ou téléphone) : https://thethe3313.github.io/rugby-manager/**
+- Sur téléphone : ouvre l'adresse dans Chrome (Android) ou Safari (iPhone), puis « Ajouter à l'écran d'accueil » (Android : menu ⋮ ; iPhone : bouton Partager). Le jeu s'ouvre alors en plein écran et marche sans réseau.
+- Le site est mis à jour automatiquement à chaque envoi du projet sur GitHub (`git push`).
+
+Sur cet ordinateur, sans internet :
 - **Double-clic sur « Rugby Manager »** (le raccourci avec le ballon) : le jeu s'ouvre dans sa propre fenêtre, comme une appli.
 - Pour l'avoir sous la main : clic droit sur le raccourci → « Épingler à la barre des tâches » ou « Épingler à l'écran de démarrage ».
 - Si le dossier est déplacé, le raccourci ne marche plus : relance `outils\creer-raccourci.ps1` (clic droit → « Exécuter avec PowerShell »).

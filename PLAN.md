@@ -98,6 +98,8 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 - **Point sur l'interface (14 octobre 2026)** : deux mises en page. Ordinateur presque inchangé (bandeau sur une ligne) ; téléphone refait (bandeau compact, barre du bas avec Continuer toujours visible, tableaux resserrés). Tutoriel de 5 étapes pour les nouvelles parties, écran de départ par onglets de divisions. Méthode : captures avant / après (`outils/captures.js`) validées par le joueur avant intégration.
 
+- **Mise en ligne (14 octobre 2026)** : jeu publié sur https://thethe3313.github.io/rugby-manager/ (GitHub Pages), installable sur téléphone depuis le navigateur.
+
 ## ▶️ Prochaine étape
 
 1. **Application** :

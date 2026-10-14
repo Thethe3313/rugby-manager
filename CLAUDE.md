@@ -61,6 +61,9 @@ Lis `recherche/METHODE.md` avant de toucher aux notes. Pour améliorer une note,
 - Le joueur veut des notes toujours plus justes : corriger dès qu'un joueur est signalé comme mal noté. Méthode : vérifier ses 3 saisons sur le web, appliquer la grille, corriger `recherche/effectifs/<club>.json` **et** l'entrée de `REAL` dans `jeu/data/joueurs.js`, puis ajouter la correction à `NOTEFIX` (`jeu/data/corrections.js`) pour que les parties en cours en profitent. Même chose pour la personnalité (estimée : valeurs tirées du nom, bonus pour les stars et les internationaux).
 - **Anciennes sauvegardes** : toute nouvelle donnée doit être ajoutée aux parties existantes dans `migrateSave()` (`engine/saison.js`, appelée au chargement et à l'import), sans casser la partie en cours.
 
+## Publication
+Dépôt public https://github.com/Thethe3313/rugby-manager (e-mail des commits : adresse noreply de GitHub, réglée dans la config locale du dépôt). `.github/workflows/pages.yml` publie `jeu/` sur https://thethe3313.github.io/rugby-manager/ à chaque push sur `main`. Le service worker (`jeu/sw.js`) prend le réseau d'abord : les joueurs reçoivent la nouvelle version au prochain lancement. Outil GitHub : `C:Program FilesGitHub CLIgh.exe` (connecté au compte Thethe3313).
+
 ## Tests
 Pas de framework : des scripts Node dans `tests/` (Node et git sont installés ; dans un terminal ouvert avant leur installation, recharger le PATH). `tests/harness.js` charge les scripts de la page dans l'ordre, avec un faux `document`, un faux `localStorage` et un hasard à graine possible.
 - `node tests/test.js [--seasons 2] [--club pau,per]` : saisons complètes pilotées par les actions `ACT` (un match sur trois en direct, avec pause, vitesses, consignes et remplacement), rendu de chaque écran et vérification de l'absence de `undefined`, `NaN` et `[object Object]`. **À lancer après chaque modification.**
