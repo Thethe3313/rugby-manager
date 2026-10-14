@@ -17,8 +17,9 @@ Le projet est versionné avec git (branche `main`). Organisation du dossier (voi
 2. **`engine/`** (moteur, en `'use strict'`) :
    - `base.js` : hasard `R`, postes `SLOTS`, attributs `ATTRS`/`W`/`PROF`, styles `STY`, clubs, `LEAGUES`, `ovrAt`, `effAt`, compositions, `teamCalc`.
    - `match.js` : moteur de match phase par phase (voir plus bas).
+   - `personnalite.js` : `pro`/`amb`/`det` sur 20 (`realPers`, `ensurePers`, `persLabel`, `weeklyBehaviour`). `staff.js` : six postes `SROLES` (`av tq but pp med rec`) notés sur 20 dans `club.staff` (`staffQ` : 10 = neutre, poste vacant = 4), marché `G.staffPool`, `hireStaff`, `staffSeasonEnd`, effets `coachK` (progression), `recoverK` (forme), `injRiskK` (blessures). Le staff est payé à part (`G.fin.staff`) ; `club.staffRef` = son coût de départ, déjà retiré des frais fixes.
    - `championnat.js` (`stepLeague`, `playFixtures`, phases finales, barrages), `economie.js` (`CLUBINFO`, `capOf`, `salaryFor`, `valueOf`, `askFee`, `wageDemand`), `joueurs.js` (`buildAttrs`, `realPlayer`, `afterMatch`), `mercato.js` (`doTransfer`, `evalOffer`, `genOffers`, `aiMercato`), `saison.js` (`newGame`, `startSeason`, `finishSeason`, `nextSeason`), `calendrier.js`, `messagerie.js` (`mail`), `jour.js` (`dailyUpdate`, `dayStep`, `advance`, `liveDue`), `espoirs.js` (`genYouthPlayer`, `realYouth`, `youthIntake`, `youthSeasonEnd`).
-3. **`ui/`** : `style.css` ; `base.js` (`render`, sauvegarde `localStorage` clé `SAVE_KEY`) ; `ecrans.js`, `affichage.js`, `ecrans-gestion.js` (fonctions `view*`) ; `fenetres.js` (fenêtres : fiche joueur, négociation, résumé de match) ; `match-direct.js` (avant-match, direct, terrain 2D) ; `actions.js` (objet `ACT` des actions, clics délégués via `data-a`, et le `render()` de démarrage, toujours en dernier).
+3. **`ui/`** : `style.css` ; `base.js` (`render`, sauvegarde `localStorage` clé `SAVE_KEY`) ; `ecrans.js`, `affichage.js`, `ecrans-gestion.js` (fonctions `view*`) ; `fenetres.js` (fenêtres : fiche joueur, négociation, résumé de match) ; `match-direct.js` (avant-match, direct, terrain 2D) ; `staff.js` (onglet Staff, marché du staff) ; `actions.js` (objet `ACT` des actions, clics délégués via `data-a`, et le `render()` de démarrage, toujours en dernier).
 
 ### Moteur de match (`engine/match.js`)
 - `newMatch(h, a, opt)` crée l'état du match, `matchStep(ms)` joue **une action** (coup d'envoi, temps de jeu porteur → plaquage → ruck, jeu au pied, touche, mêlée, ballon porté, pénalité), `matchResult(ms)` donne le résultat, `simMatch` enchaîne tout d'un coup. Le direct et les matchs simulés utilisent exactement le même moteur.
@@ -47,7 +48,8 @@ Lis `recherche/METHODE.md` avant de toucher aux notes. Pour améliorer une note,
 - **Règles LNR** : bonus offensif = au moins 3 essais de plus que l'adversaire, bonus défensif = défaite de 5 points ou moins. Les 6 premiers vont en phases finales.
 - **Pas de descente programmée** pour un promu : seule la qualité de la gestion compte.
 - **Potentiel** : note sur 99 (pas d'étoiles), affichage réglable (affiché ou masqué). Le potentiel est exact pour ses propres joueurs et estimé (« ≈ ») pour les autres. Celui des vrais joueurs est tiré dans une fourchette à chaque nouvelle partie (`potDraw` pour les espoirs, `initPot(…, R.f())` pour les jeunes pros).
-- Le joueur veut des notes toujours plus justes : corriger dès qu'un joueur est signalé comme mal noté.
+- Le joueur veut des notes toujours plus justes : corriger dès qu'un joueur est signalé comme mal noté. Même chose pour la personnalité (estimée : valeurs tirées du nom, bonus pour les stars et les internationaux).
+- **Anciennes sauvegardes** : toute nouvelle donnée doit être ajoutée aux parties existantes dans `migrateSave()` (`engine/saison.js`, appelée au chargement et à l'import), sans casser la partie en cours.
 
 ## Tests
 Pas de framework : des scripts Node dans `tests/` (Node et git sont installés ; dans un terminal ouvert avant leur installation, recharger le PATH). `tests/harness.js` charge les scripts de la page dans l'ordre, avec un faux `document`, un faux `localStorage` et un hasard à graine possible.

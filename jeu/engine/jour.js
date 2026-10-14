@@ -5,16 +5,19 @@ function dailyUpdate(){
   if(G.date&&G.date.endsWith('-03-15'))youthIntake();
   for(const c of G.clubs){
     const ks=FOCUSK[c.focus],lgK=c.lg==='t14'?1:c.lg==='pd2'?.85:.7;
+    // staff : récupération (préparateur physique), retours de blessure plus rapides (médecin au-dessus de 10/20)
+    const rec=recoverK(c),medFast=(staffQ(c,'med')-10)/40,detK=new Set(['pla','dec','sfr','lea','eng']);
     for(const p of c.squad){
-      if(p.inj>0&&!p.ni)p.inj--;
+      if(p.inj>0&&!p.ni){p.inj--;if(p.inj>0&&R.f()<medFast)p.inj--}
       p.ni=false;
-      p.forme=clamp(p.forme+(p.inj>0?1:3.2),20,100);
+      p.forme=clamp(p.forme+(p.inj>0?1:3.2*rec),20,100);
       if(p.inj>0)continue;
       const o=ovr(p),gap=(p.pot||o)-o;if(gap<=0)continue;
       const base=p.age<=20?.010:p.age<=23?.007:p.age<=26?.004:p.age<=29?.002:0;if(!base)continue;
       const play=.35+.9*(c.mp?playShare(p,c):.5),pro=.6+(p.pro||10)/20*.8;
       const da=base*gap*play*pro*lgK*(R.f()*.6+.7)/7*19/79;
-      for(const key in W[p.g])p[key]=Math.min(20,p[key]+da);
+      // chaque attribut progresse selon l'entraîneur concerné ; le mental aussi selon la détermination
+      for(const key in W[p.g])p[key]=Math.min(20,p[key]+da*coachK(c,p,key)*(detK.has(key)?.9+(p.det||10)/100:1));
       if(c.focus!=='equilibre')for(const key of ks)p[key]=Math.min(20,p[key]+da*.3);
     }
   }
@@ -36,7 +39,7 @@ function dayStep(){
       if(!due||due>G.date)continue;
       clubsIn(lg).forEach(setMatchLineup);
       const reg=L.phase==='regular';
-      if(lg===m.lg&&reg){const R_=LEAGUES[m.lg].rounds,inc=Math.round(m.bud*.72/R_),w=Math.round(mass(m)/R_),fx=Math.round(m.fixed/R_);m.budget+=inc-w-fx;G.fin.sponsor+=inc;G.fin.wages+=w;G.fin.opex+=fx}
+      if(lg===m.lg&&reg){const R_=LEAGUES[m.lg].rounds,inc=Math.round(m.bud*.72/R_),w=Math.round(mass(m)/R_),fx=Math.round(m.fixed/R_),sf=Math.round(staffMass(m)/R_);m.budget+=inc-w-fx-sf;G.fin.sponsor+=inc;G.fin.wages+=w;G.fin.opex+=fx;G.fin.staff=(G.fin.staff||0)+sf}
       const r=stepLeague(lg);
       if(r&&lg===m.lg){mine=r;
         if(r.h===m.id&&!r.ko){const R_=LEAGUES[m.lg].rounds,n=clubsIn(m.lg).length,rk=rankOf(m.id)||n/2,attF=.85+.3*(1-(rk-1)/(n-1));const rev=Math.round(m.bud*.28/(R_/2)*attF);m.budget+=rev;G.fin.ticket+=rev;r.att=Math.round((m.lg==='t14'?14000:5000)*attF*(.9+R.f()*.2))}}
@@ -57,7 +60,7 @@ function dayStep(){
   if(G.phase==='season'&&wBefore!==wAfter)mail('Directeur sportif',wAfter?`Ouverture du mercato ${wAfter==='hiver'?'d\'hiver':'d\'été'}`:'Fermeture du mercato',wAfter?'La fenêtre de transferts est ouverte. Tu peux acheter, vendre et recevoir des offres.':'La fenêtre de transferts est fermée. Restent possibles : les joueurs libres (jokers) et les pré-contrats.',{act:{tab:'market'}});
   if(G.phase==='season'||G.phase==='access'){
     const nx=myNextMatch();if(nx&&dDiff(G.date,nx.d)===1)scoutReport(nx);
-    if(dDow(G.date)===1)fitnessReport();
+    if(dDow(G.date)===1){fitnessReport();weeklyBehaviour()}
     if(G.date.endsWith('-01'))monthlyMails();
     if(G.date.endsWith('-01-02')){const ex=m.squad.filter(p=>p.ctr<=1).sort((a,b)=>ovr(b)-ovr(a));if(ex.length)mail('Directeur sportif','Contrats qui arrivent à échéance',`${ex.length} joueur(s) sont en dernière année de contrat :<br>${ex.slice(0,12).map(p=>`${p.name} (${posL(p)}, ${Math.round(ovr(p))})`).join('<br>')}<br><br>Pense à les prolonger, sinon ils partiront libres en fin de saison — et les autres clubs peuvent déjà leur proposer un pré-contrat.`,{act:{tab:'squad'}})}
   }

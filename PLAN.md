@@ -40,22 +40,30 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
   - **Potentiel en fourchette** : celui des vrais jeunes est tiré au hasard à chaque nouvelle partie.
   - Prolongation puis tirs au but en phases finales.
 
+- **Étape B — Staff et personnalité (14 octobre 2026)** :
+  - **Personnalité** visible sur la fiche de chaque joueur : professionnalisme, ambition, détermination (sur 20) et une étiquette (« Modèle de professionnalisme », « Très ambitieux », « Peu fiable »…).
+    - Le professionnalisme accélère la progression, ralentit le déclin après 30 ans et réduit les fautes en match ; un joueur peu professionnel peut avoir des écarts de conduite (forme en baisse, message du staff).
+    - L'ambition joue sur les salaires demandés et le refus de rejoindre un club plus faible, et un ambitieux réclame plus vite du temps de jeu.
+    - La détermination aide à réagir quand l'équipe est menée, fait progresser le mental et fait « exploser » plus souvent les jeunes. Les leaders déterminés tirent le groupe.
+  - **Staff** (nouvel onglet) : entraîneurs des avants, des trois-quarts et des buteurs, préparateur physique, médecin, recruteur, notés sur 20. Ils agissent sur la progression (jusqu'à ±20 %), la récupération, le déclin, les blessures et leur durée, et la précision du potentiel estimé.
+  - **Recrutement du staff** : marché des techniciens libres renouvelé chaque été, salaires selon la qualité et la division, contrats de 1 à 3 ans, indemnité si on remplace quelqu'un, prolongations à l'intersaison, poste vacant si on oublie. Salaires du staff dans les finances.
+  - Les anciennes sauvegardes reçoivent automatiquement personnalités et staff.
+
 ## ▶️ Prochaine étape
 
-### Étape B — Staff et personnalité
-- Personnalité visible (professionnalisme, ambition, détermination) qui influence la progression, le comportement et les négociations.
-- Staff : entraîneurs (avants, trois-quarts, buteurs, préparation physique), médecin, recruteurs. Leur qualité influence la progression, la récupération et la précision des estimations de potentiel.
-- Recrutement du staff, avec contrats et salaires.
+### Étape C — Coupes d'Europe
+- Champions Cup (4 poules de 6, bonus offensif à 3 essais d'écart, défensif à 7 points) et Challenge Cup.
+- Qualification depuis le classement du Top 14 (et de la Pro D2 pour la Challenge Cup), clubs étrangers (URC, Premiership) avec des effectifs simplifiés en attendant l'étape suivante.
+- Calendrier : les week-ends de coupe d'Europe déjà réservés dans le calendrier du Top 14.
 
 ## 📋 À faire ensuite (dans l'ordre)
 
 1. **Match en direct, suite (idées)** : discours d'avant-match et de mi-temps, consignes individuelles (ex. : buteur désigné, capitaine), météo (pluie = plus d'en-avant), arbitre plus ou moins sévère.
-2. **Coupes d'Europe** : Champions Cup (4 poules de 6, bonus offensif à 3 essais d'écart, défensif à 7 points) et Challenge Cup. Qualification depuis le classement, clubs étrangers.
-3. **Autres championnats** : URC, Premiership, Super Rugby, Japon… pour avoir les meilleurs joueurs du monde et un mercato international.
-4. **Rugby amateur français** : Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
-5. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
-6. **Application** :
-   - Version installable (PWA, puis Android et iOS).
+2. **Autres championnats** : URC, Premiership, Super Rugby, Japon… pour avoir les meilleurs joueurs du monde et un mercato international.
+3. **Rugby amateur français** : Nationale, Fédérales, Régionales (R1 à R3), d'après FFR Compétition (notes plus basses, précision moindre acceptable).
+4. **Point sur l'interface** : la rendre intuitive (navigation, lisibilité, mobile), avec un tutoriel pour débuter.
+5. **Application** :
+   - Version installable : déjà préparée (manifeste, icônes, service worker), il reste à héberger le dossier `jeu/` en ligne ; puis Android et iOS.
    - Comptes, 4 emplacements de sauvegarde en ligne.
    - Vrai stockage : la sauvegarde du navigateur sera bientôt trop petite.
 

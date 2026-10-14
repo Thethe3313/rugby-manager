@@ -162,7 +162,7 @@ function mkFixtures(ids){
   }
   return rounds.concat(rounds.map(m=>m.map(([a,b])=>[b,a])));
 }
-const zeroFin=()=>({ticket:0,sponsor:0,wages:0,opex:0,transfers:0,prize:0});
+const zeroFin=()=>({ticket:0,sponsor:0,wages:0,staff:0,opex:0,transfers:0,prize:0});
 function addNews(t){G.news.unshift(t);if(G.news.length>40)G.news.length=40}
 const seasonLabel=()=>`${2026+G.season-1}-${2027+G.season-1}`;
 const clubsIn=lg=>G.clubs.filter(c=>c.lg===lg);

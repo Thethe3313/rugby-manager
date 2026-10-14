@@ -1,7 +1,8 @@
 // Interface : petits éléments d'affichage (potentiel, attributs, liens)
 // ---- potentiel : affichage selon les réglages ----
 const potMode=()=>{const v=(G.settings&&G.settings.pot)||'exact';return v==='stars'?'exact':v};
-function potEst(p){const f=findPlayer(p.id);if(f.club&&f.club.id===G.meId)return p.pot;return clamp(Math.round(p.pot+(hashN(p.name+G.meId)-.5)*8),Math.round(ovr(p)),99)}
+// potentiel des autres joueurs : estimé par le recruteur (écart de ±1 à ±7 selon sa qualité)
+function potEst(p){const f=findPlayer(p.id);if(f.club&&f.club.id===G.meId)return p.pot;return clamp(Math.round(p.pot+(hashN(p.name+G.meId)-.5)*(14-staffQ(ME(),'rec')*.6)),Math.round(ovr(p)),99)}
 function starsTxt(v){const s=clamp(Math.round((v-45)/10*2)/2,.5,5);return '★'.repeat(Math.floor(s))+(s%1?'½':'')}
 function potCell(p){const v=potEst(p),own=(findPlayer(p.id).club||{}).id===G.meId;return potMode()==='exact'?`<td class="n mut">${own?'':'≈'}${v}</td>`:`<td class="mut" title="Potentiel estimé">${starsTxt(v)}</td>`}
 const potTh=()=>potMode()==='hide'?'':'<th>Pot.</th>';

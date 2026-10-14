@@ -4,6 +4,12 @@ const ACT={
   continue(){if(load())render()},
   menu(){G=null;UI.live=null;render()},
   exportSave(){exportSave()},
+  // ---- staff ----
+  staffMarket(d){UI.srole=d.r;UI.smsg='';UI.modal={type:'staff'};render()},
+  hireStaff(d){const m=ME(),s=(G.staffPool||[]).find(x=>x.id===+d.id);if(!s)return;
+    const err=hireStaff(m,s,+(UI.syrs||2));if(err){UI.smsg=err;return render()}
+    UI.modal=null;save();render()},
+  renewStaff(d){const s=ME().staff[d.r];if(!s)return;s.ctr+=2;s.sal=Math.round(s.sal*1.05/5)*5;addNews(`✍ ${s.name} prolonge de 2 ans (${fmtK(s.sal)}/an).`);save();render()},
   importSave(d,el){importSave(el.files&&el.files[0]);el.value=''},
   save(){const ok=save();addNews(ok?'Partie sauvegardée.':'Sauvegarde impossible dans ce navigateur.');render()},
   tab(d){G.tab=d.t;render()},

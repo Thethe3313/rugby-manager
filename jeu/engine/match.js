@@ -43,8 +43,11 @@ function fitAt(p,k){const s=SLOTS[k],ok=s[3].includes(p.g);return ok?(s[4]&&p.su
 const scoreK=lead=>lead>10?1-Math.min(.08,(lead-10)*.006):lead<-7?1+Math.min(.05,(-lead-7)*.004):1;
 function A(ms,d,k){
   const S=ms.T[d.side];
-  const lead=ms.sc[d.side]-ms.sc[1-d.side],rush=lead<0&&lead>=-7&&ms.t>=PEND[ms.half]-720&&ms.half!==1?1.025:1;
-  return d.p[k]*d.fit*d.fm*(.76+.24*d.en/100)*INTK[S.tac.int].perf*S.day*(d.side===0&&!ms.opt.neutral?1.055:1)*scoreK(lead)*rush;
+  // la détermination du joueur renforce la réaction quand son équipe est menée
+  const lead=ms.sc[d.side]-ms.sc[1-d.side],dk=.6+(d.p.det||10)/25;
+  const rush=lead<0&&lead>=-7&&ms.t>=PEND[ms.half]-720&&ms.half!==1?1+.025*dk:1;
+  let sk=scoreK(lead);if(sk>1)sk=1+(sk-1)*dk;
+  return d.p[k]*d.fit*d.fm*(.76+.24*d.en/100)*INTK[S.tac.int].perf*S.day*(d.side===0&&!ms.opt.neutral?1.055:1)*sk*rush;
 }
 function kickerOf(ms,i){const a=active(ms.T[i]);return best(a.filter(d=>d.slot===8||d.slot===9||d.slot===14),'but')||best(a,'but')}
 function coverOf(ms,i){const b=active(ms.T[i]).filter(d=>d.slot>=10);return b.length?Math.max(...b.map(d=>.6*A(ms,d,'vit')+.4*A(ms,d,'pla'))):8}
@@ -134,7 +137,7 @@ function tickPlayers(ms,dt){
 function contact(ms,d,cost){
   if(!d||d.slot<0)return;
   d.en=Math.max(5,d.en-cost);
-  if(R.f()<.0008*INTK[ms.T[d.side].tac.int].inj*(.8+(100-d.en)/150))injure(ms,d);
+  if(R.f()<.0008*INTK[ms.T[d.side].tac.int].inj*injRiskK(ms.T[d.side].club)*(.8+(100-d.en)/150))injure(ms,d);
 }
 function injure(ms,d){
   const S=ms.T[d.side];if(d.inj||d.slot<0)return;
@@ -282,7 +285,7 @@ function doRuck(ms,a,car,tk,dt){
   const rJ=j?.7*A(ms,j,'rck')+.3*A(ms,j,'pui'):0;
   sup.forEach(x=>contact(ms,x,.25));if(j)contact(ms,j,.3);
   const short=15-def.length;
-  const disc=x=>clamp(1+(11-(x.p.dec+x.p.sfr)/2)/22,.7,1.4);
+  const disc=x=>clamp(1+(11-(x.p.dec+x.p.sfr)/2)/22+(10-(x.p.pro||10))/45,.7,1.45);
   const pTO=j?clamp(.045*Math.exp((rJ-rA)/3.2)-short*.006,.01,.16):0;
   const pPA=.03*INTK[S.tac.int].pen*disc(car)*(rJ>rA?1+(rJ-rA)*.08:1);
   const pPD=.036*INTK[D.tac.int].pen*(j?disc(j):1)*(paOf(ms,a)>78?1.3:1)*(rA>rJ?1+(rA-rJ)*.06:1);

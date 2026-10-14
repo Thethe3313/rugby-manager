@@ -11,7 +11,7 @@ function genYouthPlayer(c,age){
   const p=genPlayer(g,lvl,age);
   const r=R.f();
   let pa=58+a*.6+R.n(0,7);
-  if(r<.002+a*.0009){pa=R.i(88,97);p.pro=Math.max(p.pro,R.i(12,20));p.gem=true}
+  if(r<.002+a*.0009){pa=R.i(88,97);p.pro=Math.max(p.pro,R.i(12,20));p.det=Math.max(p.det,R.i(11,20));p.gem=true}
   else if(r<.07)pa+=R.i(6,12);
   p.pot=Math.round(clamp(pa,Math.round(ovr(p))+5,97));
   p.youth=true;p.ctr=0;p.sal=12;p.nat='France';
@@ -26,6 +26,7 @@ function realYouth(r){
   const p={id:G.nid++,name:n,g,age,forme:90,inj:0,ni:false,ctr:0,st:{mj:0,tit:0,es:0,pts:0},real:true,nat,sub,tags:'',caps:0,hist:[],youth:true,sal:12};
   buildAttrs(p,g,clamp(rt,40,75),k=>(hashN(n+k)-.5)*2.6);
   p.pro=clamp(Math.round(6+hashN(n+'pro')*11+(u20?3:0)),1,20);
+  realPers(p,n,0,u20,'',rt);
   p.pot=Math.round(clamp(potDraw(pot,age),Math.round(ovrAt(p,g))+3,97));
   if(p.pot>=85)p.gem=true;
   if(u20)p.ev='International jeunes (U20/U18)';

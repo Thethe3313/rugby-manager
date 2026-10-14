@@ -38,6 +38,9 @@ function wageDemand(p,club,mode){
   d*=wouldStart?.95:1.12;
   const cur=findPlayer(p.id).club;
   if(mode!=='renew'&&cur&&cur.lg==='t14'&&club.lg!=='t14')d*=1.2;
+  // ambition : un ambitieux demande plus, surtout pour rejoindre un club plus faible que le sien
+  const amb=p.amb||10;d*=.92+amb/20*.16;
+  if(mode!=='renew'&&cur&&amb>=14&&clubStr(club)<clubStr(cur)-3)d*=1+(amb-13)*.03;
   d=Math.max(d,p.sal*(mode==='renew'?1:1.05));
   return Math.round(d/5)*5;
 }

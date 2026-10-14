@@ -29,7 +29,7 @@ function evalOffer(p,from,fee,sal,yrs,pre){
   }
   const dem=wageDemand(p,m,pre?'pre':'move');
   const cur=from;
-  if(cur&&cur.lg==='t14'&&m.lg==='pd2'&&ovr(p)>=80&&sal<dem*1.4)return{club:from&&!pre?`${from.short} accepte l'indemnité.`:'',player:`${p.name} ne veut pas descendre en Pro D2 (il faudrait un salaire exceptionnel, environ ${fmtK(Math.round(dem*1.4))}).`};
+  if(cur&&cur.lg==='t14'&&m.lg==='pd2'&&(ovr(p)>=80||((p.amb||10)>=16&&ovr(p)>=70))&&sal<dem*1.4)return{club:from&&!pre?`${from.short} accepte l'indemnité.`:'',player:`${p.name}${(p.amb||10)>=16?' est très ambitieux et':''} ne veut pas descendre en Pro D2 (il faudrait un salaire exceptionnel, environ ${fmtK(Math.round(dem*1.4))}).`};
   if(p.age>=32&&yrs>2)return{player:`${p.name} (${p.age} ans) ne signera pas plus de 2 ans.`};
   if(sal<dem*.97)return{club:from&&!pre?`${from.short} accepte l'indemnité.`:'',player:`${p.name} refuse : il demande au moins ${fmtK(dem)} par an.`};
   return{ok:true,club:from&&!pre?`${from.short} accepte l'indemnité.`:'',player:`${p.name} accepte !`};

@@ -35,8 +35,9 @@ const injDur=d=>d<7?`${d} jour${d>1?'s':''}`:`${Math.round(d/7)} semaine${Math.r
 function monthlyMails(){
   const m=ME(),L=G.L[m.lg];
   // temps de jeu
-  if(m.mp>=4){const un=m.squad.filter(p=>p.age<31&&ovr(p)>=70&&playShare(p,m)<.25&&p.inj===0).sort((a,b)=>ovr(b)-ovr(a))[0];
-    if(un)mail(un.name,'Je veux plus de temps de jeu',`Coach,<br><br>je n'ai joué que ${un.st.mj} match(s) depuis le début de saison. Je pense mériter ma place. Si ma situation ne change pas, je n'exclus pas de partir.<br><br>${un.name}`,{act:{player:un.id}})}
+  // temps de jeu : un ambitieux réclame plus tôt, un joueur peu ambitieux se contente de son rôle
+  if(m.mp>=4){const un=m.squad.filter(p=>{const a=p.amb||10;return p.age<31&&ovr(p)>=(a>=14?66:70)&&playShare(p,m)<(a>=14?.35:a<=6?.1:.25)&&p.inj===0}).sort((a,b)=>ovr(b)-ovr(a))[0];
+    if(un)mail(un.name,'Je veux plus de temps de jeu',`Coach,<br><br>je n'ai joué que ${un.st.mj} match(s) depuis le début de saison. ${(un.amb||10)>=14?'Je suis venu ici pour jouer et gagner des titres, pas pour regarder les matchs depuis la tribune.':'Je pense mériter ma place.'} Si ma situation ne change pas, je n'exclus pas de partir.<br><br>${un.name}`,{act:{player:un.id}})}
   // bilan du président
   if(L&&L.phase==='regular'&&L.week>=6&&G.obj){const r=rankOf(m.id),t=G.obj.t;
     mail('Le président','Point sur la saison',r<=t?`Nous sommes ${r}e. C'est conforme à l'objectif (${G.obj.l}). Continue comme ça.`:r<=t+3?`Nous sommes ${r}e, un peu en dessous de l'objectif (${G.obj.l}). Il faut redresser la barre.`:`Nous sommes ${r}e. C'est très loin de l'objectif (${G.obj.l}). Le conseil d'administration s'inquiète.`)}

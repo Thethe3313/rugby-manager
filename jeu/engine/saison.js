@@ -2,12 +2,21 @@
 // Moteur : nouvelle partie, début et fin de saison
 const SETTINGS_KEY='rugbyManager_settings';
 function loadSettings(){try{return Object.assign({pot:'exact',live:'ask'},JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}'))}catch(err){return{pot:'exact',live:'ask'}}}
+// Mise à jour d'une ancienne sauvegarde : ajoute ce qui n'existait pas encore (personnalité, staff, marché du staff)
+function migrateSave(){
+  // (le staff ajouté était déjà compté dans les frais de fonctionnement : on les diminue d'autant)
+  for(const c of G.clubs){for(const p of c.squad.concat(c.youth||[]))ensurePers(p);if(!c.staff){initStaff(c);if(c.fixed)c.fixed=Math.max(0,c.fixed-c.staffRef)}}
+  for(const p of G.fa||[])ensurePers(p);
+  if(!G.staffPool)genStaffPool();
+  if(G.fin&&G.fin.staff==null)G.fin.staff=0;
+}
 
 function newGame(meId){
   G={nid:1,season:1,meId,phase:'season',tick:0,clubs:[],L:{},access:null,news:[],fa:[],offers:[],pre:[],tlog:[],tab:'home',fin:zeroFin(),hist:[],lastMatch:null,summary:null,moves:null,mail:[],nat:NAT0.map(x=>[...x]),settings:loadSettings()};
   G.clubs=CLUBS0.map(c=>mkClub(c,'t14')).concat(PD2CLUBS.map(c=>mkClub(c,'pd2')));
   G.clubs.forEach(initYouth);
   genFA(40);
+  genStaffPool();
   const m=ME();
   m.budget=Math.round(m.bud*.05);
   startSeason();
@@ -23,7 +32,8 @@ function startSeason(){
   }
   G.date=`${seasonYear()}-08-01`;G.accessDate=null;
   for(const c of G.clubs){
-    c.mp=0;c.fixed=Math.max(Math.round(c.bud*.4),c.bud-Math.max(capOf(c),mass(c)));
+    if(!c.staff)initStaff(c);
+    c.mp=0;c.fixed=Math.max(0,Math.max(Math.round(c.bud*.4),c.bud-Math.max(capOf(c),mass(c)))-(c.staffRef||0));
     c.squad.forEach(p=>{p.st={mj:0,tit:0,es:0,pts:0};p.o0=Math.round(ovr(p))});
     (c.youth||[]).forEach(p=>{p.o0=Math.round(ovr(p))});
     c.lineup=autoLineup(c);
@@ -70,6 +80,7 @@ function nextSeason(){
   for(const pc of G.pre||[]){const f=findPlayer(pc.pid);if(f.p&&f.club&&f.club.id!==m.id){doTransfer(f.p,f.club,m,0,pc.sal,pc.yrs);f.p.fresh=true}}
   G.pre=[];
   for(const c of G.clubs){if(!c.youth)initYouth(c);youthSeasonEnd(c)}
+  genStaffPool();staffSeasonEnd();
   // bilan de progression, vieillissement, contrats
   for(const c of G.clubs){
     const keep=[];
@@ -77,11 +88,11 @@ function nextSeason(){
       const share=playShare(p,c);
       if(p.age<=23&&c.mp>0){
         if(share<.15){const old=p.pot;p.pot=Math.max(Math.round(ovr(p)),p.pot-R.i(1,3));if(c===m&&old-p.pot>=2)addNews(`📉 ${p.name} n'a presque pas joué : son potentiel baisse.`)}
-        else if(share>=.6&&R.f()<.12+(p.pro||10)/100){p.pot=Math.min(99,p.pot+R.i(1,4));if(c===m)addNews(`🌟 ${p.name} explose cette saison : son potentiel augmente !`)}
+        else if(share>=.6&&R.f()<.12+(p.pro||10)/100+((p.det||10)-10)/150){p.pot=Math.min(99,p.pot+R.i(1,4));if(c===m)addNews(`🌟 ${p.name} explose cette saison : son potentiel augmente !`)}
       }
       p.hist=(p.hist||[]).concat([{s:seasonLabel(),c:c.short,o:Math.round(ovr(p)),mj:p.st.mj,es:p.st.es}]).slice(-12);
       p.age++;p.inj=0;p.ni=false;p.forme=90;
-      if(p.age>=31){const dec=(p.age-30)*.11;for(const k of['vit','pui','end','evi'])p[k]=Math.max(1,p[k]-Math.max(0,R.n(dec,.12)));for(const k of['tac','mai','pas','rck','mel','tou'])p[k]=Math.max(1,p[k]-Math.max(0,R.n(dec*.3,.08)))}
+      if(p.age>=31){const dec=(p.age-30)*.11*(1.2-staffQ(c,'pp')/20*.4)*(1.3-(p.pro||10)/20*.6);for(const k of['vit','pui','end','evi'])p[k]=Math.max(1,p[k]-Math.max(0,R.n(dec,.12)));for(const k of['tac','mai','pas','rck','mel','tou'])p[k]=Math.max(1,p[k]-Math.max(0,R.n(dec*.3,.08)))}
       if(p.age>=23&&p.age<=32)for(const k of['pla','dec','sfr','lea'])p[k]=Math.min(20,p[k]+Math.max(0,R.n(.15,.12)));
       if(p.fresh){delete p.fresh;keep.push(p);continue}
       p.ctr--;
