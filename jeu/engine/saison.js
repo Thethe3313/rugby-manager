@@ -2,6 +2,18 @@
 // Moteur : nouvelle partie, début et fin de saison
 const SETTINGS_KEY='rugbyManager_settings';
 function loadSettings(){try{return Object.assign({pot:'exact',live:'ask'},JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}'))}catch(err){return{pot:'exact',live:'ask'}}}
+// Corrections de notes (data/corrections.js) pour les parties déjà commencées : la note gagne l'écart corrigé,
+// la progression déjà acquise est conservée ; le potentiel monte d'autant.
+const fixKey=f=>f[0]+'@'+f[3];
+function applyNoteFixes(){
+  G.fixes=G.fixes||[];
+  for(const f of NOTEFIX){
+    if(G.fixes.includes(fixKey(f)))continue;
+    const p=G.clubs.flatMap(c=>c.squad.concat(c.youth||[])).concat(G.fa||[]).find(x=>x.name===f[0]);
+    if(p){const da=(f[2]-f[1])*19/79;for(const k in W[p.g])p[k]=clamp(p[k]+da,1,20);p.pot=Math.min(99,Math.max(p.pot+(f[2]-f[1]),Math.round(ovr(p))))}
+    G.fixes.push(fixKey(f));
+  }
+}
 // Mise à jour d'une ancienne sauvegarde : ajoute ce qui n'existait pas encore (personnalité, staff, marché du staff)
 function migrateSave(){
   // (le staff ajouté était déjà compté dans les frais de fonctionnement : on les diminue d'autant)
@@ -10,6 +22,7 @@ function migrateSave(){
   if(!G.staffPool)genStaffPool();
   if(G.fin&&G.fin.staff==null)G.fin.staff=0;
   applyRealStaff();
+  applyNoteFixes();
   if(!G.ext)initExt();
   if(!G.cups&&G.phase==='season')startCups();
 }
@@ -20,6 +33,7 @@ function newGame(meId){
   G.clubs.forEach(initYouth);
   genFA(40);
   genStaffPool();
+  G.fixes=NOTEFIX.map(fixKey);
   const m=ME();
   m.budget=Math.round(m.bud*.05);
   startSeason();

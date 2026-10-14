@@ -998,8 +998,8 @@
   "nat": "France",
   "caps": 0,
   "recent": false,
-  "rt": 71,
-  "ev": "23-24 T14 5 st; 24-25 T14 18/14 st, CC 5; 25-26 T14 14/8 st, 57 pts, CC 2 st/2 tries",
+  "rt": 75,
+  "ev": "23-24 T14 5 tit.; 24-25 26 m/21 tit. (T14+CC), joueur de Toulon ayant gagné le plus de mètres, groupe élargi XV de France (6N + tournée NZ); 25-26 T14 14/8 tit. + CC 2 tit./2 essais, 602 m et 13 défenseurs battus en 640 min, 82 pts",
   "tags": [
    "kicker",
    "pace"
@@ -1007,10 +1007,11 @@
   "str": [
    "pie",
    "but",
-   "vit"
+   "vit",
+   "evi"
   ],
   "weak": [],
-  "unsure": true
+  "unsure": false
  },
  {
   "n": "Melvyn Jaminet",

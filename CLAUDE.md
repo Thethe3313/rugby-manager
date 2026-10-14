@@ -51,7 +51,7 @@ Lis `recherche/METHODE.md` avant de toucher aux notes. Pour améliorer une note,
 - **Règles LNR** : bonus offensif = au moins 3 essais de plus que l'adversaire, bonus défensif = défaite de 5 points ou moins. Les 6 premiers vont en phases finales.
 - **Pas de descente programmée** pour un promu : seule la qualité de la gestion compte.
 - **Potentiel** : note sur 99 (pas d'étoiles), affichage réglable (affiché ou masqué). Le potentiel est exact pour ses propres joueurs et estimé (« ≈ ») pour les autres. Celui des vrais joueurs est tiré dans une fourchette à chaque nouvelle partie (`potDraw` pour les espoirs, `initPot(…, R.f())` pour les jeunes pros).
-- Le joueur veut des notes toujours plus justes : corriger dès qu'un joueur est signalé comme mal noté. Même chose pour la personnalité (estimée : valeurs tirées du nom, bonus pour les stars et les internationaux).
+- Le joueur veut des notes toujours plus justes : corriger dès qu'un joueur est signalé comme mal noté. Méthode : vérifier ses 3 saisons sur le web, appliquer la grille, corriger `recherche/effectifs/<club>.json` **et** l'entrée de `REAL` dans `jeu/data/joueurs.js`, puis ajouter la correction à `NOTEFIX` (`jeu/data/corrections.js`) pour que les parties en cours en profitent. Même chose pour la personnalité (estimée : valeurs tirées du nom, bonus pour les stars et les internationaux).
 - **Anciennes sauvegardes** : toute nouvelle donnée doit être ajoutée aux parties existantes dans `migrateSave()` (`engine/saison.js`, appelée au chargement et à l'import), sans casser la partie en cours.
 
 ## Tests
