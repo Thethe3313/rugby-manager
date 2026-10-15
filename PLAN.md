@@ -102,8 +102,24 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 ## ▶️ Prochaine étape
 
+### Étape G — Retours de jeu de Théophile (15 octobre 2026)
+- **Lot 1** :
+  - Avancer façon FM : les jours défilent avec une animation, arrêt automatique au prochain match ou sur un message important, bouton Stop.
+  - Écrans téléphone à revoir : Messagerie, Espoirs, Staff et les autres onglets.
+  - Mercato par messages : « le club a reçu ton offre », puis réponse quelques jours plus tard (acceptée → le joueur arrive ; refusée → la raison : indemnité, salaire, durée…).
+- **Lot 2** :
+  - Fatigue et forme qui obligent à faire tourner l'effectif.
+  - Couleurs réelles des clubs.
+  - Causerie d'après-match.
+  - Liste de joueurs suivis au mercato.
+- **Lot 3** :
+  - Seconds postes (ex. Ferté : demi de mêlée, ailier, arrière).
+  - Composition sur un terrain, en glissant les joueurs façon FM.
+
+## 📋 À faire ensuite
+
 1. **Application** :
-   - Version installable : déjà préparée (manifeste, icônes, service worker), il reste à héberger le dossier `jeu/` en ligne ; puis Android et iOS.
+   - Version installable : faite et en ligne (https://thethe3313.github.io/rugby-manager/) ; reste une vraie appli Android et iOS.
    - Comptes et sauvegardes en ligne (les 4 emplacements existent déjà dans le navigateur).
 
 ## 🔁 En continu
