@@ -30,7 +30,7 @@ function negModal(){
   <label>Salaire annuel (k€)<br><input id="ng-sal" type="number" min="0" step="5" value="${N.sal??dem}" style="width:110px"></label>
   <label>Durée (ans)<br><input id="ng-yrs" type="number" min="1" max="5" value="${N.yrs??defY}" style="width:70px"></label></div>
   ${UI.negMsg?`<div class="card" style="margin-top:10px">${UI.negMsg}</div>`:''}
-  <p style="margin-top:10px"><button class="btn" data-a="sendNeg">Proposer</button> <button class="btn sec" data-a="closeModal">Fermer</button></p></div></div>`;
+  ${mode==='buy'?'<p class="mut">Ton offre part par message au club, qui répondra '+(G.phase==='season'?'dans 1 à 3 jours':'aussitôt')+' (et le joueur doit aussi accepter le salaire et la durée).</p>':''}<p style="margin-top:10px"><button class="btn" data-a="sendNeg">${mode==='buy'?'Envoyer l’offre':'Proposer'}</button> <button class="btn sec" data-a="closeModal">Fermer</button></p></div></div>`;
 }
 
 function modalView(){

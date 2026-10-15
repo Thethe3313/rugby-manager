@@ -14,12 +14,12 @@ const qCell=q=>`<td class="n ${ac(q)}"><b>${q}</b>/20</td>`;
 function viewStaff(){
   const m=ME();
   const rows=SROLES.map(r=>{const s=m.staff&&m.staff[r];
-    return `<tr><td><b>${STAFF_ROLES[r].n}</b></td>${s?`<td style="white-space:normal">${sName(s)}</td><td>${sAge(s)}</td>${qCell(s.q)}<td class="n">${k(s.sal)}</td><td class="n ${s.ctr<=1?'warn':''}">${s.ctr} an${s.ctr>1?'s':''}</td>`:`<td colspan="5" class="ko">Poste vacant (compte comme 4/20)</td>`}
+    return `<tr><td class="rc1"><b>${STAFF_ROLES[r].n}</b></td>${s?`<td style="white-space:normal">${sName(s)}</td><td class="hm">${sAge(s)}</td>${qCell(s.q)}<td data-l="Salaire" class="n">${k(s.sal)}</td><td data-l="Contrat" class="n ${s.ctr<=1?'warn':''}">${s.ctr} an${s.ctr>1?'s':''}</td>`:`<td colspan="5" class="ko">Poste vacant (compte comme 4/20)</td>`}
     <td class="mut">${staffEffect(r,s?s.q:4)}</td><td><button class="btn sm ${s?'sec':''}" data-a="staffMarket" data-r="${r}">${s?'Remplacer':'Recruter'}</button></td></tr>`}).join('');
   return `<div class="card"><h2>Staff</h2>
   <p><b>Manager : toi</b>${m.manager?` <span class="mut">(tu prends la place de ${m.manager})</span>`:''}</p>
   <p class="mut">Ton staff fait progresser les joueurs, les garde en forme et en bonne santé, et repère le potentiel des joueurs des autres clubs. Chaque membre est noté sur 20 : 10 est la moyenne, l'effet est nul à 10, positif au-dessus, négatif en dessous.</p>
-  <table><tr><th>Poste</th><th>Nom</th><th>Âge</th><th class="n">Qualité</th><th class="n">Salaire</th><th class="n">Contrat</th><th>Effet actuel</th><th></th></tr>${rows}</table>
+  <table class="rc"><tr><th>Poste</th><th>Nom</th><th>Âge</th><th class="n">Qualité</th><th class="n">Salaire</th><th class="n">Contrat</th><th>Effet actuel</th><th></th></tr>${rows}</table>
   <p class="mut">Noms réels de la saison 2026-27 quand ils sont connus (sources : recherche/staff). « Fictif » : aucune source trouvée pour ce poste. « Fonction supposée » : la personne fait bien partie du staff, mais son rôle exact n'est pas publié. La qualité sur 20 est une estimation du jeu.</p>
   <p class="mut">Masse salariale du staff : <b>${k(staffMass(m))}</b> par an (payée par la trésorerie du club, hors plafond salarial des joueurs). Remplacer quelqu'un coûte une indemnité de 50 % de son salaire restant.</p></div>
   <div class="card"><h3>Ce que fait chaque poste</h3><ul class="help">${SROLES.map(r=>`<li><b>${STAFF_ROLES[r].n}</b> : ${STAFF_ROLES[r].d}</li>`).join('')}</ul></div>`;

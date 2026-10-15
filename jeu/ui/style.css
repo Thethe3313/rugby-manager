@@ -111,3 +111,21 @@ p{margin:6px 0}
   .sm-only{display:inline}.lg-only{display:none}
   #main table th,#main table td{padding:5px 5px}
 }
+@media(max-width:700px){
+  #main td:not(.n){white-space:normal}
+  /* messagerie : la liste, ou le message ouvert */
+  .mailg{grid-template-columns:minmax(0,1fr)!important}
+  .mailg.open .mlist,.mailg:not(.open) .mread{display:none}
+  .mailg .mlist{max-height:none!important}
+  /* tableaux « rc » : chaque ligne devient une petite carte */
+  table.rc tr:first-child{display:none}
+  table.rc tr{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+  table.rc td{border:0;padding:0}
+  table.rc td.rc1{flex-basis:100%}
+  table.rc td[data-l]::before{content:attr(data-l) " ";color:var(--mut);font-weight:400}
+}
+/* bandeau « les jours passent » */
+#advbar{position:fixed;top:0;left:0;right:0;z-index:12;background:var(--acc2);color:#1a1300;padding:7px 14px;display:flex;gap:10px;align-items:center;justify-content:center;font-weight:600;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+#advbar .btn{color:var(--txt)}
+#advbar .spin{display:inline-block;animation:advp .6s ease-in-out infinite alternate}
+@keyframes advp{from{transform:translateX(-3px);opacity:.6}to{transform:translateX(3px);opacity:1}}

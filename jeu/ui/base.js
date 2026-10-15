@@ -34,6 +34,8 @@ const posLS=p=>`<span class="lg-only">${posL(p)}</span><span class="sm-only">${p
 function injTxt(p){return p.inj>0?`<span class="ko">🚑 ${injDur(p.inj)}</span>`:'<span class="ok">Apte</span>'}
 function formeBar(f){return `<div class="bar" title="${rd(f)}%"><i style="width:${f}%;background:${f>75?'var(--acc)':f>50?'var(--acc2)':'var(--bad)'}"></i></div>`}
 
+// Écran de téléphone (même seuil que la feuille de style)
+const isPhone=()=>typeof matchMedia==='function'&&matchMedia('(max-width:700px)').matches;
 function render(){
   if(!G){$app.innerHTML=viewStart();return}
   if(G.phase==='sacked'){$app.innerHTML=viewSacked();return}
@@ -42,14 +44,14 @@ function render(){
   const ph=stageLabel(m);
   // Bandeau : sur téléphone, seules les pastilles sans classe « x » restent visibles (le bouton ⋯ affiche les autres)
   $app.innerHTML=`<div id="top" class="${UI.topOpen?'open':''}"><span class="logo">🏉<span class="lt"> Rugby Manager</span></span><span class="pill"><b>${m.name}</b></span><span class="pill">📅 <b>${fmtD(G.date)}<span class="lt"> ${G.date.slice(0,4)}</span></b></span><span class="pill x"><b>${LEAGUES[m.lg].name}</b> · ${seasonLabel()} · <b>${ph}</b></span><span class="sp"></span>${windowOpen()?'<span class="pill x" style="color:var(--acc)"><b>Mercato ouvert</b></span>':''}<span class="pill"><span class="lb">Trésorerie </span><span class="lm">💰 </span><b class="${m.budget<0?'ko':''}">${k(m.budget)}</b></span><span class="pill x" title="Masse salariale / plafond">Masse <b>${k(mass(m))}</b> / ${k(capOf(m))}</span><button class="btn sec sm tgl" data-a="topTgl" title="Plus d'informations">${UI.topOpen?'▲':'⋯'}</button><button class="btn sec sm" data-a="save" title="Sauvegarder">💾<span class="lt"> Sauvegarder</span></button><button class="btn sec sm hmo" data-a="menu">Menu</button></div>
-  <div id="wrap"><div id="nav">${tabs.map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}</div><div id="main">${view()}</div></div>${phoneBar(tabs)}${tutoHTML()}${UI.modal?modalView():''}`;
+  <div id="wrap"><div id="nav">${tabs.map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}</div><div id="main">${view()}</div></div>${UI.adv?advBar():''}${phoneBar(tabs)}${tutoHTML()}${UI.modal?modalView():''}`;
 }
 // Téléphone : barre du bas (onglets principaux + « Plus ») et bouton Continuer toujours accessible (masqués sur ordinateur)
 function phoneBar(tabs){
   const main=[['home','🏠','Accueil'],['squad','👥','Effectif'],['lineup','📋','Compo'],['market','💱','Mercato']],u=unread();
   const go=G.phase==='season'||G.phase==='access';
   return `<div id="bbar">${UI.more?`<div id="bmore">${tabs.filter(t=>!main.some(x=>x[0]===t[0])).map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}<a data-a="menu">Menu (mes parties)</a></div>`:''}
-  ${go?'<div id="bcont"><button class="btn" data-a="cont">Continuer ▶</button><button class="btn sec" data-a="toMatch">⏩ Prochain match</button></div>':''}
+  ${go?`<div id="bcont"><button class="btn ${UI.adv?'bad':''}" data-a="go">${UI.adv?'■ Stop':'Continuer ▶'}</button><button class="btn sec" data-a="cont" ${UI.adv?'disabled':''}>+1 jour</button></div>`:''}
   <nav id="bnav">${main.map(t=>`<a class="${G.tab===t[0]&&!UI.more?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}<small>${t[2]}</small></a>`).join('')}<a class="${UI.more?'on':''}" data-a="more">☰<small>Plus${u?' ('+u+')':''}</small></a></nav></div>`;
 }
 // Tutoriel de la première partie (G.tuto = étape en cours ; absent ou -1 : terminé). Chaque étape ouvre l'onglet concerné.
@@ -64,6 +66,8 @@ function tutoHTML(){
   const[,t,x]=TUTO[G.tuto];
   return `<div id="tuto"><div class="row" style="justify-content:space-between"><b>${t}</b><span class="mut">${G.tuto+1}/${TUTO.length}</span></div><p>${x}</p><div class="row"><button class="btn sm" data-a="tutoNext">${G.tuto<TUTO.length-1?'Suivant':'C’est parti !'}</button><button class="btn sec sm" data-a="tutoSkip">Passer le tutoriel</button></div></div>`;
 }
+// Bandeau d'avancée (les jours qui passent)
+function advBar(){return `<div id="advbar"><span class="spin">⏩</span> Les jours passent… <b>${fmtD(G.date,true)}</b> <button class="btn sec sm" data-a="go">■ Stop</button></div>`}
 function view(){
   switch(G.tab){
     case'squad':return viewSquad();case'lineup':return viewLineup();case'cal':return viewCal();

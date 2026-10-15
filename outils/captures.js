@@ -14,6 +14,8 @@ if(!EDGE)throw new Error('Edge introuvable');
 // écran -> code exécuté une fois la partie de démonstration prête (G.tab, fenêtre…)
 const SCREENS={
   accueil:"G=null;UI.amLv=null",accueilbas:"G=null;UI.startLg='am';UI.amLv='r1'",tuto:"G.tuto=1;G.tab='lineup'",plus:"G.tab='squad';UI.more=true",
+  avance:"G.tab='home';UI.adv={n:3}",mailouvert:"G.tab='mail';UI.mid=G.mail[0].id;UI.mailView=true",
+  offre:"const c=C('bay'),b=c.squad[2];sendBid(b,c,10,wageDemand(b,ME(),'move'),2);for(let i=0;i<4;i++)dayStep();G.tab='mail';UI.mid=G.mail.find(m=>/Offre/.test(m.subj)).id;UI.mailView=true",
   home:"G.tab='home'",mail:"G.tab='mail'",squad:"G.tab='squad'",youth:"G.tab='youth'",staff:"G.tab='staff'",
   lineup:"G.tab='lineup'",cal:"G.tab='cal'",table:"G.tab='table'",cups:"G.tab='cups'",market:"G.tab='market'",
   fin:"G.tab='fin'",settings:"G.tab='settings'",help:"G.tab='help'",

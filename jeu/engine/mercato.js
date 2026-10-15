@@ -90,3 +90,33 @@ function aiMercato(){
     }
   }
 }
+// ---- Offres d'achat par messages : le club reçoit l'offre, puis répond 1 à 3 jours plus tard (G.bids) ----
+// À l'intersaison les jours ne passent pas : la réponse arrive tout de suite (toujours par message).
+function bidReason(r){
+  if(r.counter)return `<b>Motif : indemnité trop faible.</b> ${r.club}`;
+  const t=r.player||r.msg||'';
+  const why=/ne signera pas plus/.test(t)?'durée de contrat':/descendre/.test(t)?'il ne veut pas descendre de division':/demande au moins|manque de temps/.test(t)?'salaire trop faible':/Plafond/.test(t)?'plafond salarial':/Trésorerie/.test(t)?'trésorerie insuffisante':/fenêtre/.test(t)?'fenêtre de transferts fermée':/Effectif complet/.test(t)?'effectif complet':'refus';
+  return `<b>Motif : ${why}.</b> ${[r.club,t].filter(Boolean).join(' ')}`;
+}
+function sendBid(p,from,fee,sal,yrs){
+  const b={pid:p.id,club:from.id,fee,sal,yrs,due:dAdd(G.date,R.i(1,3))};
+  mail('Directeur sportif',`Offre envoyée : ${p.name} (${from.short})`,`${from.name} a bien reçu notre offre pour <b>${p.name}</b> : indemnité de transfert ${fmtK(fee)}, salaire proposé au joueur ${fmtK(sal)} par an sur ${yrs} an(s).${G.phase==='season'?' Réponse attendue dans les prochains jours.':''}`,{act:{player:p.id}});
+  if(G.phase==='season'){G.bids=(G.bids||[]).concat([b]);return null}
+  return answerBid(b);
+}
+function answerBid(b){
+  const f=findPlayer(b.pid),p=f.p,c=C(b.club),m=ME();
+  if(!p||!f.club||f.club.id!==b.club){mail('Directeur sportif','Offre sans suite',`${p?p.name:'Le joueur'} a quitté ${c?c.short:'son club'} entre-temps : notre offre tombe à l'eau.`,{imp:true});return{ok:false}}
+  const r=evalOffer(p,f.club,b.fee,b.sal,b.yrs,false);
+  if(r.ok){
+    doTransfer(p,f.club,m,b.fee,b.sal,b.yrs);
+    mail('Directeur sportif',`✅ Offre acceptée : ${p.name} nous rejoint`,`${c.name} accepte notre offre de ${fmtK(b.fee)} et ${p.name} a signé son contrat (${fmtK(b.sal)} par an, ${b.yrs} an(s)). Il rejoint l'effectif dès aujourd'hui.`,{act:{player:p.id},imp:true});
+  }else mail('Directeur sportif',`❌ Offre refusée : ${p.name}`,`Réponse de ${c.name} pour ${p.name} :<br>${bidReason(r)}<br><br>Tu peux faire une nouvelle offre depuis le mercato.`,{act:{player:p.id},imp:true});
+  return r;
+}
+function bidDay(){
+  if(!G.bids||!G.bids.length)return;
+  const due=G.bids.filter(b=>b.due<=G.date);if(!due.length)return;
+  G.bids=G.bids.filter(b=>b.due>G.date);
+  for(const b of due)answerBid(b);
+}

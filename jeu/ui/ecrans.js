@@ -34,7 +34,7 @@ function ratingRows(t){
 }
 function viewHome(){
   const m=ME(),nm=myNextMatch(),nx=nm&&(G.phase==='access'||nm.d)?nm.f:null;
-  let h=`<div class="card row"><button class="btn" data-a="cont">Continuer ▶ <span style="font-weight:400">(jour suivant)</span></button><button class="btn sec" data-a="toMatch">⏩ Jusqu'au prochain match</button>${unread()?`<button class="btn sec" data-a="tab" data-t="mail">✉ ${unread()} message(s) non lu(s)</button>`:''}</div>`;
+  let h=`<div class="card row"><button class="btn ${UI.adv?'bad':''}" data-a="go">${UI.adv?'■ Stop':'Continuer ▶'} <span style="font-weight:400">${UI.adv?'':'(jusqu’au prochain match ou message important)'}</span></button><button class="btn sec" data-a="cont" ${UI.adv?'disabled':''}>+1 jour</button>${unread()?`<button class="btn sec" data-a="tab" data-t="mail">✉ ${unread()} message(s) non lu(s)</button>`:''}</div>`;
   if(nx){
     const home=nx.h===m.id,o=C(home?nx.a:nx.h);
     const tm=teamCalc(m),to=teamCalc({...o,lineup:autoLineup(o)});
@@ -94,10 +94,10 @@ function viewCal(){
   const m=ME(),L=G.L[m.lg];
   let h=`<div class="card"><h2>Calendrier & résultats · ${LEAGUES[m.lg].name}</h2>`;
   const mine=L.fixtures.map((r,i)=>{const f=r.find(x=>x[0]===m.id||x[1]===m.id);return{i,f,res:L.results[i]}});
-  h+=`<table><tr><th>J</th><th>Date</th><th>Domicile</th><th class="n">Score</th><th>Extérieur</th></tr>${mine.map(x=>{
-    if(!x.f)return `<tr><td>${x.i+1}</td><td>${fmtD(L.dates[x.i])}</td><td colspan="3" class="mut">Au repos (nombre impair de clubs dans la poule)</td></tr>`;
+  h+=`<table><tr><th class="hm">J</th><th>Date</th><th>Domicile</th><th class="n">Score</th><th>Extérieur</th></tr>${mine.map(x=>{
+    if(!x.f)return `<tr><td class="hm">${x.i+1}</td><td>${fmtD(L.dates[x.i])}</td><td colspan="3" class="mut">Au repos (nombre impair de clubs dans la poule)</td></tr>`;
     const rs=x.res&&x.res.find(r=>r.h===x.f[0]);
-    return `<tr class="${x.i===L.week&&L.phase==='regular'?'me':''}"><td>${x.i+1}</td><td>${fmtD(L.dates[x.i])}</td><td>${C(x.f[0]).short}</td><td class="n"><b>${rs?rs.sh+' - '+rs.sa:'—'}</b></td><td>${C(x.f[1]).short}</td></tr>`}).join('')}</table></div>`;
+    return `<tr class="${x.i===L.week&&L.phase==='regular'?'me':''}"><td class="hm">${x.i+1}</td><td>${fmtD(L.dates[x.i])}</td><td>${C(x.f[0]).short}</td><td class="n"><b>${rs?rs.sh+' - '+rs.sa:'—'}</b></td><td>${C(x.f[1]).short}</td></tr>`}).join('')}</table></div>`;
   // matchs de coupe d'Europe du joueur
   for(const k of['cc','ch']){const cup=G.cups&&G.cups[k],p=cup&&cup.pools.find(p=>p.teams.includes(m.id));if(!p)continue;
     const res=(r,f)=>{const x=(cup.res[r]||{m:[]}).m.find(y=>y.h===f.h&&y.a===f.a);return x?x.sh+' - '+x.sa:'—'};
@@ -111,7 +111,7 @@ function viewCal(){
 }
 const lgBtns=cur=>LGORDER.map(l=>`<button class="btn ${l===cur?'':'sec'} sm" data-a="lgsel" data-lg="${l}">${LEAGUES[l].name}</button>`).join('')+(G.AMD?AMORDER.map(l=>`<button class="btn ${l===cur?'':'sec'} sm" data-a="lgsel" data-lg="${l}">${LEAGUES[l].name}</button>`).join(''):'')+Object.keys(G.XL||{}).map(l=>`<button class="btn ${l===cur?'':'sec'} sm" data-a="lgsel" data-lg="${l}">${G.XL[l].name}</button>`).join('');
 // Tableau de classement (rows triées)
-const tableRows=(rows,me,nq,low)=>`<table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">G</th><th class="n">N</th><th class="n">P</th><th class="n">PP</th><th class="n">PC</th><th class="n">Diff</th><th class="n">Bonus</th><th class="n">Pts</th></tr>${rows.map((r,i)=>`<tr class="${r.id===me?'me':''} ${i<nq?'q':''}"><td>${i+1}${low&&i>=rows.length-low?' ⬇':''}</td><td>${amC(r.id).name}</td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.n}</td><td class="n">${r.p}</td><td class="n">${r.pf}</td><td class="n">${r.pa}</td><td class="n">${r.pf-r.pa}</td><td class="n">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table>`;
+const tableRows=(rows,me,nq,low)=>`<table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n hm">G</th><th class="n hm">N</th><th class="n hm">P</th><th class="n hm">PP</th><th class="n hm">PC</th><th class="n">Diff</th><th class="n hm">Bonus</th><th class="n">Pts</th></tr>${rows.map((r,i)=>`<tr class="${r.id===me?'me':''} ${i<nq?'q':''}"><td>${i+1}${low&&i>=rows.length-low?' ⬇':''}</td><td>${amC(r.id).name}</td><td class="n">${r.j}</td><td class="n hm">${r.g}</td><td class="n hm">${r.n}</td><td class="n hm">${r.p}</td><td class="n hm">${r.pf}</td><td class="n hm">${r.pa}</td><td class="n">${r.pf-r.pa}</td><td class="n hm">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table>`;
 function viewAMTable(k){
   const A=G.AMD[k],m=ME(),mine=m.lg===k&&G.L[k],n=A.clubs.length+(mine?clubsIn(k).length:0);
   const rule=k==='f1'&&G.season===1?'Réforme de la FFR : les 6 premiers de chaque poule et 2 clubs classés 7es montent en Nationale 2 (qui passe à 48 clubs) ; les autres forment la nouvelle Nationale 3.':`Les mieux classés montent en ${LEAGUES[amUp(k)].name} (le 1er de chaque poule, et d'autres si la division du dessus manque de clubs)${amDown(k)?', les derniers descendent en '+LEAGUES[amDown(k)].name:''}.`;
@@ -124,7 +124,7 @@ function viewXLTable(lg){
   const L=G.XL[lg],tb=xlSorted(L),n=XLEAGUES[lg].po,P=XLPO[n];
   return `<div class="card"><div class="row"><h2 style="margin:0">Classement</h2>${lgBtns(lg)}</div>
   <p class="mut">${L.name} ${seasonLabel()} : ${L.phase==='regular'?`journée ${L.week+1}/${L.fixtures.length}`:L.phase==='playoffs'?P[L.po.stage]:'terminé'}. Victoire 4 pts · nul 2 · bonus offensif (4 essais ou plus) +1 · bonus défensif (défaite de 7 pts ou moins) +1. Les ${n} premiers vont en phases finales.${XLEAGUES[lg].euro?' Les 8 premiers jouent la Champions Cup la saison suivante, les autres la Challenge Cup.':''}</p>
-  <table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">G</th><th class="n">N</th><th class="n">P</th><th class="n">Diff</th><th class="n">Bonus</th><th class="n">Pts</th></tr>${tb.map((r,i)=>`<tr class="${i<n?'q':''}"><td>${i+1}</td><td>${C(r.id).name}</td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.n}</td><td class="n">${r.p}</td><td class="n">${r.pf-r.pa}</td><td class="n">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
+  <table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">G</th><th class="n">N</th><th class="n">P</th><th class="n">Diff</th><th class="n hm">Bonus</th><th class="n">Pts</th></tr>${tb.map((r,i)=>`<tr class="${i<n?'q':''}"><td>${i+1}</td><td>${C(r.id).name}</td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.n}</td><td class="n">${r.p}</td><td class="n">${r.pf-r.pa}</td><td class="n hm">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
   ${L.po&&L.po.res.length?`<div class="card"><h2>Phases finales</h2>${L.po.res.map(r=>`<h3>${P[r.stage]}</h3>`+r.m.map(x=>`<p>${C(x.h).short} <b>${x.sh} - ${x.sa}</b> ${C(x.a).short}</p>`).join('')).join('')}${L.champ?`<p>🏆 <b>${C(L.champ).name}</b></p>`:''}</div>`:''}`;
 }
 // Palmarès de la partie
@@ -141,8 +141,8 @@ function viewTable(){
   const rule=lg==='nat'?`Les 6 premiers sont qualifiés pour les phases finales : le champion monte en Pro D2, le finaliste joue un barrage chez le 15e de Pro D2.${clubsIn('nat').length>=NATSIZE?' Les 2 derniers descendent en Nationale 2.':' Pas de descente cette saison (la Nationale passe à 16 clubs).'}`:lg==='t14'?"Les 6 premiers sont qualifiés pour les phases finales. Le 13e joue un barrage d'accession, le 14e descend en Pro D2.":"Les 6 premiers sont qualifiés pour les phases finales (le champion monte en Top 14). Le 15e joue un barrage, le 16e descend en Nationale.";
   return `<div class="card"><div class="row"><h2 style="margin:0">Classement</h2>${lgBtns(lg)}</div>
   <p class="mut">Victoire 4 pts · nul 2 · bonus offensif (3 essais de plus que l'adversaire) +1 · bonus défensif (défaite de 5 pts ou moins) +1. ${rule}</p>
-  <table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">G</th><th class="n">N</th><th class="n">P</th><th class="n">PP</th><th class="n">PC</th><th class="n">Diff</th><th class="n">Bonus</th><th class="n">Pts</th></tr>
-  ${tb.map((r,i)=>`<tr class="${r.id===m.id?'me':''} ${i<6?'q':''}"><td>${i+1}${(lg==='t14'||lg==='pd2'||n>=NATSIZE)&&i>=n-2?(i===n-1||lg==='nat'?' ⬇':' ⚠'):''}</td><td>${C(r.id).name}</td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.n}</td><td class="n">${r.p}</td><td class="n">${r.pf}</td><td class="n">${r.pa}</td><td class="n">${r.pf-r.pa}</td><td class="n">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
+  <table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n hm">G</th><th class="n hm">N</th><th class="n hm">P</th><th class="n hm">PP</th><th class="n hm">PC</th><th class="n">Diff</th><th class="n hm">Bonus</th><th class="n">Pts</th></tr>
+  ${tb.map((r,i)=>`<tr class="${r.id===m.id?'me':''} ${i<6?'q':''}"><td>${i+1}${(lg==='t14'||lg==='pd2'||n>=NATSIZE)&&i>=n-2?(i===n-1||lg==='nat'?' ⬇':' ⚠'):''}</td><td>${C(r.id).name}</td><td class="n">${r.j}</td><td class="n hm">${r.g}</td><td class="n hm">${r.n}</td><td class="n hm">${r.p}</td><td class="n hm">${r.pf}</td><td class="n hm">${r.pa}</td><td class="n">${r.pf-r.pa}</td><td class="n hm">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
   ${palmaresHTML()}`;
 }
 function viewHelp(){
