@@ -2,7 +2,19 @@
 // Le match en direct est rendu une fois (render), puis mis à jour élément par élément (liveUpdate)
 // pour que les joueurs et le ballon glissent en douceur sur le terrain.
 const LSPEED={lent:[1200,'Lent'],normal:[600,'Normal'],rapide:[220,'Rapide'],forts:[40,'Temps forts']};
-const COL=['#4c9be8','#e5534b']; // couleurs : domicile, extérieur
+// Couleurs des maillots (data/couleurs.js ; sinon tirées du nom du club). Si les deux maillots se ressemblent,
+// l'équipe à l'extérieur prend sa couleur secondaire (ou blanc / noir).
+const KPAL=['#c8102e','#1f4ea1','#007a3d','#f5c400','#7b2d8e','#f07d00','#5fa8dc','#6b1238','#00a3a3','#1a2b5f'];
+function clubCols(c){if(!c)return['#4c9be8','#ffffff'];if(COULEURS[c.id])return COULEURS[c.id];const h=hashN(c.name||c.id);return[KPAL[Math.floor(h*KPAL.length)],h*10%1<.5?'#ffffff':'#111111']}
+const hexRGB=s=>[1,3,5].map(i=>parseInt(s.slice(i,i+2),16));
+const cDist=(a,b)=>{const x=hexRGB(a),y=hexRGB(b);return Math.hypot(x[0]-y[0],x[1]-y[1],x[2]-y[2])};
+const txtOn=c=>{const[r,g,b]=hexRGB(c);return r*.3+g*.59+b*.11>150?'#111111':'#ffffff'};
+function kits(clubs){
+  const h=clubCols(clubs[0]),a=clubCols(clubs[1]);let ac=a[0];
+  if(cDist(h[0],ac)<130)ac=[a[1],'#ffffff','#111111'].find(c=>cDist(h[0],c)>=130)||'#ffffff';
+  return[{bg:h[0],fg:txtOn(h[0])},{bg:ac,fg:txtOn(ac)}];
+}
+const kitTag=(c,k)=>`<b class="kit" style="background:${k.bg};color:${k.fg}">${c.short}</b>`;
 let liveTimer=null;
 const rc=v=>v>=7.5?'o1':v>=6.8?'o2':v>=6?'o3':'o4';
 
@@ -68,18 +80,19 @@ function formation(ms){
 }
 const trXY=(x,y)=>`translate(${(x+10).toFixed(1)}px,${y.toFixed(1)}px)`;
 function pitchSVG(L){
+  const K=kits(L.ms.clubs);
   const ms=L.ms,F=formation(ms),tr=`transition:transform ${L.speed==='forts'?0:Math.min(LSPEED[L.speed][0],650)}ms ease-out,opacity .3s`;
   const ln=(x,dash)=>`<line x1="${x}" y1="0" x2="${x}" y2="70" stroke="#ffffffaa" stroke-width="${dash?.2:.35}" ${dash?'stroke-dasharray="1.5 1.5"':''}/>`;
   let dots='';
   for(const i of[0,1])for(let j=0;j<15;j++){const d=ms.T[i].on[j],[x,y]=F[i][j];
-    dots+=`<g id="lv-d${i}-${j}" style="transform:${trXY(x,y)};${tr};opacity:${d&&!d.sin?1:0}"><circle r="1.6" fill="${COL[i]}" ${i===L.side?'stroke="#fff" stroke-width=".35"':'stroke="#0008" stroke-width=".2"'}/><text id="lv-t${i}-${j}" y=".55" text-anchor="middle" font-size="1.55" font-weight="700" fill="#fff">${d?d.no:''}</text></g>`}
+    dots+=`<g id="lv-d${i}-${j}" style="transform:${trXY(x,y)};${tr};opacity:${d&&!d.sin?1:0}"><circle r="1.6" fill="${K[i].bg}" ${i===L.side?'stroke="#fff" stroke-width=".35"':'stroke="#0008" stroke-width=".2"'}/><text id="lv-t${i}-${j}" y=".55" text-anchor="middle" font-size="1.55" font-weight="700" fill="${K[i].fg}">${d?d.no:''}</text></g>`}
   return `<svg class="pitch" viewBox="-1 -1 122 72" role="img" aria-label="Terrain">
   <rect x="0" y="0" width="120" height="70" fill="#2f7d45"/>${[20,40,60,80,100].map(x=>`<rect x="${x}" y="0" width="10" height="70" fill="#ffffff08"/>`).join('')}
   <rect x="0" y="0" width="10" height="70" fill="#276b3b"/><rect x="110" y="0" width="10" height="70" fill="#276b3b"/>
   ${ln(10)}${ln(110)}${ln(32)}${ln(88)}${ln(60)}${ln(50,1)}${ln(70,1)}${ln(15,1)}${ln(105,1)}
   <line x1="10" y1="32.2" x2="10" y2="37.8" stroke="#fff" stroke-width=".8"/><line x1="110" y1="32.2" x2="110" y2="37.8" stroke="#fff" stroke-width=".8"/>
-  <text x="5" y="35" font-size="2.6" fill="${COL[0]}" text-anchor="middle" transform="rotate(-90 5 35)" font-weight="700">${ms.clubs[0].short}</text>
-  <text x="115" y="35" font-size="2.6" fill="${COL[1]}" text-anchor="middle" transform="rotate(90 115 35)" font-weight="700">${ms.clubs[1].short}</text>
+  <text x="5" y="35" font-size="2.6" fill="#fff" text-anchor="middle" transform="rotate(-90 5 35)" font-weight="700">${ms.clubs[0].short}</text>
+  <text x="115" y="35" font-size="2.6" fill="#fff" text-anchor="middle" transform="rotate(90 115 35)" font-weight="700">${ms.clubs[1].short}</text>
   ${dots}<g id="lv-ball" style="transform:${trXY(ms.x,ms.y)};${tr}"><ellipse rx="1.05" ry=".7" fill="#f3e3c3" stroke="#5a3d1e" stroke-width=".25"/></g></svg>`;
 }
 
@@ -101,7 +114,7 @@ function viewLive(){
   const ctrl=ms.done?`<b>Coup de sifflet final !</b> <button class="btn" data-a="liveEnd">Voir le résumé du match ▶</button>`
     :`<button class="btn sm" data-a="livePause">${L.paused?'▶ Reprendre':'⏸ Pause'}</button> ${Object.entries(LSPEED).map(([v,s])=>`<button class="btn sm ${L.speed===v?'':'sec'}" data-a="liveSpeed" data-v="${v}">${s[1]}</button>`).join(' ')} <button class="btn sec sm" data-a="liveSkip">⏭ Aller à la fin</button>`;
   return `<div class="overlay"><div class="modal live">
-  <div class="lv-head"><div class="lv-sb"><b style="color:${COL[0]}">${h.short}</b><span id="lv-score" class="score">${ms.sc[0]} - ${ms.sc[1]}</span><b style="color:${COL[1]}">${a.short}</b><span id="lv-clock" class="pill">${clockTxt(ms)}</span></div><div class="mut" style="font-size:13px">${wxTxt(ms.wx)} · Arbitre : ${refTxt(ms.ref)}</div><div class="row">${ctrl}</div></div>
+  <div class="lv-head"><div class="lv-sb">${kitTag(h,kits(ms.clubs)[0])}<span id="lv-score" class="score">${ms.sc[0]} - ${ms.sc[1]}</span>${kitTag(a,kits(ms.clubs)[1])}<span id="lv-clock" class="pill">${clockTxt(ms)}</span></div><div class="mut" style="font-size:13px">${wxTxt(ms.wx)} · Arbitre : ${refTxt(ms.ref)}</div><div class="row">${ctrl}</div></div>
   <div id="lv-flash" class="lv-flash">${L.flash?`<div class="flash">${L.flash}</div>`:''}</div>
   <div class="lv-grid"><div>${pitchSVG(L)}<div id="lv-now" class="lv-now">${ms.now}</div><div id="lv-comm" class="lv-comm">${commHTML(ms)}</div></div>
   <div><h3>Consignes</h3><div class="lv-tac">

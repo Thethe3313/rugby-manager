@@ -103,6 +103,8 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  follow(d){const id=+d.id;G.follow=G.follow||[];G.follow=G.follow.includes(id)?G.follow.filter(x=>x!==id):G.follow.concat(id);save();render()},
+  postTalk(d){if(G.lastMatch&&!G.lastMatch.talk)postTalk(G.lastMatch,d.v);save();render()},
   // Continuer façon FM : les jours défilent (animation) jusqu'au prochain match ou à un message important ; recliquer arrête
   go(){if(UI.adv){UI.adv=null;save();return render()}if(G.phase!=='season'&&G.phase!=='access')return;UI.adv={n:0};UI.more=false;goTick()},
   startLg(d){UI.startLg=d.v;render()},

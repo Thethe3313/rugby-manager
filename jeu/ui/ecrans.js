@@ -71,13 +71,13 @@ function viewOffseason(){
 }
 function viewLineup(){
   const m=ME(),t=teamCalc(m);
-  const opt=(p,i)=>`<option value="${p.id}" ${m.lineup[i]===p.id?'selected':''} ${p.inj>0?'disabled':''}>${p.name} (${posL(p)}) · ${rd(effAt(p,SLOTS[i]))}${p.inj>0?' 🚑':''}</option>`;
+  const opt=(p,i)=>`<option value="${p.id}" ${m.lineup[i]===p.id?'selected':''} ${p.inj>0?'disabled':''}>${p.name} (${posS(p)}) · ${rd(effAt(p,SLOTS[i]))}${p.inj>0?' 🚑':''}</option>`;
   const rows=SLOTS.map((s,i)=>{
     const sorted=[...m.squad].sort((a,b)=>effAt(b,s)-effAt(a,s));
     const cur=m.squad.find(p=>p.id===m.lineup[i]);
-    return `${i===15?'<tr><th colspan="4">Remplaçants</th></tr>':''}<tr><td><b>${s[0]}</b></td><td>${s[2]}</td><td><select data-a="slot" data-i="${i}"><option value="">—</option>${sorted.slice(0,22).map(p=>opt(p,i)).join('')}${cur&&!sorted.slice(0,22).includes(cur)?opt(cur,i):''}</select></td><td class="n ${cur?oc(effAt(cur,s)):''}">${cur?rd(effAt(cur,s)):'-'}</td></tr>`;
+    return `${i===15?'<tr><th colspan="5">Remplaçants</th></tr>':''}<tr><td><b>${s[0]}</b></td><td>${s[2]}</td><td><select data-a="slot" data-i="${i}"><option value="">—</option>${sorted.slice(0,22).map(p=>opt(p,i)).join('')}${cur&&!sorted.slice(0,22).includes(cur)?opt(cur,i):''}</select></td><td class="n ${cur?oc(effAt(cur,s)):''}">${cur?rd(effAt(cur,s)):'-'}</td><td class="n ${cur?formeCls(cur.forme):''}" title="Forme (fatigue)">${cur?(cur.forme<65?'🥵 ':'')+rd(cur.forme)+'%':''}</td></tr>`;
   }).join('');
-  return `<div class="grid g2"><div class="card"><h2>Tactique & entraînement</h2>
+  return `<div class="grid g2 lu"><div class="card"><h2>Tactique & entraînement</h2>
   <p>Style de jeu<br><select data-a="tac" data-k="style">${Object.entries(STY).map(([a,b])=>`<option value="${a}" ${m.tac.style===a?'selected':''}>${b.n}</option>`).join('')}</select></p>
   <p>Intensité<br><select data-a="tac" data-k="int">${Object.entries(INTS).map(([a,b])=>`<option value="${a}" ${m.tac.int===a?'selected':''}>${b}</option>`).join('')}</select></p>
   <p>Jeu au pied<br>${tacSel('tac','kick',KICKS,tacOf(m).kick)}</p>
@@ -88,7 +88,7 @@ function viewLineup(){
   <p><label style="cursor:pointer"><input type="checkbox" data-a="autoXV" ${m.autoXV!==false?'checked':''}> <b>L'adjoint choisit la composition</b></label><br><span class="mut">Il aligne avant chaque match les meilleurs joueurs disponibles, à leur poste, en tenant compte de la forme. Dès que tu modifies un poste à la main, tu reprends la main (case décochée).</span></p>
   <p><button class="btn" data-a="auto">⚙ Composition automatique maintenant</button></p>
   <p class="mut">La note d'un joueur à un poste tient compte de ses stats, de sa forme et de sa position naturelle (jouer hors poste coûte 10 à 28 %).</p></div>
-  <div class="card"><h2>Composition (XV + banc)</h2><table><tr><th>N°</th><th>Poste</th><th>Joueur</th><th class="n">Note</th></tr>${rows}</table></div></div>`;
+  <div class="card"><h2>Composition (XV + banc)</h2><table><tr><th>N°</th><th>Poste</th><th>Joueur</th><th class="n">Note</th><th class="n">Forme</th></tr>${rows}</table><p class="mut">Forme : un joueur qui enchaîne les matchs s'use (🥵 sous 65 %) ; il joue moins bien et se blesse plus. Fais tourner ton effectif, ou laisse l'adjoint le faire.</p></div></div>`;
 }
 function viewCal(){
   const m=ME(),L=G.L[m.lg];

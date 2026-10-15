@@ -61,7 +61,7 @@ function newMatch(hc,ac,opt={}){
   const date=opt.date||G.date;ms.wx=opt.wx||weatherFor(date,hc);ms.ref=opt.ref||refFor(date,hc);
   for(const S of ms.T){S.capMain=S.club.captain&&S.on.some(d=>d&&d.p.id===S.club.captain)?S.club.captain:null;updateCaptain(ms,S)}
   // discours d'avant-match : celui du joueur (G.talk, motivant par défaut) ; les clubs IA motivent leurs joueurs aussi bien en moyenne
-  for(const S of ms.T){if(S.club.id===G.meId){applyTalk(ms,S.i,G.talk||'motive',true);delete G.talk}else if(S.club.id!==G.meId)S.mor=clamp(1+R.n(.018,.008),.99,1.04)}
+  for(const S of ms.T){if(S.club.id===G.meId){applyTalk(ms,S.i,G.talk||'motive',true);delete G.talk;if(G.postMor){S.mor*=1+G.postMor/100;delete G.postMor}}else if(S.club.id!==G.meId)S.mor=clamp(1+R.n(.018,.008),.99,1.04)}
   evt(ms,-1,'info',`Coup d'envoi : ${hc.short} - ${ac.short}.`,1);
   return ms;
 }
@@ -71,7 +71,7 @@ function mkSide(ms,club,i){
     st:{pos:0,tac:0,mt:0,car:0,m:0,cle:0,rk:0,to:0,pc:0,mel:0,melW:0,tou:0,touW:0,err:0,kick:0,yc:0,off:0}};
   (club.lineup||[]).forEach((id,k)=>{
     const p=id!=null&&club.squad.find(x=>x.id===id);if(!p||ms.P[p.id])return;
-    const d={p,side:i,no:k+1,slot:k<15?k:-1,ls:k<15?k:-1,fit:1,en:100,fm:.85+.15*clamp(p.forme,0,100)/100,start:k<15,used:false,
+    const d={p,side:i,no:k+1,slot:k<15?k:-1,ls:k<15?k:-1,fit:1,en:100,fm:.78+.22*clamp(p.forme,0,100)/100,start:k<15,used:false,
       secs:0,sin:0,inj:false,plan:(SUBMIN[p.g]||60)+R.i(-5,5),s:{tac:0,mt:0,car:0,m:0,cle:0,to:0,pen:0,es:0,pts:0,err:0,tw:0,off:0,yc:0}};
     ms.P[p.id]=d;
     if(k<15){d.fit=fitAt(p,k);S.on[k]=d}else S.bench.push(d);
@@ -142,7 +142,7 @@ function tickPlayers(ms,dt){
 function contact(ms,d,cost){
   if(!d||d.slot<0)return;
   d.en=Math.max(5,d.en-cost);
-  if(R.f()<.0008*INTK[ms.T[d.side].tac.int].inj*injRiskK(ms.T[d.side].club)*(.8+(100-d.en)/150))injure(ms,d);
+  if(R.f()<.0008*INTK[ms.T[d.side].tac.int].inj*injRiskK(ms.T[d.side].club)*(.8+(100-d.en)/150)*(d.p.forme<75?1+(75-d.p.forme)/60:1))injure(ms,d); // un joueur fatigué se blesse plus
 }
 function injure(ms,d){
   const S=ms.T[d.side];if(d.inj||d.slot<0)return;

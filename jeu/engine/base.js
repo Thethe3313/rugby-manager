@@ -118,7 +118,7 @@ const mass=cl=>cl.squad.reduce((s,p)=>s+p.sal,0);
 function effAt(p,slot){
   const ok=slot[3].includes(p.g);
   const fit=ok?(slot[4]&&p.sub&&p.sub!==slot[4]?.94:1):(NEIGH[slot[1]].includes(p.g)?.9:.72);
-  return ovrAt(p,ok?p.g:slot[1])*fit*(.82+.18*p.forme/100);
+  return ovrAt(p,ok?p.g:slot[1])*fit*(.78+.22*p.forme/100); // même effet de la forme qu'en match (engine/match.js)
 }
 // Composition : on place d'abord chaque joueur à son poste naturel (titulaires puis banc),
 // et on ne met quelqu'un hors de son poste que s'il n'y a plus personne de disponible à ce poste.

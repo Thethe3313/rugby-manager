@@ -129,3 +129,7 @@ p{margin:6px 0}
 #advbar .btn{color:var(--txt)}
 #advbar .spin{display:inline-block;animation:advp .6s ease-in-out infinite alternate}
 @keyframes advp{from{transform:translateX(-3px);opacity:.6}to{transform:translateX(3px);opacity:1}}
+.kit{display:inline-block;padding:2px 10px;border-radius:6px;border:1px solid #ffffff33}
+.star{cursor:pointer;color:var(--mut)}.star.on{color:var(--acc2)}
+@media(min-width:1000px){.grid.lu{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}}
+.grid.lu>.card{overflow-x:auto}

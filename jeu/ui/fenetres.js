@@ -4,8 +4,8 @@ function playerModal(){
   const own=f.club&&f.club.id===G.meId,c=f.club;
   const potTxt=potMode()==='hide'?'':` · potentiel ${potMode()==='exact'?(own?'':'≈')+potEst(p):starsTxt(potEst(p))}`;
   const acts=own&&p.youth?`<button class="btn sm" data-a="promote" data-id="${p.id}">Promouvoir en équipe pro</button>`:own?`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="renew">Négocier son contrat</button> <button class="btn sec sm" data-a="listP" data-id="${p.id}">${p.list?'Retirer de la liste des transferts':'Placer sur la liste des transferts'}</button> <button class="btn bad sm" data-a="release" data-id="${p.id}">Libérer</button>`
-    :c?`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="buy">Faire une offre</button>${p.ctr<=1&&G.phase==='season'?` <button class="btn sec sm" data-a="neg" data-id="${p.id}" data-mode="pre">Pré-contrat</button>`:''}`
-    :`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="fa">Faire signer</button>`;
+    :c?`${followBtn(p,true)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="buy">Faire une offre</button>${p.ctr<=1&&G.phase==='season'?` <button class="btn sec sm" data-a="neg" data-id="${p.id}" data-mode="pre">Pré-contrat</button>`:''}`
+    :`${followBtn(p,true)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="fa">Faire signer</button>`;
   return `<div class="overlay"><div class="modal"><h2>${p.name}</h2><p>${posL(p)}${p.nat?' · '+p.nat:''}${p.caps?' · '+p.caps+' sélection'+(p.caps>1?'s':''):p.intl?' · international':''} · ${p.age} ans · ${c?c.name:'<span class="ok">sans club</span>'}</p>
   <p>Note <b class="${oc(ovr(p))}">${rd(ovr(p))}</b>${potTxt} · valeur ${k(valueOf(p))} · salaire ${k(p.sal)}/an${c?` · contrat ${p.ctr} an(s)`:''}</p>
   <p>Personnalité : <b>${persLabel(p)}</b> <span class="mut">· professionnalisme ${p.pro??'?'}/20 · ambition ${p.amb??'?'}/20 · détermination ${p.det??'?'}/20</span></p>
@@ -43,10 +43,11 @@ function modalView(){
     const tab=UI.mtab||'resume',tb=(v,l)=>`<button class="btn sm ${tab===v?'':'sec'}" data-a="mtab" data-v="${v}">${l}</button>`;
     const body=!r.ps||tab==='resume'?`<div style="max-height:340px;overflow:auto">${r.ev.map(e=>`<div class="ev ${e.k}"><span class="m">${e.m}'</span><span>${e.x}</span></div>`).join('')||'<p class="mut">Match fermé, peu d\'événements.</p>'}</div>`
       :tab==='stats'?statsHTML(r.stats[0],r.stats[1],r.ph,r.tp,names):ratingsHTML(r,names);
-    return `<div class="overlay"><div class="modal wide"><div class="vs"><div>${h.short}</div><div class="score">${r.sh} - ${r.sa}</div><div>${a.short}</div></div>
+    return `<div class="overlay"><div class="modal wide"><div class="vs"><div>${kitTag(h,kits([h,a])[0])}</div><div class="score">${r.sh} - ${r.sa}</div><div>${kitTag(a,kits([h,a])[1])}</div></div>
     <p class="mut" style="text-align:center">Essais ${r.th}-${r.ta} · Pénalités ${r.pn[0]}-${r.pn[1]} · Drops ${r.dr[0]}-${r.dr[1]} · Possession ${r.ph}%-${100-r.ph}% · Cartons jaunes ${r.yc[0]}-${r.yc[1]}${r.att?` · Affluence ${r.att}`:''}</p>
     <p class="mut" style="text-align:center">Points de classement : ${!r.ko?`${h.short} ${(r.sh>r.sa?4:r.sh===r.sa?2:0)+r.bo[0]} · ${a.short} ${(r.sa>r.sh?4:r.sh===r.sa?2:0)+r.bo[1]}`:'match à élimination directe'}${r.so?' · qualification aux tirs au but':''}</p>
     ${r.wx?`<p class="mut" style="text-align:center">${wxTxt(r.wx)}${r.ref?' · Arbitre : '+refTxt(r.ref):''}</p>`:''}
+    ${(r.h===G.meId||r.a===G.meId)&&r===G.lastMatch?`<div class="card" style="text-align:center;margin:10px 0"><b>Causerie d'après-match</b> ${r.talk?`<p>Tu as choisi : <b>${POSTTALK[r.talk]}</b>. ${r.talkTxt}</p>`:`<p class="mut">Ce que tu dis au vestiaire compte pour le moral du prochain match.</p><div class="row" style="justify-content:center">${Object.entries(POSTTALK).map(([v,l])=>`<button class="btn sec sm" data-a="postTalk" data-v="${v}">${l}</button>`).join('')}</div>`}</div>`:''}
     ${mo?`<p style="text-align:center">⭐ Homme du match : <b>${mo.n}</b> (${names[mo.s]}) · note <b class="${rc(mo.r)}">${mo.r.toFixed(1)}</b></p>`:''}
     ${r.ps?`<div class="row" style="justify-content:center;margin-bottom:8px">${tb('resume','Temps forts')}${tb('stats','Statistiques')}${tb('notes','Notes des joueurs')}</div>`:''}
     ${body}

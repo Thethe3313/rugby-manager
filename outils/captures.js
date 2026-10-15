@@ -16,6 +16,8 @@ const SCREENS={
   accueil:"G=null;UI.amLv=null",accueilbas:"G=null;UI.startLg='am';UI.amLv='r1'",tuto:"G.tuto=1;G.tab='lineup'",plus:"G.tab='squad';UI.more=true",
   avance:"G.tab='home';UI.adv={n:3}",mailouvert:"G.tab='mail';UI.mid=G.mail[0].id;UI.mailView=true",
   offre:"const c=C('bay'),b=c.squad[2];sendBid(b,c,10,wageDemand(b,ME(),'move'),2);for(let i=0;i<4;i++)dayStep();G.tab='mail';UI.mid=G.mail.find(m=>/Offre/.test(m.subj)).id;UI.mailView=true",
+  suivis:"G.follow=[C('tou').squad[0].id,C('lar').squad[3].id,C('bay').squad[6].id];G.tab='market';UI.mt='follow'",
+  fatigue:"for(let i=0;i<8;i++)advance('match',{noLive:true});G.tab='lineup'",
   home:"G.tab='home'",mail:"G.tab='mail'",squad:"G.tab='squad'",youth:"G.tab='youth'",staff:"G.tab='staff'",
   lineup:"G.tab='lineup'",cal:"G.tab='cal'",table:"G.tab='table'",cups:"G.tab='cups'",market:"G.tab='market'",
   fin:"G.tab='fin'",settings:"G.tab='settings'",help:"G.tab='help'",

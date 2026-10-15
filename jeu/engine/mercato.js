@@ -4,6 +4,8 @@ function removeFromClub(p,club){club.squad=club.squad.filter(x=>x.id!==p.id);clu
 function tlog(t){G.tlog=G.tlog||[];G.tlog.unshift(`${seasonLabel()} · ${t}`);if(G.tlog.length>80)G.tlog.length=80}
 // Transfert effectif d'un joueur vers un club (from = null pour un joueur libre)
 function doTransfer(p,from,to,fee,sal,yrs){
+  if((G.follow||[]).includes(p.id)&&to.id!==G.meId)mail('Recruteur',`Joueur suivi : ${p.name} signe à ${to.short}`,`${p.name} (${GROUPS[p.g]}, ${Math.round(ovr(p))}) quitte ${from?from.short:'les joueurs libres'} pour ${to.name}${fee?' ('+fmtK(fee)+')':''}.`,{act:{player:p.id}});
+  if(to.id===G.meId&&G.follow)G.follow=G.follow.filter(x=>x!==p.id);
   if(from)removeFromClub(p,from);else G.fa=G.fa.filter(x=>x.id!==p.id);
   p.sal=sal;p.ctr=yrs;p.list=false;if(G.phase==='offseason')p.fresh=true;p.forme=Math.min(p.forme,85);delete p.faT;
   to.squad.push(p);

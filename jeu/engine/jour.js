@@ -12,7 +12,8 @@ function dailyUpdate(){
     for(const p of c.squad){
       if(p.inj>0&&!p.ni){p.inj--;if(p.inj>0&&R.f()<medFast)p.inj--}
       p.ni=false;
-      p.forme=clamp(p.forme+(p.inj>0?1:3.2*rec),20,100);
+      // récupération plus lente quand le joueur est frais : un titulaire qui joue tous les matchs s'use (il faut faire tourner)
+      p.forme=clamp(p.forme+(p.inj>0?1:(1.2+.035*(100-p.forme))*rec),20,100);
       if(p.inj>0||!weekly)continue;
       const o=ovr(p),gap=(p.pot||o)-o;if(gap<=0)continue;
       const base=p.age<=20?.010:p.age<=23?.007:p.age<=26?.004:p.age<=29?.002:0;if(!base)continue;
@@ -67,6 +68,7 @@ function dayStep(){
     const nx=myNextMatch();if(nx&&dDiff(G.date,nx.d)===1)scoutReport(nx);
     if(dDow(G.date)===1){fitnessReport();weeklyBehaviour()}
     if(G.date.endsWith('-01'))monthlyMails();
+    if(G.date.endsWith('-01-02')){const fl=(G.follow||[]).map(id=>findPlayer(id)).filter(f=>f.p&&f.club&&f.club.id!==m.id&&f.p.ctr<=1);if(fl.length)mail('Recruteur','Joueurs suivis en fin de contrat',`Ces joueurs que tu suis sont en dernière année de contrat : tu peux leur proposer un pré-contrat (ils arriveraient libres la saison prochaine).<br>${fl.map(f=>`${f.p.name} (${f.club.short}, ${Math.round(ovr(f.p))})`).join('<br>')}`,{act:{tab:'market',mt:'follow'},imp:true})}
     if(G.date.endsWith('-01-02')){const ex=m.squad.filter(p=>p.ctr<=1).sort((a,b)=>ovr(b)-ovr(a));if(ex.length)mail('Directeur sportif','Contrats qui arrivent à échéance',`${ex.length} joueur(s) sont en dernière année de contrat :<br>${ex.slice(0,12).map(p=>`${p.name} (${posL(p)}, ${Math.round(ovr(p))})`).join('<br>')}<br><br>Pense à les prolonger, sinon ils partiront libres en fin de saison — et les autres clubs peuvent déjà leur proposer un pré-contrat.`,{act:{tab:'squad'}})}
   }
   return mine;

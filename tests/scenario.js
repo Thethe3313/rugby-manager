@@ -35,7 +35,9 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
   run(`ACT.start({id:${JSON.stringify(club)}})`);
   const allTabs=label=>{
     for(const t of TABS){run(`ACT.tab({t:'${t}'})`);check(label+':'+t,app.innerHTML)}
-    for(const t of ['offers','pre','log']){run(`G.tab='market';ACT.mt({t:'${t}'})`);check(label+':market-'+t,app.innerHTML)}
+    // joueurs suivis : on suit le meilleur joueur adverse, puis l'onglet des suivis
+    run(`ACT.follow({id:G.clubs.find(c=>c.id!==G.meId).squad[1].id})`);
+    for(const t of ['follow','offers','pre','log']){run(`G.tab='market';ACT.mt({t:'${t}'})`);check(label+':market-'+t,app.innerHTML)}
     run(`UI.mt='search';ACT.tab({t:'home'})`);
     // fiche d'un joueur de l'effectif, d'un joueur adverse, d'un espoir, et négociation
     const ids=run(`[ME().squad[0].id, G.clubs.find(c=>c.id!==G.meId).squad[0].id, (ME().youth[0]||ME().squad[1]).id]`);
@@ -63,10 +65,13 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
         if(liveEvery&&nMatch%liveEvery===1)driveLive(game,lb,check);
         else run('ACT.quickMatch()');
         check(lb+':apres-match',app.innerHTML);
-        if(run(`UI.modal&&UI.modal.type==='match'`))for(const v of['stats','notes','resume']){run(`ACT.mtab({v:'${v}'})`);check(lb+':match-'+v,app.innerHTML)}
+        if(run(`UI.modal&&UI.modal.type==='match'`)){for(const v of['stats','notes','resume']){run(`ACT.mtab({v:'${v}'})`);check(lb+':match-'+v,app.innerHTML)}
+          run(`ACT.postTalk({v:'${['feliciter','encourager','critiquer','rien'][nMatch%4]}'})`);check(lb+':causerie',app.innerHTML)}
       }
       run('UI.modal=null');
       if(guard===12)allTabs(`s${s}:milieu`);
+      // Continuer façon FM : premier pas de l'avancée animée (le minuteur ne tourne pas dans les tests), puis arrêt
+      if(guard===5){run('ACT.go()');check(lb+':avance',app.innerHTML);run('if(UI.adv)ACT.go()')}
     }
     allTabs(`s${s}:fin`);
     // intersaison : on prolonge le médecin et l'entraîneur des avants s'ils sont en fin de contrat (les autres partent)

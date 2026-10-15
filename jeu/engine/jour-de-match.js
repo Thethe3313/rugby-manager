@@ -72,3 +72,16 @@ function applyTalk(ms,i,key,pre){
   evt(ms,i,'info',`Discours ${pre?'d\'avant-match':'de la mi-temps'} (${S.club.short}) : ${txt}`,1);
   return txt;
 }
+// ---- Causerie d'après-match : effet sur le moral du match suivant (G.postMor, en %, entre -3 et +3) ----
+// Le bon discours dépend du résultat et de ce qu'on attendait (favori ou outsider, écart serré ou non).
+const POSTTALK={feliciter:'Féliciter',encourager:'Encourager',critiquer:'Critiquer',rien:'Ne rien dire'};
+function postTalk(r,key){
+  const m=ME(),side=r.h===m.id?0:1,my=side?r.sa:r.sh,op=side?r.sh:r.sa,o=C(side?r.h:r.a);
+  const res=my>op?'v':my<op?'d':'n',fav=clubStr(m)>clubStr(o)+2,und=clubStr(m)<clubStr(o)-2,close=Math.abs(my-op)<=7;
+  const T={v:{feliciter:2,encourager:1,critiquer:fav&&close?1:-1.5,rien:0},
+    n:{feliciter:und?1.5:-.5,encourager:1,critiquer:fav?1:-1.5,rien:0},
+    d:{feliciter:und&&close?.5:-2,encourager:und?1.5:.5,critiquer:fav?1.5:-1,rien:-.5}}[res][key];
+  G.postMor=clamp(T,-3,3);r.talk=key;
+  r.talkTxt=T>=1.5?'Les joueurs sont gonflés à bloc pour le prochain match.':T>0?'Le message passe bien.':T===0?'Pas de réaction particulière.':T>-1?'Le vestiaire est un peu déçu.':'Le vestiaire le prend mal : la confiance baisse.';
+  return r.talkTxt;
+}

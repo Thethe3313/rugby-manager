@@ -12,6 +12,7 @@ Le projet est versionné avec git (branche `main`). Organisation du dossier (voi
 
 `jeu/index.html` charge des scripts classiques (`<script src>`, pas de modules ES, pour que le double-clic marche) qui partagent les mêmes variables globales, **dans cet ordre** (chemins relatifs à `jeu/`) :
 1. **`data/`** :
+   - `couleurs.js` (après `amateur.js`) : `COULEURS`, couleurs de maillot des clubs connus (`clubCols`/`kits` dans `ui/match-direct.js`).
    - `joueurs.js` : `REAL`, effectifs réels 2026-27 par club (30 clubs). Format `[nom, poste, sous-poste, année de naissance, nationalité, sélections, sélectionné récemment 0/1, note /99, tags, justification, points forts, points faibles]`.
    - `amateur.js` (chargé après `staff.js`) : `F2POULES`, `F3POULES` (vrais clubs de Fédérale 2 et 3), `REGPOULES` (vraies Régionales de Nouvelle-Aquitaine `na` et PACA `paca`, depuis `recherche/amateur/brut/regionales.json`), `REGFICT` (clubs fictifs de réserve), générés par `outils/generer-amateur.js`.
    - `espoirs.js` : `REALY`, vrais espoirs. Format `[nom, poste, sous-poste, année, nationalité, international U20 0/1, note, potentiel]` (le potentiel est le centre d'une fourchette, voir `potDraw`).
@@ -33,6 +34,11 @@ Le projet est versionné avec git (branche `main`). Organisation du dossier (voi
 - Le résultat garde le format historique (`sh sa th ta pn dr cv yc ev bo winner`) plus `stats` (par équipe), `ps` (joueurs : minutes, note /10, essais, plaquages…) et `motm` (homme du match). `afterMatch(club, r, side)` applique stats de saison, fatigue et blessures.
 - Match en direct : `advance` s'arrête la veille d'un match du joueur (`G.liveWait`) ; le direct se joue dans l'interface, puis son résultat passe par `G.liveRes` à `playFixtures`.
 - Calibrage visé (Top 14) : ~49 pts et ~5,6 essais par match, ~4 pénalités réussies, ~67-70 % de victoires à domicile, favori gagnant ~70 %, ~26 % d'écarts de 20 points ou plus. Vérifier avec `node tests/calib.js` après toute modification du moteur, et `node tests/consignes.js` pour l'équilibre des consignes (chacune doit rester entre ~50 et ~63 % de victoires).
+
+### Vie du club (étape G)
+- Fatigue : récupération `(1.2+.035*(100-forme))*recoverK` par jour, effet en match `fm=.78+.22*forme/100` (même facteur dans `effAt`), blessures plus fréquentes sous 75 %.
+- Causerie d'après-match `postTalk` (`jour-de-match.js`) → `G.postMor` (±3 %) appliqué au moral du match suivant dans `newMatch`.
+- Offres d'achat par messages : `sendBid`/`bidDay`/`answerBid` (`G.bids`, réponse 1-3 jours plus tard, motif `bidReason`). Joueurs suivis `G.follow`. Continuer animé : `ACT.go`/`goTick` (s'arrête la veille d'un match ou sur un message `imp`).
 
 ## Base de recherche des notes
 Le dossier `recherche/` contient les données brutes qui ont servi à noter les joueurs :
