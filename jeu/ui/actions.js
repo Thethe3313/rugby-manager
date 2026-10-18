@@ -109,6 +109,7 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  ssort(d){const S=UI.ss||{k:'poste',d:1};UI.ss=S.k===d.k?{k:d.k,d:-S.d}:{k:d.k,d:1};render()},
   loanList(d){const p=ME().squad.find(x=>x.id===+d.id);if(!p)return;p.loanList=!p.loanList;if(p.loanList&&G.phase==='offseason')genLoanOffers(p,R.i(1,2));save();render()},
   loanAcc(d){if(acceptLoanOffer(+d.i))UI.modal=null;save();render()},
   loanRef(d){G.loanOffers.splice(+d.i,1);save();render()},

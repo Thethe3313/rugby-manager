@@ -149,3 +149,5 @@ p{margin:6px 0}
 .clink:hover{color:var(--acc)}
 select.lgsel{font-weight:600}
 .lv-tac select{min-width:0;width:100%}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--txt)}
