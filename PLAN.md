@@ -100,26 +100,11 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 - **Mise en ligne (14 octobre 2026)** : jeu publié sur https://thethe3313.github.io/rugby-manager/ (GitHub Pages), installable sur téléphone depuis le navigateur.
 
+- **Étape G — Retours de jeu de Théophile (15-18 octobre 2026)** : Continuer façon FM (jours qui défilent, arrêt au match ou sur message important), aller à une date, mercato par messages (réponse quelques jours plus tard avec le motif), écrans téléphone revus, fatigue qui impose la rotation, couleurs des clubs, causerie d'après-match, joueurs suivis, seconds postes, composition sur un terrain, championnat espoirs, pages de clubs, fermeture de l'avant-match.
+
 ## ▶️ Prochaine étape
 
-### Étape G — Retours de jeu de Théophile (15 octobre 2026)
-- **Lot 1** :
-  - Avancer façon FM : les jours défilent avec une animation, arrêt automatique au prochain match ou sur un message important, bouton Stop.
-  - Écrans téléphone à revoir : Messagerie, Espoirs, Staff et les autres onglets.
-  - Mercato par messages : « le club a reçu ton offre », puis réponse quelques jours plus tard (acceptée → le joueur arrive ; refusée → la raison : indemnité, salaire, durée…).
-- **Lot 2** :
-  - Fatigue et forme qui obligent à faire tourner l'effectif.
-  - Couleurs réelles des clubs.
-  - Causerie d'après-match.
-  - Liste de joueurs suivis au mercato.
-- **Lot 3** :
-  - Seconds postes (ex. Ferté : demi de mêlée, ailier, arrière).
-  - Composition sur un terrain, en glissant les joueurs façon FM.
-- **Lot 4** :
-  - Championnat espoirs, pour que les jeunes jouent et progressent.
-  - Pouvoir fermer la fenêtre du jour de match et revenir au menu.
-  - Simuler jusqu'à une date choisie (comme FM / FIFA).
-  - Voir l'effectif des autres clubs : noms d'équipes cliquables partout (classements de tous les championnats) → page du club.
+- Selon tes prochains retours de jeu.
 
 ## 📋 À faire ensuite
 
