@@ -48,11 +48,12 @@ function dayStep(){
         if(r.h===m.id&&!r.ko){const R_=G.L[m.lg].fixtures.length,n=clubsIn(m.lg).length,rk=rankOf(m.id)||n/2,attF=(.85+.3*(1-(rk-1)/(n-1)))*(G.coach?.85+.3*G.coach.fans/100:1);const rev=Math.round(m.bud*.28/(R_/2)*attF);m.budget+=rev;G.fin.ticket+=rev;r.att=Math.round(({t14:14000,pd2:5000,nat:2500,n2:900,f1:600,f2:400,f3:250,r1:180,r2:130,r3:100}[m.lg]||900)*attF*(.9+R.f()*.2))}}
     }
     // coupes d'Europe (les samedis sans Top 14)
-    xlDay();amDay();espDay();bidDay();selMail();
+    xlDay();amDay();espDay();bidDay();selMail();obsDay();
     const cm=cupDay();if(cm)mine=cm;
     if(lgs().every(lg=>G.L[lg].phase==='done'))prepareAccess();
   }
   if(mine){
+    if(mine.h===m.id||mine.a===m.id)recordMatch(mine);
     const home=mine.h===m.id,o=C(home?mine.a:mine.h),my=home?mine.sh:mine.sa,op=home?mine.sa:mine.sh;
     addNews(`${mine.cup?mine.cup+" : ":""}${mine.winner===m.id?'Victoire':my===op?'Match nul':'Défaite'} ${my}-${op} ${home?'contre':'à'} ${o.short}.`);
     G.lastMatch=mine;

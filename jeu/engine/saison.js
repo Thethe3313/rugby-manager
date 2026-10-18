@@ -103,6 +103,7 @@ function finishSeason(){
   if(fate==='relégué')addNews(`⬇ ${m.name} descend en ${LEAGUES[to].name}.`);
   G.phase='offseason';
   // verdict du président (objectifs pondérés), prestige, offres ou licenciement
+  recordSeason(rank,fate);
   const V=G.summary.verdict=seasonVerdict(rank,sortedTable(lg).length);
   const vtx=V?`<br><br>Mon verdict : sportif ${V.sp>=0?'✅':'❌'}, finances ${V.fi>=0?'✅':'❌'} (${fmtK(Math.round(V.ft))}), formation ${V.fo>=0?'✅':'❌'} (${Math.round(V.ys*100)} % de titularisations pour les moins de 24 ans). ${G.phase==='sacked'?'<b>Je mets fin à ton contrat.</b>':V.tot>.3?'Excellente saison.':V.tot>-.1?'Saison correcte.':'Saison décevante : la confiance est entamée.'}`:'';
   const tgt=G.obj?G.obj.t:99;mail('Le président',`Bilan de la saison ${seasonLabel()}`,`Nous terminons ${rank}e de ${LEAGUES[lg].name}. ${rank<=tgt?'Objectif atteint, bravo.':'L\'objectif ('+(G.obj?G.obj.l:'')+') n\'est pas atteint.'}${vtx} ${fate==='promu'?`Et nous montons en ${LEAGUES[to].name} !`:fate==='relégué'?`Nous descendons en ${LEAGUES[to].name} : il faudra repartir de l'avant.`:fate==='horsjeu'?'Nous descendons en Nationale 3.':''}`);

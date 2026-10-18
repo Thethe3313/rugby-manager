@@ -8,6 +8,10 @@
 
 // ---- Consignes ----
 const KICKS={main:{n:'À la main (garder le ballon)',k:.5},mixte:{n:'Équilibré',k:1},pied:{n:'Au pied (jeu d\'occupation)',k:1.6}};
+// Défense (appliquée quand l'équipe défend) et rythme (quand elle a le ballon)
+const DEFS={glissee:{n:'Glissée (équilibrée)',tk:0,gain:1,brk:1,pen:1,to:1},montee:{n:'Montée agressive (blitz) : plaque haut, mais risque la percée',tk:.012,gain:.88,brk:1.55,pen:1.2,to:1.08},repli:{n:'En repli : protège la profondeur, cède du terrain',tk:-.012,gain:1.15,brk:.7,pen:.9,to:.85}};
+const RYTHMS={lent:{n:'Lent : contrôle, moins de fautes',dt:1.1,err:.92,en:.92,bon:-.3},normal:{n:'Normal',dt:1,err:1,en:1,bon:0},rapide:{n:'Rapide : met la défense sous pression, use les joueurs',dt:.88,err:1.12,en:1.18,bon:.45}};
+const defOf=S=>DEFS[S.tac.def]||DEFS.glissee,ryOf=S=>RYTHMS[S.tac.ry]||RYTHMS.normal;
 const PENS={auto:'L\'équipe décide',points:'Prendre les points',touche:'Jouer la touche',melee:'Choisir la mêlée',vite:'Jouer vite à la main'};
 // Intensité : performance, fatigue, blessures et fautes
 const INTK={basse:{perf:.965,tire:.75,inj:.7,pen:.88},normale:{perf:1,tire:1,inj:1,pen:1},haute:{perf:1.035,tire:1.35,inj:1.5,pen:1.15}};
@@ -20,9 +24,9 @@ const SUBMIN={PIL:50,TAL:52,'2L':55,'3L':58,DM:60,OUV:65,CEN:64,AIL:66,ARR:66};
 // Fin de chaque période (en secondes) : 1re mi-temps, 2e mi-temps, prolongations
 const PEND=[0,2400,4800,5400,6000],PMIN=[0,40,80,90,100];
 
-function tacOf(c){const t=c.tac||{};return{style:t.style||'equilibre',int:t.int||'normale',kick:t.kick||'mixte',pen:t.pen||'auto'}}
+function tacOf(c){const t=c.tac||{};return{style:t.style||'equilibre',int:t.int||'normale',kick:t.kick||'mixte',pen:t.pen||'auto',def:t.def||'glissee',ry:t.ry||'normal'}}
 // Les clubs IA adaptent leur style à leur effectif
-function aiTac(c){const t=teamCalc(c);return{style:t.pack>t.backs+3?'conquete':t.backs>t.pack+3?'mouvement':'equilibre',int:'normale',kick:'mixte',pen:'auto'}}
+function aiTac(c){const t=teamCalc(c);return{style:t.pack>t.backs+3?'conquete':t.backs>t.pack+3?'mouvement':'equilibre',int:'normale',kick:'mixte',pen:'auto',def:'glissee',ry:'normal'}}
 
 // ---- Petits outils ----
 const nm=(ms,i)=>ms.clubs[i].short;
@@ -105,6 +109,7 @@ function matchStep(ms){
     case'pen':dt=doPenalty(ms,a);break;
     default:dt=doPhase(ms,a);
   }
+  if(n.k!=='kickoff'&&n.k!=='pen')dt=Math.round(dt*ryOf(ms.T[a]).dt);
   ms.T[a].st.pos+=dt;ms.terr[ms.x>50?0:1]+=dt;
   ms.t+=dt;
   tickPlayers(ms,dt);
@@ -129,7 +134,7 @@ function periodEnd(ms){
 function tickPlayers(ms,dt){
   for(const S of ms.T)updateCaptain(ms,S);
   for(const S of ms.T){
-    const tire=INTK[S.tac.int].tire;
+    const tire=INTK[S.tac.int].tire*ryOf(S).en;
     for(const d of S.on){
       if(!d)continue;
       if(d.sin){if(ms.t>=d.sin){d.sin=0;evt(ms,S.i,'info',`Retour de ${d.p.name} sur le terrain (${S.club.short}).`,1)}continue}
@@ -220,19 +225,20 @@ function doCarry(ms,a){
   const fwd=R.f()<fs;
   const car=pickW(att,x=>(x.slot<8)===fwd?WCAR[x.slot]:0);
   const tk=pickW(def,x=>WTAC[x.slot]*((x.slot<8)===(car.slot<8)?1.6:1));
-  const bonus=(ms.quick?.6:0)+(ms.counter&&car.slot>=10?.8:0)+(ms.tap?1:0);
+  const DF=defOf(D),RY=ryOf(S);
+  const bonus=(ms.quick?.6:0)+(ms.counter&&car.slot>=10?.8:0)+(ms.tap?1:0)+RY.bon;
   ms.quick=false;ms.counter=false;ms.tap=false;ms.fromSet=false;
   ms.view={k:'open',a,c:car.p.id};ms.y=clamp(ms.y+R.n(0,9),4,66);
   car.s.car++;S.st.car++;
   // en-avant
-  if(R.f()<.035*(1+(12-car.p.mai)/30)*(st==='mouvement'?1.2:st==='conquete'?.85:1)*WX[ms.wx].err){
+  if(R.f()<.035*(1+(12-car.p.mai)/30)*(st==='mouvement'?1.2:st==='conquete'?.85:1)*WX[ms.wx].err*RY.err){
     car.s.err++;S.st.err++;ms.next={k:'scrum',team:d};
     evt(ms,a,'info',`En-avant de ${car.p.name} (${nm(ms,a)}). Mêlée pour ${nm(ms,d)}.`,0);return 10;
   }
   const cv=.3*A(ms,car,'pui')+.25*A(ms,car,'evi')+.2*A(ms,car,'vit')+.15*A(ms,car,'mai')+.1*A(ms,car,'dec');
   const tv=tk?.5*A(ms,tk,'tac')+.25*A(ms,tk,'pla')+.25*A(ms,tk,'pui'):0;
   const short=15-def.length;
-  const pMade=tk?clamp(.87+(tv-cv-bonus)*.016-short*.05,.68,.965):0;
+  const pMade=tk?clamp(.87+(tv-cv-bonus)*.016-short*.05+DF.tk,.68,.965):0;
   contact(ms,car,.6);
   let gain,brk=false,missed=false;
   if(R.f()<pMade){
@@ -241,6 +247,7 @@ function doCarry(ms,a){
     if(R.f()<.0011*(.6+tk.p.eng/25))return foul(ms,d,tk,'plaquage dangereux',8,true);
     gain=car.slot<8?R.n(1.6+(cv+bonus-tv)*.25,1.4):R.n(2.4+(cv+bonus-tv)*.3,2.2);
     if(p>94)gain*=.6;
+    if(gain>0)gain*=DF.gain;
     gain=clamp(gain,-3,12);
     // passe après contact
     const pOff=.06*(car.p.pas+car.p.mai)/24*(st==='mouvement'?1.6:st==='conquete'?.6:1)*(car.slot<5?.4:1);
@@ -252,7 +259,7 @@ function doCarry(ms,a){
   }else{
     missed=true;if(tk){tk.s.mt++;D.st.mt++}
     gain=clamp(R.n(6+A(ms,car,'vit')*.3,4),2,30);
-    brk=R.f()<clamp(.3+(A(ms,car,'vit')*.6+A(ms,car,'evi')*.4-coverOf(ms,d))*.04+short*.06,.1,.7)*WX[ms.wx].brk;
+    brk=R.f()<clamp(.3+(A(ms,car,'vit')*.6+A(ms,car,'evi')*.4-coverOf(ms,d))*.04+short*.06,.1,.7)*WX[ms.wx].brk*DF.brk;
   }
   if(brk){
     car.s.cle++;S.st.cle++;
@@ -291,9 +298,9 @@ function doRuck(ms,a,car,tk,dt){
   sup.forEach(x=>contact(ms,x,.25));if(j)contact(ms,j,.3);
   const short=15-def.length;
   const disc=x=>clamp(1+(11-(x.p.dec+x.p.sfr)/2)/22+(10-(x.p.pro||10))/45,.7,1.45);
-  const pTO=j?clamp(.045*Math.exp((rJ-rA)/3.2)-short*.006,.01,.16):0;
+  const pTO=j?clamp(.045*Math.exp((rJ-rA)/3.2)-short*.006,.01,.16)*defOf(D).to:0;
   const pPA=.03*INTK[S.tac.int].pen*disc(car)*refK(ms)*S.disc*capDisc(ms,S)*(rJ>rA?1+(rJ-rA)*.08:1);
-  const pPD=.036*INTK[D.tac.int].pen*(j?disc(j):1)*refK(ms)*D.disc*capDisc(ms,D)*(paOf(ms,a)>78?1.3:1)*(rA>rJ?1+(rA-rJ)*.06:1);
+  const pPD=.036*INTK[D.tac.int].pen*(j?disc(j):1)*refK(ms)*D.disc*capDisc(ms,D)*(paOf(ms,a)>78?1.3:1)*(rA>rJ?1+(rA-rJ)*.06:1)*defOf(D).pen;
   const u=R.f();
   if(ms.view.k==='open')ms.view.k='ruck';
   if(u<pTO){j.s.to++;D.st.to++;ms.phase=0;ms.next={k:'play',team:d};ms.counter=R.f()<.3;evt(ms,d,'info',`Ballon gratté par ${j.p.name} (${nm(ms,d)}) !`,1);return dt}

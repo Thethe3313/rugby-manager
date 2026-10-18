@@ -35,6 +35,7 @@ function injTxt(p){return away(p)?`<span class="warn">🌍 En sélection (${p.se
 // Joueurs suivis au mercato (étoile)
 const isFollowed=p=>(G.follow||[]).includes(p.id);
 const followBtn=(p,big)=>big?`<button class="btn sec sm" data-a="follow" data-id="${p.id}">${isFollowed(p)?'★ Ne plus suivre':'☆ Suivre'}</button>`:`<span class="star ${isFollowed(p)?'on':''}" data-a="follow" data-id="${p.id}" title="Suivre ce joueur">${isFollowed(p)?'★':'☆'}</span> `;
+const obsBtn=p=>knowOf(p)>=3?'':(G.obsQ||[]).some(x=>x.pid===p.id)?'<span class="mut">🔍 en observation</span>':`<button class="btn sec sm" data-a="observe" data-id="${p.id}">🔍 Faire observer</button>`;
 const formeCls=f=>f>=80?'ok':f>=65?'warn':'ko';
 function formeBar(f){return `<div class="bar" title="${rd(f)}%"><i style="width:${f}%;background:${f>75?'var(--acc)':f>50?'var(--acc2)':'var(--bad)'}"></i></div>`}
 
@@ -44,7 +45,7 @@ function render(){
   if(!G){$app.innerHTML=viewStart();return}
   if(G.phase==='sacked'){$app.innerHTML=viewSacked();return}
   const m=ME();
-  const tabs=[['home','Accueil'],['mail',`Messagerie${unread()?' ('+unread()+')':''}`],['squad','Effectif'],['youth','Espoirs'],['staff','Staff'],['lineup','Composition'],['cal','Calendrier'],['table','Classement'],['cups','Europe'],['market','Mercato'],['fin','Finances'],['career','Carrière'],['vest','Vestiaire'],['settings','Réglages'],['help','Rugby 101']];
+  const tabs=[['home','Accueil'],['mail',`Messagerie${unread()?' ('+unread()+')':''}`],['squad','Effectif'],['youth','Espoirs'],['staff','Staff'],['lineup','Composition'],['cal','Calendrier'],['table','Classement'],['cups','Europe'],['market','Mercato'],['fin','Finances'],['career','Carrière'],['vest','Vestiaire'],['histo','Histoire'],['settings','Réglages'],['help','Rugby 101']];
   const ph=stageLabel(m);
   // Bandeau : sur téléphone, seules les pastilles sans classe « x » restent visibles (le bouton ⋯ affiche les autres)
   $app.innerHTML=`<div id="top" class="${UI.topOpen?'open':''}"><span class="logo">🏉<span class="lt"> Rugby Manager</span></span><span class="pill"><b>${m.name}</b></span><span class="pill">📅 <b>${fmtD(G.date)}<span class="lt"> ${G.date.slice(0,4)}</span></b></span><span class="pill x"><b>${LEAGUES[m.lg].name}</b> · ${seasonLabel()} · <b>${ph}</b></span><span class="sp"></span>${windowOpen()?'<span class="pill x" style="color:var(--acc)"><b>Mercato ouvert</b></span>':''}<span class="pill"><span class="lb">Trésorerie </span><span class="lm">💰 </span><b class="${m.budget<0?'ko':''}">${k(m.budget)}</b></span><span class="pill x" title="Masse salariale / plafond">Masse <b>${k(mass(m))}</b> / ${k(capOf(m))}</span><button class="btn sec sm tgl" data-a="topTgl" title="Plus d'informations">${UI.topOpen?'▲':'⋯'}</button><button class="btn sec sm" data-a="save" title="Sauvegarder">💾<span class="lt"> Sauvegarder</span></button><button class="btn sec sm hmo" data-a="menu">Menu</button></div>
@@ -75,7 +76,7 @@ function advBar(){return `<div id="advbar"><span class="spin">⏩</span> Les jou
 function view(){
   switch(G.tab){
     case'squad':return viewSquad();case'lineup':return viewLineup();case'cal':return viewCal();
-    case'table':return viewTable();case'market':return viewMarket();case'fin':return viewFin();case'settings':return viewSettings();case'youth':return viewYouth();case'staff':return viewStaff();case'cups':return viewCups();case'mail':return viewMail();case'help':return viewHelp();case'career':return viewCareer();case'vest':return viewVest();
+    case'table':return viewTable();case'market':return viewMarket();case'fin':return viewFin();case'settings':return viewSettings();case'youth':return viewYouth();case'staff':return viewStaff();case'cups':return viewCups();case'mail':return viewMail();case'help':return viewHelp();case'career':return viewCareer();case'vest':return viewVest();case'histo':return viewHisto();
     default:return G.phase==='offseason'?viewOffseason():viewHome();
   }
 }

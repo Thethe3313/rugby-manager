@@ -108,6 +108,7 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  observe(d){const p=findPlayer(+d.id).p;if(!p)return;const r=observe(p);if(r==='plein')alert('Ton recruteur observe déjà 5 joueurs : attends ses rapports.');save();render()},
   deleg(d,el){G.deleg=G.deleg||{};G.deleg[d.k]=!!el.checked;save();render()},
   vTalk(d){const p=ME().squad.find(x=>x.id===+d.id);if(p){UI.vMsg=answerTalk(p,d.k);save()}render()},
   loanPick(d){UI.modal={type:'loan'};UI.pid=+d.id;render()},

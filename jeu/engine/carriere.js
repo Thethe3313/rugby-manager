@@ -97,3 +97,27 @@ function takeJob(id){
   mail('Le président',`Bienvenue à ${m.name}`,`Bienvenue au club, coach. Nous comptons sur toi.${G.phase==='season'?' Tes objectifs t\'attendent dans le message suivant.':' Tes objectifs te seront fixés au début de la saison.'}`);
   return true;
 }
+
+// ==== HISTOIRE DU CLUB (G.chist[id]) : saisons, records, grandes figures ====
+const chistOf=id=>{G.chist=G.chist||{};return G.chist[id]=G.chist[id]||{seasons:[],rec:{},leg:{},streak:0}};
+// après chaque match du club du joueur (championnat ou coupe)
+function recordMatch(r){
+  const m=ME(),H=chistOf(m.id),home=r.h===m.id,my=home?r.sh:r.sa,op=home?r.sa:r.sh,o=C(home?r.a:r.h),d=my-op;
+  const txt=`${my}-${op} ${home?'contre':'à'} ${o?o.short:'?'} (${fmtD(G.date,true)})`,R_=H.rec;
+  if(d>0&&(!R_.win||d>R_.win.d))R_.win={d,txt};
+  if(d<0&&(!R_.loss||-d>R_.loss.d))R_.loss={d:-d,txt};
+  if(!R_.pts||my>R_.pts.v)R_.pts={v:my,txt};
+  H.streak=d>0?H.streak+1:0;if(!R_.streak||H.streak>R_.streak.v)R_.streak={v:H.streak,txt:`jusqu'au ${fmtD(G.date,true)}`};
+}
+// fin de saison : la saison du club et ses joueurs (matchs, essais, points cumulés sous le maillot)
+function recordSeason(rank,fate){
+  const m=ME(),H=chistOf(m.id),top=k=>[...m.squad].sort((a,b)=>b.st[k]-a.st[k])[0];
+  const te=top('es'),tp=top('pts');
+  H.seasons.push({s:seasonLabel(),lg:m.lg,rank,fate,coach:true,te:te&&te.st.es?`${te.name} (${te.st.es})`:'',tp:tp&&tp.st.pts?`${tp.name} (${tp.st.pts})`:''});
+  for(const p of m.squad){const L=H.leg[p.id]=H.leg[p.id]||{n:p.name,mj:0,es:0,pts:0,s:0};L.mj+=p.st.mj;L.es+=p.st.es;L.pts+=p.st.pts;if(p.st.mj)L.s++}
+}
+// titres du club pendant la partie (palmarès G.hist : noms courts des champions)
+function clubTitles(c){
+  const t=[];for(const h of G.hist||[]){const add=(v,l)=>{if(v===c.short)t.push(`${l} ${h.s}`)};add(h.champ,'Top 14');add(h.champ2,'Pro D2');add(h.nat,'Nationale');add(h.n2,'Nationale 2');add(h.cc,'Champions Cup');add(h.ch,'Challenge Cup')}
+  return t;
+}

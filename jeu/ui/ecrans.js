@@ -130,6 +130,8 @@ function viewLineup(){
   <p>Intensité<br><select data-a="tac" data-k="int">${Object.entries(INTS).map(([a,b])=>`<option value="${a}" ${m.tac.int===a?'selected':''}>${b}</option>`).join('')}</select></p>
   <p>Jeu au pied<br>${tacSel('tac','kick',KICKS,tacOf(m).kick)}</p>
   <p>Sur pénalité<br>${tacSel('tac','pen',PENS,tacOf(m).pen)}</p>
+  <p>Défense<br>${tacSel('tac','def',DEFS,tacOf(m).def)}</p>
+  <p>Rythme<br>${tacSel('tac','ry',RYTHMS,tacOf(m).ry)}</p>
   ${(()=>{const xv=m.lineup.slice(0,15).map(id=>m.squad.find(p=>p.id===id)).filter(Boolean);const sel=(key,lab,val)=>`<p>${lab}<br><select data-a="role" data-k="${key}"><option value="">Automatique</option>${xv.map(p=>`<option value="${p.id}" ${m[key]===p.id?'selected':''}>${p.name} (${key==='captain'?'leadership '+rd(p.lea):'buteur '+rd(p.but)})</option>`).join('')}</select></p>`;return sel('captain','Capitaine',m.captain)+sel('kicker','Buteur désigné',m.kicker)+`<p class="mut">Automatique : le meilleur leader porte le brassard, le meilleur buteur parmi le 9, le 10 et le 15 tire au but. Un choix ne compte que si le joueur est sur le terrain.</p>`})()}
   <p>Axe d'entraînement<br><select data-a="tac" data-k="focus">${Object.entries(FOCUS).map(([a,b])=>`<option value="${a}" ${m.focus===a?'selected':''}>${b}</option>`).join('')}</select></p>
   <h3>Notes de l'équipe</h3><table>${ratingRows(t)}</table>
@@ -232,4 +234,14 @@ function viewVest(){
   <div class="card"><h3>Satisfaction des joueurs</h3><table class="rc"><tr><th>Nom</th><th>Rôle</th><th class="n">Temps de jeu</th><th>Moral</th><th>Promesse</th></tr>
   ${sq.map(p=>`<tr><td class="rc1">${plink(p)} <span class="mut">${posS(p)}</span></td><td data-l="Rôle">${ROLES[roleOf(p,m)]}</td><td class="n" data-l="Joue">${m.mp?Math.round(playShare(p,m)*100)+' %':'-'}</td><td>${satTxt(satOf(p))}</td><td>${p.prom?'⏳ temps de jeu ('+p.prom.n+' match'+(p.prom.n>1?'s':'')+')':p.list?'liste des transferts':''}</td></tr>`).join('')}</table></div>
   <div class="card"><h3>Joueurs prêtés (${lo.length})</h3>${lo.length?lo.map(x=>`<p>${plink(x.p)} · ${GROUPS[x.p.g]} · à ${clubLink(x.c.id,x.c.short)} · ${x.p.st.mj} match(s), ${x.p.st.es} essai(s) · note ${Math.round(ovr(x.p))}</p>`).join(''):'<p class="mut">Aucun. Pour prêter un joueur : sa fiche → « 🔁 Prêter ».</p>'}</div>`;
+}
+
+// Histoire du club : palmarès pendant la partie, saisons, records, grandes figures
+function viewHisto(){
+  const m=ME(),H=chistOf(m.id),R_=H.rec,t=clubTitles(m),leg=Object.values(H.leg).sort((a,b)=>b.mj-a.mj).slice(0,12);
+  return `<div class="card"><h2>Histoire de ${m.name}</h2><p class="mut">Tout ce que le club a vécu depuis le début de ta partie.</p>
+  <h3>Palmarès</h3>${t.length?t.map(x=>'🏆 '+x).join('<br>'):'<p class="mut">Pas encore de titre.</p>'}</div>
+  <div class="card"><h3>Records</h3>${R_.win||R_.pts?`<p>Plus large victoire : <b>${R_.win?R_.win.txt:'-'}</b></p><p>Plus lourde défaite : <b>${R_.loss?R_.loss.txt:'-'}</b></p><p>Plus de points marqués : <b>${R_.pts?R_.pts.txt:'-'}</b></p><p>Plus longue série de victoires : <b>${R_.streak?R_.streak.v+' ('+R_.streak.txt+')':'-'}</b></p>`:'<p class="mut">Les records se construisent match après match.</p>'}</div>
+  <div class="card"><h3>Saisons</h3>${H.seasons.length?`<table class="rc"><tr><th>Saison</th><th>Division</th><th class="n">Rang</th><th>Meilleur marqueur d'essais</th><th>Meilleur réalisateur</th></tr>${H.seasons.map(s=>`<tr><td class="rc1"><b>${s.s}</b></td><td>${LEAGUES[s.lg]?LEAGUES[s.lg].name:''}${s.fate&&s.fate!=='maintenu'?' · '+s.fate:''}</td><td class="n" data-l="Rang">${s.rank}e</td><td data-l="Essais">${s.te||'-'}</td><td data-l="Points">${s.tp||'-'}</td></tr>`).join('')}</table>`:'<p class="mut">Première saison en cours.</p>'}</div>
+  <div class="card"><h3>Grandes figures</h3>${leg.length?`<table><tr><th>Joueur</th><th class="n">Saisons</th><th class="n">Matchs</th><th class="n">Essais</th><th class="n hm">Points</th></tr>${leg.map(l=>`<tr><td>${l.n}</td><td class="n">${l.s}</td><td class="n">${l.mj}</td><td class="n">${l.es}</td><td class="n hm">${l.pts}</td></tr>`).join('')}</table>`:'<p class="mut">Les joueurs qui marquent l’histoire du club apparaîtront ici à la fin de la saison.</p>'}</div>`;
 }

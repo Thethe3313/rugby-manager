@@ -7,7 +7,7 @@ const args=process.argv.slice(2),opt=k=>{const i=args.indexOf('--'+k);return i>=
 const N=+(opt('n')||400),club=opt('club')||'pau';
 const g=load(path.join(__dirname,'..','jeu','index.html'),{seed:21});
 g.run(`newGame(${JSON.stringify(club)})`);
-const tests=[['style','equilibre'],['style','conquete'],['style','mouvement'],['style','pied'],['kick','main'],['kick','pied'],['pen','points'],['pen','touche'],['pen','melee'],['pen','vite'],['int','basse'],['int','haute']];
+const tests=[['style','equilibre'],['style','conquete'],['style','mouvement'],['style','pied'],['kick','main'],['kick','pied'],['pen','points'],['pen','touche'],['pen','melee'],['pen','vite'],['def','montee'],['def','repli'],['ry','lent'],['ry','rapide'],['int','basse'],['int','haute']];
 console.log(g.run(`(()=>{
   const m=ME(),opp=clubsIn(m.lg).filter(c=>c!==m);opp.forEach(c=>c.lineup=autoLineup(c));m.lineup=autoLineup(m);
   const out=[];

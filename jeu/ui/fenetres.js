@@ -4,10 +4,10 @@ function playerModal(){
   const own=f.club&&f.club.id===G.meId,c=f.club;
   const potTxt=potMode()==='hide'?'':` · potentiel ${potMode()==='exact'?(own?'':'≈')+potEst(p):starsTxt(potEst(p))}`;
   const acts=own&&p.youth?`<button class="btn sm" data-a="promote" data-id="${p.id}">Promouvoir en équipe pro</button>`:own?`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="renew">Négocier son contrat</button> <button class="btn sec sm" data-a="listP" data-id="${p.id}">${p.list?'Retirer de la liste des transferts':'Placer sur la liste des transferts'}</button> <button class="btn bad sm" data-a="release" data-id="${p.id}">Libérer</button> <button class="btn sec sm" data-a="loanPick" data-id="${p.id}">🔁 Prêter</button>`
-    :c?`${followBtn(p,true)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="buy">Faire une offre</button>${p.ctr<=1&&G.phase==='season'?` <button class="btn sec sm" data-a="neg" data-id="${p.id}" data-mode="pre">Pré-contrat</button>`:''}`
-    :`${followBtn(p,true)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="fa">Faire signer</button>`;
+    :c?`${followBtn(p,true)} ${obsBtn(p)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="buy">Faire une offre</button>${p.ctr<=1&&G.phase==='season'?` <button class="btn sec sm" data-a="neg" data-id="${p.id}" data-mode="pre">Pré-contrat</button>`:''}`
+    :`${followBtn(p,true)} ${obsBtn(p)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="fa">Faire signer</button>`;
   return `<div class="overlay"><div class="modal"><h2>${p.name}</h2><p>${posL(p)}${p.pos2&&p.pos2.length?` <span class="mut">(peut aussi jouer ${p.pos2.map(g=>GROUPS[g].toLowerCase()).join(', ')}${p.p2e?' — estimé':''})</span>`:''}${p.nat?' · '+p.nat:''}${p.caps?' · '+p.caps+' sélection'+(p.caps>1?'s':''):p.intl?' · international':''} · ${p.age} ans · ${c?c.name:'<span class="ok">sans club</span>'}</p>
-  <p>Note <b class="${oc(ovr(p))}">${rd(ovr(p))}</b>${potTxt} · valeur ${k(valueOf(p))} · salaire ${k(p.sal)}/an${c?` · contrat ${p.ctr} an(s)`:''}</p>
+  <p>Note <b class="${oc(noteEst(p))}">${noteTxt(p)}</b>${own?'':` <span class="mut">(${['inconnu','connu de loin','bien observé','parfaitement connu'][knowOf(p)]})</span>`}${potTxt} · valeur ${k(valueOf(p))} · salaire ${k(p.sal)}/an${c?` · contrat ${p.ctr} an(s)`:''}</p>
   <p>Personnalité : <b>${persLabel(p)}</b> <span class="mut">· professionnalisme ${p.pro??'?'}/20 · ambition ${p.amb??'?'}/20 · détermination ${p.det??'?'}/20</span></p>
   ${attrTable(p)}
   ${p.ev?`<p class="mut">${p.ev}</p>`:''}<p>Cette saison : ${p.st.mj} match(s) dont ${p.st.tit||0} titularisation(s), ${p.st.es} essai(s), ${p.st.pts} points${p.st.nn?`, ${p.st.tac||0} plaquages, ${p.st.m||0} mètres gagnés · note moyenne <b class="${rc(p.st.nt/p.st.nn)}">${(p.st.nt/p.st.nn).toFixed(1)}</b>${p.st.motm?` · ${p.st.motm} fois homme du match ⭐`:''}`:''}.</p>
@@ -22,7 +22,7 @@ function negModal(){
   const title={renew:'Prolongation de contrat',buy:'Offre de transfert',fa:'Signature d\'un joueur libre',pre:'Pré-contrat (arrivée la saison prochaine)'}[mode];
   const defY=p.age>=32?1:p.age>=29?2:3;
   return `<div class="overlay"><div class="modal"><h2>${title}</h2>
-  <p><b>${p.name}</b> · ${posL(p)} · ${p.age} ans · note <b class="${oc(ovr(p))}">${rd(ovr(p))}</b>${potMode()==='hide'?'':' · potentiel '+(potMode()==='exact'?potEst(p):starsTxt(potEst(p)))} · ${c?c.short+', contrat '+p.ctr+' an(s)':'libre'} · salaire actuel ${k(p.sal)}</p>
+  <p><b>${p.name}</b> · ${posL(p)} · ${p.age} ans · note <b class="${oc(noteEst(p))}">${noteTxt(p)}</b>${potMode()==='hide'?'':' · potentiel '+(potMode()==='exact'?potEst(p):starsTxt(potEst(p)))} · ${c?c.short+', contrat '+p.ctr+' an(s)':'libre'} · salaire actuel ${k(p.sal)}</p>
   ${mode==='buy'?`<p>Indemnité demandée par ${c.short} : <b>environ ${k(ask)}</b> (valeur ${k(valueOf(p))}).</p>`:''}
   <p>Ses exigences salariales : <b>environ ${k(dem)} par an</b>.</p>
   <p class="mut">Trésorerie ${k(m.budget)} · marge salariale ${k(Math.max(0,capOf(m)-mass(m)+(mode==='renew'?p.sal:0)))}</p>
@@ -72,9 +72,9 @@ function clubModal(){
   return `<div class="overlay"><div class="modal wide"><div class="row" style="justify-content:space-between"><h2 style="margin:0">${kitTag(c,kt)} ${c.name}</h2><button class="btn sec sm" data-a="closeModal">✕ Fermer</button></div>
   <p class="mut">${lgn}${rk?' · '+rk+'e'+(c.poule!=null&&G.L[c.lg]&&G.L[c.lg].poules>1?' de sa poule':''):''}${c.manager?' · manager : '+c.manager:''}${c.ext?'':' · budget '+k(c.bud)} · effectif ${c.squad.length} joueurs${(c.youth||[]).length?' · '+c.youth.length+' espoirs':''}</p>
   <div class="grid g2"><div><h3>Niveau de l'équipe</h3><table>${ratingRows(t)}</table></div>
-  <div><h3>Meilleurs joueurs</h3>${sq.slice().sort((a,b)=>ovr(b)-ovr(a)).slice(0,5).map(p=>`<p>${plink(p)} · ${posL(p)} · <b class="${oc(ovr(p))}">${rd(ovr(p))}</b></p>`).join('')}</div></div>
+  <div><h3>Meilleurs joueurs</h3>${sq.slice().sort((a,b)=>noteEst(b)-noteEst(a)).slice(0,5).map(p=>`<p>${plink(p)} · ${posL(p)} · <b class="${oc(noteEst(p))}">${noteTxt(p)}</b></p>`).join('')}</div></div>
   <h3>Effectif</h3><table><tr><th>Nom</th><th>Poste</th><th class="hm">Âge</th><th class="n">Note</th>${potTh()}<th class="n hm">Contrat</th><th class="hm">État</th></tr>
-  ${sq.map(p=>`<tr><td>${plink(p)}</td><td>${posLS(p)}</td><td class="hm">${p.age}</td><td class="n ${oc(ovr(p))}"><b>${rd(ovr(p))}</b></td>${potTd(p)}<td class="n hm">${p.ctr} an${p.ctr>1?'s':''}</td><td class="hm">${injTxt(p)}</td></tr>`).join('')}</table></div></div>`;
+  ${sq.map(p=>`<tr><td>${plink(p)}</td><td>${posLS(p)}</td><td class="hm">${p.age}</td>${noteCell(p)}${potTd(p)}<td class="n hm">${p.ctr} an${p.ctr>1?'s':''}</td><td class="hm">${injTxt(p)}</td></tr>`).join('')}</table></div></div>`;
 }
 
 // Prêt d'un joueur : clubs où il serait titulaire (ou presque)

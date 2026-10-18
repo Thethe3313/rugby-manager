@@ -30,6 +30,8 @@ const SCREENS={
   vest:"for(let i=0;i<6;i++)advance('match',{noLive:true});const p=[...ME().squad].sort((a,b)=>playShare(a,ME())-playShare(b,ME())).find(p=>p.age>=24);p.sat=28;p.talk=G.date;G.tab='vest'",
   deleg:"G.deleg={renew:true,offers:true};G.tab='staff'",
   pret:"const p=[...ME().squad].filter(p=>p.age<=22).sort((a,b)=>ovr(a)-ovr(b))[0];G.tab='squad';UI.modal={type:'loan'};UI.pid=p.id",
+  inconnu:"G.tab='market';const p=C('x_lns').squad.find(p=>!p.sel&&(p.caps||0)<20)||C('x_lns').squad[5];UI.modal={type:'player'};UI.pid=p.id",
+  histo:"{let n=0;while((G.phase==='season'||G.phase==='access')&&n++<500)advance('match',{noLive:true})}G.tab='histo'",
   home:"G.tab='home'",mail:"G.tab='mail'",squad:"G.tab='squad'",youth:"G.tab='youth'",staff:"G.tab='staff'",
   lineup:"G.tab='lineup'",cal:"G.tab='cal'",table:"G.tab='table'",cups:"G.tab='cups'",market:"G.tab='market'",
   fin:"G.tab='fin'",settings:"G.tab='settings'",help:"G.tab='help'",

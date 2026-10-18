@@ -2,7 +2,7 @@
 // À chaque étape, on rend l'écran et on le passe à `check(nom, html)`.
 // Un match sur trois est suivi en direct (avec pause, vitesses, consignes et un remplacement manuel), les autres en résultat immédiat.
 'use strict';
-const TABS=['home','mail','squad','youth','staff','lineup','cal','table','cups','market','fin','settings','help','career','vest'];
+const TABS=['home','mail','squad','youth','staff','lineup','cal','table','cups','market','fin','settings','help','career','vest','histo'];
 
 // Joue un match en direct jusqu'au bout en appelant liveTick() comme le ferait la minuterie du navigateur
 function driveLive(game,label,check){
@@ -48,6 +48,8 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
     run(`G.deleg={renew:true,youth:true,offers:true,recruit:true}`);
     run(`(()=>{const m=ME(),p=[...m.squad].sort((a,b)=>ovr(a)-ovr(b))[0];ACT.player({id:p.id});ACT.loanPick({id:p.id})})()`);check(label+':pret',app.innerHTML);
     run(`(()=>{const T=loanTargets(ME().squad.find(x=>x.id===UI.pid));if(T.length&&(G.phase==='offseason'||windowOpen()))ACT.loanDo({c:T[0].c.id});else ACT.closeModal()})()`);check(label+':pret-fait',app.innerHTML);
+    // recrutement : observation d'un joueur adverse (fourchette de note), fiche avant/après
+    run(`(()=>{const p=G.clubs.find(c=>c.id!==G.meId&&c.lg!==ME().lg).squad[0];ACT.observe({id:p.id});ACT.player({id:p.id})})()`);check(label+':observation',app.innerHTML);run('ACT.closeModal()');
     // joueurs suivis : on suit le meilleur joueur adverse, puis l'onglet des suivis
     run(`ACT.follow({id:G.clubs.find(c=>c.id!==G.meId).squad[1].id})`);
     for(const t of ['follow','offers','pre','log']){run(`G.tab='market';ACT.mt({t:'${t}'})`);check(label+':market-'+t,app.innerHTML)}

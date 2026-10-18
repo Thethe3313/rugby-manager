@@ -42,7 +42,7 @@ function viewPrematch(){
   <p class="mut" style="text-align:center">${nx.lab||LEAGUES[m.lg].name}${(()=>{const o=h.id===m.id?a:h;return o.manager?` · manager adverse : ${o.manager}`:''})()}</p>
   <div class="grid g2"><div><h3>Consignes</h3>
     <p>Style de jeu<br>${tacSel('tac','style',STY,t.style)}</p><p>Intensité<br>${tacSel('tac','int',INTS,t.int)}</p>
-    <p>Jeu au pied<br>${tacSel('tac','kick',KICKS,t.kick)}</p><p>Sur pénalité<br>${tacSel('tac','pen',PENS,t.pen)}</p></div>
+    <p>Jeu au pied<br>${tacSel('tac','kick',KICKS,t.kick)}</p><p>Sur pénalité<br>${tacSel('tac','pen',PENS,t.pen)}</p><p>Défense<br>${tacSel('tac','def',DEFS,t.def)}</p><p>Rythme<br>${tacSel('tac','ry',RYTHMS,t.ry)}</p></div>
   <div><h3>Ton XV${m.autoXV!==false?' <span class="mut">(choisi par l\'adjoint)</span>':''}</h3>${lu.slice(0,15).map((id,i)=>{const p=m.squad.find(x=>x.id===id);return `<div>${i+1}. ${p?p.name+' <span class="mut">'+rd(effAt(p,SLOTS[i]))+'</span>':'<span class="ko">—</span>'}</div>`}).join('')}</div></div>
   <div class="card" style="margin:12px 0 0"><p>Météo prévue : <b>${wxTxt(weatherFor(nx.d,h))}</b> · Arbitre : <b>${refTxt(refFor(nx.d,h))}</b></p>
   <p>Discours d'avant-match<br>${tacSel('talk','pre',TALKS.pre,UI.talk||'motive')}</p>
@@ -119,7 +119,7 @@ function viewLive(){
   <div class="lv-grid"><div>${pitchSVG(L)}<div id="lv-now" class="lv-now">${ms.now}</div><div id="lv-comm" class="lv-comm">${commHTML(ms)}</div></div>
   <div><h3>Consignes</h3><div class="lv-tac">
     <label>Style de jeu ${tacSel('liveTac','style',STY,S.tac.style)}</label><label>Intensité ${tacSel('liveTac','int',INTS,S.tac.int)}</label>
-    <label>Jeu au pied ${tacSel('liveTac','kick',KICKS,S.tac.kick)}</label><label>Sur pénalité ${tacSel('liveTac','pen',PENS,S.tac.pen)}</label></div>
+    <label>Jeu au pied ${tacSel('liveTac','kick',KICKS,S.tac.kick)}</label><label>Sur pénalité ${tacSel('liveTac','pen',PENS,S.tac.pen)}</label><label>Défense ${tacSel('liveTac','def',DEFS,S.tac.def)}</label><label>Rythme ${tacSel('liveTac','ry',RYTHMS,S.tac.ry)}</label></div>
     ${L.htTalk&&L.paused&&!ms.done?`<div class="card" style="margin:10px 0"><h3>Discours de la mi-temps</h3><p class="mut">${ms.clubs[L.side].short} ${ms.sc[L.side]} - ${ms.sc[1-L.side]} ${ms.clubs[1-L.side].short}. Que dis-tu aux joueurs ?</p>${Object.entries(TALKS.half).map(([v,t])=>`<p><button class="btn sm sec" data-a="liveTalk" data-v="${v}">${t}</button></p>`).join('')}</div>`:''}
     ${L.talkTxt?`<p class="mut">Réaction au discours : ${L.talkTxt}</p>`:''}
     <h3 style="margin-top:12px">${ms.clubs[L.side].short}</h3>
