@@ -37,7 +37,7 @@ function pickW(arr,w){
   if(!arr.length)return null;if(!tot)return R.pick(arr);
   let r=R.f()*tot;for(let i=0;i<arr.length;i++){r-=ws[i];if(r<=0)return arr[i]}return arr[arr.length-1];
 }
-function fitAt(p,k){const s=SLOTS[k],ok=s[3].includes(p.g);return ok?(s[4]&&p.sub&&p.sub!==s[4]?.94:1):(NEIGH[s[1]].includes(p.g)?.9:.72)}
+function fitAt(p,k){return posFit(p,SLOTS[k])}
 // Valeur d'un attribut pendant le match : poste, forme du jour, énergie restante, intensité, avantage du terrain
 // (une équipe qui mène largement relâche un peu son effort, une équipe menée de plus d'un essai pousse plus fort)
 const scoreK=lead=>lead>10?1-Math.min(.08,(lead-10)*.006):lead<-7?1+Math.min(.05,(-lead-7)*.004):1;

@@ -115,6 +115,11 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 - **Lot 3** :
   - Seconds postes (ex. Ferté : demi de mêlée, ailier, arrière).
   - Composition sur un terrain, en glissant les joueurs façon FM.
+- **Lot 4** :
+  - Championnat espoirs, pour que les jeunes jouent et progressent.
+  - Pouvoir fermer la fenêtre du jour de match et revenir au menu.
+  - Simuler jusqu'à une date choisie (comme FM / FIFA).
+  - Voir l'effectif des autres clubs : noms d'équipes cliquables partout (classements de tous les championnats) → page du club.
 
 ## 📋 À faire ensuite
 

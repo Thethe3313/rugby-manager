@@ -30,6 +30,7 @@ function realYouth(r){
   p.pot=Math.round(clamp(potDraw(pot,age),Math.round(ovrAt(p,g))+3,97));
   if(p.pot>=85)p.gem=true;
   if(u20)p.ev='International jeunes (U20/U18)';
+  setPos2(p);
   return p;
 }
 function initYouth(c){

@@ -133,3 +133,15 @@ p{margin:6px 0}
 .star{cursor:pointer;color:var(--mut)}.star.on{color:var(--acc2)}
 @media(min-width:1000px){.grid.lu{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}}
 .grid.lu>.card{overflow-x:auto}
+/* composition sur terrain */
+.lupitch{position:relative;width:100%;max-width:560px;aspect-ratio:4/5;margin:6px auto 0;background:repeating-linear-gradient(180deg,#2f7d45 0 10%,#2a7240 10% 20%);border-radius:10px;border:2px solid #ffffff44}
+.lupitch .pos{position:absolute;transform:translate(-50%,-50%)}
+.chip{display:inline-flex;flex-direction:column;align-items:center;min-width:66px;max-width:96px;padding:3px 6px;background:var(--panel);border:1px solid var(--line);border-radius:8px;font-size:12px;line-height:1.25;cursor:pointer;user-select:none;-webkit-user-select:none}
+.chip:hover{border-color:var(--acc)}
+.chip.sel{outline:2px solid var(--acc2);background:#3a3110}
+.chip .l1{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:90px}
+.chip .nm{font-weight:600}.chip .no{color:var(--acc2)}
+.chip.inj{opacity:.55}
+.lurow{display:flex;flex-wrap:wrap;gap:6px}
+@media(max-width:700px){.chip{min-width:58px;max-width:78px;font-size:11px;padding:2px 4px}.chip .l1{max-width:72px}}
+@media(max-width:700px){.grid.lu>.card:last-child{order:-1}}

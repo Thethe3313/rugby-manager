@@ -35,6 +35,10 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
   run(`ACT.start({id:${JSON.stringify(club)}})`);
   const allTabs=label=>{
     for(const t of TABS){run(`ACT.tab({t:'${t}'})`);check(label+':'+t,app.innerHTML)}
+    // composition sur terrain : échange de deux titulaires, puis un joueur de la réserve à l'arrière, puis retour à l'adjoint
+    run(`G.tab='lineup';UI.luv='terrain';ACT.luPick({k:'s0'})`);check(label+':terrain-selection',app.innerHTML);
+    run(`ACT.luPick({k:'s2'});(()=>{const m=ME(),r=m.squad.find(p=>!m.lineup.includes(p.id)&&p.inj===0);if(r){ACT.luPick({k:'s14'});ACT.luPick({k:'p'+r.id})}})()`);check(label+':terrain-echange',app.innerHTML);
+    run(`ACT.luv({v:'liste'});ME().autoXV=true;ME().lineup=autoLineup(ME());UI.luv='terrain'`);check(label+':liste',app.innerHTML);
     // joueurs suivis : on suit le meilleur joueur adverse, puis l'onglet des suivis
     run(`ACT.follow({id:G.clubs.find(c=>c.id!==G.meId).squad[1].id})`);
     for(const t of ['follow','offers','pre','log']){run(`G.tab='market';ACT.mt({t:'${t}'})`);check(label+':market-'+t,app.innerHTML)}

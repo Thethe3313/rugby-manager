@@ -15,6 +15,7 @@ function genPlayer(g,level,age){
   const o=ovrAt(p,g);
   p.pot=initPot(o,age,R.f());
   p.sal=salaryFor(o,age,'pd2');
+  setPos2(p);
   return p;
 }
 function realPlayer(r,lg){
@@ -33,6 +34,7 @@ function realPlayer(r,lg){
   // potentiel tiré dans sa fourchette à chaque nouvelle partie (initPot(…,0) à initPot(…,1)) : chaque sauvegarde est différente
   p.pot=initPot(ov,age,R.f());
   p.sal=Math.round(salaryFor(ov,age,lg)*(.88+hashN(n+'sal')*.24));
+  setPos2(p);
   return p;
 }
 function realSquad(id,str,lg){

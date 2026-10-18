@@ -52,6 +52,9 @@ const ACT={
   mailAct(d){const x=(G.mail||[]).find(y=>y.id===+d.id);if(!x||!x.act)return;if(x.act.player){UI.modal={type:'player'};UI.pid=x.act.player}else{G.tab=x.act.tab;if(x.act.mt)UI.mt=x.act.mt}render()},
   closeModal(){UI.modal=null;render()},
   autoXV(){const m=ME();m.autoXV=m.autoXV===false;if(m.autoXV)m.lineup=autoLineup(m);save();render()},
+  luv(d){UI.luv=d.v;UI.luSel=null;render()},
+  // composition sur terrain : 1er toucher = sélection, 2e = échange (place ↔ place, ou joueur de la réserve → place)
+  luPick(d){if(!UI.luSel||UI.luSel===d.k){UI.luSel=UI.luSel===d.k?null:d.k;return render()}luSwap(UI.luSel,d.k);UI.luSel=null;render()},
   slot(d,el){const i=+d.i,id=el.value?+el.value:null,m=ME();m.autoXV=false;if(id){const j=m.lineup.indexOf(id);if(j>=0&&j!==i)m.lineup[j]=m.lineup[i]}m.lineup[i]=id;save();render()},
   auto(){const m=ME();m.lineup=autoLineup(m);save();render()},
   tac(d,el){const m=ME();if(d.k==='focus')m.focus=el.value;else m.tac[d.k]=el.value;save();render()},
@@ -112,6 +115,18 @@ const ACT={
   setPot(d){G.settings=G.settings||{};G.settings.pot=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   nextSeason(){nextSeason();save();G.tab='home';render()}
 };
+function luSwap(a,b){
+  const m=ME(),L=m.lineup,slot=k=>k[0]==='s'?+k.slice(1):null,pl=k=>k[0]==='p'?+k.slice(1):null;
+  const ia=slot(a),ib=slot(b);
+  if(ia!=null&&ib!=null){[L[ia],L[ib]]=[L[ib],L[ia]]}
+  else if(ia!=null||ib!=null){const i=ia!=null?ia:ib,pid=pl(ia!=null?b:a),p=m.squad.find(x=>x.id===pid);if(!p||p.inj>0)return;L[i]=pid}
+  else return;
+  m.autoXV=false;save();
+}
+// glisser-déposer (ordinateur)
+document.addEventListener('dragstart',e=>{const c=e.target.closest&&e.target.closest('[data-a="luPick"]');if(c&&e.dataTransfer){e.dataTransfer.setData('text/plain',c.dataset.k);UI.luSel=null}});
+document.addEventListener('dragover',e=>{if(e.target.closest&&e.target.closest('[data-a="luPick"]'))e.preventDefault()});
+document.addEventListener('drop',e=>{const c=e.target.closest&&e.target.closest('[data-a="luPick"]');if(!c||!e.dataTransfer)return;e.preventDefault();const a=e.dataTransfer.getData('text/plain');if(a&&a!==c.dataset.k){luSwap(a,c.dataset.k);render()}});
 function goTick(){
   if(!UI.adv||!G)return;
   if(UI.modal){UI.adv=null;return render()}

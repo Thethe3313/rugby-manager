@@ -69,6 +69,24 @@ function viewOffseason(){
   <div class="card"><h3>Joueurs en fin de contrat (${exp.length})</h3><p class="mut">Prolonge-les avant de passer à la saison suivante, sinon ils partent libres. Le mercato d'été est ouvert : c'est le moment de recruter (onglet Mercato).</p>
   <table><tr><th>Nom</th><th>Poste</th><th>Âge</th><th class="n">Note</th><th class="n">Salaire</th><th class="n">Demande</th><th></th></tr>${exp.map(p=>`<tr><td>${p.name}</td><td>${posL(p)}</td><td>${p.age}</td><td class="n ${oc(ovr(p))}">${rd(ovr(p))}</td><td class="n">${k(p.sal)}</td><td class="n">${k(wageDemand(p,m,'renew'))}</td><td>${p.fresh?'<span class="ok">Prolongé</span>':`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="renew">Négocier</button>`}</td></tr>`).join('')}</table></div>`;
 }
+// Composition sur un terrain : toucher un joueur puis un autre (ou une place) pour les échanger ;
+// sur ordinateur on peut aussi glisser-déposer. La réserve = joueurs de l'effectif hors des 23.
+const PITCHPOS=[[26,88],[50,90],[74,88],[39,77],[61,77],[17,66],[83,66],[50,63],[38,52],[62,45],[12,22],[38,33],[62,27],[88,22],[50,9]];
+const shortName=p=>{const w=p.name.split(' ');return w.length>1?w.slice(1).join(' '):p.name};
+function luChip(m,p,i){
+  const s=i!=null?SLOTS[i]:null,key=s?'s'+i:'p'+(p?p.id:''),v=p?(s?effAt(p,s):ovr(p)):0,off=p&&s&&!s[3].includes(p.g)&&!atPos2(p,s);
+  return `<div class="chip ${UI.luSel===key?'sel':''} ${p&&p.inj>0?'inj':''}" data-a="luPick" data-k="${key}" draggable="true" title="${p?p.name+' · '+posL(p):''}">
+    <span class="l1">${s?`<b class="no">${s[0]}</b> `:''}<span class="nm">${p?shortName(p):'(vide)'}</span>${off?' <span class="ko" title="Hors de son poste">⚠</span>':''}${p&&p.inj>0?' 🚑':''}</span>
+    ${p?`<span class="l2"><b class="${oc(v)}">${rd(v)}</b> · <span class="${formeCls(p.forme)}">${rd(p.forme)}%</span>${s?'':' · '+posS(p)}</span>`:''}</div>`;
+}
+function lineupPitch(m){
+  const P=id=>m.squad.find(p=>p.id===id),inXV=new Set(m.lineup);
+  const res=m.squad.filter(p=>!inXV.has(p.id)).sort((a,b)=>GORDER.indexOf(a.g)-GORDER.indexOf(b.g)||ovr(b)-ovr(a));
+  return `<p class="mut">Touche un joueur, puis un autre (ou une place) pour les échanger. Sur ordinateur, tu peux aussi les glisser-déposer. Note au poste · forme.</p>
+  <div class="lupitch">${PITCHPOS.map(([x,y],i)=>`<div class="pos" style="left:${x}%;top:${y}%">${luChip(m,P(m.lineup[i]),i)}</div>`).join('')}</div>
+  <h3 style="margin-top:12px">Remplaçants</h3><div class="lurow">${[...Array(8)].map((_,j)=>luChip(m,P(m.lineup[15+j]),15+j)).join('')}</div>
+  <h3 style="margin-top:12px">Réserve (${res.length})</h3><div class="lurow">${res.map(p=>luChip(m,p,null)).join('')}</div>`;
+}
 function viewLineup(){
   const m=ME(),t=teamCalc(m);
   const opt=(p,i)=>`<option value="${p.id}" ${m.lineup[i]===p.id?'selected':''} ${p.inj>0?'disabled':''}>${p.name} (${posS(p)}) · ${rd(effAt(p,SLOTS[i]))}${p.inj>0?' 🚑':''}</option>`;
@@ -88,7 +106,7 @@ function viewLineup(){
   <p><label style="cursor:pointer"><input type="checkbox" data-a="autoXV" ${m.autoXV!==false?'checked':''}> <b>L'adjoint choisit la composition</b></label><br><span class="mut">Il aligne avant chaque match les meilleurs joueurs disponibles, à leur poste, en tenant compte de la forme. Dès que tu modifies un poste à la main, tu reprends la main (case décochée).</span></p>
   <p><button class="btn" data-a="auto">⚙ Composition automatique maintenant</button></p>
   <p class="mut">La note d'un joueur à un poste tient compte de ses stats, de sa forme et de sa position naturelle (jouer hors poste coûte 10 à 28 %).</p></div>
-  <div class="card"><h2>Composition (XV + banc)</h2><table><tr><th>N°</th><th>Poste</th><th>Joueur</th><th class="n">Note</th><th class="n">Forme</th></tr>${rows}</table><p class="mut">Forme : un joueur qui enchaîne les matchs s'use (🥵 sous 65 %) ; il joue moins bien et se blesse plus. Fais tourner ton effectif, ou laisse l'adjoint le faire.</p></div></div>`;
+  <div class="card"><div class="row" style="justify-content:space-between"><h2 style="margin:0">Composition (XV + banc)</h2><div class="row">${[['terrain','🏉 Terrain'],['liste','☰ Liste']].map(([v,l])=>`<button class="btn sm ${(UI.luv||'terrain')===v?'':'sec'}" data-a="luv" data-v="${v}">${l}</button>`).join('')}</div></div>${(UI.luv||'terrain')==='terrain'?lineupPitch(m):`<table><tr><th>N°</th><th>Poste</th><th>Joueur</th><th class="n">Note</th><th class="n">Forme</th></tr>${rows}</table>`}<p class="mut">Forme : un joueur qui enchaîne les matchs s'use (🥵 sous 65 %) ; il joue moins bien et se blesse plus. Fais tourner ton effectif, ou laisse l'adjoint le faire.</p></div></div>`;
 }
 function viewCal(){
   const m=ME(),L=G.L[m.lg];

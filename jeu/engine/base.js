@@ -115,9 +115,26 @@ const TAGMOD={k:{but:5,pie:2},v:{vit:3,evi:1},p:{pui:3},m:{pas:2,dec:2},w:{end:3
 function hashN(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return(h>>>0)/4294967296}
 const mass=cl=>cl.squad.reduce((s,p)=>s+p.sal,0);
 
+// Postes secondaires (p.pos2) : connus pour les vrais joueurs de POS2 (data/postes.js) — leurs attributs sont alors
+// ajustés pour qu'ils y valent au moins leur note moins 3 ; sinon estimés (p.p2e) : combinaison fréquente [poste, probabilité]
+// ET profil qui convient (note au second poste à 2 points au plus de la note au poste). À son second poste, un joueur ne perd que 3 %.
+const P2RULES={PIL:[],TAL:[],'2L':[['3L',.25]],'3L':[['2L',.15]],DM:[['OUV',.06],['AIL',.04]],OUV:[['CEN',.15],['ARR',.15],['DM',.05]],CEN:[['AIL',.25],['OUV',.06]],AIL:[['ARR',.35],['CEN',.12]],ARR:[['AIL',.5],['OUV',.08]]};
+function estPos2(p,h){const o=ovrAt(p,p.g);return P2RULES[p.g].filter(([g,pr],i)=>((h*(i+3)*7.13)%1)<Math.min(1,pr*2)&&o-ovrAt(p,g)<=2).map(([g])=>g)}
+// Monte les attributs plus utiles au second poste qu'au poste naturel, jusqu'à y valoir la note moins 3
+function fitPos2(p,g2){const o=ovrAt(p,p.g);for(let n=0;n<80&&ovrAt(p,g2)<o-3;n++){let bk=null,bv=-9;for(const[k]of ATTRS){if(p[k]>=20)continue;const v=(W[g2][k]||0)-(W[p.g][k]||0);if(v>bv){bv=v;bk=k}}if(!bk||bv<=0)break;p[bk]=Math.min(20,p[bk]+.25)}
+  // la note au poste naturel ne doit pas bouger : on redescend les attributs qui comptent surtout pour lui
+  for(let n=0;n<80&&ovrAt(p,p.g)>o+.2;n++){let bk=null,bv=-9;for(const[k]of ATTRS){if(p[k]<=1.25)continue;const v=(W[p.g][k]||0)-(W[g2][k]||0);if(v>bv){bv=v;bk=k}}if(!bk)break;p[bk]-=.25;if(ovrAt(p,g2)<o-3.5){p[bk]+=.25;break}}}
+function setPos2(p,h){
+  const k=typeof POS2!=='undefined'&&POS2[p.name];
+  if(k){p.pos2=k.filter(g=>g!==p.g);delete p.p2e;for(const g2 of p.pos2)fitPos2(p,g2)}else{p.pos2=estPos2(p,h!=null?h:hashN(p.name+'p2'));if(p.pos2.length)p.p2e=1;else delete p.p2e}
+}
+const atPos2=(p,slot)=>!!(p.pos2&&p.pos2.some(g=>slot[3].includes(g)));
+function posFit(p,slot){
+  if(slot[3].includes(p.g))return slot[4]&&p.sub&&p.sub!==slot[4]?.94:1;
+  return atPos2(p,slot)?.97:NEIGH[slot[1]].includes(p.g)?.9:.72;
+}
 function effAt(p,slot){
-  const ok=slot[3].includes(p.g);
-  const fit=ok?(slot[4]&&p.sub&&p.sub!==slot[4]?.94:1):(NEIGH[slot[1]].includes(p.g)?.9:.72);
+  const ok=slot[3].includes(p.g),fit=posFit(p,slot);
   return ovrAt(p,ok?p.g:slot[1])*fit*(.78+.22*p.forme/100); // même effet de la forme qu'en match (engine/match.js)
 }
 // Composition : on place d'abord chaque joueur à son poste naturel (titulaires puis banc),
@@ -130,7 +147,7 @@ function fillSlots(club,out,used){
       let best=null,bv=-1;
       for(const p of avail){
         if(used.has(p.id))continue;
-        if(natural&&!SLOTS[i][3].includes(p.g))continue;
+        if(natural&&!SLOTS[i][3].includes(p.g)&&!atPos2(p,SLOTS[i]))continue; // postes naturels et seconds postes d'abord
         const v=effAt(p,SLOTS[i]);if(v>bv){bv=v;best=p}
       }
       if(best){out[i]=best.id;used.add(best.id)}

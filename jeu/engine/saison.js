@@ -23,6 +23,9 @@ function migrateSave(){
   if(G.fin&&G.fin.staff==null)G.fin.staff=0;
   applyRealStaff();
   applyNoteFixes();
+  // postes secondaires (lot 3) : ajoutés aux anciennes parties ; les postes connus remplacent les estimations
+  for(const c of G.clubs.concat(G.ext||[]))for(const p of c.squad.concat(c.youth||[]))if(!p.pos2||(p.p2e&&POS2[p.name]))setPos2(p);
+  for(const p of G.fa||[])if(!p.pos2)setPos2(p);
   if(!G.ext||G.ext.some(c=>!c.real&&typeof REALX!=='undefined'&&REALX[c.id]))initExt();
   else for(const x of EXT0)if(!G.ext.some(c=>c.id===x[0]))G.ext.push(mkExtClub(x)); // nouveaux clubs (Super Rugby, Japon)
   if(G.phase==='season'&&G.cups)startXL(true);
