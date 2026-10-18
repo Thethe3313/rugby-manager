@@ -102,8 +102,11 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 - **Étape G — Retours de jeu de Théophile (15-18 octobre 2026)** : Continuer façon FM (jours qui défilent, arrêt au match ou sur message important), aller à une date, mercato par messages (réponse quelques jours plus tard avec le motif), écrans téléphone revus, fatigue qui impose la rotation, couleurs des clubs, causerie d'après-match, joueurs suivis, seconds postes, composition sur un terrain, championnat espoirs, pages de clubs, fermeture de l'avant-match.
 
+- **Étape H — Idées inspirées de Destiny Rugby + retours (octobre 2026)** : doublons des internationaux et demi-finales neutres (plus de surprises), carrière d'entraîneur (prestige, objectifs pondérés, confiance du président et des supporters, offres, licenciement), vestiaire (satisfaction, promesses, leaders), délégation au staff, prêts, défense et rythme, fourchettes de note et observation, histoire du club, missions de recrutement et pépites.
+
 ## ▶️ Prochaine étape
 
+- Match en 2D plus vivant (joueurs qui bougent selon l'action, temps forts animés) ; une vue 3D éventuellement plus tard, en option.
 - Selon tes prochains retours de jeu.
 
 ## 📋 À faire ensuite
