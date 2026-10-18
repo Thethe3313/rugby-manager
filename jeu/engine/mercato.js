@@ -124,11 +124,12 @@ function bidDay(){
   for(const b of due)answerBid(b);
 }
 // ---- Recrutement : ce que tu sais des joueurs des autres clubs ----
-// Connaissance de 0 (inconnu) à 3 (parfaitement connu ; tes joueurs). Base 1 pour ceux de ton championnat et les internationaux ;
+// Connaissance de 0 (inconnu) à 3 (parfaitement connu ; tes joueurs). Base 2 pour les internationaux, 1 pour ceux de ton championnat ;
 // chaque observation du recruteur (quelques jours) ajoute 1. Plus le recruteur est bon, plus la fourchette de note est étroite.
-function knowOf(p){const f=findPlayer(p.id);if(f.club&&f.club.id===G.meId)return 3;const base=(f.club&&f.club.lg===ME().lg)||p.sel||(p.caps||0)>=20?1:0;return Math.min(3,base+((G.obs||{})[p.id]||0))}
-function noteRange(p){const k=knowOf(p),o=ovr(p);if(k>=3)return[Math.round(o),Math.round(o)];const hw=Math.max(.5,9-staffQ(ME(),'rec')*.35)*[1,.6,.3][k],c=o+(hashN(p.name+'n'+G.meId)-.5)*hw;return[Math.max(20,Math.round(c-hw)),Math.min(99,Math.round(c+hw))]}
-const noteEst=p=>{const[a,b]=noteRange(p);return(a+b)/2};
+// club : à passer quand on le connaît déjà (beaucoup plus rapide que de le chercher)
+function knowOf(p,club){const cl=club!==undefined?club:findPlayer(p.id).club;if(cl&&cl.id===G.meId)return 3;const base=p.sel||(p.caps||0)>=20?2:(cl&&cl.lg===ME().lg)||p.intl?1:0; /* internationaux : bien connus ; ton championnat : connu de loin */return Math.min(3,base+((G.obs||{})[p.id]||0))}
+function noteRange(p,club){const k=knowOf(p,club),o=ovr(p);if(k>=3)return[Math.round(o),Math.round(o)];const hw=Math.max(.5,9-staffQ(ME(),'rec')*.35)*[1,.6,.3][k],c=o+(hashN(p.name+'n'+G.meId)-.5)*hw;return[Math.max(20,Math.round(c-hw)),Math.min(99,Math.round(c+hw))]}
+const noteEst=(p,club)=>{const[a,b]=noteRange(p,club);return(a+b)/2};
 function observe(p){
   G.obsQ=G.obsQ||[];if(G.obsQ.some(x=>x.pid===p.id)||knowOf(p)>=3)return 'déjà';if(G.obsQ.length>=5)return 'plein';
   const x={pid:p.id,due:dAdd(G.date,R.i(4,8))};if(G.phase==='season')G.obsQ.push(x);else obsReport(x);return 'ok';
