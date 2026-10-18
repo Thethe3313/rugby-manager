@@ -104,9 +104,10 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 - **Étape H — Idées inspirées de Destiny Rugby + retours (octobre 2026)** : doublons des internationaux et demi-finales neutres (plus de surprises), carrière d'entraîneur (prestige, objectifs pondérés, confiance du président et des supporters, offres, licenciement), vestiaire (satisfaction, promesses, leaders), délégation au staff, prêts, défense et rythme, fourchettes de note et observation, histoire du club, missions de recrutement et pépites.
 
+- **Match en 2D plus vivant et prêts dans les deux sens (octobre 2026)** : porteur et plaqueur visibles, ruck, trajectoire du ballon, étiquettes d'action, bandeau d'essai ; liste des prêts, demandes reçues, joueurs disponibles en prêt.
+
 ## ▶️ Prochaine étape
 
-- Match en 2D plus vivant (joueurs qui bougent selon l'action, temps forts animés) ; une vue 3D éventuellement plus tard, en option.
 - Selon tes prochains retours de jeu.
 
 ## 📋 À faire ensuite
