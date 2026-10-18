@@ -108,6 +108,8 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 - **Moment décisif (octobre 2026)** : en direct, pénalité en fin de match serrée dans le camp adverse, le joueur choisit (points, touche, mêlée, jeu rapide) ; environ 1 match sur 4.
 
+- **Tri de l'effectif et négociation façon FM (octobre 2026)** : tri par colonne dans l'Effectif ; contre-propositions sur les offres reçues (prix maximum caché, patience du club) et contre-offre du club vendeur à l'achat.
+
 ## ▶️ Prochaine étape
 
 - Selon tes prochains retours de jeu.
