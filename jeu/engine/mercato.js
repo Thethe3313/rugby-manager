@@ -28,8 +28,15 @@ function evalOffer(p,from,fee,sal,yrs,pre){
   if(from&&!pre){
     if(!windowOpen())return{msg:'La fenêtre de transferts est fermée (ouverte à l\'intersaison et de la 10e à la 13e journée). Seuls les joueurs libres et les pré-contrats sont possibles.'};
     if(fee>m.budget)return{msg:`Trésorerie insuffisante (${fmtK(m.budget)}).`};
-    const ask=askFee(p,from);
-    if(fee<ask)return{club:`${from.short} refuse ton offre. Il faudrait environ ${fmtK(ask)}.`,counter:ask};
+    // le club vendeur demande askFee mais accepte de descendre jusqu'à un plancher caché (plus bas pour un joueur sur la
+    // liste des transferts ou en fin de contrat, plus haut pour un joueur clé) ; entre les deux, il fait une contre-proposition
+    const ask=askFee(p,from),rk=[...from.squad].sort((a,b)=>ovr(b)-ovr(a)).indexOf(p);
+    const floor=Math.round(ask*((p.list?.72:p.ctr<=1?.78:rk>=0&&rk<5?.94:.84)+(hashN(p.name+G.season)-.5)*.08)/10)*10;
+    if(fee<floor){
+      const r10=v=>Math.round(v/10)*10;
+      if(fee>=floor*.7){const ct=Math.max(floor,r10((fee+ask)/2));return{club:`${from.short} refuse ${fmtK(fee)}, mais se dit prêt à discuter : il propose ${fmtK(ct)}.`,counter:ct}}
+      return{club:`${from.short} juge ton offre beaucoup trop basse. Il faudrait environ ${fmtK(ask)}.`,counter:ask};
+    }
   }
   const dem=wageDemand(p,m,pre?'pre':'move');
   const cur=from;

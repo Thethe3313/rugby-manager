@@ -94,10 +94,10 @@ const ACT={
     const m=ME(),o=G.offers[+d.i];if(!o)return;const p=m.squad.find(x=>x.id===o.pid),b=C(o.club);
     if(!p||!b){G.offers.splice(+d.i,1);return render()}
     if(m.squad.length<=28){addNews('Effectif minimum de 28 joueurs : vente impossible.');return render()}
-    doTransfer(p,m,b,o.fee,salaryFor(ovr(p),p.age,b.lg),R.i(2,4));
+    doTransfer(p,m,b,o.fee,salaryFor(ovr(p),p.age,b.lg),R.i(2,4));soldMail(p,b,o.fee);
     G.offers=G.offers.filter(x=>x.pid!==p.id);UI.modal=null;save();render();
   },
-  refuseOffer(d){G.offers.splice(+d.i,1);UI.modal=null;save();render()},
+  refuseOffer(d){const o=G.offers[+d.i];if(o){const p=ME().squad.find(x=>x.id===o.pid),b=C(o.club);if(p&&b)mail('Directeur sportif',`Offre refusée : ${p.name} reste au club`,`Tu as refusé l'offre de ${b.name} (${fmtK(o.fee)}) pour ${p.name}. Il reste chez nous.`,{act:{player:p.id}})}G.offers.splice(+d.i,1);UI.modal=null;save();render()},
   goOffers(){G.tab='market';UI.mt='offers';render()},
   listP(d){const p=ME().squad.find(x=>x.id===+d.id);if(p){p.list=!p.list;addNews(p.list?`${p.name} est placé sur la liste des transferts.`:`${p.name} est retiré de la liste des transferts.`);save();render()}},
   release(d){if((ME().squad.find(x=>x.id===+d.id)||{}).loan)return;
@@ -111,8 +111,8 @@ const ACT={
   mt(d){UI.mt=d.t;render()},
   sellNeg(d){UI.oi=+d.i;UI.negMsg='';UI.modal={type:'sellneg'};render()},
   sellCounter(){const o=(G.offers||[])[UI.oi];if(!o)return;const e=document.getElementById('sn-ask'),v=e?+e.value:0;if(!v)return;const r=counterOffer(o,v);
-    if(r.deal){const m=ME(),p=m.squad.find(x=>x.id===o.pid),b=C(o.club);if(p&&b&&m.squad.length>28){doTransfer(p,m,b,r.deal,salaryFor(ovr(p),p.age,b.lg),R.i(2,4));G.offers=G.offers.filter(x=>x.pid!==p.id);UI.modal=null;addNews(`🤝 Accord trouvé : ${p.name} vendu à ${b.short} pour ${fmtK(r.deal)}.`)}else UI.negMsg='Effectif minimum de 28 joueurs : vente impossible.'}
-    else if(r.gone){G.offers.splice(UI.oi,1);UI.modal=null;addNews(r.txt)}else UI.negMsg=r.txt;save();render()},
+    if(r.deal){const m=ME(),p=m.squad.find(x=>x.id===o.pid),b=C(o.club);if(p&&b&&m.squad.length>28){doTransfer(p,m,b,r.deal,salaryFor(ovr(p),p.age,b.lg),R.i(2,4));soldMail(p,b,r.deal);G.offers=G.offers.filter(x=>x.pid!==p.id);UI.modal=null;addNews(`🤝 Accord trouvé : ${p.name} vendu à ${b.short} pour ${fmtK(r.deal)}.`)}else UI.negMsg='Effectif minimum de 28 joueurs : vente impossible.'}
+    else if(r.gone){const p=ME().squad.find(x=>x.id===o.pid),b=C(o.club);if(p&&b)mail('Directeur sportif',`${b.short} retire son offre : ${p.name} reste au club`,`${r.txt} ${p.name} reste chez nous.`,{act:{player:p.id}});G.offers.splice(UI.oi,1);UI.modal=null;addNews(r.txt)}else UI.negMsg=r.txt;save();render()},
   ssort(d){const S=UI.ss||{k:'poste',d:1};UI.ss=S.k===d.k?{k:d.k,d:-S.d}:{k:d.k,d:1};render()},
   loanList(d){const p=ME().squad.find(x=>x.id===+d.id);if(!p)return;p.loanList=!p.loanList;if(p.loanList&&G.phase==='offseason')genLoanOffers(p,R.i(1,2));save();render()},
   loanAcc(d){if(acceptLoanOffer(+d.i))UI.modal=null;save();render()},
@@ -139,6 +139,8 @@ const ACT={
   setPot(d){G.settings=G.settings||{};G.settings.pot=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   nextSeason(){nextSeason();save();G.tab='home';render()}
 };
+// Message de confirmation d'une vente
+function soldMail(p,b,fee){mail('Directeur sportif',`✅ ${p.name} quitte le club`,`${p.name} rejoint ${b.name} pour ${fmtK(fee)}. L'indemnité est versée sur notre trésorerie.`,{act:{tab:'market',mt:'log'}})}
 function luSwap(a,b){
   const m=ME(),L=m.lineup,slot=k=>k[0]==='s'?+k.slice(1):null,pl=k=>k[0]==='p'?+k.slice(1):null;
   const ia=slot(a),ib=slot(b);
