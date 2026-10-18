@@ -2,7 +2,7 @@
 // À chaque étape, on rend l'écran et on le passe à `check(nom, html)`.
 // Un match sur trois est suivi en direct (avec pause, vitesses, consignes et un remplacement manuel), les autres en résultat immédiat.
 'use strict';
-const TABS=['home','mail','squad','youth','staff','lineup','cal','table','cups','market','fin','settings','help','career'];
+const TABS=['home','mail','squad','youth','staff','lineup','cal','table','cups','market','fin','settings','help','career','vest'];
 
 // Joue un match en direct jusqu'au bout en appelant liveTick() comme le ferait la minuterie du navigateur
 function driveLive(game,label,check){
@@ -43,6 +43,11 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
     run(`ACT.club({id:G.clubs.find(c=>c.id!==G.meId).id})`);check(label+':club',app.innerHTML);
     run(`ACT.player({id:C(UI.cid).squad[0].id});ACT.closeModal()`);check(label+':club-retour',app.innerHTML);run('ACT.closeModal()');
     run(`G.tab='table';UI.lg=G.ESP&&Object.keys(G.ESP.poules)[0]?'esp_'+Object.keys(G.ESP.poules)[0]:null`);check(label+':espoirs-classement',app.innerHTML);run('UI.lg=null');
+    // vestiaire : un joueur mécontent répond, délégation activée, prêt d'un remplaçant
+    run(`(()=>{const p=ME().squad[ME().squad.length-1];p.sat=20;p.talk=G.date;ACT.tab({t:'vest'});ACT.vTalk({id:p.id,k:'prom'})})()`);check(label+':vestiaire',app.innerHTML);
+    run(`G.deleg={renew:true,youth:true,offers:true,recruit:true}`);
+    run(`(()=>{const m=ME(),p=[...m.squad].sort((a,b)=>ovr(a)-ovr(b))[0];ACT.player({id:p.id});ACT.loanPick({id:p.id})})()`);check(label+':pret',app.innerHTML);
+    run(`(()=>{const T=loanTargets(ME().squad.find(x=>x.id===UI.pid));if(T.length&&(G.phase==='offseason'||windowOpen()))ACT.loanDo({c:T[0].c.id});else ACT.closeModal()})()`);check(label+':pret-fait',app.innerHTML);
     // joueurs suivis : on suit le meilleur joueur adverse, puis l'onglet des suivis
     run(`ACT.follow({id:G.clubs.find(c=>c.id!==G.meId).squad[1].id})`);
     for(const t of ['follow','offers','pre','log']){run(`G.tab='market';ACT.mt({t:'${t}'})`);check(label+':market-'+t,app.innerHTML)}

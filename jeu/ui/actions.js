@@ -108,6 +108,10 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  deleg(d,el){G.deleg=G.deleg||{};G.deleg[d.k]=!!el.checked;save();render()},
+  vTalk(d){const p=ME().squad.find(x=>x.id===+d.id);if(p){UI.vMsg=answerTalk(p,d.k);save()}render()},
+  loanPick(d){UI.modal={type:'loan'};UI.pid=+d.id;render()},
+  loanDo(d){const m=ME(),p=m.squad.find(x=>x.id===UI.pid),c=C(d.c);if(!p||!c)return;if(m.squad.length<=28){addNews('Effectif minimum de 28 joueurs : prêt impossible.');UI.modal=null;return render()}loanOut(p,c);UI.modal=null;save();render()},
   takeJob(d){if(!confirm('Accepter ce poste et quitter ton club ?'))return;if(takeJob(d.id)){G.tab='home';save()}render()},
   espTab(d){G.tab='table';UI.lg='esp_'+d.lg;render()},
   openPre(){UI.modal={type:'prematch'};render()},

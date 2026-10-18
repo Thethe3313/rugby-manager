@@ -61,7 +61,7 @@ function newMatch(hc,ac,opt={}){
   const date=opt.date||G.date;ms.wx=opt.wx||weatherFor(date,hc);ms.ref=opt.ref||refFor(date,hc);
   for(const S of ms.T){S.capMain=S.club.captain&&S.on.some(d=>d&&d.p.id===S.club.captain)?S.club.captain:null;updateCaptain(ms,S)}
   // discours d'avant-match : celui du joueur (G.talk, motivant par défaut) ; les clubs IA motivent leurs joueurs aussi bien en moyenne
-  for(const S of ms.T){if(S.club.id===G.meId){applyTalk(ms,S.i,G.talk||'motive',true);delete G.talk;if(G.postMor){S.mor*=1+G.postMor/100;delete G.postMor}}else if(S.club.id!==G.meId)S.mor=clamp(1+R.n(.018,.008),.99,1.04)}
+  for(const S of ms.T){if(S.club.id===G.meId){applyTalk(ms,S.i,G.talk||'motive',true);delete G.talk;if(G.postMor){S.mor*=1+G.postMor/100;delete G.postMor}S.mor*=1+teamMood(S.club)/100}else if(S.club.id!==G.meId)S.mor=clamp(1+R.n(.018,.008),.99,1.04)}
   evt(ms,-1,'info',`Coup d'envoi : ${hc.short} - ${ac.short}.`,1);
   return ms;
 }

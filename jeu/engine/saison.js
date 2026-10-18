@@ -112,6 +112,7 @@ function finishSeason(){
 function nextSeason(){
   const m=ME(),mv=G.moves;
   if(G.summary&&G.summary.fate==='horsjeu'){G.phase='sacked';return}
+  delegOffseason(); // tâches confiées au staff (prolongations, espoirs, postes manquants)
   // montées et descentes (le budget suit la division)
   for(const id of mv.up){const c=C(id);c.lg='t14';c.cap=c.cap||CAP_BASE;c.bud=Math.max(Math.round(c.bud*1.6),22000)}
   for(const id of mv.down){const c=C(id);c.lg='pd2';c.bud=Math.round(c.bud*.65)}
@@ -136,6 +137,7 @@ function nextSeason(){
       p.age++;p.inj=0;p.ni=false;p.forme=90;
       if(p.age>=31){const dec=(p.age-30)*.11*(1.2-staffQ(c,'pp')/20*.4)*(1.3-(p.pro||10)/20*.6);for(const k of['vit','pui','end','evi'])p[k]=Math.max(1,p[k]-Math.max(0,R.n(dec,.12)));for(const k of['tac','mai','pas','rck','mel','tou'])p[k]=Math.max(1,p[k]-Math.max(0,R.n(dec*.3,.08)))}
       if(p.age>=23&&p.age<=32)for(const k of['pla','dec','sfr','lea'])p[k]=Math.min(20,p[k]+Math.max(0,R.n(.15,.12)));
+      if(p.loan){keep.push(p);continue} // joueur prêté : son contrat est géré par son club, à son retour
       if(p.fresh){delete p.fresh;keep.push(p);continue}
       p.ctr--;
       if(p.age>=37||(p.ctr<=0&&(p.age>=36||(p.age>=34&&R.f()<.45)))){if(c===m||ovr(p)>=78)addNews(`👋 ${p.name} (${c.short}) prend sa retraite.`);continue}
@@ -148,6 +150,7 @@ function nextSeason(){
     }
     c.squad=keep;
   }
+  returnLoans();
   // joueurs libres : vieillissement et renouvellement
   G.fa=G.fa.filter(p=>{p.faT=(p.faT||0)+1;if(p.faT>1)p.age++;return p.age<35&&p.faT<=2}).sort((a,b)=>ovr(b)-ovr(a)).slice(0,160);
   genFA(20);

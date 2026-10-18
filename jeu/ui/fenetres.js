@@ -3,7 +3,7 @@ function playerModal(){
   const f=findPlayer(UI.pid),p=f.p;if(!p)return '';
   const own=f.club&&f.club.id===G.meId,c=f.club;
   const potTxt=potMode()==='hide'?'':` · potentiel ${potMode()==='exact'?(own?'':'≈')+potEst(p):starsTxt(potEst(p))}`;
-  const acts=own&&p.youth?`<button class="btn sm" data-a="promote" data-id="${p.id}">Promouvoir en équipe pro</button>`:own?`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="renew">Négocier son contrat</button> <button class="btn sec sm" data-a="listP" data-id="${p.id}">${p.list?'Retirer de la liste des transferts':'Placer sur la liste des transferts'}</button> <button class="btn bad sm" data-a="release" data-id="${p.id}">Libérer</button>`
+  const acts=own&&p.youth?`<button class="btn sm" data-a="promote" data-id="${p.id}">Promouvoir en équipe pro</button>`:own?`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="renew">Négocier son contrat</button> <button class="btn sec sm" data-a="listP" data-id="${p.id}">${p.list?'Retirer de la liste des transferts':'Placer sur la liste des transferts'}</button> <button class="btn bad sm" data-a="release" data-id="${p.id}">Libérer</button> <button class="btn sec sm" data-a="loanPick" data-id="${p.id}">🔁 Prêter</button>`
     :c?`${followBtn(p,true)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="buy">Faire une offre</button>${p.ctr<=1&&G.phase==='season'?` <button class="btn sec sm" data-a="neg" data-id="${p.id}" data-mode="pre">Pré-contrat</button>`:''}`
     :`${followBtn(p,true)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="fa">Faire signer</button>`;
   return `<div class="overlay"><div class="modal"><h2>${p.name}</h2><p>${posL(p)}${p.pos2&&p.pos2.length?` <span class="mut">(peut aussi jouer ${p.pos2.map(g=>GROUPS[g].toLowerCase()).join(', ')}${p.p2e?' — estimé':''})</span>`:''}${p.nat?' · '+p.nat:''}${p.caps?' · '+p.caps+' sélection'+(p.caps>1?'s':''):p.intl?' · international':''} · ${p.age} ans · ${c?c.name:'<span class="ok">sans club</span>'}</p>
@@ -59,6 +59,7 @@ function modalView(){
   if(m.type==='staff')return staffModal();
   if(m.type==='player')return playerModal();
   if(m.type==='club')return clubModal();
+  if(m.type==='loan')return loanModal();
   if(m.type==='neg')return negModal();
   return '';
 }
@@ -74,4 +75,13 @@ function clubModal(){
   <div><h3>Meilleurs joueurs</h3>${sq.slice().sort((a,b)=>ovr(b)-ovr(a)).slice(0,5).map(p=>`<p>${plink(p)} · ${posL(p)} · <b class="${oc(ovr(p))}">${rd(ovr(p))}</b></p>`).join('')}</div></div>
   <h3>Effectif</h3><table><tr><th>Nom</th><th>Poste</th><th class="hm">Âge</th><th class="n">Note</th>${potTh()}<th class="n hm">Contrat</th><th class="hm">État</th></tr>
   ${sq.map(p=>`<tr><td>${plink(p)}</td><td>${posLS(p)}</td><td class="hm">${p.age}</td><td class="n ${oc(ovr(p))}"><b>${rd(ovr(p))}</b></td>${potTd(p)}<td class="n hm">${p.ctr} an${p.ctr>1?'s':''}</td><td class="hm">${injTxt(p)}</td></tr>`).join('')}</table></div></div>`;
+}
+
+// Prêt d'un joueur : clubs où il serait titulaire (ou presque)
+function loanModal(){
+  const m=ME(),p=m.squad.find(x=>x.id===UI.pid);if(!p)return '';
+  const ok=G.phase==='offseason'||windowOpen(),T=loanTargets(p);
+  return `<div class="overlay"><div class="modal"><h2>Prêter ${p.name}</h2><p class="mut">Il part jouer jusqu'à la fin de la saison dans un club plus modeste qui paie son salaire, puis revient. Idéal pour faire jouer (et progresser) un jeune ou un remplaçant.</p>
+  ${!ok?'<p class="ko">La fenêtre de transferts est fermée : les prêts se font à l’intersaison ou pendant le mercato d’hiver.</p>':T.length?`<table><tr><th>Club</th><th class="hm">Division</th><th>Rôle</th><th></th></tr>${T.map(x=>`<tr><td>${clubLink(x.c.id,x.c.name)}</td><td class="hm">${LEAGUES[x.c.lg].name}</td><td>${x.rk<STARTERS[p.g]?'titulaire':'rotation'}</td><td><button class="btn sm" data-a="loanDo" data-c="${x.c.id}">Prêter</button></td></tr>`).join('')}</table>`:'<p class="mut">Aucun club intéressé : il ne serait titulaire nulle part au même niveau ou plus bas.</p>'}
+  <p><button class="btn sec" data-a="closeModal">Fermer</button></p></div></div>`;
 }
