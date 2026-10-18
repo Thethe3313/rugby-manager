@@ -121,9 +121,9 @@ const mass=cl=>cl.squad.reduce((s,p)=>s+p.sal,0);
 const P2RULES={PIL:[],TAL:[],'2L':[['3L',.25]],'3L':[['2L',.15]],DM:[['OUV',.06],['AIL',.04]],OUV:[['CEN',.15],['ARR',.15],['DM',.05]],CEN:[['AIL',.25],['OUV',.06]],AIL:[['ARR',.35],['CEN',.12]],ARR:[['AIL',.5],['OUV',.08]]};
 function estPos2(p,h){const o=ovrAt(p,p.g);return P2RULES[p.g].filter(([g,pr],i)=>((h*(i+3)*7.13)%1)<Math.min(1,pr*2)&&o-ovrAt(p,g)<=2).map(([g])=>g)}
 // Monte les attributs plus utiles au second poste qu'au poste naturel, jusqu'à y valoir la note moins 3
-function fitPos2(p,g2){const o=ovrAt(p,p.g);for(let n=0;n<80&&ovrAt(p,g2)<o-3;n++){let bk=null,bv=-9;for(const[k]of ATTRS){if(p[k]>=20)continue;const v=(W[g2][k]||0)-(W[p.g][k]||0);if(v>bv){bv=v;bk=k}}if(!bk||bv<=0)break;p[bk]=Math.min(20,p[bk]+.25)}
+function fitPos2(p,g2){const o=ovrAt(p,p.g),o0={};for(const[k]of ATTRS)o0[k]=p[k];for(let n=0;n<80&&ovrAt(p,g2)<o-3;n++){let bk=null,bv=-9;for(const[k]of ATTRS){if(p[k]>=Math.max(17,o0[k])||p[k]>=o0[k]+4)continue; /* +4 au plus par attribut, plafond 17 */const v=(W[g2][k]||0)-(W[p.g][k]||0);if(v>bv){bv=v;bk=k}}if(!bk||bv<=0)break;p[bk]=Math.min(20,p[bk]+.25)}
   // la note au poste naturel ne doit pas bouger : on redescend les attributs qui comptent surtout pour lui
-  for(let n=0;n<80&&ovrAt(p,p.g)>o+.2;n++){let bk=null,bv=-9;for(const[k]of ATTRS){if(p[k]<=1.25)continue;const v=(W[p.g][k]||0)-(W[g2][k]||0);if(v>bv){bv=v;bk=k}}if(!bk)break;p[bk]-=.25;if(ovrAt(p,g2)<o-3.5){p[bk]+=.25;break}}}
+  for(let n=0;n<80&&ovrAt(p,p.g)>o+.2;n++){let bk=null,bv=-9;for(const[k]of ATTRS){if(p[k]<=1.25)continue;const v=(W[p.g][k]||0)-(W[g2][k]||0);if(v>bv){bv=v;bk=k}}if(!bk)break;p[bk]-=.25;if(ovrAt(p,g2)<o-5){p[bk]+=.25;break}}}
 function setPos2(p,h){
   const k=typeof POS2!=='undefined'&&POS2[p.name];
   if(k){p.pos2=k.filter(g=>g!==p.g);delete p.p2e;for(const g2 of p.pos2)fitPos2(p,g2)}else{p.pos2=estPos2(p,h!=null?h:hashN(p.name+'p2'));if(p.pos2.length)p.p2e=1;else delete p.p2e}

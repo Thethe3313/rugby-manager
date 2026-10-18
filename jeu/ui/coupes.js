@@ -2,7 +2,7 @@
 function poolHTML(pool,i,ko){
   const m=ME(),rows=sortPool(pool);
   return `<div><h3>Poule ${i+1}</h3><table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">G</th><th class="n">P</th><th class="n">Diff</th><th class="n">Bonus</th><th class="n">Pts</th></tr>
-  ${rows.map((r,k)=>{const c=C(r.id);return `<tr class="${r.id===m.id?'me':''} ${k<4?'q':''}"><td>${k+1}</td><td>${c.short} <span class="mut">${c.ext?lgName(c):'Top 14'}</span></td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.p}</td><td class="n">${r.pf-r.pa}</td><td class="n">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`}).join('')}</table></div>`;
+  ${rows.map((r,k)=>{const c=C(r.id);return `<tr class="${r.id===m.id?'me':''} ${k<4?'q':''}"><td>${k+1}</td><td>${clubLink(c.id,c.short)} <span class="mut">${c.ext?lgName(c):'Top 14'}</span></td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.p}</td><td class="n">${r.pf-r.pa}</td><td class="n">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`}).join('')}</table></div>`;
 }
 function koHTML(cup){
   const ko=cup.ko;if(!ko)return '';

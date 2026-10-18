@@ -47,7 +47,7 @@ function viewPrematch(){
   <div class="card" style="margin:12px 0 0"><p>Météo prévue : <b>${wxTxt(weatherFor(nx.d,h))}</b> · Arbitre : <b>${refTxt(refFor(nx.d,h))}</b></p>
   <p>Discours d'avant-match<br>${tacSel('talk','pre',TALKS.pre,UI.talk||'motive')}</p>
   <p class="mut">Pluie : plus d'en-avant et de jeu au pied. Vent : buteurs gênés. Arbitre sévère : plus de pénalités et de cartons (la discipline compte). Un discours exigeant réveille une équipe déterminée, mais peut faire craquer une équipe qui se décourage vite.</p></div>
-  <p style="margin-top:12px"><button class="btn" data-a="goLive">▶ Suivre le match en direct</button> <button class="btn sec" data-a="quickMatch">⏩ Résultat immédiat</button> <button class="btn sec" data-a="preLineup">Modifier la composition</button></p>
+  <p style="margin-top:12px"><button class="btn" data-a="goLive">▶ Suivre le match en direct</button> <button class="btn sec" data-a="quickMatch">⏩ Résultat immédiat</button> <button class="btn sec" data-a="preLineup">Modifier la composition</button> <button class="btn sec" data-a="closeModal">✕ Fermer (revenir au menu)</button></p>
   <p class="mut">Tu peux choisir dans les Réglages de toujours passer directement au résultat.</p></div></div>`;
 }
 

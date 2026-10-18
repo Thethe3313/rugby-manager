@@ -20,6 +20,8 @@ const ACT={
   tutoSkip(){G.tuto=-1;render()},
   tutoReset(){G.tuto=0;G.tab=TUTO[0][0];render()},
   lgsel(d){UI.lg=d.lg;render()},
+  lgsel2(d,el){UI.lg=el.value;render()},
+  club(d){UI.modal={type:'club'};UI.cid=d.id;UI.backClub=null;render()},
   cupsel(d){UI.cup=d.k;render()},
   play(){ACT.toMatch()},
   cont(){const r=advance('day');save();UI.mtab='resume';if(r)UI.modal={type:'match'};else if(G.liveWait)UI.modal={type:'prematch'};render()},
@@ -50,7 +52,7 @@ const ACT={
     promoteYouth(m,p);addNews(`✍ ${p.name} signe son premier contrat pro (3 ans, ${fmtK(p.sal)}/an).`);UI.modal=null;save();render()},
   relYouth(d){const m=ME(),p=(m.youth||[]).find(x=>x.id===+d.id);if(!p)return;if(!confirm(`Libérer l'espoir ${p.name} ?`))return;m.youth=m.youth.filter(x=>x.id!==p.id);save();render()},
   mailAct(d){const x=(G.mail||[]).find(y=>y.id===+d.id);if(!x||!x.act)return;if(x.act.player){UI.modal={type:'player'};UI.pid=x.act.player}else{G.tab=x.act.tab;if(x.act.mt)UI.mt=x.act.mt}render()},
-  closeModal(){UI.modal=null;render()},
+  closeModal(){if(UI.backClub&&UI.modal&&UI.modal.type==='player'){UI.modal={type:'club'};UI.cid=UI.backClub;UI.backClub=null}else UI.modal=null;render()},
   autoXV(){const m=ME();m.autoXV=m.autoXV===false;if(m.autoXV)m.lineup=autoLineup(m);save();render()},
   luv(d){UI.luv=d.v;UI.luSel=null;render()},
   // composition sur terrain : 1er toucher = sélection, 2e = échange (place ↔ place, ou joueur de la réserve → place)
@@ -59,7 +61,7 @@ const ACT={
   auto(){const m=ME();m.lineup=autoLineup(m);save();render()},
   tac(d,el){const m=ME();if(d.k==='focus')m.focus=el.value;else m.tac[d.k]=el.value;save();render()},
   ef(d,el){UI.ef=el.value;render()},
-  player(d){UI.modal={type:'player'};UI.pid=+d.id;render()},
+  player(d){if(UI.modal&&UI.modal.type==='club')UI.backClub=UI.cid;UI.modal={type:'player'};UI.pid=+d.id;render()},
   neg(d){UI.neg={pid:+d.id,mode:d.mode};UI.negMsg='';UI.modal={type:'neg'};render()},
   sendNeg(){
     const N=UI.neg,f=findPlayer(N.pid),p=f.p,m=ME();if(!p)return;
@@ -106,6 +108,10 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  espTab(d){G.tab='table';UI.lg='esp_'+d.lg;render()},
+  openPre(){UI.modal={type:'prematch'};render()},
+  // aller jusqu'à une date (FM / FIFA) : tes matchs sont simulés sans direct, les messages ne stoppent pas l'avancée
+  goUntil(){const e=document.getElementById('gd'),v=e&&e.value;if(!v||v<=G.date||(G.phase!=='season'&&G.phase!=='access'))return;UI.gd=v;UI.adv={n:0,until:v};UI.more=false;goTick()},
   follow(d){const id=+d.id;G.follow=G.follow||[];G.follow=G.follow.includes(id)?G.follow.filter(x=>x!==id):G.follow.concat(id);save();render()},
   postTalk(d){if(G.lastMatch&&!G.lastMatch.talk)postTalk(G.lastMatch,d.v);save();render()},
   // Continuer façon FM : les jours défilent (animation) jusqu'au prochain match ou à un message important ; recliquer arrête
@@ -132,12 +138,14 @@ function goTick(){
   if(UI.modal){UI.adv=null;return render()}
   G.lastMatch=null;G.stop=false;G.liveWait=false;
   const end=()=>{UI.adv=null;save();render()};
-  if(liveDue()){G.liveWait=true;UI.modal={type:'prematch'};return end()}
+  const until=UI.adv.until;
+  if(!until&&liveDue()){G.liveWait=true;UI.modal={type:'prematch'};return end()}
   const r=dayStep();UI.adv.n++;
-  if(r){G.lastMatch=r;UI.mtab='resume';UI.modal={type:'match'};return end()}
+  if(r&&!until){G.lastMatch=r;UI.mtab='resume';UI.modal={type:'match'};return end()}
   if(G.phase!=='season'&&G.phase!=='access'){G.tab='home';return end()}
-  if(G.stop){const x=(G.mail||[])[0];G.tab='mail';if(x){UI.mid=x.id;UI.mailView=true}return end()}
-  render();setTimeout(goTick,UI.adv.n<3?260:150);
+  if(until&&G.date>=until){G.tab='home';return end()}
+  if(G.stop&&!until){const x=(G.mail||[])[0];G.tab='mail';if(x){UI.mid=x.id;UI.mailView=true}return end()}
+  render();setTimeout(goTick,until?60:UI.adv.n<3?260:150);
 }
 // clics sur les boutons ; les listes déroulantes et les choix de fichier réagissent au changement de valeur
 document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b||b.tagName==='SELECT'||b.type==='file')return;const f=ACT[b.dataset.a];if(f)f(b.dataset,b)});

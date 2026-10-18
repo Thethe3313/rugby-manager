@@ -86,3 +86,53 @@ function youthSeasonEnd(c){
   // 25 espoirs maximum : on garde les plus prometteurs
   c.youth=keep.sort((a,b)=>b.pot-a.pot).slice(0,25);
 }
+
+// ==== CHAMPIONNAT ESPOIRS ====
+// Une poule par division (Top 14, Pro D2, Nationale), matchs aller-retour le dimanche, simulés d'après le niveau des
+// 15 meilleurs espoirs de chaque club. Les espoirs qui jouent (15 titulaires + 3 remplaçants) progressent plus vite
+// (en plus de l'entraînement) : statistiques p.yst = {mj, es}.
+const ESPLG={t14:'Espoirs Top 14',pd2:'Espoirs Pro D2',nat:'Espoirs Nationale'};
+const espTeam=c=>[...(c.youth||[])].filter(p=>p.inj===0).sort((a,b)=>ovr(b)-ovr(a)).slice(0,18);
+// moins de 15 espoirs valides : l'équipe est complétée par des joueurs moins forts (niveau abaissé)
+const espStr=c=>{const t=espTeam(c).slice(0,15);return t.length?t.reduce((s,p)=>s+ovr(p),0)/t.length*Math.pow(t.length/15,.3):35};
+function startESP(){
+  const E={poules:{},fixtures:[],table:{},week:0,dates:[],phase:'regular'};
+  for(const lg in ESPLG){const ids=clubsIn(lg).filter(c=>(c.youth||[]).length>=10).map(c=>c.id);if(ids.length>=4)E.poules[lg]=ids}
+  const per=Object.values(E.poules).map(ids=>{const x=shuffle([...ids]);if(x.length%2)x.push(null);return mkFixtures(x)});
+  const n=Math.max(0,...per.map(f=>f.length));
+  E.fixtures=[...Array(n)].map((_,r)=>per.flatMap(f=>(f[r]||[]).filter(([h,a])=>h&&a)));
+  for(const ids of Object.values(E.poules))for(const id of ids)E.table[id]={id,j:0,g:0,n:0,p:0,pf:0,pa:0,bo:0,pts:0};
+  let d=firstDow(`${seasonYear()}-09-06`,0);while(E.dates.length<n){if(!amOff(d))E.dates.push(d);d=dAdd(d,7)}
+  if(!n)E.phase='done';
+  for(const c of G.clubs)for(const p of c.youth||[])p.yst={mj:0,es:0};
+  G.ESP=E;
+}
+function espDay(){
+  const E=G.ESP;if(!E||E.phase!=='regular'||!E.dates[E.week]||E.dates[E.week]>G.date)return;
+  const res=[];
+  for(const[h,a]of E.fixtures[E.week]){
+    const ch=C(h),ca=C(a);if(!ch||!ca)continue;
+    const r=amSim({str:espStr(ch)},{str:espStr(ca)}),x=E.table[h],y=E.table[a];
+    x.j++;y.j++;x.pf+=r.sh;x.pa+=r.sa;y.pf+=r.sa;y.pa+=r.sh;
+    if(r.sh>r.sa){x.g++;y.p++;x.pts+=4}else if(r.sh<r.sa){y.g++;x.p++;y.pts+=4}else{x.n++;y.n++;x.pts+=2;y.pts+=2}
+    x.bo+=r.bo[0];y.bo+=r.bo[1];x.pts+=r.bo[0];y.pts+=r.bo[1];
+    [[ch,r.th],[ca,r.ta]].forEach(([c,tries])=>espPlayed(c,tries));
+    res.push({h,a,sh:r.sh,sa:r.sa});
+  }
+  E.last=res;E.week++;if(E.week>=E.fixtures.length)E.phase='done';
+  const m=ME(),mine=res.find(x=>x.h===m.id||x.a===m.id);
+  if(mine)addNews(`Espoirs : ${C(mine.h).short} ${mine.sh}-${mine.sa} ${C(mine.a).short}.`);
+}
+// Les espoirs alignés : un match de plus, quelques essais, une progression supplémentaire, rarement une blessure
+function espPlayed(c,tries){
+  const team=espTeam(c),a=acadOf(c),k=.7+a/40;
+  team.forEach((p,i)=>{
+    p.yst=p.yst||{mj:0,es:0};p.yst.mj++;
+    const o=ovr(p),gap=p.pot-o;
+    if(gap>0){const da=(p.age<=17?.007:p.age<=20?.005:.003)*gap*.3*k*(.6+(p.pro||10)/20*.8)*(i<15?1:.5)*19/79;for(const key in W[p.g])p[key]=Math.min(20,p[key]+da)}
+    if(R.f()<.012)p.inj=R.i(7,35);
+  });
+  const backs=team.slice(0,15).filter(p=>['AIL','CEN','ARR','DM','3L','OUV'].includes(p.g));
+  for(let t=0;t<tries&&backs.length;t++)R.pick(backs).yst.es++;
+}
+const espSorted=lg=>{const E=G.ESP;return E&&E.poules[lg]?E.poules[lg].map(id=>E.table[id]).filter(Boolean).sort((x,y)=>y.pts-x.pts||(y.pf-y.pa)-(x.pf-x.pa)):[]};

@@ -39,6 +39,10 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
     run(`G.tab='lineup';UI.luv='terrain';ACT.luPick({k:'s0'})`);check(label+':terrain-selection',app.innerHTML);
     run(`ACT.luPick({k:'s2'});(()=>{const m=ME(),r=m.squad.find(p=>!m.lineup.includes(p.id)&&p.inj===0);if(r){ACT.luPick({k:'s14'});ACT.luPick({k:'p'+r.id})}})()`);check(label+':terrain-echange',app.innerHTML);
     run(`ACT.luv({v:'liste'});ME().autoXV=true;ME().lineup=autoLineup(ME());UI.luv='terrain'`);check(label+':liste',app.innerHTML);
+    // page d'un club (depuis le classement), puis un de ses joueurs et retour ; classement espoirs ; date cible
+    run(`ACT.club({id:G.clubs.find(c=>c.id!==G.meId).id})`);check(label+':club',app.innerHTML);
+    run(`ACT.player({id:C(UI.cid).squad[0].id});ACT.closeModal()`);check(label+':club-retour',app.innerHTML);run('ACT.closeModal()');
+    run(`G.tab='table';UI.lg=G.ESP&&Object.keys(G.ESP.poules)[0]?'esp_'+Object.keys(G.ESP.poules)[0]:null`);check(label+':espoirs-classement',app.innerHTML);run('UI.lg=null');
     // joueurs suivis : on suit le meilleur joueur adverse, puis l'onglet des suivis
     run(`ACT.follow({id:G.clubs.find(c=>c.id!==G.meId).squad[1].id})`);
     for(const t of ['follow','offers','pre','log']){run(`G.tab='market';ACT.mt({t:'${t}'})`);check(label+':market-'+t,app.innerHTML)}
@@ -75,6 +79,7 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
       run('UI.modal=null');
       if(guard===12)allTabs(`s${s}:milieu`);
       // Continuer façon FM : premier pas de l'avancée animée (le minuteur ne tourne pas dans les tests), puis arrêt
+      if(guard===8){run(`document.getElementById('gd').value=dAdd(G.date,3);ACT.goUntil()`);check(lb+':aller-date',app.innerHTML);run('UI.adv=null')}
       if(guard===5){run('ACT.go()');check(lb+':avance',app.innerHTML);run('if(UI.adv)ACT.go()')}
     }
     allTabs(`s${s}:fin`);

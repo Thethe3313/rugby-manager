@@ -8,6 +8,8 @@ function potCell(p){const v=potEst(p),own=(findPlayer(p.id).club||{}).id===G.meI
 const potTh=()=>potMode()==='hide'?'':'<th>Pot.</th>';
 const potTd=p=>potMode()==='hide'?'':potCell(p);
 function progTxt(p){const d=Math.round(ovr(p))-(p.o0||Math.round(ovr(p)));return d>0?`<span class="ok">+${d}</span>`:d<0?`<span class="ko">${d}</span>`:'<span class="mut">=</span>'}
+// Nom de club cliquable (page du club) ; les clubs « légers » (divisions simulées) n'ont pas de page
+const clubLink=(id,label)=>C(id)?`<a class="clink" data-a="club" data-id="${id}">${label}</a>`:label;
 const plink=p=>`<a style="cursor:pointer;color:var(--blue)" data-a="player" data-id="${p.id}">${p.name}</a>`;
 function winBanner(){const w=windowOpen();return w?`<p class="ok"><b>Mercato ${w==='été'?"d'été":"d'hiver"} ouvert.</b> Tu peux acheter, vendre et recevoir des offres.</p>`:`<p class="mut">Fenêtre de transferts fermée (elle ouvre à l'intersaison et de la 10e à la 13e journée). Restent possibles : les joueurs libres (jokers) et les pré-contrats avec les joueurs en dernière année.</p>`}
 

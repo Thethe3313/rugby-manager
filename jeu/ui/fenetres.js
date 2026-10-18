@@ -58,6 +58,20 @@ function modalView(){
   if(m.type==='live')return viewLive();
   if(m.type==='staff')return staffModal();
   if(m.type==='player')return playerModal();
+  if(m.type==='club')return clubModal();
   if(m.type==='neg')return negModal();
   return '';
+}
+
+// Page d'un club (clic sur son nom) : niveau, effectif complet, espoirs
+function clubModal(){
+  const c=C(UI.cid);if(!c)return '';
+  const kt=kits([c,c])[0],lgn=c.ext?lgName(c)+(CTY[c.cty]?', '+CTY[c.cty]:''):LEAGUES[c.lg]?LEAGUES[c.lg].name:'',rk=!c.ext&&G.L&&G.L[c.lg]?rankOf(c.id):0;
+  const t=teamCalc({...c,lineup:autoLineup(c)}),sq=[...c.squad].sort((a,b)=>GORDER.indexOf(a.g)-GORDER.indexOf(b.g)||ovr(b)-ovr(a));
+  return `<div class="overlay"><div class="modal wide"><div class="row" style="justify-content:space-between"><h2 style="margin:0">${kitTag(c,kt)} ${c.name}</h2><button class="btn sec sm" data-a="closeModal">✕ Fermer</button></div>
+  <p class="mut">${lgn}${rk?' · '+rk+'e'+(c.poule!=null&&G.L[c.lg]&&G.L[c.lg].poules>1?' de sa poule':''):''}${c.manager?' · manager : '+c.manager:''}${c.ext?'':' · budget '+k(c.bud)} · effectif ${c.squad.length} joueurs${(c.youth||[]).length?' · '+c.youth.length+' espoirs':''}</p>
+  <div class="grid g2"><div><h3>Niveau de l'équipe</h3><table>${ratingRows(t)}</table></div>
+  <div><h3>Meilleurs joueurs</h3>${sq.slice().sort((a,b)=>ovr(b)-ovr(a)).slice(0,5).map(p=>`<p>${plink(p)} · ${posL(p)} · <b class="${oc(ovr(p))}">${rd(ovr(p))}</b></p>`).join('')}</div></div>
+  <h3>Effectif</h3><table><tr><th>Nom</th><th>Poste</th><th class="hm">Âge</th><th class="n">Note</th>${potTh()}<th class="n hm">Contrat</th><th class="hm">État</th></tr>
+  ${sq.map(p=>`<tr><td>${plink(p)}</td><td>${posLS(p)}</td><td class="hm">${p.age}</td><td class="n ${oc(ovr(p))}"><b>${rd(ovr(p))}</b></td>${potTd(p)}<td class="n hm">${p.ctr} an${p.ctr>1?'s':''}</td><td class="hm">${injTxt(p)}</td></tr>`).join('')}</table></div></div>`;
 }

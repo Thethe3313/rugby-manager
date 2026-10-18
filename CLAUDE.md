@@ -13,6 +13,7 @@ Le projet est versionné avec git (branche `main`). Organisation du dossier (voi
 `jeu/index.html` charge des scripts classiques (`<script src>`, pas de modules ES, pour que le double-clic marche) qui partagent les mêmes variables globales, **dans cet ordre** (chemins relatifs à `jeu/`) :
 1. **`data/`** :
    - `couleurs.js` (après `amateur.js`) : `COULEURS`, couleurs de maillot des clubs connus (`clubCols`/`kits` dans `ui/match-direct.js`).
+   - `postes.js` (après `couleurs.js`) : `POS2`, postes secondaires connus.
    - `joueurs.js` : `REAL`, effectifs réels 2026-27 par club (30 clubs). Format `[nom, poste, sous-poste, année de naissance, nationalité, sélections, sélectionné récemment 0/1, note /99, tags, justification, points forts, points faibles]`.
    - `amateur.js` (chargé après `staff.js`) : `F2POULES`, `F3POULES` (vrais clubs de Fédérale 2 et 3), `REGPOULES` (vraies Régionales de Nouvelle-Aquitaine `na` et PACA `paca`, depuis `recherche/amateur/brut/regionales.json`), `REGFICT` (clubs fictifs de réserve), générés par `outils/generer-amateur.js`.
    - `espoirs.js` : `REALY`, vrais espoirs. Format `[nom, poste, sous-poste, année, nationalité, international U20 0/1, note, potentiel]` (le potentiel est le centre d'une fourchette, voir `potDraw`).
@@ -38,6 +39,8 @@ Le projet est versionné avec git (branche `main`). Organisation du dossier (voi
 ### Vie du club (étape G)
 - Fatigue : récupération `(1.2+.035*(100-forme))*recoverK` par jour, effet en match `fm=.78+.22*forme/100` (même facteur dans `effAt`), blessures plus fréquentes sous 75 %.
 - Causerie d'après-match `postTalk` (`jour-de-match.js`) → `G.postMor` (±3 %) appliqué au moral du match suivant dans `newMatch`.
+- Seconds postes `p.pos2` : connus dans `recherche/postes/postes2.json` → `node outils/generer-postes.js` → `jeu/data/postes.js` (`POS2`, attributs ajustés par `fitPos2`), sinon estimés `estPos2` (`p.p2e`) ; `posFit` (0,97 au second poste) sert à `effAt` et `fitAt`. Composition sur terrain : `lineupPitch`/`luChip`, actions `luPick`/`luSwap` (+ glisser-déposer).
+- Championnat espoirs `G.ESP` (`startESP`, `espDay`, `espPlayed`, `espSorted`, poules `ESPLG`) ; stats `p.yst`. Pages de club `clubModal` (`clubLink` sur les noms), choix du championnat par menu `lgBtns` (`lgsel2`, `esp_<lg>`). Aller à une date : `ACT.goUntil` (`UI.adv.until`).
 - Offres d'achat par messages : `sendBid`/`bidDay`/`answerBid` (`G.bids`, réponse 1-3 jours plus tard, motif `bidReason`). Joueurs suivis `G.follow`. Continuer animé : `ACT.go`/`goTick` (s'arrête la veille d'un match ou sur un message `imp`).
 
 ## Base de recherche des notes

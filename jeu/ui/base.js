@@ -71,7 +71,7 @@ function tutoHTML(){
   return `<div id="tuto"><div class="row" style="justify-content:space-between"><b>${t}</b><span class="mut">${G.tuto+1}/${TUTO.length}</span></div><p>${x}</p><div class="row"><button class="btn sm" data-a="tutoNext">${G.tuto<TUTO.length-1?'Suivant':'C’est parti !'}</button><button class="btn sec sm" data-a="tutoSkip">Passer le tutoriel</button></div></div>`;
 }
 // Bandeau d'avancée (les jours qui passent)
-function advBar(){return `<div id="advbar"><span class="spin">⏩</span> Les jours passent… <b>${fmtD(G.date,true)}</b> <button class="btn sec sm" data-a="go">■ Stop</button></div>`}
+function advBar(){return `<div id="advbar"><span class="spin">⏩</span> Les jours passent… <b>${fmtD(G.date,true)}</b>${UI.adv.until?' → '+fmtD(UI.adv.until,true):''} <button class="btn sec sm" data-a="go">■ Stop</button></div>`}
 function view(){
   switch(G.tab){
     case'squad':return viewSquad();case'lineup':return viewLineup();case'cal':return viewCal();

@@ -34,7 +34,7 @@ function ratingRows(t){
 }
 function viewHome(){
   const m=ME(),nm=myNextMatch(),nx=nm&&(G.phase==='access'||nm.d)?nm.f:null;
-  let h=`<div class="card row"><button class="btn ${UI.adv?'bad':''}" data-a="go">${UI.adv?'■ Stop':'Continuer ▶'} <span style="font-weight:400">${UI.adv?'':'(jusqu’au prochain match ou message important)'}</span></button><button class="btn sec" data-a="cont" ${UI.adv?'disabled':''}>+1 jour</button>${unread()?`<button class="btn sec" data-a="tab" data-t="mail">✉ ${unread()} message(s) non lu(s)</button>`:''}</div>`;
+  let h=`<div class="card row"><button class="btn ${UI.adv?'bad':''}" data-a="go">${UI.adv?'■ Stop':'Continuer ▶'} <span style="font-weight:400">${UI.adv?'':'(jusqu’au prochain match ou message important)'}</span></button><button class="btn sec" data-a="cont" ${UI.adv?'disabled':''}>+1 jour</button>${G.liveWait&&!UI.adv?'<button class="btn" data-a="openPre">🏉 Jour de match : y aller</button>':''}<span class="row" style="gap:6px"><input type="date" id="gd" value="${UI.gd||dAdd(G.date,7)}" min="${dAdd(G.date,1)}" style="background:var(--panel2);color:var(--txt);border:1px solid var(--line);border-radius:5px;padding:4px 6px"><button class="btn sec" data-a="goUntil" ${UI.adv?'disabled':''} title="Les jours défilent jusqu’à cette date ; tes matchs sont simulés (sans direct)">⏩ Aller à cette date</button></span>${unread()?`<button class="btn sec" data-a="tab" data-t="mail">✉ ${unread()} message(s) non lu(s)</button>`:''}</div>`;
   if(nx){
     const home=nx.h===m.id,o=C(home?nx.a:nx.h);
     const tm=teamCalc(m),to=teamCalc({...o,lineup:autoLineup(o)});
@@ -48,7 +48,7 @@ function viewHome(){
   }
   if(windowOpen()||(G.offers||[]).length)h+=`<div class="card">${winBanner()}${(G.offers||[]).length?`<p><b>${G.offers.length} offre(s) reçue(s)</b> pour tes joueurs. <button class="btn sm" data-a="goOffers">Voir</button></p>`:''}</div>`;
   const tb=sortedTable(m.lg);
-  h+=`<div class="grid g2"><div class="card"><h3>Classement ${LEAGUES[m.lg].name}</h3><table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">Pts</th></tr>${tb.map((r,i)=>({r,i})).filter(x=>x.i<6||x.r.id===m.id).map(x=>`<tr class="${x.r.id===m.id?'me':''}"><td>${x.i+1}</td><td>${C(x.r.id).short}</td><td class="n">${x.r.j}</td><td class="n"><b>${x.r.pts}</b></td></tr>`).join('')}</table></div>
+  h+=`<div class="grid g2"><div class="card"><h3>Classement ${LEAGUES[m.lg].name}</h3><table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">Pts</th></tr>${tb.map((r,i)=>({r,i})).filter(x=>x.i<6||x.r.id===m.id).map(x=>`<tr class="${x.r.id===m.id?'me':''}"><td>${x.i+1}</td><td>${clubLink(x.r.id,C(x.r.id).short)}</td><td class="n">${x.r.j}</td><td class="n"><b>${x.r.pts}</b></td></tr>`).join('')}</table></div>
   <div class="card"><h3>Actualités</h3>${G.news.slice(0,9).map(n=>`<p>• ${n}</p>`).join('')}</div></div>`;
   return h;
 }
@@ -127,9 +127,13 @@ function viewCal(){
   if(done)h+=`<div class="card"><h3>Tous les résultats de la journée ${done.i+1}</h3>${done.r.map(x=>`<p>${C(x.h).short} <b>${x.sh} - ${x.sa}</b> ${C(x.a).short}</p>`).join('')}</div>`;
   return h;
 }
-const lgBtns=cur=>LGORDER.map(l=>`<button class="btn ${l===cur?'':'sec'} sm" data-a="lgsel" data-lg="${l}">${LEAGUES[l].name}</button>`).join('')+(G.AMD?AMORDER.map(l=>`<button class="btn ${l===cur?'':'sec'} sm" data-a="lgsel" data-lg="${l}">${LEAGUES[l].name}</button>`).join(''):'')+Object.keys(G.XL||{}).map(l=>`<button class="btn ${l===cur?'':'sec'} sm" data-a="lgsel" data-lg="${l}">${G.XL[l].name}</button>`).join('');
+// Choix du championnat : menu déroulant (France, espoirs, étranger)
+const lgBtns=cur=>{
+  const grp=[['France',LGORDER.concat(G.AMD?AMORDER:[]).map(l=>[l,LEAGUES[l].name])],['Espoirs',G.ESP?Object.keys(G.ESP.poules).map(l=>['esp_'+l,ESPLG[l]]):[]],['Étranger',Object.keys(G.XL||{}).map(l=>[l,G.XL[l].name])]];
+  return `<select data-a="lgsel2" class="lgsel">${grp.filter(g=>g[1].length).map(([g,o])=>`<optgroup label="${g}">${o.map(([v,n])=>`<option value="${v}" ${v===cur?'selected':''}>${n}</option>`).join('')}</optgroup>`).join('')}</select>`;
+};
 // Tableau de classement (rows triées)
-const tableRows=(rows,me,nq,low)=>`<table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n hm">G</th><th class="n hm">N</th><th class="n hm">P</th><th class="n hm">PP</th><th class="n hm">PC</th><th class="n">Diff</th><th class="n hm">Bonus</th><th class="n">Pts</th></tr>${rows.map((r,i)=>`<tr class="${r.id===me?'me':''} ${i<nq?'q':''}"><td>${i+1}${low&&i>=rows.length-low?' ⬇':''}</td><td>${amC(r.id).name}</td><td class="n">${r.j}</td><td class="n hm">${r.g}</td><td class="n hm">${r.n}</td><td class="n hm">${r.p}</td><td class="n hm">${r.pf}</td><td class="n hm">${r.pa}</td><td class="n">${r.pf-r.pa}</td><td class="n hm">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table>`;
+const tableRows=(rows,me,nq,low)=>`<table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n hm">G</th><th class="n hm">N</th><th class="n hm">P</th><th class="n hm">PP</th><th class="n hm">PC</th><th class="n">Diff</th><th class="n hm">Bonus</th><th class="n">Pts</th></tr>${rows.map((r,i)=>`<tr class="${r.id===me?'me':''} ${i<nq?'q':''}"><td>${i+1}${low&&i>=rows.length-low?' ⬇':''}</td><td>${clubLink(r.id,amC(r.id).name)}</td><td class="n">${r.j}</td><td class="n hm">${r.g}</td><td class="n hm">${r.n}</td><td class="n hm">${r.p}</td><td class="n hm">${r.pf}</td><td class="n hm">${r.pa}</td><td class="n">${r.pf-r.pa}</td><td class="n hm">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table>`;
 function viewAMTable(k){
   const A=G.AMD[k],m=ME(),mine=m.lg===k&&G.L[k],n=A.clubs.length+(mine?clubsIn(k).length:0);
   const rule=k==='f1'&&G.season===1?'Réforme de la FFR : les 6 premiers de chaque poule et 2 clubs classés 7es montent en Nationale 2 (qui passe à 48 clubs) ; les autres forment la nouvelle Nationale 3.':`Les mieux classés montent en ${LEAGUES[amUp(k)].name} (le 1er de chaque poule, et d'autres si la division du dessus manque de clubs)${amDown(k)?', les derniers descendent en '+LEAGUES[amDown(k)].name:''}.`;
@@ -137,12 +141,19 @@ function viewAMTable(k){
   <p class="mut">${LEAGUES[k].name} ${seasonLabel()} : ${n} clubs en ${A.poules} poule(s). Seul le niveau des clubs compte, sauf dans ta poule qui se joue en vrai. ${rule}${k[0]==='r'?' Deux ligues seulement : Nouvelle-Aquitaine et Provence-Alpes-Côte d’Azur (poules tirées dans chaque ligue).':''}</p></div>
   <div class="grid g2r">${[...Array(A.poules)].map((_,i)=>{const own=mine&&m.poule===i;return `<div class="card" style="margin:0"><h3>${A.preg&&A.preg[i]?REGNAME[A.preg[i]]+' · p':'P'}oule ${i+1}${own?' (la tienne)':''}</h3>${tableRows(own?sortedTable(k):amSorted(k,i),m.id,k==='f1'&&G.season===1?6:1,0)}</div>`}).join('')}</div>${palmaresHTML()}`;
 }
+// Championnat espoirs
+function viewESPTable(lg){
+  const E=G.ESP;
+  return `<div class="card"><div class="row"><h2 style="margin:0">Classement</h2>${lgBtns('esp_'+lg)}</div>
+  <p class="mut">${ESPLG[lg]} ${seasonLabel()} : ${E.phase==='regular'?`journée ${E.week+1}/${E.fixtures.length}`:'terminé'}. Les matchs sont simulés d'après le niveau des 15 meilleurs espoirs de chaque club ; les espoirs qui jouent progressent plus vite.</p>
+  ${tableRows(espSorted(lg),ME().id,0,0)}</div>${E.last&&E.last.length?`<div class="card"><h3>Dernière journée</h3>${E.last.filter(x=>E.poules[lg].includes(x.h)).map(x=>`<p>${clubLink(x.h,C(x.h).short)} <b>${x.sh} - ${x.sa}</b> ${clubLink(x.a,C(x.a).short)}</p>`).join('')}</div>`:''}`;
+}
 // Classement d'un championnat étranger (URC, Premiership)
 function viewXLTable(lg){
   const L=G.XL[lg],tb=xlSorted(L),n=XLEAGUES[lg].po,P=XLPO[n];
   return `<div class="card"><div class="row"><h2 style="margin:0">Classement</h2>${lgBtns(lg)}</div>
   <p class="mut">${L.name} ${seasonLabel()} : ${L.phase==='regular'?`journée ${L.week+1}/${L.fixtures.length}`:L.phase==='playoffs'?P[L.po.stage]:'terminé'}. Victoire 4 pts · nul 2 · bonus offensif (4 essais ou plus) +1 · bonus défensif (défaite de 7 pts ou moins) +1. Les ${n} premiers vont en phases finales.${XLEAGUES[lg].euro?' Les 8 premiers jouent la Champions Cup la saison suivante, les autres la Challenge Cup.':''}</p>
-  <table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">G</th><th class="n">N</th><th class="n">P</th><th class="n">Diff</th><th class="n hm">Bonus</th><th class="n">Pts</th></tr>${tb.map((r,i)=>`<tr class="${i<n?'q':''}"><td>${i+1}</td><td>${C(r.id).name}</td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.n}</td><td class="n">${r.p}</td><td class="n">${r.pf-r.pa}</td><td class="n hm">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
+  <table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">G</th><th class="n">N</th><th class="n">P</th><th class="n">Diff</th><th class="n hm">Bonus</th><th class="n">Pts</th></tr>${tb.map((r,i)=>`<tr class="${i<n?'q':''}"><td>${i+1}</td><td>${clubLink(r.id,C(r.id).name)}</td><td class="n">${r.j}</td><td class="n">${r.g}</td><td class="n">${r.n}</td><td class="n">${r.p}</td><td class="n">${r.pf-r.pa}</td><td class="n hm">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
   ${L.po&&L.po.res.length?`<div class="card"><h2>Phases finales</h2>${L.po.res.map(r=>`<h3>${P[r.stage]}</h3>`+r.m.map(x=>`<p>${C(x.h).short} <b>${x.sh} - ${x.sa}</b> ${C(x.a).short}</p>`).join('')).join('')}${L.champ?`<p>🏆 <b>${C(L.champ).name}</b></p>`:''}</div>`:''}`;
 }
 // Palmarès de la partie
@@ -150,6 +161,7 @@ const palmaresHTML=()=>G.hist.length?`<div class="card"><h3>Palmarès</h3>${G.hi
 function viewTable(){
   if(UI.lg==='am')UI.lg='f1';
   const amk=UI.lg?UI.lg:ME().lg;if(isAmLg(amk)&&G.AMD)return viewAMTable(amk);
+  if(UI.lg&&UI.lg.startsWith('esp_'))return viewESPTable(UI.lg.slice(4));
   if(UI.lg&&G.XL&&G.XL[UI.lg])return viewXLTable(UI.lg);
   if((UI.lg||ME().lg)==='n2'&&G.L.n2){const P=G.L.n2.poules;
     return `<div class="card"><div class="row"><h2 style="margin:0">Classement</h2>${lgBtns('n2')}</div>
@@ -160,7 +172,7 @@ function viewTable(){
   return `<div class="card"><div class="row"><h2 style="margin:0">Classement</h2>${lgBtns(lg)}</div>
   <p class="mut">Victoire 4 pts · nul 2 · bonus offensif (3 essais de plus que l'adversaire) +1 · bonus défensif (défaite de 5 pts ou moins) +1. ${rule}</p>
   <table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n hm">G</th><th class="n hm">N</th><th class="n hm">P</th><th class="n hm">PP</th><th class="n hm">PC</th><th class="n">Diff</th><th class="n hm">Bonus</th><th class="n">Pts</th></tr>
-  ${tb.map((r,i)=>`<tr class="${r.id===m.id?'me':''} ${i<6?'q':''}"><td>${i+1}${(lg==='t14'||lg==='pd2'||n>=NATSIZE)&&i>=n-2?(i===n-1||lg==='nat'?' ⬇':' ⚠'):''}</td><td>${C(r.id).name}</td><td class="n">${r.j}</td><td class="n hm">${r.g}</td><td class="n hm">${r.n}</td><td class="n hm">${r.p}</td><td class="n hm">${r.pf}</td><td class="n hm">${r.pa}</td><td class="n">${r.pf-r.pa}</td><td class="n hm">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
+  ${tb.map((r,i)=>`<tr class="${r.id===m.id?'me':''} ${i<6?'q':''}"><td>${i+1}${(lg==='t14'||lg==='pd2'||n>=NATSIZE)&&i>=n-2?(i===n-1||lg==='nat'?' ⬇':' ⚠'):''}</td><td>${clubLink(r.id,C(r.id).name)}</td><td class="n">${r.j}</td><td class="n hm">${r.g}</td><td class="n hm">${r.n}</td><td class="n hm">${r.p}</td><td class="n hm">${r.pf}</td><td class="n hm">${r.pa}</td><td class="n">${r.pf-r.pa}</td><td class="n hm">${r.bo}</td><td class="n"><b>${r.pts}</b></td></tr>`).join('')}</table></div>
   ${palmaresHTML()}`;
 }
 function viewHelp(){
