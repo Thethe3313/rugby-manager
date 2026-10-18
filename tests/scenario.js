@@ -50,6 +50,10 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
     run(`(()=>{const T=loanTargets(ME().squad.find(x=>x.id===UI.pid));if(T.length&&(G.phase==='offseason'||windowOpen()))ACT.loanDo({c:T[0].c.id});else ACT.closeModal()})()`);check(label+':pret-fait',app.innerHTML);
     // recrutement : observation d'un joueur adverse (fourchette de note), fiche avant/après
     run(`(()=>{const p=G.clubs.find(c=>c.id!==G.meId&&c.lg!==ME().lg).squad[0];ACT.observe({id:p.id});ACT.player({id:p.id})})()`);check(label+':observation',app.innerHTML);run('ACT.closeModal()');
+    // missions de recrutement : départ, retour (rapport), pépite intégrée au centre de formation
+    run(`G.tab='market';UI.mt='scout';ME().budget+=100;ACT.mission()`);check(label+':mission',app.innerHTML);
+    run(`if(G.mission)endMission();UI.mt='scout';render()`);check(label+':mission-rapport',app.innerHTML);
+    run(`if((G.pros||[]).length)ACT.signPro({id:G.pros[0].id});UI.mt='search'`);check(label+':pepite',app.innerHTML);
     // joueurs suivis : on suit le meilleur joueur adverse, puis l'onglet des suivis
     run(`ACT.follow({id:G.clubs.find(c=>c.id!==G.meId).squad[1].id})`);
     for(const t of ['follow','offers','pre','log']){run(`G.tab='market';ACT.mt({t:'${t}'})`);check(label+':market-'+t,app.innerHTML)}

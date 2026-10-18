@@ -15,7 +15,7 @@ function marketPool(){
 }
 function viewMarket(){
   const m=ME(),sub=UI.mt||'search';
-  const tabs=[['search','Recherche'],['follow',`★ Suivis (${(G.follow||[]).length})`],['offers',`Offres reçues (${(G.offers||[]).length})`],['pre',`Pré-contrats (${(G.pre||[]).length})`],['log','Historique']];
+  const tabs=[['search','Recherche'],['scout','🌏 Recrutement'],['follow',`★ Suivis (${(G.follow||[]).length})`],['offers',`Offres reçues (${(G.offers||[]).length})`],['pre',`Pré-contrats (${(G.pre||[]).length})`],['log','Historique']];
   let h=`<div class="card"><div class="row"><h2 style="margin:0">Mercato</h2>${tabs.map(t=>`<button class="btn ${t[0]===sub?'':'sec'} sm" data-a="mt" data-t="${t[0]}">${t[1]}</button>`).join('')}</div>
   ${winBanner()}<p class="mut">Trésorerie : <b>${k(m.budget)}</b> · Masse salariale : <b>${k(mass(m))}</b> / ${k(capOf(m))} (marge ${k(Math.max(0,capOf(m)-mass(m)))}) · Effectif : ${m.squad.length}/50</p>`;
   if(sub==='search'||sub==='follow'){
@@ -28,6 +28,8 @@ function viewMarket(){
     h+=sub==='follow'&&!n?'<p class="mut">Aucun joueur suivi. Clique sur ☆ à côté d’un joueur (ou « Suivre » dans sa fiche) pour le retrouver ici ; tu seras prévenu s’il change de club.</p>':`<p class="mut">${n} joueur(s)${n>100?' · 100 premiers affichés':''}</p>`;
     if(n)h+=`<table><tr><th>Nom</th><th>Poste</th><th class="hm">Âge</th><th class="n">Note</th>${potTh()}${grpTh()}<th class="hm">Club</th><th class="n hm">Ctr</th><th class="n hm">Salaire</th><th class="n hm">Valeur</th><th class="n hm">Indemnité</th><th></th></tr>
     ${pool.map(({p,c})=>`<tr><td>${followBtn(p)}${plink(p)}</td><td>${posLS(p)}</td><td class="hm">${p.age}</td>${noteCell(p,c)}${potTd(p)}${grpTd(p,c)}<td class="hm">${c?c.short+' <span class="mut">'+(c.ext?lgName(c):c.lg==='t14'?'T14':c.lg==='pd2'?'PD2':LEAGUES[c.lg]?LEAGUES[c.lg].name:'')+'</span>':'<span class="ok">Libre</span>'}</td><td class="n hm">${c?p.ctr:'-'}</td><td class="n hm">${k(p.sal)}</td><td class="n hm">${k(valueOf(p))}</td><td class="n hm">${c?k(askFee(p,c)):'0'}</td><td><button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="${c?'buy':'fa'}">${c?'Offre':'Signer'}</button>${c&&p.ctr<=1&&G.phase==='season'?` <button class="btn sec sm" data-a="neg" data-id="${p.id}" data-mode="pre">Pré-contrat</button>`:''}</td></tr>`).join('')}</table>`;
+  }else if(sub==='scout'){
+    h+=scoutHTML();
   }else if(sub==='offers'){
     const of=G.offers||[];
     h+=of.length?`<table><tr><th>Joueur</th><th>Poste</th><th class="n">Note</th><th>Club acheteur</th><th class="n">Offre</th><th class="n">Valeur</th><th></th></tr>${of.map((o,i)=>{const p=m.squad.find(x=>x.id===o.pid),c=C(o.club);if(!p||!c)return '';return `<tr><td>${plink(p)}</td><td>${posL(p)}</td><td class="n">${rd(ovr(p))}</td><td>${c.short}</td><td class="n"><b>${k(o.fee)}</b></td><td class="n">${k(valueOf(p))}</td><td><button class="btn sm" data-a="acceptOffer" data-i="${i}">Accepter</button> <button class="btn bad sm" data-a="refuseOffer" data-i="${i}">Refuser</button></td></tr>`}).join('')}</table>`:'<p class="mut">Aucune offre pour le moment. Les offres arrivent pendant les fenêtres de transferts ; place un joueur sur la liste des transferts (depuis sa fiche) pour en attirer davantage.</p>';
@@ -73,4 +75,15 @@ function viewSettings(){
   <h3 style="margin-top:14px">Sauvegarde</h3>
   <p class="row"><button class="btn sec" data-a="exportSave">⬇ Exporter ma partie dans un fichier</button><label class="btn sec">⬆ Importer une partie<input type="file" accept=".json,application/json" data-a="importSave" hidden></label></p>
   <p class="mut">La partie est enregistrée dans le navigateur utilisé. Pour la retrouver dans un autre navigateur (ou dans l'appli), exporte-la ici puis importe le fichier là-bas. C'est aussi une bonne copie de secours.</p></div>`;
+}
+
+// Recrutement : missions dans le monde et liste des meilleurs jeunes que tu connais
+function scoutHTML(){
+  const M=G.mission,q=staffQ(ME(),'rec'),T=knownTalents();
+  const zsel=`<select id="mz">${Object.entries(ZONES).map(([k,z])=>`<option value="${k}" ${UI.mz===k?'selected':''}>${z.n} — ${z.cost} k€, ~${Math.round(z.days*(1.25-q/40))} jours</option>`).join('')}</select>`;
+  const gsel=`<select id="mg"><option value="ALL">Tous postes</option>${GORDER.map(g=>`<option value="${g}" ${UI.mg===g?'selected':''}>${GROUPS[g]}</option>`).join('')}</select>`;
+  return `<h3>Mission de recrutement</h3><p class="mut">Ton recruteur (${q}/20) part quelques semaines dans une zone du monde et revient avec les meilleurs jeunes de 21 ans au plus (ensuite bien connus : note et attributs visibles) et parfois des pépites sans club, à faire entrer dans ton centre de formation. Plus il est bon, plus la mission est rapide et fructueuse.</p>
+  ${M?`<p>🧳 En mission : <b>${ZONES[M.z].n}</b>${M.g!=='ALL'?' ('+GROUPS[M.g].toLowerCase()+')':''} — retour prévu le ${fmtD(M.due,true)}.</p>`:`<div class="row">${zsel}${gsel}<button class="btn" data-a="mission">Envoyer en mission</button></div>`}
+  <h3 style="margin-top:14px">Pépites et meilleurs jeunes connus (${T.length})</h3>
+  ${T.length?`<table><tr><th>Nom</th><th class="hm">Âge</th><th>Poste</th><th class="hm">Club</th><th class="n">Note</th><th class="n">Pot.</th><th></th></tr>${T.map(({p,c,pro})=>`<tr><td>${followBtn(p)}${plink(p)}${p.gem?' 💎':''}</td><td class="hm">${p.age}</td><td>${posLS(p)}</td><td class="hm">${pro?'<span class="ok">sans club</span>':c.short+(p.youth?' <span class="mut">(espoir)</span>':'')}</td>${noteCell(p,c)}<td class="n">≈${potEst(p)}</td><td>${pro?`<button class="btn sm" data-a="signPro" data-id="${p.id}">Faire entrer au centre</button>`:`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="buy">Offre</button>`}</td></tr>`).join('')}</table>`:'<p class="mut">Aucun pour l’instant : envoie ton recruteur en mission, ou fais observer des joueurs.</p>'}`;
 }

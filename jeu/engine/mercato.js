@@ -1,6 +1,6 @@
 'use strict';
 // Moteur : transferts et mercato
-function removeFromClub(p,club){club.squad=club.squad.filter(x=>x.id!==p.id);club.lineup=club.lineup.map(id=>id===p.id?null:id)}
+function removeFromClub(p,club){club.squad=club.squad.filter(x=>x.id!==p.id);if(club.youth)club.youth=club.youth.filter(x=>x.id!==p.id);p.youth=false;club.lineup=club.lineup.map(id=>id===p.id?null:id)}
 function tlog(t){G.tlog=G.tlog||[];G.tlog.unshift(`${seasonLabel()} · ${t}`);if(G.tlog.length>80)G.tlog.length=80}
 // Transfert effectif d'un joueur vers un club (from = null pour un joueur libre)
 function doTransfer(p,from,to,fee,sal,yrs){

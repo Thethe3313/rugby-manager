@@ -47,5 +47,5 @@ function wageDemand(p,club,mode){
 }
 function findPlayer(id){
   for(const c of G.clubs.concat(G.ext||[])){const p=c.squad.find(x=>x.id===id)||(c.youth||[]).find(x=>x.id===id);if(p)return{p,club:c}}
-  const p=(G.fa||[]).find(x=>x.id===id);return p?{p,club:null}:{p:null,club:null};
+  const p=(G.fa||[]).find(x=>x.id===id)||(G.pros||[]).find(x=>x.id===id);return p?{p,club:null}:{p:null,club:null};
 }
