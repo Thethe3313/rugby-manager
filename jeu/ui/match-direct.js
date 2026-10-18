@@ -61,6 +61,8 @@ const FORM={
     D:[[.8,-1],[.8,0],[.8,1],[1.8,-.5],[1.8,.5],[2.6,-1.4],[2.6,1.4],[3.4,0],[.5,-2],[7,9],[6,-14],[6,15],[6,22],[7,30],[20,8]]},
   lineout:{A:[[-.5,6],[0,-1],[-.5,13],[-.5,8],[-.5,10],[-.5,7],[-.5,12],[-.5,14],[-2,17],[-8,22],[-12,50],[-10,28],[-11,34],[-12,62],[-20,30]],
     D:[[.5,6],[.5,-1],[.5,13],[.5,8],[.5,10],[.5,7],[.5,12],[.5,14],[2,17],[8,22],[12,50],[8,28],[9,34],[12,62],[22,30]]},
+  ruck:{A:[[-1.2,-1],[-1,0],[-1.2,1],[-2,-1.2],[-2,1.2],[-1.5,-2.4],[-2.5,2.6],[-3.2,0],[-2,1.8],[-7,8],[-9,-14],[-9,15],[-10,22],[-12,30],[-16,10]],
+    D:[[1.2,-1],[1,0],[1.2,1],[2,-1.4],[2,1.4],[1.5,-3],[2.2,3],[3,0],[3,-4],[3,12],[5,-16],[3,18],[3,25],[4,32],[18,8]]},
   maul:{A:[[-1,-1],[0,0],[-1,1],[-2,-.5],[-2,.5],[-.5,-1.5],[-.5,1.5],[-3,0],[-3,3],[-8,10],[-10,-14],[-11,15],[-12,22],[-13,30],[-18,8]],
     D:[[1,-1],[1,0],[1,1],[2,-.5],[2,.5],[1,-1.8],[1,1.8],[2.5,0],[3,-3],[7,10],[6,-14],[6,15],[6,22],[7,30],[18,8]]}
 };
@@ -76,7 +78,23 @@ function formation(ms){
   if(key==='kick'){a=1-a;key='open';shift=6}else if(key==='pen'||key==='goal'){key='open';shift=10}else if(!FORM[key])key='open';
   const T=FORM[key],s=dir(a),open=by<35?1:-1;
   for(const i of[0,1]){const tpl=i===a?T.A:T.D;for(let j=0;j<15;j++){const[dx,dy]=tpl[j];F[i].push([clamp(bx+s*(dx+(i===a?0:shift))+jit(i,j),-9,109),clamp(by+open*dy+jit(j,i),.8,69.2)])}}
+  // le porteur du ballon est sur le ballon, son plaqueur vient au contact
+  const at=(i,id)=>id?ms.T[i].on.findIndex(d=>d&&d.p.id===id):-1;
+  const jc=at(v.a,v.c);if(jc>=0)F[v.a][jc]=[bx,by];
+  const jt=at(1-v.a,v.t);if(jt>=0)F[1-v.a][jt]=[clamp(bx+dir(v.a)*1.3,-9,109),clamp(by+.9,.8,69.2)];
   return F;
+}
+// Porteur du ballon : plus gros, cerclé de jaune
+const isCar=(ms,d)=>!!(d&&ms.view&&ms.view.c===d.p.id);
+const circA=(L,i,d)=>{const car=isCar(L.ms,d);return `r="${car?2.1:1.6}" stroke="${car?'#ffd84d':i===L.side?'#fff':'#0008'}" stroke-width="${car?.6:i===L.side?.35:.2}"`};
+// Trajectoire du ballon depuis l'action précédente (en cloche pour un coup de pied)
+function trailD(L){const ms=L.ms,p=L.prev;if(!p)return '';const x0=p[0]+10,y0=p[1],x1=ms.x+10,y1=ms.y;if(Math.abs(x1-x0)+Math.abs(y1-y0)<1.5)return '';
+  return ms.view&&ms.view.k==='kick'?`M${x0.toFixed(1)} ${y0.toFixed(1)} Q${((x0+x1)/2).toFixed(1)} ${(Math.min(y0,y1)-14).toFixed(1)} ${x1.toFixed(1)} ${y1.toFixed(1)}`:`M${x0.toFixed(1)} ${y0.toFixed(1)} L${x1.toFixed(1)} ${y1.toFixed(1)}`}
+// Étiquette de l'action en cours, au-dessus du ballon
+function actLabel(ms){
+  const t=(ms.step||[]).map(e=>e.x).join(' ');
+  if(/ESSAI/.test(t))return 'ESSAI !';if(/Percée/.test(t))return 'Percée !';if(/gratté/.test(t))return 'Grattage !';if(/En-avant/.test(t))return 'En-avant';if(/Drop réussi/.test(t))return 'Drop !';if(/Pénalité réussie/.test(t))return 'Pénalité réussie';if(/Pénalité/.test(t))return 'Pénalité';if(/carton/i.test(t))return 'Carton !';
+  const v=ms.view||{};return {scrum:'Mêlée',lineout:'Touche',maul:'Ballon porté',kick:'Jeu au pied',ruck:'Ruck',kickoff:'Coup d’envoi',goal:'Tentative au but'}[v.k]||(v.t?'Plaquage':'');
 }
 const trXY=(x,y)=>`translate(${(x+10).toFixed(1)}px,${y.toFixed(1)}px)`;
 function pitchSVG(L){
@@ -85,7 +103,7 @@ function pitchSVG(L){
   const ln=(x,dash)=>`<line x1="${x}" y1="0" x2="${x}" y2="70" stroke="#ffffffaa" stroke-width="${dash?.2:.35}" ${dash?'stroke-dasharray="1.5 1.5"':''}/>`;
   let dots='';
   for(const i of[0,1])for(let j=0;j<15;j++){const d=ms.T[i].on[j],[x,y]=F[i][j];
-    dots+=`<g id="lv-d${i}-${j}" style="transform:${trXY(x,y)};${tr};opacity:${d&&!d.sin?1:0}"><circle r="1.6" fill="${K[i].bg}" ${i===L.side?'stroke="#fff" stroke-width=".35"':'stroke="#0008" stroke-width=".2"'}/><text id="lv-t${i}-${j}" y=".55" text-anchor="middle" font-size="1.55" font-weight="700" fill="${K[i].fg}">${d?d.no:''}</text></g>`}
+    dots+=`<g id="lv-d${i}-${j}" style="transform:${trXY(x,y)};${tr};opacity:${d&&!d.sin?1:0}"><circle id="lv-c${i}-${j}" fill="${K[i].bg}" ${circA(L,i,d)}/><text id="lv-t${i}-${j}" y=".55" text-anchor="middle" font-size="1.55" font-weight="700" fill="${K[i].fg}">${d?d.no:''}</text></g>`}
   return `<svg class="pitch" viewBox="-1 -1 122 72" role="img" aria-label="Terrain">
   <rect x="0" y="0" width="120" height="70" fill="#2f7d45"/>${[20,40,60,80,100].map(x=>`<rect x="${x}" y="0" width="10" height="70" fill="#ffffff08"/>`).join('')}
   <rect x="0" y="0" width="10" height="70" fill="#276b3b"/><rect x="110" y="0" width="10" height="70" fill="#276b3b"/>
@@ -93,7 +111,10 @@ function pitchSVG(L){
   <line x1="10" y1="32.2" x2="10" y2="37.8" stroke="#fff" stroke-width=".8"/><line x1="110" y1="32.2" x2="110" y2="37.8" stroke="#fff" stroke-width=".8"/>
   <text x="5" y="35" font-size="2.6" fill="#fff" text-anchor="middle" transform="rotate(-90 5 35)" font-weight="700">${ms.clubs[0].short}</text>
   <text x="115" y="35" font-size="2.6" fill="#fff" text-anchor="middle" transform="rotate(90 115 35)" font-weight="700">${ms.clubs[1].short}</text>
-  ${dots}<g id="lv-ball" style="transform:${trXY(ms.x,ms.y)};${tr}"><ellipse rx="1.05" ry=".7" fill="#f3e3c3" stroke="#5a3d1e" stroke-width=".25"/></g></svg>`;
+  <path id="lv-trail" d="${trailD(L)}" fill="none" stroke="#f3e3c3" stroke-width=".35" stroke-dasharray="1 1" opacity=".8"/>
+  ${dots}<g id="lv-lab" style="transform:${trXY(ms.x,ms.y-4)};${tr}"><text text-anchor="middle" font-size="2.3" font-weight="800" fill="#fff" stroke="#0009" stroke-width=".5" paint-order="stroke">${actLabel(ms)}</text></g>
+  <g id="lv-try" style="opacity:${L.tryN>0?1:0};transition:opacity .4s"><rect x="40" y="1.5" width="40" height="9" rx="2" fill="#000b"/><text x="60" y="8.3" text-anchor="middle" font-size="5.5" font-weight="900" fill="${L.tryC||'#fff'}">${L.tryT||''}</text></g>
+  <g id="lv-ball" style="transform:${trXY(ms.x,ms.y)};${tr}"><ellipse rx="1.05" ry=".7" fill="#f3e3c3" stroke="#5a3d1e" stroke-width=".25"/></g></svg>`;
 }
 
 // ---- Match en direct ----
@@ -141,6 +162,13 @@ function liveUpdate(){
     const t=document.getElementById(`lv-t${i}-${j}`);if(t)t.textContent=d?d.no:'';
   }
   const b=document.getElementById('lv-ball');if(b)b.style.transform=trXY(ms.x,ms.y);
+  // porteur mis en avant, trajectoire du ballon, étiquette d'action, essai
+  for(const i of[0,1])for(let j=0;j<15;j++){const c=document.getElementById(`lv-c${i}-${j}`),d=ms.T[i].on[j];if(c){const car=isCar(ms,d);c.setAttribute('r',car?2.1:1.6);c.setAttribute('stroke',car?'#ffd84d':i===L.side?'#fff':'#0008');c.setAttribute('stroke-width',car?.6:i===L.side?.35:.2)}}
+  const tr_=document.getElementById('lv-trail');if(tr_)tr_.setAttribute('d',trailD(L));
+  const lb=document.getElementById('lv-lab');if(lb){lb.style.transform=trXY(ms.x,ms.y-4);lb.innerHTML=`<text text-anchor="middle" font-size="2.3" font-weight="800" fill="#fff" stroke="#0009" stroke-width=".5" paint-order="stroke">${actLabel(ms)}</text>`}
+  const ty=ms.step.find(e=>e.k==='try');if(ty){const K=kits(ms.clubs)[ty.ti!=null?ty.ti:ms.view.a];L.tryN=3;L.tryT='ESSAI !';L.tryC=K?K.bg==='#111111'?'#fff':K.bg:'#fff'}else if(L.tryN>0)L.tryN--;
+  const tg=document.getElementById('lv-try');if(tg){tg.style.opacity=L.tryN>0?1:0;const t=tg.querySelector&&tg.querySelector('text');if(t){t.textContent=L.tryT||'';t.setAttribute('fill',L.tryC||'#fff')}}
+  L.prev=[ms.x,ms.y];
   // bandeau sur les temps forts (essai, pénalité réussie, carton, blessure)
   const key=ms.step.find(e=>e.lv>=2);
   if(key){L.flash=key.x;L.flashN=4}else if(L.flashN>0&&--L.flashN===0)L.flash='';
@@ -155,7 +183,7 @@ function liveTick(){
   liveTimer=null;const L=UI.live;
   if(!L||!G||!UI.modal||UI.modal.type!=='live'||L.paused||L.ms.done)return;
   matchStep(L.ms);
-  if(L.ms.pause){L.ms.pause=false;L.paused=true;L.flash=L.ms.now;L.htTalk=true;render();return} // mi-temps : pause pour ajuster la tactique
+  if(L.ms.pause){L.ms.pause=false;L.paused=true;L.flash=L.ms.now;L.htTalk=true;L.tryN=0;render();return} // mi-temps : pause pour ajuster la tactique
   if(L.ms.done){render();return}
   liveUpdate();
   liveSchedule(L.speed==='forts'&&L.ms.key?1800:LSPEED[L.speed][0]);

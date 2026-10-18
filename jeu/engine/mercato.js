@@ -21,6 +21,7 @@ const fmtK=n=>Math.abs(n)>=1000?(n/1000).toFixed(2).replace('.',',')+' M€':Mat
 // Évaluation d'une offre du joueur (pre = pré-contrat gratuit pour un joueur en dernière année)
 function evalOffer(p,from,fee,sal,yrs,pre){
   const m=ME();
+  if(p.loan)return{msg:'Ce joueur est en prêt : il ne peut pas être transféré avant la fin de la saison.'};
   if(!yrs||yrs<1||yrs>5)return{msg:'Durée de contrat : entre 1 et 5 ans.'};
   if(m.squad.length>=50&&!pre)return{msg:'Effectif complet (50 joueurs maximum).'};
   if(!pre&&mass(m)+sal>capOf(m))return{msg:`Plafond salarial dépassé : il te reste ${fmtK(Math.max(0,capOf(m)-mass(m)))} de marge.`};
@@ -41,7 +42,7 @@ function evalOffer(p,from,fee,sal,yrs,pre){
 function genOffers(n){
   const m=ME();G.offers=G.offers||[];
   for(let i=0;i<n;i++){
-    const cands=m.squad.filter(p=>ovr(p)>=62&&p.ctr>0&&!G.offers.some(o=>o.pid===p.id));
+    const cands=m.squad.filter(p=>ovr(p)>=62&&p.ctr>0&&!p.loan&&!G.offers.some(o=>o.pid===p.id));
     if(!cands.length)return;
     const w=cands.map(p=>valueOf(p)*(p.list?3:1));let r=R.f()*w.reduce((a,b)=>a+b,0),p=cands[0];
     for(let j=0;j<cands.length;j++){r-=w[j];if(r<=0){p=cands[j];break}}
@@ -63,7 +64,7 @@ function aiMercato(){
     const mine=c.squad.filter(x=>x.g===g).sort((a,b)=>ovr(b)-ovr(a));
     const ref=mine[Math.min(STARTERS[g],mine.length)-1];const refO=ref?ovr(ref):60;
     // cibles : clubs plus faibles, en France comme à l'étranger (URC, Premiership, Super Rugby, Japon)
-    const targets=G.clubs.concat(G.ext||[]).filter(x=>x!==c&&x.id!==m.id&&clubStr(x)<clubStr(c)).flatMap(x=>x.squad.filter(p=>p.g===g&&ovr(p)>refO+2&&p.age<=30).map(p=>({p,x})));
+    const targets=G.clubs.concat(G.ext||[]).filter(x=>x!==c&&x.id!==m.id&&clubStr(x)<clubStr(c)).flatMap(x=>x.squad.filter(p=>p.g===g&&!p.loan&&ovr(p)>refO+2&&p.age<=30).map(p=>({p,x})));
     if(!targets.length)continue;
     const t=R.pick(targets),sal=salaryFor(ovr(t.p),t.p.age,c.lg);
     // plafond salarial : le club laisse partir son joueur le plus faible à ce poste pour faire de la place

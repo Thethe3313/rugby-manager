@@ -148,3 +148,4 @@ p{margin:6px 0}
 .clink{cursor:pointer;color:inherit;text-decoration:underline dotted #8b9bb0;text-underline-offset:3px}
 .clink:hover{color:var(--acc)}
 select.lgsel{font-weight:600}
+.lv-tac select{min-width:0;width:100%}

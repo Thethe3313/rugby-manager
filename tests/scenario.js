@@ -54,6 +54,9 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
     run(`G.tab='market';UI.mt='scout';ME().budget+=100;ACT.mission()`);check(label+':mission',app.innerHTML);
     run(`if(G.mission)endMission();UI.mt='scout';render()`);check(label+':mission-rapport',app.innerHTML);
     run(`if((G.pros||[]).length)ACT.signPro({id:G.pros[0].id});UI.mt='search'`);check(label+':pepite',app.innerHTML);
+    // prêts : un remplaçant sur la liste des prêts, onglet Prêts, demande de prêt d'un jeune d'un autre club
+    run(`(()=>{const m=ME(),p=[...m.squad].sort((a,b)=>ovr(a)-ovr(b))[1];ACT.loanList({id:p.id});G.tab='market';UI.mt='loans';render()})()`);check(label+':prets',app.innerHTML);
+    run(`(()=>{const a=loanAvailable()[0];if(a)ACT.loanAsk({id:a.p.id});if((G.loanOffers||[]).length)ACT.loanAcc({i:0});UI.mt='search'})()`);check(label+':prets-faits',app.innerHTML);
     // joueurs suivis : on suit le meilleur joueur adverse, puis l'onglet des suivis
     run(`ACT.follow({id:G.clubs.find(c=>c.id!==G.meId).squad[1].id})`);
     for(const t of ['follow','offers','pre','log']){run(`G.tab='market';ACT.mt({t:'${t}'})`);check(label+':market-'+t,app.innerHTML)}

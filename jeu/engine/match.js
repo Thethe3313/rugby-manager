@@ -228,7 +228,7 @@ function doCarry(ms,a){
   const DF=defOf(D),RY=ryOf(S);
   const bonus=(ms.quick?.6:0)+(ms.counter&&car.slot>=10?.8:0)+(ms.tap?1:0)+RY.bon;
   ms.quick=false;ms.counter=false;ms.tap=false;ms.fromSet=false;
-  ms.view={k:'open',a,c:car.p.id};ms.y=clamp(ms.y+R.n(0,9),4,66);
+  ms.view={k:'open',a,c:car.p.id,t:tk?tk.p.id:null};ms.y=clamp(ms.y+R.n(0,9),4,66);
   car.s.car++;S.st.car++;
   // en-avant
   if(R.f()<.035*(1+(12-car.p.mai)/30)*(st==='mouvement'?1.2:st==='conquete'?.85:1)*WX[ms.wx].err*RY.err){

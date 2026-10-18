@@ -99,7 +99,7 @@ const ACT={
   refuseOffer(d){G.offers.splice(+d.i,1);save();render()},
   goOffers(){G.tab='market';UI.mt='offers';render()},
   listP(d){const p=ME().squad.find(x=>x.id===+d.id);if(p){p.list=!p.list;addNews(p.list?`${p.name} est placé sur la liste des transferts.`:`${p.name} est retiré de la liste des transferts.`);save();render()}},
-  release(d){
+  release(d){if((ME().squad.find(x=>x.id===+d.id)||{}).loan)return;
     const m=ME(),p=m.squad.find(x=>x.id===+d.id);if(!p)return;
     const cost=Math.round(p.sal*p.ctr*.5);
     if(m.squad.length<=28){addNews('Effectif minimum de 28 joueurs atteint.');return render()}
@@ -108,6 +108,10 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  loanList(d){const p=ME().squad.find(x=>x.id===+d.id);if(!p)return;p.loanList=!p.loanList;if(p.loanList&&G.phase==='offseason')genLoanOffers(p,R.i(1,2));save();render()},
+  loanAcc(d){if(acceptLoanOffer(+d.i))UI.modal=null;save();render()},
+  loanRef(d){G.loanOffers.splice(+d.i,1);save();render()},
+  loanAsk(d){const f=findPlayer(+d.id);if(!f.p||!f.club)return;const r=askLoan(f.p,f.club);UI.loanMsg=r==='ok'?`${f.p.name} arrive en prêt.`:r;save();render()},
   mission(){const z=document.getElementById('mz'),g=document.getElementById('mg');if(!z)return;UI.mz=z.value;UI.mg=g?g.value:'ALL';const r=startMission(z.value||'fra',UI.mg);if(r==='budget')alert('Trésorerie insuffisante pour cette mission.');save();render()},
   signPro(d){if(signProspect(+d.id)){UI.modal=null;save()}render()},
   observe(d){const p=findPlayer(+d.id).p;if(!p)return;const r=observe(p);if(r==='plein')alert('Ton recruteur observe déjà 5 joueurs : attends ses rapports.');save();render()},

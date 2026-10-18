@@ -58,7 +58,7 @@ function delegDaily(){
 function delegOffseason(){
   const d=G.deleg||{},m=ME(),log=[];
   if(d.renew){const med=[...m.squad].map(ovr).sort((a,b)=>a-b)[Math.floor(m.squad.length/2)]||60;
-    for(const p of m.squad.filter(p=>p.ctr<=1&&!p.fresh&&p.age<=32&&ovr(p)>=med)){const dem=wageDemand(p,m,'renew');if(mass(m)-p.sal+dem<=capOf(m)){p.sal=dem;p.ctr=p.age>=30?1:2;p.fresh=true;log.push(`${p.name} prolongé (${fmtK(dem)}/an)`)}}}
+    for(const p of m.squad.filter(p=>p.ctr<=1&&!p.fresh&&!p.loan&&p.age<=32&&ovr(p)>=med)){const dem=wageDemand(p,m,'renew');if(mass(m)-p.sal+dem<=capOf(m)){p.sal=dem;p.ctr=p.age>=30?1:2;p.fresh=true;log.push(`${p.name} prolongé (${fmtK(dem)}/an)`)}}}
   if(d.youth)for(const p of [...(m.youth||[])]){const pos=m.squad.filter(x=>x.g===p.g).sort((a,b)=>ovr(a)-ovr(b));if(m.squad.length<50&&(p.age>=20||p.gem)&&ovr(p)>=(pos[0]?ovr(pos[0])-3:0)){promoteYouth(m,p);log.push(`${p.name} (espoir) promu en équipe pro`)}}
   if(d.recruit)for(const g in MINCOMP){let n=m.squad.filter(p=>p.g===g).length;while(n<MINCOMP[g]){const fa=(G.fa||[]).filter(p=>p.g===g).sort((a,b)=>ovr(b)-ovr(a)).find(p=>mass(m)+wageDemand(p,m,'fa')<=capOf(m));if(!fa||m.squad.length>=50)break;doTransfer(fa,null,m,0,wageDemand(fa,m,'fa'),R.i(1,2));log.push(`${fa.name} (${GROUPS[g]}, libre) recruté`);n++}}
   if(log.length)mail('Directeur sportif','Délégation : décisions de l’intersaison',log.join('<br>'),{act:{tab:'squad'}});
@@ -81,4 +81,38 @@ function returnLoans(){
   for(const c of G.clubs.concat(G.ext||[]))for(const p of [...c.squad])if(p.loan){const own=C(p.loan.from);removeFromClub(p,c);delete p.loan;
     p.ctr--;if(own&&p.ctr<=0){if(own.id===G.meId)addNews(`${p.name} revient de prêt en fin de contrat et part libre.`);p.faT=0;G.fa.push(p);continue}
     if(own){own.squad.push(p);if(own.id===G.meId)addNews(`🔁 Retour de prêt : ${p.name} (${Math.round(ovr(p))}, ${p.hist&&p.hist.length?p.hist[p.hist.length-1].mj+' matchs':'0 match'} à ${c.short}).`)}else{p.ctr=0;p.faT=0;G.fa.push(p)}}
+}
+
+// ---- Liste des prêts (dans les deux sens) ----
+// Tes joueurs sur la liste des prêts (p.loanList) reçoivent des demandes de clubs plus modestes (G.loanOffers).
+// Les autres clubs proposent en prêt leurs jeunes et remplaçants (loanAvailable) : tu peux les demander ;
+// un joueur emprunté porte p.loan = {from: club prêteur} et repart en fin de saison (returnLoans).
+const loanWindow=()=>G.phase==='offseason'||windowOpen();
+function genLoanOffers(p,n){
+  const m=ME();G.loanOffers=G.loanOffers||[];
+  const T=loanTargets(p).filter(x=>!G.loanOffers.some(o=>o.pid===p.id&&o.club===x.c.id));
+  for(const x of shuffle(T).slice(0,n)){G.loanOffers.push({pid:p.id,club:x.c.id,exp:G.phase==='season'?dAdd(G.date,10):null});mail('Directeur sportif',`Demande de prêt : ${p.name}`,`${x.c.name} (${LEAGUES[x.c.lg]?LEAGUES[x.c.lg].name:''}) aimerait accueillir ${p.name} en prêt jusqu'à la fin de la saison (rôle prévu : ${x.rk<STARTERS[p.g]?'titulaire':'rotation'}). Le club d'accueil paierait son salaire.`,{act:{tab:'market',mt:'loans'},imp:true})}
+}
+// chaque lundi de mercato : des clubs s'intéressent aux joueurs de ta liste
+function loanWeekly(){if(!loanWindow())return;G.loanOffers=(G.loanOffers||[]).filter(o=>!o.exp||o.exp>=G.date);for(const p of ME().squad)if(p.loanList&&!p.loan&&R.f()<.3)genLoanOffers(p,1)}
+function acceptLoanOffer(i){
+  const o=(G.loanOffers||[])[i];if(!o)return false;const m=ME(),p=m.squad.find(x=>x.id===o.pid),c=C(o.club);
+  G.loanOffers=G.loanOffers.filter(x=>x.pid!==o.pid);if(!p||!c||!loanWindow())return false;delete p.loanList;loanOut(p,c);return true;
+}
+// joueurs proposés en prêt par les autres clubs : jeunes (24 ans au plus) qui ne sont pas titulaires chez eux
+function loanAvailable(){
+  const m=ME(),out=[];
+  for(const c of G.clubs){if(c.id===m.id||isAmLg(c.lg)||LEVEL[c.lg]>LEVEL[m.lg]+1)continue;
+    for(const p of c.squad){if(p.loan||p.age>24||p.inj>0)continue;const rk=c.squad.filter(x=>x.g===p.g&&ovr(x)>ovr(p)).length;if(rk>=STARTERS[p.g])out.push({p,c,rk})}}
+  return out;
+}
+// demande de prêt d'un joueur d'un autre club : il accepte s'il jouera chez toi, si ton plafond salarial le permet
+function askLoan(p,c){
+  const m=ME();if(!loanWindow())return 'La fenêtre de transferts est fermée (prêts : intersaison et mercato d’hiver).';
+  if(m.squad.length>=50)return 'Effectif complet (50 joueurs).';
+  if(mass(m)+p.sal>capOf(m))return `Ton plafond salarial ne permet pas de payer son salaire (${fmtK(p.sal)}).`;
+  const rk=m.squad.filter(x=>x.g===p.g&&ovr(x)>ovr(p)).length;
+  if(rk>=STARTERS[p.g]+1)return `${p.name} refuse : il ne jouerait pas assez chez toi.`;
+  removeFromClub(p,c);p.loan={from:c.id,s:G.season};p.fresh=false;m.squad.push(p);
+  addNews(`🔁 ${p.name} arrive en prêt de ${c.short} jusqu'à la fin de la saison.`);return 'ok';
 }
