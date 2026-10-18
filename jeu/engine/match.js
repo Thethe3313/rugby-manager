@@ -381,18 +381,26 @@ function doPenalty(ms,a){
   const end=PEND[ms.half],over=ms.t>=end,late=ms.t>=end-600,finalHalf=ms.half===2||ms.half===4;
   ms.phase=0;ms.view={k:'pen',a};
   if(over&&finalHalf&&lead>0){ms.dead=true;ms.next={k:'kickoff',team:d};evt(ms,a,'info',`${nm(ms,a)} tape le ballon en touche : c'est terminé !`,1);return 10}
-  const lat=R.i(0,25),dist=Math.hypot(100-p,lat*.7),range=k?22+A(ms,k,'but')*1.1:28;
+  const lat=ms.penLat!=null?ms.penLat:R.i(0,25),dist=Math.hypot(100-p,lat*.7),range=k?22+A(ms,k,'but')*1.1:28;ms.penLat=null;
+  const pGoal=()=>clamp(.96-Math.max(0,dist-20)*.016-(20-A(ms,k,'but'))*.022-(late&&Math.abs(lead)<=7?.04:0)+WX[ms.wx].goal,.05,.96);
+  // MOMENT DÉCISIF (match en direct) : fin de match serrée, pénalité pour ton équipe dans le camp adverse.
+  // Le direct s'arrête et c'est toi qui choisis (2 fois au plus par match, pas à chaque fois).
+  if(ms.opt.live&&S.club.id===G.meId&&!ms.forcePen&&finalHalf&&ms.t>=end-900&&Math.abs(lead)<=7&&p>=50&&k&&(ms.decN||0)<2&&R.f()<.75){
+    ms.decN=(ms.decN||0)+1;ms.penLat=lat;
+    ms.decision={a,dist:Math.round(dist),side:lat<6?'face aux poteaux':lat<15?'en biais':'en coin',pS:Math.round(pGoal()*100),gain:Math.round(clamp(22+((A(ms,k,'pie'))-10)*1.5,8,40)),lead,min:Math.min(Math.floor(ms.t/60)+1,PMIN[ms.half]),p:Math.round(100-p)};
+    ms.next={k:'pen',team:a};return 0;
+  }
   // une consigne imposée s'applique dans le camp adverse ; dans son camp, l'équipe décide (en général, dégager en touche)
-  let ch=p>=50?S.tac.pen:'auto';
+  let ch=ms.forcePen||(p>=50?S.tac.pen:'auto');const forced=!!ms.forcePen;ms.forcePen=null;
   if(ch==='auto'){
     if(dist<=range&&!(late&&lead<=-4&&p>=60)&&!(p>=78&&R.f()<(S.tac.style==='conquete'?.6:S.tac.style==='mouvement'?.45:.4)))ch='points';
     else if(p>=88&&scrumPow(ms,a)>scrumPow(ms,d)+1&&R.f()<.5)ch='melee';
     else if((S.tac.style==='mouvement'&&p>=40&&R.f()<.15)||(late&&lead<0&&p<60&&R.f()<.5))ch='vite';
     else ch='touche';
-  }else if(ch==='points'&&dist>range+6)ch='touche';
+  }else if(!forced&&ch==='points'&&dist>range+6)ch='touche';
   if(ch==='points'&&k){
     ms.view={k:'goal',a};
-    const pS=clamp(.96-Math.max(0,dist-20)*.016-(20-A(ms,k,'but'))*.022-(late&&Math.abs(lead)<=7?.04:0)+WX[ms.wx].goal,.05,.96);
+    const pS=pGoal();
     if(R.f()<pS){ms.sc[a]+=3;ms.pn[a]++;k.s.pts+=3;ms.dead=true;ms.next={k:'kickoff',team:d};evt(ms,a,'pen',`Pénalité réussie par ${k.p.name} (${nm(ms,a)}, ${Math.round(dist)} m).`,2);return 60}
     ms.dead=true;setPa(ms,d,22);ms.next={k:'play',team:d};
     evt(ms,a,'miss',`Pénalité manquée par ${k.p.name} (${nm(ms,a)}, ${Math.round(dist)} m).`,1);return 50;

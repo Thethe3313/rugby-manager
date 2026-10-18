@@ -34,9 +34,10 @@ const ACT={
   quickMatch(){UI.modal=null;G.talk=UI.talk||'motive';const r=advance('day',{noLive:true});save();UI.mtab='resume';if(r)UI.modal={type:'match'};render()},
   preLineup(){UI.modal=null;G.tab='lineup';render()},
   mtab(d){UI.mtab=d.v;render()},
-  livePause(){const L=UI.live;if(!L)return;L.paused=!L.paused;if(!L.paused)L.htTalk=false;render();liveSchedule()},
+  livePause(){const L=UI.live;if(!L||L.ms.decision)return;L.paused=!L.paused;if(!L.paused)L.htTalk=false;render();liveSchedule()},
   liveSpeed(d){const L=UI.live;if(!L)return;L.speed=d.v;render();liveSchedule()},
-  liveSkip(){const L=UI.live;if(!L)return;let g=0;while(!L.ms.done&&g++<4000)matchStep(L.ms);L.paused=true;render()},
+  liveDecide(d){const L=UI.live;if(!L||!L.ms.decision)return;L.ms.forcePen=d.v;L.ms.decision=null;L.paused=false;L.flash='';render();liveSchedule(200)},
+  liveSkip(){const L=UI.live;if(!L)return;L.ms.opt.live=false;L.ms.decision=null;let g=0;while(!L.ms.done&&g++<4000)matchStep(L.ms);L.paused=true;render()},
   liveEnd(){endLive()},
   liveSel(d){const L=UI.live;if(!L)return;const x=L.ms.P[+d.id];L.sel=L.sel===+d.id||!x||x.slot<0||x.sin?null:+d.id;render();liveSchedule()},
   liveSub(d){const L=UI.live;if(!L)return;const inn=L.ms.P[+d.id],out=L.ms.P[L.sel];

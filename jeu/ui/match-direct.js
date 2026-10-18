@@ -137,6 +137,7 @@ function viewLive(){
   return `<div class="overlay"><div class="modal live">
   <div class="lv-head"><div class="lv-sb">${kitTag(h,kits(ms.clubs)[0])}<span id="lv-score" class="score">${ms.sc[0]} - ${ms.sc[1]}</span>${kitTag(a,kits(ms.clubs)[1])}<span id="lv-clock" class="pill">${clockTxt(ms)}</span></div><div class="mut" style="font-size:13px">${wxTxt(ms.wx)} · Arbitre : ${refTxt(ms.ref)}</div><div class="row">${ctrl}</div></div>
   <div id="lv-flash" class="lv-flash">${L.flash?`<div class="flash">${L.flash}</div>`:''}</div>
+  ${ms.decision?decisionHTML(ms,L):''}
   <div class="lv-grid"><div>${pitchSVG(L)}<div id="lv-now" class="lv-now">${ms.now}</div><div id="lv-comm" class="lv-comm">${commHTML(ms)}</div></div>
   <div><h3>Consignes</h3><div class="lv-tac">
     <label>Style de jeu ${tacSel('liveTac','style',STY,S.tac.style)}</label><label>Intensité ${tacSel('liveTac','int',INTS,S.tac.int)}</label>
@@ -174,6 +175,18 @@ function liveUpdate(){
   if(key){L.flash=key.x;L.flashN=4}else if(L.flashN>0&&--L.flashN===0)L.flash='';
   set('lv-flash',L.flash?`<div class="flash">${L.flash}</div>`:'');
 }
+// Moment décisif : pénalité en fin de match serrée, le joueur choisit
+function decisionHTML(ms,L){
+  const D=ms.decision,me=ms.clubs[D.a].short,sit=D.lead>0?`vous menez de ${D.lead} point${D.lead>1?'s':''}`:D.lead<0?`vous êtes menés de ${-D.lead} point${D.lead<-1?'s':''}`:'égalité';
+  const need=D.lead<=-4?' Une pénalité ne suffit pas pour passer devant : il faut un essai.':D.lead===-3?' Une pénalité vous ramènerait à égalité.':D.lead<0?' Une pénalité vous ferait passer devant.':D.lead===0?' Une pénalité vous donnerait l’avantage.':' Trois points de plus mettraient de la marge.';
+  return `<div class="card" style="margin:10px 0;border:2px solid var(--acc2)"><h3>⏱ Moment décisif — ${D.min}e minute</h3>
+  <p><b>Pénalité pour ${me}</b>, ${sit}. À ${D.dist} m des poteaux, ${D.side} (à ${D.p} m de la ligne d'essai).${need}</p>
+  <div class="row">
+  <button class="btn" data-a="liveDecide" data-v="points">🎯 Prendre les points (≈ ${D.pS} % de réussite)</button>
+  <button class="btn sec" data-a="liveDecide" data-v="touche">📏 Jouer la touche (≈ ${D.gain} m gagnés, ballon porté)</button>
+  <button class="btn sec" data-a="liveDecide" data-v="melee">💪 Choisir la mêlée</button>
+  <button class="btn sec" data-a="liveDecide" data-v="vite">⚡ Jouer vite à la main</button></div></div>`;
+}
 function liveSchedule(delay){
   if(liveTimer)clearTimeout(liveTimer);liveTimer=null;
   const L=UI.live;if(!L||L.paused||L.ms.done)return;
@@ -183,6 +196,7 @@ function liveTick(){
   liveTimer=null;const L=UI.live;
   if(!L||!G||!UI.modal||UI.modal.type!=='live'||L.paused||L.ms.done)return;
   matchStep(L.ms);
+  if(L.ms.decision){L.paused=true;L.flash='⏱ Moment décisif !';render();return} // pénalité décisive : le joueur choisit
   if(L.ms.pause){L.ms.pause=false;L.paused=true;L.flash=L.ms.now;L.htTalk=true;L.tryN=0;render();return} // mi-temps : pause pour ajuster la tactique
   if(L.ms.done){render();return}
   liveUpdate();
@@ -194,14 +208,14 @@ function startLive(){
   setMatchLineup(hc);setMatchLineup(ac);
   const ko=!!nx.ko;
   G.talk=UI.talk||'motive';
-  UI.live={ms:newMatch(hc,ac,{ko,neutral:!!nx.f.neutral,date:nx.d}),side:hc.id===m.id?0:1,speed:'normal',paused:false,sel:null,flash:'',flashN:0};
+  UI.live={ms:newMatch(hc,ac,{ko,neutral:!!nx.f.neutral,date:nx.d,live:true}),side:hc.id===m.id?0:1,speed:'normal',paused:false,sel:null,flash:'',flashN:0};
   UI.modal={type:'live'};render();liveSchedule();
 }
 // Fin du direct : le résultat est enregistré, puis la journée est jouée (les autres matchs sont simulés)
 function endLive(){
   const L=UI.live;if(!L)return;
   if(liveTimer)clearTimeout(liveTimer);liveTimer=null;
-  let g=0;while(!L.ms.done&&g++<4000)matchStep(L.ms);
+  L.ms.opt.live=false;L.ms.decision=null;let g=0;while(!L.ms.done&&g++<4000)matchStep(L.ms);
   G.liveRes={h:L.ms.clubs[0].id,a:L.ms.clubs[1].id,r:matchResult(L.ms)};
   UI.live=null;
   const r=advance('day',{noLive:true});delete G.liveRes;save();

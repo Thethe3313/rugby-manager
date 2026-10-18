@@ -13,6 +13,7 @@ function driveLive(game,label,check){
   let n=0,subDone=false;
   while(!run('UI.live.ms.done')&&n++<3000){
     if(run('UI.live.paused')){check(label+':live-pause',app.innerHTML);if(run('UI.live.htTalk'))run(`ACT.liveTalk({v:'exiger'})`);check(label+':live-discours',app.innerHTML);run('ACT.livePause()')}
+    if(run('!!UI.live.ms.decision')){check(label+':moment-decisif',app.innerHTML);run(`ACT.liveDecide({v:'${['points','touche','melee','vite'][n%4]}'})`)}
     run('liveTick()');
     if(n%40===0)check(label+':live-maj',liveEls());
     if(n===20)run(`ACT.liveSpeed({v:'forts'})`);
