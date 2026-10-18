@@ -71,7 +71,8 @@ function viewOffseason(){
 }
 // Composition sur un terrain : toucher un joueur puis un autre (ou une place) pour les échanger ;
 // sur ordinateur on peut aussi glisser-déposer. La réserve = joueurs de l'effectif hors des 23.
-const PITCHPOS=[[26,88],[50,90],[74,88],[39,77],[61,77],[17,66],[83,66],[50,63],[38,52],[62,45],[12,22],[38,33],[62,27],[88,22],[50,9]];
+// avants en haut (pilier gauche en haut à gauche), arrière en bas : on lit la composition de 1 à 15
+const PITCHPOS=[[26,10],[50,9],[74,10],[39,22],[61,22],[17,33],[83,33],[50,36],[38,48],[62,55],[12,78],[38,67],[62,73],[88,78],[50,91]];
 const shortName=p=>{const w=p.name.split(' ');return w.length>1?w.slice(1).join(' '):p.name};
 function luChip(m,p,i){
   const s=i!=null?SLOTS[i]:null,key=s?'s'+i:'p'+(p?p.id:''),v=p?(s?effAt(p,s):ovr(p)):0,off=p&&s&&!s[3].includes(p.g)&&!atPos2(p,s);
