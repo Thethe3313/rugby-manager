@@ -31,7 +31,7 @@ function posL(p){return p.g==='PIL'?(p.sub==='TH'?'Pilier droit':'Pilier gauche'
 const POSS={PIL:'Pilier',TAL:'Talon.',DM:'Mêlée',OUV:'Ouvreur',CEN:'Centre',AIL:'Ailier',ARR:'Arrière'};
 function posS(p){return p.g==='PIL'?(p.sub==='TH'?'Pil. D':'Pil. G'):p.g==='3L'?(p.sub==='N8'?'N° 8':p.sub==='FL'?'Flanker':'3e l.'):p.g==='2L'?'2e l.':POSS[p.g]||posL(p)}
 const posLS=p=>`<span class="lg-only">${posL(p)}</span><span class="sm-only">${posS(p)}</span>`;
-function injTxt(p){return p.inj>0?`<span class="ko">🚑 ${injDur(p.inj)}</span>`:'<span class="ok">Apte</span>'}
+function injTxt(p){return away(p)?`<span class="warn">🌍 En sélection (${p.sel})</span>`:p.inj>0?`<span class="ko">🚑 ${injDur(p.inj)}</span>`:'<span class="ok">Apte</span>'}
 // Joueurs suivis au mercato (étoile)
 const isFollowed=p=>(G.follow||[]).includes(p.id);
 const followBtn=(p,big)=>big?`<button class="btn sec sm" data-a="follow" data-id="${p.id}">${isFollowed(p)?'★ Ne plus suivre':'☆ Suivre'}</button>`:`<span class="star ${isFollowed(p)?'on':''}" data-a="follow" data-id="${p.id}" title="Suivre ce joueur">${isFollowed(p)?'★':'☆'}</span> `;

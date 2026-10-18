@@ -81,7 +81,8 @@ function stepLeague(lg){
   }else{
     const po=L.po,w=out.map(r=>r.winner);
     if(lg==='n2')stepN2Po(L,out);
-    else if(po.stage===0){po.next=[{h:po.seeds[0],a:w[1]},{h:po.seeds[1],a:w[0]}];po.stage=1}
+    else if(po.stage===0){const nt=lg==='t14'; // Top 14 : demi-finales sur terrain neutre (vrai format)
+      po.next=[{h:po.seeds[0],a:w[1],neutral:nt},{h:po.seeds[1],a:w[0],neutral:nt}];po.stage=1}
     else if(po.stage===1){po.next=[{h:w[0],a:w[1],neutral:true}];po.stage=2}
     else{po.champ=w[0];po.fin=out[0].h===w[0]?out[0].a:out[0].h;L.phase='done';po.next=[];
       addNews(`🏆 ${C(po.champ).name} remporte le ${LEAGUES[lg].name} !`)}

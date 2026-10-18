@@ -76,7 +76,7 @@ const shortName=p=>{const w=p.name.split(' ');return w.length>1?w.slice(1).join(
 function luChip(m,p,i){
   const s=i!=null?SLOTS[i]:null,key=s?'s'+i:'p'+(p?p.id:''),v=p?(s?effAt(p,s):ovr(p)):0,off=p&&s&&!s[3].includes(p.g)&&!atPos2(p,s);
   return `<div class="chip ${UI.luSel===key?'sel':''} ${p&&p.inj>0?'inj':''}" data-a="luPick" data-k="${key}" draggable="true" title="${p?p.name+' · '+posL(p):''}">
-    <span class="l1">${s?`<b class="no">${s[0]}</b> `:''}<span class="nm">${p?shortName(p):'(vide)'}</span>${off?' <span class="ko" title="Hors de son poste">⚠</span>':''}${p&&p.inj>0?' 🚑':''}</span>
+    <span class="l1">${s?`<b class="no">${s[0]}</b> `:''}<span class="nm">${p?shortName(p):'(vide)'}</span>${off?' <span class="ko" title="Hors de son poste">⚠</span>':''}${p&&p.inj>0?' 🚑':''}${p&&away(p)?' 🌍':''}</span>
     ${p?`<span class="l2"><b class="${oc(v)}">${rd(v)}</b> · <span class="${formeCls(p.forme)}">${rd(p.forme)}%</span>${s?'':' · '+posS(p)}</span>`:''}</div>`;
 }
 function lineupPitch(m){
@@ -89,7 +89,7 @@ function lineupPitch(m){
 }
 function viewLineup(){
   const m=ME(),t=teamCalc(m);
-  const opt=(p,i)=>`<option value="${p.id}" ${m.lineup[i]===p.id?'selected':''} ${p.inj>0?'disabled':''}>${p.name} (${posS(p)}) · ${rd(effAt(p,SLOTS[i]))}${p.inj>0?' 🚑':''}</option>`;
+  const opt=(p,i)=>`<option value="${p.id}" ${m.lineup[i]===p.id?'selected':''} ${p.inj>0||away(p)?'disabled':''}>${p.name} (${posS(p)}) · ${rd(effAt(p,SLOTS[i]))}${p.inj>0?' 🚑':''}</option>`;
   const rows=SLOTS.map((s,i)=>{
     const sorted=[...m.squad].sort((a,b)=>effAt(b,s)-effAt(a,s));
     const cur=m.squad.find(p=>p.id===m.lineup[i]);

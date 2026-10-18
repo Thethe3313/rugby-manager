@@ -67,7 +67,7 @@ function newMatch(hc,ac,opt={}){
 }
 function mkSide(ms,club,i){
   // day = forme collective du jour (une équipe peut passer à côté de son match, ou être dans un grand jour)
-  const S={i,club,tac:club.id===G.meId?tacOf(club):aiTac(club),on:Array(15).fill(null),bench:[],auto:true,day:clamp(R.n(1,.02),.95,1.05),mor:1,capK:1,capId:null,kickId:club.kicker||null,disc:1,
+  const S={i,club,tac:club.id===G.meId?tacOf(club):aiTac(club),on:Array(15).fill(null),bench:[],auto:true,day:clamp(R.n(1,.03),.92,1.08),mor:1,capK:1,capId:null,kickId:club.kicker||null,disc:1,
     st:{pos:0,tac:0,mt:0,car:0,m:0,cle:0,rk:0,to:0,pc:0,mel:0,melW:0,tou:0,touW:0,err:0,kick:0,yc:0,off:0}};
   (club.lineup||[]).forEach((id,k)=>{
     const p=id!=null&&club.squad.find(x=>x.id===id);if(!p||ms.P[p.id])return;

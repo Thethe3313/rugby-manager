@@ -85,3 +85,27 @@ function postTalk(r,key){
   r.talkTxt=T>=1.5?'Les joueurs sont gonflés à bloc pour le prochain match.':T>0?'Le message passe bien.':T===0?'Pas de réaction particulière.':T>-1?'Le vestiaire est un peu déçu.':'Le vestiaire le prend mal : la confiance baisse.';
   return r.talkTxt;
 }
+
+// ==== SÉLECTIONS NATIONALES (« doublons ») ====
+// Chaque saison, les 32 meilleurs joueurs de chaque grande nation sont sélectionnés (p.sel = nation).
+// Pendant la tournée d'automne (toutes les nations) et le Tournoi des Six Nations / Rugby Europe (nations européennes),
+// ils sont absents de leur club, qui continue de jouer son championnat : c'est là que les gros clubs perdent des matchs.
+const NATALIAS={FJI:'Fidji'};
+const SELNATS=['France','Angleterre','Irlande','Pays de Galles','Écosse','Italie','Afrique du Sud','Nouvelle-Zélande','Australie','Argentine','Fidji','Géorgie','Samoa','Tonga','Japon'];
+const SELWIN=[{from:'10-30',to:'11-23',nats:null,name:'tournée d’automne'},
+  {from:'01-30',to:'03-21',nats:['France','Angleterre','Irlande','Pays de Galles','Écosse','Italie','Géorgie'],name:'Tournoi des Six Nations'}];
+const selWindow=d=>{const md=d.slice(5);return SELWIN.find(w=>md>=w.from&&md<=w.to)||null};
+function pickSelections(){
+  const pool=G.clubs.concat(G.ext||[]).flatMap(c=>c.squad),by={};
+  for(const p of pool){delete p.sel;const n=NATALIAS[p.nat]||p.nat;if(SELNATS.includes(n))(by[n]=by[n]||[]).push(p)}
+  for(const n in by)by[n].sort((a,b)=>ovr(b)-ovr(a)).slice(0,32).forEach(p=>p.sel=n);
+  G.selSeason=G.season;
+}
+// le joueur est-il parti en sélection aujourd'hui ?
+function away(p){if(!p.sel||!G.date)return false;const w=selWindow(G.date);return !!w&&(!w.nats||w.nats.includes(p.sel))}
+// message au début et à la fin de chaque fenêtre internationale
+function selMail(){
+  const m=ME(),w=selWindow(G.date),wy=selWindow(dAdd(G.date,-1));
+  if(w&&w!==wy){const l=m.squad.filter(away);if(l.length)mail('Directeur sportif',`Départs en sélection : ${w.name}`,`${l.length} joueur(s) rejoignent leur sélection jusqu'au ${fmtD(G.date.slice(0,5)+w.to,true)} et manqueront les matchs du club :<br>${l.map(p=>`${p.name} (${p.sel}, ${GROUPS[p.g]})`).join('<br>')}`,{act:{tab:'lineup'},imp:true})}
+  if(!w&&wy&&m.squad.some(p=>p.sel&&(!wy.nats||wy.nats.includes(p.sel))))mail('Directeur sportif','Retour des internationaux',`Fin de la ${wy.name} : nos internationaux sont de retour.`,{act:{tab:'lineup'}});
+}

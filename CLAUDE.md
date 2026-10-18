@@ -41,6 +41,7 @@ Le projet est versionné avec git (branche `main`). Organisation du dossier (voi
 - Causerie d'après-match `postTalk` (`jour-de-match.js`) → `G.postMor` (±3 %) appliqué au moral du match suivant dans `newMatch`.
 - Seconds postes `p.pos2` : connus dans `recherche/postes/postes2.json` → `node outils/generer-postes.js` → `jeu/data/postes.js` (`POS2`, attributs ajustés par `fitPos2`), sinon estimés `estPos2` (`p.p2e`) ; `posFit` (0,97 au second poste) sert à `effAt` et `fitAt`. Composition sur terrain : `lineupPitch`/`luChip`, actions `luPick`/`luSwap` (+ glisser-déposer).
 - Championnat espoirs `G.ESP` (`startESP`, `espDay`, `espPlayed`, `espSorted`, poules `ESPLG`) ; stats `p.yst`. Pages de club `clubModal` (`clubLink` sur les noms), choix du championnat par menu `lgBtns` (`lgsel2`, `esp_<lg>`). Aller à une date : `ACT.goUntil` (`UI.adv.until`).
+- Sélections nationales (doublons) : `pickSelections` (32 meilleurs par nation `SELNATS`, `p.sel`, chaque saison), fenêtres `SELWIN` (tournée d'automne, Six Nations), `away(p)` exclut le joueur des compositions, `selMail`. Forme du jour `S.day` ~ N(1 ; 0,03). Demi-finales du Top 14 sur terrain neutre. Mesure de la domination des gros clubs : bilan de Toulouse / UBB sur plusieurs saisons (viser 60-75 % de victoires, titres partagés).
 - Offres d'achat par messages : `sendBid`/`bidDay`/`answerBid` (`G.bids`, réponse 1-3 jours plus tard, motif `bidReason`). Joueurs suivis `G.follow`. Continuer animé : `ACT.go`/`goTick` (s'arrête la veille d'un match ou sur un message `imp`).
 
 ## Base de recherche des notes

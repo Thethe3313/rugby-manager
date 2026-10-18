@@ -31,6 +31,7 @@ function migrateSave(){
   if(G.phase==='season'&&G.cups)startXL(true);
   if(!G.cups&&G.phase==='season')startCups();
   migrateAmateur();
+  if(G.selSeason!==G.season)pickSelections(); // sélections nationales (doublons)
   // championnat espoirs (lot 4) : démarre en cours de saison pour les anciennes parties (journées passées ignorées)
   if(G.phase==='season'&&!G.ESP){startESP();const E=G.ESP;while(E.week<E.dates.length&&E.dates[E.week]<=G.date)E.week++;if(E.week>=E.fixtures.length)E.phase='done'}
 }
@@ -68,6 +69,7 @@ function startSeason(){
   startCups();
   startXL();
   startESP();
+  pickSelections();
   mail('Directeur sportif','Le mercato d\'été est ouvert',`La fenêtre de transferts reste ouverte jusqu'au 15 septembre. Premier match de ${LEAGUES[ME().lg].name} : ${fmtD(G.L[ME().lg].dates[0],true)}.`,{act:{tab:'market'}});
 }
 function finishSeason(){

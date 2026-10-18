@@ -140,7 +140,7 @@ function effAt(p,slot){
 // Composition : on place d'abord chaque joueur à son poste naturel (titulaires puis banc),
 // et on ne met quelqu'un hors de son poste que s'il n'y a plus personne de disponible à ce poste.
 function fillSlots(club,out,used){
-  const avail=club.squad.filter(p=>p.inj===0&&!used.has(p.id));
+  const avail=club.squad.filter(p=>p.inj===0&&!away(p)&&!used.has(p.id)); // ni blessés ni partis en sélection
   for(const natural of [true,false]){
     for(let i=0;i<23;i++){
       if(out[i])continue;
@@ -159,7 +159,7 @@ function autoLineup(club){return fillSlots(club,Array(23).fill(null),new Set())}
 function fixLineup(club){
   const byId=id=>club.squad.find(p=>p.id===id);
   const used=new Set();
-  const out=club.lineup.map(id=>{const p=byId(id);if(p&&p.inj===0&&!used.has(id)){used.add(id);return id}return null});
+  const out=club.lineup.map(id=>{const p=byId(id);if(p&&p.inj===0&&!away(p)&&!used.has(id)){used.add(id);return id}return null});
   club.lineup=fillSlots(club,out,used);
 }
 function teamCalc(club){

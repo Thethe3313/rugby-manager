@@ -125,7 +125,7 @@ function luSwap(a,b){
   const m=ME(),L=m.lineup,slot=k=>k[0]==='s'?+k.slice(1):null,pl=k=>k[0]==='p'?+k.slice(1):null;
   const ia=slot(a),ib=slot(b);
   if(ia!=null&&ib!=null){[L[ia],L[ib]]=[L[ib],L[ia]]}
-  else if(ia!=null||ib!=null){const i=ia!=null?ia:ib,pid=pl(ia!=null?b:a),p=m.squad.find(x=>x.id===pid);if(!p||p.inj>0)return;L[i]=pid}
+  else if(ia!=null||ib!=null){const i=ia!=null?ia:ib,pid=pl(ia!=null?b:a),p=m.squad.find(x=>x.id===pid);if(!p||p.inj>0||away(p))return;L[i]=pid}
   else return;
   m.autoXV=false;save();
 }
