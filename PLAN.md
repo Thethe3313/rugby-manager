@@ -106,6 +106,8 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 - **Match en 2D plus vivant et prêts dans les deux sens (octobre 2026)** : porteur et plaqueur visibles, ruck, trajectoire du ballon, étiquettes d'action, bandeau d'essai ; liste des prêts, demandes reçues, joueurs disponibles en prêt.
 
+- **Moment décisif (octobre 2026)** : en direct, pénalité en fin de match serrée dans le camp adverse, le joueur choisit (points, touche, mêlée, jeu rapide) ; environ 1 match sur 4.
+
 ## ▶️ Prochaine étape
 
 - Selon tes prochains retours de jeu.
