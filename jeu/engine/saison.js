@@ -31,6 +31,8 @@ function migrateSave(){
   if(G.phase==='season'&&G.cups)startXL(true);
   if(!G.cups&&G.phase==='season')startCups();
   migrateAmateur();
+  if(!G.coach)initCoach(); // carrière d'entraîneur (lot A)
+  if(G.obj&&!G.obj.w)setGoals();
   if(G.selSeason!==G.season)pickSelections(); // sélections nationales (doublons)
   // championnat espoirs (lot 4) : démarre en cours de saison pour les anciennes parties (journées passées ignorées)
   if(G.phase==='season'&&!G.ESP){startESP();const E=G.ESP;while(E.week<E.dates.length&&E.dates[E.week]<=G.date)E.week++;if(E.week>=E.fixtures.length)E.phase='done'}
@@ -48,6 +50,7 @@ function newGame(meId){
   G.fixes=NOTEFIX.map(fixKey);
   const m=ME();
   m.budget=Math.round(m.bud*.05);
+  initCoach();
   startSeason();
   addNews(`Bienvenue à la tête de ${m.name} (${LEAGUES[m.lg].name}) ! Ton président t'a fixé ses objectifs dans la messagerie.`);
 }
@@ -99,7 +102,10 @@ function finishSeason(){
   if(fate==='promu')addNews(`⬆ ${m.name} monte en ${LEAGUES[to].name} !`);
   if(fate==='relégué')addNews(`⬇ ${m.name} descend en ${LEAGUES[to].name}.`);
   G.phase='offseason';
-  const tgt=G.obj?G.obj.t:99;mail('Le président',`Bilan de la saison ${seasonLabel()}`,`Nous terminons ${rank}e de ${LEAGUES[lg].name}. ${rank<=tgt?'Objectif atteint, bravo.':'L\'objectif ('+(G.obj?G.obj.l:'')+') n\'est pas atteint.'} ${fate==='promu'?`Et nous montons en ${LEAGUES[to].name} !`:fate==='relégué'?`Nous descendons en ${LEAGUES[to].name} : il faudra repartir de l'avant.`:fate==='horsjeu'?'Nous descendons en Nationale 3.':''}`);
+  // verdict du président (objectifs pondérés), prestige, offres ou licenciement
+  const V=G.summary.verdict=seasonVerdict(rank,sortedTable(lg).length);
+  const vtx=V?`<br><br>Mon verdict : sportif ${V.sp>=0?'✅':'❌'}, finances ${V.fi>=0?'✅':'❌'} (${fmtK(Math.round(V.ft))}), formation ${V.fo>=0?'✅':'❌'} (${Math.round(V.ys*100)} % de titularisations pour les moins de 24 ans). ${G.phase==='sacked'?'<b>Je mets fin à ton contrat.</b>':V.tot>.3?'Excellente saison.':V.tot>-.1?'Saison correcte.':'Saison décevante : la confiance est entamée.'}`:'';
+  const tgt=G.obj?G.obj.t:99;mail('Le président',`Bilan de la saison ${seasonLabel()}`,`Nous terminons ${rank}e de ${LEAGUES[lg].name}. ${rank<=tgt?'Objectif atteint, bravo.':'L\'objectif ('+(G.obj?G.obj.l:'')+') n\'est pas atteint.'}${vtx} ${fate==='promu'?`Et nous montons en ${LEAGUES[to].name} !`:fate==='relégué'?`Nous descendons en ${LEAGUES[to].name} : il faudra repartir de l'avant.`:fate==='horsjeu'?'Nous descendons en Nationale 3.':''}`);
   G.offers=[];genOffers(R.i(1,3));
   addNews('Le mercato d\'été est ouvert : recrute, vends et prolonge avant de lancer la nouvelle saison.');
 }

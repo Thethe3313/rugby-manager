@@ -16,8 +16,8 @@ function setObjective(){
   else if(lg==='n2')o=r<=2?{t:2,l:'jouer la montée en Nationale (finale)'}:r<=6?{t:6,l:'se qualifier pour les phases finales (top 6 de la poule)'}:{t:n-1,l:'assurer le maintien dans la poule'};
   else if(isAmLg(lg))o=r<=2?{t:1,l:`finir en tête de la poule pour monter en ${LEAGUES[amUp(lg)].name}`}:r<=Math.ceil(n/2)?{t:Math.ceil(n/2),l:'finir dans la première moitié de la poule'}:{t:n-1,l:'éviter la dernière place de la poule'};
   else o=r<=2?{t:2,l:'monter en Top 14'}:r<=6?{t:6,l:'se qualifier pour les phases finales (top 6)'}:r<=12?{t:12,l:'réaliser une saison solide (top 12)'}:{t:14,l:'assurer le maintien (14e minimum)'};
-  G.obj={...o,pre:r};
-  mail('Le président',`Objectifs de la saison ${seasonLabel()}`,`Bonjour coach,<br><br>Notre effectif est estimé ${r}e sur ${n} en ${LEAGUES[lg].name}${lg==='n2'||isAmLg(lg)?' (poule '+(m.poule+1)+')':''}. Pour cette saison, le conseil d'administration te demande de <b>${o.l}</b>.<br><br>Budget annuel : ${fmtK(m.bud)} · masse salariale autorisée : ${fmtK(capOf(m))} · trésorerie disponible : ${fmtK(m.budget)}.<br><br>Bonne saison !`,{act:{tab:'fin'}});
+  G.obj={...o,pre:r};setGoals();
+  mail('Le président',`Objectifs de la saison ${seasonLabel()}`,`Bonjour coach,<br><br>Notre effectif est estimé ${r}e sur ${n} en ${LEAGUES[lg].name}${lg==='n2'||isAmLg(lg)?' (poule '+(m.poule+1)+')':''}. Pour cette saison, le conseil d'administration fixe trois objectifs :<br>${GOALTXT(G.obj).join('<br>')}<br><br>Ma confiance dépendra de leur ensemble, pas seulement du classement.<br><br>Budget annuel : ${fmtK(m.bud)} · masse salariale autorisée : ${fmtK(capOf(m))} · trésorerie disponible : ${fmtK(m.budget)}.<br><br>Bonne saison !`,{act:{tab:'fin'}});
 }
 function scoutReport(nx){
   const m=ME(),o=C(nx.f.h===m.id?nx.f.a:nx.f.h),home=nx.f.h===m.id;

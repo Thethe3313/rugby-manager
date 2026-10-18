@@ -108,6 +108,7 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  takeJob(d){if(!confirm('Accepter ce poste et quitter ton club ?'))return;if(takeJob(d.id)){G.tab='home';save()}render()},
   espTab(d){G.tab='table';UI.lg='esp_'+d.lg;render()},
   openPre(){UI.modal={type:'prematch'};render()},
   // aller jusqu'à une date (FM / FIFA) : tes matchs sont simulés sans direct, les messages ne stoppent pas l'avancée

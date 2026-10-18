@@ -2,7 +2,7 @@
 // À chaque étape, on rend l'écran et on le passe à `check(nom, html)`.
 // Un match sur trois est suivi en direct (avec pause, vitesses, consignes et un remplacement manuel), les autres en résultat immédiat.
 'use strict';
-const TABS=['home','mail','squad','youth','staff','lineup','cal','table','cups','market','fin','settings','help'];
+const TABS=['home','mail','squad','youth','staff','lineup','cal','table','cups','market','fin','settings','help','career'];
 
 // Joue un match en direct jusqu'au bout en appelant liveTick() comme le ferait la minuterie du navigateur
 function driveLive(game,label,check){

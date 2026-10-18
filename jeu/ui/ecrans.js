@@ -26,7 +26,34 @@ function amStartHTML(){
   ${P.map((pl,pi)=>`<p class="mut" style="margin:8px 0 4px">${pLab(pi)}</p><div class="row" style="flex-wrap:wrap;gap:6px">${pl.map(([id,n])=>`<button class="btn sec sm" data-a="start" data-id="${id}">${n}</button>`).join('')}</div>`).join('')}`;
 }
 function viewSacked(){
-  return `<div class="center"><h1>Licencié 😢</h1><p>Ton club est relégué en Nationale. Le conseil d'administration met fin à ton contrat.</p><button class="btn" data-a="menu">Nouvelle partie</button></div>`;
+  const C_=G.coach;
+  if(!C_||!G.jobOffers)return `<div class="center"><h1>Licencié 😢</h1><p>Ton club est relégué en Nationale. Le conseil d'administration met fin à ton contrat.</p><button class="btn" data-a="menu">Nouvelle partie</button></div>`;
+  return `<div class="center"><h1>Licencié 😢</h1><p>${ME().name} met fin à ton contrat${G.sackMid?' en cours de saison':' à la fin de la saison'}. Ton prestige d'entraîneur : <b>${Math.round(C_.prest)}</b>/100 (il baisse un peu, mais tu peux rebondir).</p>
+  <div class="card"><h2>Clubs intéressés par ton profil</h2>${offersHTML()}</div><p><button class="btn sec" data-a="menu">Abandonner cette carrière (menu)</button></p></div>`;
+}
+// Offres d'emploi (fin de saison ou après un licenciement)
+function offersHTML(){
+  const o=G.jobOffers||[];if(!o.length)return '<p class="mut">Aucune offre pour l’instant.</p>';
+  return `<table><tr><th>Club</th><th>Division</th><th class="n hm">Prestige demandé</th><th></th></tr>${o.map(x=>{const c=amC(x.id),rk=C(x.id)&&G.L&&G.L[x.lg]&&G.phase!=='offseason'?rankOf(x.id):0;return `<tr><td>${C(x.id)?clubLink(x.id,c.name):c.name}</td><td>${LEAGUES[x.lg]?LEAGUES[x.lg].name:''}${rk?' · '+rk+'e':''}</td><td class="n hm">${x.q}</td><td><button class="btn sm" data-a="takeJob" data-id="${x.id}">Accepter</button></td></tr>`}).join('')}</table>`;
+}
+const confBar=(v,l)=>`<div class="row" style="gap:8px;margin:4px 0"><span style="min-width:150px">${l}</span><div class="bar" style="flex:1;max-width:220px"><i style="width:${v}%;background:${v>=60?'var(--acc)':v>=35?'var(--acc2)':'var(--bad)'}"></i></div><b>${Math.round(v)}</b></div>`;
+// Avancement des trois objectifs (accueil, onglet Carrière)
+function goalsHTML(){
+  const o=G.obj,m=ME();if(!o||!o.w)return '';
+  const rk=rankOf(m.id),ft=finTotal(),ys=youngShare(m);
+  return `<p>${rk<=o.t?'✅':'⏳'} <b>Sportif</b> (${Math.round(o.w.sp*100)} %) : ${o.l} — actuellement ${rk||'-'}e</p>
+  <p>${ft>=0?'✅':'⏳'} <b>Finances</b> (${Math.round(o.w.fi*100)} %) : saison sans perte — actuellement ${ft>=0?'+':''}${fmtK(Math.round(ft))}</p>
+  <p>${ys>=o.fo?'✅':'⏳'} <b>Formation</b> (${Math.round(o.w.fo*100)} %) : ${Math.round(o.fo*100)} % de titularisations aux moins de 24 ans — actuellement ${Math.round(ys*100)} %</p>`;
+}
+function viewCareer(){
+  const C_=G.coach;if(!C_)return '';
+  return `<div class="card"><h2>Ta carrière d'entraîneur</h2>
+  <p>Prestige : <b>${Math.round(C_.prest)}</b>/100 <span class="mut">— il ouvre les postes des autres clubs (Top 14 : 55 à 90 selon le club, Pro D2 : 38-50, Nationale : 30, Nationale 2 : 24, Fédérales : 10-18, Régionales : 0-6). Il monte avec les bonnes saisons, les titres et les montées.</span></p>
+  ${confBar(C_.board,'Confiance du président')}${confBar(C_.fans,'Supporters')}
+  <p class="mut">Le président juge chaque match par rapport à ce qu'on attendait (niveau des deux équipes, terrain) et la saison sur les trois objectifs. Sous 20 en fin de saison, ou 10 en cours de saison, il te licencie. Les supporters remplissent plus ou moins le stade (billetterie) ; ils n'aiment pas voir partir les stars.</p></div>
+  <div class="card"><h3>Objectifs de la saison</h3>${goalsHTML()||'<p class="mut">Fixés au début de la saison.</p>'}</div>
+  ${G.phase==='offseason'&&(G.jobOffers||[]).length?`<div class="card"><h3>Offres d'autres clubs</h3><p class="mut">Tu peux rester ou changer de club avant la nouvelle saison.</p>${offersHTML()}</div>`:''}
+  <div class="card"><h3>Historique</h3>${C_.hist.length?`<table><tr><th>Saison</th><th>Club</th><th>Division</th><th class="n">Rang</th><th>Bilan</th></tr>${C_.hist.map(h=>`<tr><td>${h.s}</td><td>${h.club}</td><td>${LEAGUES[h.lg]?LEAGUES[h.lg].name:''}</td><td class="n">${h.rank||'-'}</td><td>${h.sacked?'<span class="ko">licencié</span>':(h.title?'🏆 ':'')+(h.fate&&h.fate!=='maintenu'?h.fate+' · ':'')+(h.tot>.3?'excellent':h.tot>-.1?'correct':'décevant')}</td></tr>`).join('')}</table>`:'<p class="mut">Ta première saison est en cours.</p>'}</div>`;
 }
 function ratingRows(t){
   const row=(n,v)=>`<tr><td>${n}</td><td class="n ${oc(v)}"><b>${rd(v)}</b></td></tr>`;
@@ -48,6 +75,7 @@ function viewHome(){
   }
   if(windowOpen()||(G.offers||[]).length)h+=`<div class="card">${winBanner()}${(G.offers||[]).length?`<p><b>${G.offers.length} offre(s) reçue(s)</b> pour tes joueurs. <button class="btn sm" data-a="goOffers">Voir</button></p>`:''}</div>`;
   const tb=sortedTable(m.lg);
+  if(G.coach&&G.obj&&G.obj.w)h+=`<div class="card"><div class="row" style="justify-content:space-between"><h3 style="margin:0">Direction</h3><button class="btn sec sm" data-a="tab" data-t="career">Ma carrière</button></div>${confBar(G.coach.board,'Confiance du président')}${confBar(G.coach.fans,'Supporters')}${goalsHTML()}</div>`;
   h+=`<div class="grid g2"><div class="card"><h3>Classement ${LEAGUES[m.lg].name}</h3><table><tr><th>#</th><th>Club</th><th class="n">J</th><th class="n">Pts</th></tr>${tb.map((r,i)=>({r,i})).filter(x=>x.i<6||x.r.id===m.id).map(x=>`<tr class="${x.r.id===m.id?'me':''}"><td>${x.i+1}</td><td>${clubLink(x.r.id,C(x.r.id).short)}</td><td class="n">${x.r.j}</td><td class="n"><b>${x.r.pts}</b></td></tr>`).join('')}</table></div>
   <div class="card"><h3>Actualités</h3>${G.news.slice(0,9).map(n=>`<p>• ${n}</p>`).join('')}</div></div>`;
   return h;
@@ -59,6 +87,7 @@ function viewOffseason(){
   return `<div class="card"><h2>Bilan de la saison ${seasonLabel()}</h2>
   <p>${LEAGUES[s.lg].name} : <b>${s.rank}e</b>. ${s.qualified?'Tu as disputé les phases finales.':'Pas de phases finales pour toi.'}${s.prize?` Prime : <b>${k(s.prize)}</b>.`:''}</p>
   ${fateTxt}
+  ${s.verdict&&G.coach?`<div class="card" style="margin:10px 0"><h3>Verdict du président</h3><p>Sportif ${s.verdict.sp>=0?'✅':'❌'} · Finances ${s.verdict.fi>=0?'✅':'❌'} (${fmtK(Math.round(s.verdict.ft))}) · Formation ${s.verdict.fo>=0?'✅':'❌'} (${Math.round(s.verdict.ys*100)} % de titularisations aux moins de 24 ans)</p>${confBar(G.coach.board,'Confiance du président')}<p>Prestige : <b>${Math.round(G.coach.prest)}</b> (${s.verdict.dP>=0?'+':''}${s.verdict.dP})</p>${(G.jobOffers||[]).length?`<h3>Des clubs te veulent</h3><p class="mut">Tu peux rester (il suffit de passer à la saison suivante) ou accepter une offre.</p>${offersHTML()}`:''}</div>`:''}
   <p>Champion de France (Top 14) : <b>${C(s.champT14).name}</b> · Champion de Pro D2 : <b>${C(s.champPD2).name}</b></p>
   <p class="mut">Barrages d'accession : ${s.acc.join(' · ')}</p>
   <p class="mut">Montent en Top 14 : ${G.moves.up.map(id=>C(id).short).join(', ')} · Descendent en Pro D2 : ${G.moves.down.map(id=>C(id).short).join(', ')} · Descendent en Nationale : ${G.moves.pd2down.map(id=>C(id).short).join(', ')} · Montent de Nationale : ${G.moves.natUp.map(id=>C(id).short).join(', ')}</p>
