@@ -50,7 +50,7 @@ function genOffers(n){
     if(!buyers.length)return;
     const b=R.pick(buyers);
     const fee=Math.round(askFee(p,m)*R.n(p.list?.85:1,.12)/10)*10;
-    if(fee>0){G.offers.push({pid:p.id,club:b.id,fee,exp:G.phase==='season'?dAdd(G.date,7):null});mail('Directeur sportif',`Offre de ${b.short} pour ${p.name}`,`${b.name} propose <b>${fmtK(fee)}</b> pour ${p.name} (${posL(p)}, ${Math.round(ovr(p))}, valeur ${fmtK(valueOf(p))}).${G.phase==='season'?' L\'offre expire dans 7 jours.':''}`,{act:{tab:'market',mt:'offers'},imp:true})}
+    if(fee>0){G.offers.push({pid:p.id,club:b.id,fee,max:Math.round(fee*(1.15+R.f()*.35)/10)*10,pat:R.i(2,3),exp:G.phase==='season'?dAdd(G.date,7):null});mail('Directeur sportif',`Offre de ${b.short} pour ${p.name}`,`${b.name} propose <b>${fmtK(fee)}</b> pour ${p.name} (${posL(p)}, ${Math.round(ovr(p))}, valeur ${fmtK(valueOf(p))}).${G.phase==='season'?' L\'offre expire dans 7 jours.':''}`,{act:{tab:'market',mt:'offers'},imp:true})}
   }
 }
 // Mercato des clubs IA à l'intersaison
@@ -97,7 +97,7 @@ function aiMercato(){
 // ---- Offres d'achat par messages : le club reçoit l'offre, puis répond 1 à 3 jours plus tard (G.bids) ----
 // À l'intersaison les jours ne passent pas : la réponse arrive tout de suite (toujours par message).
 function bidReason(r){
-  if(r.counter)return `<b>Motif : indemnité trop faible.</b> ${r.club}`;
+  if(r.counter)return `<b>Motif : indemnité trop faible.</b> ${r.club} <b>Contre-proposition : ${fmtK(Math.round(r.counter/10)*10)}</b> (ouvre la fiche du joueur et refais une offre à ce montant).`;
   const t=r.player||r.msg||'';
   const why=/ne signera pas plus/.test(t)?'durée de contrat':/descendre/.test(t)?'il ne veut pas descendre de division':/demande au moins|manque de temps/.test(t)?'salaire trop faible':/Plafond/.test(t)?'plafond salarial':/Trésorerie/.test(t)?'trésorerie insuffisante':/fenêtre/.test(t)?'fenêtre de transferts fermée':/Effectif complet/.test(t)?'effectif complet':'refus';
   return `<b>Motif : ${why}.</b> ${[r.club,t].filter(Boolean).join(' ')}`;
@@ -115,7 +115,7 @@ function answerBid(b){
   if(r.ok){
     doTransfer(p,f.club,m,b.fee,b.sal,b.yrs);
     mail('Directeur sportif',`✅ Offre acceptée : ${p.name} nous rejoint`,`${c.name} accepte notre offre de ${fmtK(b.fee)} et ${p.name} a signé son contrat (${fmtK(b.sal)} par an, ${b.yrs} an(s)). Il rejoint l'effectif dès aujourd'hui.`,{act:{player:p.id},imp:true});
-  }else mail('Directeur sportif',`❌ Offre refusée : ${p.name}`,`Réponse de ${c.name} pour ${p.name} :<br>${bidReason(r)}<br><br>Tu peux faire une nouvelle offre depuis le mercato.`,{act:{player:p.id},imp:true});
+  }else{if(r.counter){G.counters=G.counters||{};G.counters[p.id]=Math.round(r.counter/10)*10}mail('Directeur sportif',`❌ Offre refusée : ${p.name}`,`Réponse de ${c.name} pour ${p.name} :<br>${bidReason(r)}<br><br>Tu peux faire une nouvelle offre depuis le mercato.`,{act:{player:p.id},imp:true})}
   return r;
 }
 function bidDay(){
@@ -140,3 +140,24 @@ function obsReport(x){
   mail('Recruteur',`Rapport d'observation : ${p.name}`,`J'ai observé ${p.name} (${GROUPS[p.g]}, ${p.age} ans). Note estimée : <b>${a===b?a:a+'-'+b}</b>, potentiel ≈ ${potEst(p)}. ${knowOf(p)>=2?'Ses attributs sont maintenant visibles dans sa fiche.':'Une observation de plus affinera l\'estimation.'}`,{act:{player:p.id}});
 }
 function obsDay(){if(!G.obsQ||!G.obsQ.length)return;const due=G.obsQ.filter(x=>x.due<=G.date);G.obsQ=G.obsQ.filter(x=>x.due>G.date);due.forEach(obsReport)}
+// ---- Négociation façon FM : offre reçue pour un de tes joueurs ----
+// Le club acheteur a un prix maximum caché (o.max) et une patience (o.pat, nombre d'échanges). Ta contre-proposition :
+// raisonnable → il accepte ou coupe la poire en deux ; trop gourmande → il fait sa dernière offre ou abandonne.
+function offerTerms(o){if(o.max==null){o.max=Math.round(o.fee*1.25/10)*10;o.pat=2}o.hist=o.hist||[];return o}
+function counterOffer(o,ask){
+  offerTerms(o);const c=C(o.club),r10=v=>Math.round(v/10)*10;ask=r10(ask);
+  o.hist.push({me:ask});
+  if(ask<=o.fee){o.hist.push({them:o.fee,txt:'accepte'});return{deal:o.fee,txt:`${c.short} accepte tout de suite.`}}
+  if(ask<=o.max*.92){o.fee=ask;o.hist.push({them:ask,txt:'accepte'});return{deal:ask,txt:`${c.short} accepte ta demande : ${fmtK(ask)}.`}}
+  o.pat--;
+  if(ask<=o.max*1.3){
+    const nf=Math.min(o.max,r10((o.fee+ask)/2));
+    if(nf>=ask*.97){o.fee=ask;o.hist.push({them:ask,txt:'accepte'});return{deal:ask,txt:`${c.short} accepte : ${fmtK(ask)}.`}}
+    if(o.pat<0){o.hist.push({txt:'abandonne'});return{gone:true,txt:`${c.short} met fin aux discussions.`}}
+    o.fee=Math.max(o.fee,nf);o.hist.push({them:o.fee,txt:o.fee>=o.max?'dernière offre':'contre-proposition'});
+    return{txt:o.fee>=o.max?`${c.short} : « C'est notre dernière offre : ${fmtK(o.fee)}. »`:`${c.short} remonte son offre à ${fmtK(o.fee)}.`};
+  }
+  if(o.pat<=0){o.hist.push({txt:'abandonne'});return{gone:true,txt:`${c.short} trouve ta demande excessive et retire son offre.`}}
+  o.fee=Math.max(o.fee,r10(o.max*(.86+R.f()*.08)));o.hist.push({them:o.fee,txt:'dernière offre'});
+  return{txt:`${c.short} : « C'est beaucoup trop. Notre dernière offre : ${fmtK(o.fee)}. »`};
+}

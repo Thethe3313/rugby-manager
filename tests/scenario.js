@@ -58,6 +58,8 @@ function scenario(game,{club='pau',seasons=1,check=()=>{},liveEvery=3}={}){
     // prêts : un remplaçant sur la liste des prêts, onglet Prêts, demande de prêt d'un jeune d'un autre club
     run(`(()=>{const m=ME(),p=[...m.squad].sort((a,b)=>ovr(a)-ovr(b))[1];ACT.loanList({id:p.id});G.tab='market';UI.mt='loans';render()})()`);check(label+':prets',app.innerHTML);
     run(`(()=>{const a=loanAvailable()[0];if(a)ACT.loanAsk({id:a.p.id});if((G.loanOffers||[]).length)ACT.loanAcc({i:0});UI.mt='search'})()`);check(label+':prets-faits',app.innerHTML);
+    // négociation d'une offre reçue : contre-proposition, puis fermeture
+    run(`(()=>{const m=ME();G.offers=(G.offers||[]).concat([{pid:m.squad[m.squad.length-2].id,club:G.clubs.find(c=>c.id!==m.id&&c.lg===m.lg).id,fee:200,max:260,pat:2}]);ACT.sellNeg({i:G.offers.length-1});document.getElementById('sn-ask').value=300;ACT.sellCounter()})()`);check(label+':negociation',app.innerHTML);run('UI.modal=null');
     // joueurs suivis : on suit le meilleur joueur adverse, puis l'onglet des suivis
     run(`ACT.follow({id:G.clubs.find(c=>c.id!==G.meId).squad[1].id})`);
     for(const t of ['follow','offers','pre','log']){run(`G.tab='market';ACT.mt({t:'${t}'})`);check(label+':market-'+t,app.innerHTML)}

@@ -27,7 +27,7 @@ function negModal(){
   ${mode==='buy'?`<p>Indemnité demandée par ${c.short} : <b>environ ${k(ask)}</b> (valeur ${k(valueOf(p))}).</p>`:''}
   <p>Ses exigences salariales : <b>environ ${k(dem)} par an</b>.</p>
   <p class="mut">Trésorerie ${k(m.budget)} · marge salariale ${k(Math.max(0,capOf(m)-mass(m)+(mode==='renew'?p.sal:0)))}</p>
-  <div class="row">${mode==='buy'?`<label>Indemnité (k€)<br><input id="ng-fee" type="number" min="0" step="10" value="${N.fee??ask}" style="width:110px"></label>`:''}
+  <div class="row">${mode==='buy'?`<label>Indemnité (k€)<br><input id="ng-fee" type="number" min="0" step="10" value="${N.fee??((G.counters||{})[p.id]||ask)}" style="width:110px"></label>`:''}
   <label>Salaire annuel (k€)<br><input id="ng-sal" type="number" min="0" step="5" value="${N.sal??dem}" style="width:110px"></label>
   <label>Durée (ans)<br><input id="ng-yrs" type="number" min="1" max="5" value="${N.yrs??defY}" style="width:70px"></label></div>
   ${UI.negMsg?`<div class="card" style="margin-top:10px">${UI.negMsg}</div>`:''}
@@ -61,6 +61,7 @@ function modalView(){
   if(m.type==='player')return playerModal();
   if(m.type==='club')return clubModal();
   if(m.type==='loan')return loanModal();
+  if(m.type==='sellneg')return sellNegModal();
   if(m.type==='neg')return negModal();
   return '';
 }
@@ -85,4 +86,19 @@ function loanModal(){
   return `<div class="overlay"><div class="modal"><h2>Prêter ${p.name}</h2><p class="mut">Il part jouer jusqu'à la fin de la saison dans un club plus modeste qui paie son salaire, puis revient. Idéal pour faire jouer (et progresser) un jeune ou un remplaçant.</p>
   ${!ok?'<p class="ko">La fenêtre de transferts est fermée : les prêts se font à l’intersaison ou pendant le mercato d’hiver.</p>':T.length?`<table><tr><th>Club</th><th class="hm">Division</th><th>Rôle</th><th></th></tr>${T.map(x=>`<tr><td>${clubLink(x.c.id,x.c.name)}</td><td class="hm">${LEAGUES[x.c.lg].name}</td><td>${x.rk<STARTERS[p.g]?'titulaire':'rotation'}</td><td><button class="btn sm" data-a="loanDo" data-c="${x.c.id}">Prêter</button></td></tr>`).join('')}</table>`:'<p class="mut">Aucun club intéressé : il ne serait titulaire nulle part au même niveau ou plus bas.</p>'}
   <p><button class="btn sec" data-a="closeModal">Fermer</button></p></div></div>`;
+}
+
+// Négociation d'une offre reçue (vente) : historique des échanges et contre-proposition
+function sellNegModal(){
+  const o=(G.offers||[])[UI.oi];if(!o){return ''}offerTerms(o);
+  const m=ME(),p=m.squad.find(x=>x.id===o.pid),c=C(o.club);if(!p||!c)return '';
+  return `<div class="overlay"><div class="modal"><h2>Négociation : ${p.name}</h2>
+  <p>${clubLink(c.id,c.name)} veut acheter <b>${p.name}</b> (${posL(p)}, ${Math.round(ovr(p))}, contrat ${p.ctr} an(s)) · valeur estimée ${k(valueOf(p))}.</p>
+  <p>Offre actuelle : <b class="ok">${k(o.fee)}</b></p>
+  ${o.hist.length?`<div class="card" style="margin:8px 0">${o.hist.map(h=>h.me!=null?`<p>➡ Toi : tu demandes <b>${k(h.me)}</b></p>`:`<p>⬅ ${c.short} : ${h.them!=null?`<b>${k(h.them)}</b> (${h.txt})`:h.txt}</p>`).join('')}</div>`:''}
+  ${UI.negMsg?`<p class="warn">${UI.negMsg}</p>`:''}
+  <div class="row"><label>Ta demande (k€)<br><input id="sn-ask" type="number" min="0" step="10" value="${Math.round(o.fee*1.35/10)*10}" style="width:120px"></label>
+  <button class="btn" data-a="sellCounter">Faire une contre-proposition</button></div>
+  <p class="mut">Chaque club a un prix maximum et une patience limitée : une demande raisonnable se négocie, une demande excessive peut le faire partir.</p>
+  <p><button class="btn" data-a="acceptOffer" data-i="${UI.oi}">Accepter ${k(o.fee)}</button> <button class="btn bad sm" data-a="refuseOffer" data-i="${UI.oi}">Refuser</button> <button class="btn sec" data-a="closeModal">Fermer</button></p></div></div>`;
 }

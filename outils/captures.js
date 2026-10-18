@@ -39,6 +39,7 @@ const SCREENS={
   prets:"const m=ME(),p=[...m.squad].filter(p=>p.age<=23).sort((a,b)=>ovr(a)-ovr(b))[0];p.loanList=true;genLoanOffers(p,2);G.tab='market';UI.mt='loans'",
   decisif:"G.settings.live='ask';advance('match');ACT.goLive();for(let i=0;i<900&&!UI.live.ms.done&&UI.live.ms.t<76*60;i++){liveTick();if(UI.live.paused&&!UI.live.ms.decision)ACT.livePause()}const ms=UI.live.ms;ms.decision={a:UI.live.side,dist:38,side:'en coin',pS:58,gain:30,lead:ms.sc[UI.live.side]-ms.sc[1-UI.live.side]<-7?-5:ms.sc[UI.live.side]-ms.sc[1-UI.live.side],min:77,p:32};UI.live.paused=true;UI.live.flash='⏱ Moment décisif !'",
   trisal:"G.tab='squad';UI.ss={k:'sal',d:1}",
+  nego:"const m=ME(),p=m.squad.find(x=>x.age<=23&&ovr(x)<70)||m.squad[20];G.offers=[{pid:p.id,club:'bri',fee:80,max:110,pat:2}];G.tab='market';UI.mt='offers';UI.oi=0;counterOffer(G.offers[0],150);UI.negMsg='Brive : « C’est beaucoup trop. Notre dernière offre : 100 k€. »';UI.modal={type:'sellneg'}",
   home:"G.tab='home'",mail:"G.tab='mail'",squad:"G.tab='squad'",youth:"G.tab='youth'",staff:"G.tab='staff'",
   lineup:"G.tab='lineup'",cal:"G.tab='cal'",table:"G.tab='table'",cups:"G.tab='cups'",market:"G.tab='market'",
   fin:"G.tab='fin'",settings:"G.tab='settings'",help:"G.tab='help'",

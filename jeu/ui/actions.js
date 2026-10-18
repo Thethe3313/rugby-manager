@@ -95,9 +95,9 @@ const ACT={
     if(!p||!b){G.offers.splice(+d.i,1);return render()}
     if(m.squad.length<=28){addNews('Effectif minimum de 28 joueurs : vente impossible.');return render()}
     doTransfer(p,m,b,o.fee,salaryFor(ovr(p),p.age,b.lg),R.i(2,4));
-    G.offers=G.offers.filter(x=>x.pid!==p.id);save();render();
+    G.offers=G.offers.filter(x=>x.pid!==p.id);UI.modal=null;save();render();
   },
-  refuseOffer(d){G.offers.splice(+d.i,1);save();render()},
+  refuseOffer(d){G.offers.splice(+d.i,1);UI.modal=null;save();render()},
   goOffers(){G.tab='market';UI.mt='offers';render()},
   listP(d){const p=ME().squad.find(x=>x.id===+d.id);if(p){p.list=!p.list;addNews(p.list?`${p.name} est placé sur la liste des transferts.`:`${p.name} est retiré de la liste des transferts.`);save();render()}},
   release(d){if((ME().squad.find(x=>x.id===+d.id)||{}).loan)return;
@@ -109,6 +109,10 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  sellNeg(d){UI.oi=+d.i;UI.negMsg='';UI.modal={type:'sellneg'};render()},
+  sellCounter(){const o=(G.offers||[])[UI.oi];if(!o)return;const e=document.getElementById('sn-ask'),v=e?+e.value:0;if(!v)return;const r=counterOffer(o,v);
+    if(r.deal){const m=ME(),p=m.squad.find(x=>x.id===o.pid),b=C(o.club);if(p&&b&&m.squad.length>28){doTransfer(p,m,b,r.deal,salaryFor(ovr(p),p.age,b.lg),R.i(2,4));G.offers=G.offers.filter(x=>x.pid!==p.id);UI.modal=null;addNews(`🤝 Accord trouvé : ${p.name} vendu à ${b.short} pour ${fmtK(r.deal)}.`)}else UI.negMsg='Effectif minimum de 28 joueurs : vente impossible.'}
+    else if(r.gone){G.offers.splice(UI.oi,1);UI.modal=null;addNews(r.txt)}else UI.negMsg=r.txt;save();render()},
   ssort(d){const S=UI.ss||{k:'poste',d:1};UI.ss=S.k===d.k?{k:d.k,d:-S.d}:{k:d.k,d:1};render()},
   loanList(d){const p=ME().squad.find(x=>x.id===+d.id);if(!p)return;p.loanList=!p.loanList;if(p.loanList&&G.phase==='offseason')genLoanOffers(p,R.i(1,2));save();render()},
   loanAcc(d){if(acceptLoanOffer(+d.i))UI.modal=null;save();render()},
