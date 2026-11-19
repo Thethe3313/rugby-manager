@@ -110,9 +110,11 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 - **Tri de l'effectif et négociation façon FM (octobre 2026)** : tri par colonne dans l'Effectif ; contre-propositions sur les offres reçues (prix maximum caché, patience du club) et contre-offre du club vendeur à l'achat.
 
+- **Retours de novembre (novembre 2026)** : transferts réalistes (joueurs clés pas à vendre, prestige des clubs, internationaux néo-zélandais et irlandais qui restent au pays) ; l'adjoint aligne d'abord les postes naturels ; XV probable de l'adversaire ; recherche par nom au Mercato ; musique personnelle (fichiers de l'appareil) ; mode paysage sur téléphone.
+
 ## ▶️ Prochaine étape
 
-- Selon tes prochains retours de jeu.
+- **Revérification des notes** (Top 14, Pro D2, espoirs), club par club, avec un indice de performance par poste (inspiré de la ligue fantasy de Poney Club) tiré des statistiques publiques.
 
 ## 📋 À faire ensuite
 
