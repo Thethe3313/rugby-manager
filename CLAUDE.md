@@ -61,6 +61,8 @@ Le staff réel 2026-27 est dans `recherche/staff/staff-2026-27.json` (sources, f
 
 Les divisions amateurs sont décrites dans `recherche/amateur/METHODE.md` (clubs réels, effectifs générés). Les effectifs étrangers (URC, Premiership, Super Rugby, Japon) sont dans `recherche/etranger/` (voir son `METHODE.md` : internationaux notés un par un, autres estimés).
 
+Bleuets 2025-26 : listes officielles France U20 (Six Nations `U20SN`, Mondial `U20MOND`) dans `jeu/data/corrections.js`, `bleuet(nom)` (0/1/2) ; un jeune pro ou un espoir de la liste a un potentiel d'au moins 76 (79 pour le Mondial), `p.u20`, rattrapé dans les anciennes parties (`G.u20fix`). À mettre à jour chaque saison.
+
 Lis `recherche/METHODE.md` avant de toucher aux notes. Pour améliorer une note, modifie d'abord le JSON de `recherche/`, puis régénère `REAL` / `REALY` dans `jeu/data/`.
 
 ## Règles et choix importants (à respecter)

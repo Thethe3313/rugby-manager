@@ -115,7 +115,7 @@
   "sub": "CEN",
   "by": 2007,
   "nat": "France",
-  "u20": false,
+  "u20": true,
   "rt": 48,
   "pot": 66,
   "unsure": true

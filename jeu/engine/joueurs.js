@@ -32,7 +32,10 @@ function realPlayer(r,lg){
   realPers(p,n,caps,rec,tags,rt);
   if(intl)p.intl=true;
   // potentiel tiré dans sa fourchette à chaque nouvelle partie (initPot(…,0) à initPot(…,1)) : chaque sauvegarde est différente
-  p.pot=initPot(ov,age,R.f());
+  // Bleuet (France U20 2025-26) : potentiel tiré dans le haut de sa fourchette (moitié haute, ou dernier tiers s'il a joué le Mondial)
+  const bl=age<=21?bleuet(n):0;if(bl){p.u20=bl;p.ev=(ev?ev+' ':'')+(bl>1?'Mondial U20 2026.':'Six Nations U20 2026.')}
+  p.pot=initPot(ov,age,bl?1-R.f()*(bl>1?.35:.5):R.f());
+  if(bl)p.pot=Math.max(p.pot,(bl>1?79:76)+R.i(-2,2)); // même plancher que les espoirs de la liste
   p.sal=Math.round(salaryFor(ov,age,lg)*(.88+hashN(n+'sal')*.24));
   setPos2(p);
   return p;

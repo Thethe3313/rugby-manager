@@ -115,7 +115,7 @@
   "sub": "N8",
   "by": 2006,
   "nat": "France",
-  "u20": false,
+  "u20": true,
   "rt": 50,
   "pot": 64,
   "unsure": true

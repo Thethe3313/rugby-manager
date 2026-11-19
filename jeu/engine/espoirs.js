@@ -22,14 +22,16 @@ function genYouthPlayer(c,age){
 const potRange=age=>age<=17?8:age<=19?6:4;
 function potDraw(pot,age){const w=potRange(age);return pot+(R.f()+R.f()-1)*w}
 function realYouth(r){
-  const [n,g,sub,by,nat,u20,rt,pot]=r,age=2026-by;
+  const [n,g,sub,by,nat,u0,rt,pot0]=r,age=2026-by,bl=bleuet(n),u20=u0||bl>0;
+  // Bleuet 2025-26 : potentiel au moins 76 (Six Nations U20) ou 79 (Mondial U20)
+  const pot=bl?Math.max(pot0,bl>1?79:76):pot0;
   const p={id:G.nid++,name:n,g,age,forme:90,inj:0,ni:false,ctr:0,st:{mj:0,tit:0,es:0,pts:0},real:true,nat,sub,tags:'',caps:0,hist:[],youth:true,sal:12};
   buildAttrs(p,g,clamp(rt,40,75),k=>(hashN(n+k)-.5)*2.6);
   p.pro=clamp(Math.round(6+hashN(n+'pro')*11+(u20?3:0)),1,20);
   realPers(p,n,0,u20,'',rt);
   p.pot=Math.round(clamp(potDraw(pot,age),Math.round(ovrAt(p,g))+3,97));
   if(p.pot>=85)p.gem=true;
-  if(u20)p.ev='International jeunes (U20/U18)';
+  if(u20)p.ev=bl>1?'Mondial U20 2026':bl?'Six Nations U20 2026':'International jeunes (U20/U18)';if(bl)p.u20=bl;
   setPos2(p);
   return p;
 }
