@@ -109,6 +109,11 @@ const ACT={
     addNews(`${p.name} est libéré (${fmtK(cost)} d'indemnité).`);UI.modal=null;save();render();
   },
   mt(d){UI.mt=d.t;render()},
+  musicAdd(d,el){Music.add([...(el.files||[])]);el.value=''},
+  musicTgl(){Music.toggle()},musicNext(){Music.next()},musicPlay(d){Music.play(+d.i)},musicDel(d){Music.remove(d.id)},
+  musicVol(d,el){Music.setVol(+el.value/100)},musicShuf(d,el){Music.shuffle=!!el.checked;Music.prefs();render()},
+  landTgl(d,el){try{localStorage.setItem('rugbyManager_land',el.checked?'1':'0')}catch(e){}if(el.checked)tryLandscape();else{try{screen.orientation.unlock()}catch(e){}}render()},
+  oppTgl(){UI.oppOpen=!UI.oppOpen;render()},
   sellNeg(d){UI.oi=+d.i;UI.negMsg='';UI.modal={type:'sellneg'};render()},
   sellCounter(){const o=(G.offers||[])[UI.oi];if(!o)return;const e=document.getElementById('sn-ask'),v=e?+e.value:0;if(!v)return;const r=counterOffer(o,v);
     if(r.deal){const m=ME(),p=m.squad.find(x=>x.id===o.pid),b=C(o.club);if(p&&b&&m.squad.length>28){doTransfer(p,m,b,r.deal,salaryFor(ovr(p),p.age,b.lg),R.i(2,4));soldMail(p,b,r.deal);G.offers=G.offers.filter(x=>x.pid!==p.id);UI.modal=null;addNews(`🤝 Accord trouvé : ${p.name} vendu à ${b.short} pour ${fmtK(r.deal)}.`)}else UI.negMsg='Effectif minimum de 28 joueurs : vente impossible.'}
@@ -141,6 +146,14 @@ const ACT={
 };
 // Message de confirmation d'une vente
 function soldMail(p,b,fee){mail('Directeur sportif',`✅ ${p.name} quitte le club`,`${p.name} rejoint ${b.name} pour ${fmtK(fee)}. L'indemnité est versée sur notre trésorerie.`,{act:{tab:'market',mt:'log'}})}
+// Paysage (téléphone) : plein écran puis verrouillage de l'orientation (Android ; impossible sur iPhone)
+const landPref=()=>{try{return localStorage.getItem('rugbyManager_land')==='1'}catch(e){return false}};
+function tryLandscape(){
+  if(typeof screen==='undefined'||!screen.orientation||!screen.orientation.lock||!/Mobi|Android/i.test(navigator.userAgent||''))return;
+  if((screen.orientation.type||'').startsWith('landscape')&&document.fullscreenElement)return;
+  const lock=()=>screen.orientation.lock('landscape').catch(()=>{});
+  if(!document.fullscreenElement&&document.documentElement.requestFullscreen)document.documentElement.requestFullscreen({navigationUI:'hide'}).then(lock).catch(lock);else lock();
+}
 function luSwap(a,b){
   const m=ME(),L=m.lineup,slot=k=>k[0]==='s'?+k.slice(1):null,pl=k=>k[0]==='p'?+k.slice(1):null;
   const ia=slot(a),ib=slot(b);
@@ -169,6 +182,8 @@ function goTick(){
 }
 // clics sur les boutons ; les listes déroulantes et les choix de fichier réagissent au changement de valeur
 document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b||b.tagName==='SELECT'||b.type==='file')return;const f=ACT[b.dataset.a];if(f)f(b.dataset,b)});
-document.addEventListener('change',e=>{const b=e.target;if((b.tagName==='SELECT'||b.type==='file')&&b.dataset.a){const f=ACT[b.dataset.a];if(f)f(b.dataset,b)}});
+document.addEventListener('change',e=>{const b=e.target;if((b.tagName==='SELECT'||b.type==='file'||b.type==='search'||b.type==='range')&&b.dataset.a){const f=ACT[b.dataset.a];if(f)f(b.dataset,b)}});
 // démarrage : ouverture du stockage, puis premier affichage
-Store.init(()=>render());
+Store.init(()=>{render();Music.init()});
+// mode paysage forcé : au premier toucher (le plein écran demande un geste de l'utilisateur)
+document.addEventListener('click',()=>{if(landPref())tryLandscape()});

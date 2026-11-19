@@ -33,6 +33,11 @@ function ratingsHTML(r,names){
 
 // ---- Avant-match ----
 function tacSel(act,key,obj,cur){return `<select data-a="${act}" data-k="${key}">${Object.entries(obj).map(([v,l])=>`<option value="${v}" ${cur===v?'selected':''}>${typeof l==='string'?l:l.n}</option>`).join('')}</select>`}
+// Composition probable de l'adversaire (notes estimées par ton recruteur)
+function oppXV(o){
+  const lu=autoLineup(o);
+  return `<div><h3>XV probable de ${clubLink(o.id,o.short)}</h3>${lu.slice(0,15).map((id,i)=>{const p=o.squad.find(x=>x.id===id);return `<div>${i+1}. ${p?plink(p)+' <span class="mut">'+noteTxt(p,o)+'</span>':'—'}</div>`}).join('')}<p class="mut" style="margin-top:6px">Remplaçants : ${lu.slice(15).map(id=>{const p=o.squad.find(x=>x.id===id);return p?p.name.split(' ').slice(-1)[0]:'—'}).join(', ')}</p></div>`;
+}
 function viewPrematch(){
   const nx=liveDue();if(!nx)return '';
   const m=ME(),h=C(nx.f.h),a=C(nx.f.a),t=tacOf(m);
@@ -40,10 +45,10 @@ function viewPrematch(){
   return `<div class="overlay"><div class="modal"><h2>Jour de match · ${fmtD(nx.d)}</h2>
   <div class="vs"><div>${h.short}<small>${nx.f.neutral?'Terrain neutre':'Domicile'}</small></div><div class="mut">vs</div><div>${a.short}<small>&nbsp;</small></div></div>
   <p class="mut" style="text-align:center">${nx.lab||LEAGUES[m.lg].name}${(()=>{const o=h.id===m.id?a:h;return o.manager?` · manager adverse : ${o.manager}`:''})()}</p>
-  <div class="grid g2"><div><h3>Consignes</h3>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(210px,1fr))"><div><h3>Consignes</h3>
     <p>Style de jeu<br>${tacSel('tac','style',STY,t.style)}</p><p>Intensité<br>${tacSel('tac','int',INTS,t.int)}</p>
     <p>Jeu au pied<br>${tacSel('tac','kick',KICKS,t.kick)}</p><p>Sur pénalité<br>${tacSel('tac','pen',PENS,t.pen)}</p><p>Défense<br>${tacSel('tac','def',DEFS,t.def)}</p><p>Rythme<br>${tacSel('tac','ry',RYTHMS,t.ry)}</p></div>
-  <div><h3>Ton XV${m.autoXV!==false?' <span class="mut">(choisi par l\'adjoint)</span>':''}</h3>${lu.slice(0,15).map((id,i)=>{const p=m.squad.find(x=>x.id===id);return `<div>${i+1}. ${p?p.name+' <span class="mut">'+rd(effAt(p,SLOTS[i]))+'</span>':'<span class="ko">—</span>'}</div>`}).join('')}</div></div>
+  <div><h3>Ton XV${m.autoXV!==false?' <span class="mut">(choisi par l\'adjoint)</span>':''}</h3>${lu.slice(0,15).map((id,i)=>{const p=m.squad.find(x=>x.id===id);return `<div>${i+1}. ${p?p.name+' <span class="mut">'+rd(effAt(p,SLOTS[i]))+'</span>':'<span class="ko">—</span>'}</div>`}).join('')}</div>${oppXV(h.id===m.id?a:h)}</div>
   <div class="card" style="margin:12px 0 0"><p>Météo prévue : <b>${wxTxt(weatherFor(nx.d,h))}</b> · Arbitre : <b>${refTxt(refFor(nx.d,h))}</b></p>
   <p>Discours d'avant-match<br>${tacSel('talk','pre',TALKS.pre,UI.talk||'motive')}</p>
   <p class="mut">Pluie : plus d'en-avant et de jeu au pied. Vent : buteurs gênés. Arbitre sévère : plus de pénalités et de cartons (la discipline compte). Un discours exigeant réveille une équipe déterminée, mais peut faire craquer une équipe qui se décourage vite.</p></div>

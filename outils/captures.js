@@ -40,6 +40,8 @@ const SCREENS={
   decisif:"G.settings.live='ask';advance('match');ACT.goLive();for(let i=0;i<900&&!UI.live.ms.done&&UI.live.ms.t<76*60;i++){liveTick();if(UI.live.paused&&!UI.live.ms.decision)ACT.livePause()}const ms=UI.live.ms;ms.decision={a:UI.live.side,dist:38,side:'en coin',pS:58,gain:30,lead:ms.sc[UI.live.side]-ms.sc[1-UI.live.side]<-7?-5:ms.sc[UI.live.side]-ms.sc[1-UI.live.side],min:77,p:32};UI.live.paused=true;UI.live.flash='⏱ Moment décisif !'",
   trisal:"G.tab='squad';UI.ss={k:'sal',d:1}",
   nego:"const m=ME(),p=m.squad.find(x=>x.age<=23&&ovr(x)<70)||m.squad[20];G.offers=[{pid:p.id,club:'bri',fee:80,max:110,pat:2}];G.tab='market';UI.mt='offers';UI.oi=0;counterOffer(G.offers[0],150);UI.negMsg='Brive : « C’est beaucoup trop. Notre dernière offre : 100 k€. »';UI.modal={type:'sellneg'}",
+  recherche:"G.tab='market';UI.mt='search';UI.mn='dupont'",
+  reglages:"G.tab='settings'",
   home:"G.tab='home'",mail:"G.tab='mail'",squad:"G.tab='squad'",youth:"G.tab='youth'",staff:"G.tab='staff'",
   lineup:"G.tab='lineup'",cal:"G.tab='cal'",table:"G.tab='table'",cups:"G.tab='cups'",market:"G.tab='market'",
   fin:"G.tab='fin'",settings:"G.tab='settings'",help:"G.tab='help'",
@@ -48,7 +50,8 @@ const SCREENS={
   direct:"G.settings.live='ask';advance('match');ACT.goLive();for(let i=0;i<260&&!UI.live.ms.done;i++)liveTick();UI.live.paused=true",
   resultat:"G.lastMatch=advance('match',{noLive:true});UI.mtab='resume';UI.modal={type:'match'}"
 };
-const SIZES={ordi:[1366,900],tel:[390,844]};
+const SIZES0={ordi:[1366,900],tel:[390,844],pay:[844,390]}; // pay = téléphone à l'horizontale
+const SIZES=Object.fromEntries((opt('tailles')||'ordi,tel').split(',').map(k=>[k,SIZES0[k]]));
 const list=(opt('ecrans')||Object.keys(SCREENS).join(',')).split(',');
 fs.mkdirSync(OUT,{recursive:true});
 const seeded="(function(seed){let a=seed>>>0;Math.random=()=>{a=(a+0x6D2B79F5)>>>0;let t=a;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296}})(42);";

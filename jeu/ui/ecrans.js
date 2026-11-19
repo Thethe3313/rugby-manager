@@ -71,7 +71,7 @@ function viewHome(){
     <div class="vs"><div>${home?m.short:o.short}<small>${home?'Domicile':''}</small></div><div class="mut">vs</div><div>${home?o.short:m.short}<small>${home?'':'Domicile'}</small></div></div>
     <div class="grid g2"><div><b>${m.short}</b><table>${ratingRows(tm)}</table></div><div><b>${o.short}</b> <span class="mut">${o.ext?'('+lgName(o)+', '+CTY[o.cty]+')':o.lg==='nat'?'(Nationale)':o.lg!==m.lg?'('+LEAGUES[o.lg].name+', '+rankOf(o.id)+'e)':'(classé '+rankOf(o.id)+'e)'}</span><table>${ratingRows(to)}</table></div></div>
     ${bad?`<p class="warn">⚠ ${bad} indisponible(s) dans ta composition. Elle sera corrigée automatiquement ; vérifie l'onglet Composition.</p>`:''}
-    <p><button class="btn sec" data-a="tab" data-t="lineup">Composition & tactique</button></p></div>`;
+    <p><button class="btn sec" data-a="tab" data-t="lineup">Composition & tactique</button> <button class="btn sec" data-a="oppTgl">${UI.oppOpen?'Masquer':'Voir'} le XV probable adverse</button></p>${UI.oppOpen?oppXV(o):''}</div>`;
   }
   if(windowOpen()||(G.offers||[]).length)h+=`<div class="card">${winBanner()}${(G.offers||[]).length?`<p><b>${G.offers.length} offre(s) reçue(s)</b> pour tes joueurs. <button class="btn sm" data-a="goOffers">Voir</button></p>`:''}</div>`;
   const tb=sortedTable(m.lg);

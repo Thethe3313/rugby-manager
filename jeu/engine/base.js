@@ -141,13 +141,16 @@ function effAt(p,slot){
 // et on ne met quelqu'un hors de son poste que s'il n'y a plus personne de disponible à ce poste.
 function fillSlots(club,out,used){
   const avail=club.squad.filter(p=>p.inj===0&&!away(p)&&!used.has(p.id)); // ni blessés ni partis en sélection
-  for(const natural of [true,false]){
+  // 1) joueurs à leur poste naturel, 2) seconds postes s'il manque quelqu'un, 3) n'importe qui en dernier recours
+  for(const pass of [0,1,2]){
     for(let i=0;i<23;i++){
       if(out[i])continue;
       let best=null,bv=-1;
       for(const p of avail){
         if(used.has(p.id))continue;
-        if(natural&&!SLOTS[i][3].includes(p.g)&&!atPos2(p,SLOTS[i]))continue; // postes naturels et seconds postes d'abord
+        const nat=SLOTS[i][3].includes(p.g);
+        if(pass===0&&!nat)continue;
+        if(pass===1&&!nat&&!atPos2(p,SLOTS[i]))continue;
         const v=effAt(p,SLOTS[i]);if(v>bv){bv=v;best=p}
       }
       if(best){out[i]=best.id;used.add(best.id)}

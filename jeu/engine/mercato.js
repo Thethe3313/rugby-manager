@@ -18,6 +18,9 @@ function doTransfer(p,from,to,fee,sal,yrs){
   if(to.id===G.meId||(from&&from.id===G.meId)||ovr(p)>=76)addNews('Mercato : '+txt);
 }
 const fmtK=n=>Math.abs(n)>=1000?(n/1000).toFixed(2).replace('.',',')+' M€':Math.round(n)+' k€';
+// Prestige d'un club pour un joueur : niveau de l'équipe et du championnat
+const REPLG={t14:10,prem:8,urc:8,srp:6,jpn:6,inv:2,pd2:2,nat:-4,n2:-8};
+const clubRep=c=>clubStr(c)+(REPLG[c.lg]!=null?REPLG[c.lg]:-12);
 // Évaluation d'une offre du joueur (pre = pré-contrat gratuit pour un joueur en dernière année)
 function evalOffer(p,from,fee,sal,yrs,pre){
   const m=ME();
@@ -30,16 +33,28 @@ function evalOffer(p,from,fee,sal,yrs,pre){
     if(fee>m.budget)return{msg:`Trésorerie insuffisante (${fmtK(m.budget)}).`};
     // le club vendeur demande askFee mais accepte de descendre jusqu'à un plancher caché (plus bas pour un joueur sur la
     // liste des transferts ou en fin de contrat, plus haut pour un joueur clé) ; entre les deux, il fait une contre-proposition
-    const ask=askFee(p,from),rk=[...from.squad].sort((a,b)=>ovr(b)-ovr(a)).indexOf(p);
+    let ask=askFee(p,from);const rk=[...from.squad].sort((a,b)=>ovr(b)-ovr(a)).indexOf(p);
+    // joueur clé (3 meilleurs d'un club professionnel, sauf s'il est sur la liste des transferts ou en fin de contrat) :
+    // le club ne le vend que pour une offre exceptionnelle
+    const key=rk>=0&&rk<3&&!p.list&&p.ctr>1&&(from.ext||LEVEL[from.lg]<=2);
+    if(key)ask=Math.round(Math.max(ask*2.5,valueOf(p)*2)/10)*10;
     const floor=Math.round(ask*((p.list?.72:p.ctr<=1?.78:rk>=0&&rk<5?.94:.84)+(hashN(p.name+G.season)-.5)*.08)/10)*10;
     if(fee<floor){
       const r10=v=>Math.round(v/10)*10;
+      if(key)return{club:`${from.short} refuse : ${p.name} est un joueur clé, il n'est pas à vendre (sauf offre exceptionnelle, environ ${fmtK(ask)}).`,counter:ask};
       if(fee>=floor*.7){const ct=Math.max(floor,r10((fee+ask)/2));return{club:`${from.short} refuse ${fmtK(fee)}, mais se dit prêt à discuter : il propose ${fmtK(ct)}.`,counter:ct}}
       return{club:`${from.short} juge ton offre beaucoup trop basse. Il faudrait environ ${fmtK(ask)}.`,counter:ask};
     }
   }
   const dem=wageDemand(p,m,pre?'pre':'move');
   const cur=from;
+  // le joueur choisit aussi : un international néo-zélandais ou irlandais ne part pas (il perdrait sa sélection) ;
+  // un bon joueur ne rejoint pas un club bien moins huppé que le sien sans un gros salaire, une star jamais
+  const okClub=from&&!pre?`${from.short} accepte l'indemnité.`:'';
+  if(from&&from.ext&&p.sel&&['Nouvelle-Zélande','Irlande'].includes(p.nat)&&p.age<31)return{club:okClub,player:`${p.name} ne quittera pas son pays : il perdrait sa place en sélection (${p.nat}).`};
+  const rd=from?clubRep(from)-clubRep(m):0,o=ovr(p);
+  if(rd>8&&o>=90)return{club:okClub,player:`${p.name} ne quittera pas ${from.short} pour un club de ce niveau.`};
+  if(rd>2&&o>=78){const need=1+rd*.05+(o>=86?.25:0);if(sal<dem*need)return{club:okClub,player:`${p.name} ne veut pas rejoindre un club moins huppé que ${from.short} : il faudrait un salaire d'environ ${fmtK(Math.round(dem*need/5)*5)} par an.`}}
   if(cur&&cur.lg==='t14'&&m.lg==='pd2'&&(ovr(p)>=80||((p.amb||10)>=16&&ovr(p)>=70))&&sal<dem*1.4)return{club:from&&!pre?`${from.short} accepte l'indemnité.`:'',player:`${p.name}${(p.amb||10)>=16?' est très ambitieux et':''} ne veut pas descendre en Pro D2 (il faudrait un salaire exceptionnel, environ ${fmtK(Math.round(dem*1.4))}).`};
   if(p.age>=32&&yrs>2)return{player:`${p.name} (${p.age} ans) ne signera pas plus de 2 ans.`};
   if(sal<dem*.97)return{club:from&&!pre?`${from.short} accepte l'indemnité.`:'',player:`${p.name} refuse : il demande au moins ${fmtK(dem)} par an.`};
