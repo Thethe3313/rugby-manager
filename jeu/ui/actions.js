@@ -13,7 +13,9 @@ const ACT={
   renewStaff(d){const s=ME().staff[d.r];if(!s)return;s.ctr+=2;s.sal=Math.round(s.sal*1.05/5)*5;addNews(`✍ ${s.name} prolonge de 2 ans (${fmtK(s.sal)}/an).`);save();render()},
   importSave(d,el){importSave(el.files&&el.files[0]);el.value=''},
   save(){save(ok=>{addNews(ok?`Partie sauvegardée (emplacement ${G.slot}).`:'Sauvegarde impossible dans ce navigateur.');render()})},
-  tab(d){G.tab=d.t;UI.more=false;UI.mailView=false;render()},
+  tab(d){G.tab=d.t;UI.more=false;UI.mailView=false;(UI.fsub=UI.fsub||{})[famOf(d.t)]=d.t;render()},
+  // famille du menu : on revient au dernier sous-onglet ouvert
+  fam(d){const x=FAMS.find(y=>y[0]===d.f);if(!x)return;const t=(UI.fsub||{})[d.f];ACT.tab({t:t&&x[3].some(y=>y[0]===t)?t:x[3][0][0]})},
   more(){UI.more=!UI.more;render()},
   topTgl(){UI.topOpen=!UI.topOpen;render()},
   tutoNext(){G.tuto++;if(G.tuto>=TUTO.length)G.tuto=-1;else G.tab=TUTO[G.tuto][0];UI.more=false;render()},

@@ -23,6 +23,12 @@ select{background:var(--panel2);color:var(--txt);border:1px solid var(--line);bo
 #nav a:hover{background:var(--panel2);color:var(--txt)}
 #nav a.on{background:var(--panel2);color:var(--txt);border-left:3px solid var(--acc)}
 #main{flex:1;padding:18px;overflow-x:auto;min-width:0}
+#nav .fi{display:inline-block;width:26px}
+.badge{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;background:var(--bad);color:#fff;font-size:11px;font-weight:700;text-align:center;line-height:18px;vertical-align:1px}
+#sub{display:flex;gap:6px;flex-wrap:wrap;margin:-4px 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+#sub a{padding:6px 14px;border-radius:16px;background:var(--panel);border:1px solid var(--line);color:var(--mut);cursor:pointer;white-space:nowrap}
+#sub a:hover{color:var(--txt)}
+#sub a.on{background:var(--acc);border-color:var(--acc);color:#0b1a12;font-weight:600}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:14px}
 .grid{display:grid;gap:14px}
 .g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
@@ -101,6 +107,8 @@ p{margin:6px 0}
   #bnav a{flex:1;text-align:center;padding:6px 0 8px;color:var(--mut);font-size:20px;cursor:pointer;line-height:1.1}
   #bnav a small{display:block;font-size:11px;margin-top:2px}
   #bnav a.on{color:var(--acc)}
+  #bnav a{position:relative}#bnav .badge{position:absolute;top:2px;left:55%;font-size:10px;min-width:16px;line-height:16px}
+  #sub{flex-wrap:nowrap;overflow-x:auto;margin:0 0 10px;padding-bottom:8px}#sub a{padding:6px 11px}
   #bmore{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:10px;border-bottom:1px solid var(--line)}
   #bmore a{padding:10px;background:var(--panel2);border-radius:8px;text-align:center;cursor:pointer;color:var(--txt)}
   #bmore a.on{outline:2px solid var(--acc)}

@@ -117,7 +117,7 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) → ton accord → intégration → tests → publication → case cochée ici.
 
 ### Partie 1 : rendre le jeu intuitif (la forme)
-- [ ] **1. Menu en 6 familles** : Accueil, Équipe (effectif, composition, vestiaire, espoirs), Matchs (calendrier, classements, Europe), Recrutement (mercato, missions, prêts), Club (staff, finances, histoire, carrière), Messagerie ; sous-onglets dans chaque famille.
+- [x] **1. Menu en 6 familles** : Accueil, Équipe (effectif, composition, vestiaire, espoirs), Matchs (calendrier, classements, Europe), Recrutement (mercato, missions, prêts), Club (staff, finances, histoire, carrière), Messagerie ; sous-onglets dans chaque famille. *(fait : Équipe = effectif, composition, vestiaire, espoirs, staff ; Club = finances, carrière, histoire, réglages, Rugby 101 ; missions et prêts restent dans le Mercato, à regrouper à l’étape 7.)*
 - [ ] **2. Accueil « tableau de bord »** : « choses à faire aujourd'hui » en haut, puis prochain match, forme de l'équipe, objectif du président, nouvelles.
 - [ ] **3. Continuer intelligent** : affiche les décisions en attente et y emmène au lieu d'avancer.
 - [ ] **4. Fiche joueur repensée** : résumé lisible (note, potentiel, forme, contrat, avis du staff en une phrase), attributs groupés et colorés en dessous.

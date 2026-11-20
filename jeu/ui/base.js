@@ -47,19 +47,32 @@ function render(){
   if(!G){$app.innerHTML=viewStart();return}
   if(G.phase==='sacked'){$app.innerHTML=viewSacked();return}
   const m=ME();
-  const tabs=[['home','Accueil'],['mail',`Messagerie${unread()?' ('+unread()+')':''}`],['squad','Effectif'],['youth','Espoirs'],['staff','Staff'],['lineup','Composition'],['cal','Calendrier'],['table','Classement'],['cups','Europe'],['market','Mercato'],['fin','Finances'],['career','Carrière'],['vest','Vestiaire'],['histo','Histoire'],['settings','Réglages'],['help','Rugby 101']];
-  const ph=stageLabel(m);
+  const ph=stageLabel(m),f=famOf(G.tab);
   // Bandeau : sur téléphone, seules les pastilles sans classe « x » restent visibles (le bouton ⋯ affiche les autres)
   $app.innerHTML=`<div id="top" class="${UI.topOpen?'open':''}"><span class="logo">🏉<span class="lt"> Rugby Manager</span></span><span class="pill"><b>${m.name}</b></span><span class="pill">📅 <b>${fmtD(G.date)}<span class="lt"> ${G.date.slice(0,4)}</span></b></span><span class="pill x"><b>${LEAGUES[m.lg].name}</b> · ${seasonLabel()} · <b>${ph}</b></span><span class="sp"></span>${windowOpen()?'<span class="pill x" style="color:var(--acc)"><b>Mercato ouvert</b></span>':''}<span class="pill"><span class="lb">Trésorerie </span><span class="lm">💰 </span><b class="${m.budget<0?'ko':''}">${k(m.budget)}</b></span><span class="pill x" title="Masse salariale / plafond">Masse <b>${k(mass(m))}</b> / ${k(capOf(m))}</span><button class="btn sec sm tgl" data-a="topTgl" title="Plus d'informations">${UI.topOpen?'▲':'⋯'}</button>${musicBtn()}<button class="btn sec sm" data-a="save" title="Sauvegarder">💾<span class="lt"> Sauvegarder</span></button><button class="btn sec sm hmo" data-a="menu">Menu</button></div>
-  <div id="wrap"><div id="nav">${tabs.map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}</div><div id="main">${view()}</div></div>${UI.adv?advBar():''}${phoneBar(tabs)}${tutoHTML()}${UI.modal?modalView():''}`;
+  <div id="wrap"><div id="nav">${FAMS.map(x=>`<a class="${f===x[0]?'on':''}" data-a="fam" data-f="${x[0]}"><span class="fi">${x[1]}</span>${famLabel(x)}</a>`).join('')}</div><div id="main">${subBar(f)}${view()}</div></div>${UI.adv?advBar():''}${phoneBar(f)}${tutoHTML()}${UI.modal?modalView():''}`;
 }
-// Téléphone : barre du bas (onglets principaux + « Plus ») et bouton Continuer toujours accessible (masqués sur ordinateur)
-function phoneBar(tabs){
-  const main=[['home','🏠','Accueil'],['squad','👥','Effectif'],['lineup','📋','Compo'],['market','💱','Mercato']],u=unread();
-  const go=G.phase==='season'||G.phase==='access';
-  return `<div id="bbar">${UI.more?`<div id="bmore">${tabs.filter(t=>!main.some(x=>x[0]===t[0])).map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}<a data-a="menu">Menu (mes parties)</a></div>`:''}
-  ${go?`<div id="bcont"><button class="btn ${UI.adv?'bad':''}" data-a="go">${UI.adv?'■ Stop':'Continuer ▶'}</button><button class="btn sec" data-a="cont" ${UI.adv?'disabled':''}>+1 jour</button></div>`:''}
-  <nav id="bnav">${main.map(t=>`<a class="${G.tab===t[0]&&!UI.more?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}<small>${t[2]}</small></a>`).join('')}<a class="${UI.more?'on':''}" data-a="more">☰<small>Plus${u?' ('+u+')':''}</small></a></nav></div>`;
+// Menu en 6 familles : chaque famille regroupe des écrans (sous-onglets). G.tab garde le nom de l'écran.
+const FAMS=[
+  ['home','🏠','Accueil',[['home','Accueil']]],
+  ['team','👥','Équipe',[['squad','Effectif'],['lineup','Composition'],['vest','Vestiaire'],['youth','Espoirs'],['staff','Staff']]],
+  ['games','🏆','Matchs',[['cal','Calendrier'],['table','Classement'],['cups','Europe']]],
+  ['recru','💱','Recrutement',[['market','Mercato']]],
+  ['club','🏛️','Club',[['fin','Finances'],['career','Carrière'],['histo','Histoire'],['settings','Réglages'],['help','Rugby 101']]],
+  ['mail','✉️','Messagerie',[['mail','Messagerie']]]];
+const famOf=t=>(FAMS.find(x=>x[3].some(y=>y[0]===t))||FAMS[0])[0];
+const famLabel=x=>x[0]==='mail'&&unread()?`${x[2]} <span class="badge">${unread()}</span>`:x[2];
+// Sous-onglets de la famille en cours (rien pour une famille d'un seul écran)
+function subBar(f){
+  const x=FAMS.find(y=>y[0]===f);
+  if(!x||x[3].length<2)return '';
+  return `<div id="sub">${x[3].map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}${f==='club'?'<a class="sm-only" data-a="menu">💾 Mes parties</a>':''}</div>`;
+}
+// Téléphone : barre du bas (les 6 familles) et bouton Continuer toujours accessible (masqués sur ordinateur)
+function phoneBar(f){
+  const go=G.phase==='season'||G.phase==='access',sh={recru:'Recrut.',mail:'Messages'},u=unread();
+  return `<div id="bbar">${go?`<div id="bcont"><button class="btn ${UI.adv?'bad':''}" data-a="go">${UI.adv?'■ Stop':'Continuer ▶'}</button><button class="btn sec" data-a="cont" ${UI.adv?'disabled':''}>+1 jour</button></div>`:''}
+  <nav id="bnav">${FAMS.map(x=>`<a class="${f===x[0]?'on':''}" data-a="fam" data-f="${x[0]}">${x[1]}${x[0]==='mail'&&u?`<span class="badge">${u}</span>`:''}<small>${sh[x[0]]||x[2]}</small></a>`).join('')}</nav></div>`;
 }
 // Tutoriel de la première partie (G.tuto = étape en cours ; absent ou -1 : terminé). Chaque étape ouvre l'onglet concerné.
 const TUTO=[
@@ -67,7 +80,7 @@ const TUTO=[
   ['lineup','Ta composition','Ici tu choisis ton <b>XV</b>, tes remplaçants et ta <b>tactique</b> (style de jeu, jeu au pied…). Au début, ton adjoint compose l’équipe tout seul : tu peux lui laisser la main.'],
   ['squad','Ton effectif','Tous tes joueurs, avec leur <b>note sur 99</b>, leur forme et leurs blessures. Touche un nom pour ouvrir la fiche du joueur (attributs, contrat, personnalité).'],
   ['market','Le mercato','Pour <b>recruter</b> et vendre pendant les fenêtres de transferts. Attention au budget et à la masse salariale autorisée.'],
-  ['home','Faire avancer le temps','<b>Continuer ▶</b> avance d’un jour, <b>Prochain match</b> va jusqu’au match. Avant chaque match, tu peux le suivre en direct. Pour les règles du rugby : onglet <b>Rugby 101</b>. Bon match !']];
+  ['home','Faire avancer le temps','<b>Continuer ▶</b> avance d’un jour, <b>Prochain match</b> va jusqu’au match. Avant chaque match, tu peux le suivre en direct. Pour les règles du rugby : <b>Club › Rugby 101</b>. Bon match !']];
 function tutoHTML(){
   if(G.tuto==null||G.tuto<0||G.tuto>=TUTO.length||G.phase!=='season'||UI.modal)return '';
   const[,t,x]=TUTO[G.tuto];
