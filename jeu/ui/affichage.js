@@ -21,6 +21,13 @@ const ac=v=>v>=16?'o1':v>=11?'o2':v>=6?'o3':'o4';
 function grpAvg(p,gr){let s=0,w=0;for(const [k,,g] of ATTRS)if(g===gr){const x=W[p.g][k]||.02;s+=p[k]*x;w+=x}return s/w}
 const grpTh=()=>'<th class="n hm" title="Technique (pondérée selon le poste)">Tec</th><th class="n hm" title="Mental">Men</th><th class="n hm" title="Physique">Phy</th>'; // hm : colonne masquée sur téléphone
 const grpTd=(p,club)=>knowOf(p,club)<2?'<td class="n hm mut">?</td>'.repeat(3):['T','M','P'].map(g=>{const v=grpAvg(p,g);return `<td class="n hm ${ac(v)}">${v.toFixed(1)}</td>`}).join('');
+// Fiche simplifiée (réglage « Fiche joueur ») : les 6 attributs qui comptent le plus à son poste, en barres colorées
+const sheetSimple=()=>((G.settings&&G.settings.sheet)||'full')==='simple';
+function attrSimple(p){
+  const kn=knowOf(p);if(kn===0)return '<p class="mut">Attributs inconnus : fais observer ce joueur par ton recruteur.</p>';
+  const top=ATTRS.map(a=>[a,W[p.g][a[0]]||0]).sort((x,y)=>y[1]-x[1]).slice(0,6).map(x=>x[0]);
+  return `<h3 style="margin:10px 0 4px">Ce qui compte à son poste</h3>${top.map(([k,l])=>{const v=p[k],t=kn>=2?Math.round(v):Math.max(1,Math.floor(v-1))+'-'+Math.min(20,Math.ceil(v+1));return `<div class="sbar"><span>${l}</span><div class="bar"><i style="width:${v*5}%;background:var(--${v>=16?'acc':v>=11?'acc2':'bad'})"></i></div><b class="${ac(v)}">${t}</b></div>`}).join('')}<p class="mut">Sur 20. Les attributs les plus importants pour son poste ; la note sur 99 en tient déjà compte.</p>`;
+}
 function attrTable(p){
   const kn=knowOf(p);if(kn===0)return '<p class="mut">Attributs inconnus : fais observer ce joueur par ton recruteur.</p>';
   const av=(k)=>kn>=2?null:[Math.max(1,Math.floor(p[k]-1)),Math.min(20,Math.ceil(p[k]+1))]; // connaissance 1 : fourchette de 2 points

@@ -80,6 +80,8 @@ function viewSettings(){
   ${opt('exact','Affiché','note de potentiel sur 99 : exacte pour tes joueurs, estimée par tes recruteurs (« ≈ », à quelques points près) pour les autres')}
   <p class="mut">Le potentiel est la note maximale qu'un joueur peut atteindre. Il progresse vers ce plafond selon son âge, son temps de jeu, son professionnalisme (caché) et le niveau du championnat. Un jeune qui enchaîne les titularisations peut voir son potentiel grimper ; un jeune qui ne joue jamais peut le voir baisser.</p>
   <p class="mut">Comme dans Football Manager, le potentiel des vrais jeunes joueurs est tiré au hasard dans une fourchette au début de chaque partie (par exemple entre 80 et 90) : d'une partie à l'autre, ce ne sont pas toujours les mêmes qui deviennent des cracks.</p>
+  <h3 style="margin-top:14px">Fiche joueur</h3>
+  ${[['full','Complète','les 17 attributs, la personnalité détaillée et la carrière'],['simple','Simplifiée','les 6 attributs clés du poste en barres colorées, sans le détail']].map(([v,t,d])=>`<p><label style="cursor:pointer"><input type="radio" name="sheet" data-a="setSheet" data-v="${v}" ${(sheetSimple()?'simple':'full')===v?'checked':''}> <b>${t}</b> <span class="mut">— ${d}</span></label></p>`).join('')}
   <h3 style="margin-top:14px">Matchs</h3>
   ${[['ask','Proposer le match en direct','la veille de chaque match, tu choisis : direct ou résultat immédiat'],['off','Toujours le résultat immédiat','les matchs sont simulés sans t\'arrêter']].map(([v,t,d])=>`<p><label style="cursor:pointer"><input type="radio" name="live" data-a="setLive" data-v="${v}" ${(G.settings&&G.settings.live||'ask')===v?'checked':''}> <b>${t}</b> <span class="mut">— ${d}</span></label></p>`).join('')}
   <h3 style="margin-top:14px">Sauvegarde</h3>

@@ -120,7 +120,7 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 - [x] **1. Menu en 6 familles** : Accueil, Équipe (effectif, composition, vestiaire, espoirs), Matchs (calendrier, classements, Europe), Recrutement (mercato, missions, prêts), Club (staff, finances, histoire, carrière), Messagerie ; sous-onglets dans chaque famille. *(fait : Équipe = effectif, composition, vestiaire, espoirs, staff ; Club = finances, carrière, histoire, réglages, Rugby 101 ; missions et prêts restent dans le Mercato, à regrouper à l’étape 7.)*
 - [x] **2. Accueil « tableau de bord »** : « choses à faire aujourd'hui » en haut, puis prochain match, forme de l'équipe, objectif du président, nouvelles. *(fait : carte « À faire aujourd’hui » `todoCard`, forme des 5 derniers matchs `H.form` ; le reste de l’accueil est inchangé.)*
 - [x] **3. Continuer intelligent** : affiche les décisions en attente et y emmène au lieu d'avancer. *(fait : fenêtre « Avant de continuer » `goBlockers` : messages importants, offres, blessé dans la compo à ≤ 2 jours du match ; marquage `imp` désormais enregistré dans les messages.)*
-- [ ] **4. Fiche joueur repensée** : résumé lisible (note, potentiel, forme, contrat, avis du staff en une phrase), attributs groupés et colorés en dessous.
+- [x] **4. Fiche joueur repensée** : résumé lisible (note, potentiel, forme, contrat, avis du staff en une phrase), attributs groupés et colorés en dessous. *(fait : la fiche actuelle reste par défaut ; option « Fiche simplifiée » `sheetSimple`/`attrSimple` dans Club › Réglages ou en bas de la fiche. Reste à explorer : une notation façon fantasy Opta, voir l’idée ajoutée en bas de la partie 3.)*
 - [ ] **5. Couleurs et repères partout** : vert / orange / rouge pour la forme, le moral, la fatigue, le budget ; flèches de progression.
 - [ ] **6. Navigation** : fil d'Ariane (Recrutement › Toulouse › joueur), retour en un geste, fenêtres qui ne s'empilent plus.
 - [ ] **7. Recrutement en un seul parcours** : chercher → observer → faire une offre → négocier → suivre la réponse, au même endroit.
@@ -144,6 +144,7 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 ### Partie 3 : en fond, tout au long
 - [ ] **22. Notes** : revérifier les autres espoirs (centres de formation réputés d'abord), puis les pros à la note incertaine qui jouent souvent.
 - [ ] **23. Application** : vraie appli Android et iOS ; comptes et sauvegardes en ligne.
+- [ ] **24. Idée du joueur : notation inspirée de la fantasy Opta** (le jeu de Poney Club, Aymeric Milan et P’tit Buro, où les joueurs sont notés d’après des statistiques Opta). À étudier avec lui : quelles statistiques (essais, plaquages, mètres, turnovers…), comment les convertir en note, et comment les relier à la note sur 99 par poste. À présenter en aperçu avant toute intégration.
 
 ## 🔁 En continu
 
