@@ -112,15 +112,38 @@ Mis à jour le 14 octobre 2026. Ce fichier sert de feuille de route : on avance 
 
 - **Retours de novembre (novembre 2026)** : transferts réalistes (joueurs clés pas à vendre, prestige des clubs, internationaux néo-zélandais et irlandais qui restent au pays) ; l'adjoint aligne d'abord les postes naturels ; XV probable de l'adversaire ; recherche par nom au Mercato ; musique personnelle (fichiers de l'appareil) ; mode paysage sur téléphone.
 
-## ▶️ Prochaine étape
+## ▶️ Feuille de route (novembre 2026) : à suivre dans l'ordre
 
-- **Revérification des notes** (Top 14, Pro D2, espoirs), club par club, avec un indice de performance par poste (inspiré de la ligue fantasy de Poney Club) tiré des statistiques publiques.
+Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) → ton accord → intégration → tests → publication → case cochée ici.
 
-## 📋 À faire ensuite
+### Partie 1 : rendre le jeu intuitif (la forme)
+- [ ] **1. Menu en 6 familles** : Accueil, Équipe (effectif, composition, vestiaire, espoirs), Matchs (calendrier, classements, Europe), Recrutement (mercato, missions, prêts), Club (staff, finances, histoire, carrière), Messagerie ; sous-onglets dans chaque famille.
+- [ ] **2. Accueil « tableau de bord »** : « choses à faire aujourd'hui » en haut, puis prochain match, forme de l'équipe, objectif du président, nouvelles.
+- [ ] **3. Continuer intelligent** : affiche les décisions en attente et y emmène au lieu d'avancer.
+- [ ] **4. Fiche joueur repensée** : résumé lisible (note, potentiel, forme, contrat, avis du staff en une phrase), attributs groupés et colorés en dessous.
+- [ ] **5. Couleurs et repères partout** : vert / orange / rouge pour la forme, le moral, la fatigue, le budget ; flèches de progression.
+- [ ] **6. Navigation** : fil d'Ariane (Recrutement › Toulouse › joueur), retour en un geste, fenêtres qui ne s'empilent plus.
+- [ ] **7. Recrutement en un seul parcours** : chercher → observer → faire une offre → négocier → suivre la réponse, au même endroit.
+- [ ] **8. Bulles d'aide** sur chaque terme de rugby et chaque chiffre.
+- [ ] **9. Options** : niveau de détail « Simple » / « Complet », ce qui interrompt le jeu (notifications), match en temps forts ou complet, thème clair / sombre, taille du texte, délégation par domaine plus visible.
 
-1. **Application** :
-   - Version installable : faite et en ligne (https://thethe3313.github.io/rugby-manager/) ; reste une vraie appli Android et iOS.
-   - Comptes et sauvegardes en ligne (les 4 emplacements existent déjà dans le navigateur).
+### Partie 2 : nouvelles idées de jeu (le fond)
+- [ ] **10. Semaine d'entraînement** : accent de la semaine (physique, contact, conquête, jeu à la main, récupération), progression contre fatigue et blessures, préparation d'un adversaire précis.
+- [ ] **11. Rapport sur l'adversaire** : ses points forts et faiblesses avant chaque match (analyste), pour choisir ses consignes.
+- [ ] **12. JIFF** : règle réelle des joueurs formés en France (minimum sur les feuilles de match en Top 14 et Pro D2, sanctions), affichée dans la composition et le mercato.
+- [ ] **13. Joker médical** : remplaçant temporaire d'un blessé longue durée, hors période de transferts.
+- [ ] **14. Retour de blessure** : le médecin donne le risque de rechute, tu décides de faire jouer ou non.
+- [ ] **15. Derbys et rivalités** : matchs à enjeu (ambiance, supporters, président).
+- [ ] **16. Conférences de presse** : quelques questions avant ou après les gros matchs, effets sur le moral, les supporters, l'adversaire.
+- [ ] **17. Journal de la journée** : résultats, titre du jour, polémiques (journal au nom inventé).
+- [ ] **18. Récompenses et records** : joueur, révélation, équipe type et entraîneur de la saison ; livre des records du club.
+- [ ] **19. Installations du club** : centre d'entraînement, centre de formation, stade ; investissements sur plusieurs saisons.
+- [ ] **20. Anciens joueurs reconvertis** : un joueur retraité peut entrer dans le staff.
+- [ ] **21. Défis** : scénarios (« sauver Perpignan », « de Régionale au Top 14 », « que des JIFF ») avec succès à débloquer.
+
+### Partie 3 : en fond, tout au long
+- [ ] **22. Notes** : revérifier les autres espoirs (centres de formation réputés d'abord), puis les pros à la note incertaine qui jouent souvent.
+- [ ] **23. Application** : vraie appli Android et iOS ; comptes et sauvegardes en ligne.
 
 ## 🔁 En continu
 
