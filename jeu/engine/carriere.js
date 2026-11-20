@@ -107,6 +107,7 @@ function recordMatch(r){
   if(d>0&&(!R_.win||d>R_.win.d))R_.win={d,txt};
   if(d<0&&(!R_.loss||-d>R_.loss.d))R_.loss={d:-d,txt};
   if(!R_.pts||my>R_.pts.v)R_.pts={v:my,txt};
+  H.form=(H.form||[]).concat([{r:d>0?'V':d<0?'D':'N',t:txt}]).slice(-5);
   H.streak=d>0?H.streak+1:0;if(!R_.streak||H.streak>R_.streak.v)R_.streak={v:H.streak,txt:`jusqu'au ${fmtD(G.date,true)}`};
 }
 // fin de saison : la saison du club et ses joueurs (matchs, essais, points cumulés sous le maillot)

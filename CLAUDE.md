@@ -94,3 +94,4 @@ Pas de framework : des scripts Node dans `tests/` (Node et git sont installés ;
 - Pour vérifier la page ouverte en `file://` comme par le raccourci : Edge sans fenêtre, `msedge --headless=new --user-data-dir=<dossier temporaire> --screenshot=<fichier.png> <url file:///…/jeu/index.html>`.
 
 Menu (ui/base.js) : 6 familles `FAMS` (Accueil, Équipe, Matchs, Recrutement, Club, Messagerie) ; `G.tab` reste le nom de l'écran, `famOf(tab)` donne sa famille, sous-onglets `subBar`, action `ACT.fam` (revient au dernier écran de la famille, `UI.fsub`). Barre du bas du téléphone = les 6 familles.
+Accueil (ui/ecrans.js) : carte « À faire aujourd'hui » `todoCard`/`todoList` (lignes cliquables, urgences en premier) et forme des 5 derniers matchs `formStrip` (`chistOf(id).form`, rempli par `recordMatch`).

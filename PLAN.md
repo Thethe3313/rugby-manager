@@ -118,7 +118,7 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 
 ### Partie 1 : rendre le jeu intuitif (la forme)
 - [x] **1. Menu en 6 familles** : Accueil, Équipe (effectif, composition, vestiaire, espoirs), Matchs (calendrier, classements, Europe), Recrutement (mercato, missions, prêts), Club (staff, finances, histoire, carrière), Messagerie ; sous-onglets dans chaque famille. *(fait : Équipe = effectif, composition, vestiaire, espoirs, staff ; Club = finances, carrière, histoire, réglages, Rugby 101 ; missions et prêts restent dans le Mercato, à regrouper à l’étape 7.)*
-- [ ] **2. Accueil « tableau de bord »** : « choses à faire aujourd'hui » en haut, puis prochain match, forme de l'équipe, objectif du président, nouvelles.
+- [x] **2. Accueil « tableau de bord »** : « choses à faire aujourd'hui » en haut, puis prochain match, forme de l'équipe, objectif du président, nouvelles. *(fait : carte « À faire aujourd’hui » `todoCard`, forme des 5 derniers matchs `H.form` ; le reste de l’accueil est inchangé.)*
 - [ ] **3. Continuer intelligent** : affiche les décisions en attente et y emmène au lieu d'avancer.
 - [ ] **4. Fiche joueur repensée** : résumé lisible (note, potentiel, forme, contrat, avis du staff en une phrase), attributs groupés et colorés en dessous.
 - [ ] **5. Couleurs et repères partout** : vert / orange / rouge pour la forme, le moral, la fatigue, le budget ; flèches de progression.

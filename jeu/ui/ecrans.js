@@ -59,9 +59,32 @@ function ratingRows(t){
   const row=(n,v)=>`<tr><td>${n}</td><td class="n ${oc(v)}"><b>${rd(v)}</b></td></tr>`;
   return row('Conquête (avants)',t.pack)+row('Ligne de trois-quarts',t.backs)+row('Jeu au pied',t.kick)+row('Banc',t.bench);
 }
+// Tableau de bord : ce qui demande une décision aujourd'hui (chaque ligne mène à l'écran concerné)
+function todoList(){
+  const m=ME(),L=[],nm=myNextMatch();
+  const bad=m.lineup.filter(id=>{const p=m.squad.find(x=>x.id===id);return !p||p.inj>0||away(p)}).length;
+  if(G.liveWait)L.push(['🏉','Jour de match : le coup d’envoi t’attend','openPre','',2]);
+  if(bad)L.push(['🚑',`${bad} joueur(s) indisponible(s) dans ta composition`,'tab','lineup',2]);
+  const off=(G.offers||[]).length;if(off)L.push(['💬',`${off} offre(s) reçue(s) pour tes joueurs`,'goOffers','',1]);
+  const ctr=m.squad.filter(p=>p.ctr<=1&&!p.loan).length;if(ctr&&G.phase==='season')L.push(['📝',`${ctr} contrat(s) se terminent à la fin de la saison`,'tab','squad',1]);
+  const imp=(G.mail||[]).filter(x=>!x.read&&x.imp).length;if(imp)L.push(['✉️',`${imp} message(s) important(s) non lu(s)`,'tab','mail',2]);
+  else if(unread())L.push(['✉️',`${unread()} message(s) non lu(s)`,'tab','mail',0]);
+  if(windowOpen())L.push(['💱','Le mercato est ouvert','tab','market',0]);
+  const hurt=m.squad.filter(p=>p.inj>0&&!away(p)).length;if(hurt)L.push(['🩹',`${hurt} joueur(s) blessé(s) à l’infirmerie`,'tab','squad',0]);
+  return L.sort((a,b)=>b[4]-a[4]);
+}
+function formStrip(){
+  const H=chistOf(ME().id),f=H.form||[];if(!f.length)return '';
+  return `<div class="row" style="gap:6px;align-items:center"><span class="mut">Forme</span>${f.map(x=>`<span class="fm ${x.r}" title="${x.t}">${x.r}</span>`).join('')}</div>`;
+}
+function todoCard(){
+  const L=todoList(),fs=formStrip();
+  return `<div class="card"><div class="row" style="justify-content:space-between"><h3 style="margin:0">À faire aujourd’hui</h3>${fs}</div>${L.length?L.map(x=>`<a class="todo ${x[4]>1?'urg':''}" data-a="${x[2]}" data-t="${x[3]}"><span>${x[0]}</span><span>${x[1]}</span><span class="mut">›</span></a>`).join(''):'<p class="ok" style="margin:8px 0 0">✔ Rien d’urgent : tu peux continuer.</p>'}</div>`;
+}
 function viewHome(){
   const m=ME(),nm=myNextMatch(),nx=nm&&(G.phase==='access'||nm.d)?nm.f:null;
   let h=`<div class="card row"><button class="btn ${UI.adv?'bad':''}" data-a="go">${UI.adv?'■ Stop':'Continuer ▶'} <span style="font-weight:400">${UI.adv?'':'(jusqu’au prochain match ou message important)'}</span></button><button class="btn sec" data-a="cont" ${UI.adv?'disabled':''}>+1 jour</button>${G.liveWait&&!UI.adv?'<button class="btn" data-a="openPre">🏉 Jour de match : y aller</button>':''}<span class="row" style="gap:6px"><input type="date" id="gd" value="${UI.gd||dAdd(G.date,7)}" min="${dAdd(G.date,1)}" style="background:var(--panel2);color:var(--txt);border:1px solid var(--line);border-radius:5px;padding:4px 6px"><button class="btn sec" data-a="goUntil" ${UI.adv?'disabled':''} title="Les jours défilent jusqu’à cette date ; tes matchs sont simulés (sans direct)">⏩ Aller à cette date</button></span>${unread()?`<button class="btn sec" data-a="tab" data-t="mail">✉ ${unread()} message(s) non lu(s)</button>`:''}</div>`;
+  h+=todoCard();
   if(nx){
     const home=nx.h===m.id,o=C(home?nx.a:nx.h);
     const tm=teamCalc(m),to=teamCalc({...o,lineup:autoLineup(o)});

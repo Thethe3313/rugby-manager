@@ -174,3 +174,9 @@ th.sortable:hover{color:var(--txt)}
   #advbar{padding:3px 10px}
   #tuto{bottom:8px;right:8px;max-width:320px}
 }
+
+.todo{display:flex;gap:10px;align-items:center;padding:9px 6px;border-bottom:1px solid var(--line);cursor:pointer}
+.todo:last-child{border-bottom:0}.todo:hover{background:var(--panel2)}.todo>span:nth-child(2){flex:1}
+.todo.urg{border-left:3px solid var(--bad);padding-left:10px}
+.fm{display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:5px;font-size:12px;font-weight:700;color:#fff}
+.fm.V{background:var(--acc)}.fm.D{background:var(--bad)}.fm.N{background:var(--acc2);color:#222}
