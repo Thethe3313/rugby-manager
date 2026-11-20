@@ -56,6 +56,7 @@ function modalView(){
     <p><button class="btn" data-a="closeModal">Continuer</button></p></div></div>`;
   }
   if(m.type==='prematch')return viewPrematch();
+  if(m.type==='ready')return `<div class="overlay"><div class="modal"><h2>Avant de continuer</h2><p class="mut">Ces points attendent ta décision :</p>${(UI.ready||[]).map((x,i)=>`<a class="todo ${x[4]>1?'urg':''}" data-a="readyFix" data-i="${i}"><span>${x[0]}</span><span>${x[1]}</span><span class="mut">›</span></a>`).join('')}<div class="row" style="margin-top:14px"><button class="btn sec" data-a="readyGo">Continuer quand même ▶</button><button class="btn sec" data-a="closeModal">Annuler</button></div></div></div>`;
   if(m.type==='live')return viewLive();
   if(m.type==='staff')return staffModal();
   if(m.type==='player')return playerModal();

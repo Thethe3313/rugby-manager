@@ -73,6 +73,11 @@ function todoList(){
   const hurt=m.squad.filter(p=>p.inj>0&&!away(p)).length;if(hurt)L.push(['🩹',`${hurt} joueur(s) blessé(s) à l’infirmerie`,'tab','squad',0]);
   return L.sort((a,b)=>b[4]-a[4]);
 }
+// Décisions en attente avant de faire défiler les jours (utilisé par le bouton Continuer)
+function goBlockers(){
+  const nm=myNextMatch(),dd=nm&&nm.d?dDiff(G.date,nm.d):99;
+  return todoList().filter(x=>x[0]==='🚑'?dd<=2:x[0]==='💬'||(x[0]==='✉️'&&x[4]>1));
+}
 function formStrip(){
   const H=chistOf(ME().id),f=H.form||[];if(!f.length)return '';
   return `<div class="row" style="gap:6px;align-items:center"><span class="mut">Forme</span>${f.map(x=>`<span class="fm ${x.r}" title="${x.t}">${x.r}</span>`).join('')}</div>`;

@@ -140,7 +140,12 @@ const ACT={
   follow(d){const id=+d.id;G.follow=G.follow||[];G.follow=G.follow.includes(id)?G.follow.filter(x=>x!==id):G.follow.concat(id);save();render()},
   postTalk(d){if(G.lastMatch&&!G.lastMatch.talk)postTalk(G.lastMatch,d.v);save();render()},
   // Continuer façon FM : les jours défilent (animation) jusqu'au prochain match ou à un message important ; recliquer arrête
-  go(){if(UI.adv){UI.adv=null;save();return render()}if(G.phase!=='season'&&G.phase!=='access')return;UI.adv={n:0};UI.more=false;goTick()},
+  go(d,el,force){if(UI.adv){UI.adv=null;save();return render()}if(G.phase!=='season'&&G.phase!=='access')return;
+    // Continuer intelligent : s'il y a des décisions en attente, on les propose avant de faire défiler les jours
+    const bl=force?[]:goBlockers();if(bl.length){UI.ready=bl;UI.modal={type:'ready'};return render()}
+    UI.adv={n:0};UI.more=false;goTick()},
+  readyGo(){UI.modal=null;ACT.go({},null,true)},
+  readyFix(d){const x=(UI.ready||[])[+d.i];UI.modal=null;if(x&&ACT[x[2]])ACT[x[2]]({t:x[3]});else render()},
   startLg(d){UI.startLg=d.v;render()},
   flt(d,el){UI[d.k]=el.value;render()},
   setPot(d){G.settings=G.settings||{};G.settings.pot=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},

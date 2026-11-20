@@ -13,6 +13,7 @@ const EDGE=['C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','C:/P
 if(!EDGE)throw new Error('Edge introuvable');
 // écran -> code exécuté une fois la partie de démonstration prête (G.tab, fenêtre…)
 const SCREENS={
+  continuer:"G.tab='home';for(let i=0;i<2;i++)advance('match',{noLive:true});mail('Directeur sportif','Offre refusée','Test',{imp:true});G.offers=[{pid:ME().squad[3].id,club:'tou',fee:900}];ACT.go({})",
   accueil:"G=null;UI.amLv=null",accueilbas:"G=null;UI.startLg='am';UI.amLv='r1'",tuto:"G.tuto=1;G.tab='lineup'",plus:"G.tab='squad';UI.more=true",
   avance:"G.tab='home';UI.adv={n:3}",mailouvert:"G.tab='mail';UI.mid=G.mail[0].id;UI.mailView=true",
   offre:"const c=C('bay'),b=c.squad[2];sendBid(b,c,10,wageDemand(b,ME(),'move'),2);for(let i=0;i<4;i++)dayStep();G.tab='mail';UI.mid=G.mail.find(m=>/Offre/.test(m.subj)).id;UI.mailView=true",
