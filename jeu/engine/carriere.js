@@ -33,8 +33,10 @@ function coachAfterMatch(r){
   const C_=G.coach,m=ME();if(!C_||!r||r.ko)return;
   const home=r.h===m.id,o=C(home?r.a:r.h),my=home?r.sh:r.sa,op=home?r.sa:r.sh;
   const p=1/(1+Math.exp(-(clubStr(m)-clubStr(o)+(home?3:-3))/5)),res=my>op?1:my===op?.5:0;
-  C_.board=clamp(C_.board+(res-p)*6-(op-my>=25?2:0),0,100);
-  C_.fans=clamp(C_.fans+(res-p)*5+(home?(res===1?1:res===0?-1:0):0),0,100);
+  const dv=derbyOf(m.id,o.id)?(res===1?1:res===0?-1:0):0; // un derby gagné ou perdu pèse plus lourd
+  C_.board=clamp(C_.board+(res-p)*6-(op-my>=25?2:0)+dv*2,0,100);
+  C_.fans=clamp(C_.fans+(res-p)*5+(home?(res===1?1:res===0?-1:0):0)+dv*3,0,100);
+  if(dv)mail(dv>0?'Le président':'Les supporters',dv>0?`Derby gagné contre ${o.short} !`:`Derby perdu contre ${o.short}`,dv>0?`Quelle victoire dans le ${derbyOf(m.id,o.id)} ! Le président et les supporters sont ravis (confiance +2, supporters +3).`:`Perdre le ${derbyOf(m.id,o.id)}, c'est dur à digérer : les supporters sont furieux (confiance −2, supporters −3).`);
   if(C_.board<30&&!C_.warned){C_.warned=true;mail('Le président','Ma confiance s’effrite',`Les résultats ne sont pas à la hauteur de nos moyens. Il faut réagir vite : si cela continue, je devrai prendre une décision.`,{imp:true})}
   if(C_.board>=40)C_.warned=false;
   if(C_.board<=10&&G.phase==='season'){sackCoach(true)}
@@ -122,3 +124,7 @@ function clubTitles(c){
   const t=[];for(const h of G.hist||[]){const add=(v,l)=>{if(v===c.short)t.push(`${l} ${h.s}`)};add(h.champ,'Top 14');add(h.champ2,'Pro D2');add(h.nat,'Nationale');add(h.n2,'Nationale 2');add(h.cc,'Champions Cup');add(h.ch,'Challenge Cup')}
   return t;
 }
+
+// ==== Derbys et rivalités (étape 15) : vraies rivalités régionales entre clubs de Top 14, Pro D2 et Nationale connus. Effets : club du joueur seulement ====
+const DERBYS=[["bay","bia","Derby basque"],["bay","dax","Derby landais"],["bay","pau","Derby de l’Adour"],["pau","bia","Derby du Sud-Ouest"],["tou","cas","Derby du Sud-Ouest"],["tou","col","Derby toulousain"],["tou","mtb","Derby de Midi-Pyrénées"],["tou","age","Derby de la Garonne"],["ubb","age","Derby de la Garonne"],["ubb","bay","Derby d’Aquitaine"],["rac","sfp","Derby parisien"],["cle","bri","Derby du Massif central"],["cle","aur","Derby d’Auvergne"],["aur","bri","Derby du Massif central"],["lou","gre","Derby rhônalpin"],["lou","oyo","Derby de Rhône-Alpes"],["gre","oyo","Derby des Alpes"],["tln","pro","Derby provençal"],["tln","nic","Derby de la Côte d’Azur"],["pro","nic","Derby du Sud-Est"],["mon","per","Derby du Languedoc-Roussillon"],["mon","bez","Derby du Languedoc"],["per","nar","Derby catalan-audois"],["nar","bez","Derby audois-héraultais"],["lar","soy","Derby charentais"],["lar","van","Derby de l’Ouest"]];
+const derbyOf=(a,b)=>{const d=DERBYS.find(x=>(x[0]===a&&x[1]===b)||(x[0]===b&&x[1]===a));return d?d[2]:null};
