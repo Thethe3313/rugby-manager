@@ -1,14 +1,11 @@
 'use strict';
-// ==== Indice de performance par poste (étape 24) ====
-// Inspiré du « Performance Index » du P'tit Buro (fantasy de Poney Club / Aymeric Milan, basée sur les stats Opta) : chaque performance est notée sur 100, avec des statistiques
-// pondérées selon le poste (un pilier est jugé sur son vrai travail : ruck, conquête, plaquages ; un ailier sur ses mètres, ses essais, ses défenseurs battus), la médiane vaut 63,
-// moins de 50 = match insuffisant, 50-69 correct, 70-79 solide, 80-89 excellent, 90 et plus exceptionnel, et il faut jouer au moins 10 minutes pour être noté.
-// Le P'tit Buro garde ses pondérations secrètes : les nôtres sont maison, et ne portent que sur ce que notre moteur de match mesure
-// (plaquages, plaquages manqués, courses, mètres, nettoyages de ruck, turnovers, touches, passes d'attaque…).
-// Calibrage : voir tests/indice.js (médiane 63, ~22 % sous 50, ~1 % à 90 et plus, comme le barème du P'tit Buro en 2025-26).
-const IPMIN=10;
-// poids par statistique pour 80 minutes : tac plaquages, mt manqués, car courses, m mètres, cle nettoyages, to turnovers gagnés, tw touches gagnées / volées, off offloads, es essais, pts points marqués, err fautes de main, pen pénalités, yc cartons jaunes
-const IPW={
+// ==== Note de match selon le poste (étape 24) ====
+// Inspirée du « Performance Index » du P'tit Buro (la fantasy de Poney Club / Aymeric Milan, basée sur les stats Opta) : un joueur est noté sur ce qui compte pour son poste.
+// Un pilier est jugé sur sa mêlée, son travail au ruck et ses plaquages ; un talonneur et un deuxième ligne sur la touche et la mêlée ; un troisième ligne sur ses plaquages et ses turnovers ;
+// un ailier sur ses mètres, ses essais et ses courses. Le P'tit Buro garde ses pondérations secrètes : celles-ci sont maison, et ne portent que sur ce que notre moteur de match mesure.
+// La note finale reste sur 10 (6 = match correct) ; elle sert à l'homme du match et à la note moyenne. Calibrage : tests/indice.js (même moyenne et même étalement qu'avant).
+// poids par statistique pour 80 minutes : tac plaquages, mt manqués, car courses, m mètres, cle nettoyages de ruck, to turnovers gagnés, tw touches gagnées / volées, off offloads, es essais, pts points marqués, err fautes de main, pen pénalités, yc cartons jaunes
+const NOTEW={
   PIL:{tac:.35,mt:-.5,car:.3,m:.05,cle:.55,to:.6,tw:0,off:.4,es:4,pts:.03,err:-.6,pen:-.7,yc:-4},
   TAL:{tac:.35,mt:-.5,car:.25,m:.05,cle:.45,to:.6,tw:.9,off:.4,es:4,pts:.03,err:-.6,pen:-.7,yc:-4},
   '2L':{tac:.35,mt:-.5,car:.3,m:.05,cle:.45,to:.6,tw:1,off:.4,es:4,pts:.03,err:-.6,pen:-.7,yc:-4},
@@ -18,29 +15,24 @@ const IPW={
   CEN:{tac:.35,mt:-.5,car:.4,m:.09,cle:.25,to:.5,tw:0,off:.8,es:3.5,pts:.05,err:-.6,pen:-.7,yc:-4},
   AIL:{tac:.25,mt:-.5,car:.4,m:.1,cle:.2,to:.5,tw:.2,off:.6,es:3.5,pts:.05,err:-.6,pen:-.7,yc:-4},
   ARR:{tac:.25,mt:-.5,car:.4,m:.1,cle:.2,to:.5,tw:.2,off:.6,es:3.5,pts:.06,err:-.6,pen:-.7,yc:-4}};
-// [moyenne, écart] de la note brute par poste (calibrage tests/indice.js)
-const IPCAL={"PIL":[2.8,5.24],"TAL":[3.2,6.18],"2L":[7,5.7],"3L":[8.1,7.43],"DM":[2.2,4.9],"OUV":[3.5,5.29],"AIL":[6.7,7.97],"CEN":[9.9,8.11],"ARR":[5.9,7.14]};
-// Note brute : statistiques ramenées à 80 minutes, plus le contexte du match (résultat, écart de points pendant sa présence approché par l'écart final)
-function ipRaw(ms,d){
-  const mins=d.secs/60,w=IPW[d.p.g]||IPW.CEN,s=d.s,k=80/Math.max(mins,10);
+// [médiane, écart] de la note brute par poste (tests/indice.js) et [moyenne, écart] visés pour la note sur 10
+const NOTECAL={"ARR":[5.74,6.27],"AIL":[7.02,6.93],"CEN":[10.35,7.5],"OUV":[4.07,4.79],"DM":[2.65,4.6],"3L":[8.08,6.93],"2L":[7.13,5.77],"TAL":[3.11,6.32],"PIL":[2.76,6.02]};
+const NOTETGT=[6.5,.98];
+const rate=(w,l)=>l?w/l:.5;
+// Note brute : statistiques ramenées à 80 minutes, travail collectif propre au poste (mêlée pour la première ligne et les deuxièmes lignes, touche pour les talonneurs et les sauteurs), contexte du match
+function noteRaw(ms,d){
+  const mins=d.secs/60,g=d.p.g,w=NOTEW[g]||NOTEW.CEN,s=d.s,k=80/Math.max(mins,10);
   let r=0;for(const key in w)r+=w[key]*(s[key]||0)*k;
+  const S=ms.T[d.side],O=ms.T[1-d.side];
+  const mel=rate(S.st.melW,S.st.mel)-rate(O.st.melW,O.st.mel),tou=rate(S.st.touW,S.st.tou)-rate(O.st.touW,O.st.tou);
+  if(g==='PIL')r+=6*mel;else if(g==='TAL')r+=4*mel+3*tou;else if(g==='2L')r+=2.5*mel+4*tou;else if(g==='3L')r+=mel*1.2+tou;
   const df=ms.sc[d.side]-ms.sc[1-d.side];
   r+=(df>0?2:df<0?-2:0)+clamp(df/12,-2,2);
   return r;
 }
-// Indice sur 100 (null si moins de 10 minutes). Étalé de façon asymétrique comme dans le barème de référence : plus de notes basses que de très hautes.
-function perfIdx(ms,d){
-  if(d.secs/60<IPMIN)return null;
-  const c=IPCAL[d.p.g]||IPCAL.CEN;if(!c)return Math.round(ipRaw(ms,d)*10)/10;
-  const z=(ipRaw(ms,d)-c[0])/c[1];
-  return Math.round(clamp(63+z*(z<0?21:11),15,100));
+// Note sur 10 selon le poste (le tassement vers 6 pour les temps de jeu courts est fait par rateOf)
+function noteByPos(ms,d){
+  const c=NOTECAL[d.p.g]||NOTECAL.CEN;if(!c)return noteRaw(ms,d);
+  const z=(noteRaw(ms,d)-c[0])/c[1];
+  return NOTETGT[0]+z*NOTETGT[1];
 }
-const ipBand=v=>v==null?'':v>=90?'ip90':v>=80?'ip80':v>=70?'ip70':v>=50?'ip50':'ip0';
-const ipTxt=v=>v>=90?'Performance exceptionnelle':v>=80?'Excellent match':v>=70?'Match solide':v>=50?'Match correct':'Match insuffisant';
-// Mise à jour des statistiques du joueur après un match (appelé par afterMatch) : somme, nombre, meilleure, pire et les derniers indices
-function ipRecord(p,ip){
-  if(ip==null)return;const st=p.st;
-  st.ip=(st.ip||0)+ip;st.ipn=(st.ipn||0)+1;st.ipx=Math.max(st.ipx||0,ip);st.ipm=Math.min(st.ipm==null?100:st.ipm,ip);
-  p.ipl=(p.ipl||[]).concat([ip]).slice(-12);
-}
-const ipAvg=p=>p.st&&p.st.ipn?Math.round(p.st.ip/p.st.ipn):null;

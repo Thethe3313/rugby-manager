@@ -14,7 +14,6 @@ function playerModal(){
   <p>${jiffRule(ME())&&c?`JIFF ${hp('jiff')} : <b>${jiffOf(p)?'oui':'non'}</b> <span class="mut">(estimé)</span> · `:''}Personnalité ${hp('pers')} : <b>${persLabel(p)}</b>${sheetSimple()?'':` <span class="mut">· professionnalisme ${p.pro??'?'}/20 · ambition ${p.amb??'?'}/20 · détermination ${p.det??'?'}/20</span>`}</p>
   ${sheetSimple()?attrSimple(p):attrTable(p)}
   ${p.ev?`<p class="mut">${p.ev}</p>`:''}<p>Cette saison : ${p.st.mj} match(s) dont ${p.st.tit||0} titularisation(s), ${p.st.es} essai(s), ${p.st.pts} points${p.st.nn?`, ${p.st.tac||0} plaquages, ${p.st.m||0} mètres gagnés · note moyenne <b class="${rc(p.st.nt/p.st.nn)}">${(p.st.nt/p.st.nn).toFixed(1)}</b>${p.st.motm?` · ${p.st.motm} fois homme du match ⭐`:''}`:''}.</p>
-  ${ipBlock(p)}
   ${!sheetSimple()&&(p.hist||[]).length?`<h3>Carrière</h3><table><tr><th>Saison</th><th>Club</th><th class="n">Note</th><th class="n">Matchs</th><th class="n">Essais</th></tr>${p.hist.map(h=>`<tr><td>${h.s}</td><td>${h.c}</td><td class="n">${h.o}</td><td class="n">${h.mj}</td><td class="n">${h.es}</td></tr>`).join('')}</table>`:''}
   <p>${acts} <button class="btn sec sm" data-a="closeModal">${closeTxt()}</button> <button class="btn sec sm" data-a="setSheet" data-v="${sheetSimple()?'full':'simple'}">${sheetSimple()?'Fiche complète':'Fiche simplifiée'}</button></p></div></div>`;
 }

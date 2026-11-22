@@ -488,9 +488,7 @@ function scoreTry(ms,a,sc,how,wide){
 function rateOf(ms,d){
   const s=d.s,S=ms.T[d.side],O=ms.T[1-d.side],mins=d.secs/60;
   if(mins<1)return 6;
-  let r=6+s.es*.8+s.tac*.04-s.mt*.15+s.m*.012+s.cle*.35+s.to*.45-s.pen*.3-s.err*.25+(s.pts-5*s.es)*.05+s.tw*.12+s.off*.1-s.yc*.6;
-  if(d.ls>=0&&d.ls<3)r+=(S.st.melW/Math.max(1,S.st.mel)-O.st.melW/Math.max(1,O.st.mel))*.8;
-  r+=clamp((ms.sc[d.side]-ms.sc[1-d.side])/40,-.4,.4);
+  let r=noteByPos(ms,d); // note selon le poste (engine/indice.js)
   r=6+(r-6)*Math.min(1,Math.sqrt(mins/60));
   if(r>8.5)r=8.5+(r-8.5)*.5;
   return Math.round(clamp(r,3,10)*10)/10;
@@ -503,7 +501,7 @@ function matchResult(ms){
   const bh=(ms.tr[0]-ms.tr[1]>=3?1:0)+(ms.sc[0]<ms.sc[1]&&ms.sc[1]-ms.sc[0]<=5?1:0);
   const ba=(ms.tr[1]-ms.tr[0]>=3?1:0)+(ms.sc[1]<ms.sc[0]&&ms.sc[0]-ms.sc[1]<=5?1:0);
   const ps=[];
-  for(const id in ms.P){const d=ms.P[id];if(!d.start&&!d.used)continue;ps.push({id:d.p.id,n:d.p.name,s:d.side,no:d.no,g:d.p.g,min:Math.round(d.secs/60),r:rateOf(ms,d),ip:perfIdx(ms,d),...d.s,m:Math.round(d.s.m),inj:d.inj,st:d.start})}
+  for(const id in ms.P){const d=ms.P[id];if(!d.start&&!d.used)continue;ps.push({id:d.p.id,n:d.p.name,s:d.side,no:d.no,g:d.p.g,min:Math.round(d.secs/60),r:rateOf(ms,d),...d.s,m:Math.round(d.s.m),inj:d.inj,st:d.start})}
   ps.sort((x,y)=>x.s-y.s||x.no-y.no);
   const wi=winner===h.id?0:winner===a.id?1:-1;
   const motm=ps.reduce((b,x)=>!b||x.r+(x.s===wi?.3:0)>b.r+(b.s===wi?.3:0)?x:b,null);
