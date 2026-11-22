@@ -65,3 +65,14 @@ function lookBlock(){
   const rad=(name,act,cur,list)=>list.map(([v,t])=>`<label style="cursor:pointer;margin-right:14px"><input type="radio" name="${name}" data-a="${act}" data-v="${v}" ${cur===v?'checked':''}> <b>${t}</b></label>`).join('');
   return `<h3>Thème</h3><p>${rad('theme','setLook',th,[['dark','🌙 Sombre'],['light','☀️ Clair']])}</p><h3>Taille du texte</h3><p>${rad('size','setSize',sz,[['normal','Normale'],['large','Grande'],['xl','Très grande']])}</p>`;
 }
+
+// Niveau de détail, interruptions et vitesse du direct (réglages)
+function levelBlock(){
+  const cur=isSimple()?'simple':'full';
+  return `<h3>Niveau de détail</h3>${[['full','Complet','tous les écrans : vestiaire, espoirs, staff, carrière, histoire, missions, prêts'],['simple','Simple','l’essentiel : effectif, composition, calendrier, classement, mercato, finances (les autres écrans sont masqués, rien n’est perdu)']].map(([v,t,d])=>`<p><label style="cursor:pointer"><input type="radio" name="level" data-a="setOpt" data-o="level" data-v="${v}" ${cur===v?'checked':''}> <b>${t}</b> <span class="mut">— ${d}</span></label></p>`).join('')}`;
+}
+function flowBlock(){
+  const st=(G.settings&&G.settings.stop)||'all',sp=(G.settings&&G.settings.liveSpeed)||'normal';
+  const rad=(name,o,cur,list)=>list.map(([v,t,d])=>`<p><label style="cursor:pointer"><input type="radio" name="${name}" data-a="setOpt" data-o="${o}" data-v="${v}" ${cur===v?'checked':''}> <b>${t}</b>${d?` <span class="mut">— ${d}</span>`:''}</label></p>`).join('');
+  return `<h3 style="margin-top:14px">Ce qui interrompt « Continuer »</h3>${rad('stop','stop',st,[['all','Matchs et messages importants','le jeu s’arrête dès qu’un message important arrive (offre, blessure grave…)'],['matchs','Seulement les matchs','tu ne reçois les messages que quand tu ouvres la messagerie']])}<h3 style="margin-top:14px">Vitesse du match en direct</h3>${rad('lspeed','liveSpeed',sp,Object.entries(LSPEED).map(([v,x])=>[v,x[1],v==='forts'?'saute les temps faibles, ralentit sur les essais et pénalités':'']))}`;
+}

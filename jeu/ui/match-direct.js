@@ -213,7 +213,7 @@ function startLive(){
   setMatchLineup(hc);setMatchLineup(ac);
   const ko=!!nx.ko;
   G.talk=UI.talk||'motive';
-  UI.live={ms:newMatch(hc,ac,{ko,neutral:!!nx.f.neutral,date:nx.d,live:true}),side:hc.id===m.id?0:1,speed:'normal',paused:false,sel:null,flash:'',flashN:0};
+  UI.live={ms:newMatch(hc,ac,{ko,neutral:!!nx.f.neutral,date:nx.d,live:true}),side:hc.id===m.id?0:1,speed:LSPEED[G.settings&&G.settings.liveSpeed]?G.settings.liveSpeed:'normal',paused:false,sel:null,flash:'',flashN:0};
   UI.modal={type:'live'};render();liveSchedule();
 }
 // Fin du direct : le résultat est enregistré, puis la journée est jouée (les autres matchs sont simulés)

@@ -70,11 +70,14 @@ function crumb(f){
   return `<div id="crumb">${h.length?'<a class="cb" data-a="back" title="Revenir à l’écran précédent">← Retour</a>':''}<span>${x[2]}${t&&x[3].length>1?` › <b>${t[1]}</b>`:''}</span></div>`;
 }
 // Sous-onglets de la famille en cours (rien pour une famille d'un seul écran)
+// Mode « Simple » : on masque les écrans avancés (ils restent accessibles en repassant en « Complet » dans les réglages)
+const SIMPLE_OFF=['vest','youth','staff','career','histo'];
+const isSimple=()=>!!(G.settings&&G.settings.level==='simple');
 function subBar(f){
   const x=FAMS.find(y=>y[0]===f);
   if(f==='recru'&&G.tab==='market')return mtBar();
   if(!x||x[3].length<2)return '';
-  return `<div id="sub">${x[3].map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}${f==='club'?'<a class="sm-only" data-a="menu">💾 Mes parties</a>':''}</div>`;
+  return `<div id="sub">${x[3].filter(t=>!isSimple()||!SIMPLE_OFF.includes(t[0])||G.tab===t[0]).map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}${f==='club'?'<a class="sm-only" data-a="menu">💾 Mes parties</a>':''}</div>`;
 }
 // Téléphone : barre du bas (les 6 familles) et bouton Continuer toujours accessible (masqués sur ordinateur)
 function phoneBar(f){

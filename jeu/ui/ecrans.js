@@ -76,7 +76,8 @@ function todoList(){
 // Décisions en attente avant de faire défiler les jours (utilisé par le bouton Continuer)
 function goBlockers(){
   const nm=myNextMatch(),dd=nm&&nm.d?dDiff(G.date,nm.d):99;
-  return todoList().filter(x=>x[0]==='🚑'?dd<=2:x[0]==='💬'||(x[0]==='✉️'&&x[4]>1));
+  const quiet=G.settings&&G.settings.stop==='matchs';
+  return todoList().filter(x=>x[0]==='🚑'?dd<=2:x[0]==='💬'||(!quiet&&x[0]==='✉️'&&x[4]>1));
 }
 function formStrip(){
   const H=chistOf(ME().id),f=H.form||[];if(!f.length)return '';
