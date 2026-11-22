@@ -13,6 +13,7 @@ function dailyUpdate(){
     for(const p of c.squad){
       if(p.inj>0&&!p.ni){p.inj--;if(p.inj>0&&R.f()<medFast)p.inj--}
       p.ni=false;
+      if(c.id===G.meId)retourTick(p);
       // récupération plus lente quand le joueur est frais : un titulaire qui joue tous les matchs s'use (il faut faire tourner)
       p.forme=clamp(p.forme+(p.inj>0?1:(1.2+.035*(100-p.forme))*rec),20,100);
       if(p.inj>0||!weekly)continue;

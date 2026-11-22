@@ -147,7 +147,7 @@ function tickPlayers(ms,dt){
 function contact(ms,d,cost){
   if(!d||d.slot<0)return;
   d.en=Math.max(5,d.en-cost);
-  if(R.f()<.0008*INTK[ms.T[d.side].tac.int].inj*injRiskK(ms.T[d.side].club)*(.8+(100-d.en)/150)*(d.p.forme<75?1+(75-d.p.forme)/60:1))injure(ms,d); // un joueur fatigué se blesse plus
+  if(R.f()<.0008*INTK[ms.T[d.side].tac.int].inj*injRiskK(ms.T[d.side].club)*(d.p.ret&&ms.T[d.side].club.id===G.meId?d.p.ret.m:1)*(.8+(100-d.en)/150)*(d.p.forme<75?1+(75-d.p.forme)/60:1))injure(ms,d); // un joueur fatigué se blesse plus
 }
 function injure(ms,d){
   const S=ms.T[d.side];if(d.inj||d.slot<0)return;

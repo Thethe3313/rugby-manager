@@ -84,3 +84,18 @@ function staffSeasonEnd(){
     }
   }
 }
+
+// ==== Retour de blessure (étape 14) : après une blessure d’au moins 2 semaines, le joueur reste fragile 14 jours (club du joueur seulement) ====
+// Le médecin estime le risque de rechute : ×m le risque de blessure en match (environ 2 % par match et par joueur). Plus la blessure était longue, plus le risque est grand ; un bon médecin le réduit.
+function retourTick(p){
+  if(p.ret){p.ret.d--;if(p.ret.d<=0||p.inj>0)delete p.ret}
+  if(p.inj===0&&p.injT){
+    const t=p.injT;delete p.injT;
+    if(t>=14&&!away(p)){
+      const m=Math.round(Math.max(1.3,(1.4+Math.min(2.6,t/45))*(1.15-staffQ(ME(),"med")/20*.3))*10)/10;
+      p.ret={d:14,m};
+      mail("Staff médical",`Retour de blessure : ${p.name}`,`${p.name} (${posL(p)}) est guéri, mais il reste fragile pendant 2 semaines : risque de rechute estimé à <b>≈ ${retPct(p)} %</b> par match (au lieu de ≈ 2 %). À toi de décider : le faire jouer tout de suite, le garder sur le banc ou le ménager (Composition).`,{act:{tab:"lineup"}});
+    }
+  }
+}
+const retPct=p=>p.ret?Math.round(2*p.ret.m):0;

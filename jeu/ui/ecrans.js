@@ -71,6 +71,7 @@ function todoList(){
   else if(unread())L.push(['✉️',`${unread()} message(s) non lu(s)`,'tab','mail',0]);
   if(windowOpen())L.push(['💱','Le mercato est ouvert','tab','market',0]);
   {const R_=jiffRule(m),n=jiffCount(m);if(R_&&n<R_.min&&G.phase==='season')L.push(['⚠',`Seulement ${n} JIFF dans ta composition (minimum ${R_.min} en moyenne)`,'tab','lineup',1])}
+  {const fr=m.squad.filter(p=>p.ret&&!p.inj);if(fr.length)L.push(['⚠',`Retour de blessure : ${fr.map(p=>p.name+' (≈ '+retPct(p)+' %)').join(', ')} — décide de les faire jouer ou non`,'tab','lineup',0])}
   const hurt=m.squad.filter(p=>p.inj>0&&!away(p)).length,jk=m.squad.filter(jokerOK).length;if(hurt)L.push(['🩹',`${hurt} joueur(s) blessé(s) à l’infirmerie${jk?` · joker médical possible pour ${jk}`:''}`,'tab','squad',0]);
   return L.sort((a,b)=>b[4]-a[4]);
 }
@@ -136,7 +137,7 @@ const shortName=p=>{const w=p.name.split(' ');return w.length>1?w.slice(1).join(
 function luChip(m,p,i){
   const s=i!=null?SLOTS[i]:null,key=s?'s'+i:'p'+(p?p.id:''),v=p?(s?effAt(p,s):ovr(p)):0,off=p&&s&&!s[3].includes(p.g)&&!atPos2(p,s);
   return `<div class="chip ${UI.luSel===key?'sel':''} ${p&&p.inj>0?'inj':''}" data-a="luPick" data-k="${key}" draggable="true" title="${p?p.name+' · '+posL(p):''}">
-    <span class="l1">${s?`<b class="no">${s[0]}</b> `:''}<span class="nm">${p?shortName(p):'(vide)'}</span>${off?' <span class="ko" title="Hors de son poste">⚠</span>':''}${p&&p.inj>0?' 🚑':''}${p&&away(p)?' 🌍':''}</span>
+    <span class="l1">${s?`<b class="no">${s[0]}</b> `:''}<span class="nm">${p?shortName(p):'(vide)'}</span>${off?' <span class="ko" title="Hors de son poste">⚠</span>':''}${p&&p.inj>0?' 🚑':''}${p&&p.ret?' <span class="warn" title="Retour de blessure : risque de rechute ≈ '+retPct(p)+' % par match">⚠</span>':''}${p&&away(p)?' 🌍':''}</span>
     ${p?`<span class="l2"><b class="${oc(v)}">${rd(v)}</b> · <span class="${formeCls(p.forme)}">${rd(p.forme)}%</span>${s?'':' · '+posS(p)}</span>`:''}</div>`;
 }
 function lineupPitch(m){
