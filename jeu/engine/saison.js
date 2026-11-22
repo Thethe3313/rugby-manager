@@ -67,7 +67,7 @@ function startSeason(){
   for(const c of G.clubs){
     if(!c.staff)initStaff(c);
     c.mp=0;c.fixed=Math.max(0,Math.max(Math.round(c.bud*.4),c.bud-Math.max(capOf(c),mass(c)))-(c.staffRef||0));
-    c.squad.forEach(p=>{p.st={mj:0,tit:0,es:0,pts:0};p.o0=Math.round(ovr(p))});
+    c.squad.forEach(p=>{p.st={mj:0,tit:0,es:0,pts:0};p.ipl=(p.ipl||[]).slice(-5);p.o0=Math.round(ovr(p))});
     (c.youth||[]).forEach(p=>{p.o0=Math.round(ovr(p))});
     c.lineup=autoLineup(c);
   }

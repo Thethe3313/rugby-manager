@@ -503,7 +503,7 @@ function matchResult(ms){
   const bh=(ms.tr[0]-ms.tr[1]>=3?1:0)+(ms.sc[0]<ms.sc[1]&&ms.sc[1]-ms.sc[0]<=5?1:0);
   const ba=(ms.tr[1]-ms.tr[0]>=3?1:0)+(ms.sc[1]<ms.sc[0]&&ms.sc[0]-ms.sc[1]<=5?1:0);
   const ps=[];
-  for(const id in ms.P){const d=ms.P[id];if(!d.start&&!d.used)continue;ps.push({id:d.p.id,n:d.p.name,s:d.side,no:d.no,g:d.p.g,min:Math.round(d.secs/60),r:rateOf(ms,d),...d.s,m:Math.round(d.s.m),inj:d.inj,st:d.start})}
+  for(const id in ms.P){const d=ms.P[id];if(!d.start&&!d.used)continue;ps.push({id:d.p.id,n:d.p.name,s:d.side,no:d.no,g:d.p.g,min:Math.round(d.secs/60),r:rateOf(ms,d),ip:perfIdx(ms,d),...d.s,m:Math.round(d.s.m),inj:d.inj,st:d.start})}
   ps.sort((x,y)=>x.s-y.s||x.no-y.no);
   const wi=winner===h.id?0:winner===a.id?1:-1;
   const motm=ps.reduce((b,x)=>!b||x.r+(x.s===wi?.3:0)>b.r+(b.s===wi?.3:0)?x:b,null);

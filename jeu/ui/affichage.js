@@ -52,6 +52,7 @@ const GLOSS={
   pre:['Pré-contrat','Accord signé en cours de saison avec un joueur dont le contrat finit : il te rejoint gratuitement à la saison suivante.'],
   loan:['Prêt','Un joueur est confié à un autre club jusqu’à la fin de la saison, pour jouer. Un joueur prêté ne peut être ni vendu ni prolongé.'],
   joker:['Joker médical','Remplaçant temporaire d’un joueur blessé au moins 3 mois (Top 14). Il doit être un joueur libre, son salaire compte dans le salary cap, et le blessé n’est plus payé par le club (sécurité sociale) tant que le joker est là. Demande possible jusqu’à fin mars.'],
+  ip:['Indice de performance','Note sur 100 d’un match, pondérée selon le poste (un pilier est jugé sur son travail de ruck et de conquête, un ailier sur ses mètres et ses essais). 63 = match ordinaire, 70-79 solide, 80-89 excellent, 90 et plus exceptionnel. Il faut jouer au moins 10 minutes. Inspiré du barème du P’tit Buro (Poney Club).'],
   jiff:['JIFF','Joueur Issu des Filières de Formation : au moins 3 saisons en centre de formation agréé, ou 5 saisons de licence FFR avant 22 ans (peu importe la nationalité). En Top 14 et Pro D2, un club doit aligner en moyenne 16 JIFF sur sa feuille de match de 23 joueurs (13 pour un promu la 1re saison, 14,5 la 2e), sinon il perd de 6 à 12 points la saison suivante. À partir de 17 de moyenne : prime de 220 à 320 k€. Il peut y avoir 13 joueurs non-JIFF au maximum dans l’effectif. Ici, le statut de chaque joueur est une estimation.'],
   pers:['Personnalité','Professionnalisme (sérieux à l’entraînement), ambition (envie de grands clubs) et détermination. Ils influencent sa progression et ses demandes.']};
 const hp=k=>GLOSS[k]?`<span class="hlp" data-a="hlp" data-k="${k}" title="${GLOSS[k][1].replace(/"/g,'&quot;')}">?</span>`:'';
@@ -102,4 +103,11 @@ function awardsCard(){
   const A=(G.awards||[])[0];if(!A)return '';
   const me=x=>x&&x.me?' class="ok"':'',ln=(l,x)=>x?`<tr><td>${l}</td><td${me(x)}><b>${x.n}</b> <span class="mut">(${x.c})</span></td><td class="n">${l.includes('marqueur')?x.es+' essais':x.avg+'/10'}</td></tr>`:'';
   return `<div class="card"><h3>🏅 Trophées ${A.s}</h3><table>${ln('Meilleur joueur',A.best)}${ln('Révélation',A.rev)}${ln('Meilleur marqueur d’essais',A.tr)}<tr><td>Entraîneur de l’année</td><td${A.coachMe?' class="ok"':''}><b>${A.coach||'—'}</b>${A.coachMe?' 🎉':''}</td><td></td></tr></table><h4>Équipe type</h4><div class="mut">${A.xv.map(x=>`<span${me(x)}>${x.no}. ${x.n} (${x.c})</span>`).join(' · ')}</div></div>`;
+}
+
+// Indice de performance : fiche joueur (moyenne, meilleure, pire et pastilles des derniers matchs)
+function ipBlock(p){
+  const l=p.ipl||[];if(!l.length||!p.st)return '';
+  const av=ipAvg(p);
+  return `<h3>Indice de performance ${hp('ip')}</h3><p>Moyenne de la saison : <b class="ipc ${ipBand(av)}">${av==null?'—':av}</b> · meilleure <b>${p.st.ipx||'—'}</b> · pire <b>${p.st.ipm==null?'—':p.st.ipm}</b> <span class="mut">(${p.st.ipn||0} match${(p.st.ipn||0)>1?'s':''} noté${(p.st.ipn||0)>1?'s':''})</span><br>${l.slice(-8).map(v=>`<span class="ipc ${ipBand(v)}" title="${ipTxt(v)}">${Math.round(v)}</span>`).join(' ')}</p>`;
 }

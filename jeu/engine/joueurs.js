@@ -65,7 +65,7 @@ function afterMatch(club,r,side){
     const p=club.squad.find(y=>y.id===x.id);if(!p)continue;
     const st=p.st;st.mj++;if(x.st)st.tit=(st.tit||0)+1;
     st.es+=x.es;st.pts+=x.pts;st.tac=(st.tac||0)+x.tac;st.m=(st.m||0)+x.m;st.nt=(st.nt||0)+x.r;st.nn=(st.nn||0)+1;if(r.motm===x.id)st.motm=(st.motm||0)+1;
-    p.forme=clamp(p.forme-cost*Math.max(.3,x.min/80),20,100);
+    p.forme=clamp(p.forme-cost*Math.max(.3,x.min/80),20,100);ipRecord(p,x.ip);
     if(x.inj){const w=R.f()<.04?R.pick([16,24,32]):R.pick([1,1,2,2,3,4,6,8,12]);p.inj=Math.max(3,Math.round((w*7+R.i(-2,2))*injRiskK(club)));p.ni=true;if(club.id===G.meId)p.injT=p.inj;p.forme=Math.min(p.forme,60);if(club.id===G.meId){const t=R.pick(w<=2?['contracture aux ischio-jambiers','entorse de la cheville','commotion cérébrale (protocole)','béquille à la cuisse']:w<=6?['entorse du genou','déchirure musculaire','lésion à l\'épaule','fracture du nez']:['rupture des ligaments','fracture de la main','luxation de l\'épaule','lésion du tendon d\'Achille']);addNews(`Blessure : ${p.name} (${posL(p)}) est absent ${injDur(p.inj)}.`);mail('Staff médical',`Blessure : ${p.name}`,`${p.name} (${posL(p)}) souffre d'une ${t}. Durée d'indisponibilité estimée : <b>${injDur(p.inj)}</b>.${p.inj>=JOKER_DAYS&&ME().lg==='t14'?'<br><br>Blessure de plus de 3 mois : tu peux recruter un <b>joker médical</b> (fiche du joueur) jusqu’à fin mars.':''}`,{act:{tab:'squad'}})}}
   }
 }
