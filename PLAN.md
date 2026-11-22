@@ -134,11 +134,11 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 - [x] **13. Joker médical** : remplaçant temporaire d'un blessé longue durée, hors période de transferts. *(fait : `engine/joker.js`, règle LNR (blessure ≥ 3 mois, jusqu’à fin mars, Top 14, salaire du joker dans le cap, blessé pris en charge par la sécu) ; blessures graves rares ajoutées (16/24/32 semaines).)*
 - [x] **14. Retour de blessure** : le médecin donne le risque de rechute, tu décides de faire jouer ou non. *(fait : après une blessure d’au moins 2 semaines, le joueur reste fragile 14 jours (`p.ret`, `retourTick` dans `engine/staff.js`) ; le médecin annonce le risque de rechute, en match le risque de blessure est multiplié (club du joueur seulement).)*
 - [x] **15. Derbys et rivalités** : matchs à enjeu (ambiance, supporters, président). *(fait : 26 vraies rivalités `DERBYS` (`engine/carriere.js`, `derbyOf`) ; pour le club du joueur : moral +1,5 %, recettes +15 %, victoire/défaite pèse plus sur président et supporters.)*
-- [ ] **16. Conférences de presse** : quelques questions avant ou après les gros matchs, effets sur le moral, les supporters, l'adversaire.
-- [ ] **17. Journal de la journée** : résultats, titre du jour, polémiques (journal au nom inventé).
-- [ ] **18. Récompenses et records** : joueur, révélation, équipe type et entraîneur de la saison ; livre des records du club.
-- [ ] **19. Installations du club** : centre d'entraînement, centre de formation, stade ; investissements sur plusieurs saisons.
-- [ ] **20. Anciens joueurs reconvertis** : un joueur retraité peut entrer dans le staff.
+- [x] **16. Conférences de presse** : quelques questions avant ou après les gros matchs, effets sur le moral, les supporters, l'adversaire. *(fait : conférences de presse avant et après les gros matchs (`engine/vie.js`, réponses dans la messagerie).)*
+- [x] **17. Journal de la journée** : résultats, titre du jour, polémiques (journal au nom inventé). *(fait : journal « L’Ovalie Quotidienne » après chaque journée de Top 14 / Pro D2 (`gazette`).)*
+- [x] **18. Récompenses et records** : joueur, révélation, équipe type et entraîneur de la saison ; livre des records du club. *(fait : trophées de fin de saison et équipe type (`awardsSeasonEnd`, Club › Histoire).)*
+- [x] **19. Installations du club** : centre d'entraînement, centre de formation, stade ; investissements sur plusieurs saisons. *(fait : installations : centre d’entraînement, centre de formation, stade (`FAC`, Club › Installations).)*
+- [x] **20. Anciens joueurs reconvertis** : un joueur retraité peut entrer dans le staff. *(fait : anciens joueurs (65+) qui arrivent sur le marché du staff (`retiredToStaff`).)*
 - [ ] **21. Défis** : scénarios (« sauver Perpignan », « de Régionale au Top 14 », « que des JIFF ») avec succès à débloquer.
 
 ### Partie 3 : en fond, tout au long
