@@ -96,3 +96,10 @@ function jiffCard(){
 
 // Retrait de points JIFF affiché à côté du club dans le classement
 const jiffPenTag=id=>{const p=jiffPenOf(id);return p?` <span class="ko" title="Retrait de points pour non-respect du quota JIFF la saison dernière">(−${p})</span>`:''};
+
+// Trophées de la saison (Club › Histoire)
+function awardsCard(){
+  const A=(G.awards||[])[0];if(!A)return '';
+  const me=x=>x&&x.me?' class="ok"':'',ln=(l,x)=>x?`<tr><td>${l}</td><td${me(x)}><b>${x.n}</b> <span class="mut">(${x.c})</span></td><td class="n">${l.includes('marqueur')?x.es+' essais':x.avg+'/10'}</td></tr>`:'';
+  return `<div class="card"><h3>🏅 Trophées ${A.s}</h3><table>${ln('Meilleur joueur',A.best)}${ln('Révélation',A.rev)}${ln('Meilleur marqueur d’essais',A.tr)}<tr><td>Entraîneur de l’année</td><td${A.coachMe?' class="ok"':''}><b>${A.coach||'—'}</b>${A.coachMe?' 🎉':''}</td><td></td></tr></table><h4>Équipe type</h4><div class="mut">${A.xv.map(x=>`<span${me(x)}>${x.no}. ${x.n} (${x.c})</span>`).join(' · ')}</div></div>`;
+}

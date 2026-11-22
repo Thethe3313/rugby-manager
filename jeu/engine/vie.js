@@ -81,3 +81,29 @@ function gazette(lg){
   mail('L’Ovalie Quotidienne',`📰 ${head}`,ed);
   G.news=G.news||[];
 }
+
+// ---- Étape 18 : récompenses de la saison et records ----
+// Nuits du rugby de fin de saison, dans ton championnat : meilleur joueur (note moyenne), révélation (22 ans ou moins), meilleur marqueur d’essais, équipe type, entraîneur de l’année.
+function awardsSeasonEnd(){
+  const m=ME(),lg=m.lg;if(!G.L[lg])return;
+  G.awards=G.awards||[];
+  const cl=clubsIn(lg),ent=[];
+  for(const c of cl)for(const p of c.squad){if(p.st&&p.st.mj>=8&&p.st.nn)ent.push({p,c,avg:p.st.nt/p.st.nn})}
+  if(ent.length<20)return;
+  const pl=e=>({id:e.p.id,n:e.p.name,c:e.c.short,pos:posL(e.p),avg:Math.round(e.avg*100)/100,es:e.p.st.es,age:e.p.age,me:e.c.id===m.id});
+  const best=[...ent].sort((a,b)=>b.avg-a.avg)[0];
+  const rev=[...ent].filter(e=>e.p.age<=22).sort((a,b)=>b.avg-a.avg)[0];
+  const tr=[...ent].sort((a,b)=>b.p.st.es-a.p.st.es)[0];
+  // équipe type : le meilleur noté à chaque poste du XV
+  const used=new Set(),xv=[];
+  for(let i=0;i<15;i++){const s=SLOTS[i],c=ent.filter(e=>!used.has(e.p.id)&&s[3].includes(e.p.g)).sort((a,b)=>b.avg-a.avg)[0];if(c){used.add(c.p.id);xv.push({...pl(c),no:s[0]})}}
+  // entraîneur de l’année : le club qui finit le plus au-dessus de ce que laissait prévoir sa force
+  const byStr=[...cl].sort((a,b)=>clubStr(b)-clubStr(a)).map(c=>c.id),tab=sortedTable(lg,m.poule);
+  const coach=[...tab].map((r,i)=>({id:r.id,gain:byStr.indexOf(r.id)-i})).sort((a,b)=>b.gain-a.gain||0)[0];
+  const A={s:seasonLabel(),lg,best:pl(best),rev:rev?pl(rev):null,tr:pl(tr),xv,coach:coach?C(coach.id).short:null,coachMe:coach&&coach.id===m.id,gain:coach?coach.gain:0};
+  G.awards.unshift(A);if(G.awards.length>20)G.awards.length=20;
+  const mine=[best.c.id===m.id&&'Meilleur joueur',rev&&rev.c.id===m.id&&'Révélation',tr.c.id===m.id&&'Meilleur marqueur d’essais',A.coachMe&&'Entraîneur de l’année'].filter(Boolean),inXI=xv.filter(x=>x.me).length;
+  addNews(`🏅 Trophées ${A.s} : meilleur joueur ${best.p.name} (${best.c.short}), révélation ${rev?rev.p.name:'—'}.`);
+  mail('La Ligue',`🏅 Trophées de la saison ${A.s}`,`Les trophées du ${LEAGUES[lg].name} sont décernés.<br><br>Meilleur joueur : <b>${best.p.name}</b> (${best.c.short}, ${A.best.avg}/10)<br>Révélation : <b>${rev?rev.p.name+' ('+rev.c.short+')':'—'}</b><br>Meilleur marqueur d’essais : <b>${tr.p.name}</b> (${tr.c.short}, ${tr.p.st.es})<br>Entraîneur de l’année : <b>${A.coach||'—'}</b>${A.coachMe?' — c’est toi !':''}<br><br>${mine.length?'🎉 Récompenses pour ton club : <b>'+mine.join(', ')+'</b>. ':''}${inXI?`${inXI} de tes joueur(s) dans l’équipe type.`:'Aucun de tes joueurs dans l’équipe type.'}`,{act:{tab:'histo'}});
+  if(A.coachMe&&G.coach)G.coach.prest=(G.coach.prest||0)+2;
+}

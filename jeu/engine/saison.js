@@ -108,6 +108,7 @@ function finishSeason(){
   G.phase='offseason';
   // verdict du président (objectifs pondérés), prestige, offres ou licenciement
   recordSeason(rank,fate);
+  awardsSeasonEnd();
   jiffSeasonEnd();
   const V=G.summary.verdict=seasonVerdict(rank,sortedTable(lg).length);
   const vtx=V?`<br><br>Mon verdict : sportif ${V.sp>=0?'✅':'❌'}, finances ${V.fi>=0?'✅':'❌'} (${fmtK(Math.round(V.ft))}), formation ${V.fo>=0?'✅':'❌'} (${Math.round(V.ys*100)} % de titularisations pour les moins de 24 ans). ${G.phase==='sacked'?'<b>Je mets fin à ton contrat.</b>':V.tot>.3?'Excellente saison.':V.tot>-.1?'Saison correcte.':'Saison décevante : la confiance est entamée.'}`:'';
