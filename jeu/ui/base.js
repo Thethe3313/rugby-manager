@@ -71,6 +71,7 @@ function crumb(f){
 // Sous-onglets de la famille en cours (rien pour une famille d'un seul écran)
 function subBar(f){
   const x=FAMS.find(y=>y[0]===f);
+  if(f==='recru'&&G.tab==='market')return mtBar();
   if(!x||x[3].length<2)return '';
   return `<div id="sub">${x[3].map(t=>`<a class="${G.tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}">${t[1]}</a>`).join('')}${f==='club'?'<a class="sm-only" data-a="menu">💾 Mes parties</a>':''}</div>`;
 }

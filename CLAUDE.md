@@ -99,3 +99,4 @@ Continuer intelligent : `ACT.go` appelle `goBlockers()` (ui/ecrans.js) ; s'il y 
 Fiche joueur : option « Fiche simplifiée » (`G.settings.sheet`, `sheetSimple`, `attrSimple` dans ui/affichage.js, action `setSheet`) ; la fiche complète reste par défaut. Idée en attente (PLAN, étape 24) : notation inspirée de la fantasy Opta de Poney Club.
 Repères visuels : `progTxt` (flèches ▲▼), `potCell` (vert si marge ≥ 8 sur la note), ⏳ sur les contrats d'un an, `legendHTML` sous l'effectif.
 Navigation : fil d'Ariane `crumb` (ui/base.js), historique des écrans `UI.hist` + `ACT.back`, pile des fenêtres `UI.mstack` (`ACT.player`/`ACT.club`/`closeModal` : le bouton devient « ← Retour », `closeTxt`).
+Recrutement : sous-onglets du Mercato `MTABS`/`mtBar` (ui/ecrans-gestion.js, `UI.mt` : search, scout, follow, mine, offers, loans, log ; l'ancien `pre` est redirigé vers `mine`), onglet « Mes démarches » `viewMine`.

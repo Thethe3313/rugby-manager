@@ -184,3 +184,4 @@ th.sortable:hover{color:var(--txt)}
 #crumb{display:flex;gap:12px;align-items:center;margin:-6px 0 10px;font-size:13px;color:var(--mut)}
 #crumb b{color:var(--txt)}#crumb .cb{padding:3px 10px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--txt);cursor:pointer}
 #crumb .cb:hover{border-color:var(--acc)}
+#sub.mt{align-items:center}#sub .sg{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em;margin:0 2px 0 8px}#sub .sg:first-child{margin-left:0}

@@ -21,10 +21,27 @@ function marketPool(){
   for(const p of G.fa)out.push({p,c:null});
   return out;
 }
+// Parcours de recrutement : Acheter (chercher → suivre → mes démarches) puis Vendre & prêter
+const MTABS=[['Acheter',[['search','🔎 Chercher'],['scout','🌏 Missions'],['follow',()=>`★ Suivis (${(G.follow||[]).length})`],['mine',()=>{const n=(G.obsQ||[]).length+(G.bids||[]).length+(G.pre||[]).length;return `📨 Mes démarches${n?' ('+n+')':''}`}]]],['Vendre et prêter',[['offers',()=>`Offres reçues (${(G.offers||[]).length})`],['loans',()=>`🔁 Prêts${(G.loanOffers||[]).length?' ('+G.loanOffers.length+')':''}`],['log','Historique']]]];
+const mtName=t=>{for(const g of MTABS)for(const x of g[1])if(x[0]===t){return typeof x[1]==='function'?x[1]().replace(/ \(\d+\)$/,''):x[1]}return 'Mercato'};
+function mtBar(){
+  const sub=UI.mt==='pre'?'mine':UI.mt||'search';
+  return `<div id="sub" class="mt">${MTABS.map(g=>`<span class="sg">${g[0]}</span>${g[1].map(x=>`<a class="${x[0]===sub?'on':''}" data-a="mt" data-t="${x[0]}">${typeof x[1]==='function'?x[1]():x[1]}</a>`).join('')}`).join('')}</div>`;
+}
+// Suivi de mes démarches : observations, offres envoyées, contre-propositions, pré-contrats
+function viewMine(){
+  const sec=(t,b)=>b?`<h3>${t}</h3>${b}`:'',pl=id=>{const f=findPlayer(id);return f.p?{p:f.p,c:f.club}:null};
+  const obs=(G.obsQ||[]).map(x=>{const q=pl(x.pid);return q?`<tr><td>${plink(q.p)}</td><td>${q.c?q.c.short:'libre'}</td><td class="n">rapport le ${fmtD(x.due,true)}</td></tr>`:''}).join('');
+  const bids=(G.bids||[]).map(b=>{const q=pl(b.pid);return q?`<tr><td>${plink(q.p)}</td><td>${C(b.club)?C(b.club).short:'-'}</td><td class="n">${fmtK(b.fee)}</td><td class="n">réponse le ${fmtD(b.due,true)}</td></tr>`:''}).join('');
+  const cnt=Object.keys(G.counters||{}).map(id=>{const q=pl(+id);return q?`<tr><td>${plink(q.p)}</td><td>${q.c?q.c.short:'libre'}</td><td class="n">contre-proposition : ${fmtK(G.counters[id])}</td></tr>`:''}).join('');
+  const pre=(G.pre||[]).map(x=>{const q=pl(x.pid);return q?`<tr><td>${plink(q.p)}</td><td>${q.c?q.c.short:'-'}</td><td class="n">${k(x.sal)} · ${x.yrs} an(s)</td></tr>`:''}).join('');
+  const t=r=>r?`<table>${r}</table>`:'';
+  const all=sec('🔍 Observations en cours',t(obs))+sec('📨 Offres envoyées (en attente de réponse)',t(bids))+sec('↔ Contre-propositions reçues',t(cnt)+(cnt?'<p class="mut">Ouvre la fiche du joueur pour refaire une offre à ce montant.</p>':''))+sec('✍ Pré-contrats signés (arrivée la saison prochaine)',t(pre));
+  return all||'<p class="mut">Rien en cours. Cherche un joueur dans « Chercher », fais-le observer, puis envoie une offre : tu suivras ici chaque étape.</p>';
+}
 function viewMarket(){
-  const m=ME(),sub=UI.mt||'search';
-  const tabs=[['search','Recherche'],['scout','🌏 Recrutement'],['follow',`★ Suivis (${(G.follow||[]).length})`],['loans',`🔁 Prêts${(G.loanOffers||[]).length?' ('+G.loanOffers.length+')':''}`],['offers',`Offres reçues (${(G.offers||[]).length})`],['pre',`Pré-contrats (${(G.pre||[]).length})`],['log','Historique']];
-  let h=`<div class="card"><div class="row"><h2 style="margin:0">Mercato</h2>${tabs.map(t=>`<button class="btn ${t[0]===sub?'':'sec'} sm" data-a="mt" data-t="${t[0]}">${t[1]}</button>`).join('')}</div>
+  const m=ME(),sub=UI.mt==='pre'?'mine':UI.mt||'search';
+  let h=`<div class="card"><h2 style="margin:0 0 8px">${mtName(sub)}</h2>
   ${winBanner()}<p class="mut">Trésorerie : <b>${k(m.budget)}</b> · Masse salariale : <b>${k(mass(m))}</b> / ${k(capOf(m))} (marge ${k(Math.max(0,capOf(m)-mass(m)))}) · Effectif : ${m.squad.length}/50</p>`;
   if(sub==='search'||sub==='follow'){
     const sel=(a,cur,opts)=>`<select data-a="flt" data-k="${a}">${opts.map(o=>`<option value="${o[0]}" ${String(cur)===String(o[0])?'selected':''}>${o[1]}</option>`).join('')}</select>`;
@@ -44,6 +61,8 @@ function viewMarket(){
   }else if(sub==='offers'){
     const of=G.offers||[];
     h+=of.length?`<table><tr><th>Joueur</th><th>Poste</th><th class="n">Note</th><th>Club acheteur</th><th class="n">Offre</th><th class="n">Valeur</th><th></th></tr>${of.map((o,i)=>{const p=m.squad.find(x=>x.id===o.pid),c=C(o.club);if(!p||!c)return '';return `<tr><td>${plink(p)}</td><td>${posL(p)}</td><td class="n">${rd(ovr(p))}</td><td>${c.short}</td><td class="n"><b>${k(o.fee)}</b></td><td class="n">${k(valueOf(p))}</td><td><button class="btn sm" data-a="acceptOffer" data-i="${i}">Accepter</button> <button class="btn sec sm" data-a="sellNeg" data-i="${i}">Négocier</button> <button class="btn bad sm" data-a="refuseOffer" data-i="${i}">Refuser</button></td></tr>`}).join('')}</table>`:'<p class="mut">Aucune offre pour le moment. Les offres arrivent pendant les fenêtres de transferts ; place un joueur sur la liste des transferts (depuis sa fiche) pour en attirer davantage.</p>';
+  }else if(sub==='mine'){
+    h+=viewMine();
   }else if(sub==='pre'){
     h+=(G.pre||[]).length?`<table><tr><th>Joueur</th><th>Club actuel</th><th class="n">Salaire</th><th class="n">Durée</th></tr>${G.pre.map(x=>{const f=findPlayer(x.pid);return f.p?`<tr><td>${plink(f.p)}</td><td>${f.club?f.club.short:'-'}</td><td class="n">${k(x.sal)}</td><td class="n">${x.yrs} an(s)</td></tr>`:''}).join('')}</table><p class="mut">Ces joueurs te rejoindront gratuitement au début de la saison prochaine.</p>`:'<p class="mut">Aucun pré-contrat. Pendant la saison, un joueur en dernière année de contrat peut signer chez toi gratuitement pour la saison suivante (filtre « Dernière année »).</p>';
   }else{
