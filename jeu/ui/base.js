@@ -44,6 +44,7 @@ function formeBar(f){return `<div class="bar" title="${rd(f)}%"><i style="width:
 // Écran de téléphone (même seuil que la feuille de style)
 const isPhone=()=>typeof matchMedia==='function'&&matchMedia('(max-width:700px)').matches;
 function render(){
+  applyLook();
   if(!G){$app.innerHTML=viewStart();return}
   if(G.phase==='sacked'){$app.innerHTML=viewSacked();return}
   const m=ME();

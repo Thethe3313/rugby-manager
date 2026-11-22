@@ -95,18 +95,22 @@ function viewYouth(){
 function viewSettings(){
   const cur=potMode();
   const opt=(v,t,d)=>`<p><label style="cursor:pointer"><input type="radio" name="pot" data-a="setPot" data-v="${v}" ${cur===v?'checked':''}> <b>${t}</b> <span class="mut">— ${d}</span></label></p>`;
-  return `<div class="card"><h2>Réglages</h2>${musicCard()}<h3>Téléphone : mode paysage</h3><p><label style="cursor:pointer"><input type="checkbox" data-a="landTgl" ${landPref()?'checked':''}> Forcer le mode paysage</label> <span class="mut">— sur Android, le jeu passe en plein écran et se bloque à l’horizontale (au toucher suivant). Sur iPhone, le blocage n’est pas possible : tourne simplement le téléphone, l’affichage s’adapte.</span></p><h3>Tutoriel</h3><p><button class="btn sec sm" data-a="tutoReset">Revoir le tutoriel</button> <span class="mut">— la visite guidée des écrans principaux, en 5 étapes</span></p><h3>Affichage du potentiel</h3>
+  return `<div class="card"><h2>Réglages</h2><p class="mut">Tout ce qui change l'apparence et le déroulement du jeu, rangé par thème.</p></div>
+  <div class="card"><h2>🎨 Apparence</h2>${lookBlock()}<h3>Téléphone : mode paysage</h3><p><label style="cursor:pointer"><input type="checkbox" data-a="landTgl" ${landPref()?'checked':''}> Forcer le mode paysage</label> <span class="mut">— sur Android, le jeu passe en plein écran et se bloque à l’horizontale (au toucher suivant). Sur iPhone, le blocage n’est pas possible : tourne simplement le téléphone, l’affichage s’adapte.</span></p><h3>Affichage du potentiel</h3>
   ${opt('hide','Masqué','tu découvres les pépites toi-même, comme un vrai recruteur')}
   ${opt('exact','Affiché','note de potentiel sur 99 : exacte pour tes joueurs, estimée par tes recruteurs (« ≈ », à quelques points près) pour les autres')}
   <p class="mut">Le potentiel est la note maximale qu'un joueur peut atteindre. Il progresse vers ce plafond selon son âge, son temps de jeu, son professionnalisme (caché) et le niveau du championnat. Un jeune qui enchaîne les titularisations peut voir son potentiel grimper ; un jeune qui ne joue jamais peut le voir baisser.</p>
   <p class="mut">Comme dans Football Manager, le potentiel des vrais jeunes joueurs est tiré au hasard dans une fourchette au début de chaque partie (par exemple entre 80 et 90) : d'une partie à l'autre, ce ne sont pas toujours les mêmes qui deviennent des cracks.</p>
   <h3 style="margin-top:14px">Fiche joueur</h3>
   ${[['full','Complète','les 17 attributs, la personnalité détaillée et la carrière'],['simple','Simplifiée','les 6 attributs clés du poste en barres colorées, sans le détail']].map(([v,t,d])=>`<p><label style="cursor:pointer"><input type="radio" name="sheet" data-a="setSheet" data-v="${v}" ${(sheetSimple()?'simple':'full')===v?'checked':''}> <b>${t}</b> <span class="mut">— ${d}</span></label></p>`).join('')}
-  <h3 style="margin-top:14px">Matchs</h3>
+  </div>
+  <div class="card"><h2>🏉 Déroulement du jeu</h2><h3 style="margin-top:14px">Matchs</h3>
   ${[['ask','Proposer le match en direct','la veille de chaque match, tu choisis : direct ou résultat immédiat'],['off','Toujours le résultat immédiat','les matchs sont simulés sans t\'arrêter']].map(([v,t,d])=>`<p><label style="cursor:pointer"><input type="radio" name="live" data-a="setLive" data-v="${v}" ${(G.settings&&G.settings.live||'ask')===v?'checked':''}> <b>${t}</b> <span class="mut">— ${d}</span></label></p>`).join('')}
-  <h3 style="margin-top:14px">Sauvegarde</h3>
+  <h3>Tutoriel</h3><p><button class="btn sec sm" data-a="tutoReset">Revoir le tutoriel</button> <span class="mut">— la visite guidée des écrans principaux, en 5 étapes</span></p></div>
+  <div class="card"><h2>🎵 Musique</h2>${musicCard()}</div>
+  <div class="card"><h2>💾 Sauvegarde</h2><h3 style="margin-top:14px">Sauvegarde</h3>
   <p class="row"><button class="btn sec" data-a="exportSave">⬇ Exporter ma partie dans un fichier</button><label class="btn sec">⬆ Importer une partie<input type="file" accept=".json,application/json" data-a="importSave" hidden></label></p>
-  <p class="mut">La partie est enregistrée dans le navigateur utilisé. Pour la retrouver dans un autre navigateur (ou dans l'appli), exporte-la ici puis importe le fichier là-bas. C'est aussi une bonne copie de secours.</p></div>`;
+  <p class="mut">La partie est enregistrée dans le navigateur utilisé. Pour la retrouver dans un autre navigateur (ou dans l'appli), exporte-la ici puis importe le fichier là-bas. C'est aussi une bonne copie de secours.</p></div></div>`;
 }
 
 // Recrutement : missions dans le monde et liste des meilleurs jeunes que tu connais

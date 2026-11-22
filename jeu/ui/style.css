@@ -190,3 +190,9 @@ th.sortable:hover{color:var(--txt)}
 #hbub{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:30;width:min(440px,92vw);background:var(--panel);border:1px solid var(--acc);border-radius:12px;padding:12px 14px;box-shadow:0 6px 24px #0008}
 #hbub p{margin:4px 0 8px;font-size:14px}
 @media(max-width:700px){#hbub{bottom:150px}}
+
+/* Thème clair et tailles de texte (réglages > Apparence) */
+:root[data-theme="light"]{--bg:#f3f5f8;--panel:#ffffff;--panel2:#e9edf2;--line:#cfd7e0;--txt:#1b2733;--mut:#5b6877;--acc:#1f8f58;--acc2:#a9780a;--bad:#c93c35;--blue:#1a68bd}
+:root[data-theme="light"] .o1{color:#14924a}:root[data-theme="light"] .o2{color:#5d8c0e}:root[data-theme="light"] .o3{color:#a9780a}:root[data-theme="light"] .o4{color:#c2561a}
+:root[data-theme="light"] .overlay{background:#0006}
+:root[data-size="large"] body{font-size:16px}:root[data-size="xl"] body{font-size:18px}

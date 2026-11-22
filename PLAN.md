@@ -125,7 +125,7 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 - [x] **6. Navigation** : fil d'Ariane (Recrutement › Toulouse › joueur), retour en un geste, fenêtres qui ne s'empilent plus. *(fait : fil d’Ariane `crumb`, bouton ← Retour `UI.hist`/`ACT.back`, pile des fenêtres `UI.mstack` (fiche ↔ club).)*
 - [x] **7. Recrutement en un seul parcours** : chercher → observer → faire une offre → négocier → suivre la réponse, au même endroit. *(fait : sous-onglets Acheter / Vendre et prêter dans la barre du haut `MTABS`/`mtBar`, nouvel onglet « Mes démarches » `viewMine` ; la négociation reste dans la fiche joueur.)*
 - [x] **8. Bulles d'aide** sur chaque terme de rugby et chaque chiffre. *(fait : glossaire `GLOSS`, `hp(clé)` place un « ? » ; bulle `helpBubble` ; à compléter (prêt, mêlée, touche…) quand les écrans concernés seront refaits.)*
-- [ ] **9. Options** : niveau de détail « Simple » / « Complet », ce qui interrompt le jeu (notifications), match en temps forts ou complet, thème clair / sombre, taille du texte, délégation par domaine plus visible.
+- [ ] **9. Options** : niveau de détail « Simple » / « Complet », ce qui interrompt le jeu (notifications), match en temps forts ou complet, thème clair / sombre, taille du texte, délégation par domaine plus visible. *(1re partie faite : réglages rangés en 4 cartes, thème clair/sombre `applyLook`, taille du texte. RESTE à faire : mode Simple/Complet, choix des interruptions, temps forts/match complet, délégation par domaine.)*
 
 ### Partie 2 : nouvelles idées de jeu (le fond)
 - [ ] **10. Semaine d'entraînement** : accent de la semaine (physique, contact, conquête, jeu à la main, récupération), progression contre fatigue et blessures, préparation d'un adversaire précis.

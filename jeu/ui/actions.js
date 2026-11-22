@@ -152,6 +152,8 @@ const ACT={
   readyFix(d){const x=(UI.ready||[])[+d.i];UI.modal=null;if(x&&ACT[x[2]])ACT[x[2]]({t:x[3]});else render()},
   startLg(d){UI.startLg=d.v;render()},
   flt(d,el){UI[d.k]=el.value;render()},
+  setLook(d){G.settings=G.settings||{};G.settings.theme=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
+  setSize(d){G.settings=G.settings||{};G.settings.size=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   setSheet(d){G.settings=G.settings||{};G.settings.sheet=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   setPot(d){G.settings=G.settings||{};G.settings.pot=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   nextSeason(){nextSeason();save();G.tab='home';render()}

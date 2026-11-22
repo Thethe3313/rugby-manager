@@ -101,3 +101,4 @@ Repères visuels : `progTxt` (flèches ▲▼), `potCell` (vert si marge ≥ 8 s
 Navigation : fil d'Ariane `crumb` (ui/base.js), historique des écrans `UI.hist` + `ACT.back`, pile des fenêtres `UI.mstack` (`ACT.player`/`ACT.club`/`closeModal` : le bouton devient « ← Retour », `closeTxt`).
 Recrutement : sous-onglets du Mercato `MTABS`/`mtBar` (ui/ecrans-gestion.js, `UI.mt` : search, scout, follow, mine, offers, loans, log ; l'ancien `pre` est redirigé vers `mine`), onglet « Mes démarches » `viewMine`.
 Bulles d'aide : glossaire `GLOSS` + `hp(clé)` (ui/affichage.js), action `ACT.hlp`, bulle `helpBubble` ; pour expliquer un nouveau terme, ajouter une entrée au glossaire et appeler `hp('clé')` à côté du libellé.
+Apparence : thème et taille du texte (`G.settings.theme` dark/light, `G.settings.size` normal/large/xl ; `applyLook`, `lookBlock` dans ui/affichage.js ; variables CSS `:root[data-theme="light"]`). Réglages rangés en cartes (`viewSettings`).

@@ -54,3 +54,14 @@ const GLOSS={
   pers:['Personnalité','Professionnalisme (sérieux à l’entraînement), ambition (envie de grands clubs) et détermination. Ils influencent sa progression et ses demandes.']};
 const hp=k=>GLOSS[k]?`<span class="hlp" data-a="hlp" data-k="${k}" title="${GLOSS[k][1].replace(/"/g,'&quot;')}">?</span>`:'';
 function helpBubble(){const g=UI.hlp&&GLOSS[UI.hlp];return g?`<div id="hbub"><b>${g[0]}</b><p>${g[1]}</p><button class="btn sm" data-a="hlp" data-k="${UI.hlp}">Compris</button></div>`:''}
+
+// Apparence : thème clair / sombre et taille du texte (réglages gardés dans G.settings et dans le navigateur)
+function applyLook(){
+  try{const st=(G&&G.settings)||loadSettings(),el=document.documentElement;if(!el||!el.setAttribute)return;
+    el.setAttribute('data-theme',st.theme==='light'?'light':'dark');el.setAttribute('data-size',st.size||'normal')}catch(err){}
+}
+function lookBlock(){
+  const st=(G&&G.settings)||{},th=st.theme||'dark',sz=st.size||'normal';
+  const rad=(name,act,cur,list)=>list.map(([v,t])=>`<label style="cursor:pointer;margin-right:14px"><input type="radio" name="${name}" data-a="${act}" data-v="${v}" ${cur===v?'checked':''}> <b>${t}</b></label>`).join('');
+  return `<h3>Thème</h3><p>${rad('theme','setLook',th,[['dark','🌙 Sombre'],['light','☀️ Clair']])}</p><h3>Taille du texte</h3><p>${rad('size','setSize',sz,[['normal','Normale'],['large','Grande'],['xl','Très grande']])}</p>`;
+}
