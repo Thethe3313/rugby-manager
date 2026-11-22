@@ -42,6 +42,7 @@ const SCREENS={
   presse:"mail('Presse','🎤 Conférence de presse avant Castres','Demain : <b>Derby du Sud-Ouest</b> contre Castres. Les journalistes t’attendent : « Coach, comment abordez-vous ce match ? » Choisis ta réponse.',{ch:{type:'pre',opts:PRESSE_PRE},imp:true});G.tab='mail';UI.mid=G.mail[0].id",
   gazette:"gazette(ME().lg);G.tab='mail';UI.mid=G.mail[0].id",
   trophees:"for(const c of G.clubs)for(const p of c.squad){p.st.mj=10;p.st.nn=10;p.st.nt=10*(3+ovr(p)/22);p.st.es=Math.round(ovr(p)/25)}awardsSeasonEnd();G.tab='histo'",
+  install:"ME().budget=4000;facBuy('ent');G.tab='fac'",
   jokerfiche:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.inj=130;G.tab='squad';UI.modal={type:'player'};UI.pid=p.id",
   jokermodal:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.inj=130;G.tab='squad';UI.modal={type:'joker'};UI.jid=p.id",
   ferte:"G.tab='squad';UI.modal={type:'player'};UI.pid=(ME().squad.find(p=>p.name==='Mathis Ferté')||ME().squad[0]).id",

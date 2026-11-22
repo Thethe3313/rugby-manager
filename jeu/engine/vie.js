@@ -107,3 +107,36 @@ function awardsSeasonEnd(){
   mail('La Ligue',`🏅 Trophées de la saison ${A.s}`,`Les trophées du ${LEAGUES[lg].name} sont décernés.<br><br>Meilleur joueur : <b>${best.p.name}</b> (${best.c.short}, ${A.best.avg}/10)<br>Révélation : <b>${rev?rev.p.name+' ('+rev.c.short+')':'—'}</b><br>Meilleur marqueur d’essais : <b>${tr.p.name}</b> (${tr.c.short}, ${tr.p.st.es})<br>Entraîneur de l’année : <b>${A.coach||'—'}</b>${A.coachMe?' — c’est toi !':''}<br><br>${mine.length?'🎉 Récompenses pour ton club : <b>'+mine.join(', ')+'</b>. ':''}${inXI?`${inXI} de tes joueur(s) dans l’équipe type.`:'Aucun de tes joueurs dans l’équipe type.'}`,{act:{tab:'histo'}});
   if(A.coachMe&&G.coach)G.coach.prest=(G.coach.prest||0)+2;
 }
+
+// ---- Étape 19 : installations du club ----
+// Trois installations, niveaux de 1 à 5 (2 = standard en Top 14 et Pro D2, 1 en dessous). Chaque amélioration se commande, coûte de l’argent (moitié à la commande, moitié à la livraison)
+// et n’est livrée qu’au début de la saison suivante. Effets pour le club du joueur uniquement, comparés au niveau 2.
+const FAC={
+  ent:{n:'Centre d’entraînement',ic:'🏋️',eff:l=>`progression des joueurs ${l>=2?'+':'−'}${Math.abs(l-2)*4} % et récupération ${l>=2?'+':'−'}${Math.abs(l-2)*3} %`},
+  for:{n:'Centre de formation',ic:'🎓',eff:l=>`niveau du centre de formation ${l>=2?'+':'−'}${Math.abs(l-2)} (sur 20), meilleurs jeunes`},
+  sta:{n:'Stade',ic:'🏟️',eff:l=>`recettes de billetterie ${l>=2?'+':'−'}${Math.abs(l-2)*5} %`}};
+const FACCOST=[0,0,300,800,1500,2500]; // k€ pour atteindre le niveau (indice)
+function facOf(c){
+  if(!c.fac){const b=c.lg==='t14'||c.lg==='pd2'?2:1;c.fac={ent:b,for:b,sta:b,pr:[]}}
+  return c.fac;
+}
+const facK=(c,k)=>c.fac?c.fac[k]-2:0;
+function facBuy(k){
+  const m=ME(),F=facOf(m),lv=F[k];
+  if(lv>=5||F.pr.some(x=>x.k===k))return'Amélioration impossible.';
+  const cost=FACCOST[lv+1];
+  if(m.budget<cost/2)return'Trésorerie insuffisante pour la première moitié du paiement.';
+  m.budget-=cost/2;G.fin.opex+=cost/2;
+  F.pr.push({k,to:lv+1,s:G.season+1,rest:cost/2});
+  mail('Le président',`Travaux : ${FAC[k].n} niveau ${lv+1}`,`Les travaux de ton ${FAC[k].n.toLowerCase()} sont lancés (niveau ${lv+1}). Première moitié payée : ${fmtK(cost/2)}. Livraison au début de la saison prochaine, solde de ${fmtK(cost/2)} à ce moment-là.`);
+  return null;
+}
+// Livraison au début de la saison suivante
+function facSeasonEnd(){
+  const m=ME(),F=m&&m.fac;if(!F||!F.pr.length)return;
+  for(const x of [...F.pr]){
+    if(x.s>G.season+1)continue;
+    F.pr=F.pr.filter(y=>y!==x);F[x.k]=x.to;m.budget-=x.rest;G.fin.opex+=x.rest;
+    mail('Le président',`✅ ${FAC[x.k].n} niveau ${x.to} livré`,`Les travaux sont terminés. ${FAC[x.k].n} niveau ${x.to} : ${FAC[x.k].eff(x.to)}. Solde payé : ${fmtK(x.rest)}.`);
+  }
+}

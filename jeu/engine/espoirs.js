@@ -3,7 +3,7 @@
 // Qualité du centre de formation sur 20 (estimation d'après la réputation des académies)
 const ACAD={tou:20,cle:18,rac:17,ubb:16,lar:15,mon:15,sfp:15,pau:15,lou:14,tln:13,cas:13,bay:13,per:13,van:11,
   bri:13,gre:12,bia:12,age:12,col:12,mtb:11,oyo:11,pro:11,dax:11,vro:10,soy:10,bez:10,nev:10,aur:9,nic:9,nar:9};
-const acadOf=c=>c.acad||ACAD[c.id]||(c.lg==='t14'?13:c.lg==='pd2'?10:7);
+const acadOf=c=>(c.acad||ACAD[c.id]||(c.lg==='t14'?13:c.lg==='pd2'?10:7))+(c.fac?c.fac.for-2:0);
 function genYouthPlayer(c,age){
   const a=acadOf(c);
   const g=R.pick(GORDER.flatMap(x=>Array(COMP[x]).fill(x)));

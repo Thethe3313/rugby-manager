@@ -59,7 +59,7 @@ const FAMS=[
   ['team','👥','Équipe',[['squad','Effectif'],['lineup','Composition'],['train','Entraînement'],['vest','Vestiaire'],['youth','Espoirs'],['staff','Staff']]],
   ['games','🏆','Matchs',[['cal','Calendrier'],['table','Classement'],['cups','Europe']]],
   ['recru','💱','Recrutement',[['market','Mercato']]],
-  ['club','🏛️','Club',[['fin','Finances'],['career','Carrière'],['histo','Histoire'],['settings','Réglages'],['help','Rugby 101']]],
+  ['club','🏛️','Club',[['fin','Finances'],['career','Carrière'],['histo','Histoire'],['fac','Installations'],['settings','Réglages'],['help','Rugby 101']]],
   ['mail','✉️','Messagerie',[['mail','Messagerie']]]];
 const famOf=t=>(FAMS.find(x=>x[3].some(y=>y[0]===t))||FAMS[0])[0];
 const famLabel=x=>x[0]==='mail'&&unread()?`${x[2]} <span class="badge">${unread()}</span>`:x[2];
@@ -102,7 +102,7 @@ function advBar(){return `<div id="advbar"><span class="spin">⏩</span> Les jou
 function view(){
   switch(G.tab){
     case'squad':return viewSquad();case'train':return viewTrain();case'lineup':return viewLineup();case'cal':return viewCal();
-    case'table':return viewTable();case'market':return viewMarket();case'fin':return viewFin();case'settings':return viewSettings();case'youth':return viewYouth();case'staff':return viewStaff();case'cups':return viewCups();case'mail':return viewMail();case'help':return viewHelp();case'career':return viewCareer();case'vest':return viewVest();case'histo':return viewHisto();
+    case'table':return viewTable();case'market':return viewMarket();case'fin':return viewFin();case'settings':return viewSettings();case'youth':return viewYouth();case'staff':return viewStaff();case'cups':return viewCups();case'mail':return viewMail();case'help':return viewHelp();case'career':return viewCareer();case'vest':return viewVest();case'fac':return viewFac();case'histo':return viewHisto();
     default:return G.phase==='offseason'?viewOffseason():viewHome();
   }
 }

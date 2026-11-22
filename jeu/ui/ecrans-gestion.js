@@ -137,3 +137,10 @@ function loansHTML(){
   ${UI.loanMsg?`<p class="warn">${UI.loanMsg}</p>`:''}
   <table><tr><th>Nom</th><th>Poste</th><th class="hm">Âge</th><th class="n">Note</th>${potTh()}<th class="hm">Club</th><th class="n hm">Salaire</th><th></th></tr>${av.map(({p,c})=>`<tr><td>${plink(p)}</td><td>${posLS(p)}</td><td class="hm">${p.age}</td>${noteCell(p,c)}${potTd(p)}<td class="hm">${clubLink(c.id,c.short)}</td><td class="n hm">${k(p.sal)}</td><td><button class="btn sm" data-a="loanAsk" data-id="${p.id}">Demander</button></td></tr>`).join('')}</table>`;
 }
+
+// Installations du club (Club › Installations)
+function viewFac(){
+  const m=ME(),F=facOf(m);
+  return `<div class="card"><h2>Installations de ${m.name}</h2><p class="mut">Trois chantiers à faire évoluer sur plusieurs saisons. Niveau 2 = standard. Moitié du prix à la commande, moitié à la livraison, au début de la saison prochaine. Trésorerie : <b>${fmtK(m.budget)}</b>.</p>${UI.facMsg?`<p class="ko">${UI.facMsg}</p>`:''}</div>
+  ${Object.keys(FAC).map(k=>{const lv=F[k],pr=F.pr.find(x=>x.k===k),cost=FACCOST[lv+1];return `<div class="card"><h3>${FAC[k].ic} ${FAC[k].n} · niveau ${lv}/5</h3><p>${'■'.repeat(lv)}${'□'.repeat(5-lv)} — effet actuel : ${FAC[k].eff(lv)}.</p>${pr?`<p class="warn">🚧 Travaux en cours : niveau ${pr.to}, livraison ${G.season+1===pr.s?'au début de la saison prochaine':'bientôt'} (solde ${fmtK(pr.rest)}).</p>`:lv>=5?'<p class="ok">Niveau maximum.</p>':`<button class="btn sm" data-a="facBuy" data-k="${k}">Passer au niveau ${lv+1} · ${fmtK(cost)}</button> <span class="mut">(${FAC[k].eff(lv+1)})</span>`}</div>`}).join('')}`;
+}
