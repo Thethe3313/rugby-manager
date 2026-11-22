@@ -145,7 +145,7 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 - [ ] **22. Notes** : revérifier les autres espoirs (centres de formation réputés d'abord), puis les pros à la note incertaine qui jouent souvent.
 - [ ] **23. Application** : vraie appli Android et iOS ; comptes et sauvegardes en ligne.
 - [ ] **24. Idée du joueur : notation inspirée de la fantasy Opta** (le jeu de Poney Club, Aymeric Milan et P’tit Buro, où les joueurs sont notés d’après des statistiques Opta). À étudier avec lui : quelles statistiques (essais, plaquages, mètres, turnovers…), comment les convertir en note, et comment les relier à la note sur 99 par poste. À présenter en aperçu avant toute intégration.
-- [ ] **25. JIFF réels** : le site allrugby.com (dossier JIFF Top 14) donne les joueurs JIFF ; s’en servir pour remplacer le statut JIFF estimé (`p.jiff`, `engine/jiff.js`) par le vrai statut des joueurs de Top 14 et Pro D2. À faire juste après l’étape 13 (demande du joueur).
+- [x] **25. JIFF réels** : le site allrugby.com (dossier JIFF Top 14) donne les joueurs JIFF ; s’en servir pour remplacer le statut JIFF estimé (`p.jiff`, `engine/jiff.js`) par le vrai statut des joueurs de Top 14 et Pro D2. À faire juste après l’étape 13 (demande du joueur). *(fait : le statut par joueur est réservé aux abonnés d’allrugby, donc estimé ; chaque club est calé sur ses vrais chiffres 2026-27 (moyenne, contrats pro, JIFF), promus Vannes/Narbonne/Nice, limite de non-JIFF `jiffCapNon`.)*
 
 ## 🔁 En continu
 

@@ -24,7 +24,7 @@ function migrateSave(){
   applyRealStaff();
   applyNoteFixes();
   // Bleuets 2025-26 (novembre 2026) : potentiel relevé une fois pour les parties déjà commencées
-  if(!G.jiffv)jiffInit();
+  if((G.jiffv||0)<3)jiffInit();
   if(!G.u20fix){G.u20fix=1;for(const c of G.clubs)for(const p of c.squad.concat(c.youth||[])){if(!p.real||p.age>22)continue;const bl=bleuet(p.name);if(!bl)continue;p.u20=bl;p.pot=Math.max(p.pot,Math.round(ovr(p))+(p.youth?18:10),bl>1?79:76)}}
   // postes secondaires (lot 3) : ajoutés aux anciennes parties ; les postes connus remplacent les estimations
   for(const c of G.clubs.concat(G.ext||[]))for(const p of c.squad.concat(c.youth||[]))if(!p.pos2||(p.p2e&&POS2[p.name]))setPos2(p);

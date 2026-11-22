@@ -91,7 +91,7 @@ function jiffCard(){
   const m=ME(),R_=jiffRule(m);if(!R_)return '';
   const S=jiffMine(),avg=S.n?S.s/S.n:null,c=avg==null?'mut':avg>=R_.prime?'ok':avg>=R_.min?'warn':'ko',pen=jiffPenOf(m.id),non=jiffNon(m);
   const proj=avg==null?'':avg>=R_.min?(avg>=17?` Prime actuelle : <b>${fmtK(jiffPrize(avg))}</b>.`:''):` <span class="ko">Sanction actuelle : retrait de <b>${jiffPenalty(avg,R_.min)} points</b> la saison prochaine.</span>`;
-  return `<p>🎓 <b>JIFF</b> ${hp('jiff')} : <span class="${c}"><b>${avg==null?'—':avg.toFixed(2)}</b> en moyenne sur la feuille de match</span> (${S.n} match${S.n>1?'s':''}) · minimum <b>${R_.min}</b>${R_.promo?' (promu)':''} · prime à partir de <b>17</b> (220 à 320 k€).${proj} Non-JIFF dans l'effectif : <b class="${non>=JIFFMAXNON?'ko':non>=JIFFMAXNON-2?'warn':''}">${non}</b> / ${JIFFMAXNON} maximum.${pen?` <span class="ko">⚠ Retrait de ${pen} points en cours cette saison (quota JIFF non respecté la saison dernière).</span>`:''} Pastille <span class="jf">J</span> = joueur formé ; statut estimé.</p>`;
+  return `<p>🎓 <b>JIFF</b> ${hp('jiff')} : <span class="${c}"><b>${avg==null?'—':avg.toFixed(2)}</b> en moyenne sur la feuille de match</span> (${S.n} match${S.n>1?'s':''}) · minimum <b>${R_.min}</b>${R_.promo?' (promu)':''} · prime à partir de <b>17</b> (220 à 320 k€).${proj} Non-JIFF dans l'effectif : <b class="${non>=jiffCapNon(m)?'ko':non>=jiffCapNon(m)-2?'warn':''}">${non}</b> / ${jiffCapNon(m)} maximum.${pen?` <span class="ko">⚠ Retrait de ${pen} points en cours cette saison (quota JIFF non respecté la saison dernière).</span>`:''} Pastille <span class="jf">J</span> = joueur formé ; statut estimé.</p>`;
 }
 
 // Retrait de points JIFF affiché à côté du club dans le classement

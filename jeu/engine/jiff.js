@@ -8,13 +8,18 @@
 // - à partir de 17 de moyenne : prime du fonds JIFF de 220 k€ + 500 € par centième de JIFF au-dessus de 17, plafonnée à 320 k€ (atteinte à 19).
 // Le jeu ne connaît pas le parcours de chaque joueur : « p.jiff » est une estimation (voir jiffInit), calée sur les moyennes réelles de 2025-26 de chaque club,
 // puis tenue à jour : un espoir devient JIFF après 3 saisons au centre de formation (youthSeasonEnd), un joueur étranger recruté adulte ne l'est jamais.
-const JIFFAVG={tou:20.46,pau:19.37,ubb:18.81,lar:18.30,cle:17.50,bay:17.35,lou:17.35,per:17.22,sfp:17.21,cas:17,tln:16.69,mon:16.57,mtb:16,rac:16,
-  bia:19.40,col:18.90,soy:18.43,aur:18.33,nev:18.2,gre:17.83,dax:17.80,vro:17.74,bez:17.33,mdm:17.13,age:17.03,oyo:17,pro:16.71,van:16.63,car:16.63,bri:16.26};
-const JIFFMAXNON=13; // joueurs non-JIFF maximum dans l'effectif
+// Données réelles 2026-27 (allrugby.com, dossiers JIFF Top 14 et Pro D2, consultés en novembre 2026) : [moyenne JIFF sur la feuille de match, contrats pro, dont JIFF].
+// Le statut JIFF de chaque joueur est réservé aux abonnés d'allrugby : le jeu ne l'a pas joueur par joueur, il l'estime pour que chaque club retombe sur ces chiffres.
+const JIFFDATA={bay:[18,37,27],ubb:[19.89,33,23],cas:[17.33,36,25],cle:[18.67,35,27],lar:[18.22,40,26],lou:[18.22,41,28],mon:[16.11,37,24],sfp:[18.22,41,31],pau:[19.67,41,32],per:[18.11,41,28],rac:[16.78,34,23],tln:[16.44,35,23],tou:[19.89,35,29],van:[13.56,49,32],
+  age:[17.09,31,23],pro:[16.27,37,26],aur:[18.09,40,32],bez:[17.45,37,29],bia:[17.36,41,31],bri:[18,35,25],col:[18.73,39,31],dax:[18.45,32,24],gre:[17.18,38,27],mtb:[16.73,40,27],nar:[15.18,46,33],nev:[20.18,40,35],nic:[17.55,44,30],oyo:[17,40,26],soy:[19.18,40,33],vro:[19.64,35,29]};
+const JIFFMAXNON=13; // joueurs non-JIFF maximum dans l'effectif (promu : 15, promu qui se maintient : 14)
+// Limite réellement appliquée : la règle, ou le nombre de non-JIFF de départ si le club en comptait déjà plus (la LNR ne compte pas tous les contrats)
+const jiffCapNon=c=>Math.max(jiffMaxNon(c),c.nonBase||0);
+const jiffMaxNon=c=>{const R_=jiffRule(c);return R_?{std:13,p1:15,p2:14}[R_.kind]:JIFFMAXNON};
 // Règle applicable à un club (null : pas de quota hors Top 14 et Pro D2)
 function jiffRule(c){
   if(!c||(c.lg!=='t14'&&c.lg!=='pd2'))return null;
-  const py=c.lg==='t14'&&c.promoSeason!=null?G.season-c.promoSeason:-1,kind=py===0?'p1':py===1?'p2':'std';
+  const py=c.promoSeason!=null?G.season-c.promoSeason:-1,kind=py===0?'p1':py===1?'p2':'std';
   return{kind,min:{std:16,p1:13,p2:14.5}[kind],prime:17,promo:kind!=='std'};
 }
 // Prime du fonds JIFF (k€) : 220 + 0,5 par centième de JIFF entre 17 et 19, plafond 320
@@ -31,11 +36,12 @@ function jiffOf(p){
 }
 // Cale les drapeaux d'un club sur sa moyenne réelle 2025-26 : les Français d'abord, puis les jeunes étrangers formés en France
 function jiffCalibrate(c){
-  const r=(JIFFAVG[c.id]||17)/23,n=c.squad.length,K=Math.max(Math.round(r*n),n-JIFFMAXNON);
+  const d=JIFFDATA[c.id]||[17,40,30],n=c.squad.length,K=Math.round(d[2]/d[1]*n);
   const sc=p=>(p.nat==='France'?1:0)+(p.age<=26?.15:0)+hashN('jf'+p.name)*.35;
   [...c.squad].sort((a,b)=>sc(b)-sc(a)).forEach((p,i)=>{p.jiff=i<K?1:0});
   // ajustement : la feuille de match (les 23 meilleurs) doit afficher la moyenne réelle du club ; on échange des statuts avec les réservistes
-  const lu=autoLineup(c),inLu=new Set(lu.filter(Boolean)),T=Math.round(JIFFAVG[c.id]||17);
+  c.nonBase=0;
+  const lu=autoLineup(c),inLu=new Set(lu.filter(Boolean)),T=Math.round(d[0]);
   for(let g=0;g<30;g++){
     const cnt=lu.filter(id=>{const p=c.squad.find(x=>x.id===id);return p&&p.jiff}).length;if(cnt===T)break;
     const up=cnt<T,A=c.squad.filter(p=>inLu.has(p.id)&&(up?!p.jiff:p.jiff)),B=c.squad.filter(p=>!inLu.has(p.id)&&(up?p.jiff:!p.jiff));
@@ -43,12 +49,12 @@ function jiffCalibrate(c){
     const a=A.sort((x,y)=>up?sc(y)-sc(x):sc(x)-sc(y))[0];a.jiff=up?1:0;
     if(B.length){const b=B.sort((x,y)=>up?sc(x)-sc(y):sc(y)-sc(x))[0];b.jiff=up?0:1}
   }
+  c.nonBase=c.squad.filter(p=>!p.jiff).length;
 }
-function jiffInit(){
-  for(const c of G.clubs)jiffCalibrate(c);
-  G.jiffv=2;G.jiffT=G.jiffT||{};
-  // 2026-27 : Vannes (promu de Pro D2) en 1re saison de Top 14
-  const v=C('van');if(v&&v.lg==='t14'&&G.season===1)v.promoSeason=1;
+function jiffInit(recal){
+  if(recal!==false&&G.season<=1)for(const c of G.clubs)jiffCalibrate(c);
+  G.jiffv=3;G.jiffT=G.jiffT||{};
+  if(G.season===1)for(const id of ['van','nar','nic']){const c=C(id);if(c&&(c.lg==='t14'||c.lg==='pd2'))c.promoSeason=1}
 }
 // Nombre de JIFF sur une feuille de match (23 postes)
 function jiffCount(c,lineup){return(lineup||c.lineup||[]).slice(0,23).reduce((n,id)=>{const p=c.squad.find(x=>x.id===id);return n+(p&&jiffOf(p)?1:0)},0)}
@@ -97,7 +103,7 @@ function jiffSeasonEnd(){
     }else if(pen)addNews(`⚖ Quota JIFF : ${c.short} (${avg.toFixed(2)} de moyenne) écope d'un retrait de ${pen} points la saison prochaine.`);
   }
   // clubs promus en Top 14 : 1re saison (quota 13), puis 2e saison (14,5)
-  if(G.moves&&G.moves.up)for(const id of G.moves.up){const c=C(id);if(c)c.promoSeason=G.season+1}
+  if(G.moves)for(const id of [...(G.moves.up||[]),...(G.moves.natUp||[])]){const c=C(id);if(c)c.promoSeason=G.season+1}
 }
 // Retrait de points en cours (affiché dans le classement)
 const jiffPenOf=id=>{const p=(G.jiffPen||{})[id];return p&&p.s===G.season?p.pts:0};

@@ -27,7 +27,7 @@ function evalOffer(p,from,fee,sal,yrs,pre,joker){
   if(p.loan)return{msg:'Ce joueur est en prêt : il ne peut pas être transféré avant la fin de la saison.'};
   if(!yrs||yrs<1||yrs>5)return{msg:'Durée de contrat : entre 1 et 5 ans.'};
   if(m.squad.length>=50&&!pre)return{msg:'Effectif complet (50 joueurs maximum).'};
-  if(!joker&&jiffRule(m)&&!jiffOf(p)&&jiffNon(m)>=JIFFMAXNON)return{msg:`Quota JIFF : ton effectif compte déjà ${jiffNon(m)} joueurs non-JIFF, le maximum autorisé en Top 14 et en Pro D2 est de ${JIFFMAXNON}. Libère-en un ou recrute un joueur formé en France.`};
+  if(!joker&&jiffRule(m)&&!jiffOf(p)&&jiffNon(m)>=jiffCapNon(m))return{msg:`Quota JIFF : ton effectif compte déjà ${jiffNon(m)} joueurs non-JIFF, le maximum autorisé est de ${jiffCapNon(m)} (13 en général, 14 pour un promu qui se maintient, 15 pour un promu). Libère-en un ou recrute un joueur formé en France.`};
   if(!pre&&mass(m)+sal>capOf(m))return{msg:`Plafond salarial dépassé : il te reste ${fmtK(Math.max(0,capOf(m)-mass(m)))} de marge.`};
   if(from&&!pre){
     if(!windowOpen())return{msg:'La fenêtre de transferts est fermée (ouverte à l\'intersaison et de la 10e à la 13e journée). Seuls les joueurs libres et les pré-contrats sont possibles.'};
