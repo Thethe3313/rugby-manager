@@ -13,7 +13,9 @@ const ACT={
   renewStaff(d){const s=ME().staff[d.r];if(!s)return;s.ctr+=2;s.sal=Math.round(s.sal*1.05/5)*5;addNews(`✍ ${s.name} prolonge de 2 ans (${fmtK(s.sal)}/an).`);save();render()},
   importSave(d,el){importSave(el.files&&el.files[0]);el.value=''},
   save(){save(ok=>{addNews(ok?`Partie sauvegardée (emplacement ${G.slot}).`:'Sauvegarde impossible dans ce navigateur.');render()})},
-  tab(d){G.tab=d.t;UI.more=false;UI.mailView=false;(UI.fsub=UI.fsub||{})[famOf(d.t)]=d.t;render()},
+  // Navigation : `UI.hist` garde les derniers écrans visités (bouton ← Retour du fil d'Ariane)
+  tab(d){if(d.t!==G.tab){UI.hist=(UI.hist||[]).concat(G.tab).slice(-15)}G.tab=d.t;UI.more=false;UI.mailView=false;(UI.fsub=UI.fsub||{})[famOf(d.t)]=d.t;render()},
+  back(){const h=UI.hist||[];if(!h.length)return;G.tab=h.pop();UI.more=false;UI.mailView=false;(UI.fsub=UI.fsub||{})[famOf(G.tab)]=G.tab;render()},
   // famille du menu : on revient au dernier sous-onglet ouvert
   fam(d){const x=FAMS.find(y=>y[0]===d.f);if(!x)return;const t=(UI.fsub||{})[d.f];ACT.tab({t:t&&x[3].some(y=>y[0]===t)?t:x[3][0][0]})},
   more(){UI.more=!UI.more;render()},
@@ -23,7 +25,7 @@ const ACT={
   tutoReset(){G.tuto=0;G.tab=TUTO[0][0];render()},
   lgsel(d){UI.lg=d.lg;render()},
   lgsel2(d,el){UI.lg=el.value;render()},
-  club(d){UI.modal={type:'club'};UI.cid=d.id;UI.backClub=null;render()},
+  club(d){const m=UI.modal;UI.mstack=m&&m.type==='player'?(UI.mstack||[]).concat([{type:'player',id:UI.pid}]):[];UI.modal={type:'club'};UI.cid=d.id;render()},
   cupsel(d){UI.cup=d.k;render()},
   play(){ACT.toMatch()},
   cont(){const r=advance('day');save();UI.mtab='resume';if(r)UI.modal={type:'match'};else if(G.liveWait)UI.modal={type:'prematch'};render()},
@@ -55,7 +57,8 @@ const ACT={
     promoteYouth(m,p);addNews(`✍ ${p.name} signe son premier contrat pro (3 ans, ${fmtK(p.sal)}/an).`);UI.modal=null;save();render()},
   relYouth(d){const m=ME(),p=(m.youth||[]).find(x=>x.id===+d.id);if(!p)return;if(!confirm(`Libérer l'espoir ${p.name} ?`))return;m.youth=m.youth.filter(x=>x.id!==p.id);save();render()},
   mailAct(d){const x=(G.mail||[]).find(y=>y.id===+d.id);if(!x||!x.act)return;if(x.act.player){UI.modal={type:'player'};UI.pid=x.act.player}else{G.tab=x.act.tab;if(x.act.mt)UI.mt=x.act.mt}render()},
-  closeModal(){if(UI.backClub&&UI.modal&&UI.modal.type==='player'){UI.modal={type:'club'};UI.cid=UI.backClub;UI.backClub=null}else UI.modal=null;render()},
+  // Fermer : revient à la fenêtre précédente s'il y en a une (fiche → club → fiche…), sinon ferme
+  closeModal(){const st=UI.mstack||[],b=st.pop();if(b&&UI.modal&&(UI.modal.type==='player'||UI.modal.type==='club')){UI.modal={type:b.type};if(b.type==='player')UI.pid=b.id;else UI.cid=b.id}else{UI.modal=null;UI.mstack=[]}render()},
   autoXV(){const m=ME();m.autoXV=m.autoXV===false;if(m.autoXV)m.lineup=autoLineup(m);save();render()},
   luv(d){UI.luv=d.v;UI.luSel=null;render()},
   // composition sur terrain : 1er toucher = sélection, 2e = échange (place ↔ place, ou joueur de la réserve → place)
@@ -64,7 +67,7 @@ const ACT={
   auto(){const m=ME();m.lineup=autoLineup(m);save();render()},
   tac(d,el){const m=ME();if(d.k==='focus')m.focus=el.value;else m.tac[d.k]=el.value;save();render()},
   ef(d,el){UI.ef=el.value;render()},
-  player(d){if(UI.modal&&UI.modal.type==='club')UI.backClub=UI.cid;UI.modal={type:'player'};UI.pid=+d.id;render()},
+  player(d){const m=UI.modal;UI.mstack=m&&(m.type==='club'||m.type==='player')?(UI.mstack||[]).concat([{type:m.type,id:m.type==='club'?UI.cid:UI.pid}]).slice(-6):[];UI.modal={type:'player'};UI.pid=+d.id;render()},
   neg(d){UI.neg={pid:+d.id,mode:d.mode};UI.negMsg='';UI.modal={type:'neg'};render()},
   sendNeg(){
     const N=UI.neg,f=findPlayer(N.pid),p=f.p,m=ME();if(!p)return;

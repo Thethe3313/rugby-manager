@@ -98,3 +98,4 @@ Accueil (ui/ecrans.js) : carte « À faire aujourd'hui » `todoCard`/`todoList` 
 Continuer intelligent : `ACT.go` appelle `goBlockers()` (ui/ecrans.js) ; s'il y a des décisions en attente, fenêtre `ready` (`UI.ready`, `readyGo`, `readyFix`). Les messages gardent `imp:true` quand ils sont importants (ils arrêtent aussi l'avance, `G.stop`).
 Fiche joueur : option « Fiche simplifiée » (`G.settings.sheet`, `sheetSimple`, `attrSimple` dans ui/affichage.js, action `setSheet`) ; la fiche complète reste par défaut. Idée en attente (PLAN, étape 24) : notation inspirée de la fantasy Opta de Poney Club.
 Repères visuels : `progTxt` (flèches ▲▼), `potCell` (vert si marge ≥ 8 sur la note), ⏳ sur les contrats d'un an, `legendHTML` sous l'effectif.
+Navigation : fil d'Ariane `crumb` (ui/base.js), historique des écrans `UI.hist` + `ACT.back`, pile des fenêtres `UI.mstack` (`ACT.player`/`ACT.club`/`closeModal` : le bouton devient « ← Retour », `closeTxt`).

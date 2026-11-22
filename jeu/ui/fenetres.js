@@ -1,4 +1,6 @@
 // Interface : fenêtres (fiche joueur, négociation, résumé de match)
+// Bouton de fermeture : « ← Retour » quand on vient d'une autre fenêtre
+const closeTxt=x=>(UI.mstack||[]).length?'← Retour':x?'✕ Fermer':'Fermer';
 function playerModal(){
   const f=findPlayer(UI.pid),p=f.p;if(!p)return '';
   const own=f.club&&f.club.id===G.meId,c=f.club;
@@ -13,7 +15,7 @@ function playerModal(){
   ${sheetSimple()?attrSimple(p):attrTable(p)}
   ${p.ev?`<p class="mut">${p.ev}</p>`:''}<p>Cette saison : ${p.st.mj} match(s) dont ${p.st.tit||0} titularisation(s), ${p.st.es} essai(s), ${p.st.pts} points${p.st.nn?`, ${p.st.tac||0} plaquages, ${p.st.m||0} mètres gagnés · note moyenne <b class="${rc(p.st.nt/p.st.nn)}">${(p.st.nt/p.st.nn).toFixed(1)}</b>${p.st.motm?` · ${p.st.motm} fois homme du match ⭐`:''}`:''}.</p>
   ${!sheetSimple()&&(p.hist||[]).length?`<h3>Carrière</h3><table><tr><th>Saison</th><th>Club</th><th class="n">Note</th><th class="n">Matchs</th><th class="n">Essais</th></tr>${p.hist.map(h=>`<tr><td>${h.s}</td><td>${h.c}</td><td class="n">${h.o}</td><td class="n">${h.mj}</td><td class="n">${h.es}</td></tr>`).join('')}</table>`:''}
-  <p>${acts} <button class="btn sec sm" data-a="closeModal">Fermer</button> <button class="btn sec sm" data-a="setSheet" data-v="${sheetSimple()?'full':'simple'}">${sheetSimple()?'Fiche complète':'Fiche simplifiée'}</button></p></div></div>`;
+  <p>${acts} <button class="btn sec sm" data-a="closeModal">${closeTxt()}</button> <button class="btn sec sm" data-a="setSheet" data-v="${sheetSimple()?'full':'simple'}">${sheetSimple()?'Fiche complète':'Fiche simplifiée'}</button></p></div></div>`;
 }
 function negModal(){
   const N=UI.neg,f=findPlayer(N.pid),p=f.p,m=ME();if(!p)return '';
@@ -72,7 +74,7 @@ function clubModal(){
   const c=C(UI.cid);if(!c)return '';
   const kt=kits([c,c])[0],lgn=c.ext?lgName(c)+(CTY[c.cty]?', '+CTY[c.cty]:''):LEAGUES[c.lg]?LEAGUES[c.lg].name:'',rk=!c.ext&&G.L&&G.L[c.lg]?rankOf(c.id):0;
   const t=teamCalc({...c,lineup:autoLineup(c)}),sq=[...c.squad].sort((a,b)=>GORDER.indexOf(a.g)-GORDER.indexOf(b.g)||ovr(b)-ovr(a));
-  return `<div class="overlay"><div class="modal wide"><div class="row" style="justify-content:space-between"><h2 style="margin:0">${kitTag(c,kt)} ${c.name}</h2><button class="btn sec sm" data-a="closeModal">✕ Fermer</button></div>
+  return `<div class="overlay"><div class="modal wide"><div class="row" style="justify-content:space-between"><h2 style="margin:0">${kitTag(c,kt)} ${c.name}</h2><button class="btn sec sm" data-a="closeModal">${closeTxt(1)}</button></div>
   <p class="mut">${lgn}${rk?' · '+rk+'e'+(c.poule!=null&&G.L[c.lg]&&G.L[c.lg].poules>1?' de sa poule':''):''}${c.manager?' · manager : '+c.manager:''}${c.ext?'':' · budget '+k(c.bud)} · effectif ${c.squad.length} joueurs${(c.youth||[]).length?' · '+c.youth.length+' espoirs':''}</p>
   <div class="grid g2"><div><h3>Niveau de l'équipe</h3><table>${ratingRows(t)}</table></div>
   <div><h3>Meilleurs joueurs</h3>${sq.slice().sort((a,b)=>noteEst(b)-noteEst(a)).slice(0,5).map(p=>`<p>${plink(p)} · ${posL(p)} · <b class="${oc(noteEst(p))}">${noteTxt(p)}</b></p>`).join('')}</div></div>

@@ -50,7 +50,7 @@ function render(){
   const ph=stageLabel(m),f=famOf(G.tab);
   // Bandeau : sur téléphone, seules les pastilles sans classe « x » restent visibles (le bouton ⋯ affiche les autres)
   $app.innerHTML=`<div id="top" class="${UI.topOpen?'open':''}"><span class="logo">🏉<span class="lt"> Rugby Manager</span></span><span class="pill"><b>${m.name}</b></span><span class="pill">📅 <b>${fmtD(G.date)}<span class="lt"> ${G.date.slice(0,4)}</span></b></span><span class="pill x"><b>${LEAGUES[m.lg].name}</b> · ${seasonLabel()} · <b>${ph}</b></span><span class="sp"></span>${windowOpen()?'<span class="pill x" style="color:var(--acc)"><b>Mercato ouvert</b></span>':''}<span class="pill"><span class="lb">Trésorerie </span><span class="lm">💰 </span><b class="${m.budget<0?'ko':''}">${k(m.budget)}</b></span><span class="pill x" title="Masse salariale / plafond">Masse <b>${k(mass(m))}</b> / ${k(capOf(m))}</span><button class="btn sec sm tgl" data-a="topTgl" title="Plus d'informations">${UI.topOpen?'▲':'⋯'}</button>${musicBtn()}<button class="btn sec sm" data-a="save" title="Sauvegarder">💾<span class="lt"> Sauvegarder</span></button><button class="btn sec sm hmo" data-a="menu">Menu</button></div>
-  <div id="wrap"><div id="nav">${FAMS.map(x=>`<a class="${f===x[0]?'on':''}" data-a="fam" data-f="${x[0]}"><span class="fi">${x[1]}</span>${famLabel(x)}</a>`).join('')}</div><div id="main">${subBar(f)}${view()}</div></div>${UI.adv?advBar():''}${phoneBar(f)}${tutoHTML()}${UI.modal?modalView():''}`;
+  <div id="wrap"><div id="nav">${FAMS.map(x=>`<a class="${f===x[0]?'on':''}" data-a="fam" data-f="${x[0]}"><span class="fi">${x[1]}</span>${famLabel(x)}</a>`).join('')}</div><div id="main">${crumb(f)}${subBar(f)}${view()}</div></div>${UI.adv?advBar():''}${phoneBar(f)}${tutoHTML()}${UI.modal?modalView():''}`;
 }
 // Menu en 6 familles : chaque famille regroupe des écrans (sous-onglets). G.tab garde le nom de l'écran.
 const FAMS=[
@@ -62,6 +62,12 @@ const FAMS=[
   ['mail','✉️','Messagerie',[['mail','Messagerie']]]];
 const famOf=t=>(FAMS.find(x=>x[3].some(y=>y[0]===t))||FAMS[0])[0];
 const famLabel=x=>x[0]==='mail'&&unread()?`${x[2]} <span class="badge">${unread()}</span>`:x[2];
+// Fil d'Ariane : où l'on est, et retour à l'écran précédent
+function crumb(f){
+  const x=FAMS.find(y=>y[0]===f),t=x&&x[3].find(y=>y[0]===G.tab),h=UI.hist||[];
+  if(!x||(f==='home'&&!h.length))return '';
+  return `<div id="crumb">${h.length?'<a class="cb" data-a="back" title="Revenir à l’écran précédent">← Retour</a>':''}<span>${x[2]}${t&&x[3].length>1?` › <b>${t[1]}</b>`:''}</span></div>`;
+}
 // Sous-onglets de la famille en cours (rien pour une famille d'un seul écran)
 function subBar(f){
   const x=FAMS.find(y=>y[0]===f);

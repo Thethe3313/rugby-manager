@@ -20,6 +20,8 @@ const SCREENS={
   suivis:"G.follow=[C('tou').squad[0].id,C('lar').squad[3].id,C('bay').squad[6].id];G.tab='market';UI.mt='follow'",
   fatigue:"for(let i=0;i<8;i++)advance('match',{noLive:true});G.tab='lineup'",
   fertesimple:"G.settings={sheet:'simple'};G.tab='squad';UI.modal={type:'player'};UI.pid=(ME().squad.find(p=>p.name==='Mathis Ferté')||ME().squad[0]).id",
+  navig:"G.tab='squad';ACT.tab({t:'cal'});ACT.tab({t:'table'})",
+  navfiche:"G.tab='table';ACT.club({id:'tou'});ACT.player({id:C('tou').squad[0].id})",
   ferte:"G.tab='squad';UI.modal={type:'player'};UI.pid=(ME().squad.find(p=>p.name==='Mathis Ferté')||ME().squad[0]).id",
   terrainsel:"G.tab='lineup';UI.luSel='s10'",
   clubpage:"G.tab='table';UI.modal={type:'club'};UI.cid='tou'",
