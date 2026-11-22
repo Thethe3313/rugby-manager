@@ -32,6 +32,8 @@ const SCREENS={
   simple:"G.settings={level:'simple'};G.tab='squad'",
   simplemarche:"G.settings={level:'simple'};G.tab='market'",
   entrainement:"ME().train={int:'hard'};ME().focus='conquete';G.tab='train'",
+  rapportadv:"for(const r of ['av','tq']){if(ME().staff[r])ME().staff[r].q=16}G.tab='home';UI.repOpen=true",
+  rapportadvbas:"for(const r of ['av','tq']){if(ME().staff[r])ME().staff[r].q=7}G.tab='home';UI.repOpen=true",
   ferte:"G.tab='squad';UI.modal={type:'player'};UI.pid=(ME().squad.find(p=>p.name==='Mathis Ferté')||ME().squad[0]).id",
   terrainsel:"G.tab='lineup';UI.luSel='s10'",
   clubpage:"G.tab='table';UI.modal={type:'club'};UI.cid='tou'",

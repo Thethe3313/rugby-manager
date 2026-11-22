@@ -129,7 +129,7 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 
 ### Partie 2 : nouvelles idées de jeu (le fond)
 - [x] **10. Semaine d'entraînement** : accent de la semaine (physique, contact, conquête, jeu à la main, récupération), progression contre fatigue et blessures, préparation d'un adversaire précis. *(fait : sous-onglet Équipe › Entraînement `ui/entrainement.js` : axe (`c.focus` existant), intensité `TRAINI`/`trainK`, préparation de l’adversaire `G.prepOpp` (+1,5 % de moral, progression -20 %). Club du joueur seulement : calibrage inchangé.)*
-- [ ] **11. Rapport sur l'adversaire** : ses points forts et faiblesses avant chaque match (analyste), pour choisir ses consignes.
+- [x] **11. Rapport sur l'adversaire** : ses points forts et faiblesses avant chaque match (analyste), pour choisir ses consignes. *(fait : bouton « rapport sur l’adversaire » sur l’Accueil, `oppReport` dans `ui/rapport.js`, détail selon le staff (moyenne avants + trois-quarts) ; s’ajoute au message de l’analyste vidéo.)*
 - [ ] **12. JIFF** : règle réelle des joueurs formés en France (minimum sur les feuilles de match en Top 14 et Pro D2, sanctions), affichée dans la composition et le mercato.
 - [ ] **13. Joker médical** : remplaçant temporaire d'un blessé longue durée, hors période de transferts.
 - [ ] **14. Retour de blessure** : le médecin donne le risque de rechute, tu décides de faire jouer ou non.

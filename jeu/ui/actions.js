@@ -119,6 +119,7 @@ const ACT={
   musicTgl(){Music.toggle()},musicNext(){Music.next()},musicPlay(d){Music.play(+d.i)},musicDel(d){Music.remove(d.id)},
   musicVol(d,el){Music.setVol(+el.value/100)},musicShuf(d,el){Music.shuffle=!!el.checked;Music.prefs();render()},
   landTgl(d,el){try{localStorage.setItem('rugbyManager_land',el.checked?'1':'0')}catch(e){}if(el.checked)tryLandscape();else{try{screen.orientation.unlock()}catch(e){}}render()},
+  repTgl(){UI.repOpen=!UI.repOpen;render()},
   oppTgl(){UI.oppOpen=!UI.oppOpen;render()},
   sellNeg(d){UI.oi=+d.i;UI.negMsg='';UI.modal={type:'sellneg'};render()},
   sellCounter(){const o=(G.offers||[])[UI.oi];if(!o)return;const e=document.getElementById('sn-ask'),v=e?+e.value:0;if(!v)return;const r=counterOffer(o,v);
