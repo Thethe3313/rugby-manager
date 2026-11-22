@@ -140,3 +140,19 @@ function facSeasonEnd(){
     mail('Le président',`✅ ${FAC[x.k].n} niveau ${x.to} livré`,`Les travaux sont terminés. ${FAC[x.k].n} niveau ${x.to} : ${FAC[x.k].eff(x.to)}. Solde payé : ${fmtK(x.rest)}.`);
   }
 }
+
+// ---- Étape 20 : les anciens joueurs se reconvertissent dans le staff ----
+// Un joueur de bon niveau (65 ou plus) qui prend sa retraite arrive sur le marché du staff, dans le poste qui lui correspond : avants (pilier, talonneur, deuxième ligne, troisième ligne)
+// → entraîneur des avants ; bon buteur → entraîneur des buteurs ; autres → entraîneur des trois-quarts. Sa qualité vient de sa note et de son professionnalisme.
+// Un ancien joueur de ton club est signalé par un message et accepte ton offre un peu moins cher (attachement au club).
+function retiredToStaff(p,c){
+  if(ovr(p)<65)return;
+  const role=['PIL','TAL','2L','3L'].includes(p.g)?'av':(p.but||0)>=15?'but':'tq';
+  const q=clamp(Math.round(4.5+ovr(p)/99*10+(p.pro||10)/20*3.5),5,19);
+  const mine=c===ME();
+  const s={id:G.nid++,name:p.name,role,q,age:p.age,sal:staffSal(q,'t14'),ctr:0,ask:mine?.8:.9,ex:{c:c.short,o:Math.round(ovr(p)),caps:p.caps||0,me:mine}};
+  if(!p.real)s.f=true;
+  G.staffPool=G.staffPool||[];G.staffPool.push(s);
+  if(G.staffPool.length>70)G.staffPool.sort((a,b)=>b.q-a.q).length=70;
+  if(mine&&q>=9)mail('Directeur sportif',`🏉 ${p.name} raccroche : un futur entraîneur ?`,`${p.name} (${posL(p)}, ${Math.round(ovr(p))}) met fin à sa carrière après ses années au club. Il est disponible comme <b>${STAFF_ROLES[role].n.toLowerCase()}</b> (qualité ${q}/20) et connaît la maison : il accepte ton offre un peu moins cher. Regarde dans l’onglet Staff.`,{act:{tab:'staff'}});
+}

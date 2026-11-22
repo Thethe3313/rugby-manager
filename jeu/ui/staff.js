@@ -8,7 +8,7 @@ function staffEffect(r,q){
   return `potentiel des autres joueurs estimé à ±${Math.max(1,Math.round((14-q*.6)/2))}`;
 }
 // Nom du membre du staff : vrai nom avec sa fonction réelle, ou nom fictif
-const sName=s=>`${s.name}${s.f?' <span class="mut" title="Pas de source trouvée pour ce poste : nom inventé par le jeu">(fictif)</span>':''}${s.t?`<br><span class="mut" style="font-size:12px">${s.t}${s.sure?'':' (fonction supposée)'}</span>`:''}`;
+const sName=s=>`${s.name}${s.f?' <span class="mut" title="Pas de source trouvée pour ce poste : nom inventé par le jeu">(fictif)</span>':''}${s.ex?`<br><span class="mut" style="font-size:12px">🏉 Ancien joueur (${s.ex.c}, ${s.ex.o}${s.ex.caps?', '+s.ex.caps+' sél.':''})${s.ex.me?' · connaît ton club':''}</span>`:''}${s.t?`<br><span class="mut" style="font-size:12px">${s.t}${s.sure?'':' (fonction supposée)'}</span>`:''}`;
 const sAge=s=>s.age||'<span class="mut" title="Âge non renseigné">—</span>';
 const qCell=q=>`<td class="n ${ac(q)}"><b>${q}</b>/20</td>`;
 // Cases de délégation (onglet Staff et Réglages)

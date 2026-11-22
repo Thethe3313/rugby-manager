@@ -43,6 +43,7 @@ const SCREENS={
   gazette:"gazette(ME().lg);G.tab='mail';UI.mid=G.mail[0].id",
   trophees:"for(const c of G.clubs)for(const p of c.squad){p.st.mj=10;p.st.nn=10;p.st.nt=10*(3+ovr(p)/22);p.st.es=Math.round(ovr(p)/25)}awardsSeasonEnd();G.tab='histo'",
   install:"ME().budget=4000;facBuy('ent');G.tab='fac'",
+  exjoueur:"for(const p of ME().squad.filter(p=>['PIL','TAL','2L','3L'].includes(p.g)).sort((a,b)=>ovr(b)-ovr(a)).slice(0,2))retiredToStaff(p,ME());G.staffPool=G.staffPool.filter(s=>!s.ex||s.ex.me||1);G.tab='staff';UI.srole='av';UI.modal={type:'staff'}",
   jokerfiche:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.inj=130;G.tab='squad';UI.modal={type:'player'};UI.pid=p.id",
   jokermodal:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.inj=130;G.tab='squad';UI.modal={type:'joker'};UI.jid=p.id",
   ferte:"G.tab='squad';UI.modal={type:'player'};UI.pid=(ME().squad.find(p=>p.name==='Mathis Ferté')||ME().squad[0]).id",

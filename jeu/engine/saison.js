@@ -147,7 +147,7 @@ function nextSeason(){
       if(p.loan){keep.push(p);continue} // joueur prêté : son contrat est géré par son club, à son retour
       if(p.fresh){delete p.fresh;keep.push(p);continue}
       p.ctr--;
-      if(p.age>=37||(p.ctr<=0&&(p.age>=36||(p.age>=34&&R.f()<.45)))){if(c===m||ovr(p)>=78)addNews(`👋 ${p.name} (${c.short}) prend sa retraite.`);continue}
+      if(p.age>=37||(p.ctr<=0&&(p.age>=36||(p.age>=34&&R.f()<.45)))){if(c===m||ovr(p)>=78)addNews(`👋 ${p.name} (${c.short}) prend sa retraite.`);retiredToStaff(p,c);continue}
       if(p.ctr<=0){
         if(c===m){addNews(`${p.name} (${posL(p)}) quitte le club libre, en fin de contrat.`);p.faT=0;p.sal=salaryFor(ovr(p),p.age,'pd2');G.fa.push(p);continue}
         if(R.f()<clamp(.65+(ovr(p)-70)/60,.5,.93)){p.ctr=R.i(1,3);p.sal=Math.max(8,salaryFor(ovr(p),p.age,c.lg))}
