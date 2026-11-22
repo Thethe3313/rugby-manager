@@ -2,7 +2,7 @@
 // ==== MESSAGERIE ====
 function mail(from,subj,body,opt){
   opt=opt||{};G.mail=G.mail||[];
-  G.mail.unshift({id:G.nid++,d:G.date,from,subj,body,read:false,act:opt.act||null,imp:!!opt.imp});
+  G.mail.unshift({id:G.nid++,d:G.date,from,subj,body,read:false,act:opt.act||null,imp:!!opt.imp,ch:opt.ch||null});
   if(G.mail.length>200)G.mail.length=200;
   if(opt.imp&&!(G.settings&&G.settings.stop==='matchs'))G.stop=true;
 }

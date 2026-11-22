@@ -46,6 +46,7 @@ function dayStep(){
       const reg=L.phase==='regular';
       if(lg===m.lg&&reg){const R_=G.L[m.lg].fixtures.length,inc=Math.round(m.bud*.72/R_),w=Math.round(wageMass(m)/R_),fx=Math.round(m.fixed/R_),sf=Math.round(staffMass(m)/R_);m.budget+=inc-w-fx-sf;G.fin.sponsor+=inc;G.fin.wages+=w;G.fin.opex+=fx;G.fin.staff=(G.fin.staff||0)+sf}
       const r=stepLeague(lg);
+      if(lg===m.lg&&reg&&(lg==='t14'||lg==='pd2'))gazette(lg);
       if(r&&lg===m.lg){mine=r;coachAfterMatch(r);
         if(r.h===m.id&&!r.ko){const R_=G.L[m.lg].fixtures.length,n=clubsIn(m.lg).length,rk=rankOf(m.id)||n/2,attF=(.85+.3*(1-(rk-1)/(n-1)))*(G.coach?.85+.3*G.coach.fans/100:1);const rev=Math.round(m.bud*.28/(R_/2)*attF*(derbyOf(m.id,r.a)?1.12:1));m.budget+=rev;G.fin.ticket+=rev;r.att=Math.round(({t14:14000,pd2:5000,nat:2500,n2:900,f1:600,f2:400,f3:250,r1:180,r2:130,r3:100}[m.lg]||900)*attF*(derbyOf(m.id,r.a)?1.15:1)*(.9+R.f()*.2))}}
     }
@@ -55,7 +56,7 @@ function dayStep(){
     if(lgs().every(lg=>G.L[lg].phase==='done'))prepareAccess();
   }
   if(mine){
-    if(mine.h===m.id||mine.a===m.id)recordMatch(mine);
+    if(mine.h===m.id||mine.a===m.id){recordMatch(mine);presseAfter(mine)}
     const home=mine.h===m.id,o=C(home?mine.a:mine.h),my=home?mine.sh:mine.sa,op=home?mine.sa:mine.sh;
     addNews(`${mine.cup?mine.cup+" : ":""}${mine.winner===m.id?'Victoire':my===op?'Match nul':'Défaite'} ${my}-${op} ${home?'contre':'à'} ${o.short}.`);
     G.lastMatch=mine;
@@ -69,7 +70,7 @@ function dayStep(){
   const wAfter=windowOpen();
   if(G.phase==='season'&&wBefore!==wAfter)mail('Directeur sportif',wAfter?`Ouverture du mercato ${wAfter==='hiver'?'d\'hiver':'d\'été'}`:'Fermeture du mercato',wAfter?'La fenêtre de transferts est ouverte. Tu peux acheter, vendre et recevoir des offres.':'La fenêtre de transferts est fermée. Restent possibles : les joueurs libres (jokers) et les pré-contrats.',{act:{tab:'market'}});
   if(G.phase==='season'||G.phase==='access'){
-    const nx=myNextMatch();if(nx&&dDiff(G.date,nx.d)===1)scoutReport(nx);
+    const nx=myNextMatch();if(nx&&dDiff(G.date,nx.d)===1){scoutReport(nx);presseDay(nx)}
     if(dDow(G.date)===1){fitnessReport();weeklyBehaviour();weeklyMorale();loanWeekly()}
     if(G.date.endsWith('-01'))monthlyMails();
     if(G.date.endsWith('-01-02')){const fl=(G.follow||[]).map(id=>findPlayer(id)).filter(f=>f.p&&f.club&&f.club.id!==m.id&&f.p.ctr<=1);if(fl.length)mail('Recruteur','Joueurs suivis en fin de contrat',`Ces joueurs que tu suis sont en dernière année de contrat : tu peux leur proposer un pré-contrat (ils arriveraient libres la saison prochaine).<br>${fl.map(f=>`${f.p.name} (${f.club.short}, ${Math.round(ovr(f.p))})`).join('<br>')}`,{act:{tab:'market',mt:'follow'},imp:true})}

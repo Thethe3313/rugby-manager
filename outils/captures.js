@@ -39,6 +39,8 @@ const SCREENS={
   fragilesquad:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.ret={d:12,m:3.2};p.inj=0;G.tab='squad'",
   fragilelineup:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.ret={d:12,m:3.2};p.inj=0;G.tab='lineup'",
   derby:"const nm=myNextMatch();const o=nm.f.h===G.meId?nm.f.a:nm.f.h;DERBYS.push([G.meId,o,'Derby du Sud-Ouest']);G.tab='home'",
+  presse:"mail('Presse','🎤 Conférence de presse avant Castres','Demain : <b>Derby du Sud-Ouest</b> contre Castres. Les journalistes t’attendent : « Coach, comment abordez-vous ce match ? » Choisis ta réponse.',{ch:{type:'pre',opts:PRESSE_PRE},imp:true});G.tab='mail';UI.mid=G.mail[0].id",
+  gazette:"gazette(ME().lg);G.tab='mail';UI.mid=G.mail[0].id",
   jokerfiche:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.inj=130;G.tab='squad';UI.modal={type:'player'};UI.pid=p.id",
   jokermodal:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.inj=130;G.tab='squad';UI.modal={type:'joker'};UI.jid=p.id",
   ferte:"G.tab='squad';UI.modal={type:'player'};UI.pid=(ME().squad.find(p=>p.name==='Mathis Ferté')||ME().squad[0]).id",

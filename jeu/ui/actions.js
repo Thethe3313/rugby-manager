@@ -57,6 +57,7 @@ const ACT={
     const s=Math.max(15,salaryFor(ovr(p),p.age,m.lg));if(mass(m)+s>capOf(m)){addNews('Plafond salarial dépassé : impossible de signer ce contrat pro.');return render()}
     promoteYouth(m,p);addNews(`✍ ${p.name} signe son premier contrat pro (3 ans, ${fmtK(p.sal)}/an).`);UI.modal=null;save();render()},
   relYouth(d){const m=ME(),p=(m.youth||[]).find(x=>x.id===+d.id);if(!p)return;if(!confirm(`Libérer l'espoir ${p.name} ?`))return;m.youth=m.youth.filter(x=>x.id!==p.id);save();render()},
+  mailCh(d){presseAnswer(+d.id,d.k);save();render()},
   mailAct(d){const x=(G.mail||[]).find(y=>y.id===+d.id);if(!x||!x.act)return;if(x.act.player){UI.modal={type:'player'};UI.pid=x.act.player}else{G.tab=x.act.tab;if(x.act.mt)UI.mt=x.act.mt}render()},
   // Fermer : revient à la fenêtre précédente s'il y en a une (fiche → club → fiche…), sinon ferme
   closeModal(){const st=UI.mstack||[],b=st.pop();if(b&&UI.modal&&(UI.modal.type==='player'||UI.modal.type==='club')){UI.modal={type:b.type};if(b.type==='player')UI.pid=b.id;else UI.cid=b.id}else{UI.modal=null;UI.mstack=[]}render()},

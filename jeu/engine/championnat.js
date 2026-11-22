@@ -31,7 +31,7 @@ function stageLabel(m){
   if(L.phase==='playoffs')return poName(m.lg,L.po.stage);
   return 'Saison terminée';
 }
-const slimR=r=>({h:r.h,a:r.a,sh:r.sh,sa:r.sa,th:r.th,ta:r.ta,bo:r.bo,winner:r.winner});
+const slimR=r=>({h:r.h,a:r.a,sh:r.sh,sa:r.sa,th:r.th,ta:r.ta,bo:r.bo,yc:r.yc,winner:r.winner});
 // light : les matchs qui ne concernent pas le club du joueur sont simulés d'après le niveau des équipes (Nationale 2, pour aller plus vite)
 function playFixtures(fx,ko,light){
   const out=[];
