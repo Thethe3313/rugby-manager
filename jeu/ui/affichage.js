@@ -7,10 +7,12 @@ function potEst(p){const f=findPlayer(p.id);if(f.club&&f.club.id===G.meId)return
 const noteTxt=(p,club)=>{const[a,b]=noteRange(p,club);return a===b?String(a):a+'-'+b};
 const noteCell=(p,club)=>{const r=noteRange(p,club),e=(r[0]+r[1])/2;return `<td class="n ${oc(e)}" title="${r[0]===r[1]?'Note':'Note estimée par ton recruteur'}"><b>${r[0]===r[1]?r[0]:r[0]+'-'+r[1]}</b></td>`};
 function starsTxt(v){const s=clamp(Math.round((v-45)/10*2)/2,.5,5);return '★'.repeat(Math.floor(s))+(s%1?'½':'')}
-function potCell(p){const v=potEst(p),own=(findPlayer(p.id).club||{}).id===G.meId;return potMode()==='exact'?`<td class="n mut">${own?'':'≈'}${v}</td>`:`<td class="mut" title="Potentiel estimé">${starsTxt(v)}</td>`}
+function potCell(p){const v=potEst(p),own=(findPlayer(p.id).club||{}).id===G.meId;const gap=v-Math.round(ovr(p));return potMode()==='exact'?`<td class="n ${gap>=8?'ok':'mut'}" title="${gap>=8?'Grosse marge de progression ('+gap+' points)':'Potentiel'}">${own?'':'≈'}${v}</td>`:`<td class="mut" title="Potentiel estimé">${starsTxt(v)}</td>`}
 const potTh=()=>potMode()==='hide'?'':'<th>Pot.</th>';
 const potTd=p=>potMode()==='hide'?'':potCell(p);
-function progTxt(p){const d=Math.round(ovr(p))-(p.o0||Math.round(ovr(p)));return d>0?`<span class="ok">+${d}</span>`:d<0?`<span class="ko">${d}</span>`:'<span class="mut">=</span>'}
+function progTxt(p){const d=Math.round(ovr(p))-(p.o0||Math.round(ovr(p)));return d>0?`<span class="ok" title="En progression depuis le début de saison">▲ +${d}</span>`:d<0?`<span class="ko" title="En baisse depuis le début de saison">▼ ${d}</span>`:'<span class="mut" title="Stable">=</span>'}
+// Légende des couleurs, affichée sous les listes de joueurs
+const legendHTML=()=>'<p class="mut" style="font-size:12px"><span class="o1">■</span> très bon · <span class="o2">■</span> bon · <span class="o3">■</span> moyen · <span class="o4">■</span> faible &nbsp;|&nbsp; <span class="ok">▲</span> progresse · <span class="ko">▼</span> baisse &nbsp;|&nbsp; <span class="warn">⏳</span> contrat qui se termine</p>';
 // Nom de club cliquable (page du club) ; les clubs « légers » (divisions simulées) n'ont pas de page
 const clubLink=(id,label)=>C(id)?`<a class="clink" data-a="club" data-id="${id}">${label}</a>`:label;
 const plink=p=>`<a style="cursor:pointer;color:var(--blue)" data-a="player" data-id="${p.id}">${p.name}</a>`;
