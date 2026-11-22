@@ -24,6 +24,8 @@ const SCREENS={
   navfiche:"G.tab='table';ACT.club({id:'tou'});ACT.player({id:C('tou').squad[0].id})",
   demarches:"const c=C('bay'),b=c.squad[2];sendBid(b,c,10,wageDemand(b,ME(),'move'),2);observe(C('tou').squad[1]);G.follow=[C('lar').squad[3].id];G.tab='market';UI.mt='mine'",
   mercato:"G.tab='market'",
+  aide:"G.tab='table';ACT.hlp({k:'bonus'})",
+  aidesquad:"G.tab='squad';ACT.hlp({k:'pot'})",
   ferte:"G.tab='squad';UI.modal={type:'player'};UI.pid=(ME().squad.find(p=>p.name==='Mathis Ferté')||ME().squad[0]).id",
   terrainsel:"G.tab='lineup';UI.luSel='s10'",
   clubpage:"G.tab='table';UI.modal={type:'club'};UI.cid='tou'",

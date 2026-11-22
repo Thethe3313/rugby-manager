@@ -35,3 +35,22 @@ function attrTable(p){
   const av=(k)=>kn>=2?null:[Math.max(1,Math.floor(p[k]-1)),Math.min(20,Math.ceil(p[k]+1))]; // connaissance 1 : fourchette de 2 points
   return `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px">${['T','M','P'].map(g=>`<div><h3 style="margin:4px 0">${AGRP[g]}</h3><table>${ATTRS.filter(a=>a[2]===g).map(([k,l])=>`<tr><td>${(W[p.g][k]||0)>=.1?'<b>'+l+'</b>':l}</td><td class="n ${ac(p[k])}"><b>${av(k)?av(k).join('-'):Math.round(p[k])}</b></td></tr>`).join('')}</table></div>`).join('')}</div><p class="mut">Attributs sur 20. En gras : les plus importants pour son poste. Ils forment sa note sur 99.</p>`;
 }
+
+// Bulles d'aide : « ? » cliquable (toucher sur téléphone) qui explique un terme ; le texte s'affiche en bas de l'écran
+const GLOSS={
+  note:['Note','Niveau global du joueur sur 99, calculé selon son poste à partir de ses 17 attributs. Repères : 85 et plus = international titulaire, 72-77 = bon titulaire de Top 14.'],
+  pot:['Potentiel','La note maximale que le joueur peut atteindre. Pour tes joueurs il est exact ; pour les autres, tes recruteurs l’estiment (« ≈ »). En vert : grosse marge de progression.'],
+  prog:['Progression','Écart de note depuis le début de la saison. ▲ en hausse, ▼ en baisse.'],
+  forme:['Forme','Fraîcheur physique du joueur. Elle baisse avec les matchs et remonte au repos. Sous 75 %, le risque de blessure augmente.'],
+  ctr:['Contrat','Nombre d’années restantes. ⏳ = dernière année : prolonge-le, sinon il part libre (ou signe un pré-contrat ailleurs).'],
+  bonus:['Points de bonus','Bonus offensif : marquer au moins 3 essais de plus que l’adversaire (+1 point). Bonus défensif : perdre de 5 points ou moins (+1 point).'],
+  pp:['PP / PC','Points pour (marqués) et points contre (encaissés) depuis le début de la saison.'],
+  diff:['Différence','Points marqués moins points encaissés. Elle départage les équipes à égalité de points.'],
+  pts:['Points','Victoire 4, nul 2, défaite 0, plus les points de bonus.'],
+  cap:['Salary cap','Plafond de masse salariale : le total des salaires de tes joueurs ne doit pas le dépasser. En Top 14, 11 M€ plus un crédit pour les internationaux.'],
+  masse:['Masse salariale','Somme des salaires annuels de tes joueurs. Elle doit rester sous le plafond.'],
+  pre:['Pré-contrat','Accord signé en cours de saison avec un joueur dont le contrat finit : il te rejoint gratuitement à la saison suivante.'],
+  loan:['Prêt','Un joueur est confié à un autre club jusqu’à la fin de la saison, pour jouer. Un joueur prêté ne peut être ni vendu ni prolongé.'],
+  pers:['Personnalité','Professionnalisme (sérieux à l’entraînement), ambition (envie de grands clubs) et détermination. Ils influencent sa progression et ses demandes.']};
+const hp=k=>GLOSS[k]?`<span class="hlp" data-a="hlp" data-k="${k}" title="${GLOSS[k][1].replace(/"/g,'&quot;')}">?</span>`:'';
+function helpBubble(){const g=UI.hlp&&GLOSS[UI.hlp];return g?`<div id="hbub"><b>${g[0]}</b><p>${g[1]}</p><button class="btn sm" data-a="hlp" data-k="${UI.hlp}">Compris</button></div>`:''}

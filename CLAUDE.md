@@ -100,3 +100,4 @@ Fiche joueur : option « Fiche simplifiée » (`G.settings.sheet`, `sheetSimple`
 Repères visuels : `progTxt` (flèches ▲▼), `potCell` (vert si marge ≥ 8 sur la note), ⏳ sur les contrats d'un an, `legendHTML` sous l'effectif.
 Navigation : fil d'Ariane `crumb` (ui/base.js), historique des écrans `UI.hist` + `ACT.back`, pile des fenêtres `UI.mstack` (`ACT.player`/`ACT.club`/`closeModal` : le bouton devient « ← Retour », `closeTxt`).
 Recrutement : sous-onglets du Mercato `MTABS`/`mtBar` (ui/ecrans-gestion.js, `UI.mt` : search, scout, follow, mine, offers, loans, log ; l'ancien `pre` est redirigé vers `mine`), onglet « Mes démarches » `viewMine`.
+Bulles d'aide : glossaire `GLOSS` + `hp(clé)` (ui/affichage.js), action `ACT.hlp`, bulle `helpBubble` ; pour expliquer un nouveau terme, ajouter une entrée au glossaire et appeler `hp('clé')` à côté du libellé.

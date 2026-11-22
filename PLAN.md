@@ -124,7 +124,7 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 - [x] **5. Couleurs et repères partout** : vert / orange / rouge pour la forme, le moral, la fatigue, le budget ; flèches de progression. *(fait : flèches ▲▼ de progression `progTxt`, potentiel en vert si marge ≥ 8, sablier ⏳ sur les contrats finissants, légende `legendHTML` sous l’effectif. À étendre plus tard au mercato et à la composition.)*
 - [x] **6. Navigation** : fil d'Ariane (Recrutement › Toulouse › joueur), retour en un geste, fenêtres qui ne s'empilent plus. *(fait : fil d’Ariane `crumb`, bouton ← Retour `UI.hist`/`ACT.back`, pile des fenêtres `UI.mstack` (fiche ↔ club).)*
 - [x] **7. Recrutement en un seul parcours** : chercher → observer → faire une offre → négocier → suivre la réponse, au même endroit. *(fait : sous-onglets Acheter / Vendre et prêter dans la barre du haut `MTABS`/`mtBar`, nouvel onglet « Mes démarches » `viewMine` ; la négociation reste dans la fiche joueur.)*
-- [ ] **8. Bulles d'aide** sur chaque terme de rugby et chaque chiffre.
+- [x] **8. Bulles d'aide** sur chaque terme de rugby et chaque chiffre. *(fait : glossaire `GLOSS`, `hp(clé)` place un « ? » ; bulle `helpBubble` ; à compléter (prêt, mêlée, touche…) quand les écrans concernés seront refaits.)*
 - [ ] **9. Options** : niveau de détail « Simple » / « Complet », ce qui interrompt le jeu (notifications), match en temps forts ou complet, thème clair / sombre, taille du texte, délégation par domaine plus visible.
 
 ### Partie 2 : nouvelles idées de jeu (le fond)

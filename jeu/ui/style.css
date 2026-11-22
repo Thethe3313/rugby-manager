@@ -185,3 +185,8 @@ th.sortable:hover{color:var(--txt)}
 #crumb b{color:var(--txt)}#crumb .cb{padding:3px 10px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--txt);cursor:pointer}
 #crumb .cb:hover{border-color:var(--acc)}
 #sub.mt{align-items:center}#sub .sg{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em;margin:0 2px 0 8px}#sub .sg:first-child{margin-left:0}
+.hlp{display:inline-block;width:15px;height:15px;line-height:15px;margin-left:4px;border-radius:50%;background:var(--panel2);border:1px solid var(--line);color:var(--mut);font-size:10px;font-weight:700;text-align:center;cursor:help;vertical-align:1px}
+.hlp:hover{border-color:var(--acc);color:var(--txt)}
+#hbub{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:30;width:min(440px,92vw);background:var(--panel);border:1px solid var(--acc);border-radius:12px;padding:12px 14px;box-shadow:0 6px 24px #0008}
+#hbub p{margin:4px 0 8px;font-size:14px}
+@media(max-width:700px){#hbub{bottom:150px}}

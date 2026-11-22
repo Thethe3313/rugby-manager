@@ -15,6 +15,7 @@ const ACT={
   save(){save(ok=>{addNews(ok?`Partie sauvegardée (emplacement ${G.slot}).`:'Sauvegarde impossible dans ce navigateur.');render()})},
   // Navigation : `UI.hist` garde les derniers écrans visités (bouton ← Retour du fil d'Ariane)
   tab(d){if(d.t!==G.tab){UI.hist=(UI.hist||[]).concat(G.tab).slice(-15)}G.tab=d.t;UI.more=false;UI.mailView=false;(UI.fsub=UI.fsub||{})[famOf(d.t)]=d.t;render()},
+  hlp(d){UI.hlp=UI.hlp===d.k?null:d.k;render()},
   back(){const h=UI.hist||[];if(!h.length)return;G.tab=h.pop();UI.more=false;UI.mailView=false;(UI.fsub=UI.fsub||{})[famOf(G.tab)]=G.tab;render()},
   // famille du menu : on revient au dernier sous-onglet ouvert
   fam(d){const x=FAMS.find(y=>y[0]===d.f);if(!x)return;const t=(UI.fsub||{})[d.f];ACT.tab({t:t&&x[3].some(y=>y[0]===t)?t:x[3][0][0]})},
