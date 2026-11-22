@@ -51,6 +51,7 @@ const GLOSS={
   masse:['Masse salariale','Somme des salaires annuels de tes joueurs. Elle doit rester sous le plafond.'],
   pre:['Pré-contrat','Accord signé en cours de saison avec un joueur dont le contrat finit : il te rejoint gratuitement à la saison suivante.'],
   loan:['Prêt','Un joueur est confié à un autre club jusqu’à la fin de la saison, pour jouer. Un joueur prêté ne peut être ni vendu ni prolongé.'],
+  jiff:['JIFF','Joueur Issu des Filières de Formation : au moins 3 saisons en centre de formation agréé, ou 5 saisons de licence FFR avant 22 ans (peu importe la nationalité). En Top 14 et Pro D2, un club doit aligner en moyenne 16 JIFF sur sa feuille de match de 23 joueurs (13 pour un promu la 1re saison, 14,5 la 2e), sinon il perd de 6 à 12 points la saison suivante. À partir de 17 de moyenne : prime de 220 à 320 k€. Il peut y avoir 13 joueurs non-JIFF au maximum dans l’effectif. Ici, le statut de chaque joueur est une estimation.'],
   pers:['Personnalité','Professionnalisme (sérieux à l’entraînement), ambition (envie de grands clubs) et détermination. Ils influencent sa progression et ses demandes.']};
 const hp=k=>GLOSS[k]?`<span class="hlp" data-a="hlp" data-k="${k}" title="${GLOSS[k][1].replace(/"/g,'&quot;')}">?</span>`:'';
 function helpBubble(){const g=UI.hlp&&GLOSS[UI.hlp];return g?`<div id="hbub"><b>${g[0]}</b><p>${g[1]}</p><button class="btn sm" data-a="hlp" data-k="${UI.hlp}">Compris</button></div>`:''}
@@ -76,3 +77,21 @@ function flowBlock(){
   const rad=(name,o,cur,list)=>list.map(([v,t,d])=>`<p><label style="cursor:pointer"><input type="radio" name="${name}" data-a="setOpt" data-o="${o}" data-v="${v}" ${cur===v?'checked':''}> <b>${t}</b>${d?` <span class="mut">— ${d}</span>`:''}</label></p>`).join('');
   return `<h3 style="margin-top:14px">Ce qui interrompt « Continuer »</h3>${rad('stop','stop',st,[['all','Matchs et messages importants','le jeu s’arrête dès qu’un message important arrive (offre, blessure grave…)'],['matchs','Seulement les matchs','tu ne reçois les messages que quand tu ouvres la messagerie']])}<h3 style="margin-top:14px">Vitesse du match en direct</h3>${rad('lspeed','liveSpeed',sp,Object.entries(LSPEED).map(([v,x])=>[v,x[1],v==='forts'?'saute les temps faibles, ralentit sur les essais et pénalités':'']))}`;
 }
+
+// Pastille JIFF à côté du nom (Top 14 et Pro D2 seulement)
+const jiffTag=p=>{const m=G&&ME();return m&&jiffRule(m)&&jiffOf(p)?' <span class="jf" title="Joueur issu des filières de formation (estimé)">J</span>':''};
+// Compteur JIFF de la composition (Composition) et carte de suivi de la saison (Effectif)
+function jiffChip(){
+  const m=ME(),R_=jiffRule(m);if(!R_)return '';
+  const n=jiffCount(m),c=n>=17?'ok':n>=R_.min?'warn':'ko';
+  return `<span class="${c}" title="JIFF sur la feuille de match de 23 joueurs : minimum ${R_.min} en moyenne, 17 pour la prime">${n} JIFF / ${R_.min} min. ${hp('jiff')}</span>`;
+}
+function jiffCard(){
+  const m=ME(),R_=jiffRule(m);if(!R_)return '';
+  const S=jiffMine(),avg=S.n?S.s/S.n:null,c=avg==null?'mut':avg>=R_.prime?'ok':avg>=R_.min?'warn':'ko',pen=jiffPenOf(m.id),non=jiffNon(m);
+  const proj=avg==null?'':avg>=R_.min?(avg>=17?` Prime actuelle : <b>${fmtK(jiffPrize(avg))}</b>.`:''):` <span class="ko">Sanction actuelle : retrait de <b>${jiffPenalty(avg,R_.min)} points</b> la saison prochaine.</span>`;
+  return `<p>🎓 <b>JIFF</b> ${hp('jiff')} : <span class="${c}"><b>${avg==null?'—':avg.toFixed(2)}</b> en moyenne sur la feuille de match</span> (${S.n} match${S.n>1?'s':''}) · minimum <b>${R_.min}</b>${R_.promo?' (promu)':''} · prime à partir de <b>17</b> (220 à 320 k€).${proj} Non-JIFF dans l'effectif : <b class="${non>=JIFFMAXNON?'ko':non>=JIFFMAXNON-2?'warn':''}">${non}</b> / ${JIFFMAXNON} maximum.${pen?` <span class="ko">⚠ Retrait de ${pen} points en cours cette saison (quota JIFF non respecté la saison dernière).</span>`:''} Pastille <span class="jf">J</span> = joueur formé ; statut estimé.</p>`;
+}
+
+// Retrait de points JIFF affiché à côté du club dans le classement
+const jiffPenTag=id=>{const p=jiffPenOf(id);return p?` <span class="ko" title="Retrait de points pour non-respect du quota JIFF la saison dernière">(−${p})</span>`:''};

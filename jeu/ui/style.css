@@ -196,3 +196,4 @@ th.sortable:hover{color:var(--txt)}
 :root[data-theme="light"] .o1{color:#14924a}:root[data-theme="light"] .o2{color:#5d8c0e}:root[data-theme="light"] .o3{color:#a9780a}:root[data-theme="light"] .o4{color:#c2561a}
 :root[data-theme="light"] .overlay{background:#0006}
 :root[data-size="large"] body{font-size:16px}:root[data-size="xl"] body{font-size:18px}
+.jf{display:inline-block;margin-left:5px;padding:0 4px;border-radius:4px;background:var(--panel2);border:1px solid var(--line);color:var(--acc);font-size:10px;font-weight:700;vertical-align:1px}

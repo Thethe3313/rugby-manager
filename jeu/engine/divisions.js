@@ -303,7 +303,7 @@ function realRegionales(){
 // Championnat (structure commune Top 14, Pro D2, Nationale, Nationale 2, et poule du joueur plus bas)
 function buildLeague(lg){
   const ids=clubsIn(lg).map(c=>c.id),table={};
-  ids.forEach(id=>table[id]={id,j:0,g:0,n:0,p:0,pf:0,pa:0,bo:0,pts:0});
+  ids.forEach(id=>table[id]={id,j:0,g:0,n:0,p:0,pf:0,pa:0,bo:0,pts:-(lg==='t14'||lg==='pd2'?jiffPenOf(id):0)});
   const fx=mkPouleFixtures(lg,ids);
   return{lg,week:0,phase:'regular',fixtures:fx.fixtures,poules:fx.poules,results:[],table,po:null,...buildSchedule(lg,fx.fixtures.length)};
 }

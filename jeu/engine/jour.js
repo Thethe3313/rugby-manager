@@ -76,7 +76,7 @@ function dayStep(){
   return mine;
 }
 // Composition d'avant-match : celle du joueur s'il la gère lui-même, sinon la meilleure possible
-function setMatchLineup(c){if(c.id===G.meId&&c.autoXV===false)fixLineup(c);else c.lineup=autoLineup(c)}
+function setMatchLineup(c){if(c.id===G.meId&&c.autoXV===false)fixLineup(c);else{c.lineup=autoLineup(c);jiffFix(c)}}
 // Le match du joueur a lieu demain ? (on s'arrête la veille pour proposer le match en direct)
 function liveDue(){
   if(G.settings&&G.settings.live==='off')return null;

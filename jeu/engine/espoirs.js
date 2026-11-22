@@ -74,6 +74,8 @@ function youthSeasonEnd(c){
   const m=ME(),keep=[];
   for(const p of c.youth||[]){
     p.age++;
+    // 3 saisons dans un centre de formation agréé (Top 14 / Pro D2) : le jeune devient JIFF
+    if(c.lg==='t14'||c.lg==='pd2'){p.cf=(p.cf||0)+1;if(p.cf>=3&&p.age<=22)p.jiff=1}
     if(p.age>=21){
       if(c===m){addNews(`${p.name} (espoir, 21 ans) quitte le centre de formation faute de contrat pro.`);if(ovr(p)>=48){p.youth=false;p.ctr=0;p.faT=0;p.sal=salaryFor(ovr(p),p.age,'pd2');G.fa.push(p)}continue}
       const pos=c.squad.filter(x=>x.g===p.g).sort((a,b)=>ovr(a)-ovr(b));

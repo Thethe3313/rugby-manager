@@ -57,6 +57,7 @@ function mkClub(c,lg){
 }
 // Après un match : statistiques de la saison, fatigue selon le temps de jeu, blessures survenues pendant le match
 function afterMatch(club,r,side){
+  jiffTrack(club);
   const cost={basse:14,normale:20,haute:28}[club.tac.int]||20;
   club.mp=(club.mp||0)+1;
   for(const x of r.ps||[]){

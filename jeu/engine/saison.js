@@ -24,6 +24,7 @@ function migrateSave(){
   applyRealStaff();
   applyNoteFixes();
   // Bleuets 2025-26 (novembre 2026) : potentiel relevé une fois pour les parties déjà commencées
+  if(!G.jiffv)jiffInit();
   if(!G.u20fix){G.u20fix=1;for(const c of G.clubs)for(const p of c.squad.concat(c.youth||[])){if(!p.real||p.age>22)continue;const bl=bleuet(p.name);if(!bl)continue;p.u20=bl;p.pot=Math.max(p.pot,Math.round(ovr(p))+(p.youth?18:10),bl>1?79:76)}}
   // postes secondaires (lot 3) : ajoutés aux anciennes parties ; les postes connus remplacent les estimations
   for(const c of G.clubs.concat(G.ext||[]))for(const p of c.squad.concat(c.youth||[]))if(!p.pos2||(p.p2e&&POS2[p.name]))setPos2(p);
@@ -53,6 +54,7 @@ function newGame(meId){
   const m=ME();
   m.budget=Math.round(m.bud*.05);
   initCoach();
+  jiffInit();
   startSeason();
   addNews(`Bienvenue à la tête de ${m.name} (${LEAGUES[m.lg].name}) ! Ton président t'a fixé ses objectifs dans la messagerie.`);
 }
@@ -106,6 +108,7 @@ function finishSeason(){
   G.phase='offseason';
   // verdict du président (objectifs pondérés), prestige, offres ou licenciement
   recordSeason(rank,fate);
+  jiffSeasonEnd();
   const V=G.summary.verdict=seasonVerdict(rank,sortedTable(lg).length);
   const vtx=V?`<br><br>Mon verdict : sportif ${V.sp>=0?'✅':'❌'}, finances ${V.fi>=0?'✅':'❌'} (${fmtK(Math.round(V.ft))}), formation ${V.fo>=0?'✅':'❌'} (${Math.round(V.ys*100)} % de titularisations pour les moins de 24 ans). ${G.phase==='sacked'?'<b>Je mets fin à ton contrat.</b>':V.tot>.3?'Excellente saison.':V.tot>-.1?'Saison correcte.':'Saison décevante : la confiance est entamée.'}`:'';
   const tgt=G.obj?G.obj.t:99;mail('Le président',`Bilan de la saison ${seasonLabel()}`,`Nous terminons ${rank}e de ${LEAGUES[lg].name}. ${rank<=tgt?'Objectif atteint, bravo.':'L\'objectif ('+(G.obj?G.obj.l:'')+') n\'est pas atteint.'}${vtx} ${fate==='promu'?`Et nous montons en ${LEAGUES[to].name} !`:fate==='relégué'?`Nous descendons en ${LEAGUES[to].name} : il faudra repartir de l'avant.`:fate==='horsjeu'?'Nous descendons en Nationale 3.':''}`);
