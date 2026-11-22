@@ -153,6 +153,8 @@ const ACT={
   startLg(d){UI.startLg=d.v;render()},
   flt(d,el){UI[d.k]=el.value;render()},
   // réglage simple : data-o = clé, data-v = valeur
+  trainInt(d){const m=ME();m.train=m.train||{};m.train.int=d.v;save();render()},
+  prepOpp(d,el){const nm=myNextMatch(),nx=nm&&nm.f;if(!nx)return;const m=ME(),o=nx.h===m.id?nx.a:nx.h;G.prepOpp=el.checked?o:null;if(!G.prepOpp)delete G.prepOpp;save();render()},
   setOpt(d){G.settings=G.settings||{};G.settings[d.o]=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   setLook(d){G.settings=G.settings||{};G.settings.theme=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},
   setSize(d){G.settings=G.settings||{};G.settings.size=d.v;try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(G.settings))}catch(err){}save();render()},

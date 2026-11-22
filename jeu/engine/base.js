@@ -68,6 +68,9 @@ const STY={
 };
 const INTS={basse:'Basse (économise les joueurs)',normale:'Normale',haute:'Haute (+performance, +fatigue/blessures)'};
 const FOCUS={equilibre:'Équilibré',physique:'Physique (vitesse, puissance, endurance)',technique:'Technique (plaquage, passe, prise de balle, évitement)',conquete:'Conquête (mêlée, touche, jeu au sol)',pied:'Jeu au pied et buteur',mental:'Mental (placement, décisions, sang-froid)'};
+// Entraînement de la semaine (club du joueur) : intensité (progression ↔ récupération) et préparation de l'adversaire (G.prepOpp)
+const TRAINI={light:{n:'Légère',prog:.8,rec:1.2,d:'les joueurs récupèrent mieux, ils progressent un peu moins vite'},normal:{n:'Normale',prog:1,rec:1,d:'l’équilibre habituel'},hard:{n:'Intense',prog:1.25,rec:.85,d:'ils progressent plus vite, mais récupèrent moins bien : plus de fatigue, donc plus de blessures'}};
+function trainK(c){const t=TRAINI[(c.train&&c.train.int)||'normal'];return{prog:t.prog*(G.prepOpp?.8:1),rec:t.rec}}
 const FOCUSK={equilibre:ATTRS.map(a=>a[0]),physique:['vit','pui','end'],technique:['tac','pas','mai','evi'],conquete:['mel','tou','rck'],pied:['pie','but'],mental:['pla','dec','sfr']};
 const FIRST=['Antoine','Romain','Thomas','Julien','Baptiste','Maxime','Louis','Hugo','Paul','Mathieu','Clément','Nicolas','Pierre','Théo','Jules','Rémi','Florian','Damien','Kévin','Yoann','Cyril','Anthony','Lucas','Dylan','Étienne','Gaëtan','Sébastien','Alexis','Valentin','Guillaume','Jonathan','Arthur','Bastien','Mickaël','Tom','Enzo','Jason','Loïc','Dorian','Axel'];
 const LAST=['Martin','Bernard','Dubois','Moreau','Laurent','Lefebvre','Garcia','Roux','Fournier','Mercier','Blanc','Guérin','Faure','Rousseau','Vidal','Lambert','Fontaine','Chevalier','Masson','Brun','Barbier','Arnaud','Giraud','Perrin','Carré','Navarro','Lacroix','Castex','Darricau','Etcheverry','Larrieu','Sallaberry','Pouchan','Lassalle','Camou','Dufau','Bordenave','Castagnet','Duhau','Lahitte'];

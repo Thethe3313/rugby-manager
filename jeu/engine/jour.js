@@ -8,7 +8,7 @@ function dailyUpdate(){
   for(const c of G.clubs.concat(G.ext||[])){
     const ks=FOCUSK[c.focus],lgK=c.lg==='t14'||c.ext?1:c.lg==='pd2'?.85:.7;
     // staff : récupération (préparateur physique), retours de blessure plus rapides (médecin au-dessus de 10/20)
-    const rec=recoverK(c),medFast=(staffQ(c,'med')-10)/40,detK=new Set(['pla','dec','sfr','lea','eng']);
+    const tr=c.id===G.meId?trainK(c):{prog:1,rec:1},rec=recoverK(c)*tr.rec,medFast=(staffQ(c,'med')-10)/40,detK=new Set(['pla','dec','sfr','lea','eng']);
     for(const p of c.squad){
       if(p.inj>0&&!p.ni){p.inj--;if(p.inj>0&&R.f()<medFast)p.inj--}
       p.ni=false;
@@ -18,7 +18,7 @@ function dailyUpdate(){
       const o=ovr(p),gap=(p.pot||o)-o;if(gap<=0)continue;
       const base=p.age<=20?.010:p.age<=23?.007:p.age<=26?.004:p.age<=29?.002:0;if(!base)continue;
       const play=.35+.9*(c.mp?playShare(p,c):.5),pro=.6+(p.pro||10)/20*.8;
-      const da=base*gap*play*pro*lgK*(R.f()*.6+.7)*19/79;
+      const da=base*gap*play*pro*lgK*(R.f()*.6+.7)*19/79*tr.prog;
       // chaque attribut progresse selon l'entraîneur concerné ; le mental aussi selon la détermination
       for(const key in W[p.g])p[key]=Math.min(20,p[key]+da*coachK(c,p,key)*(detK.has(key)?.9+(p.det||10)/100:1));
       if(c.focus!=='equilibre')for(const key of ks)p[key]=Math.min(20,p[key]+da*.3);

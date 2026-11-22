@@ -56,7 +56,7 @@ function render(){
 // Menu en 6 familles : chaque famille regroupe des écrans (sous-onglets). G.tab garde le nom de l'écran.
 const FAMS=[
   ['home','🏠','Accueil',[['home','Accueil']]],
-  ['team','👥','Équipe',[['squad','Effectif'],['lineup','Composition'],['vest','Vestiaire'],['youth','Espoirs'],['staff','Staff']]],
+  ['team','👥','Équipe',[['squad','Effectif'],['lineup','Composition'],['train','Entraînement'],['vest','Vestiaire'],['youth','Espoirs'],['staff','Staff']]],
   ['games','🏆','Matchs',[['cal','Calendrier'],['table','Classement'],['cups','Europe']]],
   ['recru','💱','Recrutement',[['market','Mercato']]],
   ['club','🏛️','Club',[['fin','Finances'],['career','Carrière'],['histo','Histoire'],['settings','Réglages'],['help','Rugby 101']]],
@@ -101,7 +101,7 @@ function tutoHTML(){
 function advBar(){return `<div id="advbar"><span class="spin">⏩</span> Les jours passent… <b>${fmtD(G.date,true)}</b>${UI.adv.until?' → '+fmtD(UI.adv.until,true):''} <button class="btn sec sm" data-a="go">■ Stop</button></div>`}
 function view(){
   switch(G.tab){
-    case'squad':return viewSquad();case'lineup':return viewLineup();case'cal':return viewCal();
+    case'squad':return viewSquad();case'train':return viewTrain();case'lineup':return viewLineup();case'cal':return viewCal();
     case'table':return viewTable();case'market':return viewMarket();case'fin':return viewFin();case'settings':return viewSettings();case'youth':return viewYouth();case'staff':return viewStaff();case'cups':return viewCups();case'mail':return viewMail();case'help':return viewHelp();case'career':return viewCareer();case'vest':return viewVest();case'histo':return viewHisto();
     default:return G.phase==='offseason'?viewOffseason():viewHome();
   }
