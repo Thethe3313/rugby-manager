@@ -5,7 +5,7 @@ function playerModal(){
   const f=findPlayer(UI.pid),p=f.p;if(!p)return '';
   const own=f.club&&f.club.id===G.meId,c=f.club;
   const potTxt=potMode()==='hide'?'':` · potentiel ${potMode()==='exact'?(own?'':'≈')+potEst(p):starsTxt(potEst(p))}`;
-  const acts=own&&p.loan?`<span class="mut">🔁 En prêt de ${C(p.loan.from)?C(p.loan.from).short:'?'} jusqu'à la fin de la saison.</span>`:own&&p.youth?`<button class="btn sm" data-a="promote" data-id="${p.id}">Promouvoir en équipe pro</button>`:own?`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="renew">Négocier son contrat</button> <button class="btn sec sm" data-a="listP" data-id="${p.id}">${p.list?'Retirer de la liste des transferts':'Placer sur la liste des transferts'}</button> <button class="btn bad sm" data-a="release" data-id="${p.id}">Libérer</button> <button class="btn sec sm" data-a="loanPick" data-id="${p.id}">🔁 Prêter</button> <button class="btn sec sm" data-a="loanList" data-id="${p.id}">${p.loanList?'Retirer de la liste des prêts':'Mettre sur la liste des prêts'}</button>`
+  const acts=own&&p.loan?`<span class="mut">🔁 En prêt de ${C(p.loan.from)?C(p.loan.from).short:'?'} jusqu'à la fin de la saison.</span>`:own&&p.youth?`<button class="btn sm" data-a="promote" data-id="${p.id}">Promouvoir en équipe pro</button>`:own?`<button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="renew">Négocier son contrat</button> <button class="btn sec sm" data-a="listP" data-id="${p.id}">${p.list?'Retirer de la liste des transferts':'Placer sur la liste des transferts'}</button> ${jokerOK(p)?`<button class="btn sm" data-a="jokerOpen" data-id="${p.id}">🩹 Joker médical</button> `:''}<button class="btn bad sm" data-a="release" data-id="${p.id}">Libérer</button> <button class="btn sec sm" data-a="loanPick" data-id="${p.id}">🔁 Prêter</button> <button class="btn sec sm" data-a="loanList" data-id="${p.id}">${p.loanList?'Retirer de la liste des prêts':'Mettre sur la liste des prêts'}</button>`
     :c?`${followBtn(p,true)} ${obsBtn(p)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="buy">Faire une offre</button>${p.ctr<=1&&G.phase==='season'?` <button class="btn sec sm" data-a="neg" data-id="${p.id}" data-mode="pre">Pré-contrat</button>`:''}`
     :(G.pros||[]).some(x=>x.id===p.id)?`<button class="btn sm" data-a="signPro" data-id="${p.id}">Faire entrer au centre de formation</button>`
     :`${followBtn(p,true)} ${obsBtn(p)} <button class="btn sm" data-a="neg" data-id="${p.id}" data-mode="fa">Faire signer</button>`;
@@ -58,6 +58,7 @@ function modalView(){
     <p><button class="btn" data-a="closeModal">Continuer</button></p></div></div>`;
   }
   if(m.type==='prematch')return viewPrematch();
+  if(m.type==='joker')return jokerModal();
   if(m.type==='ready')return `<div class="overlay"><div class="modal"><h2>Avant de continuer</h2><p class="mut">Ces points attendent ta décision :</p>${(UI.ready||[]).map((x,i)=>`<a class="todo ${x[4]>1?'urg':''}" data-a="readyFix" data-i="${i}"><span>${x[0]}</span><span>${x[1]}</span><span class="mut">›</span></a>`).join('')}<div class="row" style="margin-top:14px"><button class="btn sec" data-a="readyGo">Continuer quand même ▶</button><button class="btn sec" data-a="closeModal">Annuler</button></div></div></div>`;
   if(m.type==='live')return viewLive();
   if(m.type==='staff')return staffModal();
@@ -104,4 +105,14 @@ function sellNegModal(){
   <button class="btn" data-a="sellCounter">Faire une contre-proposition</button></div>
   <p class="mut">Chaque club a un prix maximum et une patience limitée : une demande raisonnable se négocie, une demande excessive peut le faire partir.</p>
   <p><button class="btn" data-a="acceptOffer" data-i="${UI.oi}">Accepter ${k(o.fee)}</button> <button class="btn bad sm" data-a="refuseOffer" data-i="${UI.oi}">Refuser</button> <button class="btn sec" data-a="closeModal">Fermer</button></p></div></div>`;
+}
+
+// Joker médical : choix d'un joueur libre du même poste pour remplacer un blessé de longue durée
+function jokerModal(){
+  const m=ME(),inj=m.squad.find(p=>p.id===UI.jid);if(!inj)return '';
+  const L=jokerCandidates(inj);
+  return `<div class="overlay"><div class="modal wide"><div class="row" style="justify-content:space-between"><h2 style="margin:0">🩹 Joker médical pour ${inj.name} ${hp('joker')}</h2><button class="btn sec sm" data-a="closeModal">✕ Fermer</button></div>
+  <p class="mut">${inj.name} (${posL(inj)}) est absent ${injDur(inj.inj)}. Un joker doit être un joueur libre du même poste, son salaire doit tenir dans le salary cap (${k(Math.max(0,capOf(m)-mass(m)))} de marge) et son contrat s'arrête au retour du blessé.</p>
+  ${UI.jmsg?`<p class="ko">${UI.jmsg}</p>`:''}
+  ${L.length?`<table><tr><th>Joueur</th><th>Âge</th><th class="n">Note</th><th class="n">Salaire</th><th></th></tr>${L.map(p=>`<tr><td>${plink(p)}</td><td>${p.age}</td><td class="n ${oc(ovr(p))}"><b>${noteTxt(p)}</b></td><td class="n">${k(jokerSalary(p))}/an</td><td><button class="btn sm" data-a="jokerSign" data-id="${p.id}">Signer</button></td></tr>`).join('')}</table>`:'<p class="mut">Aucun joueur libre à ce poste pour le moment.</p>'}</div></div>`;
 }

@@ -36,6 +36,8 @@ const SCREENS={
   rapportadvbas:"for(const r of ['av','tq']){if(ME().staff[r])ME().staff[r].q=7}G.tab='home';UI.repOpen=true",
   jiffsquad:"G.tab='squad'",
   jifflineup:"G.tab='lineup'",
+  jokerfiche:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.inj=130;G.tab='squad';UI.modal={type:'player'};UI.pid=p.id",
+  jokermodal:"const p=ME().squad.filter(p=>ovr(p)>70)[3];p.inj=130;G.tab='squad';UI.modal={type:'joker'};UI.jid=p.id",
   ferte:"G.tab='squad';UI.modal={type:'player'};UI.pid=(ME().squad.find(p=>p.name==='Mathis Ferté')||ME().squad[0]).id",
   terrainsel:"G.tab='lineup';UI.luSel='s10'",
   clubpage:"G.tab='table';UI.modal={type:'club'};UI.cid='tou'",

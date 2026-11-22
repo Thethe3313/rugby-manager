@@ -71,7 +71,7 @@ function todoList(){
   else if(unread())L.push(['✉️',`${unread()} message(s) non lu(s)`,'tab','mail',0]);
   if(windowOpen())L.push(['💱','Le mercato est ouvert','tab','market',0]);
   {const R_=jiffRule(m),n=jiffCount(m);if(R_&&n<R_.min&&G.phase==='season')L.push(['⚠',`Seulement ${n} JIFF dans ta composition (minimum ${R_.min} en moyenne)`,'tab','lineup',1])}
-  const hurt=m.squad.filter(p=>p.inj>0&&!away(p)).length;if(hurt)L.push(['🩹',`${hurt} joueur(s) blessé(s) à l’infirmerie`,'tab','squad',0]);
+  const hurt=m.squad.filter(p=>p.inj>0&&!away(p)).length,jk=m.squad.filter(jokerOK).length;if(hurt)L.push(['🩹',`${hurt} joueur(s) blessé(s) à l’infirmerie${jk?` · joker médical possible pour ${jk}`:''}`,'tab','squad',0]);
   return L.sort((a,b)=>b[4]-a[4]);
 }
 // Décisions en attente avant de faire défiler les jours (utilisé par le bouton Continuer)

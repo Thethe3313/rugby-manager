@@ -131,7 +131,7 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 - [x] **10. Semaine d'entraînement** : accent de la semaine (physique, contact, conquête, jeu à la main, récupération), progression contre fatigue et blessures, préparation d'un adversaire précis. *(fait : sous-onglet Équipe › Entraînement `ui/entrainement.js` : axe (`c.focus` existant), intensité `TRAINI`/`trainK`, préparation de l’adversaire `G.prepOpp` (+1,5 % de moral, progression -20 %). Club du joueur seulement : calibrage inchangé.)*
 - [x] **11. Rapport sur l'adversaire** : ses points forts et faiblesses avant chaque match (analyste), pour choisir ses consignes. *(fait : bouton « rapport sur l’adversaire » sur l’Accueil, `oppReport` dans `ui/rapport.js`, détail selon le staff (moyenne avants + trois-quarts) ; s’ajoute au message de l’analyste vidéo.)*
 - [x] **12. JIFF** : règle réelle des joueurs formés en France (minimum sur les feuilles de match en Top 14 et Pro D2, sanctions), affichée dans la composition et le mercato. *(fait, règle réelle LNR 2025-26 : `engine/jiff.js`. Moyenne minimale 16 (promu : 13 puis 14,5), retrait de 6/8/10/12 points la saison suivante, prime 220 à 320 k€ dès 17, 13 non-JIFF maximum. Appliquée à tous les clubs de Top 14 et Pro D2. Statuts estimés, calés sur les moyennes 2025-26 et tenus à jour (3 saisons au centre de formation). Le parcours réel de chaque joueur reste inconnu.)*
-- [ ] **13. Joker médical** : remplaçant temporaire d'un blessé longue durée, hors période de transferts.
+- [x] **13. Joker médical** : remplaçant temporaire d'un blessé longue durée, hors période de transferts. *(fait : `engine/joker.js`, règle LNR (blessure ≥ 3 mois, jusqu’à fin mars, Top 14, salaire du joker dans le cap, blessé pris en charge par la sécu) ; blessures graves rares ajoutées (16/24/32 semaines).)*
 - [ ] **14. Retour de blessure** : le médecin donne le risque de rechute, tu décides de faire jouer ou non.
 - [ ] **15. Derbys et rivalités** : matchs à enjeu (ambiance, supporters, président).
 - [ ] **16. Conférences de presse** : quelques questions avant ou après les gros matchs, effets sur le moral, les supporters, l'adversaire.
@@ -145,6 +145,7 @@ Règle pour chaque étape : aperçu avant / après (ordinateur et téléphone) �
 - [ ] **22. Notes** : revérifier les autres espoirs (centres de formation réputés d'abord), puis les pros à la note incertaine qui jouent souvent.
 - [ ] **23. Application** : vraie appli Android et iOS ; comptes et sauvegardes en ligne.
 - [ ] **24. Idée du joueur : notation inspirée de la fantasy Opta** (le jeu de Poney Club, Aymeric Milan et P’tit Buro, où les joueurs sont notés d’après des statistiques Opta). À étudier avec lui : quelles statistiques (essais, plaquages, mètres, turnovers…), comment les convertir en note, et comment les relier à la note sur 99 par poste. À présenter en aperçu avant toute intégration.
+- [ ] **25. JIFF réels** : le site allrugby.com (dossier JIFF Top 14) donne les joueurs JIFF ; s’en servir pour remplacer le statut JIFF estimé (`p.jiff`, `engine/jiff.js`) par le vrai statut des joueurs de Top 14 et Pro D2. À faire juste après l’étape 13 (demande du joueur).
 
 ## 🔁 En continu
 

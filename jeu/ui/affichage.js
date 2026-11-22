@@ -51,6 +51,7 @@ const GLOSS={
   masse:['Masse salariale','Somme des salaires annuels de tes joueurs. Elle doit rester sous le plafond.'],
   pre:['Pré-contrat','Accord signé en cours de saison avec un joueur dont le contrat finit : il te rejoint gratuitement à la saison suivante.'],
   loan:['Prêt','Un joueur est confié à un autre club jusqu’à la fin de la saison, pour jouer. Un joueur prêté ne peut être ni vendu ni prolongé.'],
+  joker:['Joker médical','Remplaçant temporaire d’un joueur blessé au moins 3 mois (Top 14). Il doit être un joueur libre, son salaire compte dans le salary cap, et le blessé n’est plus payé par le club (sécurité sociale) tant que le joker est là. Demande possible jusqu’à fin mars.'],
   jiff:['JIFF','Joueur Issu des Filières de Formation : au moins 3 saisons en centre de formation agréé, ou 5 saisons de licence FFR avant 22 ans (peu importe la nationalité). En Top 14 et Pro D2, un club doit aligner en moyenne 16 JIFF sur sa feuille de match de 23 joueurs (13 pour un promu la 1re saison, 14,5 la 2e), sinon il perd de 6 à 12 points la saison suivante. À partir de 17 de moyenne : prime de 220 à 320 k€. Il peut y avoir 13 joueurs non-JIFF au maximum dans l’effectif. Ici, le statut de chaque joueur est une estimation.'],
   pers:['Personnalité','Professionnalisme (sérieux à l’entraînement), ambition (envie de grands clubs) et détermination. Ils influencent sa progression et ses demandes.']};
 const hp=k=>GLOSS[k]?`<span class="hlp" data-a="hlp" data-k="${k}" title="${GLOSS[k][1].replace(/"/g,'&quot;')}">?</span>`:'';

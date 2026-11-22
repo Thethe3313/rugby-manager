@@ -156,6 +156,7 @@ function nextSeason(){
     }
     c.squad=keep;
   }
+  jokerSeasonEnd();
   returnLoans();
   // joueurs libres : vieillissement et renouvellement
   G.fa=G.fa.filter(p=>{p.faT=(p.faT||0)+1;if(p.faT>1)p.age++;return p.age<35&&p.faT<=2}).sort((a,b)=>ovr(b)-ovr(a)).slice(0,160);
